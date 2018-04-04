@@ -1,0 +1,18 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: pubtools/bookbinder-8.1
+
+inputs:
+- name: docs-stemcell-rn
+
+outputs:
+- name: updated-docs-stemcell-rn
+
+run:
+  path: docs-stemcell-rn/ci/run.sh
+
+params:
+  GITHUB_ACCESS_TOKEN:
