@@ -105,7 +105,7 @@ HEADER
 
   major_version_releases.each do |major_version, minor_releases|
 
-    output += "## <a id=\"#{major_version.sub('.', '-')}\"></a> #{major_version}.x \n\n"
+    output += "## <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
     output += "This section includes release notes for the #{major_version} line of Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n"
 
     minor_releases.sort_by {|release| release['minor_version']}
