@@ -15,4 +15,4 @@ run:
   path: docs-stemcell-rn/ci/run.sh
 
 params:
-  GITHUB_ACCESS_TOKEN:
+  GITHUB_ACCESS_TOKEN: {{github-deploy-bot-token}}
