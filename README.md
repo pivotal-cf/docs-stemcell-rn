@@ -1,10 +1,18 @@
-# docs-ruxit
-# docs-cloudsoft
-# test
-# docs-addon-antivirus
-# docs-pcf-pws
-# docs-book-addons
-# docs-gsg-cf
-# docs-book-install
-# docs-landing-pages
-# docs-stemcell-rn
+# Contributing to Stemcell Release Notes
+
+The stemcell release notes topic is an auto-generated file. A script
+in the `ci` folder checks for new stemcells and outputs `stemcells.html.md.erb`. Every 15 minutes, "pubtools-docs-helper" pushes a commit.
+
+## Modify Release Notes
+
+You cannot edit `stemcells.html.md.erb`. If you do, your changes will be overridden.
+
+To add custom content to the *Stemcell Release Notes* topic, create a `.html.md.erb` partial in the `additional_info` folder named after its corresponding release note.
+
+**Note:** The file must begin with an underscore (`_`) and you must replace `.` with `-` in the filename.
+
+Your partial will append to the release notes of that stemcell version.
+
+## Find Pivotal Network Stemcells
+
+The stemcell release notes now publishes all stemcells regardless if they are on Pivotal Network. Each stemcell release in the release notes indicates whether or not they are on Pivotal Network.
