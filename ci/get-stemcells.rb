@@ -92,7 +92,14 @@ def main
   pivnet_releases = pivnet.get_pivnet_releases
   github_releases = github.get_stemcell_releases
 
-  output = "Stemcells\n\n"
+  output = <<-HEADER
+---
+title: Stemcell Release Notes
+Owner: BOSH
+---
+
+This topic includes release notes for Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n
+HEADER
 
   major_version_releases = sorted_releases_by_major_version(github_releases)
 
