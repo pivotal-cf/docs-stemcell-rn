@@ -9,7 +9,7 @@ pushd docs-stemcell-rn/ci
 	if [[ -n $(git status --porcelain) ]]; then
 		git config user.name "Stemcell Release Notes Bot"
 		git config user.email "cf-docs@pivotal.io"
-		git add --all
+		git add --all :/
 		git commit -m "Updating stemcells markdown file"
 	fi
 popd
