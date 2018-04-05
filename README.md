@@ -11,7 +11,7 @@ To add custom content to the *Stemcell Release Notes* topic, create a `.html.md.
 
 **Note:** The file must begin with an underscore (`_`) and you must replace `.` with `-` in the filename.
 
-Your partial will append to the release notes of that stemcell version.
+Your partial appends to the release notes of that stemcell version.
 
 ## Find Pivotal Network Stemcells
 
