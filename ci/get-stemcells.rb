@@ -105,7 +105,7 @@ HEADER
 
   major_version_releases.each do |major_version, minor_releases|
 
-    output += "## <a id=\"#{major_version}-line\"></a> Stemcell v#{major_version}.x (Linux) Release Notes\n\n"
+    output += "## <a id=\"#{major_version.sub('.', '-')}\"></a> #{major_version}.x \n\n"
     output += "This section includes release notes for the #{major_version} line of Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n"
 
     minor_releases.sort_by {|release| release['minor_version']}
@@ -113,7 +113,7 @@ HEADER
     minor_releases.each_with_index do |release, i|
       version = release['version']
 
-      output += "### <a id=\"#{version.sub('.', '-')}\"></a>#{version}\n\n"
+      output += "### #{version}\n\n"
 
       output += "**Available in Pivotal Network**\n\n" if pivnet_releases.include?(version)
 
