@@ -15,4 +15,4 @@ Your partial appends to the release notes of that stemcell version.
 
 ## Find Pivotal Network Stemcells
 
-The stemcell release notes now publishes all stemcells regardless if they are on Pivotal Network. Each stemcell release in the release notes indicates whether or not they are on Pivotal Network.
+The stemcell release notes now publish all stemcells regardless if they are on Pivotal Network. Each stemcell release in the release notes indicates whether or not they are on Pivotal Network.
