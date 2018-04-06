@@ -1,7 +1,7 @@
 # Contributing to Stemcell Release Notes
 
 The stemcell release notes topic is an auto-generated file. A script
-in the `ci` folder checks for new stemcells and outputs `stemcells.html.md.erb`. Every 15 minutes, "pubtools-docs-helper" pushes a commit.
+in the `ci` folder checks for new stemcells and outputs `stemcells.html.md.erb`. Every 15 minutes, "pubtools-docs-helper" pushes a commit if the script finds a new release.
 
 ## Modify Release Notes
 
