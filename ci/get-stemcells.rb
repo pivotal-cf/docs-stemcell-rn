@@ -94,7 +94,7 @@ def main
 
   output = <<-HEADER
 ---
-title: Stemcell Release Notes
+title: Stemcell (Linux) Release Notes
 Owner: BOSH
 ---
 
