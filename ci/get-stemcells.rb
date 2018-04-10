@@ -122,7 +122,7 @@ HEADER
 
       output += release['body']+ "\n\n"
 
-      additional_info_path = '../additional_info'
+      additional_info_path = 'additional_info'
       additional_context_file = File.join(additional_info_path, "_#{version.sub('.', '-')}.html.md.erb")
       if File.exist?(additional_context_file)
         file = File.open(additional_context_file, "rb")
