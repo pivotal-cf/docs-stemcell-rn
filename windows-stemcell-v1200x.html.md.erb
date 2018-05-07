@@ -5,21 +5,24 @@ owner: Windows
 
 This topic includes release notes for Windows stemcells used with Pivotal Application Service (PAS) for Windows 2012R2.
 
-To download a stemcell, see the [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
+To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
 ## <a id="1200.17"></a>1200.17
 		
 **Release Date**: May 8, 2018
 
-* Intended for use with [April 2018](https://support.microsoft.com/en-us/help/4093121/windows-81-update-kb4093121) Microsoft security updates 
-* Fixed a security issue. 
-* Includes fixes for these security updates from Microsoft - Microsoft Internet Explorer Cumulative Security Update (MS15-124), Microsoft Internet Explorer Security Update for September 2017, Microsoft Windows CredSSP updates for March 2018
+* Intended for use with [April 2018](https://support.microsoft.com/en-us/help/4093121/windows-81-update-kb4093121) Microsoft security updates.
+* Fixed a security issue.
+* Includes fixes for these security updates from Microsoft:
+    * Microsoft Internet Explorer Cumulative Security Update (MS15-124)
+    * Microsoft Internet Explorer Security Update for September 2017
+    * Microsoft Windows CredSSP updates for March 2018
 
 ## <a id="1200.16"></a>1200.16
 		
 **Release Date**: March 26, 2018
 
-* Increases Windows service start timeout. For more information, see the following [Tracker Story](https://www.pivotaltracker.com/story/show/154808080). 
+* Increases Windows service start timeout. For more information, see the following Pivotal Tracker Story: [https://www.pivotaltracker.com/story/show/154808080](https://www.pivotaltracker.com/story/show/154808080). 
 * This stemcell is intended for use with the following:
 	* March 2018 Microsoft security updates.
 	* <a href="https://support.microsoft.com/en-gb/help/4056898/windows-81-update-kb4056898">KB4056898</a>, which includes security improvements that address <a href="https://support.microsoft.com/en-gb/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution">speculative execution side-channel vulnerabilities</a>. See Microsoft's <a href="https://support.microsoft.com/en-us/help/4056898/windows-81-update-kb4056898">Known Issues</a> for this patch.
@@ -54,7 +57,7 @@ To download a stemcell, see the [Stemcells for PCF (Windows)](https://network.pi
 
 **Release Date**: December 22, 2017
 
-* For Azure, GCP & AWS Windows Stemcells, the root disk (C Drive) will be automatically resized on creation to the disk size specified in BOSH cloud config. Due to current CPI limitations, vSphere Stemcells are NOT able to resize their root disk on creation.
+* For Azure, GCP, and AWS Windows Stemcells, the root disk (C Drive) will be automatically resized on creation to the disk size specified in BOSH cloud config. Due to current CPI limitations, vSphere Stemcells are NOT able to resize their root disk on creation.
 * Intended for use with December Microsoft security updates.
 
 ## <a id="1200.10"></a>1200.10
