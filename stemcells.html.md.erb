@@ -1257,3 +1257,20 @@ This section includes release notes for the 3232 line of Linux stemcells used wi
 - Bumps Ubuntu stemcells for [USN-3087-2](http://www.ubuntu.com/usn/usn-3087-2/) (OpenSSL regression)
 
 
+## <a id="40-line"></a> 40.x 
+
+This section includes release notes for the 40 line of Linux stemcells used with Pivotal Cloud Foundry (PCF).
+
+### 40
+
+**Release Date**: May 22, 2018
+
+- First release of Ubuntu Xenial stemcells
+- Notable differences from Ubuntu Trusty
+  - Includes systemd instead of upstart
+  - Includes 4.15 Linux Kernel instead of 4.4
+  - Uses chronyd to sync time (runs as a daemon) instead of ntpdate
+  - Does not include NFS utils by default
+
+**Warning**: Do not _downgrade_ instances from Ubuntu Xenial to Ubuntu Trusty stemcells as it may corrupt persistent disk content since Trusty stemcells may decide to use sfdisk partitioner instead of parted partitioner selected by Xenial stemcells.
+
