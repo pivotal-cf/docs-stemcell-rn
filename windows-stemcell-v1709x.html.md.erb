@@ -7,7 +7,20 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
-<p class="note"><strong>Note:</strong> As of the PCF v2.1.0 release, Amazon Web Services (AWS) stemcell v1709.x for Windows Server 2016 is longer available on <a href="https://network.pivotal.io/products/stemcells-windows-server">Pivotal Network</a>.</p>
+## <a id="1709.11"></a>1709.11
+
+**Release Date**: August 2, 2018
+
+### Features
+* This is the first official release of the 1709 stemcell for AWS! PASW can be deployed on AWS going forward. 
+
+### Improvements
+* Intended to use with [Patch Tuesday July 2018](https://support.microsoft.com/en-us/help/4338825) security updates
+
+### Bug Fix
+* [Enabling EBS encryption prevented installing of PASW](https://docs.pivotal.io/pivotalcf/2-2/customizing/cloudform-om-ebs-config.html). This stemcell version fixes that. 
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.8).
 
 ## <a id="1709.10"></a>1709.10
 
