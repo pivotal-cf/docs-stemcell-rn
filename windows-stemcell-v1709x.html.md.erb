@@ -3,7 +3,7 @@ title: Stemcell v1709.x (Windows 2016) Release Notes
 owner: Windows
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service (PAS) for Windows 2016.
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW).
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
@@ -12,15 +12,22 @@ To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivota
 **Release Date**: August 2, 2018
 
 ### Features
-* This is the first official release of the 1709 stemcell for AWS! PASW can be deployed on AWS going forward. 
+
+* This is the first official release of the 1709 stemcell for Amazon Web Services (AWS). PASW can be deployed on AWS going forward. 
 
 ### Improvements
-* Intended to use with [Patch Tuesday July 2018](https://support.microsoft.com/en-us/help/4338825) security updates
+
+This release incorporates [Patch Tuesday July 2018](https://support.microsoft.com/en-us/help/4338825) security updates.
 
 ### Bug Fix
-* [Enabling EBS encryption prevented installing of PASW](https://docs.pivotal.io/pivotalcf/2-2/customizing/cloudform-om-ebs-config.html). This stemcell version fixes that. 
 
-The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.8).
+Previously, when operators selected the **Encrypt EBS Volumes** checkbox in the IaaS-specific configuration section of the BOSH Director tile, the deployment of PASW would fail.
+
+This release enables operators to select the **Encrypt EBS Volumes** checkbox without the deployment of PASW failing. However, only Linux VMs will be encrypted, not Windows VMs.
+
+### vSphere Stemcell 
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.11).
 
 ## <a id="1709.10"></a>1709.10
 
@@ -30,7 +37,7 @@ The source code and other assets are available on [GitHub](https://github.com/cl
 * Updated the bosh-davcli and the bosh-s3cli to the latest. 
 * Repairs NTP. Specifically, run time sync command via Powershell to strip quotes from NTP server. [Tracker Story](https://www.pivotaltracker.com/n/projects/1479998/stories/157879237).
 
-The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.8).
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.10).
 
 
 ## <a id="1709.8"></a>1709.8
