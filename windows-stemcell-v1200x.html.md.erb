@@ -7,6 +7,14 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
+## <a id="1200.22"></a>1200.22
+		
+**Release Date**: August 9, 2018
+
+* Intended to use with [July 2018](https://support.microsoft.com/en-us/help/4338831/july172018kb4338831osbuildpreviewofmonthlyrollup) Microsoft Security Updates
+* Intended to use with [Security and Quality Rollup updates for .NET Framework](https://support.microsoft.com/en-us/help/4338419/description-of-the-security-and-quality-rollup-updates-for-net-framewo)
+* [Bug Fix] Previously, when operators selected the Encrypt EBS Volumes checkbox in the IaaS-specific configuration section of the BOSH Director tile, the deployment of PASW would fail.This release enables operators to select the Encrypt EBS Volumes checkbox without the deployment of PASW failing. However, only Linux VMs will be encrypted, not Windows VMs.
+
 ## <a id="1200.21"></a>1200.21
 		
 **Release Date**: July 9, 2018
