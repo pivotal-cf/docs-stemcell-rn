@@ -7,6 +7,22 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
+## <a id="1200.23"></a>1200.23
+		
+**Release Date**: August 27, 2018
+
+### Features
+
+* Intended to use with [August 2018](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898) Microsoft Security Updates. 
+* Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). More details [here](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898)
+* Compatible with the latest stable OpenSSH version - OpenSSH_for_Windows_v7.7.2.0p1
+
+### Security Update
+* Disabled use TLS 1.0 by SSL/TLS Server, Client
+* Disabled RC4, DCOM
+* Disabled triple-DES cipher to mitigate against Sweet32: Birthday attacks on 64-bit block ciphers in TLS. 
+
+
 ## <a id="1200.22"></a>1200.22
 		
 **Release Date**: August 9, 2018
