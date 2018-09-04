@@ -5,19 +5,19 @@ Owner: BOSH
 
 This topic provides an overview of the Stemcell versions used by Pivotal Cloud Foundry (PCF).
 
-Stemcells are available for download on the [Stemcells for PCF](https://network.pivotal.io/products/stemcells) page on Pivotal Network. Once downloaded, you can upload them to your deployment using the **Stemcell** configuration pane of a given tile. 
+Stemcells are available for download on the [Stemcells for PCF](https://network.pivotal.io/products/stemcells) page on Pivotal Network. Once downloaded, you can upload them to your deployment using the **Stemcell** configuration pane of a given tile or by navigating to the Stemcell Library in Ops Manager v2.1 or later. 
 
-To find out which stemcell version is used by which tile version, check the release notes for the tile. 
+Before you upgrade any tiles either from Pivotal or a partner, always verify that the tile is compatible with the version of PCF you are deploying and its supported stemcells. For more information on checking PCF and stemcell compatibility, see <a href="https://docs.pivotal.io/pivotalcf/upgrading/checklist.html#compatibility">Tile Compatibility</a> in the Upgrade Checklist. 
 
-Alternatively, if you have uploaded the tile, you can check the **Stemcell** configuration pane of the tile for PCF v2.0 and earlier or the Stemcell Library for PCF v2.1 or later. 
+To find out which stemcell version is used by which tile version, check the release notes or the Pivotal Network download page for the tile. 
 
 <p class="note"><strong>Note</strong>: A stemcell is a versioned OS image that BOSH uses to create VMs for the BOSH Director, Pivotal Application Service (PAS), and other PCF Service tiles, such as MySQL for PCF. For more information, see <a href="http://bosh.cloudfoundry.org/docs/stemcell.html">What is a Stemcell?</a> in the BOSH documentation.</p>
 
-##<a id="linux"></a> Linux Stemcell Lines
+##<a id="linux"></a> Ubuntu Linux Stemcell Lines
 
 This section lists Linux-based stemcells used in Pivotal Cloud Foundry.
 
-######<a id="ubuntu"></a> Ubuntu Trusty Stemcells
+###<a id="ubuntu"></a> Trusty Stemcells
 
 Each stemcell line has a corresponding release notes section. See the links below:
 
@@ -28,16 +28,29 @@ Each stemcell line has a corresponding release notes section. See the links belo
 * [Stemcell 3421.x Release Notes](./stemcells.html#3421-line)
 * [Stemcell 3363.x Release Notes](./stemcells.html#3363-line)
 
-###<a id="xenial"></a> Ubuntu Xenial Stemcells
+####<a id="trusty-end"></a>  Trusty End-of-Support
+
+Ubuntu 14.04 LTS (Trusty) stemcells are reaching end-of-support in April 2019. Starting in September 2018, Pivotal and its partners will begin releasing product tiles for PCF that support Ubuntu 16.04 LTS (Xenial) stemcells instead. Using supported stemcells is necessary to avoid exposure to security vulnerabilities.
+
+###<a id="xenial"></a> Xenial Stemcells
 
 Each stemcell line has a corresponding release notes section. See the links below:
 
 * [Stemcell 97.x Release Notes](./stemcells.html#97-line)
-* [Stemcell 87.x Release Notes](./stemcells.html#87-line)
+* [Stemcell 87.x Release Notes](./stemcells.html#87-line)	
 * [Stemcell 81.x Release Notes](./stemcells.html#87-line)
 * [Stemcell 60.x Release Notes](./stemcells.html#60-line)
 * [Stemcell 50.x Release Notes](./stemcells.html#50-line)
 * [Stemcell 40.x Release Notes](./stemcells.html#40-line)
+
+####<a id="xenial-addons"></a> Add-on Support for Xenial Stemcells
+
+If you are using any of the following PCF add-ons, you must update the add-on and its configuration to be compatible with the Ubuntu Xenial 16.04 stemcell before deploying any tiles that use Xenial. The following add-on versions support the Xenial stemcell:
+
++ ClamAV Add-on for PCF v1.2.22 or later. For information on how to update this add-on, see [Updating ClamAV Add-on for PCF to Run with Xenial Stemcells](https://docs.pivotal.io/addon-antivirus/updating-for-xenial.html).
++ File Integrity Monitoring (FIM) Add-on for PCF v1.4.28 or later. For information on how to update this add-on, see [Updating FIM Add-on for PCF to Run with Xenial Stemcells](https://docs.pivotal.io/addon-fim/updating-for-xenial.html).
++ IPSec Add-on for PCF v1.9.9 or later. For information on how to update this add-on, see [Updating IPsec Add-on for PCF to Run with Xenial Stemcells](https://docs.pivotal.io/addon-ipsec/updating-for-xenial.html).
+
 
 ## <a id="windows"></a> Windows Stemcell Lines
 
