@@ -18,6 +18,9 @@ This section includes release notes for the 3586 line of Linux stemcells used wi
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
+### Known Issue
+- On GCP, writing moderate amounts of data to a persistent disk and then migrating the disk will fail with: `Error: Timed out sending 'update_settings'`. See [#159511884](https://www.pivotaltracker.com/story/show/159511884)
+
 ### 3586.36
 
 <span class='pivnet'>Available in Pivotal Network</span>
