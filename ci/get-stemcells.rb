@@ -86,26 +86,10 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def main
-  pivnet = Resources::Pivnet.new
-  github = Resources::Github.new
-  pivnet_releases = pivnet.get_pivnet_releases
-  github_releases = github.get_stemcell_releases
-
-  output = <<-HEADER
----
-title: Stemcell (Linux) Release Notes
-Owner: BOSH
----
-
-This topic includes release notes for Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n
-HEADER
-
-  major_version_releases = sorted_releases_by_major_version(github_releases)
-
-  major_version_releases.each do |major_version, minor_releases|
-
-    output += "## <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
+def puts_release_notes(releases, output, pivnet_releases, release_type)
+  output += "## <a id=\"#{release_type}\"></a> #{release_type} Stemcells \n\n"
+  releases.each do |major_version, minor_releases|
+    output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
     output += "This section includes release notes for the #{major_version} line of Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n"
 
     minor_releases.sort_by {|release| release['minor_version']}
@@ -113,7 +97,7 @@ HEADER
     minor_releases.each_with_index do |release, i|
       version = release['version']
 
-      output += "### #{version}\n\n"
+      output += "#### #{version}\n\n"
 
       output += "<span class='pivnet'>Available in Pivotal Network</span>\n\n" if pivnet_releases.include?(version)
 
@@ -132,7 +116,30 @@ HEADER
     end
   end
 
-  puts output
+
+puts output
+end
+
+def main
+  pivnet = Resources::Pivnet.new
+  github = Resources::Github.new
+  pivnet_releases = pivnet.get_pivnet_releases
+  github_releases = github.get_stemcell_releases
+
+  output = <<-HEADER
+---
+title: Stemcell (Linux) Release Notes
+Owner: BOSH
+---
+
+This topic includes release notes for Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n
+HEADER
+
+  major_version_releases = sorted_releases_by_major_version(github_releases)
+  releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
+  releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
+  puts_release_notes(releases_xenial, output, pivnet_releases, "Xenial")
+  puts_release_notes(releases_trusty, output, pivnet_releases, "Trusty")
 end
 
 main
