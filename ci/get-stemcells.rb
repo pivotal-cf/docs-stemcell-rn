@@ -88,6 +88,7 @@ end
 
 def puts_release_notes(releases, output, pivnet_releases, release_type)
   output += "## <a id=\"#{release_type}\"></a> #{release_type} Stemcells \n\n"
+  output += "The following sections describe each #{release_type} stemcell release. \n\n"
   releases.each do |major_version, minor_releases|
     output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
     output += "This section includes release notes for the #{major_version} line of Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n"
@@ -98,6 +99,9 @@ def puts_release_notes(releases, output, pivnet_releases, release_type)
       version = release['version']
 
       output += "#### #{version}\n\n"
+
+      output += "Pivnet Releases: #{pivnet_releases} \n"
+      output += "Version: #{version} \n\n"
 
       output += "<span class='pivnet'>Available in Pivotal Network</span>\n\n" if pivnet_releases.include?(version)
 
