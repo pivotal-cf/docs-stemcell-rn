@@ -51,9 +51,9 @@ module Resources
   end
 
   class Pivnet
-    def get_pivnet_releases
+    def get_pivnet_releases(api_endpoint)
       #get and parse the list of stemcell releases from pivnet
-      stemcells = URI.parse('https://network.pivotal.io/api/v2/products/stemcells/releases').read
+      stemcells = URI.parse(api_endpoint).read
       stemcells = JSON.parse(stemcells)
       stemcells_list = stemcells['releases']
 
@@ -86,8 +86,11 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def puts_release_notes(releases, output, pivnet_releases, release_type)
-  output += "## <a id=\"#{release_type}\"></a> #{release_type} Stemcells \n\n"
+def puts_release_notes(releases, output, pivnet_api, release_type)
+  pivnet = Resources::Pivnet.new
+  pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
+
+  output += "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
   output += "The following sections describe each #{release_type} stemcell release. \n\n"
   releases.each do |major_version, minor_releases|
     output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
@@ -98,10 +101,7 @@ def puts_release_notes(releases, output, pivnet_releases, release_type)
     minor_releases.each_with_index do |release, i|
       version = release['version']
 
-      output += "#### #{version}\n\n"
-
-      output += "Pivnet Releases: #{pivnet_releases} \n"
-      output += "Version: #{version} \n\n"
+      output += "#### <a id=\"#{version.sub('.', '-')}\"></a> #{version}\n\n"
 
       output += "<span class='pivnet'>Available in Pivotal Network</span>\n\n" if pivnet_releases.include?(version)
 
@@ -125,9 +125,7 @@ puts output
 end
 
 def main
-  pivnet = Resources::Pivnet.new
   github = Resources::Github.new
-  pivnet_releases = pivnet.get_pivnet_releases
   github_releases = github.get_stemcell_releases
 
   output = <<-HEADER
@@ -142,8 +140,10 @@ HEADER
   major_version_releases = sorted_releases_by_major_version(github_releases)
   releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
   releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
-  puts_release_notes(releases_xenial, output, pivnet_releases, "Xenial")
-  puts_release_notes(releases_trusty, output, pivnet_releases, "Trusty")
+  puts_release_notes(releases_xenial, output, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
+                     "Xenial")
+  puts_release_notes(releases_trusty, output, 'https://network.pivotal.io/api/v2/products/stemcells/releases',
+                     "Trusty")
 end
 
 main
