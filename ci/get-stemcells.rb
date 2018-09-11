@@ -86,11 +86,11 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def puts_release_notes(releases, output, pivnet_api, release_type)
+def puts_release_notes(releases, pivnet_api, release_type)
   pivnet = Resources::Pivnet.new
   pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
 
-  output += "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
+  output = "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
   output += "The following sections describe each #{release_type} stemcell release. \n\n"
   releases.each do |major_version, minor_releases|
     output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
@@ -131,7 +131,7 @@ def main
   output = <<-HEADER
 ---
 title: Stemcell (Linux) Release Notes
-Owner: BOSH
+owner: BOSH
 ---
 
 This topic includes release notes for Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n
@@ -140,9 +140,12 @@ HEADER
   major_version_releases = sorted_releases_by_major_version(github_releases)
   releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
   releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
-  puts_release_notes(releases_xenial, output, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
+
+  puts output
+
+  puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
                      "Xenial")
-  puts_release_notes(releases_trusty, output, 'https://network.pivotal.io/api/v2/products/stemcells/releases',
+  puts_release_notes(releases_trusty, 'https://network.pivotal.io/api/v2/products/stemcells/releases',
                      "Trusty")
 end
 
