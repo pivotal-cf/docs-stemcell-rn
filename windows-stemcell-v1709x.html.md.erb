@@ -1,0 +1,126 @@
+---
+title: Stemcell v1709.x (Windows Server version 1709) Release Notes
+owner: Windows
+---
+
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW).
+
+To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
+
+## <a id="1709.12"></a>1709.12
+
+**Release Date**: August 27, 2018
+
+### Features
+
+- Intended for use with the [August 2018](https://support.microsoft.com/en-us/help/4343897/windows-10-update-kb4343897) Microsoft Security Updates. 
+- Includes an important Microsoft Security Update that provides protections against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). For more information, see [Windows Support](https://support.microsoft.com/en-us/help/4343897/windows-10-update-kb4343897).
+- Compatible with the latest stable OpenSSH version, OpenSSH_for_Windows_v7.7.2.0p1-Beta. This version fixed the issue of OpenSSH logs filling up the disk.
+
+## <a id="1709.11"></a>1709.11
+
+**Release Date**: August 2, 2018
+
+### Features
+
+This is the first official release of the 1709 stemcell for Amazon Web Services (AWS). PASW can be deployed on AWS going forward. 
+
+### Improvements
+
+This release incorporates [Patch Tuesday July 2018](https://support.microsoft.com/en-us/help/4338825) security updates.
+
+### Bug Fix
+
+Previously, when operators selected the **Encrypt Linux EBS Volumes** checkbox in the IaaS-specific configuration section of the BOSH Director tile, the deployment of PASW would fail.
+
+This release enables operators to select the **Encrypt Linux EBS Volumes** checkbox without the deployment of PASW failing. However, only Linux VMs will be encrypted, not Windows VMs.
+
+### vSphere Stemcell 
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.11).
+
+## <a id="1709.10"></a>1709.10
+
+**Release Date**: June 27, 2018
+
+### Bug Fix
+* Updated the bosh-davcli and the bosh-s3cli to the latest. 
+* Repairs NTP. Specifically, run time sync command via Powershell to strip quotes from NTP server. [Tracker Story](https://www.pivotaltracker.com/n/projects/1479998/stories/157879237).
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.10).
+
+
+## <a id="1709.8"></a>1709.8
+
+**Release Date**: June 1, 2018
+
+### Bug Fix
+* Includes a fix to support syncing as stated by Microsoft even when the time is drastically off.
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.8).
+
+## <a id="1709.7"></a>1709.7
+
+**Release Date**: May 24, 2018
+
+### Improvements
+* Disabled root disk resizing for the 1709 AWS stemcell.  
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.7).
+
+## <a id="1709.6"></a>1709.6
+
+**Release Date**: May 18, 2018
+
+### Improvements
+
+* Intended for use with [May 2018](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/a82328f9-1f26-e811-a968-000d3a33a34d) Microsoft security updates.
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.6).
+
+## <a id="1709.5"></a>1709.5
+
+**Release Date**: May 8, 2018
+
+### Improvements
+
+* Intended for use with [April 2018](https://support.microsoft.com/en-us/help/4093121/windows-81-update-kb4093121) Microsoft security updates.
+* Disabled root disk resizing and provided large root disks by default. For more information, see [Root Disk Sizing](https://docs.pivotal.io/pivotalcf/windows/about-windows-stemcells.html#sizing) in _Using Windows Stemcells_.
+
+The source code and other assets are available on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.5).
+
+## <a id="1709.4"></a>1709.4
+
+**Release Date**: March 20, 2018
+
+### Note
+
+* You must **enable** the Meltdown and Spectre patch for it to function. See 
+[Creating a vSphere Stemcell by Hand](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Stemcell-by-Hand) in GitHub for instruction to enable the patch.
+
+### Improvements
+
+* Intended for use with March 2018 Microsoft security updates.
+* Intended for use with [KB4056892](https://support.microsoft.com/en-us/help/4056892) that addresses Microsoft's guidance for protection against [speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-gb/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution). See Microsoft's _Known Issues_ listed in the [KB article](https://support.microsoft.com/en-us/help/4056892) for the patch.
+
+Source code and other assets on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.4).
+
+## <a id="1709.3"></a>1709.3
+
+**Release Date**: February 21, 2018
+
+### Note
+
+* You must **enable** the Meltdown and Spectre patch for it to function. See 
+[Creating a vSphere Stemcell by Hand](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Stemcell-by-Hand) in GitHub for instruction to enable the patch.
+
+### Improvements
+
+* Intended for use with February 2018 Microsoft security updates.
+* Intended for use with [KB4056892](https://support.microsoft.com/en-us/help/4056892) that addresses Microsoft's guidance for protection against [speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-gb/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution). See Microsoft's _Known Issues_ listed in the [KB article](https://support.microsoft.com/en-us/help/4056892) for the patch.
+
+### Fixes
+
+* Fix BOSH ssh when stemcell is operating as a Diego Cell.
+
+Source code and other assets on [GitHub](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.3).
