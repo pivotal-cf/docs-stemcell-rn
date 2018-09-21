@@ -3,7 +3,7 @@ title: Windows Server 2016 (version 1803) Stemcell Release Notes
 owner: Windows
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) 2.3. 
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.3. 
 
 The stemcell is based on Windows Server, version 1803.
 
@@ -15,11 +15,13 @@ To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivota
 
 ### Features
 
-- This is the first 1803 stemcell that we are publishing! 
-- Intended to use with [August 2018](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909) Microsoft Security Updates. 
-- Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). More details [here](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909)
-- Compatible with the latest stable OpenSSH version - OpenSSH_for_Windows_v7.7.2.0p1
+- This is the first 1803 stemcell.
+- Intended for use with the [August 2018](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909) Microsoft Security Updates. 
+- Includes an important Microsoft Security Update that provides protections against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). For more information, see [Windows Support](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909).
+- Compatible with the latest stable OpenSSH version, `OpenSSH_for_Windows_v7.7.2.0p1`.
 
 ### Known Issue
 
-- This stemcell doesn't yet support ephemeral disk feature. You can refer to the [Configure Tile Resources] This will be available in 1803.2 
+-  The v1803.1 Windows stemcell does not support ephemeral disks. 
+Support for ephemeral disks is expected in v1803.2. 
+This enables you to configure the size of your Windows cells in the PAS for Windows tile. For more information, see [Step 4: Configure Tile Resources](https://docs.pivotal.io/pivotalcf/2-3/windows/installing.html#resources) of <em>Installing and Configuring PAS for Windows</em>.
