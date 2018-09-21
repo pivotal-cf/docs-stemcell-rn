@@ -3,10 +3,23 @@ title: Windows Server 2016 (version 1803) Stemcell Release Notes
 owner: Windows
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW).
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) 2.3. 
 
-The stemcell is based on Windows Server 2016, Server Core, version 1803.
+The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
 ## <a id="1803.x"></a>1803.1
+
+**Release Date**: September 24, 2018
+
+### Features
+
+- This is the first 1803 stemcell that we are publishing! 
+- Intended to use with [August 2018](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909) Microsoft Security Updates. 
+- Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). More details [here](https://support.microsoft.com/en-ca/help/4343909/windows-10-update-kb4343909)
+- Compatible with the latest stable OpenSSH version - OpenSSH_for_Windows_v7.7.2.0p1
+
+### Known Issue
+
+- This stemcell doesn't yet support ephemeral disk feature. You can refer to the [Configure Tile Resources] This will be available in 1803.2 
