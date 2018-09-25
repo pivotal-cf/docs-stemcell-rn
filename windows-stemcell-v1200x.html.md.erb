@@ -13,10 +13,12 @@ To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivota
 
 ### Features
 
-* Intended to use with [September 2018](https://support.microsoft.com/en-us/help/4457143) Microsoft Security Updates. 
+* Intended for use with [September 2018](https://support.microsoft.com/en-us/help/4457143) Microsoft Security Updates.
 
 ### Bug Fix
-* In our previous stemcell, we made an optional argument `os_version` mandatory during the `Invoke-Sysprep` step. We have now fixed that, and detect the OS inherently. 
+
+* Previously, the `os_version` argument was mandatory during the `Invoke-Sysprep` step.
+The OS is now detected inherently.
 
 ## <a id="1200.23"></a>1200.23
 		
