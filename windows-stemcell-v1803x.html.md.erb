@@ -9,7 +9,19 @@ The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
-## <a id="1803.x"></a>1803.1
+## <a id="1803.2"></a>1803.2
+
+**Release Date**: October 1, 2018
+
+### Features
+
+- **Ephemeral Disk Support** rolls out with this stemcell. This will help you to configure your ephemeral disk that would be used with your applications. This also allows you to reduce your root disk to a minimum of 40 GB. More information [here](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Windows-Stemcell#disk-size-for-1709-based-stemcells)
+- Intended to use with [September 2018](https://support.microsoft.com/en-us/help/4464218) Microsoft Security Updates. 
+
+### Bug Fix
+- For vSphere only - In our previous stemcells, we made an optional argument `os_version` mandatory during the `Invoke-Sysprep` step. We have now fixed that, and detect the OS inherently. 
+
+## <a id="1803.1"></a>1803.1
 
 **Release Date**: September 24, 2018
 
