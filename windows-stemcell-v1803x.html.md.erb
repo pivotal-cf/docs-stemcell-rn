@@ -15,11 +15,13 @@ To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivota
 
 ### Features
 
-- **Ephemeral Disk Support** rolls out with this stemcell. This will help you to configure your ephemeral disk that would be used with your applications. This also allows you to reduce your root disk to a minimum of 40 GB. More information [here](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Windows-Stemcell#disk-size-for-1709-based-stemcells)
-- Intended to use with [September 2018](https://support.microsoft.com/en-us/help/4464218) Microsoft Security Updates. 
+- Includes ephemeral disk support. 
+This enables you to configure the size of your Windows cells in the PASW tile. For more information, see the [Configure Tile Resources](https://docs.pivotal.io/pivotalcf/2-3/windows/installing.html#resources) section in _Installing and Configuring PAS for Windows_. This also allows you to reduce your root disk to a minimum of 30 GB. 
+- Intended for use with the [September 2018](https://support.microsoft.com/en-us/help/4464218) Microsoft Security Updates. 
 
 ### Bug Fix
-- For vSphere only - In our previous stemcells, we made an optional argument `os_version` mandatory during the `Invoke-Sysprep` step. We have now fixed that, and detect the OS inherently. 
+- Previously, the `os_version` argument was mandatory during the `Invoke-Sysprep` step.
+The OS is now detected by default, and the `os_version` argument is optional.
 
 ## <a id="1803.1"></a>1803.1
 
