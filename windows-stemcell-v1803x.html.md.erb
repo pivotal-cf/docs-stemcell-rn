@@ -9,6 +9,17 @@ The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="1803.3"></a>1803.3
+
+**Release Date**: October 30, 2018
+### Features
+- Intended for use with [October 2018 Microsoft Security Updates](https://support.microsoft.com/en-us/help/4462919/windows-10-update-kb4462919).
+- Disable RDP by default to improve security of the 1803 stemcells. You can still enable RDP through the PASW Tile Configuration. 
+
+### Bug Fix
+- Intermittent "Access denied" errors during compilation phase of PASW deployments. We have added a fix to potentially resolve them.
+- Fixed the Ephemeral Disk Provisioning for Azure enabling compatibility of PASW's ephemeral disk functionality with OpsMgr on Azure. 
+
 ## <a id="1803.2"></a>1803.2
 
 **Release Date**: October 1, 2018
