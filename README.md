@@ -7,7 +7,7 @@ in the `ci` folder checks for new stemcells and outputs `stemcells.html.md.erb`.
 
 You cannot edit `stemcells.html.md.erb`. If you do, your changes will be overridden.
 
-To add custom content to the *Stemcell Release Notes* topic, create a `.html.md.erb` partial in the `additional_info` folder named after its corresponding release note.
+To add custom content to the *Stemcell Release Notes* topic, create a `.html.md.erb` partial in the `ci` / `additional_info` folder named after its corresponding release note.
 
 **Note:** The file must begin with an underscore (`_`) and you must replace `.` with `-` in the filename.
 
