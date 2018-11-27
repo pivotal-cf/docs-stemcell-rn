@@ -9,6 +9,17 @@ The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="1803.4"></a>1803.4
+
+**Release Date**: November 28, 2018
+
+### Features
+- [Security] Disabled use of TLS 1.0 by SSL/TLS server and client.
+- [Security] Disabled RC4. 
+- [Security] Disabled triple-DES cipher to mitigate against Sweet32: Birthday attacks on 64-bit block ciphers in TLS.
+- [Patches] Intended to use with [November Patch Tuesday Microsoft Security Updates](https://support.microsoft.com/en-in/help/4467702)
+- [New IaaS Support] With this release, we now support AWS GovCloud!
+
 ## <a id="1803.3"></a>1803.3
 
 **Release Date**: October 30, 2018
