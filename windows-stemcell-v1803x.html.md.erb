@@ -9,6 +9,17 @@ The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="1803.5"></a>1803.5
+
+**Release Date**: December 24, 2018
+
+### Features
+- **[Patches]** Included [December Patch Tuesday Microsoft Security Updates](https://support.microsoft.com/en-us/help/4471324).
+- We've added the BOSH API version in the stemcell to surface more information about the compatibility of the stemcell with BOSH. 
+
+### Bug Fix
+- BOSH release job symlinks were not getting cleaned up when a target folder is removed
+
 ## <a id="1803.4"></a>1803.4
 
 **Release Date**: November 28, 2018
