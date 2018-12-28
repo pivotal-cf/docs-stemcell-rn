@@ -7,16 +7,27 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
+## <a id="1200.27"></a>1200.27
+
+### Features
+
+- Intended for use with [December 2018 Microsoft Security Updates](https://support.microsoft.com/en-us/help/4471320/windows-8-1-update-kb4471320).
+
+## <a id="1200.26"></a>1200.26
+
+### Features
+- Intended for use with [November 2018 Patch Tuesday Updates from Microsoft](https://support.microsoft.com/en-us/help/4467697/windows-8-1-update-kb4467697)
+
 ## <a id="1200.25"></a>1200.25
 
 ### Features
 
-* Intended for use with [October 2018 Microsoft Security Updates](https://support.microsoft.com/en-us/help/4462941/windows-8-update-kb4462941).
-* To ensure a consistent runtime for our users, we now manage the version of PowerShell for 2012R2. We upgraded the PowerShell version to v5.1 in this release.
+- Intended for use with [October 2018 Microsoft Security Updates](https://support.microsoft.com/en-us/help/4462941/windows-8-update-kb4462941).
+- To ensure a consistent runtime for our users, we now manage the version of PowerShell for 2012R2. We upgraded the PowerShell version to v5.1 in this release.
 
 ### Bug Fix
 
-* Intermittent "Access denied" errors during compilation phase of PAS-W deployments. We have added a fix to potentially resolve them.
+- Intermittent "Access denied" errors during compilation phase of PAS-W deployments. We have added a fix to potentially resolve them.
 
 ## <a id="1200.24"></a>1200.24
 		
@@ -24,11 +35,11 @@ To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivota
 
 ### Features
 
-* Intended for use with [September 2018](https://support.microsoft.com/en-us/help/4457143) Microsoft Security Updates.
+- Intended for use with [September 2018](https://support.microsoft.com/en-us/help/4457143) Microsoft Security Updates.
 
 ### Bug Fix
 
-* Previously, the `os_version` argument was mandatory during the `Invoke-Sysprep` step.
+- Previously, the `os_version` argument was mandatory during the `Invoke-Sysprep` step.
 The OS is now detected by default, and the `os_version` argument is optional.
 
 ## <a id="1200.23"></a>1200.23
@@ -37,8 +48,8 @@ The OS is now detected by default, and the `os_version` argument is optional.
 
 ### Features
 
-* Intended for use with the [August 2018](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898) Microsoft Security Updates. 
-* Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). For more information, see [Windows Support](https://support.microsoft.com/en-us/help/4343897/windows-10-update-kb4343897).
+- Intended for use with the [August 2018](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898) Microsoft Security Updates. 
+- Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). For more information, see [Windows Support](https://support.microsoft.com/en-us/help/4343897/windows-10-update-kb4343897).
 - Compatible with the latest stable OpenSSH version, OpenSSH_for_Windows_v7.7.2.0p1-Beta. This version fixed the issue of OpenSSH logs filling up the disk.
 
 ### Security Update
