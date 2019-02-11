@@ -7,6 +7,12 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
 
+## <a id="1200.29"></a>1200.29
+
+### Bug Fix
+
+- Symlinks in 2012R2 were not getting cleaned up properly, causing issues with bosh dns. This inturn was blocking an urgent release of bosh-dns due to this [GoLang CVE](https://www.pivotaltracker.com/story/show/163153521)
+
 ## <a id="1200.28"></a>1200.28
 
 ### Features
