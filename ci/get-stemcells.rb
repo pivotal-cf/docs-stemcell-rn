@@ -132,6 +132,7 @@ def main
 ---
 title: Stemcell (Linux) Release Notes
 owner: BOSH
+modified_date: false
 ---
 
 This topic includes release notes for Linux stemcells used with Pivotal Cloud Foundry (PCF).\n\n
