@@ -8,11 +8,11 @@ This topic provides an overview of the Stemcell versions used by <%= vars.first_
 
 Stemcells are available for download on Pivotal Network. Once downloaded, you can upload them to your deployment using the **Stemcell** configuration pane of a given tile or by navigating to the **Stemcell Library** page in Ops Manager v2.1 or later.
 
-Before you upgrade <%= vars.product_name  %>, always verify that any tiles that you have installed, either from Pivotal or a partner, are compatible with the version of <%= vars.product_name  %> you are deploying and its supported stemcells. For more information on checking <%= vars.product_name  %> and stemcell compatibility, see <a href="https://docs.pivotal.io/pivotalcf/upgrading/checklist.html#compatibility">Tile Compatibility</a> in the Upgrade Checklist.
+Before you upgrade <%= vars.product_name %>, always verify that any tiles that you have installed, either from Pivotal or a partner, are compatible with the version of <%= vars.product_name %> you are deploying and its supported stemcells. For more information on checking <%= vars.product_name %> and stemcell compatibility, see <a href="https://docs.pivotal.io/pivotalcf/upgrading/checklist.html#compatibility">Tile Compatibility</a> in the Upgrade Checklist.
 
 To find out which stemcell version is used by which tile version, check the release notes or the Pivotal Network download page for the tile.
 
-<p class="note"><strong>Note</strong>: A stemcell is a versioned OS image that BOSH uses to create VMs for the BOSH Director, Pivotal Application Service (PAS), and other <%= vars.product_name  %> Service tiles, such as MySQL for <%= vars.product_name  %>. For more information, see <a href="http://bosh.cloudfoundry.org/docs/stemcell.html">What is a Stemcell?</a> in the BOSH documentation.</p>
+<p class="note"><strong>Note</strong>: A stemcell is a versioned OS image that BOSH uses to create VMs for the BOSH Director, Pivotal Application Service (PAS), and other <%= vars.product_name %> Service tiles, such as MySQL for <%= vars.product_name %>. For more information, see <a href="http://bosh.cloudfoundry.org/docs/stemcell.html">What is a Stemcell?</a> in the BOSH documentation.</p>
 
 ##<a id="linux"></a> Ubuntu Linux Stemcell Lines
 
@@ -31,7 +31,7 @@ Each stemcell line has a corresponding release notes section. See the links belo
 
 ####<a id="trusty-end"></a>  Trusty End-of-Support
 
-Ubuntu 14.04 LTS (Trusty) stemcells are reaching end-of-support in April 2019. Starting in September 2018, Pivotal and its partners will begin releasing product tiles for <%= vars.product_name  %> that support Ubuntu 16.04 LTS (Xenial) stemcells instead. Using supported stemcells is necessary to avoid exposure to security vulnerabilities.
+Ubuntu 14.04 LTS (Trusty) stemcells are reaching end-of-support in April 2019. Starting in September 2018, Pivotal and its partners will begin releasing product tiles for <%= vars.product_name %> that support Ubuntu 16.04 LTS (Xenial) stemcells instead. Using supported stemcells is necessary to avoid exposure to security vulnerabilities.
 
 ###<a id="xenial"></a> Xenial Stemcells
 
@@ -46,13 +46,13 @@ Each stemcell line has a corresponding release notes section. See the links belo
 
 ####<a id="xenial-addons"></a> Add-on Support for Xenial Stemcells
 
-If you are using any of the following <%= vars.product_name  %> add-ons, you must update the add-on and its configuration to be compatible with the Ubuntu Xenial 16.04 stemcell before deploying any tiles that use Xenial. The following add-on versions support the Xenial stemcell:
+If you are using any of the following <%= vars.product_name %> add-ons, you must update the add-on and its configuration to be compatible with the Ubuntu Xenial 16.04 stemcell before deploying any tiles that use Xenial. The following add-on versions support the Xenial stemcell:
 
-+ ClamAV Add-on for <%= vars.product_name  %> v1.2.22 or later. For information on how to update this add-on, see [Updating ClamAV Add-on for <%= vars.product_name  %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-antivirus/1-4/updating-for-xenial.html).
-+ File Integrity Monitoring (FIM) Add-on for <%= vars.product_name  %> v1.4.28 or later. For information on how to update this add-on, see [Updating FIM Add-on for <%= vars.product_name  %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-fim/updating-for-xenial.html).
-+ IPSec Add-on for <%= vars.product_name  %> v1.9.9 or later. For information on how to update this add-on, see [Updating IPsec Add-on for <%= vars.product_name  %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-ipsec/updating-for-xenial.html).
++ ClamAV Add-on for <%= vars.product_name %> v1.2.22 or later. For information on how to update this add-on, see [Updating ClamAV Add-on for <%= vars.product_name %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-antivirus/1-4/updating-for-xenial.html).
++ File Integrity Monitoring (FIM) Add-on for <%= vars.product_name %> v1.4.28 or later. For information on how to update this add-on, see [Updating FIM Add-on for <%= vars.product_name %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-fim/updating-for-xenial.html).
++ IPSec Add-on for <%= vars.product_name %> v1.9.9 or later. For information on how to update this add-on, see [Updating IPsec Add-on for <%= vars.product_name %> to Run with Xenial Stemcells](https://docs.pivotal.io/addon-ipsec/updating-for-xenial.html).
 
-For information on which <%= vars.product_name  %> tile releases now use Xenial, see [Tiles Using Xenial Stemcells in <%= vars.product_name  %>](xenial-tiles.html).
+For information on which <%= vars.product_name %> tile releases now use Xenial, see [Tiles Using Xenial Stemcells in <%= vars.product_name %>](xenial-tiles.html).
 
 ## <a id="windows"></a> Windows Stemcell Lines
 
