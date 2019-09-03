@@ -15,6 +15,24 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.first_product_name  %>.
 
+#### <a id="456-16"></a> 456.16
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: August 28, 2019
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
+
 #### <a id="456-14"></a> 456.14
 
 **Release Date**: August 26, 2019
@@ -46,6 +64,35 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.first_product_name  %>.
+
+#### <a id="315-89"></a> 315.89
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: August 28, 2019
+
+BOSH Agent version: 2.215.4
+USNs:
+    
+title: USN-4110-1: Dovecot vulnerability
+url: https://usn.ubuntu.com/4110-1/
+priorities: high
+description:
+  Nick Roessler and Rafi Rubin discovered that Dovecot incorrectly handled certain data. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code.
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11500
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
 
 #### <a id="315-83"></a> 315.83
 
@@ -110,6 +157,34 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.first_product_name  %>.
+
+#### <a id="250-99"></a> 250.99
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: August 28, 2019
+
+BOSH Agent version: 2.193.4
+
+title: USN-4110-1: Dovecot vulnerability
+url: https://usn.ubuntu.com/4110-1/
+priorities: high
+description:
+  Nick Roessler and Rafi Rubin discovered that Dovecot incorrectly handled certain data. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code.
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11500
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
 
 #### <a id="250-95"></a> 250.95
 
@@ -235,6 +310,33 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.first_product_name  %>.
+
+#### <a id="170-124"></a> 170.124
+
+**Release Date**: August 28, 2019
+
+BOSH Agent version: 2.160.7
+USNs:
+    
+title: USN-4110-1: Dovecot vulnerability
+url: https://usn.ubuntu.com/4110-1/
+priorities: high
+description:
+  Nick Roessler and Rafi Rubin discovered that Dovecot incorrectly handled certain data. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code.
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11500
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
 
 #### <a id="170-120"></a> 170.120
 
@@ -424,6 +526,35 @@ Periodic Ubuntu Xenial stemcell bump (Nov 05, 2018)
 ### <a id="97-line"></a> 97.x 
 
 This section includes release notes for the 97 line of Linux stemcells used with <%= vars.first_product_name  %>.
+
+#### <a id="97-151"></a> 97.151
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: August 28, 2019
+
+BOSH Agent version: 2.117.12
+USNs:
+    
+title: USN-4110-1: Dovecot vulnerability
+url: https://usn.ubuntu.com/4110-1/
+priorities: high
+description:
+  Nick Roessler and Rafi Rubin discovered that Dovecot incorrectly handled certain data. An attacker could possibly use this issue to cause a denial of service or execute arbitrary code.
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11500
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
 
 #### <a id="97-145"></a> 97.145
 
