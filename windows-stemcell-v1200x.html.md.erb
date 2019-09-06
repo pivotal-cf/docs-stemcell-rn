@@ -6,7 +6,7 @@ modified_date: false
 
 This topic includes release notes for Windows stemcells used with Pivotal Application Service (PAS) for Windows 2012R2.
 
-To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
+To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
 ## <a id="1200.37"></a>1200.37
 
@@ -19,7 +19,7 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 ### Features
 
 - Includes [July 2019 Microsoft Security Updates](https://support.microsoft.com/en-us/help/4507457)
-- We aren't shipping an Azure stemcell for 2012 R2 for this release, since there are compatibility issues with Windows Updates for July for Azure only. 
+- We aren't shipping an Azure stemcell for 2012 R2 for this release, since there are compatibility issues with Windows Updates for July for Azure only.
 
 
 ## <a id="1200.35"></a>1200.35
@@ -48,7 +48,7 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 
 ### Bug Fix
 
-- Disabled additional configuration related to NetBios. See the Pivotal Tracker [story](https://www.pivotaltracker.com/story/show/163772249). 
+- Disabled additional configuration related to NetBios. See the Pivotal Tracker [story](https://www.pivotaltracker.com/story/show/163772249).
 
 ## <a id="1200.30"></a>1200.30
 
@@ -93,7 +93,7 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 - Intermittent "Access denied" errors during compilation phase of PAS-W deployments. We have added a fix to potentially resolve them.
 
 ## <a id="1200.24"></a>1200.24
-		
+
 **Release Date**: September 24, 2018
 
 ### Features
@@ -106,12 +106,12 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 The OS is now detected by default, and the `os_version` argument is optional.
 
 ## <a id="1200.23"></a>1200.23
-		
+
 **Release Date**: August 27, 2018
 
 ### Features
 
-- Intended for use with the [August 2018](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898) Microsoft Security Updates. 
+- Intended for use with the [August 2018](https://support.microsoft.com/en-us/help/4343898/windows-81-update-kb4343898) Microsoft Security Updates.
 - Includes an important Microsoft Security Update that provides protections  against a new speculative execution side-channel vulnerability known as L1 Terminal Fault (L1TF). For more information, see [Windows Support](https://support.microsoft.com/en-us/help/4343897/windows-10-update-kb4343897).
 - Compatible with the latest stable OpenSSH version, OpenSSH_for_Windows_v7.7.2.0p1-Beta. This version fixed the issue of OpenSSH logs filling up the disk.
 
@@ -119,10 +119,10 @@ The OS is now detected by default, and the `os_version` argument is optional.
 
 * Disabled use of TLS 1.0 by SSL/TLS server and client.
 * Disabled RC4 and DCOM.
-* Disabled triple-DES cipher to mitigate against Sweet32: Birthday attacks on 64-bit block ciphers in TLS. 
+* Disabled triple-DES cipher to mitigate against Sweet32: Birthday attacks on 64-bit block ciphers in TLS.
 
 ## <a id="1200.22"></a>1200.22
-		
+
 **Release Date**: August 9, 2018
 
 * Intended for use with the [July 2018](https://support.microsoft.com/en-us/help/4338831/july172018kb4338831osbuildpreviewofmonthlyrollup) Microsoft security updates.
@@ -130,26 +130,26 @@ The OS is now detected by default, and the `os_version` argument is optional.
 * **Bug Fix**: Previously, when operators selected the **Encrypt Linux EBS Volumes** checkbox in the IaaS-specific configuration section of the BOSH Director tile, the deployment of PAS for Windows would fail. This release enables operators to select the **Encrypt Linux EBS Volumes** checkbox without the deployment of PAS for Windows failing. However, only Linux VMs will be encrypted, not Windows VMs.
 
 ## <a id="1200.21"></a>1200.21
-		
+
 **Release Date**: July 9, 2018
 
-* Intended for use with [June 2018](https://support.microsoft.com/en-us/help/4103727/windows-10-update-kb4103727) Microsoft security updates. 
+* Intended for use with [June 2018](https://support.microsoft.com/en-us/help/4103727/windows-10-update-kb4103727) Microsoft security updates.
 * Includes [CIS MS-L1 v2.2.1](https://www.cisecurity.org/wp-content/uploads/2017/04/CIS_Microsoft_Windows_Server_2012_R2_Benchmark_v2.2.0.pdf) security hardening for the public IaaSes (Azure, AWS and GCP)
 
 ## <a id="1200.19"></a>1200.19
-		
+
 **Release Date**: June 1, 2018
 
 * **Bug Fix**: Includes a fix to support syncing as stated by Microsoft even when the time is drastically off.
 
 ## <a id="1200.18"></a>1200.18
-		
+
 **Release Date**: May 18, 2018
 
-* Intended for use with [May 2018](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/a82328f9-1f26-e811-a968-000d3a33a34d) Microsoft security updates. 
+* Intended for use with [May 2018](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/a82328f9-1f26-e811-a968-000d3a33a34d) Microsoft security updates.
 
 ## <a id="1200.17"></a>1200.17
-		
+
 **Release Date**: May 8, 2018
 
 * Intended for use with [April 2018](https://support.microsoft.com/en-us/help/4093121/windows-81-update-kb4093121) Microsoft security updates.
@@ -161,17 +161,17 @@ The OS is now detected by default, and the `os_version` argument is optional.
 * Disabled root disk resizing and provided larger root disks by default. For more information, see [Using Windows Stemcells](https://docs.pivotal.io/pivotalcf/2-1/windows2012r2/about-windows-stemcells.html).
 
 ## <a id="1200.16"></a>1200.16
-		
+
 **Release Date**: March 26, 2018
 
-* Increases Windows service start timeout. For more information, see the following Pivotal Tracker Story: [https://www.pivotaltracker.com/story/show/154808080](https://www.pivotaltracker.com/story/show/154808080). 
+* Increases Windows service start timeout. For more information, see the following Pivotal Tracker Story: [https://www.pivotaltracker.com/story/show/154808080](https://www.pivotaltracker.com/story/show/154808080).
 * This stemcell is intended for use with the following:
 	* March 2018 Microsoft security updates.
 	* <a href="https://support.microsoft.com/en-gb/help/4056898/windows-81-update-kb4056898">KB4056898</a>, which includes security improvements that address <a href="https://support.microsoft.com/en-gb/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution">speculative execution side-channel vulnerabilities</a>. See Microsoft's <a href="https://support.microsoft.com/en-us/help/4056898/windows-81-update-kb4056898">Known Issues</a> for this patch.
 * For vSphere, you must install the patch manually because it was not available through Windows Update when the patch was initially shipped. In addition, you must manually enable the patch. See <a href="https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Stemcell-by-Hand">Creating a vSphere Stemcell by Hand</a> for information about installing the patch.
 
 ## <a id="1200.15"></a>1200.15
-		
+
 **Release Date**: February 21, 2018
 
 * This stemcell is intended for use with the following:
@@ -291,7 +291,7 @@ The OS is now detected by default, and the `os_version` argument is optional.
 * Includes .NET Framework 4.6.1.
 * Available for AWS, GCP, and Azure.
 * Includes all Windows Updates and security patches up through April 2017.
-* To be used with <%= vars.first_product_name  %> Runtime for Windows v1.9.3+, v1.10.2+, and v1.11.0.
+* To be used with <%= vars.product_full %> Runtime for Windows v1.9.3+, v1.10.2+, and v1.11.0.
 
 ## <a id="1056.1"></a>1056.1
 
@@ -301,7 +301,7 @@ The OS is now detected by default, and the `os_version` argument is optional.
 * Includes .NET Framework 4.6.1.
 * Available for AWS, GCP, and Azure.
 * Includes all Windows Updates and security patches up through March 2017.
-* To be used with <%= vars.first_product_name  %> Runtime for Windows v1.9.0, v1.9.1, v1.9.2, v1.10.0, v1.10.1.
+* To be used with <%= vars.product_full  %> Runtime for Windows v1.9.0, v1.9.1, v1.9.2, v1.10.0, v1.10.1.
 
 ## <a id="1056.0"></a>1056.0
 
@@ -311,7 +311,7 @@ The OS is now detected by default, and the `os_version` argument is optional.
 * Includes .NET Framework 4.6.1.
 * Available for AWS, GCP, and Azure.
 * Includes all Windows Updates and security patches up through March 2017.
-* To be used with <%= vars.first_product_name  %> Runtime for Windows v1.9.0, v1.9.1, v1.9.2, v1.10.0, v1.10.1.
+* To be used with <%= vars.product_full %> Runtime for Windows v1.9.0, v1.9.1, v1.9.2, v1.10.0, v1.10.1.
 
 ### Known Limitations
 

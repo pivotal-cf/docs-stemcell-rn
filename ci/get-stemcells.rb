@@ -94,7 +94,7 @@ def puts_release_notes(releases, pivnet_api, release_type)
   output += "The following sections describe each #{release_type} stemcell release. \n\n"
   releases.each do |major_version, minor_releases|
     output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
-    output += "This section includes release notes for the #{major_version} line of Linux stemcells used with <%= vars.first_product_name  %>.\n\n"
+    output += "This section includes release notes for the #{major_version} line of Linux stemcells used with <%= vars.product_name  %>.\n\n"
 
     minor_releases.sort_by {|release| release['minor_version']}
 
@@ -135,7 +135,7 @@ owner: BOSH
 modified_date: false
 ---
 
-This topic includes release notes for Linux stemcells used with <%= vars.first_product_name  %>.\n\n
+This topic includes release notes for Linux stemcells used with <%= vars.product_name  %>.\n\n
 HEADER
 
   major_version_releases = sorted_releases_by_major_version(github_releases)
