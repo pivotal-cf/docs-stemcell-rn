@@ -15,6 +15,31 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="456-22"></a> 456.22
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: September 09, 2019
+
+BOSH Agent version: 2.234.2
+USNs:
+
+title: USN-4122-1: Firefox vulnerabilities
+url: https://usn.ubuntu.com/4122-1/
+priorities: medium,low,negligible
+description:
+  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to obtain sensitive information, bypass Content Security Policy (CSP) protections, bypass same-origin restrictions, conduct cross-site scripting (XSS) attacks, cause a denial of service,...
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9812
+
+title: USN-4124-1: Exim vulnerability
+url: https://usn.ubuntu.com/4124-1/
+priorities: high
+description:
+  It was discovered that Exim incorrectly handled certain decoding operations. A remote attacker could possibly use this issue to execute arbitrary commands.
+cves:
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15846
+
 #### <a id="456-16"></a> 456.16
 
 <span class='pivnet'>Available in Pivotal Network</span>
