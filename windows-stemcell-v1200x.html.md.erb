@@ -8,6 +8,17 @@ This topic includes release notes for Windows stemcells used with Pivotal Applic
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="1200.38"></a>1200.38
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday September 2019](https://support.microsoft.com/en-us/help/4512578)
+
+### Bug Fix
+- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH ssh connection into that machine
+    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the ssh session
+    - Not Deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
+
+
 ## <a id="1200.37"></a>1200.37
 
 ### Features
