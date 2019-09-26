@@ -10,6 +10,24 @@ The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="2019.11"></a>2019.11
+
+**Release Date**: September 26, 2019
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday September 2019](https://support.microsoft.com/en-us/help/4512578)
+
+### Features
+- Enabled the Hyper-V Windows feature for enabling Windows 2019 stemcells built using stembuild
+- Improved security hardening of Windows Stemcells by aligning Internet Explorer-based policies with the [Microsoft Baseline Security Standard](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10)
+
+### Bug Fix
+- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH ssh connection into that machine
+    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the ssh session
+    - Not Deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
+
+_Note: There is no stemcell v2019.10._
+
 ## <a id="2019.9"></a>2019.9
 
 **Release Date**: August 27, 2019
