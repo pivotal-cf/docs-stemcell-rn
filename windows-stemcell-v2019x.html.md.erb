@@ -19,14 +19,14 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 
 ### Features
 - Enabled the Hyper-V Windows feature for enabling Windows 2019 stemcells built using stembuild
-- Improved security hardening of Windows Stemcells by aligning Internet Explorer-based policies with the [Microsoft Baseline Security Standard](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10)
+- Improved security hardening of Windows stemcells by aligning Internet Explorer-based policies with the [Microsoft Baseline Security Standard](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10)
 
 ### Bug Fix
-- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH ssh connection into that machine
-    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the ssh session
-    - Not Deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
+- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH SSH connection into that machine:
+    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the SSH session.
+    - Not deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
 
-_Note: There is no stemcell v2019.10._
+<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.10.</p>
 
 ## <a id="2019.9"></a>2019.9
 
