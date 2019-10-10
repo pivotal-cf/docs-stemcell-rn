@@ -108,6 +108,9 @@ def puts_release_notes(releases, pivnet_api, release_type)
       release_date = release['created_at'].strftime("%B %d, %Y")
       output += "**Release Date**: #{release_date}\n\n"
 
+      release['body'].gsub("priorities:", "<br>priorities:")
+      release['body'].gsub("description:", "<br>description:")
+      release['body'].gsub("cves:", "<br>cves:")
       output += release['body']+ "\n\n"
 
       additional_info_path = 'additional_info'
@@ -120,11 +123,6 @@ def puts_release_notes(releases, pivnet_api, release_type)
     end
   end
 
-output.gsub("title:", "<br>title:")
-output.gsub("description:", "<br>description:")
-output.gsub("priorities:", "<br>priorities:")
-output.gsub("cves:", "<br>cves:")
-output.gsub("url:", "<br>url:")
 puts output
 
 end
