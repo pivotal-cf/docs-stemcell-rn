@@ -108,9 +108,6 @@ def puts_release_notes(releases, pivnet_api, release_type)
       release_date = release['created_at'].strftime("%B %d, %Y")
       output += "**Release Date**: #{release_date}\n\n"
 
-      release['body'].gsub("priorities:", "<br>priorities:")
-      release['body'].gsub("description:", "<br>description:")
-      release['body'].gsub("cves:", "<br>cves:")
       output += release['body']+ "\n\n"
 
       additional_info_path = 'additional_info'
@@ -145,6 +142,9 @@ HEADER
   releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
   releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
 
+  output.gsub("priorities:", "<br>priorities:")
+  output.gsub("description:", "<br>description:")
+  output.gsub("cves:", "<br>cves:")
   puts output
 
   puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
