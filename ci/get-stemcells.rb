@@ -120,9 +120,11 @@ def puts_release_notes(releases, pivnet_api, release_type)
     end
   end
 
-output.gsub("priorities:", "<br>priorities:")
+output.gsub("title:", "<br>title:")
 output.gsub("description:", "<br>description:")
+output.gsub("priorities:", "<br>priorities:")
 output.gsub("cves:", "<br>cves:")
+output.gsub("url:", "<br>url:")
 puts output
 
 end
