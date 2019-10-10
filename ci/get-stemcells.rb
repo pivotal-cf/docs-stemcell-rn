@@ -120,6 +120,9 @@ def puts_release_notes(releases, pivnet_api, release_type)
     end
   end
 
+output.gsub("priorities:", "<br>priorities:")
+output.gsub("description:", "<br>description:")
+output.gsub("cves:", "<br>cves:")
 puts output
 
 end
@@ -142,9 +145,6 @@ HEADER
   releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
   releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
 
-  output.gsub("priorities:", "<br>priorities:")
-  output.gsub("description:", "<br>description:")
-  output.gsub("cves:", "<br>cves:")
   puts output
 
   puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
