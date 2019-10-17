@@ -11,14 +11,14 @@ To append new content to the *Stemcell Release Notes* topic:
 
 1. Go to the `ci` / `additional_info` folder.
 1. Create a file formatted like the following:
-  ```
-  _STEMCELL-VERSION.html.md.erb
-  ```
-  For example:
-  ```terminal
-  _97-32.html.md.erb
-  ```
-  The file must begin with an underscore (`_`) and you must replace all `.` with `-` in the filename.
+    ```
+    _STEMCELL-VERSION.html.md.erb
+    ```
+    For example:
+    ```terminal
+    _97-32.html.md.erb
+    ```
+    The file must begin with an underscore (`_`) and you must replace all `.` with `-` in the filename.
   
 1. Enter your release notes in Markdown format. Avoid headings.
 
