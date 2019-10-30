@@ -4,11 +4,27 @@ owner: Windows
 modified_date: false
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.5 and v2.6. 
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.5, v2.6, and v2.7.
 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
+
+## <a id="2019.12"></a>2019.12
+
+**Release Date**: October 10, 2019
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday October 2019](https://support.microsoft.com/en-us/help/4519338)
+
+### Features
+- Added a flag to `stembuild package` to allow user to specify patch version for the stemcell .tgz output
+- Aligned Internet Explorer-based policies in stemcells built using stembuild with Microsoft Baseline Security Standard
+
+### Bug Fix
+- Fixed a bug where `stembuild construct` was failing to execute with a DISM error
+
+<p class="note"><strong>Note</strong>: Do not use `stembuild-2019.11`, it will fail on `stembuild construct`. Please use `stembuild-2019.12` instead.</p>
 
 ## <a id="2019.11"></a>2019.11
 
