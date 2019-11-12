@@ -15,6 +15,37 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="621-12"></a> 621.12
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.268.5
+USNs:
+    
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
+
 #### <a id="621-5"></a> 621.5
 
 **Release Date**: October 29, 2019
@@ -31,6 +62,74 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="456-58"></a> 456.58
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.234.6
+USNs:
+    
+**Title:** USN-4171-1: Apport vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4171-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790
+
+**Title:** USN-4170-1: Whoopsie vulnerability
+<br>**URL:** https://usn.ubuntu.com/4170-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484
+
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4172-1: file vulnerability
+<br>**URL:** https://usn.ubuntu.com/4172-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4169-1: libarchive vulnerability
+<br>**URL:** https://usn.ubuntu.com/4169-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="456-51"></a> 456.51
 
@@ -406,6 +505,74 @@ First release for 456 major line
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="315-133"></a> 315.133
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.215.10
+USNs:
+    
+**Title:** USN-4171-1: Apport vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4171-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790
+
+**Title:** USN-4170-1: Whoopsie vulnerability
+<br>**URL:** https://usn.ubuntu.com/4170-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484
+
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4172-1: file vulnerability
+<br>**URL:** https://usn.ubuntu.com/4172-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4169-1: libarchive vulnerability
+<br>**URL:** https://usn.ubuntu.com/4169-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
+
 #### <a id="315-126"></a> 315.126
 
 <span class='pivnet'>Available in Pivotal Network</span>
@@ -689,6 +856,74 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="250-147"></a> 250.147
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.193.8
+USNs:
+    
+**Title:** USN-4171-1: Apport vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4171-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790
+
+**Title:** USN-4170-1: Whoopsie vulnerability
+<br>**URL:** https://usn.ubuntu.com/4170-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484
+
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4172-1: file vulnerability
+<br>**URL:** https://usn.ubuntu.com/4172-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4169-1: libarchive vulnerability
+<br>**URL:** https://usn.ubuntu.com/4169-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="250-142"></a> 250.142
 
@@ -1166,6 +1401,74 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="170-167"></a> 170.167
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.160.11
+USNs:
+    
+**Title:** USN-4171-1: Apport vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4171-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790
+
+**Title:** USN-4170-1: Whoopsie vulnerability
+<br>**URL:** https://usn.ubuntu.com/4170-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484
+
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4172-1: file vulnerability
+<br>**URL:** https://usn.ubuntu.com/4172-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4169-1: libarchive vulnerability
+<br>**URL:** https://usn.ubuntu.com/4169-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="170-162"></a> 170.162
 
@@ -1721,6 +2024,74 @@ Periodic Ubuntu Xenial stemcell bump (Nov 05, 2018)
 ### <a id="97-line"></a> 97.x 
 
 This section includes release notes for the 97 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="97-192"></a> 97.192
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.117.16
+USNs:
+    
+**Title:** USN-4171-1: Apport vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4171-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790
+
+**Title:** USN-4170-1: Whoopsie vulnerability
+<br>**URL:** https://usn.ubuntu.com/4170-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484
+
+**Title:** USN-4176-1: GNU cpio vulnerability
+<br>**URL:** https://usn.ubuntu.com/4176-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866
+
+**Title:** USN-4172-1: file vulnerability
+<br>**URL:** https://usn.ubuntu.com/4172-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218
+
+**Title:** USN-4174-1: HAproxy vulnerability
+<br>**URL:** https://usn.ubuntu.com/4174-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277
+
+**Title:** USN-4169-1: libarchive vulnerability
+<br>**URL:** https://usn.ubuntu.com/4169-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408
+
+**Title:** USN-4175-1: Nokogiri vulnerability
+<br>**URL:** https://usn.ubuntu.com/4175-1/
+<br>**Priorities:** medium
+<br>**Description:**
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="97-187"></a> 97.187
 
@@ -2439,6 +2810,12 @@ This section includes release notes for the 40 line of Linux stemcells used with
 ### <a id="7-line"></a> 7.x 
 
 This section includes release notes for the 7 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="7"></a> 7
+
+**Release Date**: November 11, 2019
+
+BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
