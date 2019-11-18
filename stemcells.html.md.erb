@@ -15,6 +15,141 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="621-23"></a> 621.23
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.268.6
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
+
 #### <a id="621-12"></a> 621.12
 
 **Release Date**: November 11, 2019
@@ -62,6 +197,143 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="456-69"></a> 456.69
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.234.6
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
 
 #### <a id="456-58"></a> 456.58
 
@@ -507,6 +779,143 @@ First release for 456 major line
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="315-141"></a> 315.141
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.215.10
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
+
 #### <a id="315-133"></a> 315.133
 
 <span class='pivnet'>Available in Pivotal Network</span>
@@ -860,6 +1269,143 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="250-157"></a> 250.157
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.193.8
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
 
 #### <a id="250-147"></a> 250.147
 
@@ -1407,6 +1953,143 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="170-175"></a> 170.175
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.160.11
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
 
 #### <a id="170-167"></a> 170.167
 
@@ -2032,6 +2715,143 @@ Periodic Ubuntu Xenial stemcell bump (Nov 05, 2018)
 ### <a id="97-line"></a> 97.x 
 
 This section includes release notes for the 97 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="97-202"></a> 97.202
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: November 14, 2019
+
+BOSH Agent version: 2.117.16
+USNs:
+    
+**Title:** USN-4186-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4186-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16746
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2215
+
+**Title:** USN-4185-1: Linux kernel vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4185-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12207
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15098
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17052
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17053
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17055
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17666
+
+**Title:** USN-4190-1: libjpeg-turbo vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4190-1/
+<br>**Priorities:** low,medium
+<br>**Description:**
+  It was discovered that libjpeg-turbo incorrectly handled certain BMP images. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-14498)
+It was discovered that libjpeg-turbo incorrectly handled certain JPEG images. An attacker could possibly use this...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19664
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20330
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2201
+
+**Title:** USN-4185-3: Linux kernel vulnerability and regression
+<br>**URL:** https://usn.ubuntu.com/4185-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4185-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. Also, the update introduced a regression that broke KVM guests where extended page tables (EPT) are disabled or not supported. This update...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4186-3: Linux kernel vulnerability
+<br>**URL:** https://usn.ubuntu.com/4186-3/
+<br>**Priorities:** high
+<br>**Description:**
+  USN-4186-1 fixed vulnerabilities in the Linux kernel. It was discovered that the kernel fix for CVE-2019-0155 (i915 missing Blitter Command Streamer check) was incomplete on 64-bit Intel x86 systems. This update addresses the issue.
+We apologize for the inconvenience.
+Original advisory details:
+Stephan van Schaik, Alyssa Milburn, Sebastian...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0155
+
+**Title:** USN-4182-1: Intel Microcode update
+<br>**URL:** https://usn.ubuntu.com/4182-1/
+<br>**Priorities:** high,medium
+<br>**Description:**
+  Stephan van Schaik, Alyssa Milburn, Sebastian Österlund, Pietro Frigo, Kaveh Razavi, Herbert Bos, Cristiano Giuffrida, Giorgi Maisuradze, Moritz Lipp, Michael Schwarz, Daniel Gruss, and Jo Van Bulck discovered that Intel processors using Transactional Synchronization Extensions (TSX) could expose memory contents previously stored in...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11139
+
+**Title:** USN-4191-1: QEMU vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4191-1/
+<br>**Priorities:** low
+<br>**Description:**
+  It was discovered that the LSI SCSI adapter emulator implementation in QEMU did not properly validate executed scripts. A local attacker could use this to cause a denial of service. (CVE-2019-12068)
+Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl paravirtual graphics driver implementation in QEMU contained a...
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13164
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14378
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15890
+
+**Title:** USN-4192-1: ImageMagick vulnerabilities
+<br>**URL:** https://usn.ubuntu.com/4192-1/
+<br>**Priorities:** low,negligible,medium
+<br>**Description:**
+  It was discovered that ImageMagick incorrectly handled certain malformed image files. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking the program.
+<br>**CVEs:**
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12976
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12977
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12979
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13137
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13295
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13297
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13300
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13301
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13304
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13305
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13306
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13308
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13309
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13310
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13311
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13454
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14981
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15139
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15140
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16708
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16709
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
 
 #### <a id="97-192"></a> 97.192
 
