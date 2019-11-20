@@ -3,6 +3,9 @@
 The Linux stemcell release notes topic is an auto-generated file `stemcells.html`. A script
 in the `ci` folder checks for new stemcells and outputs `stemcells.html.md.erb`. Every 15 minutes, "pubtools-docs-helper" pushes a commit if the script finds a new release.
 
+Committing to this repository automatically goes to the production site at
+docs.pivotal.io.
+
 You cannot edit `stemcells.html.md.erb`. If you do, your changes will be overridden.
 
 ## Modify Release Notes
