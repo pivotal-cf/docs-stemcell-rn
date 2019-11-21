@@ -10,6 +10,18 @@ The stemcell is based on Windows Server, version 1803.
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+<p class="note"><strong>Note</strong>: Windows Server v1803 is out of <a href="https://support.microsoft.com/en-us/lifecycle/search?alpha=Windows%20Server%20version%201803%20(Datacenter%20Standard)">mainstream support</a>. 1803.17 is the last release of Pivotal Stemcells for Windows, v1803.x.</p>
+
+## <a id="1803.17"></a>1803.17
+
+**Release Date**: November 22, 2019
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday November 2019](https://support.microsoft.com/en-us/help/4523205).
+
+### Feature
+- Added retry behavior for the file rename operation in the compilation VM to reduce risk of compilation failure due to custom antivirus installations in the base image.
+
 ## <a id="1803.16"></a>1803.16
 
 **Release Date**: October 10, 2019
