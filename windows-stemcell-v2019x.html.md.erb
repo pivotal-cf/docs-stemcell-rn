@@ -4,11 +4,22 @@ owner: Windows
 modified_date: false
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.5, v2.6, and v2.7.
+This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.5, v2.6, v2.7, and v2.8.
 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
+
+## <a id="2019.13"></a>2019.13
+
+**Release Date**: November 22, 2019
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday November 2019](https://support.microsoft.com/en-us/help/4523205)
+
+### Features
+- Added logging and exit code to `stembuild construct` to allow users to see the progress of the command and know whether it has completed preparing the VM for packaging
+- Added retry behavior for the file rename operation in the compilation VM to reduce risk of compilation failure due to custom antivirus installations in the base image
 
 ## <a id="2019.12"></a>2019.12
 
