@@ -10,6 +10,18 @@ The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network.
 
+## <a id="2019.14"></a>2019.14
+
+**Release Date**: December 16, 2019
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday December 2019](https://support.microsoft.com/en-us/help/4530715)
+
+### Features
+- Updated stembuild to always use the latest version of OpenSSH (8.0.0-p1-beta as of this release)
+- Root certificates on machines deployed using stembuild-built stemcells get updated certificates from the Windows Updates Server
+
+
 ## <a id="2019.13"></a>2019.13
 
 **Release Date**: November 22, 2019
