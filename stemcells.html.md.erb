@@ -15,6 +15,83 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="621-51"></a> 621.51
+
+<span class='pivnet'>Available in Pivotal Network</span>
+
+**Release Date**: January 21, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.11
+
+## USNs:
+
+**Title**: USN-4246-1: zlib vulnerabilities
+**URL**: https://usn.ubuntu.com/4246-1/
+**Priorities**: low
+**Description**:
+  It was discovered that zlib incorrectly handled pointer arithmetic. An attacker could use this issue to cause zlib to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that zlib incorrectly handled vectors involving left shifts of negative integers. An attacker could use...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4248-1: GraphicsMagick vulnerabilities
+**URL**: https://usn.ubuntu.com/4248-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that GraphicsMagick incorrectly handled certain image files. An attacker could possibly use this issue to cause a denial of service or other unspecified impact.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16545
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16547
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-16669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17500
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17501
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17502
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17503
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17782
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17783
+
+**Title**: USN-4244-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4244-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Samba did not automatically replicate ACLs set to inherit down a subtree on AD Directory, contrary to expectations. This issue was only addressed in Ubuntu 18.04 LTS, Ubuntu 19.04 and Ubuntu 19.10. (CVE-2019-14902)
+Robert Święcki discovered that Samba incorrectly handled certain character conversions when the log level is...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14902
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14907
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19344
+
+**Title**: USN-4247-1: python-apt vulnerabilities
+**URL**: https://usn.ubuntu.com/4247-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that python-apt would still use MD5 hashes to validate certain downloaded packages. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could potentially be used to install altered packages. (CVE-2019-15795)
+It was discovered that python-apt could install packages from untrusted repositories, contrary...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15795
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15796
+
+**Title**: USN-4249-1: e2fsprogs vulnerability
+**URL**: https://usn.ubuntu.com/4249-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that e2fsprogs incorrectly handled certain ext4 partitions. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5188
+
+**Title**: USN-4245-1: PySAML2 vulnerability
+**URL**: https://usn.ubuntu.com/4245-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that PySAML2 incorrectly handled certain SAML files. An attacker could possibly use this issue to bypass signature verification with arbitrary data.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-5390
+
 #### <a id="621-50"></a> 621.50
 
 <span class='pivnet'>Available in Pivotal Network</span>
