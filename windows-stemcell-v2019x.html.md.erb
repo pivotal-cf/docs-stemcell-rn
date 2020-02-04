@@ -18,7 +18,7 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 - Includes [Microsoft Security Updates Patch Tuesday January 2020](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Jan). This release includes fixes for [CVE-2020-0601](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0601).
 
 ### Known Issues
-- Stembuild construct may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15).
+- `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15).
 
 <p class="note"><strong>Note</strong>: The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
 
@@ -87,7 +87,7 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 ### Features
 - Includes [Microsoft Security Updates Patch Tuesday August 2019](https://support.microsoft.com/en-us/help/4511553)
 - Aligned a set of audit policies on the stemcells based on [Microsoft Baseline Security Standard](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
-- Introduced a new feature in stembuild construct command to validate/invalidate the OS based on stembuild version. 
+- Introduced a new feature in `stembuild construct` command to validate/invalidate the OS based on stembuild version. 
 
 ## <a id="2019.8"></a>2019.8
 
