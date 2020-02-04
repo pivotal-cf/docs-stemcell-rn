@@ -17,6 +17,9 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 ### Security Fix
 - Includes [Microsoft Security Updates Patch Tuesday January 2020](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Jan). This release includes fixes for [CVE-2020-0601](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0601).
 
+### Known Issues
+- It is possible that due to your WinRM configuration, stembuild construct will fail when validating the connection to the VM. This [knowledge base article](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) details the specific symptoms and recommended temporary workaround.
+
 <p class="note"><strong>Note</strong>: The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
 
 
