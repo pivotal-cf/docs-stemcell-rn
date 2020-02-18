@@ -15,17 +15,26 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 **Release Date**: February 14th, 2020
 
 ### Security Fix
-- Includes [Microsoft Security Updates Patch Tuesday February 11th, 2020](https://support.microsoft.com/en-us/help/4532691)
+- Includes the [February 11, 2020—KB4532691](https://support.microsoft.com/en-us/help/4532691) 
+Microsoft Security Updates Patch.
 
 ### Features
-- Supports signed URL capability. If Windows users opt in, the bosh agent will manage artifacts on the blobstore using signed URLs rather than blobstore credentials. See [bosh documentation](https://bosh.io/docs/director-blobstore-signed-urls/) for more information on how to opt into signed URLs.
-- Stembuild checks whether the OS version of the VM is Windows Server 2019, OS build 17763. This is the only OS version that any stembuild v2019.x is compatible with.
+- Supports signed URL capability. 
+If Windows users opt in, the bosh agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials. 
+For more information on how to opt in to signed URLs see 
+[Signed URLs](https://bosh.io/docs/director-blobstore-signed-urls/) in the _Cloud Foundry BOSH_ documentation.
+- `stembuild` now validates the VM OS is Windows Server 2019, OS build 17763, 
+the only OS version stembuild v2019.x is compatible with.
 
 ### Bug Fixes
-- Fixed a bug that required access to the public Windows Update Server to get updated root certificates for stembuild construct to execute successfully. 
-    - Note: if your VM does not have access to the public Windows Update Server, you will need to keep your certificates updated manually.
-- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM. The workaround detailed in [this KB](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) should no longer be necessary for 2019.17.
-
+- Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch 
+updated root certificates from the public Windows Update Server. 
+<p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have 
+  access to the public Windows Update Server.</p>
+- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM. 
+For more information on the original validation bug see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15]
+(https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) 
+in the Pivotal Knowledge Base.  
 
 ## <a id="2019.15"></a>2019.15
 
