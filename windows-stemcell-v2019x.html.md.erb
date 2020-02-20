@@ -15,16 +15,16 @@ To download a stemcell, see [Stemcells for <%= vars.product_name %> (Windows)](h
 **Release Date**: February 14th, 2020
 
 ### Security Fix
-- Includes the [February 11, 2020—KB4532691](https://support.microsoft.com/en-us/help/4532691) 
-Microsoft Security Updates Patch.
+- Includes the February 11, 2020—KB4532691 
+Microsoft Security Updates Patch. See [February 11, 2020—KB4532691](https://support.microsoft.com/en-us/help/4532691).
 
 ### Features
 - Supports signed URL capability. 
-If Windows users opt in, the bosh agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials. 
-For more information on how to opt in to signed URLs see 
+If Windows users opt in, the BOSH agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials. 
+For more information on how to opt in to signed URLs, see 
 [Signed URLs](https://bosh.io/docs/director-blobstore-signed-urls/) in the _Cloud Foundry BOSH_ documentation.
-- `stembuild` now validates the VM OS is Windows Server 2019, OS build 17763, 
-the only OS version stembuild v2019.x is compatible with.
+- `stembuild` validates the VM OS is Windows Server 2019, OS build 17763. This is 
+the only OS version that stembuild v2019.x is compatible with.
 
 ### Bug Fixes
 - Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch 
@@ -32,11 +32,10 @@ updated root certificates from the public Windows Update Server.
 <p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have 
   access to the public Windows Update Server.</p>
 - Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM. 
-For more information on the original validation bug see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15]
-(https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15), 
+For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15]
+(https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) 
 in the Pivotal Knowledge Base.  
 
-<br>
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.16.</p>
 
 ## <a id="2019.15"></a>2019.15
