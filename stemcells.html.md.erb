@@ -15,6 +15,89 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.product_name  %>.
 
+#### <a id="621-59"></a> 621.59
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.12
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
+
 #### <a id="621-57"></a> 621.57
 
 <span class='pivnet'>Available in Pivotal Network</span>
@@ -885,6 +968,139 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="456-100"></a> 456.100
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4287-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4287-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that the Atheros 802.11ac wireless USB device driver in the Linux kernel did not properly validate device...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15099
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18786
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18809
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18885
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19057
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19062
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19063
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19078
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19082
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19332
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7053
+
+**Title**: USN-4286-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4286-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that a race condition existed in the Softmac USB Prism54 device driver in the Linux kernel. A physically...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15217
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15220
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19051
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19066
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
 
 #### <a id="456-98"></a> 456.98
 
@@ -2141,6 +2357,139 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="315-171"></a> 315.171
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4287-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4287-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that the Atheros 802.11ac wireless USB device driver in the Linux kernel did not properly validate device...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15099
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18786
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18809
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18885
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19057
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19062
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19063
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19078
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19082
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19332
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7053
+
+**Title**: USN-4286-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4286-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that a race condition existed in the Softmac USB Prism54 device driver in the Linux kernel. A physically...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15217
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15220
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19051
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19066
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
 
 #### <a id="315-169"></a> 315.169
 
@@ -3442,6 +3791,139 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="250-185"></a> 250.185
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4287-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4287-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that the Atheros 802.11ac wireless USB device driver in the Linux kernel did not properly validate device...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15099
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18786
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18809
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18885
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19057
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19062
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19063
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19078
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19082
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19332
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7053
+
+**Title**: USN-4286-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4286-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that a race condition existed in the Softmac USB Prism54 device driver in the Linux kernel. A physically...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15217
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15220
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19051
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19066
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
 
 #### <a id="250-183"></a> 250.183
 
@@ -4814,6 +5296,139 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="170-205"></a> 170.205
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.160.11
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4287-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4287-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that the Atheros 802.11ac wireless USB device driver in the Linux kernel did not properly validate device...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15099
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18786
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18809
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18885
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19057
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19062
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19063
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19078
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19082
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19332
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7053
+
+**Title**: USN-4286-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4286-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that a race condition existed in the Softmac USB Prism54 device driver in the Linux kernel. A physically...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15217
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15220
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19051
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19066
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
 
 #### <a id="170-203"></a> 170.203
 
@@ -6251,6 +6866,139 @@ Periodic Ubuntu Xenial stemcell bump (Nov 05, 2018)
 ### <a id="97-line"></a> 97.x 
 
 This section includes release notes for the 97 line of Linux stemcells used with <%= vars.product_name  %>.
+
+#### <a id="97-234"></a> 97.234
+
+**Release Date**: March 02, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.117.16
+
+## USNs:
+
+**Title**: USN-4279-2: PHP regression
+**URL**: https://usn.ubuntu.com/4279-2/
+**Priorities**: low
+**Description**:
+  USN-4279-1 fixed vulnerabilities in PHP. The updated packages caused a regression. This update fixes the problem.
+We apologize for the inconvenience.
+Original advisory details:
+It was discovered that PHP incorrectly handled certain scripts. An attacker could possibly use this issue to cause a denial of service. This issue only affected...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9253
+
+**Title**: USN-4290-1: libpam-radius-auth vulnerability
+**URL**: https://usn.ubuntu.com/4290-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that libpam-radius-auth incorrectly handled certain long passwords. A remote attacker could possibly use this issue to cause libpam-radius-auth to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2015-9542
+
+**Title**: USN-4292-1: rsync vulnerabilities
+**URL**: https://usn.ubuntu.com/4292-1/
+**Priorities**: low
+**Description**:
+  It was discovered that rsync incorrectly handled pointer arithmetic in zlib. An attacker could use this issue to cause rsync to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2016-9840, CVE-2016-9841)
+It was discovered that rsync incorrectly handled vectors involving left shifts of negative integers in zlib. An...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9840
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9841
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9842
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9843
+
+**Title**: USN-4289-1: Squid vulnerabilities
+**URL**: https://usn.ubuntu.com/4289-1/
+**Priorities**: medium
+**Description**:
+  Jeriko One discovered that Squid incorrectly handled memory when connected to an FTP server. A remote attacker could possibly use this issue to obtain sensitive information from Squid memory. (CVE-2019-12528)
+Regis Leroy discovered that Squid incorrectly handled certain HTTP requests. A remote attacker could possibly use this issue to access...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12528
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8449
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8450
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8517
+
+**Title**: USN-4287-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4287-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that the Atheros 802.11ac wireless USB device driver in the Linux kernel did not properly validate device...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15099
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16232
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18786
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18809
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18885
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19057
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19062
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19063
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19078
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19082
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19332
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7053
+
+**Title**: USN-4286-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4286-1/
+**Priorities**: medium,negligible,low
+**Description**:
+  It was discovered that the Linux kernel did not properly clear data structures on context switches for certain Intel graphics processors. A local attacker could use this to expose sensitive information. (CVE-2019-14615)
+It was discovered that a race condition existed in the Softmac USB Prism54 device driver in the Linux kernel. A physically...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15217
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15220
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19051
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19066
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19965
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5108
+
+**Title**: USN-4293-1: libarchive vulnerabilities
+**URL**: https://usn.ubuntu.com/4293-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to access sensitive information. (CVE-2019-19221)
+It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly use this issue to cause a crash resulting in a denial of service or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9308
+
+**Title**: USN-4278-2: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4278-2/
+**Priorities**: medium
+**Description**:
+  USN-4278-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.
+Original advisory details:
+Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, conduct...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6798
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6800
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6801
+
+**Title**: USN-4288-1: ppp vulnerability
+**URL**: https://usn.ubuntu.com/4288-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that ppp incorrectly handled certain rhostname values. A remote attacker could use this issue to cause ppp to crash, resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8597
 
 #### <a id="97-232"></a> 97.232
 
