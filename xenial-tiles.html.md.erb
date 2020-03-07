@@ -1,157 +1,93 @@
 ---
-title: Tiles Using Xenial Stemcells in Pivotal Platform
+title: Tiles Using Xenial Stemcells
 Owner: Master Pipeline
 modified_date: false
 ---
 
-This table provides a quick reference of <%= vars.product_name %> product versions that are now using Xenial stemcells. 
+This table provides a quick reference to <%= vars.product_name %> product versions that use Xenial
+stemcells.
 
 ## Products Using Xenial Stemcells
 
-If a product is not yet listed, the product still uses Trusty stemcells.
-
 <table>
-<tbody>
-<tr>
-<th><strong>Product/Component</strong></th>
-<th><strong>Starting Version</strong></th>
-<th><strong>Release Notes Link</strong></th>
-</tr>
+  <tr>
+    <th><strong>Product/Component</strong></th>
+    <th><strong>Starting Version</strong></th>
+    <th><strong>Release Notes Link</strong></th>
+  </tr>
 
-<tr>
-<td>
-<%= vars.product_name %> Operations Manager
-</td>
-<td>
-v2.3
-</td>
-<td>
-<a href="https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/opsmanager-rn.html#xenial">Release Notes</a></td>
-</tr>
+  <tr>
+    <td><%= vars.product_name %></td>
+    <td>v2.3</td>
+    <td><a href="https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/opsmanager-rn.html#xenial">Release Notes</a>
+    </td>
+  </tr>
 
-<tr>
-<td>
-Pivotal Application Service (PAS)
-</td>
-<td>
-v2.3
-</td>
-<td>
-<a href="https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/runtime-rn.html#xenial">Release Notes</a></td>
-</tr>
-  
-<tr>
-<td>
-Pivotal Container Service (PKS)
-</td>
-<td>
-v1.2
-</td>
-<td>
-<a href="https://docs.pivotal.io/pks/1-2/release-notes.html">Release Notes</a></td>
-</tr>
+  <tr>
+    <td><%= vars.app_runtime_full %></td>
+    <td>v2.3</td>
+    <td><a href="https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/runtime-rn.html#xenial">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-<%= vars.product_name %> Event Alerts
-</td>
-<td>
-v1.2.3
-</td>
-<td>
-<a href="https://docs.pivotal.io/event-alerts/1-2/release-notes.html#ver-1-2-3">Release Notes</a></td>
-</tr>
+  <tr>
+    <td>VMware Enterprise PKS</td>
+    <td>v1.2</td>
+    <td><a href="https://docs.pivotal.io/pks/1-2/release-notes.html">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Metrics Forwarder for <%= vars.product_name %>
-</td>
-<td>
-v1.11.3
-</td>
-<td>
-<a href="https://docs.pivotal.io/metrics-forwarder/release-notes.html#111-3">Release Notes</a></td>
-</tr>
+  <tr>
+    <td>App Autoscaler</td>
+    <td>v1.2.3</td>
+    <td><a href="https://docs.pivotal.io/event-alerts/1-2/release-notes.html#ver-1-2-3">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-MySQL for <%= vars.product_name %>
-</td>
-<td>
-v2.4
-</td>
-<td>
-<a href="https://docs.pivotal.io/p-mysql/2-4/release-notes.html">Release Notes</a></td>
-</tr>
+  <tr>
+    <td>Metrics Forwarder</td>
+    <td>v1.11.3</td>
+    <td><a href="https://docs.pivotal.io/metrics-forwarder/release-notes.html#111-3">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-RabbitMQ for <%= vars.product_name %>
-</td>
-<td>
-v1.14.1
-</td>
-<td>
-<a href="https://docs.pivotal.io/rabbitmq-cf/1-14/releases.html">Release Notes</a></td>
-</tr> 
+  <tr>
+    <td>MySQL for VMware Tanzu</td>
+    <td>v2.4</td>
+    <td><a href="https://docs.pivotal.io/p-mysql/2-4/release-notes.html">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Redis for <%= vars.product_name %>
-</td>
-<td>
-v1.14.0
-</td>
-<td>
-<a href="https://docs.pivotal.io/redis/1-14/release.html">Release Notes</a></td>
-</tr> 
+  <tr>
+    <td>VMware Photon Platform</td>
+    <td>v1.14.1</td>
+    <td><a href="https://docs.pivotal.io/rabbitmq-cf/1-14/releases.html">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Scheduler for <%= vars.product_name %>
-</td>
-<td>
-v1.2.3
-</td>
-<td>
-<a href="https://docs.pivotal.io/pcf-scheduler/1-2/release-notes.html#1-2-3">Release Notes</a></td>
-</tr> 
+  <tr>
+    <td>R Buildpack</td>
+    <td>v1.14.0</td>
+    <td><a href="https://docs.pivotal.io/redis/1-14/release.html">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Single Sign-On (SSO) for <%= vars.product_name %>
-</td>
-<td>
-v1.7.1
-</td>
-<td>
-<a href="https://docs.pivotal.io/p-identity/1-7/release-notes.html#171">Release Notes</a></td>
-</td>
-</tr>
+  <tr>
+    <td>Scheduler</td>
+    <td>v1.2.3</td>
+    <td><a href="https://docs.pivotal.io/pcf-scheduler/1-2/release-notes.html#1-2-3">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Spring Cloud Data Flow
-<td>
-v1.2.0
-</td>
-<td>
-<a href="https://docs.pivotal.io/scdf/1-2/release-notes.html#1-2-0">Release Notes</a>
-</td>
-</tr>
+  <tr>
+    <td>Single Sign-On for VMware Tanzu</td>
+    <td>v1.7.1</td>
+    <td><a href="https://docs.pivotal.io/p-identity/1-7/release-notes.html#171">Release Notes</a></td>
+  </tr>
 
-<tr>
-<td>
-Spring Cloud Services for <%= vars.product_name %>
-</td>
-<td>
-v2.0.2
-</td>
-<td>
-<a href="https://docs.pivotal.io/spring-cloud-services/2-0/release-notes.html#2-0-2">Release Notes</a>
-</td>
-</tr>
-</tbody>
+  <tr>
+    <td>Spring Cloud Data Flow</td>
+    <td>v1.2.0</td>
+    <td><a href="https://docs.pivotal.io/scdf/1-2/release-notes.html#1-2-0">Release Notes</a></td>
+  </tr>
+
+  <tr>
+    <td>Spring Cloud Services</td>
+    <td>v2.0.2</td>
+    <td><a href="https://docs.pivotal.io/spring-cloud-services/2-0/release-notes.html#2-0-2">Release Notes</a></td>
+  </tr>
 </table>
 
 ## Xenial Stemcell Support in Ops Manager
@@ -162,12 +98,7 @@ You can import and use Xenial stemcell-based tiles in the following versions of 
 * v2.2.2 and later
 * v2.3.x and later
 
-For more information about the introduction of Xenial stemcells to your <%= vars.product_name %> deployment, 
-see [Updates for Xenial Stemcell Support](https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/breaking-changes.html#xenial) 
+For more information about the introduction of Xenial stemcells to your <%= vars.product_name %>
+deployment, see
+[Updates for Xenial Stemcell Support](https://docs.pivotal.io/pivotalcf/2-3/pcf-release-notes/breaking-changes.html#xenial)
 in the _<%= vars.product_name %> v2.3 Breaking Changes Release Notes_.
-
-
-
-
-
-
