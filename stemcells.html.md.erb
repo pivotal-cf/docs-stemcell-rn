@@ -15,6 +15,73 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-64"></a> 621.64
+
+**Release Date**: March 10, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.12
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4134-3: IBus vulnerability
+**URL**: https://usn.ubuntu.com/4134-3/
+**Priorities**: medium
+**Description**:
+  USN-4134-1 fixed a vulnerability in IBus. The update caused a regression in some Qt applications and the fix was subsequently reverted in USN-4134-2. The regression has since been resolved and so this update fixes the original vulnerability.
+We apologize for the inconvenience.
+Original advisory details:
+Simon McVittie discovered that IBus did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14822
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
+
 #### <a id="621-61"></a> 621.61
 
 <span class='pivnet'>Available in Pivotal Network</span>
@@ -1029,6 +1096,62 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-104"></a> 456.104
+
+**Release Date**: March 11, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
 
 #### <a id="456-103"></a> 456.103
 
@@ -2479,6 +2602,62 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="315-175"></a> 315.175
+
+**Release Date**: March 11, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
 
 #### <a id="315-174"></a> 315.174
 
@@ -3974,6 +4153,62 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="250-190"></a> 250.190
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
 
 #### <a id="250-189"></a> 250.189
 
@@ -5565,6 +5800,62 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="170-211"></a> 170.211
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.160.11
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
 
 #### <a id="170-210"></a> 170.210
 
@@ -7221,6 +7512,73 @@ Periodic Ubuntu Xenial stemcell bump (Nov 05, 2018)
 ### <a id="97-line"></a> 97.x 
 
 This section includes release notes for the 97 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="97-241"></a> 97.241
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.117.16
+
+## USNs:
+
+**Title**: USN-4311-1: BlueZ vulnerabilities
+**URL**: https://usn.ubuntu.com/4311-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that BlueZ incorrectly handled bonding HID and HOGP devices. A local attacker could possibly use this issue to impersonate non-bonded devices. (CVE-2020-0556)
+It was discovered that BlueZ incorrectly handled certain commands. A local attacker could use this issue to cause BlueZ to crash, resulting in a denial of service, or...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-7837
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0556
+
+**Title**: USN-4316-1: GD Graphics Library vulnerabilities
+**URL**: https://usn.ubuntu.com/4316-1/
+**Priorities**: low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled cloning an image. An attacker could possibly use this issue to cause GD Graphics Library to crash, resulting in a denial of service. (CVE-2018-14553)
+It was discovered that GD Graphics Library incorrectly handled loading images from X bitmap format files. An attacker could possibly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-14553
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11038
+
+**Title**: USN-4134-3: IBus vulnerability
+**URL**: https://usn.ubuntu.com/4134-3/
+**Priorities**: medium
+**Description**:
+  USN-4134-1 fixed a vulnerability in IBus. The update caused a regression in some Qt applications and the fix was subsequently reverted in USN-4134-2. The regression has since been resolved and so this update fixes the original vulnerability.
+We apologize for the inconvenience.
+Original advisory details:
+Simon McVittie discovered that IBus did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14822
+
+**Title**: USN-4314-1: pam-krb5 vulnerability
+**URL**: https://usn.ubuntu.com/4314-1/
+**Priorities**: medium
+**Description**:
+  Russ Allbery discovered that pam-krb5 incorrectly handled some responses. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10595
+
+**Title**: USN-4317-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4317-1/
+**Priorities**: high
+**Description**:
+  Two use-after-free bugs were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could exploit these to cause a denial of service or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6819
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6820
+
+**Title**: USN-4315-1: Apport vulnerabilities
+**URL**: https://usn.ubuntu.com/4315-1/
+**Priorities**: high,medium
+**Description**:
+  Maximilien Bourgeteau discovered that the Apport lock file was created with insecure permissions. This could allow a local attacker to escalate their privileges via a symlink attack. (CVE-2020-8831)
+Maximilien Bourgeteau discovered a race condition in Apport when setting crash report permissions. This could allow a local attacker to...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8831
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8833
 
 #### <a id="97-239"></a> 97.239
 
