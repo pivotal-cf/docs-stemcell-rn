@@ -10364,7 +10364,7 @@ We are currently investigating `unresponsive agent` issues when using the Google
 For Ops Manager v2.2 to v2.7, you can enable TLS for your internal blobstore. Make sure you configured all tiles with a stemcell v3586 or later before enabling TLS for your internal blobstore.
 
 For more information, see [TLS for Internal Blobstore Supported
-](https://docs.pivotal.io/pivotalcf/2-2/pcf-release-notes/opsmanager-rn.html#tls-blobstore) in the Ops Manager release notes.
+](https://docs.pivotal.io/pivotalcf/2-2/pcf-release-notes/opsmanager-rn.html#tls-blobstore) in _Ops Manager v2.2 Release Notes_.
 
 #### <a id="3586-8"></a> 3586.8
 
@@ -11825,20 +11825,19 @@ This section includes release notes for the 3233 line of Linux stemcells used wi
 #### <a id='critical'></a> USN-3522-2 Addresses Meltdown Vulnerabilities
 
 Meltdown exploits critical vulnerabilities in modern processors.
-For more information about Meltdown, see the [Meltdown and Spectre Attacks](https://www.cloudfoundry.org/blog/meltdown-spectre-attacks/) blog post.
+For more information about Meltdown, see [Meltdown and Spectre Attacks](https://www.cloudfoundry.org/blog/meltdown-spectre-attacks/) on the Cloud Foundry blog.
 [USN-3522-2](https://www.cloudfoundry.org/usn-3522-2/) addresses the critical vulnerability in Ubuntu associated with Meltdown.
 </br>
 </br>
 This update may include degradations to performance if your VM's CPU and memory usage are currently at near-capacity levels.
-Prior to upgrading to this stemcell, monitor your <%= vars.product_name %> VM's current CPU and memory usage and scale those components if necessary. If any of your VMs are currently operating at 60% or above, Pivotal recommends scaling that VM.
-For more information about the performance impact of Meltdown-related stemcell patches on <%= vars.product_name %> components and guidance on scaling, see this [KB article](https://community.pivotal.io/s/article/Performance-Impact-of-Cloud-Foundry-Apps-and-Services-Because-of-Spectre-and-Meltdown).
+Prior to upgrading to this stemcell, monitor your <%= vars.product_name %> VM's current CPU and memory usage and scale those components if necessary. If any of your VMs are currently operating at 60% or above, VMware recommends scaling that VM.
+For more information about the performance impact of Meltdown-related stemcell patches on <%= vars.product_name %> components and guidance on scaling, see [Performance Impact of Cloud Foundry Apps and Services Because of Spectre and Meltdown](https://community.pivotal.io/s/article/Performance-Impact-of-Cloud-Foundry-Apps-and-Services-Because-of-Spectre-and-Meltdown) in the Knowledge Base.
 </br>
 </br>
-For more information about monitoring and scaling <%= vars.product_name %>, see the [Monitoring <%= vars.product_name %> VMs from Ops Manager](http://docs.pivotal.io/pivotalcf/2-0/customizing/monitoring.html),
-[Key Capacity Scaling Indicators](https://docs.pivotal.io/pivotalcf/monitoring/key-cap-scaling.html),
-and [Scaling PAS](https://docs.pivotal.io/pivotalcf/opsguide/scaling-ert-components.html) topics. Performance degradation is likely to vary by workload type, IaaS, and other factors.
-Pivotal recommends testing your deployment thoroughly after upgrading to this stemcell.
-
+For more information about monitoring and scaling <%= vars.product_name %>, see [Monitoring <%= vars.product_name %> VMs](https://docs.pivotal.io/platform/customizing/monitoring.html),
+[Key Capacity Scaling Indicators](https://docs.pivotal.io/platform/monitoring/key-cap-scaling.html),
+and [Scaling <%= vars.app_runtime_abbr %>](https://docs.pivotal.io/platform/application-service/operating/scaling-ert-components.html). Performance degradation is likely to vary by workload type, IaaS, and other factors.
+VMware recommends testing your deployment thoroughly after upgrading to this stemcell.
 
 ### <a id="3232-line"></a> 3232.x 
 
