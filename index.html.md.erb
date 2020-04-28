@@ -8,9 +8,9 @@ This topic provides an overview of the Stemcell versions used by
 [<%= vars.product_network %>](https://network.pivotal.io/).
 
 A stemcell is a versioned OS image that BOSH uses to create VMs for the BOSH Director,
-<%= vars.app_runtime_full %>, and other Service tiles such as MySQL for VMware Tanzu. For more
-information, see <a href="https://bosh.cloudfoundry.org/docs/stemcell.html">What is a Stemcell?</a>
-in the BOSH documentation.</p>
+<%= vars.app_runtime_full %> (<%= vars.app_runtime_abbr %>), and other Service tiles such as MySQL for VMware Tanzu.
+For more information, see [What is a Stemcell?](https://bosh.cloudfoundry.org/docs/stemcell.html)
+in the BOSH documentation.
 
 Stemcells are available for download on <%= vars.product_network %>. Once downloaded, you can upload them to
 your deployment using the **Stemcell** configuration pane of a given tile or by navigating to the
@@ -19,7 +19,7 @@ your deployment using the **Stemcell** configuration pane of a given tile or by 
 Before you upgrade <%= vars.platform_name %>, always verify that all installed tiles are compatible
 with the version of <%= vars.platform_name %> that you are deploying and its supported stemcells.
 For more information about <%= vars.platform_name %> and stemcell compatibility, see
-<a href="https://docs.pivotal.io/platform/upgrading/checklist.html#compatibility">Review Service Tile Compatibility</a>
+[Review Service Tile Compatibility](https://docs.pivotal.io/platform/upgrading/checklist.html#compatibility)
 in the _Upgrade Preparation Checklist_.
 
 To discover which stemcell version is used by which tile version, review the release notes or the
