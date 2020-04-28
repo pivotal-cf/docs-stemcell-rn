@@ -103,7 +103,7 @@ def puts_release_notes(releases, pivnet_api, release_type)
 
       output += "#### <a id=\"#{version.sub('.', '-')}\"></a> #{version}\n\n"
 
-      output += "<span class='pivnet'>Available in Pivotal Network</span>\n\n" if pivnet_releases.include?(version)
+      output += "<span class='pivnet'>Available in VMware Tanzu Network</span>\n\n" if pivnet_releases.include?(version)
 
       release_date = release['created_at'].strftime("%B %d, %Y")
       output += "**Release Date**: #{release_date}\n\n"
