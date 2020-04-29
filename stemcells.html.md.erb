@@ -11830,11 +11830,11 @@ For more information about Meltdown, see [Meltdown and Spectre Attacks](https://
 </br>
 </br>
 This update may include degradations to performance if your VM's CPU and memory usage are currently at near-capacity levels.
-Prior to upgrading to this stemcell, monitor your <%= vars.product_name %> VM's current CPU and memory usage and scale those components if necessary. If any of your VMs are currently operating at 60% or above, VMware recommends scaling that VM.
-For more information about the performance impact of Meltdown-related stemcell patches on <%= vars.product_name %> components and guidance on scaling, see [Performance Impact of Cloud Foundry Apps and Services Because of Spectre and Meltdown](https://community.pivotal.io/s/article/Performance-Impact-of-Cloud-Foundry-Apps-and-Services-Because-of-Spectre-and-Meltdown) in the Knowledge Base.
+Prior to upgrading to this stemcell, monitor your <%= vars.platform_name %> VM's current CPU and memory usage and scale those components if necessary. If any of your VMs are currently operating at 60% or above, VMware recommends scaling that VM.
+For more information about the performance impact of Meltdown-related stemcell patches on <%= vars.platform_name %> components and guidance on scaling, see [Performance Impact of Cloud Foundry Apps and Services Because of Spectre and Meltdown](https://community.pivotal.io/s/article/Performance-Impact-of-Cloud-Foundry-Apps-and-Services-Because-of-Spectre-and-Meltdown) in the Knowledge Base.
 </br>
 </br>
-For more information about monitoring and scaling <%= vars.product_name %>, see [Monitoring <%= vars.product_name %> VMs](https://docs.pivotal.io/platform/customizing/monitoring.html),
+For more information about monitoring and scaling <%= vars.platform_name %>, see [Monitoring <%= vars.platform_name %> VMs](https://docs.pivotal.io/platform/customizing/monitoring.html),
 [Key Capacity Scaling Indicators](https://docs.pivotal.io/platform/monitoring/key-cap-scaling.html),
 and [Scaling <%= vars.app_runtime_abbr %>](https://docs.pivotal.io/platform/application-service/operating/scaling-ert-components.html). Performance degradation is likely to vary by workload type, IaaS, and other factors.
 VMware recommends testing your deployment thoroughly after upgrading to this stemcell.
