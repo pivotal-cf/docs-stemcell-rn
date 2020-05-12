@@ -15,6 +15,116 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-74"></a> 621.74
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 30, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4339-1: OpenEXR vulnerabilities
+**URL**: https://usn.ubuntu.com/4339-1/
+**Priorities**: low,medium
+**Description**:
+  Brandon Perry discovered that OpenEXR incorrectly handled certain malformed EXR image files. If a user were tricked into opening a crafted EXR image file, a remote attacker could cause a denial of service, or possibly execute arbitrary code. This issue only applied to Ubuntu 20.04 LTS. (CVE-2017-9111, CVE-2017-9113, CVE-2017-9115)
+Tan Jie...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9111
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18444
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11758
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11761
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11764
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11765
+
+**Title**: USN-4348-1: Mailman vulnerabilities
+**URL**: https://usn.ubuntu.com/4348-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this to issue execute arbitrary scripts or HTML. (CVE-2018-0618)
+It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to display arbitrary text on a web page. (CVE-2018-13796)
+It was discovered...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-0618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137
+
+**Title**: USN-4349-1: EDK II vulnerabilities
+**URL**: https://usn.ubuntu.com/4349-1/
+**Priorities**: medium,low
+**Description**:
+  A buffer overflow was discovered in the network stack. An unprivileged user could potentially enable escalation of privilege and/or denial of service. This issue was already fixed in a previous release for 18.04 LTS and 19.10. (CVE-2018-12178)
+A buffer overflow was discovered in BlockIo service. An unauthenticated user could potentially enable...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12178
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12181
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14558
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14559
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14575
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14586
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14587
+
+**Title**: USN-4346-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4346-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the QLogic Fibre Channel driver in the Linux kernel did not properly check for error, leading to a NULL pointer dereference. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16233)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did not properly check for...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16233
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4345-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4345-1/
+**Priorities**: low,medium,high
+**Description**:
+  Al Viro discovered that the Linux kernel for s390x systems did not properly perform page table upgrades for kernel sections that use secondary address mode. A local attacker could use this to cause a denial of service (system crash) or execute arbitrary code. (CVE-2020-11884)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11884
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4340-1: CUPS vulnerabilities
+**URL**: https://usn.ubuntu.com/4340-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that CUPS incorrectly handled certain language values. A local attacker could possibly use this issue to cause CUPS to crash, leading to a denial of service, or possibly obtain sensitive information. This issue only applied to Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 19.10. (CVE-2019-2228)
+Stephan Zeisberg discovered that...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3898
+
+**Title**: USN-4341-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4341-1/
+**Priorities**: medium
+**Description**:
+  Andrei Popa discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10700)
+It was discovered that Samba incorrectly handled certain LDAP...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10700
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10704
+
 #### <a id="621-71"></a> 621.71
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -1210,6 +1320,116 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-112"></a> 456.112
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 11, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4339-1: OpenEXR vulnerabilities
+**URL**: https://usn.ubuntu.com/4339-1/
+**Priorities**: low,medium
+**Description**:
+  Brandon Perry discovered that OpenEXR incorrectly handled certain malformed EXR image files. If a user were tricked into opening a crafted EXR image file, a remote attacker could cause a denial of service, or possibly execute arbitrary code. This issue only applied to Ubuntu 20.04 LTS. (CVE-2017-9111, CVE-2017-9113, CVE-2017-9115)
+Tan Jie...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9111
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18444
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11758
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11761
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11764
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11765
+
+**Title**: USN-4348-1: Mailman vulnerabilities
+**URL**: https://usn.ubuntu.com/4348-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this to issue execute arbitrary scripts or HTML. (CVE-2018-0618)
+It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to display arbitrary text on a web page. (CVE-2018-13796)
+It was discovered...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-0618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137
+
+**Title**: USN-4349-1: EDK II vulnerabilities
+**URL**: https://usn.ubuntu.com/4349-1/
+**Priorities**: medium,low
+**Description**:
+  A buffer overflow was discovered in the network stack. An unprivileged user could potentially enable escalation of privilege and/or denial of service. This issue was already fixed in a previous release for 18.04 LTS and 19.10. (CVE-2018-12178)
+A buffer overflow was discovered in BlockIo service. An unauthenticated user could potentially enable...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12178
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12181
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14558
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14559
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14575
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14586
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14587
+
+**Title**: USN-4346-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4346-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the QLogic Fibre Channel driver in the Linux kernel did not properly check for error, leading to a NULL pointer dereference. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16233)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did not properly check for...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16233
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4345-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4345-1/
+**Priorities**: low,medium,high
+**Description**:
+  Al Viro discovered that the Linux kernel for s390x systems did not properly perform page table upgrades for kernel sections that use secondary address mode. A local attacker could use this to cause a denial of service (system crash) or execute arbitrary code. (CVE-2020-11884)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11884
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4340-1: CUPS vulnerabilities
+**URL**: https://usn.ubuntu.com/4340-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that CUPS incorrectly handled certain language values. A local attacker could possibly use this issue to cause CUPS to crash, leading to a denial of service, or possibly obtain sensitive information. This issue only applied to Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 19.10. (CVE-2019-2228)
+Stephan Zeisberg discovered that...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3898
+
+**Title**: USN-4341-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4341-1/
+**Priorities**: medium
+**Description**:
+  Andrei Popa discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10700)
+It was discovered that Samba incorrectly handled certain LDAP...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10700
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10704
 
 #### <a id="456-110"></a> 456.110
 
@@ -2830,6 +3050,116 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="315-183"></a> 315.183
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 11, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4339-1: OpenEXR vulnerabilities
+**URL**: https://usn.ubuntu.com/4339-1/
+**Priorities**: low,medium
+**Description**:
+  Brandon Perry discovered that OpenEXR incorrectly handled certain malformed EXR image files. If a user were tricked into opening a crafted EXR image file, a remote attacker could cause a denial of service, or possibly execute arbitrary code. This issue only applied to Ubuntu 20.04 LTS. (CVE-2017-9111, CVE-2017-9113, CVE-2017-9115)
+Tan Jie...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9111
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18444
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11758
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11761
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11764
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11765
+
+**Title**: USN-4348-1: Mailman vulnerabilities
+**URL**: https://usn.ubuntu.com/4348-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this to issue execute arbitrary scripts or HTML. (CVE-2018-0618)
+It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to display arbitrary text on a web page. (CVE-2018-13796)
+It was discovered...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-0618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137
+
+**Title**: USN-4349-1: EDK II vulnerabilities
+**URL**: https://usn.ubuntu.com/4349-1/
+**Priorities**: medium,low
+**Description**:
+  A buffer overflow was discovered in the network stack. An unprivileged user could potentially enable escalation of privilege and/or denial of service. This issue was already fixed in a previous release for 18.04 LTS and 19.10. (CVE-2018-12178)
+A buffer overflow was discovered in BlockIo service. An unauthenticated user could potentially enable...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12178
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12181
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14558
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14559
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14575
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14586
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14587
+
+**Title**: USN-4346-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4346-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the QLogic Fibre Channel driver in the Linux kernel did not properly check for error, leading to a NULL pointer dereference. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16233)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did not properly check for...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16233
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4345-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4345-1/
+**Priorities**: low,medium,high
+**Description**:
+  Al Viro discovered that the Linux kernel for s390x systems did not properly perform page table upgrades for kernel sections that use secondary address mode. A local attacker could use this to cause a denial of service (system crash) or execute arbitrary code. (CVE-2020-11884)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11884
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4340-1: CUPS vulnerabilities
+**URL**: https://usn.ubuntu.com/4340-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that CUPS incorrectly handled certain language values. A local attacker could possibly use this issue to cause CUPS to crash, leading to a denial of service, or possibly obtain sensitive information. This issue only applied to Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 19.10. (CVE-2019-2228)
+Stephan Zeisberg discovered that...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3898
+
+**Title**: USN-4341-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4341-1/
+**Priorities**: medium
+**Description**:
+  Andrei Popa discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10700)
+It was discovered that Samba incorrectly handled certain LDAP...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10700
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10704
 
 #### <a id="315-181"></a> 315.181
 
@@ -4541,6 +4871,116 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="250-198"></a> 250.198
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4339-1: OpenEXR vulnerabilities
+**URL**: https://usn.ubuntu.com/4339-1/
+**Priorities**: low,medium
+**Description**:
+  Brandon Perry discovered that OpenEXR incorrectly handled certain malformed EXR image files. If a user were tricked into opening a crafted EXR image file, a remote attacker could cause a denial of service, or possibly execute arbitrary code. This issue only applied to Ubuntu 20.04 LTS. (CVE-2017-9111, CVE-2017-9113, CVE-2017-9115)
+Tan Jie...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9111
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18444
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11758
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11761
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11764
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11765
+
+**Title**: USN-4348-1: Mailman vulnerabilities
+**URL**: https://usn.ubuntu.com/4348-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this to issue execute arbitrary scripts or HTML. (CVE-2018-0618)
+It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to display arbitrary text on a web page. (CVE-2018-13796)
+It was discovered...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-0618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137
+
+**Title**: USN-4349-1: EDK II vulnerabilities
+**URL**: https://usn.ubuntu.com/4349-1/
+**Priorities**: medium,low
+**Description**:
+  A buffer overflow was discovered in the network stack. An unprivileged user could potentially enable escalation of privilege and/or denial of service. This issue was already fixed in a previous release for 18.04 LTS and 19.10. (CVE-2018-12178)
+A buffer overflow was discovered in BlockIo service. An unauthenticated user could potentially enable...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12178
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12181
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14558
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14559
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14575
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14586
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14587
+
+**Title**: USN-4346-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4346-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the QLogic Fibre Channel driver in the Linux kernel did not properly check for error, leading to a NULL pointer dereference. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16233)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did not properly check for...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16233
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4345-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4345-1/
+**Priorities**: low,medium,high
+**Description**:
+  Al Viro discovered that the Linux kernel for s390x systems did not properly perform page table upgrades for kernel sections that use secondary address mode. A local attacker could use this to cause a denial of service (system crash) or execute arbitrary code. (CVE-2020-11884)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11884
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4340-1: CUPS vulnerabilities
+**URL**: https://usn.ubuntu.com/4340-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that CUPS incorrectly handled certain language values. A local attacker could possibly use this issue to cause CUPS to crash, leading to a denial of service, or possibly obtain sensitive information. This issue only applied to Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 19.10. (CVE-2019-2228)
+Stephan Zeisberg discovered that...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3898
+
+**Title**: USN-4341-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4341-1/
+**Priorities**: medium
+**Description**:
+  Andrei Popa discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10700)
+It was discovered that Samba incorrectly handled certain LDAP...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10700
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10704
 
 #### <a id="250-196"></a> 250.196
 
@@ -6313,6 +6753,116 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="170-219"></a> 170.219
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.160.11
+
+## USNs:
+
+**Title**: USN-4339-1: OpenEXR vulnerabilities
+**URL**: https://usn.ubuntu.com/4339-1/
+**Priorities**: low,medium
+**Description**:
+  Brandon Perry discovered that OpenEXR incorrectly handled certain malformed EXR image files. If a user were tricked into opening a crafted EXR image file, a remote attacker could cause a denial of service, or possibly execute arbitrary code. This issue only applied to Ubuntu 20.04 LTS. (CVE-2017-9111, CVE-2017-9113, CVE-2017-9115)
+Tan Jie...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9111
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18444
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11758
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11761
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11764
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11765
+
+**Title**: USN-4348-1: Mailman vulnerabilities
+**URL**: https://usn.ubuntu.com/4348-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this to issue execute arbitrary scripts or HTML. (CVE-2018-0618)
+It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to display arbitrary text on a web page. (CVE-2018-13796)
+It was discovered...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-0618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13796
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12137
+
+**Title**: USN-4349-1: EDK II vulnerabilities
+**URL**: https://usn.ubuntu.com/4349-1/
+**Priorities**: medium,low
+**Description**:
+  A buffer overflow was discovered in the network stack. An unprivileged user could potentially enable escalation of privilege and/or denial of service. This issue was already fixed in a previous release for 18.04 LTS and 19.10. (CVE-2018-12178)
+A buffer overflow was discovered in BlockIo service. An unauthenticated user could potentially enable...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12178
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-12181
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14558
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14559
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14575
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14586
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14587
+
+**Title**: USN-4346-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4346-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the QLogic Fibre Channel driver in the Linux kernel did not properly check for error, leading to a NULL pointer dereference. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16233)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did not properly check for...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16233
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4345-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4345-1/
+**Priorities**: low,medium,high
+**Description**:
+  Al Viro discovered that the Linux kernel for s390x systems did not properly perform page table upgrades for kernel sections that use secondary address mode. A local attacker could use this to cause a denial of service (system crash) or execute arbitrary code. (CVE-2020-11884)
+It was discovered that the Intel Wi-Fi driver in the Linux kernel did...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16234
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11884
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9383
+
+**Title**: USN-4340-1: CUPS vulnerabilities
+**URL**: https://usn.ubuntu.com/4340-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that CUPS incorrectly handled certain language values. A local attacker could possibly use this issue to cause CUPS to crash, leading to a denial of service, or possibly obtain sensitive information. This issue only applied to Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 19.10. (CVE-2019-2228)
+Stephan Zeisberg discovered that...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3898
+
+**Title**: USN-4341-1: Samba vulnerabilities
+**URL**: https://usn.ubuntu.com/4341-1/
+**Priorities**: medium
+**Description**:
+  Andrei Popa discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10700)
+It was discovered that Samba incorrectly handled certain LDAP...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10700
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10704
 
 #### <a id="170-217"></a> 170.217
 
