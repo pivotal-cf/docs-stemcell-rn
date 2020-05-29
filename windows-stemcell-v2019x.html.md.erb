@@ -18,11 +18,8 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
 - Includes [Microsoft Security Updates Patch Tuesday May 12th, 2020](https://support.microsoft.com/en-us/help/4551853)
 
 ### Features
-- Modified `stembuild construct` to stream logs after the target VM reboots. Stembuild now reconnects to the target VM using WinRM to stream logs after the mid-command reboot, showing you what's occurring on your target VM.
-- Upgraded BOSH agent version to 2.317, adding the ability to create a `vcap` user on a Windows VM.
-
-
-<p class="note"><strong>Note</strong>: Stembuild is now a GA tool.</p>
+- `stembuild construct` streams logs after the target VM reboots. Stembuild reconnects to the target VM using WinRM to stream logs after the VM reboot, showing you what is occurring on your target VM.
+- The BOSH Agent version is upgraded to v2.317. This version of the BOSH Agent can create a `vcap` user on a Windows VM.
 
 ## <a id="2019.21"></a>2019.21
 
