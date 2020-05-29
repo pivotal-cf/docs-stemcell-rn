@@ -10,6 +10,21 @@ The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on VMware Tanzu Network.
 
+## <a id="2019.22"></a>2019.22
+
+**Release Date**: May 21st, 2020
+
+### Security Fix
+- Includes [Microsoft Security Updates Patch Tuesday May 12th, 2020](https://support.microsoft.com/en-us/help/4551853)
+
+### Features
+- `stembuild construct` streams logs after the target VM reboots. Stembuild reconnects to the target VM using WinRM to stream logs after the VM reboot, showing you what is occurring on your target VM.
+- The BOSH Agent version is upgraded to v2.317. This version of the BOSH Agent can create a `vcap` user on a Windows VM.
+
+## <a id="2019.21"></a>2019.21
+
+<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.21.</p>
+
 ## <a id="2019.20"></a>2019.20
 
 **Release Date**: April 24th, 2020
@@ -61,6 +76,8 @@ updated root certificates from the public Windows Update Server.
 For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15]
 (https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) 
 in the Knowledge Base.  
+
+## <a id="2019.16"></a>2019.16
 
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.16.</p>
 
