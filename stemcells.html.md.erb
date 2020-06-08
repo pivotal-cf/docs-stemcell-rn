@@ -15,6 +15,149 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-75"></a> 621.75
+
+**Release Date**: April 30, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4358-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4358-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain tags. An attacker could possibly use this issue to cause a denial of service. (CVE-2018-20030)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash. (CVE-2020-12767)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20030
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12767
+
+**Title**: USN-4351-1: Linux firmware vulnerability
+**URL**: https://usn.ubuntu.com/4351-1/
+**Priorities**: medium
+**Description**:
+  Eli Biham and Lior Neumann discovered that certain Bluetooth devices incorrectly validated key exchange parameters. An attacker could possibly use this issue to obtain sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-5383
+
+**Title**: USN-4364-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4364-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the ADIS16400 IIO IMU Driver for the Linux kernel did not properly deallocate memory in certain error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19060)
+It was discovered that the vhost net driver in the Linux kernel contained a stack buffer overflow. A local...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19060
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11494
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11565
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+
+**Title**: USN-4354-1: Mailman vulnerability
+**URL**: https://usn.ubuntu.com/4354-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to inject arbitrary content in the login page.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12108
+
+**Title**: USN-4352-1: OpenLDAP vulnerability
+**URL**: https://usn.ubuntu.com/4352-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenLDAP incorrectly handled certain queries. A remote attacker could possibly use this issue to cause OpenLDAP to consume resources, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12243
+
+**Title**: USN-4353-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4353-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, bypass security restrictions, spoof the URL bar, or execute arbitrary code. (CVE-2020-6831, CVE-2020-12387, CVE-2020-12390, CVE-2020-12391, CVE-2020-12394,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12387
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12390
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12392
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12394
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12395
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12396
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6831
+
+**Title**: USN-4360-1: json-c vulnerability
+**URL**: https://usn.ubuntu.com/4360-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that json-c incorrectly handled certain JSON files. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12762
+
+**Title**: USN-4350-1: MySQL vulnerabilities
+**URL**: https://usn.ubuntu.com/4350-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues.
+MySQL has been updated to 8.0.80 in Ubuntu 19.10 and Ubuntu 20.04 LTS. Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.30.
+In addition to security fixes, the updated packages contain bug fixes,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2765
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2780
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2804
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2812
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2892
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2893
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2895
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2896
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2897
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2898
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2901
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2903
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2904
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2921
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2922
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2923
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2924
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2925
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2926
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2928
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2930
+
+**Title**: USN-4359-1: APT vulnerability
+**URL**: https://usn.ubuntu.com/4359-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that APT incorrectly handled certain filenames during package installation. If an attacker could provide a specially crafted package to be installed by the system administrator, this could cause APT to crash.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3810
+
+**Title**: USN-4365-1: Bind vulnerabilities
+**URL**: https://usn.ubuntu.com/4365-1/
+**Priorities**: medium
+**Description**:
+  Lior Shafir, Yehuda Afek, and Anat Bremler-Barr discovered that Bind incorrectly limited certain fetches. A remote attacker could possibly use this issue to cause Bind to consume resources, leading to a denial of service, or possibly use Bind to perform a reflection attack. (CVE-2020-8616)
+Tobias Klein discovered that Bind incorrectly handled...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8616
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8617
+
+**Title**: LSN-0066-1: Kernel Live Patch Security Notice
+**URL**: https://usn.ubuntu.com/lsn/0066-1/
+**Priorities**: medium
+**Description**:
+  Several security issues were fixed in the Linux kernel.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8647
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8649
+
 #### <a id="621-74"></a> 621.74
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -3051,6 +3194,149 @@ First release for 456 major line
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="315-184"></a> 315.184
+
+**Release Date**: March 11, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4358-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4358-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain tags. An attacker could possibly use this issue to cause a denial of service. (CVE-2018-20030)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash. (CVE-2020-12767)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20030
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12767
+
+**Title**: USN-4351-1: Linux firmware vulnerability
+**URL**: https://usn.ubuntu.com/4351-1/
+**Priorities**: medium
+**Description**:
+  Eli Biham and Lior Neumann discovered that certain Bluetooth devices incorrectly validated key exchange parameters. An attacker could possibly use this issue to obtain sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-5383
+
+**Title**: USN-4364-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4364-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the ADIS16400 IIO IMU Driver for the Linux kernel did not properly deallocate memory in certain error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19060)
+It was discovered that the vhost net driver in the Linux kernel contained a stack buffer overflow. A local...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19060
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11494
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11565
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+
+**Title**: USN-4354-1: Mailman vulnerability
+**URL**: https://usn.ubuntu.com/4354-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to inject arbitrary content in the login page.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12108
+
+**Title**: USN-4352-1: OpenLDAP vulnerability
+**URL**: https://usn.ubuntu.com/4352-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenLDAP incorrectly handled certain queries. A remote attacker could possibly use this issue to cause OpenLDAP to consume resources, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12243
+
+**Title**: USN-4353-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4353-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, bypass security restrictions, spoof the URL bar, or execute arbitrary code. (CVE-2020-6831, CVE-2020-12387, CVE-2020-12390, CVE-2020-12391, CVE-2020-12394,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12387
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12390
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12392
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12394
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12395
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12396
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6831
+
+**Title**: USN-4360-1: json-c vulnerability
+**URL**: https://usn.ubuntu.com/4360-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that json-c incorrectly handled certain JSON files. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12762
+
+**Title**: USN-4350-1: MySQL vulnerabilities
+**URL**: https://usn.ubuntu.com/4350-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues.
+MySQL has been updated to 8.0.80 in Ubuntu 19.10 and Ubuntu 20.04 LTS. Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.30.
+In addition to security fixes, the updated packages contain bug fixes,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2765
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2780
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2804
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2812
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2892
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2893
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2895
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2896
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2897
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2898
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2901
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2903
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2904
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2921
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2922
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2923
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2924
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2925
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2926
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2928
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2930
+
+**Title**: USN-4359-1: APT vulnerability
+**URL**: https://usn.ubuntu.com/4359-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that APT incorrectly handled certain filenames during package installation. If an attacker could provide a specially crafted package to be installed by the system administrator, this could cause APT to crash.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3810
+
+**Title**: USN-4365-1: Bind vulnerabilities
+**URL**: https://usn.ubuntu.com/4365-1/
+**Priorities**: medium
+**Description**:
+  Lior Shafir, Yehuda Afek, and Anat Bremler-Barr discovered that Bind incorrectly limited certain fetches. A remote attacker could possibly use this issue to cause Bind to consume resources, leading to a denial of service, or possibly use Bind to perform a reflection attack. (CVE-2020-8616)
+Tobias Klein discovered that Bind incorrectly handled...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8616
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8617
+
+**Title**: LSN-0066-1: Kernel Live Patch Security Notice
+**URL**: https://usn.ubuntu.com/lsn/0066-1/
+**Priorities**: medium
+**Description**:
+  Several security issues were fixed in the Linux kernel.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8647
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8649
+
 #### <a id="315-183"></a> 315.183
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -4871,6 +5157,149 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="250-199"></a> 250.199
+
+**Release Date**: March 18, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4358-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4358-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain tags. An attacker could possibly use this issue to cause a denial of service. (CVE-2018-20030)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash. (CVE-2020-12767)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20030
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12767
+
+**Title**: USN-4351-1: Linux firmware vulnerability
+**URL**: https://usn.ubuntu.com/4351-1/
+**Priorities**: medium
+**Description**:
+  Eli Biham and Lior Neumann discovered that certain Bluetooth devices incorrectly validated key exchange parameters. An attacker could possibly use this issue to obtain sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-5383
+
+**Title**: USN-4364-1: Linux kernel vulnerabilities
+**URL**: https://usn.ubuntu.com/4364-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the ADIS16400 IIO IMU Driver for the Linux kernel did not properly deallocate memory in certain error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19060)
+It was discovered that the vhost net driver in the Linux kernel contained a stack buffer overflow. A local...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19060
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10942
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11494
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11565
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11608
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11609
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11668
+
+**Title**: USN-4354-1: Mailman vulnerability
+**URL**: https://usn.ubuntu.com/4354-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that Mailman incorrectly handled certain inputs. An attacker could possibly use this issue to inject arbitrary content in the login page.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12108
+
+**Title**: USN-4352-1: OpenLDAP vulnerability
+**URL**: https://usn.ubuntu.com/4352-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenLDAP incorrectly handled certain queries. A remote attacker could possibly use this issue to cause OpenLDAP to consume resources, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12243
+
+**Title**: USN-4353-1: Firefox vulnerabilities
+**URL**: https://usn.ubuntu.com/4353-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, bypass security restrictions, spoof the URL bar, or execute arbitrary code. (CVE-2020-6831, CVE-2020-12387, CVE-2020-12390, CVE-2020-12391, CVE-2020-12394,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12387
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12390
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12391
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12392
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12394
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12395
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12396
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6831
+
+**Title**: USN-4360-1: json-c vulnerability
+**URL**: https://usn.ubuntu.com/4360-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that json-c incorrectly handled certain JSON files. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12762
+
+**Title**: USN-4350-1: MySQL vulnerabilities
+**URL**: https://usn.ubuntu.com/4350-1/
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues.
+MySQL has been updated to 8.0.80 in Ubuntu 19.10 and Ubuntu 20.04 LTS. Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.30.
+In addition to security fixes, the updated packages contain bug fixes,...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2759
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2760
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2762
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2763
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2765
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2780
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2804
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2812
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2892
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2893
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2895
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2896
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2897
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2898
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2901
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2903
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2904
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2921
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2922
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2923
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2924
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2925
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2926
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2928
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-2930
+
+**Title**: USN-4359-1: APT vulnerability
+**URL**: https://usn.ubuntu.com/4359-1/
+**Priorities**: medium
+**Description**:
+  It was discovered that APT incorrectly handled certain filenames during package installation. If an attacker could provide a specially crafted package to be installed by the system administrator, this could cause APT to crash.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3810
+
+**Title**: USN-4365-1: Bind vulnerabilities
+**URL**: https://usn.ubuntu.com/4365-1/
+**Priorities**: medium
+**Description**:
+  Lior Shafir, Yehuda Afek, and Anat Bremler-Barr discovered that Bind incorrectly limited certain fetches. A remote attacker could possibly use this issue to cause Bind to consume resources, leading to a denial of service, or possibly use Bind to perform a reflection attack. (CVE-2020-8616)
+Tobias Klein discovered that Bind incorrectly handled...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8616
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8617
+
+**Title**: LSN-0066-1: Kernel Live Patch Security Notice
+**URL**: https://usn.ubuntu.com/lsn/0066-1/
+**Priorities**: medium
+**Description**:
+  Several security issues were fixed in the Linux kernel.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8647
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8649
 
 #### <a id="250-198"></a> 250.198
 
