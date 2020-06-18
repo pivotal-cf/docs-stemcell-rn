@@ -4,11 +4,15 @@ owner: Windows
 modified_date: false
 ---
 
-This topic includes release notes for Windows stemcells used with Pivotal Application Service for Windows (PASW) v2.5, v2.6, v2.7, and v2.8.
+This topic includes release notes for Windows stemcells used with the following runtimes:
+
+- <%= vars.windows_runtime_full %> (<%= vars.windows_runtime_abbr %>) v2.5, v2.6, v2.7, and v2.8
+- VMware <%= vars.k8s_runtime_full %> (<%= vars.k8s_runtime_abbr %>) v1.5 and later
 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on VMware Tanzu Network.
+
 
 ## <a id="2019.22"></a>2019.22
 
@@ -21,45 +25,58 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
 - `stembuild construct` streams logs after the target VM reboots. Stembuild reconnects to the target VM using WinRM to stream logs after the VM reboot, showing you what is occurring on your target VM.
 - The BOSH Agent version is upgraded to v2.317. This version of the BOSH Agent can create a `vcap` user on a Windows VM.
 
+
 ## <a id="2019.21"></a>2019.21
 
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.21.</p>
+
 
 ## <a id="2019.20"></a>2019.20
 
 **Release Date**: April 24th, 2020
 
-### Security Fix
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday April 14th, 2020](https://support.microsoft.com/en-us/help/4549949)
+
 
 ## <a id="2019.19"></a>2019.19
 
 **Release Date**: March 25th, 2020
 
-### Security Fix
+### Compatibilities
+
+-  <%= vars.windows_runtime_abbr %> v2.6.15, v2.7.11, or v2.8.6 and later.
+
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday March 10th, 2020](https://support.microsoft.com/en-us/help/4538461)
-- This stemcell works with PASW v2.6.15, v2.7.11, or v2.8.6 and later.
-- For issues encountered with upgrading to the correct PASW versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading PASW tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
+- For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
+  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
   - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://community.pivotal.io/s/article/windows-app-container-crashing-after-Windows-stemcell-upgrade)
 
 ## <a id="2019.18"></a>2019.18
 
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.18.</p>
 
+
 ## <a id="2019.17"></a>2019.17
 
 **Release Date**: February 14th, 2020
 
-### Security Fix
+### Compatibilities
+
+-  <%= vars.windows_runtime_abbr %> versions v2.6.15, v2.7.11, or v2.8.6 and later.
+
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday February 11, 2020](https://support.microsoft.com/en-us/help/4532691).
-- This stemcell works with PASW versions v2.6.15, v2.7.11, or v2.8.6 and later.
-- For issues encountered with upgrading to the correct PASW versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading PASW tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
+- For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
+  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
   - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://community.pivotal.io/s/article/windows-app-container-crashing-after-Windows-stemcell-upgrade)
 
-
 ### Features
+
 - Supports signed URL capability. 
 If Windows users opt in, the BOSH agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials. 
 For more information on how to opt in to signed URLs, see 
@@ -68,6 +85,7 @@ For more information on how to opt in to signed URLs, see
 the only OS version that stembuild v2019.x is compatible with.
 
 ### Bug Fixes
+
 - Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch 
 updated root certificates from the public Windows Update Server. 
 <p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have 
@@ -77,18 +95,26 @@ For more information on the original validation bug, see ["Validating connection
 (https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) 
 in the Knowledge Base.  
 
+
 ## <a id="2019.16"></a>2019.16
 
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.16.</p>
+
 
 ## <a id="2019.15"></a>2019.15
 
 **Release Date**: January 18, 2020
 
-### Security Fix
+### Compatibilities
+
+-  <%= vars.k8s_runtime_abbr %> v1.7.0 and later, v1.6.2 and later, v1.5.2 and later.
+
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday January 2020](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Jan). This release includes fixes for [CVE-2020-0601](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0601).
 
 ### Known Issues
+
 - `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) in the Knowledge Base.
 
 <p class="note"><strong>Note</strong>: The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
@@ -98,10 +124,12 @@ in the Knowledge Base.
 
 **Release Date**: December 16, 2019
 
-### Security Fix
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday December 2019](https://support.microsoft.com/en-us/help/4530715)
 
 ### Features
+
 - Updated stembuild to always use the latest version of OpenSSH (8.0.0-p1-beta as of this release)
 - Root certificates on machines deployed using stembuild-built stemcells get updated certificates from the Windows Updates Server
 
@@ -110,41 +138,51 @@ in the Knowledge Base.
 
 **Release Date**: November 22, 2019
 
-### Security Fix
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday November 2019](https://support.microsoft.com/en-us/help/4523205)
 
 ### Features
+
 - Added logging and exit code to `stembuild construct` to allow users to see the progress of the command and know whether it has completed preparing the VM for packaging
 - Added retry behavior for the file rename operation in the compilation VM to reduce risk of compilation failure due to custom antivirus installations in the base image
+
 
 ## <a id="2019.12"></a>2019.12
 
 **Release Date**: October 10, 2019
 
-### Security Fix
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday October 2019](https://support.microsoft.com/en-us/help/4519338)
 
 ### Features
+
 - Added a flag to `stembuild package` to allow user to specify patch version for the stemcell .tgz output
 - Aligned Internet Explorer-based policies in stemcells built using stembuild with Microsoft Baseline Security Standard
 
-### Bug Fix
+### Bug Fixes
+
 - Fixed a bug where `stembuild construct` was failing to execute with a DISM error
 
 <p class="note"><strong>Note</strong>: Do not use <code>stembuild-2019.11</code> because it will fail on <code>stembuild construct</code>. Use <code>stembuild-2019.12</code> instead.</p>
+
 
 ## <a id="2019.11"></a>2019.11
 
 **Release Date**: September 26, 2019
 
-### Security Fix
+### Security Fixes
+
 - Includes [Microsoft Security Updates Patch Tuesday September 2019](https://support.microsoft.com/en-us/help/4512578)
 
 ### Features
+
 - Enabled the Hyper-V Windows feature for enabling Windows 2019 stemcells built using stembuild
 - Improved security hardening of Windows stemcells by aligning Internet Explorer-based policies with the [Microsoft Baseline Security Standard](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10)
 
-### Bug Fix
+### Bug Fixes
+
 - Fixed a bug that left user directories on the target machines after a user had terminated a BOSH SSH connection into that machine:
     - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the SSH session.
     - Not deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
@@ -152,54 +190,69 @@ in the Knowledge Base.
 <br>
 <p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.10.</p>
 
+
 ## <a id="2019.9"></a>2019.9
 
 **Release Date**: August 27, 2019
 
 ### Features
+
 - Includes [Microsoft Security Updates Patch Tuesday August 2019](https://support.microsoft.com/en-us/help/4511553)
 - Aligned a set of audit policies on the stemcells based on [Microsoft Baseline Security Standard](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 - Introduced a new feature in `stembuild construct` command to validate/invalidate the OS based on stembuild version. 
+
 
 ## <a id="2019.8"></a>2019.8
 
 **Release Date**: July 23, 2019
 
 ### Features
+
 - Includes [Microsoft Security Updates Patch Tuesday July 2019](https://support.microsoft.com/en-us/help/4507469)
 - Windows Defender is installed but disabled on all stemcells. 
+
 
 ## <a id="2019.7"></a>2019.7
 
 **Release Date**: July 1, 2019
 
+### Compatibilities
+
+-  <%= vars.k8s_runtime_abbr %> v1.6.0 - v1.6.1, v1.5.0 - v1.5.1.
+
 ### Features
+
 - Key improvements in stembuild with features such as SSH enable-by-default for deployed Windows VMs on vSphere and security fixes. 
 - Enabled the Hyper-V Windows feature for enabling Windows in PKS and NSX-T compatibility with Windows teams. 
+
 
 ## <a id="2019.6"></a>2019.6
 
 **Release Date**: June 19, 2019
 
-### Security Fix
+### Security Fixes
 
 - Includes Microsoft Security Updates [June 11, 2019—KB4503327](https://support.microsoft.com/en-us/help/4503327/windows-10-update-kb4503327)
 - Introduces 2.3.1.2 (L1) and 1.1.1 (L1) CIS L1 policy hardenings based on the CIS Security Benchmark. 
+
 
 ## <a id="2019.5"></a>2019.5
 
 **Release Date**: May 30, 2019
 
-### Security Fix
+### Security Fixes
+
 - Based on [Microsoft's guidance](https://support.microsoft.com/en-us/help/4072698/windows-server-speculative-execution-side-channel-vulnerabilities-prot#section-10), additional fixes to protect against speculative execution side-channel vulnerabilities
+
 
 ## <a id="2019.4"></a>2019.4
 
 **Release Date**: May 22, 2019
 
 ### Features
+
 - Platform Engineers can deploy Windows Stemcells on a BOSH Director with Google Cloud Storage as their external Blobstore. 
-- Improved Troubleshooting of Windows VMs, with ssh enabled by default for all Windows VMs. You can still disable SSH in the PASW tile.
+- Improved Troubleshooting of Windows VMs, with ssh enabled by default for all Windows VMs. You can still disable SSH in the <%= vars.windows_runtime_abbr %> tile.
 - Includes Microsoft Security Updates to protect against Microarchitectural Data Sampling side-channel vulnerabilities. For more information, see [May 14, 2019—KB4494441 (OS Build 17763.503)](https://support.microsoft.com/en-us/help/4494441/windows-10-update-kb4494441) in the Windows support documentation.
 
 ## <a id="2019.3"></a>2019.3
