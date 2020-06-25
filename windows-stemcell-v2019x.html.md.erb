@@ -12,23 +12,39 @@ This topic includes release notes for Windows stemcells used with the following 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on VMware Tanzu Network.
+  <p class="note"><strong>NOTE</strong>: Manual stemcell creation has been deprecated. 
+    Use <code>stembuild</code> v2019.23 or later to create stemcells automatically. 
+    For more information, 
+    see <a href="https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
+  </p>
+
 ## <a id="2019.23"></a>2019.23
 
 **Release Date**: June 25th, 2020
 
-**This release announces the general availability of stembuild! Here's the [docs](https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html) to using it.**
+### General Availability Release of stembuild
+This release announces the general availability of stembuild! 
+For more information about stembuild, see [Creating a Windows Stemcell for vSphere Using stembuild]
+(https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html).
 
-**Security Patches**
+### Security Fix
+ - Includes [Microsoft Security Updates Patch Tuesday June 9th, 2020](https://support.microsoft.com/en-us/help/4561608)
 
-Includes [Microsoft Security Updates Patch Tuesday June 9th, 2020](https://support.microsoft.com/en-us/help/4561608)
+### Features
+- `stembuild construct` now identifies the location of the base VM, including across multiple data centers. 
+- `stembuild construct` now logs out any users who are logged in while the `construct` command is in progress,
+ensuring minimum disruption during stemcell creation. 
 
-**Features**
-- Stembuild construct command can now identify the location of the base VM even in mulitple data centers. 
-- Stembuild construct now logs out any users that might be logged in while the construct command is in progress to ensure minimum disruption during stemcell creation. 
+### Deprecation Notice for Manual Stemcell Creation Process
 
-**Deprecation Notice for Manual Stemcell Creation Process**
+This release marks the start of the depreciation period for creating stemcells 
+using the manual creation procedure. 
+Documentation for manual stemcell creation will be removed by September, 2020. 
+Going forward only the stembuild-based stemcell creation procedure will be supported.  
 
-This release also marks the start of the depreciation period for manually creating stemcells using this procedure. Going forward only the stembuild-based approach will be supported. The manual creation of stemcells-based process will be removed by September, 2020. Please ensure to migrate to the above stembuild-based apprroach before then. 
+  <p class="note"><strong>NOTE</strong>: 
+  	Please ensure to migrate to the stembuild-based stemcell creation procedure before September, 2020. 
+  </p>
 
 ## <a id="2019.22"></a>2019.22
 
