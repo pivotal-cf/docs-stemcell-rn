@@ -35,8 +35,8 @@ To append new content to the *Stemcell Release Notes* topic:
 
 If you experience any issues, contact #pcf-docs in Slack.
 
-## Find [<%= vars.product_network %>](https://network.pivotal.io/) Stemcells
+## Find [Tanzu Network](https://network.pivotal.io/) Stemcells
 
 The stemcell release notes now publish all stemcells regardless of whether or not they are on
-[<%= vars.product_network %>](https://network.pivotal.io/). Each stemcell release in the release
+[Tanzu Network](https://network.pivotal.io/). Each stemcell release in the release
 notes indicates whether or not they are can be found on <%= vars.product_network %>.
