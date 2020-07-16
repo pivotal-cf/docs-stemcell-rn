@@ -45,6 +45,7 @@ module Resources
         'minor_version' => minor_version,
         'body' => release[:body],
         'created_at' => release[:created_at],
+        'published_at' => release[:published_at],
         'pivnet_available' => false,
       }
     end
@@ -105,7 +106,11 @@ def puts_release_notes(releases, pivnet_api, release_type)
 
       output += "<span class='pivnet'>Available in VMware Tanzu Network</span>\n\n" if pivnet_releases.include?(version)
 
-      release_date = release['created_at'].strftime("%B %d, %Y")
+      if !release['published_at'].nil?
+        release_date = release['published_at'].strftime("%B %d, %Y")
+      else
+        release_date = release['created_at'].strftime("%B %d, %Y")
+      end
       output += "**Release Date**: #{release_date}\n\n"
 
       output += release['body']+ "\n\n"
