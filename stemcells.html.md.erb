@@ -19,7 +19,7 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 30, 2020
+**Release Date**: June 17, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.16
@@ -57,11 +57,14 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 **CVEs**:
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13790
 
+## Known Issue:
+If you use the NSX-T Container Plugin (NCP) tile v3.0.1 or earlier, do not upgrade to stemcell 621.76. 621.76 is not compatible with the NCP tile v3.0.1 and causes the openvswitch job to fail when you deploy. Please upgrade the NCP tile to 3.0.2 before updating to stemcell 621.76 or newer.
+
 #### <a id="621-75"></a> 621.75
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 30, 2020
+**Release Date**: June 09, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.16
@@ -206,7 +209,7 @@ Tobias Klein discovered that Bind incorrectly handled...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 30, 2020
+**Release Date**: May 12, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.16
@@ -316,7 +319,7 @@ It was discovered that Samba incorrectly handled certain LDAP...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 09, 2020
+**Release Date**: April 23, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.15
@@ -353,7 +356,7 @@ It was discovered that Python incorrectly handled certain HTTP requests. An atta
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 09, 2020
+**Release Date**: April 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.15
@@ -428,7 +431,7 @@ Shijie Luo discovered that the ext4 file system implementation in the Linux kern
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 10, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.12
@@ -497,7 +500,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 10, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.12
@@ -556,7 +559,7 @@ It was discovered that SQLite incorrectly handled certain corrupt records. An at
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.12
@@ -641,7 +644,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 31, 2020
+**Release Date**: February 19, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.12
@@ -707,7 +710,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 31, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.12
@@ -852,7 +855,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: January 24, 2020
 
 ## Bug Fixes
 
@@ -933,7 +936,7 @@ It was discovered that python-apt could install packages from untrusted reposito
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.10
@@ -1098,7 +1101,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.268.9
 USNs:
@@ -1231,7 +1234,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.268.7
 USNs:
@@ -1308,7 +1311,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 #### <a id="621-26"></a> 621.26
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.268.7
 USNs:
@@ -1327,7 +1330,7 @@ USNs:
 
 #### <a id="621-23"></a> 621.23
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.268.6
 USNs:
@@ -1462,7 +1465,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 #### <a id="621-12"></a> 621.12
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.268.5
 USNs:
@@ -1493,7 +1496,7 @@ USNs:
 
 #### <a id="621-5"></a> 621.5
 
-**Release Date**: October 29, 2019
+**Release Date**: October 31, 2019
 
 New stemcell line!
 
@@ -1512,7 +1515,7 @@ This section includes release notes for the 456 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: June 17, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1554,7 +1557,7 @@ This section includes release notes for the 456 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: June 10, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1699,7 +1702,7 @@ Tobias Klein discovered that Bind incorrectly handled...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: May 12, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1809,7 +1812,7 @@ It was discovered that Samba incorrectly handled certain LDAP...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 23, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1846,7 +1849,7 @@ It was discovered that Python incorrectly handled certain HTTP requests. An atta
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1921,7 +1924,7 @@ Shijie Luo discovered that the ext4 file system implementation in the Linux kern
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -1979,7 +1982,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -2038,7 +2041,7 @@ It was discovered that SQLite incorrectly handled certain corrupt records. An at
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -2173,7 +2176,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 18, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -2239,7 +2242,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -2450,7 +2453,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.7
@@ -2615,7 +2618,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.234.7
 USNs:
@@ -2748,7 +2751,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.234.7
 USNs:
@@ -2827,7 +2830,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.234.7
 USNs:
@@ -2848,7 +2851,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.234.6
 USNs:
@@ -2985,7 +2988,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.234.6
 USNs:
@@ -3055,7 +3058,7 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.234.5
 
@@ -3065,7 +3068,7 @@ Addresses CVE-2019-17596
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 21, 2019
+**Release Date**: October 24, 2019
 
 BOSH Agent version: 2.234.3
 USNs:
@@ -3267,7 +3270,7 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 04, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.234.2
 USNs:
@@ -3276,7 +3279,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 23, 2019
+**Release Date**: September 24, 2019
 
 BOSH Agent version: 2.234.2
 USNs:
@@ -3285,7 +3288,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2019
+**Release Date**: September 19, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -3354,7 +3357,7 @@ Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfe
 
 #### <a id="456-22"></a> 456.22
 
-**Release Date**: September 09, 2019
+**Release Date**: September 10, 2019
 
 BOSH Agent version: 2.234.2
 USNs:
@@ -3379,7 +3382,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 28, 2019
+**Release Date**: September 03, 2019
 
 Updating golang to versions that fixed CVEs disclosed here:
 https://github.com/golang/go/issues/33606
@@ -3395,28 +3398,28 @@ CVE-2019-9514, also known as Reset Flood
 
 #### <a id="456-14"></a> 456.14
 
-**Release Date**: August 26, 2019
+**Release Date**: August 27, 2019
 
 BOSH Agent version: 2.234.0
 Bi-weekly stemcell release
 
 #### <a id="456-12"></a> 456.12
 
-**Release Date**: August 12, 2019
+**Release Date**: August 16, 2019
 
 BOSH Agent version: 2.234.0
 Bi-weekly stemcell bump
 
 #### <a id="456-3"></a> 456.3
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.234.0
 Bi-weekly update
 
 #### <a id="456-1"></a> 456.1
 
-**Release Date**: July 17, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.234.0
 First release for 456 major line
@@ -3429,7 +3432,7 @@ This section includes release notes for the 315 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: June 17, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3471,7 +3474,7 @@ This section includes release notes for the 315 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: June 09, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3616,7 +3619,7 @@ Tobias Klein discovered that Bind incorrectly handled...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: May 12, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3726,7 +3729,7 @@ It was discovered that Samba incorrectly handled certain LDAP...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 23, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3809,7 +3812,7 @@ It was discovered that Python incorrectly handled certain HTTP requests. An atta
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3884,7 +3887,7 @@ Shijie Luo discovered that the ext4 file system implementation in the Linux kern
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -3942,7 +3945,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -4001,7 +4004,7 @@ It was discovered that SQLite incorrectly handled certain corrupt records. An at
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -4136,7 +4139,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 18, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -4202,7 +4205,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -4413,7 +4416,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.215.10
@@ -4578,7 +4581,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -4711,7 +4714,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -4790,7 +4793,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -4811,7 +4814,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -4946,7 +4949,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 #### <a id="315-139"></a> 315.139
 
-**Release Date**: November 13, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -5083,7 +5086,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.215.10
 USNs:
@@ -5153,7 +5156,7 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.215.9
 
@@ -5163,7 +5166,7 @@ Addresses CVE-2019-17596
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 21, 2019
+**Release Date**: October 24, 2019
 
 BOSH Agent version: 2.215.7
 USNs:
@@ -5232,7 +5235,7 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 04, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.215.5
 USNs:
@@ -5241,7 +5244,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 23, 2019
+**Release Date**: September 24, 2019
 
 BOSH Agent version: 2.215.4
 USNs:
@@ -5250,7 +5253,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2019
+**Release Date**: September 19, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -5319,7 +5322,7 @@ Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfe
 
 #### <a id="315-93"></a> 315.93
 
-**Release Date**: September 09, 2019
+**Release Date**: September 10, 2019
 
 BOSH Agent version: 2.215.4
 USNs:
@@ -5344,7 +5347,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 28, 2019
+**Release Date**: September 03, 2019
 
 BOSH Agent version: 2.215.4
 USNs:
@@ -5373,7 +5376,7 @@ CVE-2019-9514, also known as Reset Flood
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 26, 2019
+**Release Date**: August 27, 2019
 
 BOSH Agent version: 2.215.3
 Bi-weekly stemcell release
@@ -5382,7 +5385,7 @@ Bi-weekly stemcell release
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 12, 2019
+**Release Date**: August 16, 2019
 
 BOSH Agent version: 2.215.3
 Bi-weekly stemcell bump
@@ -5391,7 +5394,7 @@ Bi-weekly stemcell bump
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.215.3
 Bi-weekly update
@@ -5400,7 +5403,7 @@ Bi-weekly update
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 15, 2019
+**Release Date**: July 17, 2019
 
 BOSH Agent version: 2.215.3
 
@@ -5408,7 +5411,7 @@ BOSH Agent version: 2.215.3
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 01, 2019
+**Release Date**: July 11, 2019
 
 Bi-weekly Agent Bump (July 3rd)
 
@@ -5416,7 +5419,7 @@ Bi-weekly Agent Bump (July 3rd)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 20, 2019
+**Release Date**: June 25, 2019
 
 BOSH Agent version: 2.215.3
 USNs: https://usn.ubuntu.com/3977-3/
@@ -5425,7 +5428,7 @@ USNs: https://usn.ubuntu.com/3977-3/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 17, 2019
+**Release Date**: June 18, 2019
 
 CVE fixes for https://usn.ubuntu.com/4017-1/
 
@@ -5437,7 +5440,7 @@ This section includes release notes for the 250 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: June 17, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5479,7 +5482,7 @@ This section includes release notes for the 250 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: June 09, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5624,7 +5627,7 @@ Tobias Klein discovered that Bind incorrectly handled...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: May 12, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5734,7 +5737,7 @@ It was discovered that Samba incorrectly handled certain LDAP...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 23, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5857,7 +5860,7 @@ Shijie Luo discovered that the ext4 file system implementation in the Linux kern
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5915,7 +5918,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -5999,7 +6002,7 @@ Gregory Herrero discovered that the fix for CVE-2019-14615 to address...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -6134,7 +6137,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 22, 2020
+**Release Date**: February 18, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -6200,7 +6203,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 22, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -6424,7 +6427,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.193.8
@@ -6589,7 +6592,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.193.8
 USNs:
@@ -6722,7 +6725,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.193.8
 USNs:
@@ -6801,7 +6804,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.193.8
 USNs:
@@ -6822,7 +6825,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.193.8
 USNs:
@@ -6959,7 +6962,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.193.8
 USNs:
@@ -7029,7 +7032,7 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.193.8
 
@@ -7039,7 +7042,7 @@ Addresses CVE-2019-17596
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 21, 2019
+**Release Date**: October 24, 2019
 
 BOSH Agent version: 2.193.6
 USNs:
@@ -7241,7 +7244,7 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 04, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.193.5
 USNs:
@@ -7250,7 +7253,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 23, 2019
+**Release Date**: September 24, 2019
 
 BOSH Agent version: 2.193.4
 USNs:
@@ -7259,7 +7262,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2019
+**Release Date**: September 19, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -7328,7 +7331,7 @@ Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfe
 
 #### <a id="250-106"></a> 250.106
 
-**Release Date**: September 09, 2019
+**Release Date**: September 10, 2019
 
 BOSH Agent version: 2.193.4
 USNs:
@@ -7353,7 +7356,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 28, 2019
+**Release Date**: September 03, 2019
 
 BOSH Agent version: 2.193.4
 
@@ -7381,7 +7384,7 @@ CVE-2019-9514, also known as Reset Flood
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 26, 2019
+**Release Date**: August 27, 2019
 
 BOSH Agent version: 2.193.3
 Bi-weekly stemcell release
@@ -7390,7 +7393,7 @@ Bi-weekly stemcell release
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 12, 2019
+**Release Date**: August 16, 2019
 
 BOSH Agent version: 2.193.3
 Bi-weekly stemcell bump
@@ -7399,7 +7402,7 @@ Bi-weekly stemcell bump
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.193.3
 Bi-weekly update
@@ -7408,7 +7411,7 @@ Bi-weekly update
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 15, 2019
+**Release Date**: July 17, 2019
 
 BOSH Agent version: 2.193.3
 
@@ -7416,7 +7419,7 @@ BOSH Agent version: 2.193.3
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 01, 2019
+**Release Date**: July 11, 2019
 
 Bi-weekly Agent Bump (July 3rd)
 
@@ -7424,7 +7427,7 @@ Bi-weekly Agent Bump (July 3rd)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 24, 2019
+**Release Date**: June 25, 2019
 
 BOSH Agent version: 2.193.3
 USNs: https://usn.ubuntu.com/3977-3/
@@ -7433,7 +7436,7 @@ USNs: https://usn.ubuntu.com/3977-3/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 17, 2019
+**Release Date**: June 18, 2019
 
 CVE fixes for https://usn.ubuntu.com/4017-1/
 
@@ -7441,7 +7444,7 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: May 22, 2019
+**Release Date**: May 31, 2019
 
 USN 3977-2
 
@@ -7449,7 +7452,7 @@ USN 3977-2
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 08, 2019
+**Release Date**: April 09, 2019
 
 Periodic stemcell bump (Apr  9, 2019)
 
@@ -7457,7 +7460,7 @@ Periodic stemcell bump (Apr  9, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 25, 2019
+**Release Date**: March 26, 2019
 
 Periodic stemcell bump (Mar 26, 2019)
 
@@ -7465,7 +7468,7 @@ Periodic stemcell bump (Mar 26, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 21, 2019
+**Release Date**: March 25, 2019
 
 Periodic stemcell bump (Mar 22, 2019)
 
@@ -7473,7 +7476,7 @@ Periodic stemcell bump (Mar 22, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 12, 2019
+**Release Date**: March 15, 2019
 
 Periodic stemcell bump (Mar 15, 2019)
 
@@ -7481,13 +7484,13 @@ Periodic stemcell bump (Mar 15, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: February 25, 2019
+**Release Date**: March 06, 2019
 
 Periodic stemcell bump (Mar 06, 2019)
 
 #### <a id="250-9"></a> 250.9
 
-**Release Date**: February 12, 2019
+**Release Date**: February 15, 2019
 
 Periodic Ubuntu Xenial stemcell bump (Feb 13, 2019)
 
@@ -7506,7 +7509,7 @@ This section includes release notes for the 170 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: June 17, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7548,7 +7551,7 @@ This section includes release notes for the 170 line of Linux stemcells used wit
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: June 09, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7693,7 +7696,7 @@ Tobias Klein discovered that Bind incorrectly handled...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: May 12, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7803,7 +7806,7 @@ It was discovered that Samba incorrectly handled certain LDAP...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 23, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7840,7 +7843,7 @@ It was discovered that Python incorrectly handled certain HTTP requests. An atta
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7915,7 +7918,7 @@ Shijie Luo discovered that the ext4 file system implementation in the Linux kern
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -7973,7 +7976,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -8057,7 +8060,7 @@ Gregory Herrero discovered that the fix for CVE-2019-14615 to address...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -8192,7 +8195,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 18, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -8258,7 +8261,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -8469,7 +8472,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.160.11
@@ -8634,7 +8637,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.160.11
 USNs:
@@ -8767,7 +8770,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.160.11
 USNs:
@@ -8846,7 +8849,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.160.11
 USNs:
@@ -8867,7 +8870,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.160.11
 USNs:
@@ -9004,7 +9007,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.160.11
 USNs:
@@ -9074,7 +9077,7 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.160.11
 
@@ -9084,7 +9087,7 @@ Addresses CVE-2019-17596
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 21, 2019
+**Release Date**: October 24, 2019
 
 BOSH Agent version: 2.160.9
 USNs:
@@ -9286,7 +9289,7 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 04, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.160.8
 USNs:
@@ -9296,7 +9299,7 @@ This release fixes the issue in stemcell 170.38 that prevents new VMs from being
 
 #### <a id="170-138"></a> 170.138
 
-**Release Date**: October 02, 2019
+**Release Date**: October 03, 2019
 
 BOSH Agent version: 2.160.8
 USNs:
@@ -9308,7 +9311,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 23, 2019
+**Release Date**: September 24, 2019
 
 BOSH Agent version: 2.160.8
 USNs:
@@ -9317,7 +9320,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2019
+**Release Date**: September 19, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -9386,7 +9389,7 @@ Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfe
 
 #### <a id="170-129"></a> 170.129
 
-**Release Date**: September 09, 2019
+**Release Date**: September 10, 2019
 
 BOSH Agent version: 2.160.8
 USNs:
@@ -9411,7 +9414,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 28, 2019
+**Release Date**: September 03, 2019
 
 BOSH Agent version: 2.160.7
 USNs:
@@ -9440,7 +9443,7 @@ CVE-2019-9514, also known as Reset Flood
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 26, 2019
+**Release Date**: August 27, 2019
 
 BOSH Agent version: 2.160.6
 Bi-weekly stemcell release
@@ -9449,7 +9452,7 @@ Bi-weekly stemcell release
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.160.6
 Bi-weekly update
@@ -9458,7 +9461,7 @@ Bi-weekly update
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 15, 2019
+**Release Date**: July 18, 2019
 
 Bi-weekly stemcell Bump 
 
@@ -9466,7 +9469,7 @@ Bi-weekly stemcell Bump
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 03, 2019
+**Release Date**: July 11, 2019
 
 Bi-weekly Agent Bump (July 3rd)
 
@@ -9474,7 +9477,7 @@ Bi-weekly Agent Bump (July 3rd)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 24, 2019
+**Release Date**: June 25, 2019
 
 BOSH Agent version: bump bosh-agent to send log sha when fetching
 USNs: https://usn.ubuntu.com/3977-3/
@@ -9483,7 +9486,7 @@ USNs: https://usn.ubuntu.com/3977-3/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 17, 2019
+**Release Date**: June 18, 2019
 
 CVE fixes for https://usn.ubuntu.com/4017-1/
 
@@ -9491,7 +9494,7 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 08, 2019
+**Release Date**: April 09, 2019
 
 Periodic stemcell bump (Apr  8, 2019)
 
@@ -9499,13 +9502,13 @@ Periodic stemcell bump (Apr  8, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 25, 2019
+**Release Date**: March 26, 2019
 
 Periodic stemcell bump (Mar 26, 2019)
 
 #### <a id="170-43"></a> 170.43
 
-**Release Date**: March 21, 2019
+**Release Date**: March 25, 2019
 
 Periodic stemcell bump (Mar 22, 2019)
 
@@ -9513,7 +9516,7 @@ Periodic stemcell bump (Mar 22, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2019
+**Release Date**: March 15, 2019
 
 Periodic stemcell bump (Mar 15, 2019)
 
@@ -9521,7 +9524,7 @@ Periodic stemcell bump (Mar 15, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: February 25, 2019
+**Release Date**: March 07, 2019
 
 Periodic stemcell bump (Mar 06, 2019)
 
@@ -9529,7 +9532,7 @@ Periodic stemcell bump (Mar 06, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: February 12, 2019
+**Release Date**: February 13, 2019
 
 Periodic Ubuntu Xenial stemcell bump (Feb 12, 2019)
 
@@ -9537,7 +9540,7 @@ Periodic Ubuntu Xenial stemcell bump (Feb 12, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 28, 2019
+**Release Date**: January 29, 2019
 
 Periodic Ubuntu Xenial stemcell bump (Jan 28, 2019)
 
@@ -9545,7 +9548,7 @@ Periodic Ubuntu Xenial stemcell bump (Jan 28, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 23, 2019
+**Release Date**: January 24, 2019
 
 Addresses "USN-3866-1: Ghostscript vulnerability"
 
@@ -9575,7 +9578,7 @@ Addresses "USN-3855-1: systemd vulnerabilities"
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 20, 2018
+**Release Date**: December 26, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Dec 26, 2018)
 
@@ -9589,7 +9592,7 @@ Periodic Ubuntu Xenial stemcell bump (Dec 17, 2018)
 
 #### <a id="170-13"></a> 170.13
 
-**Release Date**: December 11, 2018
+**Release Date**: December 12, 2018
 
 ### Fixes
 
@@ -9597,7 +9600,7 @@ Periodic Ubuntu Xenial stemcell bump (Dec 17, 2018)
 
 #### <a id="170-12"></a> 170.12
 
-**Release Date**: December 04, 2018
+**Release Date**: December 05, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Dec 05, 2018)
 
@@ -9609,7 +9612,7 @@ Periodic Ubuntu Xenial stemcell bump (Nov 19, 2018)
 
 #### <a id="170-6"></a> 170.6
 
-**Release Date**: November 15, 2018
+**Release Date**: November 16, 2018
 
 Includes updates to address:
 
@@ -9629,7 +9632,7 @@ This section includes release notes for the 97 line of Linux stemcells used with
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: April 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -9698,7 +9701,7 @@ Maximilien Bourgeteau discovered a race condition in Apport when setting crash r
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 18, 2020
+**Release Date**: March 24, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -9782,7 +9785,7 @@ Gregory Herrero discovered that the fix for CVE-2019-14615 to address...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 02, 2020
+**Release Date**: March 03, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -9917,7 +9920,7 @@ Multiple security issues were discovered in Firefox. If a user were tricked in t
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 18, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -9983,7 +9986,7 @@ It was discovered that...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 21, 2020
+**Release Date**: February 06, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -10194,7 +10197,7 @@ It was discovered that OpenJDK incorrectly validated properties of SASL messages
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 20, 2020
+**Release Date**: January 21, 2020
 
 ## Metadata:
 **BOSH Agent Version**: 2.117.16
@@ -10359,7 +10362,7 @@ It was discovered that a heap-based buffer overflow existed in the...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 06, 2020
+**Release Date**: February 04, 2020
 
 BOSH Agent version: 2.117.16
 USNs:
@@ -10492,7 +10495,7 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.117.16
 USNs:
@@ -10571,7 +10574,7 @@ Nicolas Waisman discovered that the WiFi driver stack in the Linux...
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.117.16
 USNs:
@@ -10592,7 +10595,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 14, 2019
+**Release Date**: November 18, 2019
 
 BOSH Agent version: 2.117.16
 USNs:
@@ -10729,7 +10732,7 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.117.16
 USNs:
@@ -10799,7 +10802,7 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.117.16
 
@@ -10809,7 +10812,7 @@ Addresses CVE-2019-17596
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 21, 2019
+**Release Date**: October 24, 2019
 
 BOSH Agent version: 2.117.14
 USNs:
@@ -11011,7 +11014,7 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: October 04, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -11020,7 +11023,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 23, 2019
+**Release Date**: September 24, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -11029,7 +11032,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2019
+**Release Date**: September 19, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -11098,7 +11101,7 @@ Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfe
 
 #### <a id="97-156"></a> 97.156
 
-**Release Date**: September 09, 2019
+**Release Date**: September 10, 2019
 
 BOSH Agent version: 2.117.13
 USNs:
@@ -11123,7 +11126,7 @@ USNs:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 28, 2019
+**Release Date**: September 03, 2019
 
 BOSH Agent version: 2.117.12
 USNs:
@@ -11152,7 +11155,7 @@ CVE-2019-9514, also known as Reset Flood
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 26, 2019
+**Release Date**: August 27, 2019
 
 BOSH Agent version: 2.117.11
 Bi-weekly stemcell release
@@ -11161,7 +11164,7 @@ Bi-weekly stemcell release
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 12, 2019
+**Release Date**: August 16, 2019
 
 BOSH Agent version: 2.117.11
 Bi-weekly stemcell bump
@@ -11170,7 +11173,7 @@ Bi-weekly stemcell bump
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.117.11
 Bi-weekly update
@@ -11179,7 +11182,7 @@ Bi-weekly update
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 15, 2019
+**Release Date**: July 18, 2019
 
 Bi-weekly stemcell Bump 
 
@@ -11187,7 +11190,7 @@ Bi-weekly stemcell Bump
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: July 03, 2019
+**Release Date**: July 11, 2019
 
 Bi-weekly Agent Bump (July 3rd)
 
@@ -11195,7 +11198,7 @@ Bi-weekly Agent Bump (July 3rd)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 24, 2019
+**Release Date**: June 25, 2019
 
 BOSH Agent version: bump bosh-agent to send log sha when fetching
 USNs: https://usn.ubuntu.com/3977-3/
@@ -11204,7 +11207,7 @@ USNs: https://usn.ubuntu.com/3977-3/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: June 17, 2019
+**Release Date**: June 18, 2019
 
 CVE fixes for https://usn.ubuntu.com/4017-1/
 
@@ -11212,7 +11215,7 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: April 08, 2019
+**Release Date**: April 09, 2019
 
 Periodic stemcell bump (Apr  8, 2019)
 
@@ -11220,7 +11223,7 @@ Periodic stemcell bump (Apr  8, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 25, 2019
+**Release Date**: March 26, 2019
 
 Periodic stemcell bump (Mar 26, 2019)
 
@@ -11228,7 +11231,7 @@ Periodic stemcell bump (Mar 26, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 15, 2019
+**Release Date**: March 25, 2019
 
 Periodic stemcell bump (Mar 22, 2019)
 
@@ -11236,7 +11239,7 @@ Periodic stemcell bump (Mar 22, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: March 11, 2019
+**Release Date**: March 15, 2019
 
 Periodic stemcell bump (Mar 15, 2019)
 
@@ -11244,7 +11247,7 @@ Periodic stemcell bump (Mar 15, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: February 25, 2019
+**Release Date**: March 07, 2019
 
 Periodic stemcell bump (Mar 06, 2019)
 
@@ -11252,7 +11255,7 @@ Periodic stemcell bump (Mar 06, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: February 12, 2019
+**Release Date**: February 15, 2019
 
 Periodic Ubuntu Xenial stemcell bump (Feb 13, 2019)
 
@@ -11260,7 +11263,7 @@ Periodic Ubuntu Xenial stemcell bump (Feb 13, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 28, 2019
+**Release Date**: January 29, 2019
 
 Periodic Ubuntu Xenial stemcell bump (Jan 28, 2019)
 
@@ -11268,7 +11271,7 @@ Periodic Ubuntu Xenial stemcell bump (Jan 28, 2019)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: January 23, 2019
+**Release Date**: January 24, 2019
 
 Addresses "USN-3866-1: Ghostscript vulnerability"
 
@@ -11299,7 +11302,7 @@ Addresses "USN-3855-1: systemd vulnerabilities"
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 20, 2018
+**Release Date**: December 26, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Dec 26, 2018)
 
@@ -11315,7 +11318,7 @@ Periodic Ubuntu Xenial stemcell bump (Dec 17, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 11, 2018
+**Release Date**: December 12, 2018
 
  * *Google*: hostname should always be BOSH Agent ID ([#57](https://github.com/cloudfoundry/bosh-linux-stemcell-builder/issues/57), [#162225262](https://www.pivotaltracker.com/story/show/162225262))
  * Unpin rsyslog (was v8.22; backported from 170.x; [#162514665](https://www.pivotaltracker.com/story/show/162514665))
@@ -11325,7 +11328,7 @@ Periodic Ubuntu Xenial stemcell bump (Dec 17, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: December 04, 2018
+**Release Date**: December 05, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Dec 05, 2018)
 
@@ -11341,7 +11344,7 @@ Periodic Ubuntu Xenial stemcell bump (Nov 19, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 15, 2018
+**Release Date**: November 16, 2018
 
 Includes updates to address:
 
@@ -11351,7 +11354,7 @@ Includes updates to address:
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: November 05, 2018
+**Release Date**: November 08, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Nov 08, 2018)
 
@@ -11386,7 +11389,7 @@ Addresses "USN-3777-2: Linux kernel (HWE) vulnerabilities" (Oct 04, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Sep 25, 2018)
 
@@ -11394,7 +11397,7 @@ Periodic Ubuntu Xenial stemcell bump (Sep 25, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 18, 2018
+**Release Date**: September 19, 2018
 
 Fixes mounting persistent disk issue with bosh-agent. (Sep 19, 2018)
 
@@ -11402,7 +11405,7 @@ Fixes mounting persistent disk issue with bosh-agent. (Sep 19, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Sep 11, 2018)
 
@@ -11410,7 +11413,7 @@ Periodic Ubuntu Xenial stemcell bump (Sep 11, 2018)
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Xenial stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
@@ -11418,13 +11421,13 @@ Bump Ubuntu Xenial stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Xenial stemcells for "USN-3740-2: Linux kernel (HWE) vulnerabilities"
 
 #### <a id="97-10"></a> 97.10
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Xenial stemcell bump (Aug 14, 2018)
 
@@ -11436,7 +11439,7 @@ Bump Ubuntu Xenial stemcells for "USN-3732-2: Linux kernel (HWE) vulnerability"
 
 #### <a id="97-3"></a> 97.3
 
-**Release Date**: July 30, 2018
+**Release Date**: July 31, 2018
 
 Periodic Ubuntu Xenial stemcell bump (July 31, 2018)
 
@@ -11452,13 +11455,13 @@ Periodic Ubuntu Xenial stemcell bump (July 16, 2018)
 
 #### <a id="87-3"></a> 87.3
 
-**Release Date**: July 11, 2018
+**Release Date**: July 13, 2018
 
 Periodic Ubuntu Xenial stemcell bump (July 12, 2018)
 
 #### <a id="87"></a> 87
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 Periodic Ubuntu Xenial stemcell bump (July 2, 2018)
 
@@ -11468,7 +11471,7 @@ This section includes release notes for the 81 line of Linux stemcells used with
 
 #### <a id="81"></a> 81
 
-**Release Date**: June 19, 2018
+**Release Date**: June 28, 2018
 
 - Periodic Ubuntu Xenial stemcell bump (June 18, 2018)
 
@@ -11478,7 +11481,7 @@ This section includes release notes for the 60 line of Linux stemcells used with
 
 #### <a id="60"></a> 60
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Xenial stemcell bump (June 4, 2018)
 
@@ -11488,7 +11491,7 @@ This section includes release notes for the 50 line of Linux stemcells used with
 
 #### <a id="50"></a> 50
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Light stemcells are available
 
@@ -11498,7 +11501,7 @@ This section includes release notes for the 40 line of Linux stemcells used with
 
 #### <a id="40"></a> 40
 
-**Release Date**: May 22, 2018
+**Release Date**: May 23, 2018
 
 - First release of Ubuntu Xenial stemcells
 - Notable differences from Ubuntu Trusty
@@ -11515,25 +11518,25 @@ This section includes release notes for the 7 line of Linux stemcells used with 
 
 #### <a id="7"></a> 7
 
-**Release Date**: December 09, 2019
+**Release Date**: December 10, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: November 25, 2019
+**Release Date**: November 26, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: November 11, 2019
+**Release Date**: November 12, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: October 28, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.187.0
 
@@ -11541,25 +11544,25 @@ Addresses CVE-2019-17596
 
 #### <a id="7"></a> 7
 
-**Release Date**: October 24, 2019
+**Release Date**: October 25, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: October 21, 2019
+**Release Date**: October 29, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: October 07, 2019
+**Release Date**: October 08, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: September 24, 2019
+**Release Date**: September 25, 2019
 
 BOSH Agent version: 2.187.0
 
@@ -11567,7 +11570,7 @@ Centos bumped from 7.6 to 7.7
 
 #### <a id="7"></a> 7
 
-**Release Date**: September 09, 2019
+**Release Date**: September 16, 2019
 
 BOSH Agent version: 2.187.0
 USNs:
@@ -11590,58 +11593,58 @@ USNs:
 
 #### <a id="7"></a> 7
 
-**Release Date**: August 12, 2019
+**Release Date**: August 16, 2019
 
 BOSH Agent version: 2.187.0
 Bi-weekly stemcell bump
 
 #### <a id="7"></a> 7
 
-**Release Date**: July 29, 2019
+**Release Date**: August 01, 2019
 
 BOSH Agent version: 2.187.0
 Bi-weekly update
 
 #### <a id="7"></a> 7
 
-**Release Date**: July 15, 2019
+**Release Date**: July 17, 2019
 
 BOSH Agent version: 2.187.0
 
 #### <a id="7"></a> 7
 
-**Release Date**: July 01, 2019
+**Release Date**: July 03, 2019
 
 BOSH Agent version: 2.187.0
 Bi-weekly Agent Bump
 
 #### <a id="7"></a> 7
 
-**Release Date**: June 03, 2019
+**Release Date**: June 06, 2019
 
 Periodic stemcell bump (Jun  4, 2019)
 
 #### <a id="7"></a> 7
 
-**Release Date**: April 08, 2019
+**Release Date**: April 09, 2019
 
 Periodic stemcell bump (Apr  8, 2019)
 
 #### <a id="7"></a> 7
 
-**Release Date**: February 14, 2019
+**Release Date**: February 15, 2019
 
 Periodic CentOS 7 stemcell bump (Feb 14, 2019)
 
 #### <a id="7"></a> 7
 
-**Release Date**: January 28, 2019
+**Release Date**: January 29, 2019
 
 Periodic CentOS 7 stemcell bump (Jan 28, 2019)
 
 #### <a id="7"></a> 7
 
-**Release Date**: January 16, 2019
+**Release Date**: January 22, 2019
 
 Periodic CentOS 7 stemcell bump (Jan 17, 2019)
 
@@ -11655,13 +11658,13 @@ This section includes release notes for the 3763 line of Linux stemcells used wi
 
 #### <a id="3763-14"></a> 3763.14
 
-**Release Date**: March 11, 2019
+**Release Date**: March 15, 2019
 
 Periodic stemcell bump (Mar 14, 2019)
 
 #### <a id="3763-13"></a> 3763.13
 
-**Release Date**: February 25, 2019
+**Release Date**: March 08, 2019
 
 Periodic stemcell bump (Mar 08, 2019)
 
@@ -11671,43 +11674,43 @@ This section includes release notes for the 3586 line of Linux stemcells used wi
 
 #### <a id="3586-93"></a> 3586.93
 
-**Release Date**: March 25, 2019
+**Release Date**: March 28, 2019
 
 Periodic stemcell bump (Mar 26, 2019)
 
 #### <a id="3586-91"></a> 3586.91
 
-**Release Date**: March 12, 2019
+**Release Date**: March 15, 2019
 
 Periodic stemcell bump (Mar 15, 2019)
 
 #### <a id="3586-86"></a> 3586.86
 
-**Release Date**: February 25, 2019
+**Release Date**: March 06, 2019
 
 Periodic stemcell bump (Mar 06, 2019)
 
 #### <a id="3586-79"></a> 3586.79
 
-**Release Date**: February 12, 2019
+**Release Date**: February 15, 2019
 
 Periodic Ubuntu Trusty stemcell bump (Feb 14, 2019)
 
 #### <a id="3586-71"></a> 3586.71
 
-**Release Date**: January 28, 2019
+**Release Date**: January 29, 2019
 
 Periodic Ubuntu Trusty stemcell bump (Jan 28, 2019)
 
 #### <a id="3586-70"></a> 3586.70
 
-**Release Date**: January 23, 2019
+**Release Date**: January 24, 2019
 
 Addresses "USN-3866-1: Ghostscript vulnerability" and "USN-3863-1: APT vulnerability"
 
 #### <a id="3586-67"></a> 3586.67
 
-**Release Date**: January 14, 2019
+**Release Date**: January 15, 2019
 
 Periodic Ubuntu Trusty stemcell bump (Jan 15, 2019)
 
@@ -11719,13 +11722,13 @@ Periodic Ubuntu Trusty stemcell bump (Dec 21, 2018)
 
 #### <a id="3586-63"></a> 3586.63
 
-**Release Date**: December 19, 2018
+**Release Date**: December 20, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Dec 19, 2018)
 
 #### <a id="3586-60"></a> 3586.60
 
-**Release Date**: December 03, 2018
+**Release Date**: December 05, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Dec 05, 2018)
 
@@ -11737,25 +11740,25 @@ Periodic Ubuntu Trusty/CentOS stemcell bump (Nov 19, 2018)
 
 #### <a id="3586-56"></a> 3586.56
 
-**Release Date**: November 15, 2018
+**Release Date**: November 16, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Nov 15, 2018)
 
 #### <a id="3586-54"></a> 3586.54
 
-**Release Date**: November 05, 2018
+**Release Date**: December 07, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Nov 05, 2018)
 
 #### <a id="3586-52"></a> 3586.52
 
-**Release Date**: October 22, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Oct 23, 2018)
 
 #### <a id="3586-48"></a> 3586.48
 
-**Release Date**: October 08, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Oct 11, 2018)
 
@@ -11767,19 +11770,19 @@ Addresses "USN-3776-2: Linux kernel (Xenial HWE) vulnerabilities" (Oct 02, 2018)
 
 #### <a id="3586-43"></a> 3586.43
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Sep 25, 2018)
 
 #### <a id="3586-42"></a> 3586.42
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Sep 11, 2018)
 
 #### <a id="3586-40"></a> 3586.40
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
@@ -11788,19 +11791,19 @@ Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 #### <a id="3586-36"></a> 3586.36
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3741-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3586-35"></a> 3586.35
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Aug 14, 2018)
 
 #### <a id="3586-27"></a> 3586.27
 
-**Release Date**: July 30, 2018
+**Release Date**: August 08, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (July 31, 2018)
 
@@ -11812,7 +11815,7 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3586-25"></a> 3586.25
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (July 2, 2018)
 
@@ -11824,14 +11827,14 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3586-23"></a> 3586.23
 
-**Release Date**: June 13, 2018
+**Release Date**: June 14, 2018
 
 - We are continuing to investigate GCP stemcell compatibility issue from earlier version, but we did roll back BOSH Agent to an earlier version that seems to not trigger this problem
   - Note: This build does not include fixes to recently published CVE-2018-3665
 
 #### <a id="3586-18"></a> 3586.18
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 **WARNING**: 
 We are currently investigating `unresponsive agent` issues when using the Google Cloud Platform version of this stemcell. In the meantime, please use `3586.16` when deploying to GCP.
@@ -11853,7 +11856,7 @@ For more information, see [TLS for Internal Blobstore Supported
 
 #### <a id="3586-8"></a> 3586.8
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
@@ -11887,7 +11890,7 @@ Periodic Ubuntu Trusty/CentOS stemcell bump (Dec 07, 2018)
 
 #### <a id="3541-64"></a> 3541.64
 
-**Release Date**: December 03, 2018
+**Release Date**: December 05, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Dec 05, 2018)
 
@@ -11899,19 +11902,19 @@ Periodic Ubuntu Trusty/CentOS stemcell bump (Nov 19, 2018)
 
 #### <a id="3541-60"></a> 3541.60
 
-**Release Date**: November 15, 2018
+**Release Date**: November 16, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Nov 15, 2018)
 
 #### <a id="3541-57"></a> 3541.57
 
-**Release Date**: October 22, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Oct 23, 2018)
 
 #### <a id="3541-54"></a> 3541.54
 
-**Release Date**: October 08, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Oct 11, 2018)
 
@@ -11923,37 +11926,37 @@ Addresses "USN-3776-2: Linux kernel (Xenial HWE) vulnerabilities" (Oct 02, 2018)
 
 #### <a id="3541-49"></a> 3541.49
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Sep 25, 2018)
 
 #### <a id="3541-48"></a> 3541.48
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Sep 11, 2018)
 
 #### <a id="3541-46"></a> 3541.46
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 #### <a id="3541-44"></a> 3541.44
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3741-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3541-43"></a> 3541.43
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Trusty/CentOS stemcell bump (Aug 14, 2018)
 
 #### <a id="3541-37"></a> 3541.37
 
-**Release Date**: July 30, 2018
+**Release Date**: July 31, 2018
 
 Periodic Ubuntu Trusty stemcell bump (July 31, 2018)
 
@@ -11965,7 +11968,7 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3541-35"></a> 3541.35
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (July 2, 2018)
 
@@ -11977,49 +11980,49 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3541-31"></a> 3541.31
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (June 4, 2018)
 
 #### <a id="3541-25"></a> 3541.25
 
-**Release Date**: May 09, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3641-1: Linux kernel vulnerabilities"
 
 #### <a id="3541-30"></a> 3541.30
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3654-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3541-26"></a> 3541.26
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
 #### <a id="3541-24"></a> 3541.24
 
-**Release Date**: May 07, 2018
+**Release Date**: May 08, 2018
 
 - Ubuntu Trusty stemcells periodic update (May 7, 2018)
 
 #### <a id="3541-12"></a> 3541.12
 
-**Release Date**: April 06, 2018
+**Release Date**: April 07, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3619-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3541-10"></a> 3541.10
 
-**Release Date**: March 26, 2018
+**Release Date**: March 28, 2018
 
 - Periodic Ubuntu and CentOS stemcell bump (March 26/27, 2018)
 
 #### <a id="3541-9"></a> 3541.9
 
-**Release Date**: March 12, 2018
+**Release Date**: March 13, 2018
 
 - Periodic Ubuntu and CentOS stemcell bump (March 12, 2018)
 
@@ -12035,20 +12038,20 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3541-5"></a> 3541.5
 
-**Release Date**: February 22, 2018
+**Release Date**: February 23, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3541-4"></a> 3541.4
 
-**Release Date**: February 14, 2018
+**Release Date**: February 15, 2018
 
 - Rolled back custom umask configuration as we found out it was different in some cases (depends on how processes were started)
   - Hardening of /var/vcap/jobs/* is still applied by the agent
 
 #### <a id="3541-2"></a> 3541.2
 
-**Release Date**: February 08, 2018
+**Release Date**: February 09, 2018
 
 - [breaking] Set default umask to 077 and further harden several /var/vcap/* directories
   - Note that you may have to change your release to adapt to this change
@@ -12069,7 +12072,7 @@ This section includes release notes for the 3469 line of Linux stemcells used wi
 
 #### <a id="3469-1"></a> 3469.1
 
-**Release Date**: February 27, 2018
+**Release Date**: March 02, 2018
 
 - Stemcell produced for testing rsyslog bump to the latest version
   - Unless testing rsyslog, use 3468.x or 3541.x stemcell lines
@@ -12080,13 +12083,13 @@ This section includes release notes for the 3468 line of Linux stemcells used wi
 
 #### <a id="3468-78"></a> 3468.78
 
-**Release Date**: October 22, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Oct 23, 2018)
 
 #### <a id="3468-75"></a> 3468.75
 
-**Release Date**: October 08, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Oct 11, 2018)
 
@@ -12098,37 +12101,37 @@ Addresses "USN-3776-2: Linux kernel (Xenial HWE) vulnerabilities" (Oct 02, 2018)
 
 #### <a id="3468-71"></a> 3468.71
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 25, 2018)
 
 #### <a id="3468-69"></a> 3468.69
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 11, 2018)
 
 #### <a id="3468-67"></a> 3468.67
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 #### <a id="3468-64"></a> 3468.64
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3741-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3468-63"></a> 3468.63
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Aug 14, 2018)
 
 #### <a id="3468-55"></a> 3468.55
 
-**Release Date**: July 30, 2018
+**Release Date**: July 31, 2018
 
 Periodic Ubuntu Trusty stemcell bump (July 31, 2018)
 
@@ -12140,7 +12143,7 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3468-53"></a> 3468.53
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (July 2, 2018)
 
@@ -12152,73 +12155,73 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3468-47"></a> 3468.47
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (June 4, 2018)
 
 #### <a id="3468-42"></a> 3468.42
 
-**Release Date**: May 09, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3641-1: Linux kernel vulnerabilities"
 
 #### <a id="3468-46"></a> 3468.46
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3654-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3468-44"></a> 3468.44
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
 #### <a id="3468-41"></a> 3468.41
 
-**Release Date**: May 07, 2018
+**Release Date**: May 08, 2018
 
 - Ubuntu Trusty stemcells periodic update (May 7, 2018)
 
 #### <a id="3468-30"></a> 3468.30
 
-**Release Date**: April 06, 2018
+**Release Date**: April 07, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3619-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3468-28"></a> 3468.28
 
-**Release Date**: March 26, 2018
+**Release Date**: March 28, 2018
 
 - Periodic Ubuntu and CentOS stemcell bump (March 26/27, 2018)
 
 #### <a id="3468-27"></a> 3468.27
 
-**Release Date**: March 12, 2018
+**Release Date**: March 13, 2018
 
 - Periodic Ubuntu and CentOS stemcell bump (March 12, 2018)
 
 #### <a id="3468-26"></a> 3468.26
 
-**Release Date**: March 01, 2018
+**Release Date**: March 06, 2018
 
 - Includes updated `ixgbevf 4.3.4`
 
 #### <a id="3468-25"></a> 3468.25
 
-**Release Date**: February 22, 2018
+**Release Date**: February 23, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3468-22"></a> 3468.22
 
-**Release Date**: February 05, 2018
+**Release Date**: February 07, 2018
 
 - [Feb 5] Periodic stemcell bump
 
 #### <a id="3468-21"></a> 3468.21
 
-**Release Date**: January 23, 2018
+**Release Date**: January 25, 2018
 
 - No functional change from 3468.20, except version number
 
@@ -12230,13 +12233,13 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3468-19"></a> 3468.19
 
-**Release Date**: January 17, 2018
+**Release Date**: January 18, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 
 #### <a id="3468-17"></a> 3468.17
 
-**Release Date**: January 10, 2018
+**Release Date**: January 11, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-4: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3522-4/)
 - Configure vSphere stemcells to use VM hardware version 9 (requires ESXi 5.1) to be compatible with 
@@ -12250,7 +12253,7 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3468-15"></a> 3468.15
 
-**Release Date**: December 15, 2017
+**Release Date**: December 16, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3509-4: Linux kernel (Xenial HWE) regression
 
@@ -12262,27 +12265,27 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3468-12"></a> 3468.12
 
-**Release Date**: December 06, 2017
+**Release Date**: December 08, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3505-1: Linux firmware vulnerabilities
 
 
 #### <a id="3468-11"></a> 3468.11
 
-**Release Date**: November 21, 2017
+**Release Date**: November 22, 2017
 
 - Periodic Ubuntu stemcells update
 - Includes Agent changes to support IPv6 on vSphere (manual networking)
 
 #### <a id="3468-5"></a> 3468.5
 
-**Release Date**: October 26, 2017
+**Release Date**: November 06, 2017
 
 - Configure `/tmp` to have sticky bit set
 
 #### <a id="3468-1"></a> 3468.1
 
-**Release Date**: October 23, 2017
+**Release Date**: October 26, 2017
 
 - Periodic stemcell bump
 
@@ -12303,13 +12306,13 @@ This section includes release notes for the 3445 line of Linux stemcells used wi
 
 #### <a id="3445-76"></a> 3445.76
 
-**Release Date**: October 22, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Oct 23, 2018)
 
 #### <a id="3445-73"></a> 3445.73
 
-**Release Date**: October 08, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Oct 11, 2018)
 
@@ -12321,37 +12324,37 @@ Addresses "USN-3776-2: Linux kernel (Xenial HWE) vulnerabilities" (Oct 02, 2018)
 
 #### <a id="3445-68"></a> 3445.68
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 25, 2018)
 
 #### <a id="3445-67"></a> 3445.67
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 10, 2018)
 
 #### <a id="3445-66"></a> 3445.66
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 #### <a id="3445-64"></a> 3445.64
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3741-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3445-63"></a> 3445.63
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Aug 14, 2018)
 
 #### <a id="3445-55"></a> 3445.55
 
-**Release Date**: July 30, 2018
+**Release Date**: July 31, 2018
 
 Periodic Ubuntu Trusty stemcell bump (July 31, 2018)
 
@@ -12363,7 +12366,7 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3445-53"></a> 3445.53
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (July 2, 2018)
 
@@ -12375,25 +12378,25 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3445-49"></a> 3445.49
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (June 4, 2018)
 
 #### <a id="3445-48"></a> 3445.48
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3654-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3445-42"></a> 3445.42
 
-**Release Date**: May 01, 2018
+**Release Date**: May 23, 2018
 
 - Ubuntu Trusty stemcells periodic update (Apr 30, 2018)
 
 #### <a id="3445-46"></a> 3445.46
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
@@ -12405,37 +12408,37 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3445-44"></a> 3445.44
 
-**Release Date**: May 07, 2018
+**Release Date**: May 08, 2018
 
 - Ubuntu Trusty stemcells periodic update (May 7, 2018)
 
 #### <a id="3445-32"></a> 3445.32
 
-**Release Date**: April 06, 2018
+**Release Date**: April 07, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3619-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3445-30"></a> 3445.30
 
-**Release Date**: March 26, 2018
+**Release Date**: March 28, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 26/27, 2018)
 
 #### <a id="3445-29"></a> 3445.29
 
-**Release Date**: March 12, 2018
+**Release Date**: March 13, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 12, 2018)
 
 #### <a id="3445-28"></a> 3445.28
 
-**Release Date**: February 22, 2018
+**Release Date**: February 23, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3445-25"></a> 3445.25
 
-**Release Date**: February 05, 2018
+**Release Date**: February 07, 2018
 
 - [Feb 5] Periodic stemcell bump
 
@@ -12447,13 +12450,13 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3445-23"></a> 3445.23
 
-**Release Date**: January 17, 2018
+**Release Date**: January 18, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 
 #### <a id="3445-22"></a> 3445.22
 
-**Release Date**: January 10, 2018
+**Release Date**: January 11, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-4: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3522-4/)
 - Configure vSphere stemcells to use VM hardware version 9 (requires ESXi 5.1) to be compatible with 
@@ -12473,26 +12476,26 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3445-18"></a> 3445.18
 
-**Release Date**: December 06, 2017
+**Release Date**: December 08, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3505-1: Linux firmware vulnerabilities
 
 
 #### <a id="3445-17"></a> 3445.17
 
-**Release Date**: November 21, 2017
+**Release Date**: December 01, 2017
 
 - Periodic Ubuntu stemcells update
 
 #### <a id="3445-11"></a> 3445.11
 
-**Release Date**: September 19, 2017
+**Release Date**: September 20, 2017
 
 - Bump Ubuntu stemcells for USN-3420-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3445-7"></a> 3445.7
 
-**Release Date**: August 30, 2017
+**Release Date**: September 01, 2017
 
 - Logrotate /var/log/wtmp and utmp more aggressively
 - Updated BOSH agent to include aggressive 5 minute timeout on NATS connection failure
@@ -12501,13 +12504,13 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3445-2"></a> 3445.2
 
-**Release Date**: August 16, 2017
+**Release Date**: August 17, 2017
 
 - Bump Ubuntu stemcells for [USN-3392-2: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3392-2/)
 
 #### <a id="3445"></a> 3445
 
-**Release Date**: August 11, 2017
+**Release Date**: August 12, 2017
 
 - Bump Ubuntu stemcells for [USN-3385-2: Linux kernel (Xenial HWE) vulnerabilities](https://usn.ubuntu.com/usn/usn-3385-2/)
 - Include gcscli for native GCS support
@@ -12520,13 +12523,13 @@ This section includes release notes for the 3431 line of Linux stemcells used wi
 
 #### <a id="3431-13"></a> 3431.13
 
-**Release Date**: August 03, 2017
+**Release Date**: August 04, 2017
 
 - Bump version (no change)
 
 #### <a id="3431-11"></a> 3431.11
 
-**Release Date**: August 03, 2017
+**Release Date**: August 04, 2017
 
 - Bump Ubuntu Trusty stemcells for [USN-3378-2: Linux kernel (Xenial HWE) vulnerabilities](https://usn.ubuntu.com/usn/usn-3378-2/)
 - Fix occasional rsyslog hang on startup
@@ -12544,7 +12547,7 @@ This section includes release notes for the 3422 line of Linux stemcells used wi
 
 #### <a id="3422-7"></a> 3422.7
 
-**Release Date**: November 22, 2017
+**Release Date**: December 01, 2017
 
 - Test stemcell for umask changes (based on 3468.x stemcell line)
 
@@ -12554,7 +12557,7 @@ This section includes release notes for the 3421 line of Linux stemcells used wi
 
 #### <a id="3421-88"></a> 3421.88
 
-**Release Date**: October 08, 2018
+**Release Date**: October 23, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Oct 11, 2018)
 
@@ -12566,37 +12569,37 @@ Addresses "USN-3776-2: Linux kernel (Xenial HWE) vulnerabilities" (Oct 02, 2018)
 
 #### <a id="3421-83"></a> 3421.83
 
-**Release Date**: September 24, 2018
+**Release Date**: September 25, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 25, 2018)
 
 #### <a id="3421-82"></a> 3421.82
 
-**Release Date**: September 10, 2018
+**Release Date**: September 11, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Sep 10, 2018)
 
 #### <a id="3421-81"></a> 3421.81
 
-**Release Date**: August 27, 2018
+**Release Date**: August 28, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3756-1: Intel Microcode vulnerabilities"
 
 #### <a id="3421-79"></a> 3421.79
 
-**Release Date**: August 14, 2018
+**Release Date**: August 15, 2018
 
 Bump Ubuntu Trusty stemcells for "USN-3741-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3421-78"></a> 3421.78
 
-**Release Date**: August 13, 2018
+**Release Date**: August 14, 2018
 
 Periodic Ubuntu Trusty stemcell bump (Aug 14, 2018)
 
 #### <a id="3421-70"></a> 3421.70
 
-**Release Date**: July 30, 2018
+**Release Date**: July 31, 2018
 
 Periodic Ubuntu Trusty stemcell bump (July 31, 2018)
 
@@ -12608,7 +12611,7 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3421-68"></a> 3421.68
 
-**Release Date**: July 02, 2018
+**Release Date**: July 03, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (July 2, 2018)
 
@@ -12620,25 +12623,25 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3421-64"></a> 3421.64
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (June 4, 2018)
 
 #### <a id="3421-63"></a> 3421.63
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3654-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3421-56"></a> 3421.56
 
-**Release Date**: May 01, 2018
+**Release Date**: May 23, 2018
 
 - Ubuntu Trusty stemcells periodic update (Apr 30, 2018)
 
 #### <a id="3421-60"></a> 3421.60
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
@@ -12650,37 +12653,37 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3421-58"></a> 3421.58
 
-**Release Date**: May 07, 2018
+**Release Date**: May 08, 2018
 
 - Ubuntu Trusty stemcells periodic update (May 7, 2018)
 
 #### <a id="3421-46"></a> 3421.46
 
-**Release Date**: April 06, 2018
+**Release Date**: April 07, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3619-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3421-44"></a> 3421.44
 
-**Release Date**: March 26, 2018
+**Release Date**: March 28, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 26/27, 2018)
 
 #### <a id="3421-43"></a> 3421.43
 
-**Release Date**: March 12, 2018
+**Release Date**: March 13, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 12, 2018)
 
 #### <a id="3421-42"></a> 3421.42
 
-**Release Date**: February 22, 2018
+**Release Date**: February 23, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3421-39"></a> 3421.39
 
-**Release Date**: February 05, 2018
+**Release Date**: February 07, 2018
 
 - [Feb 5] Periodic stemcell bump
 
@@ -12692,13 +12695,13 @@ Periodic Ubuntu Trusty stemcell bump (July 16, 2018)
 
 #### <a id="3421-37"></a> 3421.37
 
-**Release Date**: January 17, 2018
+**Release Date**: January 18, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 
 #### <a id="3421-36"></a> 3421.36
 
-**Release Date**: January 10, 2018
+**Release Date**: January 11, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-4: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3522-4/)
 - Configure vSphere stemcells to use VM hardware version 9 (requires ESXi 5.1) to be compatible with 
@@ -12718,32 +12721,32 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3421-33"></a> 3421.33
 
-**Release Date**: December 06, 2017
+**Release Date**: December 08, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3505-1: Linux firmware vulnerabilities
 
 
 #### <a id="3421-32"></a> 3421.32
 
-**Release Date**: November 21, 2017
+**Release Date**: December 01, 2017
 
 - Periodic Ubuntu stemcells update
 
 #### <a id="3421-20"></a> 3421.20
 
-**Release Date**: August 16, 2017
+**Release Date**: August 17, 2017
 
 - Bump Ubuntu stemcells for [USN-3392-2: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3392-2/)
 
 #### <a id="3421-19"></a> 3421.19
 
-**Release Date**: August 11, 2017
+**Release Date**: August 12, 2017
 
 - Bump Ubuntu stemcells for [USN-3385-2: Linux kernel (Xenial HWE) vulnerabilities](https://usn.ubuntu.com/usn/usn-3385-2/)
 
 #### <a id="3421-18"></a> 3421.18
 
-**Release Date**: August 03, 2017
+**Release Date**: August 04, 2017
 
 - Bump Ubuntu Trusty stemcells for [USN-3378-2: Linux kernel (Xenial HWE) vulnerabilities](https://usn.ubuntu.com/usn/usn-3378-2/)
 - Fix occasional rsyslog hang on startup
@@ -12751,7 +12754,7 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3421-11"></a> 3421.11
 
-**Release Date**: June 29, 2017
+**Release Date**: June 30, 2017
 
 - Bump Ubuntu stemcells for USN-3344-2: Linux kernel (Xenial HWE) vulnerabilities
 
@@ -12763,13 +12766,13 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3421-6"></a> 3421.6
 
-**Release Date**: June 09, 2017
+**Release Date**: June 12, 2017
 
 * Bump Ubuntu stemcells for USN-3312-2 - Linux kernel vulnerabilities
 
 #### <a id="3421-4"></a> 3421.4
 
-**Release Date**: June 01, 2017
+**Release Date**: June 05, 2017
 
 - Bump CentOS stemcells for CESA-2017:1382 - sudo vulnerability
 
@@ -12781,7 +12784,7 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3421"></a> 3421
 
-**Release Date**: May 22, 2017
+**Release Date**: May 23, 2017
 
 New:
 
@@ -12816,19 +12819,19 @@ This section includes release notes for the 3363 line of Linux stemcells used wi
 
 #### <a id="3363-64"></a> 3363.64
 
-**Release Date**: June 04, 2018
+**Release Date**: June 05, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (June 4, 2018)
 
 #### <a id="3363-63"></a> 3363.63
 
-**Release Date**: May 23, 2018
+**Release Date**: May 24, 2018
 
 - Bump Ubuntu Trusty stemcells for "USN-3654-2: Linux kernel (Xenial HWE) vulnerabilities"
 
 #### <a id="3363-62"></a> 3363.62
 
-**Release Date**: May 21, 2018
+**Release Date**: May 22, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (May 21, 2018)
 
@@ -12840,37 +12843,37 @@ This section includes release notes for the 3363 line of Linux stemcells used wi
 
 #### <a id="3363-60"></a> 3363.60
 
-**Release Date**: May 07, 2018
+**Release Date**: May 08, 2018
 
 - Ubuntu Trusty stemcells periodic update (May 7, 2018)
 
 #### <a id="3363-53"></a> 3363.53
 
-**Release Date**: April 06, 2018
+**Release Date**: April 07, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3619-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3363-52"></a> 3363.52
 
-**Release Date**: March 26, 2018
+**Release Date**: March 28, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 26/27, 2018)
 
 #### <a id="3363-51"></a> 3363.51
 
-**Release Date**: March 12, 2018
+**Release Date**: March 13, 2018
 
 - Periodic Ubuntu Trusty stemcell bump (March 12, 2018)
 
 #### <a id="3363-50"></a> 3363.50
 
-**Release Date**: February 22, 2018
+**Release Date**: February 23, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3582-2: Linux kernel (Xenial HWE) vulnerabilities
 
 #### <a id="3363-49"></a> 3363.49
 
-**Release Date**: February 05, 2018
+**Release Date**: February 07, 2018
 
 - [Feb 5] Periodic stemcell bump
 
@@ -12882,13 +12885,13 @@ This section includes release notes for the 3363 line of Linux stemcells used wi
 
 #### <a id="3363-47"></a> 3363.47
 
-**Release Date**: January 17, 2018
+**Release Date**: January 18, 2018
 
 - Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 
 #### <a id="3363-46"></a> 3363.46
 
-**Release Date**: January 10, 2018
+**Release Date**: January 11, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-4: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3522-4/)
 - Configure vSphere stemcells to use VM hardware version 9 (requires ESXi 5.1) to be compatible with 
@@ -12908,26 +12911,26 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3363-43"></a> 3363.43
 
-**Release Date**: December 06, 2017
+**Release Date**: December 08, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3505-1: Linux firmware vulnerabilities
 
 
 #### <a id="3363-42"></a> 3363.42
 
-**Release Date**: November 21, 2017
+**Release Date**: December 01, 2017
 
 - Periodic Ubuntu stemcells update
 
 #### <a id="3363-24"></a> 3363.24
 
-**Release Date**: May 17, 2017
+**Release Date**: May 22, 2017
 
 - Periodic Ubuntu stemcells update
 
 #### <a id="3363-22"></a> 3363.22
 
-**Release Date**: May 11, 2017
+**Release Date**: May 15, 2017
 
 - Periodic Ubuntu stemcells update
 - Run `cron` in BOSH Lite stemcells so that logrotation is performed
@@ -12957,19 +12960,19 @@ Misc:
 
 #### <a id="3363-14"></a> 3363.14
 
-**Release Date**: March 30, 2017
+**Release Date**: March 31, 2017
 
 - Bump Ubuntu stemcells for USN-3249-2: Linux kernel (Xenial HWE) vulnerability
 
 #### <a id="3363-10"></a> 3363.10
 
-**Release Date**: March 08, 2017
+**Release Date**: March 09, 2017
 
 - Bumps Ubuntu stemcells for USN-3220-2: Linux kernel (Xenial HWE) vulnerability
 
 #### <a id="3363-9"></a> 3363.9
 
-**Release Date**: February 22, 2017
+**Release Date**: February 23, 2017
 
 Changes:
 - Bumps Ubuntu stemcells for USN-3208-2: Linux kernel (Xenial HWE) vulnerabilities
@@ -12984,7 +12987,7 @@ Agent:
 
 #### <a id="3363-1"></a> 3363.1
 
-**Release Date**: February 15, 2017
+**Release Date**: February 18, 2017
 
 Reported Problems:
 - DO NOT USE _azure_ stemcell as it may cause data loss.
@@ -12998,7 +13001,7 @@ Changes:
 
 #### <a id="3363"></a> 3363
 
-**Release Date**: February 15, 2017
+**Release Date**: February 16, 2017
 
 Reported Problems:
 - DO NOT USE _azure_ stemcell as it may cause data loss.
@@ -13037,7 +13040,7 @@ This section includes release notes for the 3312 line of Linux stemcells used wi
 
 #### <a id="3312-50"></a> 3312.50
 
-**Release Date**: January 10, 2018
+**Release Date**: January 11, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-4: Linux kernel (Xenial HWE) regression](https://usn.ubuntu.com/usn/usn-3522-4/)
 - Configure vSphere stemcells to use VM hardware version 9 (requires ESXi 5.1) to be compatible with 
@@ -13045,7 +13048,7 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3312-49"></a> 3312.49
 
-**Release Date**: January 09, 2018
+**Release Date**: January 10, 2018
 
 - Bump Ubuntu Trusty stemcells for [USN-3522-2: Linux (Xenial HWE) vulnerability](https://usn.ubuntu.com/usn/usn-3522-2/) (This flaw is known as Meltdown.)
 
@@ -13057,20 +13060,20 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 
 #### <a id="3312-47"></a> 3312.47
 
-**Release Date**: December 06, 2017
+**Release Date**: December 08, 2017
 
 - Bump Ubuntu Trusty stemcells for USN-3505-1: Linux firmware vulnerabilities
 
 
 #### <a id="3312-46"></a> 3312.46
 
-**Release Date**: November 21, 2017
+**Release Date**: December 01, 2017
 
 - Periodic Ubuntu stemcells update
 
 #### <a id="3312-17"></a> 3312.17
 
-**Release Date**: January 31, 2017
+**Release Date**: February 02, 2017
 
 Reported Problems:
 - [Memory leak bug in Kernel 4.4.0-59](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1655842)
@@ -13081,7 +13084,7 @@ Changes:
 
 #### <a id="3312-15"></a> 3312.15
 
-**Release Date**: January 12, 2017
+**Release Date**: January 13, 2017
 
 Reported Problems:
 - [Memory leak bug in Kernel 4.4.0-59](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1655842)
@@ -13121,7 +13124,7 @@ Changes:
 
 #### <a id="3312-6"></a> 3312.6
 
-**Release Date**: December 02, 2016
+**Release Date**: December 05, 2016
 
 - Periodic stemcell update
 
@@ -13147,7 +13150,7 @@ This section includes release notes for the 3309 line of Linux stemcells used wi
 
 #### <a id="3309"></a> 3309
 
-**Release Date**: November 10, 2016
+**Release Date**: November 11, 2016
 
 - Fixes persistent disk mounting on OpenStack described in [Stemcell 3308](https://github.com/cloudfoundry/bosh/releases/tag/stable-3308)
 
@@ -13158,7 +13161,7 @@ This section includes release notes for the 3308 line of Linux stemcells used wi
 
 #### <a id="3308"></a> 3308
 
-**Release Date**: November 09, 2016
+**Release Date**: November 10, 2016
 
 Reported Problems:
 - On OpenStack: Mounting persistent disks not working when using `config-drive: disk` while nova is configured to use a `cdrom` config-drive due to https://github.com/cloudfoundry/bosh/issues/1503
@@ -13173,7 +13176,7 @@ This section includes release notes for the 3306 line of Linux stemcells used wi
 
 #### <a id="3306"></a> 3306
 
-**Release Date**: November 08, 2016
+**Release Date**: November 09, 2016
 
 Reported Problems
 - `bosh-init` doesn't work with this stemcell on OpenStack and AWS due to https://github.com/cloudfoundry/bosh/issues/1500
@@ -13225,14 +13228,14 @@ This section includes release notes for the 3263 line of Linux stemcells used wi
 
 #### <a id="3263-7"></a> 3263.7
 
-**Release Date**: October 12, 2016
+**Release Date**: October 13, 2016
 
 - Bump Ubuntu stemcells for USN-3099-2: Linux kernel (Xenial HWE) vulnerabilities
 
 
 #### <a id="3263-5"></a> 3263.5
 
-**Release Date**: September 30, 2016
+**Release Date**: October 12, 2016
 
 - Periodic bump
 - Delay start of rsyslogd using systemd on CentOS
@@ -13240,7 +13243,7 @@ This section includes release notes for the 3263 line of Linux stemcells used wi
 
 #### <a id="3263-4"></a> 3263.4
 
-**Release Date**: September 28, 2016
+**Release Date**: September 29, 2016
 
 - google-kvm: improve the `google-*` daemon configurations
   - fixes `ssh: handshake failed` errors on boot
@@ -13276,7 +13279,7 @@ This section includes release notes for the 3262 line of Linux stemcells used wi
 
 #### <a id="3262-19"></a> 3262.19
 
-**Release Date**: September 28, 2016
+**Release Date**: September 29, 2016
 
 - google-kvm: improve the `google-*` daemon configurations
   - fixes `ssh: handshake failed` errors on boot
@@ -13302,7 +13305,7 @@ This section includes release notes for the 3233 line of Linux stemcells used wi
 
 #### <a id="3233-1"></a> 3233.1
 
-**Release Date**: September 27, 2016
+**Release Date**: September 29, 2016
 
 - Bumps Ubuntu stemcells for [USN-3087-2](http://www.ubuntu.com/usn/usn-3087-2/) (OpenSSL regression)
 
