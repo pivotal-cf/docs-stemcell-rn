@@ -15,6 +15,76 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-77"></a> 621.77
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
+
 #### <a id="621-76"></a> 621.76
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -1510,6 +1580,76 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-115"></a> 456.115
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
 
 #### <a id="456-114"></a> 456.114
 
@@ -5436,6 +5576,76 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="250-201"></a> 250.201
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
+
 #### <a id="250-200"></a> 250.200
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -7504,6 +7714,76 @@ First published xenial 250. stemcell.
 ### <a id="170-line"></a> 170.x 
 
 This section includes release notes for the 170 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="170-222"></a> 170.222
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.160.11
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
 
 #### <a id="170-221"></a> 170.221
 
