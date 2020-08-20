@@ -14,19 +14,21 @@ This topic includes release notes for Windows stemcells used with the following 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on VMware Tanzu Network.
-  <p class="note"><strong>Note</strong>: Manual stemcell creation is deprecated. 
-    Use <code>stembuild</code> v2019.23 or later to create stemcells automatically. 
-    For more information, 
-    see <a href="https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
+  <p class="note"><strong>Note</strong>: Manual stemcell creation is deprecated.
+    Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
+    For more information,
+    see <a href="https://docs.pivotal.io/application-service-windows/<%= vars.vars.current_major_version.sub('.', '-') %>/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
   </p>
+
+
 ## <a id="2019.24"></a>2019.24
 
 **Release Date**: July 24th, 2020
 
 ### Security Fix
- - Includes the Tuesday July 14th, 2020 Microsoft security update patch. 
- For more information, see 
- [July 14th, 2020—KB4558998 (OS Build 17763.1339)](https://support.microsoft.com/en-us/help/4558998/windows-10-update-kb4558998) 
+ - Includes the Tuesday July 14th, 2020 Microsoft security update patch.
+ For more information, see
+ [July 14th, 2020—KB4558998 (OS Build 17763.1339)](https://support.microsoft.com/en-us/help/4558998/windows-10-update-kb4558998)
  in the Microsoft Windows support documentation.
 
 
@@ -35,29 +37,29 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
 **Release Date**: June 25th, 2020
 
 ### General Availability Release of stembuild
-This release announces the general availability of stembuild. 
+This release announces the general availability of stembuild.
 For more information about stembuild, see [Creating a Windows Stemcell for vSphere Using stembuild]
 (https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html).
 
 ### Security Fix
- - Includes the Tuesday June 9th, 2020 Microsoft security update patch. 
- For more information, see 
- [June 9, 2020—KB4561608 (OS Build 17763.1282)](https://support.microsoft.com/en-us/help/4561608) 
+ - Includes the Tuesday June 9th, 2020 Microsoft security update patch.
+ For more information, see
+ [June 9, 2020—KB4561608 (OS Build 17763.1282)](https://support.microsoft.com/en-us/help/4561608)
  in the Microsoft Windows support documentation.
 
 ### Features
-- `stembuild construct` identifies the location of the base VM, including across multiple data centers. 
+- `stembuild construct` identifies the location of the base VM, including across multiple data centers.
 - `stembuild construct` logs out any users who are logged in while the `construct` command is in progress,
-ensuring minimum disruption during stemcell creation. 
+ensuring minimum disruption during stemcell creation.
 
 ### Deprecation Notice for Manual Stemcell Creation Process
 
-The manual procedure for creating stemcells is deprecated. 
+The manual procedure for creating stemcells is deprecated.
 Support for manual stemcell creation ends September 2020.
-Ensure that you start using the new stembuild-based stemcell 
-creation procedure on or before September 2020. 
-See 
-[Creating a Windows Stemcell for vSphere Using stembuild](https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html).  
+Ensure that you start using the new stembuild-based stemcell
+creation procedure on or before September 2020.
+See
+[Creating a Windows Stemcell for vSphere Using stembuild](https://docs.pivotal.io/platform/application-service-windows/2-9/create-vsphere-stemcell-automatically.html).
 
 ## <a id="2019.22"></a>2019.22
 
@@ -126,23 +128,23 @@ This stemcell and later v2019.x versions work with:
 
 ### Features
 
-- Supports signed URL capability. 
-If Windows users opt in, the BOSH agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials. 
-For more information on how to opt in to signed URLs, see 
+- Supports signed URL capability.
+If Windows users opt in, the BOSH agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials.
+For more information on how to opt in to signed URLs, see
 [Signed URLs](https://bosh.io/docs/director-blobstore-signed-urls/) in the _Cloud Foundry BOSH_ documentation.
-- `stembuild` validates the VM OS is Windows Server 2019, OS build 17763. This is 
+- `stembuild` validates the VM OS is Windows Server 2019, OS build 17763. This is
 the only OS version that stembuild v2019.x is compatible with.
 
 ### Bug Fixes
 
-- Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch 
-updated root certificates from the public Windows Update Server. 
-<p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have 
+- Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch
+updated root certificates from the public Windows Update Server.
+<p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have
   access to the public Windows Update Server.</p>
-- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM. 
+- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM.
 For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15]
-(https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) 
-in the Knowledge Base.  
+(https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15)
+in the Knowledge Base.
 
 
 ## <a id="2019.16"></a>2019.16
@@ -244,7 +246,7 @@ in the Knowledge Base.
 
 - Includes [Microsoft Security Updates Patch Tuesday August 2019](https://support.microsoft.com/en-us/help/4511553)
 - Aligned a set of audit policies on the stemcells based on [Microsoft Baseline Security Standard](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
-- Introduced a new feature in `stembuild construct` command to validate/invalidate the OS based on stembuild version. 
+- Introduced a new feature in `stembuild construct` command to validate/invalidate the OS based on stembuild version.
 
 
 ## <a id="2019.8"></a>2019.8
@@ -254,7 +256,7 @@ in the Knowledge Base.
 ### Features
 
 - Includes [Microsoft Security Updates Patch Tuesday July 2019](https://support.microsoft.com/en-us/help/4507469)
-- Windows Defender is installed but disabled on all stemcells. 
+- Windows Defender is installed but disabled on all stemcells.
 
 
 ## <a id="2019.7"></a>2019.7
@@ -263,8 +265,8 @@ in the Knowledge Base.
 
 ### Features
 
-- Key improvements in stembuild with features such as SSH enable-by-default for deployed Windows VMs on vSphere and security fixes. 
-- Enabled the Hyper-V Windows feature for enabling Windows in PKS and NSX-T compatibility with Windows teams. 
+- Key improvements in stembuild with features such as SSH enable-by-default for deployed Windows VMs on vSphere and security fixes.
+- Enabled the Hyper-V Windows feature for enabling Windows in PKS and NSX-T compatibility with Windows teams.
 
 
 ## <a id="2019.6"></a>2019.6
@@ -274,7 +276,7 @@ in the Knowledge Base.
 ### Security Fixes
 
 - Includes Microsoft Security Updates [June 11, 2019—KB4503327](https://support.microsoft.com/en-us/help/4503327/windows-10-update-kb4503327)
-- Introduces 2.3.1.2 (L1) and 1.1.1 (L1) CIS L1 policy hardenings based on the CIS Security Benchmark. 
+- Introduces 2.3.1.2 (L1) and 1.1.1 (L1) CIS L1 policy hardenings based on the CIS Security Benchmark.
 
 
 ## <a id="2019.5"></a>2019.5
@@ -292,7 +294,7 @@ in the Knowledge Base.
 
 ### Features
 
-- Platform Engineers can deploy Windows Stemcells on a BOSH Director with Google Cloud Storage as their external Blobstore. 
+- Platform Engineers can deploy Windows Stemcells on a BOSH Director with Google Cloud Storage as their external Blobstore.
 - Improved Troubleshooting of Windows VMs, with ssh enabled by default for all Windows VMs. You can still disable SSH in the <%= vars.windows_runtime_abbr %> tile.
 - Includes Microsoft Security Updates to protect against Microarchitectural Data Sampling side-channel vulnerabilities. For more information, see [May 14, 2019—KB4494441 (OS Build 17763.503)](https://support.microsoft.com/en-us/help/4494441/windows-10-update-kb4494441) in the Windows support documentation.
 
