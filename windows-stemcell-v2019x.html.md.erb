@@ -6,9 +6,9 @@ modified_date: false
 
 This topic includes release notes for Windows stemcells used with the following runtimes:
 
-- <%= vars.windows_runtime_full %> (<%= vars.windows_runtime_abbr %>) v2.5, v2.6, v2.7, and v2.8
+- <%= vars.windows_runtime_full %> (<%= vars.windows_runtime_abbr %>) v2.5 and later:
   - For Windows stemcell compatibilities with <%= vars.windows_runtime_abbr %>, see specific stemcell version notes below.
-- VMware <%= vars.k8s_runtime_full %> (<%= vars.k8s_runtime_abbr %>, formerly PKS) v1.5 and later
+- VMware <%= vars.k8s_runtime_full %> (<%= vars.k8s_runtime_abbr %>, formerly PKS) v1.5 and later:
   - For Windows stemcell compatibilites with <%= vars.k8s_runtime_abbr %>, refer to the [Release Notes](https://docs.pivotal.io/tkgi/release-notes.html) for your <%= vars.k8s_runtime_abbr %> version.
 
 The stemcell is based on Windows Server, version 2019.
@@ -25,15 +25,20 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
 
 **Release Date**: August 25th, 2020
 
-### Security Fix
-- Includes [Microsoft Security Updates Patch Tuesday August 25th, 2020](https://support.microsoft.com/en-us/help/4565349/windows-10-update-kb4565349)
+### <a id="2019-25-security"></a>Security Fix
+- Includes the Tuesday August 25th, 2020 Microsoft security updates patch.
+ For more information, see 
+ [August 11, 2020—KB4565349 (OS Build 17763.1397)]
+ (https://support.microsoft.com/en-us/help/4565349/windows-10-update-kb4565349) 
+ in the Microsoft Windows support documentation.
 
-### Bug Fix
+### <a id="2019-25-bug-fix"></a>Bug Fix
 - Fixed a bug to ensure UTC timezone is set in the Windows VMs.  
 
-### EOL Notice
+### <a id="2019-25-eogs"></a>End of General Service Notice
 
-This release will be the last release for stemcell-builder and manually creating stemcells. You can use the stembuild-based approach to build stemcells going forward. 
+This stemcell release is the last release supporting stemcell-builder and manually creating stemcells. 
+After this release, you must use the stembuild-based approach to build stemcells. 
 
 ## <a id="2019.24"></a>2019.24
 
