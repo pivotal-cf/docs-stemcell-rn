@@ -2175,6 +2175,71 @@ BOSH Agent version: 2.268.3
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="456-120"></a> 456.120
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 09, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4485-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4485-1
+**Priorities**: low,medium,negligible
+**Description**:
+  Timothy Michaud discovered that the i915 graphics driver in the Linux kernel did not properly validate user memory locations for the i915_gem_execbuffer2_ioctl. A local attacker could possibly use this to cause a denial of service or execute arbitrary code. (CVE-2018-20669)
+It was discovered that the Kvaser CAN/USB driver in the Linux kernel...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10781
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12655
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24394
+
+**Title**: USN-4476-1: NSS vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4476-1
+**Priorities**: medium
+**Description**:
+  It was discovered that NSS incorrectly handled some inputs. An attacker could possibly use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12403
+
+**Title**: USN-4490-1: X.Org X Server vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4490-1
+**Priorities**: medium
+**Description**:
+  Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled the XkbSetNames function. A local attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14345
+
+**Title**: USN-4489-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4489-1
+**Priorities**: high
+**Description**:
+  Or Cohen discovered that the AF_PACKET implementation in the Linux kernel did not properly perform bounds checking in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14386
+
+**Title**: USN-4482-1: Ark vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4482-1
+**Priorities**: medium
+**Description**:
+  Fabian Vogt discovered that Ark incorrectly handled symbolic links in tar archive files. An attacker could use this to construct a malicious tar archive that, when opened, would create files outside the extraction directory.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24654
+
 #### <a id="456-119"></a> 456.119
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -4726,6 +4791,71 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="315-193"></a> 315.193
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 09, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4485-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4485-1
+**Priorities**: low,medium,negligible
+**Description**:
+  Timothy Michaud discovered that the i915 graphics driver in the Linux kernel did not properly validate user memory locations for the i915_gem_execbuffer2_ioctl. A local attacker could possibly use this to cause a denial of service or execute arbitrary code. (CVE-2018-20669)
+It was discovered that the Kvaser CAN/USB driver in the Linux kernel...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10781
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12655
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24394
+
+**Title**: USN-4476-1: NSS vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4476-1
+**Priorities**: medium
+**Description**:
+  It was discovered that NSS incorrectly handled some inputs. An attacker could possibly use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12403
+
+**Title**: USN-4490-1: X.Org X Server vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4490-1
+**Priorities**: medium
+**Description**:
+  Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled the XkbSetNames function. A local attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14345
+
+**Title**: USN-4489-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4489-1
+**Priorities**: high
+**Description**:
+  Or Cohen discovered that the AF_PACKET implementation in the Linux kernel did not properly perform bounds checking in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14386
+
+**Title**: USN-4482-1: Ark vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4482-1
+**Priorities**: medium
+**Description**:
+  Fabian Vogt discovered that Ark incorrectly handled symbolic links in tar archive files. An attacker could use this to construct a malicious tar archive that, when opened, would create files outside the extraction directory.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24654
 
 #### <a id="315-192"></a> 315.192
 
@@ -7369,6 +7499,71 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="250-206"></a> 250.206
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 09, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4485-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4485-1
+**Priorities**: low,medium,negligible
+**Description**:
+  Timothy Michaud discovered that the i915 graphics driver in the Linux kernel did not properly validate user memory locations for the i915_gem_execbuffer2_ioctl. A local attacker could possibly use this to cause a denial of service or execute arbitrary code. (CVE-2018-20669)
+It was discovered that the Kvaser CAN/USB driver in the Linux kernel...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10781
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12655
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24394
+
+**Title**: USN-4476-1: NSS vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4476-1
+**Priorities**: medium
+**Description**:
+  It was discovered that NSS incorrectly handled some inputs. An attacker could possibly use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12403
+
+**Title**: USN-4490-1: X.Org X Server vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4490-1
+**Priorities**: medium
+**Description**:
+  Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled the XkbSetNames function. A local attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14345
+
+**Title**: USN-4489-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4489-1
+**Priorities**: high
+**Description**:
+  Or Cohen discovered that the AF_PACKET implementation in the Linux kernel did not properly perform bounds checking in some situations. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14386
+
+**Title**: USN-4482-1: Ark vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4482-1
+**Priorities**: medium
+**Description**:
+  Fabian Vogt discovered that Ark incorrectly handled symbolic links in tar archive files. An attacker could use this to construct a malicious tar archive that, when opened, would create files outside the extraction directory.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24654
 
 #### <a id="250-205"></a> 250.205
 
