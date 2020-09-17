@@ -19,13 +19,13 @@ your deployment using the **Stemcell** configuration pane of a given tile or by 
 Before you upgrade <%= vars.platform_name %>, always verify that all installed tiles are compatible
 with the version of <%= vars.platform_name %> that you are deploying and its supported stemcells.
 For more information about <%= vars.platform_name %> and stemcell compatibility, see
-[Review Service Tile Compatibility](https://docs.pivotal.io/platform/upgrading/checklist.html#compatibility)
-in the _Upgrade Preparation Checklist_.
+[Review Service Tile Compatibility](https://docs.pivotal.io/ops-manager/upgrade/checklist.html#compatibility)
+in _Upgrade Preparation Checklist_.
 
 To discover which stemcell version is used by which tile version, review the release notes or the
 [<%= vars.product_network %>](https://network.pivotal.io/) download page for the tile.
 
-  <p class="note"><strong>NOTE</strong>: Manual stemcell creation has been deprecated.
+  <p class="note"><strong>Note:</strong> Manual stemcell creation has been deprecated.
     Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
     For more information,
     see <a href="https://docs.pivotal.io/application-service-windows/<%= vars.current_major_version.sub('.', '-') %>/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
