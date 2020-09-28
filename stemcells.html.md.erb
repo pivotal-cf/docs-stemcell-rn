@@ -15,6 +15,253 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-85"></a> 621.85
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 28, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4500-1: bsdiff vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4500-1
+**Priorities**: medium
+**Description**:
+  It was discovered that bsdiff mishandled certain input. If a user were tricked into opening a malicious file, an attacker could cause bsdiff to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9862
+
+**Title**: USN-4506-1: MCabber vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4506-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MCabber does not properly manage roster pushes. An attacker could possibly use this issue to remotely perform man-in-the-middle attacks. (CVE-2016-9928).
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9928
+
+**Title**: USN-4513-1: apng2gif vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4513-1
+**Priorities**: medium
+**Description**:
+  Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled loading APNG files. An attacker could exploit this with a crafted APNG file to access sensitive information. (CVE-2017-6960)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6960
+
+**Title**: USN-4517-1: Email-Address-List vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4517-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Email-Address-List does not properly parse email addresses during email-ingestion. A remote attacker could use this issue to cause an algorithmic complexity attack, resulting in a denial of service. (CVE-2018-18898)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18898
+
+**Title**: USN-4507-1: ncmpc vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4507-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ncmpc incorrectly handled long chat messages. A remote attacker could possibly exploit this with a crafted chat message, causing ncmpc to crash, resulting in a denial of service. (CVE-2018-9240)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9240
+
+**Title**: USN-4499-1: MilkyTracker vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4499-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MilkyTracker did not properly handle certain input. If a user were tricked into opening a malicious file, an attacker could cause MilkyTracker to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14464
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14496
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14497
+
+**Title**: USN-4504-1: OpenSSL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4504-1
+**Priorities**: low
+**Description**:
+  Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky discovered that certain Diffie-Hellman ciphersuites in the TLS specification and implemented by OpenSSL contained a flaw. A remote attacker could possibly use this issue to eavesdrop on encrypted communications. This was fixed in this update by removing the insecure ciphersuites...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1968
+
+**Title**: USN-4498-1: Loofah vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4498-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Loofah does not properly sanitize JavaScript in sanitized output. An attacker could possibly use this issue to perform XSS attacks. (CVE-2019-15587)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587
+
+**Title**: USN-4496-1: Apache XML-RPC vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4496-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Apache XML-RPC (aka ws-xmlrpc) does not properly deserialize untrusted data. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-17570)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17570
+
+**Title**: USN-4526-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4526-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the AMD Cryptographic Coprocessor device driver in the Linux kernel did not properly deallocate memory in some situations. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-18808)
+It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18808
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12888
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14356
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16166
+
+**Title**: USN-4527-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4527-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly deallocate memory in some error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19054)
+It was discovered that the Atheros HTC based wireless driver in the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20811
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9453
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212
+
+**Title**: USN-4520-1: Exim SpamAssassin vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4520-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exim SpamAssassin does not properly handle configuration strings. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-19920)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19920
+
+**Title**: USN-4534-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4534-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash or expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20919
+
+**Title**: USN-4535-1:  RDFLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4535-1
+**Priorities**: medium
+**Description**:
+  Gabriel Corona discovered that RDFLib did not properly load modules on the command-line. An attacker could possibly use this issue to cause RDFLib to execute arbitrary code. (CVE-2019-7653)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-7653
+
+**Title**: USN-4528-1: Ceph vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4528-1
+**Priorities**: medium
+**Description**:
+  Adam Mohammed discovered that Ceph incorrectly handled certain CORS ExposeHeader tags. A remote attacker could possibly use this issue to preform an HTTP header injection attack. (CVE-2020-10753)
+Lei Cao discovered that Ceph incorrectly handled certain POST requests with invalid tagging XML. A remote attacker could possibly use this issue...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12059
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1760
+
+**Title**: USN-4518-1: xawtv vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4518-1
+**Priorities**: low
+**Description**:
+  Matthias Gerstner discovered that xawtv incorrectly handled opening files. A local attacker could possibly use this issue to open and write to arbitrary files and escalate privileges. (CVE-2020-13696)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13696
+
+**Title**: USN-4521-1: pam_tacplus vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4521-1
+**Priorities**: low
+**Description**:
+  It was discovered that pam_tacplus did not properly manage shared secrets if DEBUG loglevel and journald are used. A remote attacker could use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13881
+
+**Title**: USN-4511-1: QEMU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4511-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang, Xiao Wei, Gonglei Arei, and Yanyu Zhang discovered that QEMU incorrectly handled certain USB packets. An attacker inside the guest could use this issue to cause QEMU to crash, resulting in a denial of service, or possibly execute arbitrary code on the host. In the default installation, when QEMU is used with libvirt, attackers would...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14364
+
+**Title**: USN-4503-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4503-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain calls. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14392
+
+**Title**: USN-4537-1: Aptdaemon vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4537-1
+**Priorities**: medium
+**Description**:
+  Vaisha Bernard discovered that Aptdaemon incorrectly handled the Locale property. A local attacker could use this issue to test for the presence of local files.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15703
+
+**Title**: USN-4519-1: PulseAudio vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4519-1
+**Priorities**: medium
+**Description**:
+  Ratchanan Srirattanamet discovered that an Ubuntu-specific patch caused PulseAudio to incorrectly handle memory under certain error conditions in the Bluez 5 module. An attacker could use this issue to cause PulseAudio to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-15710)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15710
+
+**Title**: USN-4501-1: LuaJIT vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4501-1
+**Priorities**: low
+**Description**:
+  It was discovered that an out-of-bounds read existed in LuaJIT. An attacker could use this to cause a denial of service (application crash) or possibly expose sensitive information. (CVE-2020-15890)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15890
+
+**Title**: USN-4538-1: PackageKit vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4538-1
+**Priorities**: low,medium
+**Description**:
+  Vaisha Bernard discovered that PackageKit incorrectly handled certain methods. A local attacker could use this issue to learn the MIME type of any file on the system. (CVE-2020-16121)
+Sami Niemimäki discovered that PackageKit incorrectly handled local deb packages. A local user could possibly use this issue to install untrusted packages, contrary...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16121
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16122
+
+**Title**: USN-4514-1: libproxy vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4514-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libproxy incorrectly handled certain PAC files. An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25219
+
+**Title**: USN-4508-1: StoreBackup vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4508-1
+**Priorities**: medium
+**Description**:
+  It was discovered that StoreBackup did not properly manage lock files. A local attacker could use this issue to cause a denial of service or escalate privileges and run arbitrary code. (CVE-2020-7040)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7040
+
+**Title**: USN-4515-1: Pure-FTPd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4515-1
+**Priorities**: low
+**Description**:
+  Antonio Norales discovered that Pure-FTPd incorrectly handled directory aliases. An attacker could possibly use this issue to access sensitive information. (CVE-2020-9274)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9274
+
 #### <a id="621-84"></a> 621.84
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -2174,6 +2421,253 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-121"></a> 456.121
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 28, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4500-1: bsdiff vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4500-1
+**Priorities**: medium
+**Description**:
+  It was discovered that bsdiff mishandled certain input. If a user were tricked into opening a malicious file, an attacker could cause bsdiff to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9862
+
+**Title**: USN-4506-1: MCabber vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4506-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MCabber does not properly manage roster pushes. An attacker could possibly use this issue to remotely perform man-in-the-middle attacks. (CVE-2016-9928).
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9928
+
+**Title**: USN-4513-1: apng2gif vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4513-1
+**Priorities**: medium
+**Description**:
+  Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled loading APNG files. An attacker could exploit this with a crafted APNG file to access sensitive information. (CVE-2017-6960)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6960
+
+**Title**: USN-4517-1: Email-Address-List vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4517-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Email-Address-List does not properly parse email addresses during email-ingestion. A remote attacker could use this issue to cause an algorithmic complexity attack, resulting in a denial of service. (CVE-2018-18898)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18898
+
+**Title**: USN-4507-1: ncmpc vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4507-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ncmpc incorrectly handled long chat messages. A remote attacker could possibly exploit this with a crafted chat message, causing ncmpc to crash, resulting in a denial of service. (CVE-2018-9240)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9240
+
+**Title**: USN-4499-1: MilkyTracker vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4499-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MilkyTracker did not properly handle certain input. If a user were tricked into opening a malicious file, an attacker could cause MilkyTracker to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14464
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14496
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14497
+
+**Title**: USN-4504-1: OpenSSL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4504-1
+**Priorities**: low
+**Description**:
+  Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky discovered that certain Diffie-Hellman ciphersuites in the TLS specification and implemented by OpenSSL contained a flaw. A remote attacker could possibly use this issue to eavesdrop on encrypted communications. This was fixed in this update by removing the insecure ciphersuites...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1968
+
+**Title**: USN-4498-1: Loofah vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4498-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Loofah does not properly sanitize JavaScript in sanitized output. An attacker could possibly use this issue to perform XSS attacks. (CVE-2019-15587)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587
+
+**Title**: USN-4496-1: Apache XML-RPC vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4496-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Apache XML-RPC (aka ws-xmlrpc) does not properly deserialize untrusted data. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-17570)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17570
+
+**Title**: USN-4526-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4526-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the AMD Cryptographic Coprocessor device driver in the Linux kernel did not properly deallocate memory in some situations. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-18808)
+It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18808
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12888
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14356
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16166
+
+**Title**: USN-4527-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4527-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly deallocate memory in some error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19054)
+It was discovered that the Atheros HTC based wireless driver in the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20811
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9453
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212
+
+**Title**: USN-4520-1: Exim SpamAssassin vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4520-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exim SpamAssassin does not properly handle configuration strings. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-19920)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19920
+
+**Title**: USN-4534-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4534-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash or expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20919
+
+**Title**: USN-4535-1:  RDFLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4535-1
+**Priorities**: medium
+**Description**:
+  Gabriel Corona discovered that RDFLib did not properly load modules on the command-line. An attacker could possibly use this issue to cause RDFLib to execute arbitrary code. (CVE-2019-7653)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-7653
+
+**Title**: USN-4528-1: Ceph vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4528-1
+**Priorities**: medium
+**Description**:
+  Adam Mohammed discovered that Ceph incorrectly handled certain CORS ExposeHeader tags. A remote attacker could possibly use this issue to preform an HTTP header injection attack. (CVE-2020-10753)
+Lei Cao discovered that Ceph incorrectly handled certain POST requests with invalid tagging XML. A remote attacker could possibly use this issue...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12059
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1760
+
+**Title**: USN-4518-1: xawtv vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4518-1
+**Priorities**: low
+**Description**:
+  Matthias Gerstner discovered that xawtv incorrectly handled opening files. A local attacker could possibly use this issue to open and write to arbitrary files and escalate privileges. (CVE-2020-13696)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13696
+
+**Title**: USN-4521-1: pam_tacplus vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4521-1
+**Priorities**: low
+**Description**:
+  It was discovered that pam_tacplus did not properly manage shared secrets if DEBUG loglevel and journald are used. A remote attacker could use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13881
+
+**Title**: USN-4511-1: QEMU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4511-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang, Xiao Wei, Gonglei Arei, and Yanyu Zhang discovered that QEMU incorrectly handled certain USB packets. An attacker inside the guest could use this issue to cause QEMU to crash, resulting in a denial of service, or possibly execute arbitrary code on the host. In the default installation, when QEMU is used with libvirt, attackers would...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14364
+
+**Title**: USN-4503-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4503-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain calls. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14392
+
+**Title**: USN-4537-1: Aptdaemon vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4537-1
+**Priorities**: medium
+**Description**:
+  Vaisha Bernard discovered that Aptdaemon incorrectly handled the Locale property. A local attacker could use this issue to test for the presence of local files.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15703
+
+**Title**: USN-4519-1: PulseAudio vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4519-1
+**Priorities**: medium
+**Description**:
+  Ratchanan Srirattanamet discovered that an Ubuntu-specific patch caused PulseAudio to incorrectly handle memory under certain error conditions in the Bluez 5 module. An attacker could use this issue to cause PulseAudio to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-15710)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15710
+
+**Title**: USN-4501-1: LuaJIT vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4501-1
+**Priorities**: low
+**Description**:
+  It was discovered that an out-of-bounds read existed in LuaJIT. An attacker could use this to cause a denial of service (application crash) or possibly expose sensitive information. (CVE-2020-15890)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15890
+
+**Title**: USN-4538-1: PackageKit vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4538-1
+**Priorities**: low,medium
+**Description**:
+  Vaisha Bernard discovered that PackageKit incorrectly handled certain methods. A local attacker could use this issue to learn the MIME type of any file on the system. (CVE-2020-16121)
+Sami Niemimäki discovered that PackageKit incorrectly handled local deb packages. A local user could possibly use this issue to install untrusted packages, contrary...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16121
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16122
+
+**Title**: USN-4514-1: libproxy vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4514-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libproxy incorrectly handled certain PAC files. An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25219
+
+**Title**: USN-4508-1: StoreBackup vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4508-1
+**Priorities**: medium
+**Description**:
+  It was discovered that StoreBackup did not properly manage lock files. A local attacker could use this issue to cause a denial of service or escalate privileges and run arbitrary code. (CVE-2020-7040)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7040
+
+**Title**: USN-4515-1: Pure-FTPd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4515-1
+**Priorities**: low
+**Description**:
+  Antonio Norales discovered that Pure-FTPd incorrectly handled directory aliases. An attacker could possibly use this issue to access sensitive information. (CVE-2020-9274)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9274
 
 #### <a id="456-120"></a> 456.120
 
@@ -4791,6 +5285,253 @@ First release for 456 major line
 ### <a id="315-line"></a> 315.x 
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="315-194"></a> 315.194
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 28, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4500-1: bsdiff vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4500-1
+**Priorities**: medium
+**Description**:
+  It was discovered that bsdiff mishandled certain input. If a user were tricked into opening a malicious file, an attacker could cause bsdiff to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9862
+
+**Title**: USN-4506-1: MCabber vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4506-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MCabber does not properly manage roster pushes. An attacker could possibly use this issue to remotely perform man-in-the-middle attacks. (CVE-2016-9928).
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9928
+
+**Title**: USN-4513-1: apng2gif vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4513-1
+**Priorities**: medium
+**Description**:
+  Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled loading APNG files. An attacker could exploit this with a crafted APNG file to access sensitive information. (CVE-2017-6960)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6960
+
+**Title**: USN-4517-1: Email-Address-List vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4517-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Email-Address-List does not properly parse email addresses during email-ingestion. A remote attacker could use this issue to cause an algorithmic complexity attack, resulting in a denial of service. (CVE-2018-18898)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18898
+
+**Title**: USN-4507-1: ncmpc vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4507-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ncmpc incorrectly handled long chat messages. A remote attacker could possibly exploit this with a crafted chat message, causing ncmpc to crash, resulting in a denial of service. (CVE-2018-9240)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9240
+
+**Title**: USN-4499-1: MilkyTracker vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4499-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MilkyTracker did not properly handle certain input. If a user were tricked into opening a malicious file, an attacker could cause MilkyTracker to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14464
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14496
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14497
+
+**Title**: USN-4504-1: OpenSSL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4504-1
+**Priorities**: low
+**Description**:
+  Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky discovered that certain Diffie-Hellman ciphersuites in the TLS specification and implemented by OpenSSL contained a flaw. A remote attacker could possibly use this issue to eavesdrop on encrypted communications. This was fixed in this update by removing the insecure ciphersuites...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1968
+
+**Title**: USN-4498-1: Loofah vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4498-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Loofah does not properly sanitize JavaScript in sanitized output. An attacker could possibly use this issue to perform XSS attacks. (CVE-2019-15587)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587
+
+**Title**: USN-4496-1: Apache XML-RPC vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4496-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Apache XML-RPC (aka ws-xmlrpc) does not properly deserialize untrusted data. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-17570)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17570
+
+**Title**: USN-4526-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4526-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the AMD Cryptographic Coprocessor device driver in the Linux kernel did not properly deallocate memory in some situations. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-18808)
+It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18808
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12888
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14356
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16166
+
+**Title**: USN-4527-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4527-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly deallocate memory in some error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19054)
+It was discovered that the Atheros HTC based wireless driver in the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20811
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9453
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212
+
+**Title**: USN-4520-1: Exim SpamAssassin vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4520-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exim SpamAssassin does not properly handle configuration strings. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-19920)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19920
+
+**Title**: USN-4534-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4534-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash or expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20919
+
+**Title**: USN-4535-1:  RDFLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4535-1
+**Priorities**: medium
+**Description**:
+  Gabriel Corona discovered that RDFLib did not properly load modules on the command-line. An attacker could possibly use this issue to cause RDFLib to execute arbitrary code. (CVE-2019-7653)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-7653
+
+**Title**: USN-4528-1: Ceph vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4528-1
+**Priorities**: medium
+**Description**:
+  Adam Mohammed discovered that Ceph incorrectly handled certain CORS ExposeHeader tags. A remote attacker could possibly use this issue to preform an HTTP header injection attack. (CVE-2020-10753)
+Lei Cao discovered that Ceph incorrectly handled certain POST requests with invalid tagging XML. A remote attacker could possibly use this issue...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12059
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1760
+
+**Title**: USN-4518-1: xawtv vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4518-1
+**Priorities**: low
+**Description**:
+  Matthias Gerstner discovered that xawtv incorrectly handled opening files. A local attacker could possibly use this issue to open and write to arbitrary files and escalate privileges. (CVE-2020-13696)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13696
+
+**Title**: USN-4521-1: pam_tacplus vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4521-1
+**Priorities**: low
+**Description**:
+  It was discovered that pam_tacplus did not properly manage shared secrets if DEBUG loglevel and journald are used. A remote attacker could use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13881
+
+**Title**: USN-4511-1: QEMU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4511-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang, Xiao Wei, Gonglei Arei, and Yanyu Zhang discovered that QEMU incorrectly handled certain USB packets. An attacker inside the guest could use this issue to cause QEMU to crash, resulting in a denial of service, or possibly execute arbitrary code on the host. In the default installation, when QEMU is used with libvirt, attackers would...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14364
+
+**Title**: USN-4503-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4503-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain calls. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14392
+
+**Title**: USN-4537-1: Aptdaemon vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4537-1
+**Priorities**: medium
+**Description**:
+  Vaisha Bernard discovered that Aptdaemon incorrectly handled the Locale property. A local attacker could use this issue to test for the presence of local files.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15703
+
+**Title**: USN-4519-1: PulseAudio vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4519-1
+**Priorities**: medium
+**Description**:
+  Ratchanan Srirattanamet discovered that an Ubuntu-specific patch caused PulseAudio to incorrectly handle memory under certain error conditions in the Bluez 5 module. An attacker could use this issue to cause PulseAudio to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-15710)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15710
+
+**Title**: USN-4501-1: LuaJIT vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4501-1
+**Priorities**: low
+**Description**:
+  It was discovered that an out-of-bounds read existed in LuaJIT. An attacker could use this to cause a denial of service (application crash) or possibly expose sensitive information. (CVE-2020-15890)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15890
+
+**Title**: USN-4538-1: PackageKit vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4538-1
+**Priorities**: low,medium
+**Description**:
+  Vaisha Bernard discovered that PackageKit incorrectly handled certain methods. A local attacker could use this issue to learn the MIME type of any file on the system. (CVE-2020-16121)
+Sami Niemimäki discovered that PackageKit incorrectly handled local deb packages. A local user could possibly use this issue to install untrusted packages, contrary...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16121
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16122
+
+**Title**: USN-4514-1: libproxy vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4514-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libproxy incorrectly handled certain PAC files. An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25219
+
+**Title**: USN-4508-1: StoreBackup vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4508-1
+**Priorities**: medium
+**Description**:
+  It was discovered that StoreBackup did not properly manage lock files. A local attacker could use this issue to cause a denial of service or escalate privileges and run arbitrary code. (CVE-2020-7040)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7040
+
+**Title**: USN-4515-1: Pure-FTPd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4515-1
+**Priorities**: low
+**Description**:
+  Antonio Norales discovered that Pure-FTPd incorrectly handled directory aliases. An attacker could possibly use this issue to access sensitive information. (CVE-2020-9274)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9274
 
 #### <a id="315-193"></a> 315.193
 
@@ -7499,6 +8240,253 @@ CVE fixes for https://usn.ubuntu.com/4017-1/
 ### <a id="250-line"></a> 250.x 
 
 This section includes release notes for the 250 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="250-207"></a> 250.207
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 28, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.193.8
+
+## USNs:
+
+**Title**: USN-4500-1: bsdiff vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4500-1
+**Priorities**: medium
+**Description**:
+  It was discovered that bsdiff mishandled certain input. If a user were tricked into opening a malicious file, an attacker could cause bsdiff to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9862
+
+**Title**: USN-4506-1: MCabber vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4506-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MCabber does not properly manage roster pushes. An attacker could possibly use this issue to remotely perform man-in-the-middle attacks. (CVE-2016-9928).
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9928
+
+**Title**: USN-4513-1: apng2gif vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4513-1
+**Priorities**: medium
+**Description**:
+  Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled loading APNG files. An attacker could exploit this with a crafted APNG file to access sensitive information. (CVE-2017-6960)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6960
+
+**Title**: USN-4517-1: Email-Address-List vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4517-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Email-Address-List does not properly parse email addresses during email-ingestion. A remote attacker could use this issue to cause an algorithmic complexity attack, resulting in a denial of service. (CVE-2018-18898)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18898
+
+**Title**: USN-4507-1: ncmpc vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4507-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ncmpc incorrectly handled long chat messages. A remote attacker could possibly exploit this with a crafted chat message, causing ncmpc to crash, resulting in a denial of service. (CVE-2018-9240)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9240
+
+**Title**: USN-4499-1: MilkyTracker vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4499-1
+**Priorities**: medium
+**Description**:
+  It was discovered that MilkyTracker did not properly handle certain input. If a user were tricked into opening a malicious file, an attacker could cause MilkyTracker to crash or potentially execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14464
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14496
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14497
+
+**Title**: USN-4504-1: OpenSSL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4504-1
+**Priorities**: low
+**Description**:
+  Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky discovered that certain Diffie-Hellman ciphersuites in the TLS specification and implemented by OpenSSL contained a flaw. A remote attacker could possibly use this issue to eavesdrop on encrypted communications. This was fixed in this update by removing the insecure ciphersuites...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1968
+
+**Title**: USN-4498-1: Loofah vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4498-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Loofah does not properly sanitize JavaScript in sanitized output. An attacker could possibly use this issue to perform XSS attacks. (CVE-2019-15587)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587
+
+**Title**: USN-4496-1: Apache XML-RPC vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4496-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Apache XML-RPC (aka ws-xmlrpc) does not properly deserialize untrusted data. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-17570)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17570
+
+**Title**: USN-4526-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4526-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the AMD Cryptographic Coprocessor device driver in the Linux kernel did not properly deallocate memory in some situations. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-18808)
+It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18808
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12888
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14356
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16166
+
+**Title**: USN-4527-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4527-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly deallocate memory in some error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19054)
+It was discovered that the Atheros HTC based wireless driver in the Linux kernel did not properly...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20811
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9453
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212
+
+**Title**: USN-4520-1: Exim SpamAssassin vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4520-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exim SpamAssassin does not properly handle configuration strings. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-19920)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19920
+
+**Title**: USN-4534-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4534-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash or expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20919
+
+**Title**: USN-4535-1:  RDFLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4535-1
+**Priorities**: medium
+**Description**:
+  Gabriel Corona discovered that RDFLib did not properly load modules on the command-line. An attacker could possibly use this issue to cause RDFLib to execute arbitrary code. (CVE-2019-7653)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-7653
+
+**Title**: USN-4528-1: Ceph vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4528-1
+**Priorities**: medium
+**Description**:
+  Adam Mohammed discovered that Ceph incorrectly handled certain CORS ExposeHeader tags. A remote attacker could possibly use this issue to preform an HTTP header injection attack. (CVE-2020-10753)
+Lei Cao discovered that Ceph incorrectly handled certain POST requests with invalid tagging XML. A remote attacker could possibly use this issue...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12059
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1760
+
+**Title**: USN-4518-1: xawtv vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4518-1
+**Priorities**: low
+**Description**:
+  Matthias Gerstner discovered that xawtv incorrectly handled opening files. A local attacker could possibly use this issue to open and write to arbitrary files and escalate privileges. (CVE-2020-13696)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13696
+
+**Title**: USN-4521-1: pam_tacplus vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4521-1
+**Priorities**: low
+**Description**:
+  It was discovered that pam_tacplus did not properly manage shared secrets if DEBUG loglevel and journald are used. A remote attacker could use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13881
+
+**Title**: USN-4511-1: QEMU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4511-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang, Xiao Wei, Gonglei Arei, and Yanyu Zhang discovered that QEMU incorrectly handled certain USB packets. An attacker inside the guest could use this issue to cause QEMU to crash, resulting in a denial of service, or possibly execute arbitrary code on the host. In the default installation, when QEMU is used with libvirt, attackers would...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14364
+
+**Title**: USN-4503-1: Perl DBI module vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4503-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Perl DBI module incorrectly handled certain calls. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14392
+
+**Title**: USN-4537-1: Aptdaemon vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4537-1
+**Priorities**: medium
+**Description**:
+  Vaisha Bernard discovered that Aptdaemon incorrectly handled the Locale property. A local attacker could use this issue to test for the presence of local files.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15703
+
+**Title**: USN-4519-1: PulseAudio vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4519-1
+**Priorities**: medium
+**Description**:
+  Ratchanan Srirattanamet discovered that an Ubuntu-specific patch caused PulseAudio to incorrectly handle memory under certain error conditions in the Bluez 5 module. An attacker could use this issue to cause PulseAudio to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-15710)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15710
+
+**Title**: USN-4501-1: LuaJIT vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4501-1
+**Priorities**: low
+**Description**:
+  It was discovered that an out-of-bounds read existed in LuaJIT. An attacker could use this to cause a denial of service (application crash) or possibly expose sensitive information. (CVE-2020-15890)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15890
+
+**Title**: USN-4538-1: PackageKit vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4538-1
+**Priorities**: low,medium
+**Description**:
+  Vaisha Bernard discovered that PackageKit incorrectly handled certain methods. A local attacker could use this issue to learn the MIME type of any file on the system. (CVE-2020-16121)
+Sami Niemimäki discovered that PackageKit incorrectly handled local deb packages. A local user could possibly use this issue to install untrusted packages, contrary...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16121
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16122
+
+**Title**: USN-4514-1: libproxy vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4514-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libproxy incorrectly handled certain PAC files. An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25219
+
+**Title**: USN-4508-1: StoreBackup vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4508-1
+**Priorities**: medium
+**Description**:
+  It was discovered that StoreBackup did not properly manage lock files. A local attacker could use this issue to cause a denial of service or escalate privileges and run arbitrary code. (CVE-2020-7040)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7040
+
+**Title**: USN-4515-1: Pure-FTPd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4515-1
+**Priorities**: low
+**Description**:
+  Antonio Norales discovered that Pure-FTPd incorrectly handled directory aliases. An attacker could possibly use this issue to access sensitive information. (CVE-2020-9274)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9274
 
 #### <a id="250-206"></a> 250.206
 
