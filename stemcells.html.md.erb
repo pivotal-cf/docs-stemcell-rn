@@ -5724,6 +5724,91 @@ First release for 456 major line
 
 This section includes release notes for the 315 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="315-198"></a> 315.198
+
+**Release Date**: October 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.215.10
+
+## USNs:
+
+**Title**: USN-4582-1: Vim vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4582-1
+**Priorities**: low
+**Description**:
+  It was discovered that Vim incorrectly handled permissions on the .swp file. A local attacker could possibly use this issue to obtain sensitive information. This issue only affected Ubuntu 16.04 LTS. (CVE-2017-17087)
+It was discovered that Vim incorrectly handled restricted mode. A local attacker could possibly use this issue to bypass restricted...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17087
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20807
+
+**Title**: USN-4579-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4579-1
+**Priorities**: low,medium,high
+**Description**:
+  Hador Manor discovered that the DCCP protocol implementation in the Linux kernel improperly handled socket reuse, leading to a use-after-free vulnerability. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-16119)
+Wen Xu discovered that the XFS file system in the Linux kernel...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285
+
+**Title**: USN-4591-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4591-1
+**Priorities**: high,medium
+**Description**:
+  Andy Nguyen discovered that the Bluetooth L2CAP implementation in the Linux kernel contained a type-confusion error. A physically proximate remote attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-12351)
+Andy Nguyen discovered that the Bluetooth A2MP implementation in the...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352
+
+**Title**: USN-4589-1: containerd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4589-1
+**Priorities**: medium
+**Description**:
+  It was discovered that containerd could be made to expose sensitive information when processing URLs in container image manifests. A remote attacker could use this to trick the user and obtain the user's registry credentials.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15157
+
+**Title**: USN-4589-2: Docker vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4589-2
+**Priorities**: medium
+**Description**:
+  USN-4589-1 fixed a vulnerability in containerd. This update provides the corresponding update for docker.io.
+Original advisory details:
+It was discovered that containerd could be made to expose sensitive information when processing URLs in container image manifests. A remote attacker could use this to trick the user and obtain the user's...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15157
+
+**Title**: USN-4581-1: Python vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4581-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Python incorrectly handled certain character sequences. A remote attacker could possibly use this issue to perform CRLF injection.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26116
+
+**Title**: USN-4584-1: HtmlUnit vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4584-1
+**Priorities**: medium
+**Description**:
+  It was discovered that HtmlUnit incorrectly initialized Rhino engine. An Attacker could possibly use this issue to execute arbitrary Java code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-5529
+
+**Title**: USN-4583-1: PHP vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4583-1
+**Priorities**: medium
+**Description**:
+  It was discovered that PHP incorrectly handled certain encrypt ciphers. An attacker could possibly use this issue to decrease security or cause incorrect encryption data. This issue only affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.  (CVE-2020-7069)
+It was discorevered that PHP incorrectly handled certain HTTP cookies. An attacker could...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7069
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7070
+
 #### <a id="315-196"></a> 315.196
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
