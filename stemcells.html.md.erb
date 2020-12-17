@@ -2804,6 +2804,37 @@ BOSH Agent version: 2.268.3
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="456-130"></a> 456.130
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: December 17, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4652-1: SniffIt vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4652-1
+**Priorities**: medium
+**Description**:
+  It was discovered that SniffIt incorrectly handled certain configuration
+files. An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-5439
+
+**Title**: USN-4662-1: OpenSSL vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4662-1
+**Priorities**: high
+**Description**:
+  David Benjamin discovered that OpenSSL incorrectly handled comparing
+certificates containing a EDIPartyName name type. A remote attacker could
+possibly use this issue to cause OpenSSL to crash, resulting in a denial of
+service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1971
+
 #### <a id="456-129"></a> 456.129
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
