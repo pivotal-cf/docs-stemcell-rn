@@ -15,6 +15,240 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-95"></a> 621.95
+
+**Release Date**: December 21, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4669-1: SquirrelMail vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4669-1
+**Priorities**: medium
+**Description**:
+  It was discovered that a cross-site scripting (XSS) vulnerability in
+SquirrelMail allows remote attackers to use malicious script content from
+HTML e-mail to execute code and/or provoke a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12970
+
+**Title**: USN-4657-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4657-1
+**Priorities**: low,medium
+**Description**:
+  Elena Petrova discovered that the pin controller device tree implementation
+in the Linux kernel did not properly handle string references. A local
+attacker could use this to expose sensitive information (kernel memory).
+(CVE-2020-0427)
+
+Daniele Antonioli, Nils Ole Tippenhauer, and Kasper Rasmussen discovered
+that legacy pairing and secure-connections pairing authentication in the
+Bluetooth protocol could allow an unauthenticated user to complete
+authentication without pairing credentials via adjacent access. A
+physically proximate attacker could use this to impersonate a previously
+paired Bluetooth device. (CVE-2020-10135)
+
+Andy Nguyen discovered that the Bluetooth A2MP implementation in the Linux
+kernel did not properly initialize memory in some situations. A physically
+proximate remote attacker could use this to expose sensitive information
+(kernel memory). (CVE-2020-12352)
+
+It was discovered that a race condition existed in the perf subsystem of
+the Linux kernel, leading to a use-after-free vulnerability. An attacker
+with access to the perf subsystem could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2020-14351)
+
+It was discovered that the frame buffer implementation in the Linux kernel
+did not properly handle some edge cases in software scrollback. A local
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code. (CVE-2020-14390)
+
+It was discovered that the netfilter connection tracker for netlink in the
+Linux kernel did not properly perform bounds checking in some situations. A
+local attacker could use this to cause a denial of service (system crash).
+(CVE-2020-25211)
+
+It was discovered that the Rados block device (rbd) driver in the Linux
+kernel did not properly perform privilege checks for access to rbd devices
+in some situations. A local attacker could use this to map or unmap rbd
+block devices. (CVE-2020-25284)
+
+It was discovered that the HDLC PPP implementation in the Linux kernel did
+not properly validate input in some situations. A local attacker could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code. (CVE-2020-25643)
+
+It was discovered that the GENEVE tunnel implementation in the Linux kernel
+when combined with IPSec did not properly select IP routes in some
+situations. An attacker could use this to expose sensitive information
+(unencrypted network traffic). (CVE-2020-25645)
+
+Keyu Man discovered that the ICMP global rate limiter in the Linux kernel
+could be used to assist in scanning open UDP ports. A remote attacker could
+use to facilitate attacks on UDP based services that depend on source port
+randomization. (CVE-2020-25705)
+
+It was discovered that the framebuffer implementation in the Linux kernel
+did not properly perform range checks in certain situations. A local
+attacker could use this to expose sensitive information (kernel memory).
+(CVE-2020-28915)
+
+It was discovered that Power 9 processors could be coerced to expose
+information from the L1 cache in certain situations. A local attacker could
+use this to expose sensitive information. (CVE-2020-4788)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0427
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390
+
+**Title**: USN-4660-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4660-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that a race condition existed in the perf subsystem of
+the Linux kernel, leading to a use-after-free vulnerability. An attacker
+with access to the perf subsystem could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2020-14351)
+
+It was discovered that the frame buffer implementation in the Linux kernel
+did not properly handle some edge cases in software scrollback. A local
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code. (CVE-2020-14390)
+
+It was discovered that the netfilter connection tracker for netlink in the
+Linux kernel did not properly perform bounds checking in some situations. A
+local attacker could use this to cause a denial of service (system crash).
+(CVE-2020-25211)
+
+It was discovered that the Rados block device (rbd) driver in the Linux
+kernel did not properly perform privilege checks for access to rbd devices
+in some situations. A local attacker could use this to map or unmap rbd
+block devices. (CVE-2020-25284)
+
+It was discovered that a race condition existed in the hugetlb sysctl
+implementation in the Linux kernel. A privileged attacker could use this to
+cause a denial of service (system crash). (CVE-2020-25285)
+
+It was discovered that the block layer subsystem in the Linux kernel did
+not properly handle zero-length requests. A local attacker could use this
+to cause a denial of service. (CVE-2020-25641)
+
+It was discovered that the HDLC PPP implementation in the Linux kernel did
+not properly validate input in some situations. A local attacker could use
+this to cause a denial of service (system crash) or possibly execute
+arbitrary code. (CVE-2020-25643)
+
+It was discovered that the GENEVE tunnel implementation in the Linux kernel
+when combined with IPSec did not properly select IP routes in some
+situations. An attacker could use this to expose sensitive information
+(unencrypted network traffic). (CVE-2020-25645)
+
+It was discovered that the framebuffer implementation in the Linux kernel
+did not properly perform range checks in certain situations. A local
+attacker could use this to expose sensitive information (kernel memory).
+(CVE-2020-28915)
+
+It was discovered that Power 9 processors could be coerced to expose
+information from the L1 cache in certain situations. A local attacker could
+use this to expose sensitive information. (CVE-2020-4788)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25641
+
+**Title**: USN-4661-1: Snapcraft vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4661-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Snapcraft includes the current directory when
+configuring LD_LIBRARY_PATH for application commands. If a user were
+tricked into installing a malicious snap or downloading a malicious
+library, under certain circumstances an attacker could exploit this to
+affect strict mode snaps that have access to the library and when
+launched from the directory containing the library.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27348
+
+**Title**: USN-4664-1: Aptdaemon vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4664-1
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that Aptdaemon incorrectly handled certain
+properties. A local attacker could use this issue to test for the presence
+of local files. (CVE-2020-16128)
+
+Kevin Backhouse discovered that Aptdaemon incorrectly handled permission
+checks. A local attacker could possibly use this issue to cause a denial of
+service. (CVE-2020-27349)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27349
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16128
+
+**Title**: USN-4667-1: APT vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4667-1
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that APT incorrectly handled certain packages.
+A local attacker could possibly use this issue to cause APT to crash or
+stop responding, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27350
+
+**Title**: USN-4668-1: python-apt vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4668-1
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that python-apt incorrectly handled resources. A
+local attacker could possibly use this issue to cause python-apt to consume
+resources, leading to a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27351
+
+**Title**: USN-4665-1: curl vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4665-1
+**Priorities**: medium,low
+**Description**:
+  Marc Aldorasi discovered that curl incorrectly handled the libcurl
+CURLOPT_CONNECT_ONLY option. This could result in data being sent to the
+wrong destination, possibly exposing sensitive information. This issue only
+affected Ubuntu 20.10. (CVE-2020-8231)
+
+Varnavas Papaioannou discovered that curl incorrectly handled FTP PASV
+responses. An attacker could possibly use this issue to trick curl into
+connecting to an arbitrary IP address and be used to perform port scanner
+and other information gathering. (CVE-2020-8284)
+
+It was discovered that curl incorrectly handled FTP wildcard matchins. A
+remote attacker could possibly use this issue to cause curl to consume
+resources and crash, resulting in a denial of service. (CVE-2020-8285)
+
+It was discovered that curl incorrectly handled OCSP response verification.
+A remote attacker could possibly use this issue to provide a fraudulent
+OCSP response. (CVE-2020-8286)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8286
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8285
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8231
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8284
+
 #### <a id="621-94"></a> 621.94
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
