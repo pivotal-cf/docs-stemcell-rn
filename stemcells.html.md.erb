@@ -3592,6 +3592,184 @@ BOSH Agent version: 2.268.3
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="456-137"></a> 456.137
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 03, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.8
+
+## USNs:
+
+**Title**: USN-4708-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4708-1
+**Priorities**: medium,low
+**Description**:
+  Wen Xu discovered that the XFS filesystem implementation in the Linux
+kernel did not properly track inode validations. An attacker could use this
+to construct a malicious XFS image that, when mounted, could cause a denial
+of service (system crash). (CVE-2018-13093)
+
+It was discovered that the btrfs file system implementation in the Linux
+kernel did not properly validate file system metadata in some situations.
+An attacker could use this to construct a malicious btrfs image that, when
+mounted, could cause a denial of service (system crash). (CVE-2019-19813,
+CVE-2019-19816)
+
+Bodong Zhao discovered a use-after-free in the Sun keyboard driver
+implementation in the Linux kernel. A local attacker could use this to
+cause a denial of service or possibly execute arbitrary code.
+(CVE-2020-25669)
+
+Daniel Axtens discovered that PowerPC RTAS implementation in the Linux
+kernel did not properly restrict memory accesses in some situations. A
+privileged local attacker could use this to arbitrarily modify kernel
+memory, potentially bypassing kernel lockdown restrictions.
+(CVE-2020-27777)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813
+
+**Title**: USN-4709-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4709-1
+**Priorities**: high,low
+**Description**:
+  It was discovered that the LIO SCSI target implementation in the Linux
+kernel performed insufficient identifier checking in certain XCOPY
+requests. An attacker with access to at least one LUN in a multiple
+backstore environment could use this to expose sensitive information or
+modify data. (CVE-2020-28374)
+
+Wen Xu discovered that the XFS filesystem implementation in the Linux
+kernel did not properly track inode validations. An attacker could use this
+to construct a malicious XFS image that, when mounted, could cause a denial
+of service (system crash). (CVE-2018-13093)
+
+It was discovered that the btrfs file system implementation in the Linux
+kernel did not properly validate file system metadata in some situations.
+An attacker could use this to construct a malicious btrfs image that, when
+mounted, could cause a denial of service (system crash). (CVE-2019-19813,
+CVE-2019-19816)
+
+Bodong Zhao discovered a use-after-free in the Sun keyboard driver
+implementation in the Linux kernel. A local attacker could use this to
+cause a denial of service or possibly execute arbitrary code.
+(CVE-2020-25669)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25669
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-13093
+
+**Title**: USN-4711-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4711-1
+**Priorities**: high,medium
+**Description**:
+  It was discovered that the LIO SCSI target implementation in the Linux
+kernel performed insufficient identifier checking in certain XCOPY
+requests. An attacker with access to at least one LUN in a multiple
+backstore environment could use this to expose sensitive information or
+modify data. (CVE-2020-28374)
+
+Kiyin (尹亮) discovered that the perf subsystem in the Linux kernel did
+not properly deallocate memory in some situations. A privileged attacker
+could use this to cause a denial of service (kernel memory exhaustion).
+(CVE-2020-25704)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25704
+
+**Title**: USN-4716-1: MySQL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4716-1
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in MySQL and this update includes
+new upstream MySQL versions to fix these issues.
+
+MySQL has been updated to 8.0.23 in Ubuntu 20.04 LTS and Ubuntu 20.10.
+Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.33.
+
+In addition to security fixes, the updated packages contain bug fixes, new
+features, and possibly incompatible changes.
+
+Please see the following for more information:
+
+https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-33.html
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-23.html
+https://www.oracle.com/security-alerts/cpujan2021.html
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2088
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2076
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2022
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2061
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2081
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2065
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2070
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2002
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2072
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2122
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2046
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2048
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2038
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2031
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2056
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2087
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2010
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2036
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2060
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2021
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2024
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2014
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2032
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2058
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2011
+
+**Title**: USN-4717-1: Firefox vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4717-1
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were
+tricked in to opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, obtain sensitive
+information, conduct clickjacking attacks, or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23954
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23964
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23958
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23960
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23963
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23955
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23961
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23962
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23953
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23956
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23965
+
+**Title**: USN-4703-1: Mutt vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4703-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Mutt incorrectly handled certain email messages.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3181
+
+**Title**: USN-4715-1: Django vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4715-1
+**Priorities**: medium
+**Description**:
+  Wang Baohua discovered that Django incorrectly extracted archive files. A
+remote attacker could possibly use this issue to extract files outside of
+their expected location.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3281
+
 #### <a id="456-135"></a> 456.135
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
