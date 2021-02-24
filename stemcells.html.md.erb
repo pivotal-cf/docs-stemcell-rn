@@ -15,6 +15,134 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-107"></a> 621.107
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 24, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.19
+
+## USNs:
+
+**Title**: USN-4728-1: snapd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4728-1
+**Priorities**: high
+**Description**:
+  Gilad Reti discovered that snapd did not correctly specify cgroup
+delegation when generating systemd service units for various container
+management snaps. This could allow a local attacker to escalate privileges
+via access to arbitrary devices of the container host from within a
+compromised or malicious container.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27352
+
+**Title**: USN-4718-1: fastd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4718-1
+**Priorities**: medium
+**Description**:
+  It was discovered that fastd incorrectly handled certain packets.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27638
+
+**Title**: USN-4729-1: Open vSwitch vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4729-1
+**Priorities**: medium
+**Description**:
+  Joakim Hindersson discovered that Open vSwitch incorrectly parsed certain
+network packets. A remote attacker could use this issue to cause a denial
+of service, or possibly alter packet classification.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35498
+
+**Title**: USN-4724-1: OpenLDAP vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4724-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenLDAP incorrectly handled Certificate Exact
+Assertion processing. A remote attacker could possibly use this issue to
+cause OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36221)
+
+It was discovered that OpenLDAP incorrectly handled saslAuthzTo processing.
+A remote attacker could use this issue to cause OpenLDAP to crash,
+resulting in a denial of service, or possibly execute arbitrary code.
+(CVE-2020-36222, CVE-2020-36224, CVE-2020-36225, CVE-2020-36226)
+
+It was discovered that OpenLDAP incorrectly handled Return Filter control
+handling. A remote attacker could use this issue to cause OpenLDAP to
+crash, resulting in a denial of service, or possibly execute arbitrary
+code. (CVE-2020-36223)
+
+It was discovered that OpenLDAP incorrectly handled certain cancel
+operations. A remote attacker could possibly use this issue to cause
+OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36227)
+
+It was discovered that OpenLDAP incorrectly handled Certificate List
+Extract Assertion processing. A remote attacker could possibly use this
+issue to cause OpenLDAP to crash, resulting in a denial of service.
+(CVE-2020-36228)
+
+It was discovered that OpenLDAP incorrectly handled X.509 DN parsing. A
+remote attacker could possibly use this issue to cause OpenLDAP to crash,
+resulting in a denial of service. (CVE-2020-36229, CVE-2020-36230)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36223
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36226
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36230
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36224
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36225
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36222
+
+**Title**: USN-4737-1: Bind vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4737-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Bind incorrectly handled GSSAPI security policy
+negotiation. A remote attacker could use this issue to cause Bind to crash,
+resulting in a denial of service, or possibly execute arbitrary code. In
+the default installation, attackers would be isolated by the Bind AppArmor
+profile.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625
+
+**Title**: USN-4734-1: wpa_supplicant and hostapd vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4734-1
+**Priorities**: high,medium
+**Description**:
+  It was discovered that wpa_supplicant did not properly handle P2P
+(Wi-Fi Direct) group information in some situations, leading to a
+heap overflow. A physically proximate attacker could use this to cause a
+denial of service or possibly execute arbitrary code. (CVE-2021-0326)
+
+It was discovered that hostapd did not properly handle UPnP subscribe
+messages in some circumstances. An attacker could use this to cause a
+denial of service. (CVE-2020-12695)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0326
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12695
+
+**Title**: USN-4720-1: Apport vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4720-1
+**Priorities**: medium
+**Description**:
+  Itai Greenhut discovered that Apport incorrectly parsed certain files in
+the /proc filesystem. A local attacker could use this issue to escalate
+privileges and run arbitrary code. (CVE-2021-25682, CVE-2021-25683)
+
+Itai Greenhut discovered that Apport incorrectly handled opening certain
+special files. A local attacker could possibly use this issue to cause
+Apport to hang, resulting in a denial of service. (CVE-2021-25684)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25682
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25684
+
 #### <a id="621-101"></a> 621.101
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -3591,6 +3719,134 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-144"></a> 456.144
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 24, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.9
+
+## USNs:
+
+**Title**: USN-4728-1: snapd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4728-1
+**Priorities**: high
+**Description**:
+  Gilad Reti discovered that snapd did not correctly specify cgroup
+delegation when generating systemd service units for various container
+management snaps. This could allow a local attacker to escalate privileges
+via access to arbitrary devices of the container host from within a
+compromised or malicious container.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27352
+
+**Title**: USN-4718-1: fastd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4718-1
+**Priorities**: medium
+**Description**:
+  It was discovered that fastd incorrectly handled certain packets.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27638
+
+**Title**: USN-4729-1: Open vSwitch vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4729-1
+**Priorities**: medium
+**Description**:
+  Joakim Hindersson discovered that Open vSwitch incorrectly parsed certain
+network packets. A remote attacker could use this issue to cause a denial
+of service, or possibly alter packet classification.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35498
+
+**Title**: USN-4724-1: OpenLDAP vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4724-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenLDAP incorrectly handled Certificate Exact
+Assertion processing. A remote attacker could possibly use this issue to
+cause OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36221)
+
+It was discovered that OpenLDAP incorrectly handled saslAuthzTo processing.
+A remote attacker could use this issue to cause OpenLDAP to crash,
+resulting in a denial of service, or possibly execute arbitrary code.
+(CVE-2020-36222, CVE-2020-36224, CVE-2020-36225, CVE-2020-36226)
+
+It was discovered that OpenLDAP incorrectly handled Return Filter control
+handling. A remote attacker could use this issue to cause OpenLDAP to
+crash, resulting in a denial of service, or possibly execute arbitrary
+code. (CVE-2020-36223)
+
+It was discovered that OpenLDAP incorrectly handled certain cancel
+operations. A remote attacker could possibly use this issue to cause
+OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36227)
+
+It was discovered that OpenLDAP incorrectly handled Certificate List
+Extract Assertion processing. A remote attacker could possibly use this
+issue to cause OpenLDAP to crash, resulting in a denial of service.
+(CVE-2020-36228)
+
+It was discovered that OpenLDAP incorrectly handled X.509 DN parsing. A
+remote attacker could possibly use this issue to cause OpenLDAP to crash,
+resulting in a denial of service. (CVE-2020-36229, CVE-2020-36230)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36223
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36226
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36227
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36230
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36221
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36229
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36224
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36225
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36228
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36222
+
+**Title**: USN-4737-1: Bind vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4737-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Bind incorrectly handled GSSAPI security policy
+negotiation. A remote attacker could use this issue to cause Bind to crash,
+resulting in a denial of service, or possibly execute arbitrary code. In
+the default installation, attackers would be isolated by the Bind AppArmor
+profile.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625
+
+**Title**: USN-4734-1: wpa_supplicant and hostapd vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4734-1
+**Priorities**: high,medium
+**Description**:
+  It was discovered that wpa_supplicant did not properly handle P2P
+(Wi-Fi Direct) group information in some situations, leading to a
+heap overflow. A physically proximate attacker could use this to cause a
+denial of service or possibly execute arbitrary code. (CVE-2021-0326)
+
+It was discovered that hostapd did not properly handle UPnP subscribe
+messages in some circumstances. An attacker could use this to cause a
+denial of service. (CVE-2020-12695)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0326
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12695
+
+**Title**: USN-4720-1: Apport vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4720-1
+**Priorities**: medium
+**Description**:
+  Itai Greenhut discovered that Apport incorrectly parsed certain files in
+the /proc filesystem. A local attacker could use this issue to escalate
+privileges and run arbitrary code. (CVE-2021-25682, CVE-2021-25683)
+
+Itai Greenhut discovered that Apport incorrectly handled opening certain
+special files. A local attacker could possibly use this issue to cause
+Apport to hang, resulting in a denial of service. (CVE-2021-25684)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25683
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25682
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25684
 
 #### <a id="456-137"></a> 456.137
 
