@@ -21,7 +21,13 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 **Release Date**: March 01, 2021
 
-**Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
+**Known Issues**: 
+
+This version of the stemcell has the following issues when used on GCP:
+* Attempts to use `cf ssh` timeout. 
+* The `iptables-logger` job fails to deploy
+
+This is because rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.19
@@ -158,7 +164,13 @@ resulting in a denial of service, or possibly execute arbitrary code.
 
 **Release Date**: February 24, 2021
 
-**Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
+**Known Issues**: 
+
+This version of the stemcell has the following issues when used on GCP:
+* Attempts to use `cf ssh` timeout. 
+* The `iptables-logger` job fails to deploy
+
+This is because rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.19
@@ -3865,7 +3877,13 @@ This section includes release notes for the 456 line of Linux stemcells used wit
 
 **Release Date**: March 01, 2021
 
-**Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
+**Known Issues**: 
+
+This version of the stemcell has the following issues when used on GCP:
+* Attempts to use `cf ssh` timeout. 
+* The `iptables-logger` job fails to deploy
+
+This is because rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.9
@@ -4002,7 +4020,13 @@ resulting in a denial of service, or possibly execute arbitrary code.
 
 **Release Date**: February 24, 2021
 
-**Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
+**Known Issues**: 
+
+This version of the stemcell has the following issues when used on GCP:
+* Attempts to use `cf ssh` timeout. 
+* The `iptables-logger` job fails to deploy
+
+This is because rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.9
