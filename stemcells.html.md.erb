@@ -15,6 +15,30 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-109"></a> 621.109
+
+**Release Date**: March 05, 2021
+
+## Fixes Issues:
+
+GCP rsyslog behavior is fixed - cf ssh and rsyslog should be working as expected
+
+## Metadata:
+**BOSH Agent Version**: 2.268.19
+
+## USNs:
+
+**Title**: USN-4754-1: Python vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4754-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Python incorrectly handled certain inputs.
+An attacker could possibly use this issue to execute arbitrary code
+or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27619
+
 #### <a id="621-108"></a> 621.108
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
