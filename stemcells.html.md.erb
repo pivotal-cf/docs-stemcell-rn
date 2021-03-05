@@ -3910,6 +3910,41 @@ BOSH Agent version: 2.268.3
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="456-146"></a> 456.146
+
+**Release Date**: March 05, 2021
+
+## Fixes Issues:
+
+GCP rsyslog behavior is fixed - cf ssh and rsyslog should be working as expected
+
+## Important Notice:
+
+As of this release, on all IAASs, rsyslog will not start until `/var/log` is mounted. When used with a Bosh Agent, `/var/log` will automatically be mounted, and no further action is required.
+
+If you use this stemcell without a Bosh Agent and do not mount `/var/log`, then you need to do one of these two actions:
+
+* Remove the `ExecStart=` line from `/etc/systemd/system/rsyslog.service`
+* Blank out the contents of `/usr/local/bin/wait_for_var_log_to_be_mounted`
+
+Either action will cause rsyslog to no longer wait for `/var/log` to be mounted before starting.
+
+## Metadata:
+**BOSH Agent Version**: 2.234.9
+
+## USNs:
+
+**Title**: USN-4754-1: Python vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4754-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Python incorrectly handled certain inputs.
+An attacker could possibly use this issue to execute arbitrary code
+or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27619
+
 #### <a id="456-145"></a> 456.145
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
