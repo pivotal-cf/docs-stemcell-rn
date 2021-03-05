@@ -23,6 +23,17 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 GCP rsyslog behavior is fixed - cf ssh and rsyslog should be working as expected
 
+## Important Notice:
+
+As of this release, on all IAASs, rsyslog will not start until `/var/log` is mounted. When used with a Bosh Agent, `/var/log` will automatically be mounted, and no further action is required.
+
+If you use this stemcell without a Bosh Agent and do not mount `/var/log`, then you need to do one of these two actions:
+
+* Remove the `ExecStart=` line from `/etc/systemd/system/rsyslog.service`
+* Blank out the contents of `/usr/local/bin/wait_for_var_log_to_be_mounted`
+
+Either action will cause rsyslog to no longer wait for `/var/log` to be mounted before starting.
+
 ## Metadata:
 **BOSH Agent Version**: 2.268.19
 
