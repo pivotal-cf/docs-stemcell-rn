@@ -31,7 +31,7 @@ As of this release, on all IAASs, rsyslog will not start until `/var/log` is mou
 
 If you use this stemcell without a Bosh Agent and do not mount `/var/log`, then you need to do one of these two actions:
 
-* Remove the `ExecStart=` line from `/etc/systemd/system/rsyslog.service`
+* Remove the `ExecStartPre=` line from `/etc/systemd/system/rsyslog.service`
 * Blank out the contents of `/usr/local/bin/wait_for_var_log_to_be_mounted`
 
 Either action will cause rsyslog to no longer wait for `/var/log` to be mounted before starting.
@@ -3932,7 +3932,7 @@ As of this release, on all IAASs, rsyslog will not start until `/var/log` is mou
 
 If you use this stemcell without a Bosh Agent and do not mount `/var/log`, then you need to do one of these two actions:
 
-* Remove the `ExecStart=` line from `/etc/systemd/system/rsyslog.service`
+* Remove the `ExecStartPre=` line from `/etc/systemd/system/rsyslog.service`
 * Blank out the contents of `/usr/local/bin/wait_for_var_log_to_be_mounted`
 
 Either action will cause rsyslog to no longer wait for `/var/log` to be mounted before starting.
