@@ -15,6 +15,80 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-113"></a> 621.113
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.20
+
+## USNs:
+
+**Title**: USN-4755-1: LibTIFF vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4755-1
+**Priorities**: medium
+**Description**:
+  It was discovered that LibTIFF incorrectly handled certain malformed
+images. If a user or automated system were tricked into opening a specially
+crafted image, a remote attacker could crash the application, leading to a
+denial of service, or possibly execute arbitrary code with user privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35524
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35523
+
+**Title**: USN-4756-1: Firefox vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4756-1
+**Priorities**: medium,low
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were
+tricked into opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, obtain sensitive
+information, conduct cross-site scripting (XSS) attacks, bypass HTTP auth
+phishing warnings, or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23971
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23970
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23972
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23979
+
+**Title**: USN-4757-1: wpa_supplicant and hostapd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4757-1
+**Priorities**: medium
+**Description**:
+  It was discovered that wpa_supplicant did not properly handle P2P
+(Wi-Fi Direct) provision discovery requests in some situations. A
+physically proximate attacker could use this to cause a denial of service
+or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27803
+
+**Title**: USN-4754-4: Python 2.7 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4754-4
+**Priorities**: medium
+**Description**:
+  USN-4754-1 fixed vulnerabilities in Python. Because of a regression, a
+subsequent update removed the fix for CVE-2021-3177. This update reinstates
+the security fix for CVE-2021-3177.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ It was discovered that Python incorrectly handled certain inputs.
+ An attacker could possibly use this issue to execute arbitrary code
+ or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177
+
+
 #### <a id="621-109"></a> 621.109
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -3915,6 +3989,80 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-150"></a> 456.150
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.10
+
+## USNs:
+
+**Title**: USN-4755-1: LibTIFF vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4755-1
+**Priorities**: medium
+**Description**:
+  It was discovered that LibTIFF incorrectly handled certain malformed
+images. If a user or automated system were tricked into opening a specially
+crafted image, a remote attacker could crash the application, leading to a
+denial of service, or possibly execute arbitrary code with user privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35524
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35523
+
+**Title**: USN-4756-1: Firefox vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4756-1
+**Priorities**: medium,low
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were
+tricked into opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, obtain sensitive
+information, conduct cross-site scripting (XSS) attacks, bypass HTTP auth
+phishing warnings, or execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23971
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23970
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23972
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23974
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23975
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23979
+
+**Title**: USN-4757-1: wpa_supplicant and hostapd vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4757-1
+**Priorities**: medium
+**Description**:
+  It was discovered that wpa_supplicant did not properly handle P2P
+(Wi-Fi Direct) provision discovery requests in some situations. A
+physically proximate attacker could use this to cause a denial of service
+or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27803
+
+**Title**: USN-4754-4: Python 2.7 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4754-4
+**Priorities**: medium
+**Description**:
+  USN-4754-1 fixed vulnerabilities in Python. Because of a regression, a
+subsequent update removed the fix for CVE-2021-3177. This update reinstates
+the security fix for CVE-2021-3177.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ It was discovered that Python incorrectly handled certain inputs.
+ An attacker could possibly use this issue to execute arbitrary code
+ or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177
+
 
 #### <a id="456-146"></a> 456.146
 
