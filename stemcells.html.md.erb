@@ -15,6 +15,110 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-115"></a> 621.115
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 22, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.21
+
+## USNs:
+
+**Title**: USN-4758-1: Go vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4758-1
+**Priorities**: low
+**Description**:
+  It was discovered that Go applications incorrectly handled uploaded content. If
+a user were tricked into visiting a malicious page, a remote attacker could
+exploit this with a crafted file to conduct cross-site scripting (XSS) attacks.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24553
+
+**Title**: USN-4761-1: Git vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4761-1
+**Priorities**: medium
+**Description**:
+  Matheus Tavares discovered that Git incorrectly handled delay-capable
+clean/smudge filters when being used on case-insensitive filesystems. A
+remote attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21300
+
+**Title**: USN-4759-1: GLib vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4759-1
+**Priorities**: medium
+**Description**:
+  Krzesimir Nowak discovered that GLib incorrectly handled certain large
+buffers. A remote attacker could use this issue to cause applications
+linked to GLib to crash, resulting in a denial of service, or possibly
+execute arbitrary code. (CVE-2021-27218)
+
+Kevin Backhouse discovered that GLib incorrectly handled certain memory
+allocations. A remote attacker could use this issue to cause applications
+linked to GLib to crash, resulting in a denial of service, or possibly
+execute arbitrary code. (CVE-2021-27219)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27218
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27219
+
+**Title**: USN-4763-1: Pillow vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4763-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Pillow incorrectly handled certain Tiff image files.
+If a user or automated system were tricked into opening a specially-crafted
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a
+denial of service, or possibly execute arbitrary code. This issue only
+affected Ubuntu 20.04 LTS and Ubuntu 20.10. (CVE-2021-25289,
+CVE-2021-25291)
+
+It was discovered that Pillow incorrectly handled certain Tiff image files.
+If a user or automated system were tricked into opening a specially-crafted
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a
+denial of service, or possibly execute arbitrary code. (CVE-2021-25290)
+
+It was discovered that Pillow incorrectly handled certain PDF files. If a
+user or automated system were tricked into opening a specially-crafted
+PDF file, a remote attacker could cause Pillow to hang, resulting in a
+denial of service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04
+LTS, and Ubuntu 20.10. (CVE-2021-25292)
+
+It was discovered that Pillow incorrectly handled certain SGI image files.
+If a user or automated system were tricked into opening a specially-crafted
+SGI file, a remote attacker could possibly cause Pillow to crash,
+resulting in a denial of service. This issue only affected Ubuntu 18.04
+LTS, Ubuntu 20.04 LTS, and Ubuntu 20.10. (CVE-2021-25293)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain BLP files. If a user or automated system
+were tricked into opening a specially-crafted BLP file, a remote attacker
+could possibly cause Pillow to consume resources, resulting in a denial of
+service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and
+Ubuntu 20.10. (CVE-2021-27921)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain ICNS files. If a user or automated
+system were tricked into opening a specially-crafted ICNS file, a remote
+attacker could possibly cause Pillow to consume resources, resulting in a
+denial of service. (CVE-2021-27922)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain ICO files. If a user or automated
+system were tricked into opening a specially-crafted ICO file, a remote
+attacker could possibly cause Pillow to consume resources, resulting in a
+denial of service. (CVE-2021-27922)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27922
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27921
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25293
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27923
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25290
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25292
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25289
+
 #### <a id="621-113"></a> 621.113
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -3989,6 +4093,110 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-152"></a> 456.152
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 22, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.11
+
+## USNs:
+
+**Title**: USN-4758-1: Go vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4758-1
+**Priorities**: low
+**Description**:
+  It was discovered that Go applications incorrectly handled uploaded content. If
+a user were tricked into visiting a malicious page, a remote attacker could
+exploit this with a crafted file to conduct cross-site scripting (XSS) attacks.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24553
+
+**Title**: USN-4761-1: Git vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4761-1
+**Priorities**: medium
+**Description**:
+  Matheus Tavares discovered that Git incorrectly handled delay-capable
+clean/smudge filters when being used on case-insensitive filesystems. A
+remote attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21300
+
+**Title**: USN-4759-1: GLib vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4759-1
+**Priorities**: medium
+**Description**:
+  Krzesimir Nowak discovered that GLib incorrectly handled certain large
+buffers. A remote attacker could use this issue to cause applications
+linked to GLib to crash, resulting in a denial of service, or possibly
+execute arbitrary code. (CVE-2021-27218)
+
+Kevin Backhouse discovered that GLib incorrectly handled certain memory
+allocations. A remote attacker could use this issue to cause applications
+linked to GLib to crash, resulting in a denial of service, or possibly
+execute arbitrary code. (CVE-2021-27219)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27218
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27219
+
+**Title**: USN-4763-1: Pillow vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4763-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Pillow incorrectly handled certain Tiff image files.
+If a user or automated system were tricked into opening a specially-crafted
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a
+denial of service, or possibly execute arbitrary code. This issue only
+affected Ubuntu 20.04 LTS and Ubuntu 20.10. (CVE-2021-25289,
+CVE-2021-25291)
+
+It was discovered that Pillow incorrectly handled certain Tiff image files.
+If a user or automated system were tricked into opening a specially-crafted
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a
+denial of service, or possibly execute arbitrary code. (CVE-2021-25290)
+
+It was discovered that Pillow incorrectly handled certain PDF files. If a
+user or automated system were tricked into opening a specially-crafted
+PDF file, a remote attacker could cause Pillow to hang, resulting in a
+denial of service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04
+LTS, and Ubuntu 20.10. (CVE-2021-25292)
+
+It was discovered that Pillow incorrectly handled certain SGI image files.
+If a user or automated system were tricked into opening a specially-crafted
+SGI file, a remote attacker could possibly cause Pillow to crash,
+resulting in a denial of service. This issue only affected Ubuntu 18.04
+LTS, Ubuntu 20.04 LTS, and Ubuntu 20.10. (CVE-2021-25293)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain BLP files. If a user or automated system
+were tricked into opening a specially-crafted BLP file, a remote attacker
+could possibly cause Pillow to consume resources, resulting in a denial of
+service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and
+Ubuntu 20.10. (CVE-2021-27921)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain ICNS files. If a user or automated
+system were tricked into opening a specially-crafted ICNS file, a remote
+attacker could possibly cause Pillow to consume resources, resulting in a
+denial of service. (CVE-2021-27922)
+
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that
+Pillow incorrectly handled certain ICO files. If a user or automated
+system were tricked into opening a specially-crafted ICO file, a remote
+attacker could possibly cause Pillow to consume resources, resulting in a
+denial of service. (CVE-2021-27922)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27922
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25291
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27921
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25293
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27923
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25290
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25292
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25289
 
 #### <a id="456-150"></a> 456.150
 
