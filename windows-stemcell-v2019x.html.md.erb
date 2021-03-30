@@ -20,6 +20,16 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
     see <a href="https://docs.pivotal.io/application-service-windows/<%= vars.current_major_version.sub('.', '-') %>/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
   </p>
 
+## <a id="2019.34"></a>2019.34
+
+**Release Date**: March 30th, 2021
+
+### Changes
+
+- Includes bosh-agent 2.373.0:
+  - enables the use of disk UUID to identify and mount ephemeral disks. This fixes an issue where the agent only accepted disk indices and ignored disks specified by UUID.
+  - fixes an issue with the agent becoming unresponsive after a restart if the bosh configured NIC(s) are migrated to a vSwitch which has other hidden virtual adapters with the same MAC address.
+
 ## <a id="2019.32"></a>2019.32
 
 **Release Date**: March 15th, 2021
