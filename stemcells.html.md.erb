@@ -19775,6 +19775,59 @@ Periodic CentOS 7 stemcell bump (Jan 17, 2019)
 
 This section includes release notes for the 0 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="0-24"></a> 0.24
+
+**Release Date**: April 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: v2.346.0
+
+## USNs:
+
+Any USN up to 06 April 2021 and older as listed on https://ubuntu.com/security/notices?order=newest&release=bionic&page=1, including:
+
+Title: USN-4902-1: Django vulnerability
+URL: https://ubuntu.com/security/notices/USN-4902-1
+Priorities: low
+Description:
+Dennis Brinkrolf discovered that Django incorrectly handled certain
+filenames. A remote attacker could possibly use this issue to create or
+overwrite files in unexpected directories.
+
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28658
+
+
+#### <a id="0-19"></a> 0.19
+
+**Release Date**: April 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.333.0
+
+## USNs:
+
+Any USN up to 24 March 2021 and older as listed on https://ubuntu.com/security/notices?order=newest&release=bionic, including:
+
+Title: USN-4888-1: ldb vulnerabilities
+URL: https://ubuntu.com/security/notices/USN-4888-1
+Priorities: high
+Description:
+Douglas Bagnall discovered that ldb, when used with Samba, incorrectly
+handled certain LDAP attributes. A remote attacker could possibly use this
+issue to cause the LDAP server to crash, resulting in a denial of service.
+(CVE-2021-20277)
+
+Douglas Bagnall discovered that ldb, when used with Samba, incorrectly
+handled certain DN strings. A remote attacker could use this issue to
+cause the LDAP server to crash, resulting in a denial of service, or
+possibly execute arbitrary code. (CVE-2020-27840)
+
+**CVEs**:
+<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20277
+<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27840
+
+
 #### <a id="0-13"></a> 0.13
 
 **Release Date**: February 17, 2021
