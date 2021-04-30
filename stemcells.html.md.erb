@@ -15,6 +15,178 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-125"></a> 621.125
+
+**Release Date**: April 30, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.21
+
+## USNs:
+
+**Title**: USN-4924-1: Dnsmasq vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4924-1
+**Priorities**: low
+**Description**:
+  It was discovered that Dnsmasq incorrectly handled certain wildcard
+synthesized NSEC records. A remote attacker could possibly use this issue
+to prove the non-existence of hostnames that actually exist.
+(CVE-2017-15107)
+
+It was discovered that Dnsmasq incorrectly handled certain large DNS
+packets. A remote attacker could possibly use this issue to cause Dnsmasq
+to crash, resulting in a denial of service. (CVE-2019-14513)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14513
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15107
+
+**Title**: USN-4919-1: OpenSLP vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4919-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenSLP did not properly validate URLs. A remote
+attacker could use this issue to cause OpenSLP to crash or possibly execute
+arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5544
+
+**Title**: USN-4927-1: File Roller vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4927-1
+**Priorities**: medium
+**Description**:
+  It was discovered that File Roller incorrectly handled symlinks.
+An attacker could possibly use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36314
+
+**Title**: USN-4918-1: ClamAV vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4918-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ClamAV incorrectly handled parsing Excel documents.
+A remote attacker could possibly use this issue to cause ClamAV to hang,
+resulting in a denial of service. (CVE-2021-1252)
+
+It was discovered that ClamAV incorrectly handled parsing PDF documents. A
+remote attacker could possibly use this issue to cause ClamAV to crash,
+resulting in a denial of service. (CVE-2021-1404)
+
+It was discovered that ClamAV incorrectly handled parsing email. A remote
+attacker could possibly use this issue to cause ClamAV to crash, resulting
+in a denial of service. (CVE-2021-1405)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1405
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1404
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1252
+
+**Title**: USN-4892-1: OpenJDK vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4892-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenJDK incorrectly verified Jar signatures. An
+attacker could possibly use this issue to bypass intended security
+restrictions when using Jar files signed with a disabled algorithm.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2163
+
+**Title**: USN-4913-1: Underscore vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4913-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Underscore incorrectly handled certain inputs.
+An attacker could possibly use this issue to inject arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23358
+
+**Title**: USN-4926-1: Firefox vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4926-1
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were
+tricked into opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, spoof the
+browser UI, bypass security restrictions, trick the user into disclosing
+confidential information, or execute arbitrary code. (CVE-2021-23994,
+CVE-2021-23996, CVE-2021-23997, CVE-2021-23998, CVE-2021-23999,
+CVE-2021-24000, CVE-2021-24001, CVE-2021-29945, CVE-2021-29946,
+CVE-2021-29947)
+
+A use-after-free was discovered when Responsive Design Mode was
+enabled. If a user were tricked into opening a specially crafted
+website with Responsive Design Mode enabled, an attacker could
+potentially exploit this to cause a denial of service, or execute
+arbitrary code. (CVE-2021-23995)
+
+It was discovered that Firefox mishandled ftp URLs with encoded newline
+characters. If a user were tricked into clicking on a specially crafted
+link, an attacker could potentially exploit this to send arbitrary
+FTP commands. (CVE-2021-24002)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24000
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23996
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23997
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23995
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29946
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23999
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23994
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23998
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29945
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24001
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24002
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29947
+
+**Title**: USN-4922-1: Ruby vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4922-1
+**Priorities**: medium
+**Description**:
+  Juho Nurminen discovered that the REXML gem bundled with Ruby incorrectly
+parsed and serialized XML documents. A remote attacker could possibly use
+this issue to perform an XML round-trip attack.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28965
+
+**Title**: USN-4921-1: libcaca vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4921-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libcaca incorrectly handled certain images.
+An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3410
+
+**Title**: USN-4916-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4916-1
+**Priorities**: high
+**Description**:
+  It was discovered that the overlayfs implementation in the Linux kernel did
+not properly validate the application of file system capabilities with
+respect to user namespaces. A local attacker could use this to gain
+elevated privileges. (CVE-2021-3493)
+
+Piotr Krysiuk discovered that the BPF JIT compiler for x86 in the Linux
+kernel did not properly validate computation of branch displacements in
+some situations. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2021-29154)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3493
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29154
+
+**Title**: USN-4928-1: GStreamer Good Plugins vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4928-1
+**Priorities**: medium
+**Description**:
+  It was discovered that GStreamer Good Plugins incorrectly handled certain files.
+An attacker could possibly use this issue to cause access sensitive information
+or cause a crash. (CVE-2021-3497)
+
+It was discovered that GStreamer Good Plugins incorrectly handled certain files.
+An attacker could possibly use this issue to execute arbitrary code or cause
+a crash. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu
+20.10. (CVE-2021-3498)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3497
+
 #### <a id="621-123"></a> 621.123
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -4357,6 +4529,178 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-160"></a> 456.160
+
+**Release Date**: April 30, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.11
+
+## USNs:
+
+**Title**: USN-4924-1: Dnsmasq vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4924-1
+**Priorities**: low
+**Description**:
+  It was discovered that Dnsmasq incorrectly handled certain wildcard
+synthesized NSEC records. A remote attacker could possibly use this issue
+to prove the non-existence of hostnames that actually exist.
+(CVE-2017-15107)
+
+It was discovered that Dnsmasq incorrectly handled certain large DNS
+packets. A remote attacker could possibly use this issue to cause Dnsmasq
+to crash, resulting in a denial of service. (CVE-2019-14513)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14513
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-15107
+
+**Title**: USN-4919-1: OpenSLP vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4919-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenSLP did not properly validate URLs. A remote
+attacker could use this issue to cause OpenSLP to crash or possibly execute
+arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5544
+
+**Title**: USN-4927-1: File Roller vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4927-1
+**Priorities**: medium
+**Description**:
+  It was discovered that File Roller incorrectly handled symlinks.
+An attacker could possibly use this issue to expose sensitive information.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36314
+
+**Title**: USN-4918-1: ClamAV vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4918-1
+**Priorities**: medium
+**Description**:
+  It was discovered that ClamAV incorrectly handled parsing Excel documents.
+A remote attacker could possibly use this issue to cause ClamAV to hang,
+resulting in a denial of service. (CVE-2021-1252)
+
+It was discovered that ClamAV incorrectly handled parsing PDF documents. A
+remote attacker could possibly use this issue to cause ClamAV to crash,
+resulting in a denial of service. (CVE-2021-1404)
+
+It was discovered that ClamAV incorrectly handled parsing email. A remote
+attacker could possibly use this issue to cause ClamAV to crash, resulting
+in a denial of service. (CVE-2021-1405)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1405
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1404
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-1252
+
+**Title**: USN-4892-1: OpenJDK vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4892-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenJDK incorrectly verified Jar signatures. An
+attacker could possibly use this issue to bypass intended security
+restrictions when using Jar files signed with a disabled algorithm.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2163
+
+**Title**: USN-4913-1: Underscore vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4913-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Underscore incorrectly handled certain inputs.
+An attacker could possibly use this issue to inject arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23358
+
+**Title**: USN-4926-1: Firefox vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4926-1
+**Priorities**: medium
+**Description**:
+  Multiple security issues were discovered in Firefox. If a user were
+tricked into opening a specially crafted website, an attacker could
+potentially exploit these to cause a denial of service, spoof the
+browser UI, bypass security restrictions, trick the user into disclosing
+confidential information, or execute arbitrary code. (CVE-2021-23994,
+CVE-2021-23996, CVE-2021-23997, CVE-2021-23998, CVE-2021-23999,
+CVE-2021-24000, CVE-2021-24001, CVE-2021-29945, CVE-2021-29946,
+CVE-2021-29947)
+
+A use-after-free was discovered when Responsive Design Mode was
+enabled. If a user were tricked into opening a specially crafted
+website with Responsive Design Mode enabled, an attacker could
+potentially exploit this to cause a denial of service, or execute
+arbitrary code. (CVE-2021-23995)
+
+It was discovered that Firefox mishandled ftp URLs with encoded newline
+characters. If a user were tricked into clicking on a specially crafted
+link, an attacker could potentially exploit this to send arbitrary
+FTP commands. (CVE-2021-24002)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24000
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23996
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23997
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23995
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29946
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23999
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23994
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23998
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29945
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24001
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-24002
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29947
+
+**Title**: USN-4922-1: Ruby vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4922-1
+**Priorities**: medium
+**Description**:
+  Juho Nurminen discovered that the REXML gem bundled with Ruby incorrectly
+parsed and serialized XML documents. A remote attacker could possibly use
+this issue to perform an XML round-trip attack.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28965
+
+**Title**: USN-4921-1: libcaca vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4921-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libcaca incorrectly handled certain images.
+An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3410
+
+**Title**: USN-4916-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4916-1
+**Priorities**: high
+**Description**:
+  It was discovered that the overlayfs implementation in the Linux kernel did
+not properly validate the application of file system capabilities with
+respect to user namespaces. A local attacker could use this to gain
+elevated privileges. (CVE-2021-3493)
+
+Piotr Krysiuk discovered that the BPF JIT compiler for x86 in the Linux
+kernel did not properly validate computation of branch displacements in
+some situations. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code. (CVE-2021-29154)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3493
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29154
+
+**Title**: USN-4928-1: GStreamer Good Plugins vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4928-1
+**Priorities**: medium
+**Description**:
+  It was discovered that GStreamer Good Plugins incorrectly handled certain files.
+An attacker could possibly use this issue to cause access sensitive information
+or cause a crash. (CVE-2021-3497)
+
+It was discovered that GStreamer Good Plugins incorrectly handled certain files.
+An attacker could possibly use this issue to execute arbitrary code or cause
+a crash. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu
+20.10. (CVE-2021-3498)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3497
 
 #### <a id="456-158"></a> 456.158
 
