@@ -20555,6 +20555,34 @@ Periodic CentOS 7 stemcell bump (Jan 28, 2019)
 
 Periodic CentOS 7 stemcell bump (Jan 17, 2019)
 
+### <a id="1-line"></a> 1.x 
+
+This section includes release notes for the 1 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="1-1"></a> 1.1
+
+**Release Date**: May 07, 2021
+
+This is the first GA release of the Bionic stemcell. There are no major differences to 0.28, besides the major version bump and recent security fixes.
+
+## Metadata:
+**BOSH Agent Version**: v2.346.0
+
+## USNs:
+
+Any USN up to 04 May 2021 and older as listed on https://ubuntu.com/security/notices?order=newest&release=bionic&page=1, including:
+
+**Title**: USN-4932-1: Django vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4932-1
+**Priorities**: medium
+**Description**:
+It was discovered that Django incorrectly handled certain
+filenames. A remote attacker could possibly use this issue to create or
+overwrite files in unexpected directories.
+
+**CVEs**:
+<br>- https://ubuntu.com/security/CVE-2021-31542
+
 ### <a id="0-line"></a> 0.x 
 
 This section includes release notes for the 0 line of Linux stemcells used with <%= vars.platform_name %>.
