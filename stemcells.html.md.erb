@@ -20924,6 +20924,58 @@ For more information, see [TLS for Internal Blobstore Supported
   - Use parted when GPT partitions are detected
   - Refactor retryable strategy usages
 
+#### <a id="3586-153"></a> 3586.153
+
+**Release Date**: September 03, 2019
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
+
+#### <a id="3586-150"></a> 3586.150
+
+**Release Date**: August 27, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3586-148"></a> 3586.148
+
+**Release Date**: August 22, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3586-144"></a> 3586.144
+
+**Release Date**: July 17, 2019
+
+Bi-weekly Stemcell Bump
+
+#### <a id="3586-141"></a> 3586.141
+
+**Release Date**: July 11, 2019
+
+Bi-weekly Agent Bump (July 3rd)
+
+#### <a id="3586-129"></a> 3586.129
+
+**Release Date**: June 18, 2019
+
+CVE fixes for https://usn.ubuntu.com/4017-2/
+
+#### <a id="3586-86"></a> 3586.86
+
+**Release Date**: March 07, 2019
+
+Periodic stemcell bump (Mar 06, 2019)
+
 ### <a id="3541-line"></a> 3541.x 
 
 This section includes release notes for the 3541 line of Linux stemcells used with <%= vars.platform_name %>.
@@ -21111,6 +21163,76 @@ Misc
 - Order stemcell tarballs so that upload-stemcell command can execute faster
 - Generate `packages.txt` within stemcell tarball that includes list of installed packages (previously known under different name)
 
+
+#### <a id="3541-146"></a> 3541.146
+
+**Release Date**: September 03, 2019
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
+
+#### <a id="3541-143"></a> 3541.143
+
+**Release Date**: August 27, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3541-142"></a> 3541.142
+
+**Release Date**: August 22, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3541-138"></a> 3541.138
+
+**Release Date**: July 17, 2019
+
+Bi-weekly stemcell bump
+
+#### <a id="3541-135"></a> 3541.135
+
+**Release Date**: July 11, 2019
+
+Bi-weekly Agent Bump (July 3rd)
+
+#### <a id="3541-123"></a> 3541.123
+
+**Release Date**: June 18, 2019
+
+Addresses "USN-4017-2: Linux kernel vulnerabilities" (Jun 17, 2019)
+
+#### <a id="3541-93"></a> 3541.93
+
+**Release Date**: April 10, 2019
+
+Periodic bump (Apr  8, 2019)
+
+#### <a id="3541-90"></a> 3541.90
+
+**Release Date**: March 28, 2019
+
+Periodic bump (Mar 25, 2019)
+
+#### <a id="3541-87"></a> 3541.87
+
+**Release Date**: March 15, 2019
+
+Periodic bump (Mar 15, 2019)
+
+#### <a id="3541-83"></a> 3541.83
+
+**Release Date**: March 07, 2019
+
+Periodic stemcell bump (Mar 06, 2019)
 
 ### <a id="3469-line"></a> 3469.x 
 
@@ -21346,6 +21468,88 @@ Upcoming features on this stemcell line:
 
 - IPv6 support for vSphere
 
+#### <a id="3468-153"></a> 3468.153
+
+**Release Date**: September 03, 2019
+
+Updating golang to versions that fixed CVEs disclosed here:
+https://github.com/golang/go/issues/33606
+
+For more details, please read: 
+https://kb.cert.org/vuls/id/605641/ which describes all the CVEs that cause the HTTP/2 implementations vulnerable to DDOS. 
+and 
+https://vuls.cert.org/confluence/pages/viewpage.action?pageId=56393752 which shows a matrix of what http/2 implementations are affected by which vulnerabilities. 
+
+Because stemcells are implemented in golang, the vulnerabilities fixed in this patch are: 
+CVE-2019-9512, also known as Ping Flood
+CVE-2019-9514, also known as Reset Flood
+
+#### <a id="3468-151"></a> 3468.151
+
+**Release Date**: August 27, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3468-149"></a> 3468.149
+
+**Release Date**: August 22, 2019
+
+Bi-weekly stemcell release
+
+#### <a id="3468-145"></a> 3468.145
+
+**Release Date**: July 17, 2019
+
+Bi-weekly stemcell bump
+
+#### <a id="3468-143"></a> 3468.143
+
+**Release Date**: July 11, 2019
+
+Bi-weekly Agent Bump (July 3rd)
+
+#### <a id="3468-136"></a> 3468.136
+
+**Release Date**: August 01, 2019
+
+Bi-weekly update
+
+#### <a id="3468-133"></a> 3468.133
+
+**Release Date**: June 18, 2019
+
+CVE fixes for https://usn.ubuntu.com/4017-2/
+
+#### <a id="3468-126"></a> 3468.126
+
+**Release Date**: May 17, 2021
+
+Periodic stemcell bump (May 20, 2019)
+
+#### <a id="3468-109"></a> 3468.109
+
+**Release Date**: April 10, 2019
+
+Periodic stemcell bump (Apr  9, 2019)
+
+#### <a id="3468-107"></a> 3468.107
+
+**Release Date**: March 28, 2019
+
+Periodic stemcell bump (Mar 26, 2019)
+
+#### <a id="3468-104"></a> 3468.104
+
+**Release Date**: March 15, 2019
+
+Periodic stemcell bump (Mar 15, 2019)
+
+#### <a id="3468-103"></a> 3468.103
+
+**Release Date**: March 07, 2019
+
+Periodic stemcell bump (Mar 06, 2019)
+
 ### <a id="3445-line"></a> 3445.x 
 
 This section includes release notes for the 3445 line of Linux stemcells used with <%= vars.platform_name %>.
@@ -21562,6 +21766,24 @@ https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html
 - Include gcscli for native GCS support
 - Bump bosh-agent to include support for colocated errand jobs
 - Fix occasional rsyslog hang on startup (as a workaround for https://github.com/rsyslog/rsyslog/issues/1188)
+
+#### <a id="3445-107"></a> 3445.107
+
+**Release Date**: April 10, 2019
+
+Periodic stemcell bump (Apr  9, 2019)
+
+#### <a id="3445-102"></a> 3445.102
+
+**Release Date**: March 28, 2019
+
+Periodic stemcell bump (Mar 26, 2019)
+
+#### <a id="3445-99"></a> 3445.99
+
+**Release Date**: March 07, 2019
+
+Periodic stemcell bump (Mar 06, 2019)
 
 ### <a id="3431-line"></a> 3431.x 
 
@@ -21852,6 +22074,42 @@ Bumps:
 - Bumped bosh-agent v0.0.35
   - Add `-v` to the Agent binary
   - Prepared `sync_dns` action to work with future Director's DNS integration
+
+#### <a id="3421-124"></a> 3421.124
+
+**Release Date**: April 09, 2019
+
+Periodic stemcell bump (Apr  8, 2019)
+
+#### <a id="3421-122"></a> 3421.122
+
+**Release Date**: March 28, 2019
+
+Periodic stemcell bump (Mar 26, 2019)
+
+#### <a id="3421-119"></a> 3421.119
+
+**Release Date**: March 15, 2019
+
+Periodic stemcell bump (Mar 15, 2019)
+
+#### <a id="3421-118"></a> 3421.118
+
+**Release Date**: March 07, 2019
+
+Periodic stemcell bump (Mar 07, 2019)
+
+#### <a id="3421-95"></a> 3421.95
+
+**Release Date**: October 23, 2018
+
+Periodic Ubuntu Trusty stemcell bump (Oct 23, 2018)
+
+#### <a id="3421-91"></a> 3421.91
+
+**Release Date**: October 23, 2018
+
+Periodic Ubuntu Trusty stemcell bump (Oct 20, 2018)
 
 ### <a id="3363-line"></a> 3363.x 
 
