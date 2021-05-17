@@ -10,7 +10,7 @@ module Resources
     end
 
     def get_stemcell_releases
-      get_bosh_stemcell_releases + get_linux_stemcell_builder_releases
+      get_bosh_stemcell_releases + get_linux_stemcell_builder_releases + get_linux_stemcell_builder_lts_releases
     end
 
     private
@@ -26,6 +26,13 @@ module Resources
 
     def get_linux_stemcell_builder_releases
       bosh_releases = @client.releases 'cloudfoundry/bosh-linux-stemcell-builder'
+      bosh_releases.map do |release|
+        release_to_hash(release)
+      end
+    end
+
+    def get_linux_stemcell_builder_lts_releases
+      bosh_releases = @client.releases 'pivotal-cf/bosh-linux-stemcell-builder-lts'
       bosh_releases.map do |release|
         release_to_hash(release)
       end
