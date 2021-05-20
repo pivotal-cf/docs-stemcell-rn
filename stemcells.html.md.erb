@@ -4528,6 +4528,204 @@ New stemcell line!
 
 BOSH Agent version: 2.268.3
 
+#### <a id="621-128"></a> 621.128
+
+**Release Date**: May 20, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.21
+
+## USNs:
+
+**Title**: USN-4954-1: GNU C Library vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4954-1
+**Priorities**: negligible,low
+**Description**:
+  Jason Royes and Samuel Dytrych discovered that the memcpy()
+implementation for 32 bit ARM processors in the GNU C Library contained
+an integer underflow vulnerability. An attacker could possibly use
+this to cause a denial of service (application crash) or execute
+arbitrary code. (CVE-2020-6096)
+
+It was discovered that the POSIX regex implementation in the GNU C
+Library did not properly parse alternatives. An attacker could use this
+to cause a denial of service. (CVE-2009-5155)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2009-5155
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6096
+
+**Title**: USN-4934-2: Exim vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4934-2
+**Priorities**: medium
+**Description**:
+  USN-4934-1 fixed several vulnerabilities in Exim. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+CVE-2020-28026 only affected Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that Exim contained multiple security issues. An attacker
+ could use these issues to cause a denial of service, execute arbitrary
+ code remotely, obtain sensitive information, or escalate local privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28011
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28009
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27216
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28022
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28025
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28026
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28024
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28014
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28007
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28016
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28020
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28013
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28008
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28015
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28017
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28012
+
+**Title**: USN-4953-1: AWStats vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4953-1
+**Priorities**: low,medium
+**Description**:
+  Sean Boran discovered that AWStats incorrectly filtered certain parameters.
+A remote attacker could possibly use this issue to execute arbitrary code.
+(CVE-2020-29600)
+
+It was discovered that AWStats incorrectly filtered certain parameters. A
+remote attacker could possibly use this issue to access sensitive
+information. (CVE-2020-35176)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35176
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-1000501
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-29600
+
+**Title**: USN-4930-1: Samba vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4930-1
+**Priorities**: medium
+**Description**:
+  Peter Eriksson discovered that Samba incorrectly handled certain negative
+idmap cache entries. This issue could result in certain users gaining
+unauthorized access to files, contrary to expected behaviour.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20254
+
+**Title**: USN-4946-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4946-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the DRM subsystem in the Linux kernel contained
+double-free vulnerabilities. A privileged attacker could possibly use this
+to cause a denial of service (system crash) or possibly execute arbitrary
+code. (CVE-2021-20292)
+
+Olivier Benjamin, Norbert Manthey, Martin Mazein, and Jan H. Schönherr
+discovered that the Xen paravirtualization backend in the Linux kernel did
+not properly propagate errors to frontend drivers in some situations. An
+attacker in a guest VM could possibly use this to cause a denial of service
+(host domain crash). (CVE-2021-26930)
+
+Jan Beulich discovered that multiple Xen backends in the Linux kernel did
+not properly handle certain error conditions under paravirtualization. An
+attacker in a guest VM could possibly use this to cause a denial of service
+(host domain crash). (CVE-2021-26931)
+
+Jan Beulich discovered that the Xen netback backend in the Linux kernel did
+not properly handle certain error conditions under paravirtualization. An
+attacker in a guest VM could possibly use this to cause a denial of service
+(host domain crash). (CVE-2021-28038)
+
+It was discovered that the Xen paravirtualization backend in the Linux
+kernel did not properly deallocate memory in some situations. A local
+attacker could use this to cause a denial of service (memory exhaustion).
+(CVE-2021-28688)
+
+It was discovered that the Freescale Gianfar Ethernet driver for the Linux
+kernel did not properly handle receive queue overrun when jumbo frames were
+enabled in some situations. An attacker could use this to cause a denial of
+service (system crash). (CVE-2021-29264)
+
+It was discovered that the USB/IP driver in the Linux kernel contained race
+conditions during the update of local and shared status. An attacker could
+use this to cause a denial of service (system crash). (CVE-2021-29265)
+
+It was discovered that a race condition existed in the netfilter subsystem
+of the Linux kernel when replacing tables. A local attacker could use this
+to cause a denial of service (system crash). (CVE-2021-29650)
+
+Arnd Bergmann discovered that the video4linux subsystem in the Linux kernel
+did not properly deallocate memory in some situations. A local attacker
+could use this to cause a denial of service (memory exhaustion).
+(CVE-2021-30002)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20292
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26930
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29264
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29265
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29650
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28688
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-26931
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-28038
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30002
+
+**Title**: USN-4941-1: Exiv2 vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4941-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exiv2 incorrectly handled certain images.
+An attacker could possibly use this issue to execute arbitrary code or cause
+a crash. (CVE-2021-29457)
+
+It was discovered that Exiv2 incorrectly handled certain images.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2021-29458, CVE-2021-29470)
+
+It was discovered that Exiv2 incorrectly handled certain images.
+An attacker could possibly use this issue to execute arbitrary code or
+cause a crash. (CVE-2021-3482)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29458
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3482
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29470
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29457
+
+**Title**: USN-4932-2: Django vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-4932-2
+**Priorities**: medium
+**Description**:
+  USN-4932-1 fixed a vulnerability in Django. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that Django incorrectly handled certain
+ filenames. A remote attacker could possibly use this issue to create or
+ overwrite files in unexpected directories.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31542
+
+**Title**: USN-4957-2: DjVuLibre vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4957-2
+**Priorities**: medium,low
+**Description**:
+  USN-4957-1 fixed several vulnerabilities in DjVuLibre. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that DjVuLibre incorrectly handled certain memory
+ operations. If a user or automated system were tricked into processing a
+ specially crafted DjVu file, a remote attacker could cause applications
+ to hang or crash, resulting in a denial of service, or possibly execute
+ arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32491
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32492
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32493
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32490
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3500
+
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
