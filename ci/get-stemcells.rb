@@ -3,6 +3,8 @@ require 'octokit'
 require 'open-uri'
 require 'base64'
 
+SUPPORTED_XENIAL_STEMCELL_LINES = %w(621 456)
+
 module Resources
   class Github
     def initialize
@@ -91,6 +93,10 @@ def sorted_releases_by_major_version(releases)
     result[release['major_version']] << release
   end
 
+  result.each do |stemcell_line, releases_for_line|
+    result[stemcell_line] = releases_for_line.sort_by { |a| Gem::Version.new(a['version']) }.reverse
+  end
+
   return result.sort.reverse.to_h
 end
 
@@ -157,15 +163,12 @@ This topic includes release notes for Linux stemcells used with <%= vars.platfor
 HEADER
 
   major_version_releases = sorted_releases_by_major_version(github_releases)
-  releases_xenial = major_version_releases.select{|major_version| major_version < 3000}
-  releases_trusty = major_version_releases.select{|major_version| major_version >= 3000}
+  releases_xenial = major_version_releases.select{|major_version| SUPPORTED_XENIAL_STEMCELL_LINES.include?(major_version.to_s) }
 
   puts output
 
   puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
                      "Xenial")
-  puts_release_notes(releases_trusty, 'https://network.pivotal.io/api/v2/products/stemcells/releases',
-                     "Trusty")
 end
 
 main
