@@ -15,6 +15,91 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-133"></a> 621.133
+
+**Release Date**: July 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.21
+
+## USNs:
+
+**Title**: USN-5006-2: PHP vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5006-2
+**Priorities**: low,medium
+**Description**:
+  USN-5006-1 fixed several vulnerabilities in PHP. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that PHP incorrectly handled certain PHAR files. A remote
+ attacker could possibly use this issue to cause PHP to crash, resulting in
+ a denial of service, or possibly obtain sensitive information. (CVE-2020-7068)
+
+ It was discovered that PHP incorrectly handled parsing URLs with passwords.
+ A remote attacker could possibly use this issue to cause PHP to mis-parse
+ the URL and produce wrong data. (CVE-2020-7071)
+
+ It was discovered that PHP incorrectly handled certain malformed XML data
+ when being parsed by the SOAP extension. A remote attacker could possibly
+ use this issue to cause PHP to crash, resulting in a denial of service.
+ (CVE-2021-21702)
+
+ It was discovered that PHP incorrectly handled the pdo_firebase module. A
+ remote attacker could possibly use this issue to cause PHP to crash,
+ resulting in a denial of service. (CVE-2021-21704)
+
+ It was discovered that PHP incorrectly handled the FILTER_VALIDATE_URL
+ check. A remote attacker could possibly use this issue to perform a server-
+ side request forgery attack. (CVE-2021-21705)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21702
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21705
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21704
+
+**Title**: USN-5004-1: RabbitMQ vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5004-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that RabbitMQ incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service. This
+issue only affected Ubuntu 16.04 ESM and Ubuntu 18.04 LTS. (CVE-2019-11287)
+
+Jonathan Knudsen discovered RabbitMQ incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2021-22116)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22116
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11287
+
+**Title**: USN-5008-2: Avahi vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5008-2
+**Priorities**: medium
+**Description**:
+  USN-5008-1 fixed a vulnerability in avahi. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Thomas Kremer discovered that Avahi incorrectly handled termination signals
+ on the Unix socket. A local attacker could possibly use this issue to cause
+ Avahi to hang, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3468
+
+**Title**: USN-5005-1: DjVuLibre vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5005-1
+**Priorities**: medium
+**Description**:
+  It was discovered that DjVuLibre incorrectly handled certain djvu files.
+An attacker could possibly use this issue to execute arbitrary code or
+cause a crash.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3630
+
 #### <a id="621-131"></a> 621.131
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -5176,6 +5261,91 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-167"></a> 456.167
+
+**Release Date**: July 15, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.11
+
+## USNs:
+
+**Title**: USN-5006-2: PHP vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5006-2
+**Priorities**: low,medium
+**Description**:
+  USN-5006-1 fixed several vulnerabilities in PHP. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that PHP incorrectly handled certain PHAR files. A remote
+ attacker could possibly use this issue to cause PHP to crash, resulting in
+ a denial of service, or possibly obtain sensitive information. (CVE-2020-7068)
+
+ It was discovered that PHP incorrectly handled parsing URLs with passwords.
+ A remote attacker could possibly use this issue to cause PHP to mis-parse
+ the URL and produce wrong data. (CVE-2020-7071)
+
+ It was discovered that PHP incorrectly handled certain malformed XML data
+ when being parsed by the SOAP extension. A remote attacker could possibly
+ use this issue to cause PHP to crash, resulting in a denial of service.
+ (CVE-2021-21702)
+
+ It was discovered that PHP incorrectly handled the pdo_firebase module. A
+ remote attacker could possibly use this issue to cause PHP to crash,
+ resulting in a denial of service. (CVE-2021-21704)
+
+ It was discovered that PHP incorrectly handled the FILTER_VALIDATE_URL
+ check. A remote attacker could possibly use this issue to perform a server-
+ side request forgery attack. (CVE-2021-21705)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21702
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7071
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21705
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7068
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21704
+
+**Title**: USN-5004-1: RabbitMQ vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5004-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that RabbitMQ incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service. This
+issue only affected Ubuntu 16.04 ESM and Ubuntu 18.04 LTS. (CVE-2019-11287)
+
+Jonathan Knudsen discovered RabbitMQ incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2021-22116)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22116
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11287
+
+**Title**: USN-5008-2: Avahi vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5008-2
+**Priorities**: medium
+**Description**:
+  USN-5008-1 fixed a vulnerability in avahi. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Thomas Kremer discovered that Avahi incorrectly handled termination signals
+ on the Unix socket. A local attacker could possibly use this issue to cause
+ Avahi to hang, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3468
+
+**Title**: USN-5005-1: DjVuLibre vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5005-1
+**Priorities**: medium
+**Description**:
+  It was discovered that DjVuLibre incorrectly handled certain djvu files.
+An attacker could possibly use this issue to execute arbitrary code or
+cause a crash.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3630
 
 #### <a id="456-166"></a> 456.166
 
