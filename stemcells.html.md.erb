@@ -15,6 +15,304 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-151"></a> 621.151
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 14, 2021
+
+## Known issues
+* We've seen failures with this version of the stemcell in vSphere when attempting to attach a persistent disk to a running VM. We are currently planning to address this issue with an update to the vSphere CPI. It should be fixed in vSphere CPI release >= v69
+
+## Metadata:
+**BOSH Agent Version**: 2.268.27
+
+## USNs:
+
+**Title**: USN-5066-2: PySAML2 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5066-2
+**Priorities**: medium
+**Description**:
+  USN-5066-1 fixed a vulnerability in PySAML2. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Brian Wolff discovered that PySAML2 incorrectly validated cryptographic
+ signatures. A remote attacker could possibly use this issue to alter SAML
+ documents.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21239
+
+**Title**: USN-5039-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5039-1
+**Priorities**: high
+**Description**:
+  Andy Nguyen discovered that the netfilter subsystem in the Linux kernel
+contained an out-of-bounds write in its setsockopt() implementation. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22555
+
+**Title**: LSN-0080-1: Kernel Live Patch Security Notice
+**URL**: https://ubuntu.com/security/notices/LSN-0080-1
+**Priorities**: high
+**Description**:
+  Andy Nguyen discovered that the netfilter subsystem in the Linux kernel
+contained an out-of-bounds write in its setsockopt() implementation. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code.(CVE-2021-22555)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22555
+
+**Title**: USN-5028-1: Exiv2 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5028-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exiv2 incorrectly handled certain images.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-31291
+
+**Title**: USN-5025-2: libsndfile vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5025-2
+**Priorities**: medium
+**Description**:
+  USN-5025-1 fixed a vulnerability in libsndfile. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that libsndfile incorrectly handled certain malformed
+ files. A remote attacker could use this issue to cause libsndfile to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3246
+
+**Title**: USN-5027-2: PEAR vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5027-2
+**Priorities**: medium
+**Description**:
+  USN-5027-1 fixed a vulnerability in PEAR. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that PEAR incorrectly handled symbolic links in archives.
+ A remote attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32610
+
+**Title**: USN-5044-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5044-1
+**Priorities**: medium
+**Description**:
+  It was discovered that the bluetooth subsystem in the Linux kernel did not
+properly handle HCI device initialization failure, leading to a double-free
+vulnerability. An attacker could use this to cause a denial of service or
+possibly execute arbitrary code. (CVE-2021-3564)
+
+It was discovered that the bluetooth subsystem in the Linux kernel did not
+properly handle HCI device detach events, leading to a use-after-free
+vulnerability. An attacker could use this to cause a denial of service or
+possibly execute arbitrary code. (CVE-2021-3573)
+
+It was discovered that the NFC implementation in the Linux kernel did not
+properly handle failed connect events leading to a NULL pointer
+dereference. A local attacker could use this to cause a denial of service.
+(CVE-2021-3587)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3573
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3587
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3564
+
+**Title**: USN-5073-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5073-1
+**Priorities**: medium,low,high
+**Description**:
+  Maxim Levitsky and Paolo Bonzini discovered that the KVM hypervisor
+implementation for AMD processors in the Linux kernel allowed a guest VM to
+disable restrictions on VMLOAD/VMSAVE in a nested guest. An attacker in a
+guest VM could use this to read or write portions of the host's physical
+memory. (CVE-2021-3656)
+
+Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory. (CVE-2021-3653)
+
+Norbert Slusarek discovered that the CAN broadcast manger (bcm) protocol
+implementation in the Linux kernel did not properly initialize memory in
+some situations. A local attacker could use this to expose sensitive
+information (kernel memory). (CVE-2021-34693)
+
+Murray McAllister discovered that the joystick device interface in the
+Linux kernel did not properly validate data passed via an ioctl(). A local
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code on systems with a joystick device
+registered. (CVE-2021-3612)
+
+It was discovered that the Virtio console implementation in the Linux
+kernel did not properly validate input lengths in some situations. A local
+attacker could possibly use this to cause a denial of service (system
+crash). (CVE-2021-38160)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34693
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38160
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+
+**Title**: USN-5062-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5062-1
+**Priorities**: high
+**Description**:
+  Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+
+**Title**: LSN-0081-1: Kernel Live Patch Security Notice
+**URL**: https://ubuntu.com/security/notices/LSN-0081-1
+**Priorities**: high
+**Description**:
+  Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory.(CVE-2021-3653)
+
+Maxim Levitsky and Paolo Bonzini discovered that the KVM hypervisor
+implementation for AMD processors in the Linux kernel allowed a guest VM to
+disable restrictions on VMLOAD/VMSAVE in a nested guest. An attacker in a
+guest VM could use this to read or write portions of the host's physical
+memory.(CVE-2021-3656)
+
+Andy Nguyen discovered that the netfilter subsystem in the Linux kernel
+contained an out-of-bounds write in its setsockopt() implementation. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code.(CVE-2021-22555)
+
+It was discovered that the virtual file system implementation in the Linux
+kernel contained an unsigned to signed integer conversion error. A local
+attacker could use this to cause a denial of service (system crash) or
+execute arbitrary code.(CVE-2021-33909)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22555
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909
+
+**Title**: USN-5034-2: c-ares vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5034-2
+**Priorities**: medium
+**Description**:
+  USN-5034-1 fixed a vulnerability in c-ares. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Philipp Jeitner and Haya Shulman discovered that c-ares incorrectly
+ validated certain hostnames returned by DNS servers. A remote attacker
+ could possibly use this issue to perform Domain Hijacking attacks.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3672
+
+**Title**: USN-5026-2: QPDF vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5026-2
+**Priorities**: medium,low
+**Description**:
+  USN-5026-1 fixed several vulnerabilities in QPDF. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+Original advisory details:
+
+ It was discovered that QPDF incorrectly handled certain malformed PDF
+ files. A remote attacker could use this issue to cause QPDF to consume
+ resources, resulting in a denial of service. (CVE-2018-18020)
+
+ It was discovered that QPDF incorrectly handled certain malformed PDF
+ files. A remote attacker could use this issue to cause QPDF to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+ (CVE-2021-36978)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-36978
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18020
+
+**Title**: USN-5051-2: OpenSSL vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5051-2
+**Priorities**: medium
+**Description**:
+  USN-5051-1 fixed a vulnerability in OpenSSL. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Ingo Schwarze discovered that OpenSSL incorrectly handled certain ASN.1
+ strings. A remote attacker could use this issue to cause OpenSSL to crash,
+ resulting in a denial of service, or possibly obtain sensitive information.
+ (CVE-2021-3712)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3712
+
+**Title**: USN-5043-1: Exiv2 vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5043-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Exiv2 incorrectly handled certain image files.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2021-32815, CVE-2021-34334, CVE-2021-37620, CVE-2021-37622)
+
+It was discovered that Exiv2 incorrectly handled certain image files.
+An attacker could possibly use this issue to cause a denial of service.
+These issues only affected Ubuntu 20.04 LTS and Ubuntu 21.04.
+(CVE-2021-34335, CVE-2021-37615, CVE-2021-37616, CVE-2021-37618,
+CVE-2021-37619, CVE-2021-37621, CVE-2021-37623)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37622
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-32815
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37623
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37621
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37620
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37618
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34335
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37615
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37619
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-37616
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34334
+
+**Title**: USN-5055-1: GNOME grilo vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5055-1
+**Priorities**: medium
+**Description**:
+  Michael Catanzaro discovered that grilo incorrectly handled certain TLS
+certificate verification. An attacker could possibly use this issue to
+MITM attacks.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-39365
+
+**Title**: USN-5068-1: GD library vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5068-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled certain GD  and GD2 files.
+An attacker could possibly use this issue to cause a crash or expose sensitive information.
+This issue only affected Ubuntu 20.04 LTS, Ubuntu 18.04 LTS, Ubuntu 16.04 ESM, and Ubuntu 14.04 ESM.
+(CVE-2017-6363)
+
+It was discovered that GD Graphics Library incorrectly handled certain TGA files.
+An attacker could possibly use this issue to cause a denial of service or
+expose sensitive information. (CVE-2021-381)
+
+It was discovered that GD Graphics Library incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash.
+(CVE-2021-40145)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40145
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6363
+
 #### <a id="621-141"></a> 621.141
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -5770,6 +6068,160 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-186"></a> 456.186
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 14, 2021
+
+## Known issues
+* We've seen failures with this version of the stemcell in vSphere when attempting to attach a persistent disk to a running VM. We are currently planning to address this issue with an update to the vSphere CPI. It should be fixed in vSphere CPI release >= v69
+
+## Metadata:
+**BOSH Agent Version**: 2.234.18
+
+## USNs:
+
+**Title**: USN-5066-2: PySAML2 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5066-2
+**Priorities**: medium
+**Description**:
+  USN-5066-1 fixed a vulnerability in PySAML2. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Brian Wolff discovered that PySAML2 incorrectly validated cryptographic
+ signatures. A remote attacker could possibly use this issue to alter SAML
+ documents.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21239
+
+**Title**: USN-5073-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5073-1
+**Priorities**: medium,low,high
+**Description**:
+  Maxim Levitsky and Paolo Bonzini discovered that the KVM hypervisor
+implementation for AMD processors in the Linux kernel allowed a guest VM to
+disable restrictions on VMLOAD/VMSAVE in a nested guest. An attacker in a
+guest VM could use this to read or write portions of the host's physical
+memory. (CVE-2021-3656)
+
+Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory. (CVE-2021-3653)
+
+Norbert Slusarek discovered that the CAN broadcast manger (bcm) protocol
+implementation in the Linux kernel did not properly initialize memory in
+some situations. A local attacker could use this to expose sensitive
+information (kernel memory). (CVE-2021-34693)
+
+Murray McAllister discovered that the joystick device interface in the
+Linux kernel did not properly validate data passed via an ioctl(). A local
+attacker could use this to cause a denial of service (system crash) or
+possibly execute arbitrary code on systems with a joystick device
+registered. (CVE-2021-3612)
+
+It was discovered that the Virtio console implementation in the Linux
+kernel did not properly validate input lengths in some situations. A local
+attacker could possibly use this to cause a denial of service (system
+crash). (CVE-2021-38160)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3612
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-34693
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38160
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+
+**Title**: USN-5062-1: Linux kernel vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5062-1
+**Priorities**: high
+**Description**:
+  Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+
+**Title**: LSN-0081-1: Kernel Live Patch Security Notice
+**URL**: https://ubuntu.com/security/notices/LSN-0081-1
+**Priorities**: high
+**Description**:
+  Maxim Levitsky discovered that the KVM hypervisor implementation for AMD
+processors in the Linux kernel did not properly prevent a guest VM from
+enabling AVIC in nested guest VMs. An attacker in a guest VM could use this
+to write to portions of the host's physical memory.(CVE-2021-3653)
+
+Maxim Levitsky and Paolo Bonzini discovered that the KVM hypervisor
+implementation for AMD processors in the Linux kernel allowed a guest VM to
+disable restrictions on VMLOAD/VMSAVE in a nested guest. An attacker in a
+guest VM could use this to read or write portions of the host's physical
+memory.(CVE-2021-3656)
+
+Andy Nguyen discovered that the netfilter subsystem in the Linux kernel
+contained an out-of-bounds write in its setsockopt() implementation. A
+local attacker could use this to cause a denial of service (system crash)
+or possibly execute arbitrary code.(CVE-2021-22555)
+
+It was discovered that the virtual file system implementation in the Linux
+kernel contained an unsigned to signed integer conversion error. A local
+attacker could use this to cause a denial of service (system crash) or
+execute arbitrary code.(CVE-2021-33909)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3653
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-22555
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3656
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-33909
+
+**Title**: USN-5051-2: OpenSSL vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5051-2
+**Priorities**: medium
+**Description**:
+  USN-5051-1 fixed a vulnerability in OpenSSL. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Ingo Schwarze discovered that OpenSSL incorrectly handled certain ASN.1
+ strings. A remote attacker could use this issue to cause OpenSSL to crash,
+ resulting in a denial of service, or possibly obtain sensitive information.
+ (CVE-2021-3712)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3712
+
+**Title**: USN-5055-1: GNOME grilo vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5055-1
+**Priorities**: medium
+**Description**:
+  Michael Catanzaro discovered that grilo incorrectly handled certain TLS
+certificate verification. An attacker could possibly use this issue to
+MITM attacks.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-39365
+
+**Title**: USN-5068-1: GD library vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5068-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that GD Graphics Library incorrectly handled certain GD  and GD2 files.
+An attacker could possibly use this issue to cause a crash or expose sensitive information.
+This issue only affected Ubuntu 20.04 LTS, Ubuntu 18.04 LTS, Ubuntu 16.04 ESM, and Ubuntu 14.04 ESM.
+(CVE-2017-6363)
+
+It was discovered that GD Graphics Library incorrectly handled certain TGA files.
+An attacker could possibly use this issue to cause a denial of service or
+expose sensitive information. (CVE-2021-381)
+
+It was discovered that GD Graphics Library incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash.
+(CVE-2021-40145)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40145
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38115
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6363
 
 #### <a id="456-176"></a> 456.176
 
