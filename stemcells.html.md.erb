@@ -328,6 +328,8 @@ An attacker could possibly use this issue to cause a crash.
 
 ## Known issues
 * The memory used by the VM that a Bosh Agent manages is incorrectly reported. The Agent will report very significantly smaller amounts of memory used by the VM than are actually used. This means that the "memory used" information in the output of `bosh vms --vitals` and related commands is incorrect. For now, avoid using this stemcell version, if you rely on the VM memory usage information reported by the Bosh Agent, Director, or the `bosh` CLI.
+**NOTE**: This issue has been resolved in Stemcell version 621.151.
+
 
 ## Metadata:
 **BOSH Agent Version**: 2.268.23
@@ -6241,7 +6243,8 @@ An attacker could possibly use this issue to cause a crash.
 * Added firewall rules to restrict Monit API access to the Monit CLI and BOSH Agent. To see how to grant your program access to the Monit API, examine the new `monit` wrapper script, found at `/var/vcap/bosh/bin/monit`.
 
 ## Known issues
-* The memory used by the VM that a Bosh Agent manages is incorrectly reported. The Agent will report very significantly smaller amounts of memory used by the VM than are actually used. This means that the "memory used" information in the output of `bosh vms --vitals` and related commands is incorrect. For now, avoid using this stemcell version, if you rely on the VM memory usage information reported by the Bosh Agent, Director, or the `bosh` CLI.
+* The memory used by the VM that a Bosh Agent manages is incorrectly reported. The Agent will report very significantly smaller amounts of memory used by the VM than are actually used. This means that the "memory used" information in the output of `bosh vms --vitals` and related commands is incorrect. For now, avoid using this stemcell version, if you rely on the VM memory usage information reported by the Bosh Agent, Director, or the `bosh` CLI. 
+**NOTE**: This issue has been resolved in Stemcell version 456.186.
 
 ## Metadata:
 **BOSH Agent Version**: 2.234.14
