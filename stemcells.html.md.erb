@@ -21,6 +21,9 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 **Release Date**: September 14, 2021
 
+## Fixes
+* Updates the `/var/vcap/bosh/bin/monit` wrapper script to refer to `monit-actual` by absolute path, rather than relative path. This allows folks who reset or clear the `PATH` environment variable to actually be able to use the `monit` CLI. Prior to this fix, folks who cleared their `PATH` environment variable would see an error like: `/var/vcap/bosh/bin/monit: line 9: exec: monit-actual: not found`.
+
 ## Known issues
 * We've seen failures with this version of the stemcell in vSphere when attempting to attach a persistent disk to a running VM. We are currently planning to address this issue with an update to the vSphere CPI. It should be fixed in vSphere CPI release >= v69. We have pulled the vSphere version of this stemcell for now.
 
@@ -6074,6 +6077,9 @@ This section includes release notes for the 456 line of Linux stemcells used wit
 <span class='pivnet'>Available in VMware Tanzu Network</span>
 
 **Release Date**: September 14, 2021
+
+## Fixes
+* Updates the `/var/vcap/bosh/bin/monit` wrapper script to refer to `monit-actual` by absolute path, rather than relative path. This allows folks who reset or clear the `PATH` environment variable to actually be able to use the `monit` CLI. Prior to this fix, folks who cleared their `PATH` environment variable would see an error like: `/var/vcap/bosh/bin/monit: line 9: exec: monit-actual: not found`.
 
 ## Known issues
 * We've seen failures with this version of the stemcell in vSphere when attempting to attach a persistent disk to a running VM. We are currently planning to address this issue with an update to the vSphere CPI. It should be fixed in vSphere CPI release >= v69. We have pulled the vSphere version of this stemcell.
