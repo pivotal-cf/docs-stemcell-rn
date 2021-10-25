@@ -15,6 +15,116 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-171"></a> 621.171
+
+**Release Date**: October 25, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.36
+Bosh-agent is now build with Go 1.17
+
+## Features:
+Allow to receive nats and blobstore updates via update settings action 
+
+## USNs:
+
+**Title**: USN-5109-1: nginx vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5109-1
+**Priorities**: medium
+**Description**:
+  It was discovered that nginx incorrectly handled files with
+certain modification dates. A remote attacker could possibly
+use this issue to cause a denial of service or other unspecified
+impact.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2017-20005
+
+**Title**: USN-5022-3: MySQL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5022-3
+**Priorities**: medium
+**Description**:
+  USN-5022-1 fixed several vulnerabilities in MySQL. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Multiple security issues were discovered in MySQL and this update includes
+ new upstream MySQL versions to fix these issues.
+
+ MySQL has been updated to MySQL 5.7.35 on Ubuntu 16.04 ESM.
+
+ In addition to security fixes, the updated packages contain bug fixes, new
+ features, and possibly incompatible changes.
+
+ Please see the following for more information:
+
+ https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-35.html
+ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-26.html
+ https://www.oracle.com/security-alerts/cpujul2021.html
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2179
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2162
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2389
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2390
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2194
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2146
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2372
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2342
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2169
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2171
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2180
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2154
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2166
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2226
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2307
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-2385
+
+**Title**: USN-5103-1: docker.io vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5103-1
+**Priorities**: medium
+**Description**:
+  Lei Wang and Ruizhi Xiao discovered that the Moby Docker engine in
+Docker incorrectly allowed the docker cp command to make permissions
+changes in the host filesystem in some situations. A local attacker
+could possibly use to this to expose sensitive information or gain
+administrative privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41089
+
+**Title**: USN-5111-2: strongSwan vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5111-2
+**Priorities**: medium
+**Description**:
+  USN-5111-1 fixed a vulnerability in strongSwan. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that strongSwan incorrectly handled replacing
+ certificates in the cache. A remote attacker could use this issue to cause
+ strongSwan to crash, resulting in a denial of service, or possibly execute
+ arbitrary code. (CVE-2021-41991)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-41991
+
+**Title**: USN-5121-1: Mailman vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5121-1
+**Priorities**: high
+**Description**:
+  Andre Protas, Richard Cloke, and Andy Nuttall discovered that Mailman
+did not properly associate cross-site request forgery (CSRF) tokens
+to specific accounts. A remote attacker could use this to perform a
+CSRF attack to gain access to another account. (CVE-2021-42097)
+
+Andre Protas, Richard Cloke, and Andy Nuttall discovered that Mailman's
+cross-site request forgery (CSRF) tokens for the options page are
+derived from the admin password. A remote attacker could possibly use
+this to assist in performing a brute force attack against the admin
+password. (CVE-2021-42096)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42096
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42097
+
 #### <a id="621-160"></a> 621.160
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
