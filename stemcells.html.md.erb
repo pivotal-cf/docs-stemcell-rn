@@ -15,6 +15,219 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-176"></a> 621.176
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 11, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.41
+
+## USNs:
+
+**Title**: USN-5114-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5114-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that a race condition existed in the Atheros Ath9k WiFi
+driver in the Linux kernel. An attacker could possibly use this to expose
+sensitive information (WiFi network traffic). (CVE-2020-3702)
+
+It was discovered that the KVM hypervisor implementation in the Linux
+kernel did not properly compute the access permissions for shadow pages in
+some situations. A local attacker could use this to cause a denial of
+service. (CVE-2021-38198)
+
+It was discovered that the ext4 file system in the Linux kernel contained a
+race condition when writing xattrs to an inode. A local attacker could use
+this to cause a denial of service or possibly gain administrative
+privileges. (CVE-2021-40490)
+
+It was discovered that the 6pack network protocol driver in the Linux
+kernel did not properly perform validation checks. A privileged attacker
+could use this to cause a denial of service (system crash) or execute
+arbitrary code. (CVE-2021-42008)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3702
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40490
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42008
+
+**Title**: USN-5119-1: libcaca vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5119-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libcaca incorrectly handled certain images. An attacker
+could possibly use this issue to cause a crash. (CVE-2021-30498, CVE-2021-30499)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30499
+
+**Title**: USN-5136-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5136-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the f2fs file system in the Linux kernel did not
+properly validate metadata in some situations. An attacker could use this
+to construct a malicious f2fs image that, when mounted and operated on,
+could cause a denial of service (system crash) or possibly execute
+arbitrary code. (CVE-2019-19449)
+
+It was discovered that the FUSE user space file system implementation in
+the Linux kernel did not properly handle bad inodes in some situations. A
+local attacker could possibly use this to cause a denial of service.
+(CVE-2020-36322)
+
+It was discovered that the Infiniband RDMA userspace connection manager
+implementation in the Linux kernel contained a race condition leading to a
+use-after-free vulnerability. A local attacker could use this to cause a
+denial of service (system crash) or possible execute arbitrary code.
+(CVE-2020-36385)
+
+Ilja Van Sprundel discovered that the SCTP implementation in the Linux
+kernel did not properly perform size validations on incoming packets in
+some situations. An attacker could possibly use this to expose sensitive
+information (kernel memory). (CVE-2021-3655)
+
+It was discovered that the Qualcomm IPC Router protocol implementation in
+the Linux kernel did not properly validate metadata in some situations. A
+local attacker could use this to cause a denial of service (system crash)
+or expose sensitive information. (CVE-2021-3743)
+
+It was discovered that the virtual terminal (vt) device implementation in
+the Linux kernel contained a race condition in its ioctl handling that led
+to an out-of-bounds read vulnerability. A local attacker could possibly use
+this to expose sensitive information. (CVE-2021-3753)
+
+It was discovered that the Linux kernel did not properly account for the
+memory usage of certain IPC objects. A local attacker could use this to
+cause a denial of service (memory exhaustion). (CVE-2021-3759)
+
+Michael Wakabayashi discovered that the NFSv4 client implementation in the
+Linux kernel did not properly order connection setup operations. An
+attacker controlling a remote NFS server could use this to cause a denial
+of service on the client. (CVE-2021-38199)
+
+It was discovered that the Aspeed Low Pin Count (LPC) Bus Controller
+implementation in the Linux kernel did not properly perform boundary checks
+in some situations, allowing out-of-bounds write access. A local attacker
+could use this to cause a denial of service (system crash) or possibly
+execute arbitrary code. In Ubuntu, this issue only affected systems running
+armhf kernels. (CVE-2021-42252)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2019-19449
+ <br>- https://ubuntu.com/security/CVE-2020-36322
+ <br>- https://ubuntu.com/security/CVE-2020-36385
+ <br>- https://ubuntu.com/security/CVE-2021-3655
+ <br>- https://ubuntu.com/security/CVE-2021-3743
+ <br>- https://ubuntu.com/security/CVE-2021-3753
+ <br>- https://ubuntu.com/security/CVE-2021-3759
+ <br>- https://ubuntu.com/security/CVE-2021-38199
+ <br>- https://ubuntu.com/security/CVE-2021-42252
+ <br>- https://ubuntu.com/security/CVE-2021-38199
+ <br>- https://ubuntu.com/security/CVE-2020-36322
+ <br>- https://ubuntu.com/security/CVE-2021-3759
+ <br>- https://ubuntu.com/security/CVE-2021-3753
+ <br>- https://ubuntu.com/security/CVE-2020-36385
+ <br>- https://ubuntu.com/security/CVE-2019-19449
+ <br>- https://ubuntu.com/security/CVE-2021-3743
+ <br>- https://ubuntu.com/security/CVE-2021-42252
+ <br>- https://ubuntu.com/security/CVE-2021-3655
+
+**Title**: USN-5133-1: ICU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5133-1
+**Priorities**: low
+**Description**:
+  It was discovered that ICU contains a use after free issue.
+An attacker could use this issue to cause a denial of service with crafted input.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-21913
+
+**Title**: LSN-0082-1: Kernel Live Patch Security Notice
+**URL**: https://ubuntu.com/security/notices/LSN-0082-1
+**Priorities**: medium,high
+**Description**:
+  Jann Horn discovered that the tty subsystem of the Linux kernel did not use
+consistent locking in some situations, leading to a read-after-free
+vulnerability. A local attacker could use this to cause a denial of service
+(system crash) or possibly expose sensitive information (kernel memory).(CVE-2020-29660)
+
+Jann Horn discovered a race condition in the tty subsystem of the Linux
+kernel in the locking for the TIOCSPGRP ioctl(), leading to a use-after-
+free vulnerability. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code.(CVE-2020-29661)
+
+De4dCr0w of 360 Alpha Lab discovered that the BPF verifier in the Linux
+kernel did not properly handle mod32 destination register truncation when
+the source register was known to be 0. A local attacker could use this to
+expose sensitive information (kernel memory) or possibly execute arbitrary
+code.(CVE-2021-3444)
+
+kernel: use-after-free in route4_change() in
+net/sched/cls_route.c(CVE-2021-3715)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-29660
+ <br>- https://ubuntu.com/security/CVE-2020-29661
+ <br>- https://ubuntu.com/security/CVE-2021-3444
+ <br>- https://ubuntu.com/security/CVE-2021-3715
+ <br>- https://ubuntu.com/security/CVE-2020-29660
+ <br>- https://ubuntu.com/security/CVE-2020-29661
+ <br>- https://ubuntu.com/security/CVE-2021-3715
+ <br>- https://ubuntu.com/security/CVE-2021-3444
+
+**Title**: USN-5125-1: PHP vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5125-1
+**Priorities**: high
+**Description**:
+  It was discovered that PHP-FPM in PHP incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a crash or execute
+arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-21703
+
+**Title**: USN-5126-2: Bind vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5126-2
+**Priorities**: medium
+**Description**:
+  USN-5126-1 fixed a vulnerability in Bind. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Kishore Kumar Kothapalli discovered that Bind incorrectly handled the lame
+ cache when processing responses. A remote attacker could possibly use this
+ issue to cause Bind to consume resources, resulting in a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-25219
+
+**Title**: USN-5123-2: MySQL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5123-2
+**Priorities**: medium
+**Description**:
+  USN-5123-1 fixed several vulnerabilities in MySQL. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Multiple security issues were discovered in MySQL and this update includes
+ new upstream MySQL versions to fix these issues.
+
+ MySQL has been updated to 8.0.27 in Ubuntu 20.04 LTS, Ubuntu 21.04, and
+ Ubuntu 21.10. Ubuntu 18.04 LTS has been updated to MySQL 5.7.36.
+
+ In addition to security fixes, the updated packages contain bug fixes, new
+ features, and possibly incompatible changes.
+
+ Please see the following for more information:
+
+ https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-36.html
+ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-27.html
+ https://www.oracle.com/security-alerts/cpuoct2021.html
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-35624
+ <br>- https://ubuntu.com/security/CVE-2021-35604
+
 #### <a id="621-171"></a> 621.171
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6241,6 +6454,219 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-207"></a> 456.207
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 11, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.31
+
+## USNs:
+
+**Title**: USN-5114-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5114-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that a race condition existed in the Atheros Ath9k WiFi
+driver in the Linux kernel. An attacker could possibly use this to expose
+sensitive information (WiFi network traffic). (CVE-2020-3702)
+
+It was discovered that the KVM hypervisor implementation in the Linux
+kernel did not properly compute the access permissions for shadow pages in
+some situations. A local attacker could use this to cause a denial of
+service. (CVE-2021-38198)
+
+It was discovered that the ext4 file system in the Linux kernel contained a
+race condition when writing xattrs to an inode. A local attacker could use
+this to cause a denial of service or possibly gain administrative
+privileges. (CVE-2021-40490)
+
+It was discovered that the 6pack network protocol driver in the Linux
+kernel did not properly perform validation checks. A privileged attacker
+could use this to cause a denial of service (system crash) or execute
+arbitrary code. (CVE-2021-42008)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3702
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-40490
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-38198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-42008
+
+**Title**: USN-5119-1: libcaca vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5119-1
+**Priorities**: medium
+**Description**:
+  It was discovered that libcaca incorrectly handled certain images. An attacker
+could possibly use this issue to cause a crash. (CVE-2021-30498, CVE-2021-30499)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30498
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-30499
+
+**Title**: USN-5136-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5136-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that the f2fs file system in the Linux kernel did not
+properly validate metadata in some situations. An attacker could use this
+to construct a malicious f2fs image that, when mounted and operated on,
+could cause a denial of service (system crash) or possibly execute
+arbitrary code. (CVE-2019-19449)
+
+It was discovered that the FUSE user space file system implementation in
+the Linux kernel did not properly handle bad inodes in some situations. A
+local attacker could possibly use this to cause a denial of service.
+(CVE-2020-36322)
+
+It was discovered that the Infiniband RDMA userspace connection manager
+implementation in the Linux kernel contained a race condition leading to a
+use-after-free vulnerability. A local attacker could use this to cause a
+denial of service (system crash) or possible execute arbitrary code.
+(CVE-2020-36385)
+
+Ilja Van Sprundel discovered that the SCTP implementation in the Linux
+kernel did not properly perform size validations on incoming packets in
+some situations. An attacker could possibly use this to expose sensitive
+information (kernel memory). (CVE-2021-3655)
+
+It was discovered that the Qualcomm IPC Router protocol implementation in
+the Linux kernel did not properly validate metadata in some situations. A
+local attacker could use this to cause a denial of service (system crash)
+or expose sensitive information. (CVE-2021-3743)
+
+It was discovered that the virtual terminal (vt) device implementation in
+the Linux kernel contained a race condition in its ioctl handling that led
+to an out-of-bounds read vulnerability. A local attacker could possibly use
+this to expose sensitive information. (CVE-2021-3753)
+
+It was discovered that the Linux kernel did not properly account for the
+memory usage of certain IPC objects. A local attacker could use this to
+cause a denial of service (memory exhaustion). (CVE-2021-3759)
+
+Michael Wakabayashi discovered that the NFSv4 client implementation in the
+Linux kernel did not properly order connection setup operations. An
+attacker controlling a remote NFS server could use this to cause a denial
+of service on the client. (CVE-2021-38199)
+
+It was discovered that the Aspeed Low Pin Count (LPC) Bus Controller
+implementation in the Linux kernel did not properly perform boundary checks
+in some situations, allowing out-of-bounds write access. A local attacker
+could use this to cause a denial of service (system crash) or possibly
+execute arbitrary code. In Ubuntu, this issue only affected systems running
+armhf kernels. (CVE-2021-42252)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2019-19449
+ <br>- https://ubuntu.com/security/CVE-2020-36322
+ <br>- https://ubuntu.com/security/CVE-2020-36385
+ <br>- https://ubuntu.com/security/CVE-2021-3655
+ <br>- https://ubuntu.com/security/CVE-2021-3743
+ <br>- https://ubuntu.com/security/CVE-2021-3753
+ <br>- https://ubuntu.com/security/CVE-2021-3759
+ <br>- https://ubuntu.com/security/CVE-2021-38199
+ <br>- https://ubuntu.com/security/CVE-2021-42252
+ <br>- https://ubuntu.com/security/CVE-2021-38199
+ <br>- https://ubuntu.com/security/CVE-2020-36322
+ <br>- https://ubuntu.com/security/CVE-2021-3759
+ <br>- https://ubuntu.com/security/CVE-2021-3753
+ <br>- https://ubuntu.com/security/CVE-2020-36385
+ <br>- https://ubuntu.com/security/CVE-2019-19449
+ <br>- https://ubuntu.com/security/CVE-2021-3743
+ <br>- https://ubuntu.com/security/CVE-2021-42252
+ <br>- https://ubuntu.com/security/CVE-2021-3655
+
+**Title**: USN-5133-1: ICU vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5133-1
+**Priorities**: low
+**Description**:
+  It was discovered that ICU contains a use after free issue.
+An attacker could use this issue to cause a denial of service with crafted input.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-21913
+
+**Title**: LSN-0082-1: Kernel Live Patch Security Notice
+**URL**: https://ubuntu.com/security/notices/LSN-0082-1
+**Priorities**: medium,high
+**Description**:
+  Jann Horn discovered that the tty subsystem of the Linux kernel did not use
+consistent locking in some situations, leading to a read-after-free
+vulnerability. A local attacker could use this to cause a denial of service
+(system crash) or possibly expose sensitive information (kernel memory).(CVE-2020-29660)
+
+Jann Horn discovered a race condition in the tty subsystem of the Linux
+kernel in the locking for the TIOCSPGRP ioctl(), leading to a use-after-
+free vulnerability. A local attacker could use this to cause a denial of
+service (system crash) or possibly execute arbitrary code.(CVE-2020-29661)
+
+De4dCr0w of 360 Alpha Lab discovered that the BPF verifier in the Linux
+kernel did not properly handle mod32 destination register truncation when
+the source register was known to be 0. A local attacker could use this to
+expose sensitive information (kernel memory) or possibly execute arbitrary
+code.(CVE-2021-3444)
+
+kernel: use-after-free in route4_change() in
+net/sched/cls_route.c(CVE-2021-3715)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-29660
+ <br>- https://ubuntu.com/security/CVE-2020-29661
+ <br>- https://ubuntu.com/security/CVE-2021-3444
+ <br>- https://ubuntu.com/security/CVE-2021-3715
+ <br>- https://ubuntu.com/security/CVE-2020-29660
+ <br>- https://ubuntu.com/security/CVE-2020-29661
+ <br>- https://ubuntu.com/security/CVE-2021-3715
+ <br>- https://ubuntu.com/security/CVE-2021-3444
+
+**Title**: USN-5125-1: PHP vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5125-1
+**Priorities**: high
+**Description**:
+  It was discovered that PHP-FPM in PHP incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a crash or execute
+arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-21703
+
+**Title**: USN-5126-2: Bind vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5126-2
+**Priorities**: medium
+**Description**:
+  USN-5126-1 fixed a vulnerability in Bind. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Kishore Kumar Kothapalli discovered that Bind incorrectly handled the lame
+ cache when processing responses. A remote attacker could possibly use this
+ issue to cause Bind to consume resources, resulting in a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-25219
+
+**Title**: USN-5123-2: MySQL vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5123-2
+**Priorities**: medium
+**Description**:
+  USN-5123-1 fixed several vulnerabilities in MySQL. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Multiple security issues were discovered in MySQL and this update includes
+ new upstream MySQL versions to fix these issues.
+
+ MySQL has been updated to 8.0.27 in Ubuntu 20.04 LTS, Ubuntu 21.04, and
+ Ubuntu 21.10. Ubuntu 18.04 LTS has been updated to MySQL 5.7.36.
+
+ In addition to security fixes, the updated packages contain bug fixes, new
+ features, and possibly incompatible changes.
+
+ Please see the following for more information:
+
+ https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-36.html
+ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-27.html
+ https://www.oracle.com/security-alerts/cpuoct2021.html
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-35624
+ <br>- https://ubuntu.com/security/CVE-2021-35604
 
 #### <a id="456-202"></a> 456.202
 
