@@ -15,6 +15,141 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-183"></a> 621.183
+
+**Release Date**: December 06, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.45
+
+## USNs:
+
+**Title**: USN-5147-1: Vim vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5147-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Vim incorrectly handled permissions on the .swp
+file. A local attacker could possibly use this issue to obtain sensitive
+information. This issue only affected Ubuntu 14.04 ESM. (CVE-2017-17087)
+
+It was discovered that Vim incorrectly handled restricted mode. A local
+attacker could possibly use this issue to bypass restricted mode and
+execute arbitrary commands. Note: This update only makes executing shell
+commands more difficult. Restricted mode should not be considered a
+complete security measure. This issue only affected Ubuntu 14.04 ESM.
+(CVE-2019-20807)
+
+Brian Carpenter discovered that vim incorrectly handled memory
+when opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. This issue only affected
+Ubuntu 20.04 LTS, Ubuntu 21.04 and Ubuntu 21.10. (CVE-2021-3872)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3903)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3927)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3928)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2017-17087
+ <br>- https://ubuntu.com/security/CVE-2019-20807
+ <br>- https://ubuntu.com/security/CVE-2021-3872
+ <br>- https://ubuntu.com/security/CVE-2021-3903
+ <br>- https://ubuntu.com/security/CVE-2021-3927
+ <br>- https://ubuntu.com/security/CVE-2021-3928
+ <br>- https://ubuntu.com/security/CVE-2021-3928
+ <br>- https://ubuntu.com/security/CVE-2021-3927
+ <br>- https://ubuntu.com/security/CVE-2017-17087
+ <br>- https://ubuntu.com/security/CVE-2019-20807
+ <br>- https://ubuntu.com/security/CVE-2021-3903
+ <br>- https://ubuntu.com/security/CVE-2021-3872
+
+**Title**: USN-5158-1: ImageMagick vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5158-1
+**Priorities**: low
+**Description**:
+  It was discovered that ImageMagick incorrectly handled certain values
+when processing visual effects based image files. By tricking a user into
+opening a specially crafted image file, an attacker could crash the
+application causing a denial of service. (CVE-2021-20244)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when performing resampling operations. By tricking a user into opening
+a specially crafted image file, an attacker could crash the application 
+causing a denial of service. (CVE-2021-20246)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when processing visual effects based image files. By tricking a user into
+opening a specially crafted image file, an attacker could crash the
+application causing a denial of service (CVE-2021-20309)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when processing thumbnail image data. By tricking a user into opening
+a specially crafted image file, an attacker could crash the application 
+causing a denial of service. (CVE-2021-20312)
+
+It was discovered that ImageMagick incorrectly handled memory cleanup
+when performing certain cryptographic operations. Under certain conditions
+sensitive cryptographic information could be disclosed. (CVE-2021-20313)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-20244
+ <br>- https://ubuntu.com/security/CVE-2021-20246
+ <br>- https://ubuntu.com/security/CVE-2021-20309
+ <br>- https://ubuntu.com/security/CVE-2021-20312
+ <br>- https://ubuntu.com/security/CVE-2021-20313
+ <br>- https://ubuntu.com/security/CVE-2021-20244
+ <br>- https://ubuntu.com/security/CVE-2021-20246
+ <br>- https://ubuntu.com/security/CVE-2021-20309
+ <br>- https://ubuntu.com/security/CVE-2021-20312
+ <br>- https://ubuntu.com/security/CVE-2021-20313
+
+**Title**: USN-5144-1: OpenEXR vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5144-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenEXR incorrectly handled certain EXR
+image files. An attacker could possibly use this issue to cause a crash
+or execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3933
+
+**Title**: USN-5150-1: OpenEXR vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5150-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenEXR incorrectly handled certain EXR image files.
+An attacker could possibly use this issue to cause a crash.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3941
+
+**Title**: USN-5168-3: NSS vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5168-3
+**Priorities**: high
+**Description**:
+  USN-5168-1 fixed a vulnerability in NSS. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that NSS incorrectly handled verifying DSA/RSA-PSS
+ signatures. A remote attacker could use this issue to cause NSS to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43527
+
 #### <a id="621-176"></a> 621.176
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6454,6 +6589,141 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-213"></a> 456.213
+
+**Release Date**: December 06, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.234.35
+
+## USNs:
+
+**Title**: USN-5147-1: Vim vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5147-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that Vim incorrectly handled permissions on the .swp
+file. A local attacker could possibly use this issue to obtain sensitive
+information. This issue only affected Ubuntu 14.04 ESM. (CVE-2017-17087)
+
+It was discovered that Vim incorrectly handled restricted mode. A local
+attacker could possibly use this issue to bypass restricted mode and
+execute arbitrary commands. Note: This update only makes executing shell
+commands more difficult. Restricted mode should not be considered a
+complete security measure. This issue only affected Ubuntu 14.04 ESM.
+(CVE-2019-20807)
+
+Brian Carpenter discovered that vim incorrectly handled memory
+when opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. This issue only affected
+Ubuntu 20.04 LTS, Ubuntu 21.04 and Ubuntu 21.10. (CVE-2021-3872)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3903)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3927)
+
+It was discovered that vim incorrectly handled memory when
+opening certain files. If a user was tricked into opening
+a specially crafted file, a remote attacker could crash the
+application, leading to a denial of service, or possible execute
+arbitrary code with user privileges. (CVE-2021-3928)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2017-17087
+ <br>- https://ubuntu.com/security/CVE-2019-20807
+ <br>- https://ubuntu.com/security/CVE-2021-3872
+ <br>- https://ubuntu.com/security/CVE-2021-3903
+ <br>- https://ubuntu.com/security/CVE-2021-3927
+ <br>- https://ubuntu.com/security/CVE-2021-3928
+ <br>- https://ubuntu.com/security/CVE-2021-3928
+ <br>- https://ubuntu.com/security/CVE-2021-3927
+ <br>- https://ubuntu.com/security/CVE-2017-17087
+ <br>- https://ubuntu.com/security/CVE-2019-20807
+ <br>- https://ubuntu.com/security/CVE-2021-3903
+ <br>- https://ubuntu.com/security/CVE-2021-3872
+
+**Title**: USN-5158-1: ImageMagick vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5158-1
+**Priorities**: low
+**Description**:
+  It was discovered that ImageMagick incorrectly handled certain values
+when processing visual effects based image files. By tricking a user into
+opening a specially crafted image file, an attacker could crash the
+application causing a denial of service. (CVE-2021-20244)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when performing resampling operations. By tricking a user into opening
+a specially crafted image file, an attacker could crash the application 
+causing a denial of service. (CVE-2021-20246)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when processing visual effects based image files. By tricking a user into
+opening a specially crafted image file, an attacker could crash the
+application causing a denial of service (CVE-2021-20309)
+
+It was discovered that ImageMagick incorrectly handled certain values
+when processing thumbnail image data. By tricking a user into opening
+a specially crafted image file, an attacker could crash the application 
+causing a denial of service. (CVE-2021-20312)
+
+It was discovered that ImageMagick incorrectly handled memory cleanup
+when performing certain cryptographic operations. Under certain conditions
+sensitive cryptographic information could be disclosed. (CVE-2021-20313)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-20244
+ <br>- https://ubuntu.com/security/CVE-2021-20246
+ <br>- https://ubuntu.com/security/CVE-2021-20309
+ <br>- https://ubuntu.com/security/CVE-2021-20312
+ <br>- https://ubuntu.com/security/CVE-2021-20313
+ <br>- https://ubuntu.com/security/CVE-2021-20244
+ <br>- https://ubuntu.com/security/CVE-2021-20246
+ <br>- https://ubuntu.com/security/CVE-2021-20309
+ <br>- https://ubuntu.com/security/CVE-2021-20312
+ <br>- https://ubuntu.com/security/CVE-2021-20313
+
+**Title**: USN-5144-1: OpenEXR vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5144-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenEXR incorrectly handled certain EXR
+image files. An attacker could possibly use this issue to cause a crash
+or execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3933
+
+**Title**: USN-5150-1: OpenEXR vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5150-1
+**Priorities**: medium
+**Description**:
+  It was discovered that OpenEXR incorrectly handled certain EXR image files.
+An attacker could possibly use this issue to cause a crash.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3941
+
+**Title**: USN-5168-3: NSS vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5168-3
+**Priorities**: high
+**Description**:
+  USN-5168-1 fixed a vulnerability in NSS. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that NSS incorrectly handled verifying DSA/RSA-PSS
+ signatures. A remote attacker could use this issue to cause NSS to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43527
 
 #### <a id="456-207"></a> 456.207
 
