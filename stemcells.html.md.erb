@@ -24,6 +24,12 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 ## Enhancements
 * Added firewall rules to restrict access to the NATS message bus except by the bosh agent. This provides an additional layer of security so even if an attacker is able to gain access to the NATS credentials, they would be unable to use those from a workload on a Bosh deployed VM. If you are attempting to debug NATS connectivity problems by directly connecting to the Bosh NATS server, you will need additional access; instructions can be [found here](https://bosh.io/docs/tips/#unreachable-agent).
 
+## Known issues
+Errors are present in the networking service post-start scripts for all BOSH-managed VMs which:
+- Causes networking service to report a failed state
+- Incorrectly allows external connections to the monit service
+- Incorrectly allows external connections to the NATS service
+
 ## Metadata:
 **BOSH Agent Version**: 2.268.45
 
