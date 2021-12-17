@@ -15,6 +15,164 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-192"></a> 621.192
+
+**Release Date**: December 17, 2021
+
+## Fixes 
+* This release reverts the NATS firewall enhancement added in 621.183. Changes associated with this feature caused VMs to report a networking failed state and prevented monit firewall rules from being applied. The NATS firewall enhancement will be reintroduced in a future release. 
+
+## Metadata:
+**BOSH Agent Version**: 2.268.49
+
+## USNs:
+
+**Title**: USN-5202-1: OpenJDK vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5202-1
+**Priorities**: medium
+**Description**:
+  Varnavas Papaioannou discovered that the FTP client implementation in
+OpenJDK accepted alternate server IP addresses when connecting with FTP
+passive mode. An attacker controlling an FTP server that an application
+connects to could possibly use this to expose sensitive information
+(rudimentary port scans). This issue only affected Ubuntu 16.04 ESM,
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 21.04. (CVE-2021-2341)
+
+Markus Loewe discovered that OpenJDK did not properly handle JAR files
+containing multiple manifest files. An attacker could possibly use
+this to bypass JAR signature verification. This issue only affected
+Ubuntu 16.04 ESM, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu
+21.04. (CVE-2021-2369)
+
+Huixin Ma discovered that the Hotspot VM in OpenJDK did not properly
+perform range check elimination in some situations. An attacker could
+possibly use this to construct a Java class that could bypass Java
+sandbox restrictions. This issue only affected Ubuntu 16.04 ESM,
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 21.04. (CVE-2021-2388)
+
+Asaf Greenholts discovered that OpenJDK preferred certain weak ciphers by
+default. An attacker could possibly use this to expose sensitive
+information. (CVE-2021-35550)
+
+It was discovered that the Rich Text Format (RTF) Parser in OpenJDK did not
+properly restrict the amount of memory allocated in some situations. An
+attacker could use this to specially craft an RTF file that caused a denial
+of service. (CVE-2021-35556)
+
+It was discovered that the Rich Text Format (RTF) Reader in OpenJDK did not
+properly restrict the amount of memory allocated in some situations. An
+attacker could use this to specially craft an RTF file that caused a denial
+of service. (CVE-2021-35559)
+
+Markus Loewe discovered that the HashMap and HashSet implementations in
+OpenJDK did not properly validate load factors during deserialization. An
+attacker could use this to cause a denial of service (excessive memory
+consumption). (CVE-2021-35561)
+
+It was discovered that the Keytool component in OpenJDK did not properly
+handle certificates with validity ending dates in the far future. An
+attacker could use this to specially craft a certificate that when imported
+could corrupt a keystore. (CVE-2021-35564)
+
+Tristen Hayfield discovered that the HTTP server implementation in OpenJDK
+did not properly handle TLS session close in some situations. A remote
+attacker could possibly use this to cause a denial of service (application
+infinite loop). (CVE-2021-35565)
+
+Chuck Hunley discovered that the Kerberos implementation in OpenJDK did not
+correctly report subject principals when using Kerberos Constrained
+Delegation. An attacker could possibly use this to cause incorrect Kerberos
+tickets to be used. (CVE-2021-35567)
+
+it was discovered that the TLS implementation in OpenJDK did not properly
+handle TLS handshakes in certain situations where a Java application is
+acting as a TLS server. A remote attacker could possibly use this to cause
+a denial of service (application crash). (CVE-2021-35578)
+
+it was discovered that OpenJDK did not properly restrict the amount of
+memory allocated when processing BMP images. An attacker could use this to
+specially craft a BMP image file that could cause a denial of service.
+(CVE-2021-35586)
+
+It was discovered that the HotSpot VM in OpenJDK 8 did not properly perform
+validation of inner class index values in some situations. An attacker
+could use this to specially craft a class file that when loaded could cause
+a denial of service (Java VM crash). (CVE-2021-35588)
+
+Artem Smotrakov discovered that the TLS implementation in OpenJDK used non-
+constant time comparisons during TLS handshakes. A remote attacker could
+use this to expose sensitive information. (CVE-2021-35603)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-2341
+ <br>- https://ubuntu.com/security/CVE-2021-2369
+ <br>- https://ubuntu.com/security/CVE-2021-2388
+ <br>- https://ubuntu.com/security/CVE-2021-35550
+ <br>- https://ubuntu.com/security/CVE-2021-35556
+ <br>- https://ubuntu.com/security/CVE-2021-35559
+ <br>- https://ubuntu.com/security/CVE-2021-35561
+ <br>- https://ubuntu.com/security/CVE-2021-35564
+ <br>- https://ubuntu.com/security/CVE-2021-35565
+ <br>- https://ubuntu.com/security/CVE-2021-35567
+ <br>- https://ubuntu.com/security/CVE-2021-35578
+ <br>- https://ubuntu.com/security/CVE-2021-35586
+ <br>- https://ubuntu.com/security/CVE-2021-35588
+ <br>- https://ubuntu.com/security/CVE-2021-35603
+ <br>- https://ubuntu.com/security/CVE-2021-35556
+ <br>- https://ubuntu.com/security/CVE-2021-35561
+ <br>- https://ubuntu.com/security/CVE-2021-35588
+ <br>- https://ubuntu.com/security/CVE-2021-35578
+ <br>- https://ubuntu.com/security/CVE-2021-2341
+ <br>- https://ubuntu.com/security/CVE-2021-35564
+ <br>- https://ubuntu.com/security/CVE-2021-35603
+ <br>- https://ubuntu.com/security/CVE-2021-35559
+ <br>- https://ubuntu.com/security/CVE-2021-35586
+ <br>- https://ubuntu.com/security/CVE-2021-35550
+ <br>- https://ubuntu.com/security/CVE-2021-35567
+ <br>- https://ubuntu.com/security/CVE-2021-2369
+ <br>- https://ubuntu.com/security/CVE-2021-35565
+ <br>- https://ubuntu.com/security/CVE-2021-2388
+
+**Title**: USN-5189-1: GLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5189-1
+**Priorities**: medium
+**Description**:
+  It was discovered that GLib incorrectly handled certain environment variables.
+An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3800
+
+**Title**: USN-5168-4: NSS regression
+**URL**: https://ubuntu.com/security/notices/USN-5168-4
+**Priorities**: high
+**Description**:
+  USN-5168-3 fixed a vulnerability in NSS. Unfortunately that update introduced
+a regression that could break SSL connections. This update fixes the problem.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that NSS incorrectly handled verifying DSA/RSA-PSS
+ signatures. A remote attacker could use this issue to cause NSS to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43527
+
+**Title**: USN-5192-2: Apache Log4j 2 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5192-2
+**Priorities**: high
+**Description**:
+  USN-5192-1 fixed a vulnerability in Apache Log4j 2. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Chen Zhaojun discovered that Apache Log4j 2 allows remote attackers to run
+ programs via a special crafted input. An attacker could use this vulnerability
+ to cause a denial of service or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-44228
+
 #### <a id="621-183"></a> 621.183
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6600,6 +6758,164 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-220"></a> 456.220
+
+**Release Date**: December 17, 2021
+
+## Fixes 
+* This release reverts the NATS firewall enhancement added in 456.213. Changes associated with this feature caused VMs to report a networking failed state and prevented monit firewall rules from being applied. The NATS firewall enhancement will be reintroduced in a future release. 
+
+## Metadata:
+**BOSH Agent Version**: 2.234.37
+
+## USNs:
+
+**Title**: USN-5202-1: OpenJDK vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5202-1
+**Priorities**: medium
+**Description**:
+  Varnavas Papaioannou discovered that the FTP client implementation in
+OpenJDK accepted alternate server IP addresses when connecting with FTP
+passive mode. An attacker controlling an FTP server that an application
+connects to could possibly use this to expose sensitive information
+(rudimentary port scans). This issue only affected Ubuntu 16.04 ESM,
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 21.04. (CVE-2021-2341)
+
+Markus Loewe discovered that OpenJDK did not properly handle JAR files
+containing multiple manifest files. An attacker could possibly use
+this to bypass JAR signature verification. This issue only affected
+Ubuntu 16.04 ESM, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu
+21.04. (CVE-2021-2369)
+
+Huixin Ma discovered that the Hotspot VM in OpenJDK did not properly
+perform range check elimination in some situations. An attacker could
+possibly use this to construct a Java class that could bypass Java
+sandbox restrictions. This issue only affected Ubuntu 16.04 ESM,
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 21.04. (CVE-2021-2388)
+
+Asaf Greenholts discovered that OpenJDK preferred certain weak ciphers by
+default. An attacker could possibly use this to expose sensitive
+information. (CVE-2021-35550)
+
+It was discovered that the Rich Text Format (RTF) Parser in OpenJDK did not
+properly restrict the amount of memory allocated in some situations. An
+attacker could use this to specially craft an RTF file that caused a denial
+of service. (CVE-2021-35556)
+
+It was discovered that the Rich Text Format (RTF) Reader in OpenJDK did not
+properly restrict the amount of memory allocated in some situations. An
+attacker could use this to specially craft an RTF file that caused a denial
+of service. (CVE-2021-35559)
+
+Markus Loewe discovered that the HashMap and HashSet implementations in
+OpenJDK did not properly validate load factors during deserialization. An
+attacker could use this to cause a denial of service (excessive memory
+consumption). (CVE-2021-35561)
+
+It was discovered that the Keytool component in OpenJDK did not properly
+handle certificates with validity ending dates in the far future. An
+attacker could use this to specially craft a certificate that when imported
+could corrupt a keystore. (CVE-2021-35564)
+
+Tristen Hayfield discovered that the HTTP server implementation in OpenJDK
+did not properly handle TLS session close in some situations. A remote
+attacker could possibly use this to cause a denial of service (application
+infinite loop). (CVE-2021-35565)
+
+Chuck Hunley discovered that the Kerberos implementation in OpenJDK did not
+correctly report subject principals when using Kerberos Constrained
+Delegation. An attacker could possibly use this to cause incorrect Kerberos
+tickets to be used. (CVE-2021-35567)
+
+it was discovered that the TLS implementation in OpenJDK did not properly
+handle TLS handshakes in certain situations where a Java application is
+acting as a TLS server. A remote attacker could possibly use this to cause
+a denial of service (application crash). (CVE-2021-35578)
+
+it was discovered that OpenJDK did not properly restrict the amount of
+memory allocated when processing BMP images. An attacker could use this to
+specially craft a BMP image file that could cause a denial of service.
+(CVE-2021-35586)
+
+It was discovered that the HotSpot VM in OpenJDK 8 did not properly perform
+validation of inner class index values in some situations. An attacker
+could use this to specially craft a class file that when loaded could cause
+a denial of service (Java VM crash). (CVE-2021-35588)
+
+Artem Smotrakov discovered that the TLS implementation in OpenJDK used non-
+constant time comparisons during TLS handshakes. A remote attacker could
+use this to expose sensitive information. (CVE-2021-35603)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-2341
+ <br>- https://ubuntu.com/security/CVE-2021-2369
+ <br>- https://ubuntu.com/security/CVE-2021-2388
+ <br>- https://ubuntu.com/security/CVE-2021-35550
+ <br>- https://ubuntu.com/security/CVE-2021-35556
+ <br>- https://ubuntu.com/security/CVE-2021-35559
+ <br>- https://ubuntu.com/security/CVE-2021-35561
+ <br>- https://ubuntu.com/security/CVE-2021-35564
+ <br>- https://ubuntu.com/security/CVE-2021-35565
+ <br>- https://ubuntu.com/security/CVE-2021-35567
+ <br>- https://ubuntu.com/security/CVE-2021-35578
+ <br>- https://ubuntu.com/security/CVE-2021-35586
+ <br>- https://ubuntu.com/security/CVE-2021-35588
+ <br>- https://ubuntu.com/security/CVE-2021-35603
+ <br>- https://ubuntu.com/security/CVE-2021-35556
+ <br>- https://ubuntu.com/security/CVE-2021-35561
+ <br>- https://ubuntu.com/security/CVE-2021-35588
+ <br>- https://ubuntu.com/security/CVE-2021-35578
+ <br>- https://ubuntu.com/security/CVE-2021-2341
+ <br>- https://ubuntu.com/security/CVE-2021-35564
+ <br>- https://ubuntu.com/security/CVE-2021-35603
+ <br>- https://ubuntu.com/security/CVE-2021-35559
+ <br>- https://ubuntu.com/security/CVE-2021-35586
+ <br>- https://ubuntu.com/security/CVE-2021-35550
+ <br>- https://ubuntu.com/security/CVE-2021-35567
+ <br>- https://ubuntu.com/security/CVE-2021-2369
+ <br>- https://ubuntu.com/security/CVE-2021-35565
+ <br>- https://ubuntu.com/security/CVE-2021-2388
+
+**Title**: USN-5189-1: GLib vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5189-1
+**Priorities**: medium
+**Description**:
+  It was discovered that GLib incorrectly handled certain environment variables.
+An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3800
+
+**Title**: USN-5168-4: NSS regression
+**URL**: https://ubuntu.com/security/notices/USN-5168-4
+**Priorities**: high
+**Description**:
+  USN-5168-3 fixed a vulnerability in NSS. Unfortunately that update introduced
+a regression that could break SSL connections. This update fixes the problem.
+
+We apologize for the inconvenience.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that NSS incorrectly handled verifying DSA/RSA-PSS
+ signatures. A remote attacker could use this issue to cause NSS to crash,
+ resulting in a denial of service, or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43527
+
+**Title**: USN-5192-2: Apache Log4j 2 vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5192-2
+**Priorities**: high
+**Description**:
+  USN-5192-1 fixed a vulnerability in Apache Log4j 2. This update provides
+the corresponding update for Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Chen Zhaojun discovered that Apache Log4j 2 allows remote attackers to run
+ programs via a special crafted input. An attacker could use this vulnerability
+ to cause a denial of service or possibly execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-44228
 
 #### <a id="456-213"></a> 456.213
 
