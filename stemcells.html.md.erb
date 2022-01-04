@@ -21,6 +21,9 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 **Release Date**: December 17, 2021
 
+## Enhancements
+* `/var/opt` is now mounted to the ephemeral disk rather than the root disk. This is not a recommended storage point for bosh workloads, but some agents deployed on stemcells write their logs to this folder and that could cause the root disk to fill up.
+
 ## Fixes 
 * This release reverts the NATS firewall enhancement added in 621.183. Changes associated with this feature caused VMs to report a networking failed state and prevented monit firewall rules from being applied. The NATS firewall enhancement will be reintroduced in a future release. 
 
