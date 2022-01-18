@@ -15,6 +15,53 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-198"></a> 621.198
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 18, 2022
+
+## Fixes
+Fixes an [issue](https://github.com/cloudfoundry/gosigar/issues/54) that caused the bosh-agent to continually fail to start when either the cgroup v1 memory controller or the cgroup v2 controller was mounted in more than one location on the file system.
+
+## Metadata:
+**BOSH Agent Version**: 2.268.54
+
+## USNs:
+
+**Title**: USN-5225-1: lxml vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5225-1
+**Priorities**: medium
+**Description**:
+  It was discovered that lxml incorrectly handled certain XML and HTML files.
+An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43818
+
+**Title**: USN-5212-2: Apache HTTP Server vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5212-2
+**Priorities**: medium
+**Description**:
+  USN-5212-1 fixed several vulnerabilities in Apache. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that the Apache HTTP Server incorrectly handled certain
+ forward proxy requests. A remote attacker could use this issue to cause
+ the server to crash, resulting in a denial of service, or possibly perform
+ a Server Side Request Forgery attack. (CVE-2021-44224)
+
+ It was discovered that the Apache HTTP Server Lua module incorrectly
+ handled memory in the multipart parser. A remote attacker could use this
+ issue to cause the server to crash, resulting in a denial of service, or
+ possibly execute arbitrary code. (CVE-2021-44790)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-44224
+ <br>- https://ubuntu.com/security/CVE-2021-44790
+ <br>- https://ubuntu.com/security/CVE-2021-44790
+ <br>- https://ubuntu.com/security/CVE-2021-44224
+
 #### <a id="621-196"></a> 621.196
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6872,6 +6919,53 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-227"></a> 456.227
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 18, 2022
+
+## Fixes
+Fixes an [issue](https://github.com/cloudfoundry/gosigar/issues/54) that caused the bosh-agent to continually fail to start when either the cgroup v1 memory controller or the cgroup v2 controller was mounted in more than one location on the file system.
+
+## Metadata:
+**BOSH Agent Version**: 2.234.42
+
+## USNs:
+
+**Title**: USN-5225-1: lxml vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5225-1
+**Priorities**: medium
+**Description**:
+  It was discovered that lxml incorrectly handled certain XML and HTML files.
+An attacker could possibly use this issue to execute arbitrary code.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-43818
+
+**Title**: USN-5212-2: Apache HTTP Server vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5212-2
+**Priorities**: medium
+**Description**:
+  USN-5212-1 fixed several vulnerabilities in Apache. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that the Apache HTTP Server incorrectly handled certain
+ forward proxy requests. A remote attacker could use this issue to cause
+ the server to crash, resulting in a denial of service, or possibly perform
+ a Server Side Request Forgery attack. (CVE-2021-44224)
+
+ It was discovered that the Apache HTTP Server Lua module incorrectly
+ handled memory in the multipart parser. A remote attacker could use this
+ issue to cause the server to crash, resulting in a denial of service, or
+ possibly execute arbitrary code. (CVE-2021-44790)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-44224
+ <br>- https://ubuntu.com/security/CVE-2021-44790
+ <br>- https://ubuntu.com/security/CVE-2021-44790
+ <br>- https://ubuntu.com/security/CVE-2021-44224
 
 #### <a id="456-224"></a> 456.224
 
