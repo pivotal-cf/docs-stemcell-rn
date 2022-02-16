@@ -21,6 +21,9 @@ This section includes release notes for the 621 line of Linux stemcells used wit
 
 **Release Date**: February 10, 2022
 
+## Enhancements
+* `/opt` is now mounted to the ephemeral disk rather than the root disk. This is not a recommended storage point for bosh workloads, but some agents deployed on stemcells write their logs to this folder and that could cause the root disk to fill up.
+
 ## Metadata:
 **BOSH Agent Version**: 2.268.59
 
