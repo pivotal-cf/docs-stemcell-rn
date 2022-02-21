@@ -15,6 +15,131 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-211"></a> 621.211
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 21, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.268.61
+
+## USNs:
+
+**Title**: USN-5264-1: Graphviz vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5264-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that graphviz contains null pointer dereference 
+vulnerabilities. Exploitation via a specially crafted input file 
+can cause a denial of service.
+(CVE-2018-10196, CVE-2019-11023)
+
+It was discovered that graphviz contains a buffer overflow 
+vulnerability. Exploitation via a specially crafted input file can cause
+a denial of service or possibly allow for arbitrary code execution. 
+(CVE-2020-18032)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2018-10196
+ <br>- https://ubuntu.com/security/CVE-2019-11023
+ <br>- https://ubuntu.com/security/CVE-2020-18032
+ <br>- https://ubuntu.com/security/CVE-2018-10196
+ <br>- https://ubuntu.com/security/CVE-2020-18032
+ <br>- https://ubuntu.com/security/CVE-2019-11023
+
+**Title**: USN-5262-1: GPT fdisk vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5262-1
+**Priorities**: low
+**Description**:
+  The potential for an out of bounds write due to a missing bounds
+check was discovered to impact the sgdisk utility of GPT fdisk. 
+Exploitation requires the use of a maliciously formatted storage 
+device and could cause sgdisk to crash as well as possibly 
+allow for local privilege escalation.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-0256
+ <br>- https://ubuntu.com/security/CVE-2021-0308
+
+**Title**: USN-5280-1: Speex vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5280-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Speex incorrectly handled certain WAV files.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-23903
+
+**Title**: USN-5292-3: snapd vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5292-3
+**Priorities**: medium,high
+**Description**:
+  USN-5292-1 fixed several vulnerabilities in snapd. This update provides the
+corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ James Troup discovered that snap did not properly manage the permissions for
+ the snap directories. A local attacker could possibly use this issue to expose
+ sensitive information. (CVE-2021-3155)
+ 
+ Ian Johnson discovered that snapd did not properly validate content interfaces
+ and layout paths. A local attacker could possibly use this issue to inject
+ arbitrary AppArmor policy rules, resulting in a bypass of intended access
+ restrictions. (CVE-2021-4120)
+ 
+ The Qualys Research Team discovered that snapd did not properly validate the
+ location of the snap-confine binary. A local attacker could possibly use this
+ issue to execute other arbitrary binaries and escalate privileges.
+ (CVE-2021-44730)
+ 
+ The Qualys Research Team discovered that a race condition existed in the snapd
+ snap-confine binary when preparing a private mount namespace for a snap. A
+ local attacker could possibly use this issue to escalate privileges and
+ execute arbitrary code. (CVE-2021-44731)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3155
+ <br>- https://ubuntu.com/security/CVE-2021-4120
+ <br>- https://ubuntu.com/security/CVE-2021-44730
+ <br>- https://ubuntu.com/security/CVE-2021-44731
+ <br>- https://ubuntu.com/security/CVE-2021-3155
+ <br>- https://ubuntu.com/security/CVE-2021-4120
+ <br>- https://ubuntu.com/security/CVE-2021-44730
+ <br>- https://ubuntu.com/security/CVE-2021-44731
+
+**Title**: USN-5275-1: BlueZ vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5275-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang discovered that BlueZ incorrectly handled memory write operations
+in its gatt server. A remote attacker could possibly use this to cause BlueZ to
+crash leading to a denial of service, or potentially remotely execute code.
+(CVE-2022-0204)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-0204
+ <br>- https://ubuntu.com/security/CVE-2022-0204
+
+**Title**: USN-5269-2: Django vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5269-2
+**Priorities**: medium
+**Description**:
+  USN-5269-1 fixed several vulnerabilities in Django. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Keryn Knight discovered that Django incorrectly handled certain template
+ tags. A remote attacker could possibly use this issue to perform a
+ cross-site scripting attack. (CVE-2022-22818)
+
+ Alan Ryan discovered that Django incorrectly handled file uploads. A remote
+ attacker could possibly use this issue to cause Django to hang, resulting
+ in a denial of service. (CVE-2022-23833)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-22818
+ <br>- https://ubuntu.com/security/CVE-2022-23833
+ <br>- https://ubuntu.com/security/CVE-2022-22818
+ <br>- https://ubuntu.com/security/CVE-2022-23833
+
 #### <a id="621-208"></a> 621.208
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -7221,6 +7346,131 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-239"></a> 456.239
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 21, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.234.49
+
+## USNs:
+
+**Title**: USN-5264-1: Graphviz vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5264-1
+**Priorities**: low,medium
+**Description**:
+  It was discovered that graphviz contains null pointer dereference 
+vulnerabilities. Exploitation via a specially crafted input file 
+can cause a denial of service.
+(CVE-2018-10196, CVE-2019-11023)
+
+It was discovered that graphviz contains a buffer overflow 
+vulnerability. Exploitation via a specially crafted input file can cause
+a denial of service or possibly allow for arbitrary code execution. 
+(CVE-2020-18032)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2018-10196
+ <br>- https://ubuntu.com/security/CVE-2019-11023
+ <br>- https://ubuntu.com/security/CVE-2020-18032
+ <br>- https://ubuntu.com/security/CVE-2018-10196
+ <br>- https://ubuntu.com/security/CVE-2020-18032
+ <br>- https://ubuntu.com/security/CVE-2019-11023
+
+**Title**: USN-5262-1: GPT fdisk vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5262-1
+**Priorities**: low
+**Description**:
+  The potential for an out of bounds write due to a missing bounds
+check was discovered to impact the sgdisk utility of GPT fdisk. 
+Exploitation requires the use of a maliciously formatted storage 
+device and could cause sgdisk to crash as well as possibly 
+allow for local privilege escalation.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-0256
+ <br>- https://ubuntu.com/security/CVE-2021-0308
+
+**Title**: USN-5280-1: Speex vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5280-1
+**Priorities**: medium
+**Description**:
+  It was discovered that Speex incorrectly handled certain WAV files.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-23903
+
+**Title**: USN-5292-3: snapd vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5292-3
+**Priorities**: medium,high
+**Description**:
+  USN-5292-1 fixed several vulnerabilities in snapd. This update provides the
+corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ James Troup discovered that snap did not properly manage the permissions for
+ the snap directories. A local attacker could possibly use this issue to expose
+ sensitive information. (CVE-2021-3155)
+ 
+ Ian Johnson discovered that snapd did not properly validate content interfaces
+ and layout paths. A local attacker could possibly use this issue to inject
+ arbitrary AppArmor policy rules, resulting in a bypass of intended access
+ restrictions. (CVE-2021-4120)
+ 
+ The Qualys Research Team discovered that snapd did not properly validate the
+ location of the snap-confine binary. A local attacker could possibly use this
+ issue to execute other arbitrary binaries and escalate privileges.
+ (CVE-2021-44730)
+ 
+ The Qualys Research Team discovered that a race condition existed in the snapd
+ snap-confine binary when preparing a private mount namespace for a snap. A
+ local attacker could possibly use this issue to escalate privileges and
+ execute arbitrary code. (CVE-2021-44731)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2021-3155
+ <br>- https://ubuntu.com/security/CVE-2021-4120
+ <br>- https://ubuntu.com/security/CVE-2021-44730
+ <br>- https://ubuntu.com/security/CVE-2021-44731
+ <br>- https://ubuntu.com/security/CVE-2021-3155
+ <br>- https://ubuntu.com/security/CVE-2021-4120
+ <br>- https://ubuntu.com/security/CVE-2021-44730
+ <br>- https://ubuntu.com/security/CVE-2021-44731
+
+**Title**: USN-5275-1: BlueZ vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5275-1
+**Priorities**: medium
+**Description**:
+  Ziming Zhang discovered that BlueZ incorrectly handled memory write operations
+in its gatt server. A remote attacker could possibly use this to cause BlueZ to
+crash leading to a denial of service, or potentially remotely execute code.
+(CVE-2022-0204)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-0204
+ <br>- https://ubuntu.com/security/CVE-2022-0204
+
+**Title**: USN-5269-2: Django vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5269-2
+**Priorities**: medium
+**Description**:
+  USN-5269-1 fixed several vulnerabilities in Django. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Keryn Knight discovered that Django incorrectly handled certain template
+ tags. A remote attacker could possibly use this issue to perform a
+ cross-site scripting attack. (CVE-2022-22818)
+
+ Alan Ryan discovered that Django incorrectly handled file uploads. A remote
+ attacker could possibly use this issue to cause Django to hang, resulting
+ in a denial of service. (CVE-2022-23833)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-22818
+ <br>- https://ubuntu.com/security/CVE-2022-23833
+ <br>- https://ubuntu.com/security/CVE-2022-22818
+ <br>- https://ubuntu.com/security/CVE-2022-23833
 
 #### <a id="456-236"></a> 456.236
 
