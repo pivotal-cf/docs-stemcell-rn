@@ -12973,6 +12973,76 @@ It was discovered that curl incorrectly handled certain parameters. An attacker 
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8177
 
 
+#### <a id="456-115"></a> 456.115
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.234.7
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
+
 #### <a id="456-114"></a> 456.114
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -14737,15 +14807,6 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 BOSH Agent version: 2.234.2
 USNs:
 
-#### <a id="456-30"></a> 456.30
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: October 08, 2019
-
-BOSH Agent version: 2.234.2
-USNs:
-
 #### <a id="456-27"></a> 456.27
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -14754,86 +14815,6 @@ USNs:
 
 BOSH Agent version: 2.234.2
 USNs:
-
-#### <a id="456-27"></a> 456.27
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: September 24, 2019
-
-BOSH Agent version: 2.234.2
-USNs:
-
-#### <a id="456-25"></a> 456.25
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: September 19, 2019
-
-BOSH Agent version: 2.117.13
-USNs:
-    
-**Title:** USN-4128-1: Tomcat vulnerabilities
-<br>**URL:** https://usn.ubuntu.com/4128-1/
-<br>**Priorities:** low,medium
-<br>**Description:**
-  It was discovered that the Tomcat 8 SSI printenv command echoed user provided data without escaping it. An attacker could possibly use this issue to perform an XSS attack. (CVE-2019-0221)
-It was discovered that Tomcat 8 did not address HTTP/2 connection window exhaustion on write while addressing CVE-2019-0199. An attacker could possibly use...
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0221
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-10072
-
-**Title:** USN-4133-1: Wireshark vulnerabilities
-<br>**URL:** https://usn.ubuntu.com/4133-1/
-<br>**Priorities:** low,medium
-<br>**Description:**
-  It was discovered that Wireshark improperly handled certain input. A remote or local attacker could cause Wireshark to crash by injecting malformed packets onto the wire or convincing someone to read a malformed packet trace file.
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12295
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13619
-
-**Title:** USN-4134-1: IBus vulnerability
-<br>**URL:** https://usn.ubuntu.com/4134-1/
-<br>**Priorities:** medium
-<br>**Description:**
-  Simon McVittie discovered that IBus did not enforce appropriate access controls on its private D-Bus socket. A local unprivileged user who discovers the IBus socket address of another user could exploit this to capture the key strokes of the other user.
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14822
-
-**Title:** USN-4115-2: Linux kernel regression
-<br>**URL:** https://usn.ubuntu.com/4115-2
-<br>**Description:**
-  USN 4115-1 introduced a regression in the Linux kernel
-<br>**CVEs:**
-
-**Title:** USN-4135-1: Linux kernel vulnerabilities
-<br>**URL:** https://usn.ubuntu.com/4135-1/
-<br>**Priorities:** high,medium
-<br>**Description:**
-  Peter Pi discovered a buffer overflow in the virtio network backend (vhost_net) implementation in the Linux kernel. An attacker in a guest may be able to use this to cause a denial of service (host OS crash) or possibly execute arbitrary code in the host OS. (CVE-2019-14835)
-It was discovered that the Linux kernel on PowerPC architectures did...
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14835
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15030
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15031
-
-**Title:** USN-4132-1: Expat vulnerability
-<br>**URL:** https://usn.ubuntu.com/4132-1/
-<br>**Priorities:** medium
-<br>**Description:**
-  It was discovered that Expat incorrectly handled certain XML files. An attacker could possibly use this issue to expose sensitive information.
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15903
-
-**Title:** USN-4129-1: curl vulnerabilities
-<br>**URL:** https://usn.ubuntu.com/4129-1/
-<br>**Priorities:** medium
-<br>**Description:**
-  Thomas Vegas discovered that curl incorrectly handled memory when using Kerberos over FTP.  A remote attacker could use this issue to crash curl, resulting in a denial of service. (CVE-2019-5481)
-Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfers. A remote attacker could use this issue to crash curl, resulting in a...
-<br>**CVEs:**
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5481
-<br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5482
 
 #### <a id="456-25"></a> 456.25
 
