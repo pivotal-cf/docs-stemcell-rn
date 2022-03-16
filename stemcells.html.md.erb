@@ -15,6 +15,77 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-219"></a> 621.219
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 16, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.268.64
+
+## USNs:
+
+**Title**: USN-5322-1: Subversion vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5322-1
+**Priorities**: medium
+**Description**:
+  Thomas Akesson discovered that Subversion incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-17525
+
+**Title**: USN-5328-2: OpenSSL vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5328-2
+**Priorities**: high
+**Description**:
+  USN-5328-1 fixed a vulnerability in OpenSSL. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that OpenSSL incorrectly parsed certain
+ certificates. A remote attacker could possibly use this issue to cause
+ OpenSSH to stop responding, resulting in a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-0778
+
+**Title**: USN-5320-1: Expat vulnerabilities and regression
+**URL**: https://ubuntu.com/security/notices/USN-5320-1
+**Priorities**: high,medium
+**Description**:
+  USN-5288-1 fixed several vulnerabilities in Expat. For CVE-2022-25236 it
+caused a regression and an additional patch was required. This update address
+this regression and several other vulnerabilities.
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2022-25313)
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash
+or execute arbitrary code. This issue only affected Ubuntu 18.04 LTS,
+Ubuntu 20.04 LTS, and Ubuntu 21.10. (CVE-2022-25314)
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash or execute
+arbitrary code. (CVE-2022-25315)
+
+Original advisory details:
+
+ It was discovered that Expat incorrectly handled certain files.
+ An attacker could possibly use this issue to cause a crash or
+ execute arbitrary code. (CVE-2022-25236)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-25236
+ <br>- https://ubuntu.com/security/CVE-2022-25313
+ <br>- https://ubuntu.com/security/CVE-2022-25314
+ <br>- https://ubuntu.com/security/CVE-2022-25315
+ <br>- https://ubuntu.com/security/CVE-2022-25236
+ <br>- https://ubuntu.com/security/CVE-2022-25314
+ <br>- https://ubuntu.com/security/CVE-2022-25315
+ <br>- https://ubuntu.com/security/CVE-2022-25313
+
 #### <a id="621-216"></a> 621.216
 
 **Release Date**: March 09, 2022
@@ -7644,6 +7715,77 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-247"></a> 456.247
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 16, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.234.52
+
+## USNs:
+
+**Title**: USN-5322-1: Subversion vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5322-1
+**Priorities**: medium
+**Description**:
+  Thomas Akesson discovered that Subversion incorrectly handled certain inputs.
+An attacker could possibly use this issue to cause a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-17525
+
+**Title**: USN-5328-2: OpenSSL vulnerability
+**URL**: https://ubuntu.com/security/notices/USN-5328-2
+**Priorities**: high
+**Description**:
+  USN-5328-1 fixed a vulnerability in OpenSSL. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ Tavis Ormandy discovered that OpenSSL incorrectly parsed certain
+ certificates. A remote attacker could possibly use this issue to cause
+ OpenSSH to stop responding, resulting in a denial of service.
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-0778
+
+**Title**: USN-5320-1: Expat vulnerabilities and regression
+**URL**: https://ubuntu.com/security/notices/USN-5320-1
+**Priorities**: high,medium
+**Description**:
+  USN-5288-1 fixed several vulnerabilities in Expat. For CVE-2022-25236 it
+caused a regression and an additional patch was required. This update address
+this regression and several other vulnerabilities.
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a denial of service.
+(CVE-2022-25313)
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash
+or execute arbitrary code. This issue only affected Ubuntu 18.04 LTS,
+Ubuntu 20.04 LTS, and Ubuntu 21.10. (CVE-2022-25314)
+
+It was discovered that Expat incorrectly handled certain files.
+An attacker could possibly use this issue to cause a crash or execute
+arbitrary code. (CVE-2022-25315)
+
+Original advisory details:
+
+ It was discovered that Expat incorrectly handled certain files.
+ An attacker could possibly use this issue to cause a crash or
+ execute arbitrary code. (CVE-2022-25236)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-25236
+ <br>- https://ubuntu.com/security/CVE-2022-25313
+ <br>- https://ubuntu.com/security/CVE-2022-25314
+ <br>- https://ubuntu.com/security/CVE-2022-25315
+ <br>- https://ubuntu.com/security/CVE-2022-25236
+ <br>- https://ubuntu.com/security/CVE-2022-25314
+ <br>- https://ubuntu.com/security/CVE-2022-25315
+ <br>- https://ubuntu.com/security/CVE-2022-25313
 
 #### <a id="456-244"></a> 456.244
 
