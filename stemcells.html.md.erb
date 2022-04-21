@@ -15,6 +15,67 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621 line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-236"></a> 621.236
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 21, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.268.72
+
+## USNs:
+
+**Title**: USN-5371-1: nginx vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5371-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that nginx Lua module mishandled certain inputs.
+An attacker could possibly use this issue to perform an HTTP Request
+Smuggling attack. This issue only affects Ubuntu 18.04 LTS and
+Ubuntu 20.04 LTS. (CVE-2020-11724)
+
+It was discovered that nginx Lua module mishandled certain inputs.
+An attacker could possibly use this issue to disclose sensitive
+information. This issue only affects Ubuntu 18.04 LTS and
+Ubuntu 20.04 LTS. (CVE-2020-36309)
+
+It was discovered that nginx mishandled the use of 
+compatible certificates among multiple encryption protocols. 
+If a remote attacker were able to intercept the communication, 
+this issue could be used to redirect traffic between subdomains.
+(CVE-2021-3618)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-11724
+ <br>- https://ubuntu.com/security/CVE-2020-36309
+ <br>- https://ubuntu.com/security/CVE-2021-3618
+ <br>- https://ubuntu.com/security/CVE-2020-36309
+ <br>- https://ubuntu.com/security/CVE-2021-3618
+ <br>- https://ubuntu.com/security/CVE-2020-11724
+
+**Title**: USN-5373-2: Django vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5373-2
+**Priorities**: high,medium
+**Description**:
+  USN-5373-1 fixed several vulnerabilities in Django. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that Django incorrectly handled certain certain column
+ aliases in the QuerySet.annotate(), aggregate(), and extra() methods. A
+ remote attacker could possibly use this issue to perform an SQL injection
+ attack. (CVE-2022-28346)
+
+ It was discovered that the Django URLValidator function incorrectly handled
+ newlines and tabs. A remote attacker could possibly use this issue to
+ perform a header injection attack. (CVE-2021-32052)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-28346
+ <br>- https://ubuntu.com/security/CVE-2021-32052
+ <br>- https://ubuntu.com/security/CVE-2021-32052
+ <br>- https://ubuntu.com/security/CVE-2022-28346
+
 #### <a id="621-224"></a> 621.224
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -8143,6 +8204,67 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456 line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-261"></a> 456.261
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 21, 2022
+
+## Metadata:
+**BOSH Agent Version**: 2.234.58
+
+## USNs:
+
+**Title**: USN-5371-1: nginx vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5371-1
+**Priorities**: medium,low
+**Description**:
+  It was discovered that nginx Lua module mishandled certain inputs.
+An attacker could possibly use this issue to perform an HTTP Request
+Smuggling attack. This issue only affects Ubuntu 18.04 LTS and
+Ubuntu 20.04 LTS. (CVE-2020-11724)
+
+It was discovered that nginx Lua module mishandled certain inputs.
+An attacker could possibly use this issue to disclose sensitive
+information. This issue only affects Ubuntu 18.04 LTS and
+Ubuntu 20.04 LTS. (CVE-2020-36309)
+
+It was discovered that nginx mishandled the use of 
+compatible certificates among multiple encryption protocols. 
+If a remote attacker were able to intercept the communication, 
+this issue could be used to redirect traffic between subdomains.
+(CVE-2021-3618)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2020-11724
+ <br>- https://ubuntu.com/security/CVE-2020-36309
+ <br>- https://ubuntu.com/security/CVE-2021-3618
+ <br>- https://ubuntu.com/security/CVE-2020-36309
+ <br>- https://ubuntu.com/security/CVE-2021-3618
+ <br>- https://ubuntu.com/security/CVE-2020-11724
+
+**Title**: USN-5373-2: Django vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-5373-2
+**Priorities**: high,medium
+**Description**:
+  USN-5373-1 fixed several vulnerabilities in Django. This update provides
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.
+
+Original advisory details:
+
+ It was discovered that Django incorrectly handled certain certain column
+ aliases in the QuerySet.annotate(), aggregate(), and extra() methods. A
+ remote attacker could possibly use this issue to perform an SQL injection
+ attack. (CVE-2022-28346)
+
+ It was discovered that the Django URLValidator function incorrectly handled
+ newlines and tabs. A remote attacker could possibly use this issue to
+ perform a header injection attack. (CVE-2021-32052)
+**CVEs**:
+ <br>- https://ubuntu.com/security/CVE-2022-28346
+ <br>- https://ubuntu.com/security/CVE-2021-32052
+ <br>- https://ubuntu.com/security/CVE-2021-32052
+ <br>- https://ubuntu.com/security/CVE-2022-28346
 
 #### <a id="456-252"></a> 456.252
 
