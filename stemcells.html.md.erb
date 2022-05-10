@@ -5512,52 +5512,6 @@ service.
 *   [[USN-4650-1] QEMU vulnerabilities](https://ubuntu.com/security/notices/USN-4650-1)
 
 
-#### <a id="621-92"></a> 621.92
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: November 16, 2020
-
-## Metadata:
-**BOSH Agent Version**: 2.268.16
-
-## USNs:
-
-**Title**: USN-4587-1: iTALC vulnerabilities
-**URL**: https://ubuntu.com/security/notices/USN-4587-1
-**Priorities**: medium,low
-**Description**:
-  Nicolas Ruff discovered that iTALC had buffer overflows, divide-by-zero errors and didn't check malloc return values. A remote attacker could use these issues to cause a denial of service or possibly execute arbitrary code. (CVE-2014-6051, CVE-2014-6052, CVE-2014-6053, CVE-2014-6054, CVE-2014-6055)
-Josef Gajdusek discovered that iTALC had...
-**CVEs**:
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6051
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6052
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6054
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6055
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9941
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9942
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15127
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20019
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20023
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20748
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20749
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20750
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681
-
-**Title**: USN-4552-2: Pam-python vulnerability
-**URL**: https://ubuntu.com/security/notices/USN-4552-2
-**Priorities**: medium
-**Description**:
-  Malte Kraus discovered that Pam-python mishandled certain environment variables. A local attacker could potentially use this vulnerability to execute programs as root.
-**CVEs**:
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729
-
 #### <a id="621-90"></a> 621.90
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6711,51 +6665,6 @@ It was discovered that Mutt incorrectly handled certain requests. An attacker co
 **CVEs**:
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
-
-#### <a id="621-76"></a> 621.76
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: June 17, 2020
-
-## Metadata:
-**BOSH Agent Version**: 2.268.16
-
-## USNs:
-
-**Title**: USN-4385-1: Intel Microcode vulnerabilities
-**URL**: https://usn.ubuntu.com/4385-1/
-**Priorities**: medium
-**Description**:
-  It was discovered that memory contents previously stored in microarchitectural special registers after RDRAND, RDSEED, and SGX EGETKEY read operations on Intel client and Xeon E3 processors may be briefly exposed to processes on the same or different processor cores. A local attacker could use this to expose sensitive information....
-**CVEs**:
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0548
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0549
-
-**Title**: LSN-0068-1: Kernel Live Patch Security Notice
-**URL**: https://usn.ubuntu.com/lsn/0068-1/
-**Priorities**: medium
-**Description**:
-  Several security issues were fixed in the kernel.
-**CVEs**:
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8647
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8649
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11494
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12114
-
-**Title**: USN-4386-1: libjpeg-turbo vulnerability
-**URL**: https://usn.ubuntu.com/4386-1/
-**Priorities**: medium
-**Description**:
-  It was discovered that libjpeg-turbo incorrectly handled certain PPM files. An attacker could possibly use this issue to access sensitive information.
-**CVEs**:
- <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13790
-
-## Known Issue:
-If you use the NSX-T Container Plugin (NCP) tile v3.0.1 or earlier, do not upgrade to stemcell 621.76. 621.76 is not compatible with the NCP tile v3.0.1 and causes the openvswitch job to fail when you deploy. Please upgrade the NCP tile to 3.0.2 before updating to stemcell 621.76 or newer.
 
 #### <a id="621-75"></a> 621.75
 
