@@ -4083,6 +4083,52 @@ service (system crash) or possibly execute arbitrary code. (CVE-2021-29154)
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3493
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-29154
 
+#### <a id="621-117"></a> 621.117
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 25, 2021
+
+## Metadata:
+**BOSH Agent Version**: 2.268.21
+
+## USNs:
+
+**Title**: USN-4888-1: ldb vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4888-1
+**Priorities**: high
+**Description**:
+  Douglas Bagnall discovered that ldb, when used with Samba, incorrectly
+handled certain LDAP attributes. A remote attacker could possibly use this
+issue to cause the LDAP server to crash, resulting in a denial of service.
+(CVE-2021-20277)
+
+Douglas Bagnall discovered that ldb, when used with Samba, incorrectly
+handled certain DN strings. A remote attacker could use this issue to
+cause the LDAP server to crash, resulting in a denial of service, or
+possibly execute arbitrary code. (CVE-2020-27840)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2021-20277
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27840
+
+**Title**: USN-4890-1: Linux kernel vulnerabilities
+**URL**: https://ubuntu.com/security/notices/USN-4890-1
+**Priorities**: high
+**Description**:
+  Piotr Krysiuk discovered that the BPF subsystem in the Linux kernel did not
+properly compute a speculative execution limit on pointer arithmetic in
+some situations. A local attacker could use this to expose sensitive
+information (kernel memory). (CVE-2020-27171)
+
+Piotr Krysiuk discovered that the BPF subsystem in the Linux kernel did not
+properly apply speculative execution limits on some pointer types. A local
+attacker could use this to expose sensitive information (kernel memory).
+(CVE-2020-27170)
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27170
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27171
+
+
 #### <a id="621-115"></a> 621.115
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -6595,6 +6641,76 @@ It was discovered that curl incorrectly handled certain parameters. An attacker 
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8169
  <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8177
 
+
+#### <a id="621-77"></a> 621.77
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 20, 2020
+
+## Metadata:
+**BOSH Agent Version**: 2.268.16
+
+## USNs:
+
+**Title**: USN-4397-1: NSS vulnerabilities
+**URL**: https://usn.ubuntu.com/4397-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that NSS incorrectly handled the TLS State Machine. A remote attacker could possibly use this issue to cause NSS to hang, resulting in a denial of service. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-17023)
+Cesar Pereida Garcia discovered that NSS incorrectly handled DSA key generation. A local attacker...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17023
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399
+
+**Title**: USN-4400-1: nfs-utils vulnerability
+**URL**: https://usn.ubuntu.com/4400-1/
+**Priorities**: low
+**Description**:
+  It was discovered that the nfs-utils package set incorrect permissions on the /var/lib/nfs directory. An attacker could possibly use this issue to escalate privileges.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-3689
+
+**Title**: USN-4396-1: libexif vulnerabilities
+**URL**: https://usn.ubuntu.com/4396-1/
+**Priorities**: low,medium
+**Description**:
+  It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-0093, CVE-2020-0182)
+It was discovered that libexif incorrectly handled certain inputs. An attacker could possibly use this issue to cause a remote denial of service. (CVE-2020-0198)
+It was...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0182
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0198
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13112
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13113
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13114
+
+**Title**: USN-4395-1: fwupd vulnerability
+**URL**: https://usn.ubuntu.com/4395-1/
+**Priorities**: medium
+**Description**:
+  Justin Steven discovered that fwupd incorrectly handled certain signature verification. An attacker could possibly use this issue to install an unsigned firmware.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10759
+
+**Title**: USN-4398-1: DBus vulnerability
+**URL**: https://usn.ubuntu.com/4398-1/
+**Priorities**: medium
+**Description**:
+  Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049
+
+**Title**: USN-4401-1: Mutt vulnerabilities
+**URL**: https://usn.ubuntu.com/4401-1/
+**Priorities**: medium,low
+**Description**:
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14093)
+It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to proceeds with a connection even if the user rejects an expired intermediate...
+**CVEs**:
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093
+ <br>- https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
 
 #### <a id="621-76"></a> 621.76
 
