@@ -66,16 +66,6 @@ module Resources
       stemcells = URI.parse(api_endpoint).read
       stemcells = JSON.parse(stemcells)
       stemcells_list = stemcells['releases']
-      stemcells_list.sort_by { |h| h['version'] }.reverse
-    rescue
-      []
-    end
-
-    def get_pivnet_release_versions(api_endpoint)
-      #get and parse the list of stemcell releases from pivnet
-      stemcells = URI.parse(api_endpoint).read
-      stemcells = JSON.parse(stemcells)
-      stemcells_list = stemcells['releases']
 
       #put the list of stemcells in order of their version numbers
       sorted_stemcells_list = stemcells_list.sort_by { |h| h['version'] }.reverse
@@ -89,6 +79,8 @@ module Resources
       end
 
       return stemcells_numbers_list
+    rescue
+      []
     end
   end
 end
@@ -112,7 +104,7 @@ end
 
 def puts_release_notes_xenial(releases, pivnet_api, release_type)
   pivnet = Resources::Pivnet.new
-  pivnet_releases = pivnet.get_pivnet_release_versions(pivnet_api)
+  pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
 
   output = "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
   output += "The following sections describe each #{release_type} stemcell release. \n\n"
