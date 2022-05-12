@@ -102,7 +102,10 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def puts_release_notes_xenial(releases, pivnet_api, release_type)
+def puts_release_notes_multi_version_line(releases, pivnet_api, release_type, supported_stemcell_lines)
+  major_version_releases = sorted_releases_by_major_version(releases)
+  releases = major_version_releases.select{|major_version| supported_stemcell_lines.include?(major_version.to_s) }
+
   pivnet = Resources::Pivnet.new
   pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
 
@@ -140,17 +143,16 @@ def puts_release_notes_xenial(releases, pivnet_api, release_type)
     end
   end
 
-output = output.gsub("title:", "**Title:**")
-output = output.gsub("url:", "<br>**URL:**")
-output = output.gsub("priorities:", "<br>**Priorities:**")
-output = output.gsub("description:", "<br>**Description:**")
-output = output.gsub("cves:", "<br>**CVEs:**")
-output = output.gsub("- https", "<br>- https")
-puts output
-
+  output = output.gsub("title:", "**Title:**")
+  output = output.gsub("url:", "<br>**URL:**")
+  output = output.gsub("priorities:", "<br>**Priorities:**")
+  output = output.gsub("description:", "<br>**Description:**")
+  output = output.gsub("cves:", "<br>**CVEs:**")
+  output = output.gsub("- https", "<br>- https")
+  puts output
 end
 
-def puts_release_notes_jammy(releases, pivnet_api, release_type)
+def puts_release_notes_one_version_line(releases, pivnet_api, release_type)
   pivnet = Resources::Pivnet.new
   pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
 
@@ -186,7 +188,6 @@ def puts_release_notes_jammy(releases, pivnet_api, release_type)
   output = output.gsub("cves:", "<br>**CVEs:**")
   output = output.gsub("- https", "<br>- https")
   puts output
-
 end
 
 def main
@@ -205,14 +206,12 @@ HEADER
 
   releases_jammy = github_releases.select{|release| release['name'].downcase.include?('jammy')}
   releases_xenial = github_releases.select{|release| release['name'].downcase.include?('xenial')}
-  major_version_releases = sorted_releases_by_major_version(releases_xenial)
-  releases_xenial = major_version_releases.select{|major_version| SUPPORTED_XENIAL_STEMCELL_LINES.include?(major_version.to_s) }
 
   puts output
 
-  puts_release_notes_jammy(releases_jammy, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-jammy/releases', "Jammy")
-  puts_release_notes_xenial(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
-                            "Xenial")
+  puts_release_notes_one_version_line(releases_jammy, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-jammy/releases', "Jammy")
+  puts_release_notes_multi_version_line(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
+                            "Xenial", SUPPORTED_XENIAL_STEMCELL_LINES)
 end
 
 main
