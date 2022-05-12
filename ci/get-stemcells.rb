@@ -66,6 +66,16 @@ module Resources
       stemcells = URI.parse(api_endpoint).read
       stemcells = JSON.parse(stemcells)
       stemcells_list = stemcells['releases']
+      stemcells_list.sort_by { |h| h['version'] }.reverse
+    rescue
+      []
+    end
+
+    def get_pivnet_release_versions(api_endpoint)
+      #get and parse the list of stemcell releases from pivnet
+      stemcells = URI.parse(api_endpoint).read
+      stemcells = JSON.parse(stemcells)
+      stemcells_list = stemcells['releases']
 
       #put the list of stemcells in order of their version numbers
       sorted_stemcells_list = stemcells_list.sort_by { |h| h['version'] }.reverse
@@ -100,9 +110,9 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def puts_release_notes(releases, pivnet_api, release_type)
+def puts_release_notes_xenial(releases, pivnet_api, release_type)
   pivnet = Resources::Pivnet.new
-  pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
+  pivnet_releases = pivnet.get_pivnet_release_versions(pivnet_api)
 
   output = "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
   output += "The following sections describe each #{release_type} stemcell release. \n\n"
@@ -148,6 +158,45 @@ puts output
 
 end
 
+def puts_release_notes_jammy(releases, pivnet_api, release_type)
+  pivnet = Resources::Pivnet.new
+  pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
+
+  output = "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
+  output += "The following sections describe each #{release_type} stemcell release. \n\n"
+  releases.each do |release|
+      version = release['version']
+      output += "#### <a id=\"#{version.sub('.', '-')}\"></a> #{version}\n\n"
+
+      output += "<span class='pivnet'>Available in VMware Tanzu Network</span>\n\n" if pivnet_releases.include?(version)
+
+      if !release['published_at'].nil?
+        release_date = release['published_at'].strftime("%B %d, %Y")
+      else
+        release_date = release['created_at'].strftime("%B %d, %Y")
+      end
+      output += "**Release Date**: #{release_date}\n\n"
+
+      output += release['body']+ "\n\n"
+
+      additional_info_path = 'additional_info'
+      additional_context_file = File.join(additional_info_path, "_#{version.sub('.', '-')}.html.md.erb")
+      if File.exist?(additional_context_file)
+        file = File.open(additional_context_file, "rb")
+        output += file.read + "\n\n"
+        file.close
+      end
+    end
+  output = output.gsub("title:", "**Title:**")
+  output = output.gsub("url:", "<br>**URL:**")
+  output = output.gsub("priorities:", "<br>**Priorities:**")
+  output = output.gsub("description:", "<br>**Description:**")
+  output = output.gsub("cves:", "<br>**CVEs:**")
+  output = output.gsub("- https", "<br>- https")
+  puts output
+
+end
+
 def main
   github = Resources::Github.new
   github_releases = github.get_stemcell_releases
@@ -162,13 +211,16 @@ modified_date: false
 This topic includes release notes for Linux stemcells used with <%= vars.platform_name %>.\n\n
 HEADER
 
-  major_version_releases = sorted_releases_by_major_version(github_releases)
+  releases_jammy = github_releases.select{|release| release['name'].downcase.include?('jammy')}
+  releases_xenial = github_releases.select{|release| release['name'].downcase.include?('xenial')}
+  major_version_releases = sorted_releases_by_major_version(releases_xenial)
   releases_xenial = major_version_releases.select{|major_version| SUPPORTED_XENIAL_STEMCELL_LINES.include?(major_version.to_s) }
 
   puts output
 
-  puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
-                     "Xenial")
+  puts_release_notes_jammy(releases_jammy, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-jammy/releases', "Jammy")
+  puts_release_notes_xenial(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
+                            "Xenial")
 end
 
 main
