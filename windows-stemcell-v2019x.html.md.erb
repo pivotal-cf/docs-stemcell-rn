@@ -20,6 +20,18 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
     see <a href="https://docs.pivotal.io/application-service-windows/<%= vars.current_major_version.sub('.', '-') %>/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
   </p>
 
+## <a id="2019.48"></a>2019.48
+
+**Release Date**: May 13th, 2022
+
+### Changes
+
+- The Stembuild binaries for this release have been built using Golang 1.18 which has stricter requirements for TLS certificates. If you experience issues, ensure your vCenter certificates are valid, include a Subject Alternative Name and do not use the older SHA-1 hash function.
+
+### Security Patches
+
+- Works with [Microsoft Security Updates Patch Tuesday May 10, 2022](https://support.microsoft.com/en-us/help/5013941)
+
 ## <a id="2019.47"></a>2019.47
 
 **Release Date**: April 14th, 2022
