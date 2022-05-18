@@ -3,7 +3,17 @@ require 'octokit'
 require 'open-uri'
 require 'base64'
 
-SUPPORTED_XENIAL_STEMCELL_LINES = %w(621 456)
+
+STEMCELL_RELEASES = {
+  jammy: {
+    tanzunet_uri: 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-jammy/releases',
+    supported_lines: %w(0),
+  },
+  xenial: {
+    tanzunet_uri: 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
+    supported_lines: %w(621 456),
+  }
+}
 
 module Resources
   class Github
@@ -79,8 +89,70 @@ module Resources
       end
 
       return stemcells_numbers_list
+    rescue
+      []
     end
   end
+end
+
+def header
+  <<-HEADER
+---
+title: Stemcell (Linux) Release Notes
+owner: BOSH
+modified_date: false
+---
+
+This topic includes release notes for Linux stemcells used with <%= vars.platform_name %>.\n\n
+HEADER
+end
+
+def puts_release_notes(releases, ubuntu_release_name, stemcell_info)
+  major_version_releases = sorted_releases_by_major_version(releases)
+  releases = major_version_releases.select{|major_version| stemcell_info[:supported_lines].include?(major_version.to_s) }
+
+  pivnet = Resources::Pivnet.new
+  pivnet_releases = pivnet.get_pivnet_releases(stemcell_info[:tanzunet_uri])
+
+  output = "## <a id=\"#{ubuntu_release_name.downcase}\"></a> #{ubuntu_release_name.capitalize} Stemcells \n\n"
+  output += "The following sections describe each #{ubuntu_release_name.capitalize} stemcell release. \n\n"
+  releases.each do |major_version, minor_releases|
+    output += "### <a id=\"#{version_line_anchor_for(ubuntu_release_name, major_version)}\"></a> #{major_version}.x \n\n"
+    output += "This section includes release notes for the #{major_version}.x line of Linux stemcells used with <%= vars.platform_name %>.\n\n"
+
+    minor_releases.sort_by {|release| release['minor_version']}
+
+    minor_releases.each_with_index do |release, i|
+      version = release['version']
+
+      output += "#### <a id=\"#{release_anchor_for(ubuntu_release_name, version)}\"></a> #{version}\n\n"
+
+      output += "<span class='pivnet'>Available in VMware Tanzu Network</span>\n\n" if pivnet_releases.include?(version)
+
+      if !release['published_at'].nil?
+        release_date = release['published_at'].strftime("%B %d, %Y")
+      else
+        release_date = release['created_at'].strftime("%B %d, %Y")
+      end
+      output += "**Release Date**: #{release_date}\n\n"
+
+      body = humanize_old_stemcell_release_notes(release['body'])
+      body = body
+        .gsub('## ', '#### ')
+        .gsub(/\r\n/, "<br>\n")
+      output += body + "\n\n"
+
+      additional_info_path = 'additional_info'
+      additional_context_file = File.join(additional_info_path, "_#{version.sub('.', '-')}.html.md.erb")
+      if File.exist?(additional_context_file)
+        file = File.open(additional_context_file, "rb")
+        output += file.read + "\n\n"
+        file.close
+      end
+    end
+  end
+
+  puts output
 end
 
 def sorted_releases_by_major_version(releases)
@@ -100,75 +172,46 @@ def sorted_releases_by_major_version(releases)
   return result.sort.reverse.to_h
 end
 
-def puts_release_notes(releases, pivnet_api, release_type)
-  pivnet = Resources::Pivnet.new
-  pivnet_releases = pivnet.get_pivnet_releases(pivnet_api)
-
-  output = "## <a id=\"#{release_type.downcase}\"></a> #{release_type} Stemcells \n\n"
-  output += "The following sections describe each #{release_type} stemcell release. \n\n"
-  releases.each do |major_version, minor_releases|
-    output += "### <a id=\"#{major_version}-line\"></a> #{major_version}.x \n\n"
-    output += "This section includes release notes for the #{major_version} line of Linux stemcells used with <%= vars.platform_name %>.\n\n"
-
-    minor_releases.sort_by {|release| release['minor_version']}
-
-    minor_releases.each_with_index do |release, i|
-      version = release['version']
-
-      output += "#### <a id=\"#{version.sub('.', '-')}\"></a> #{version}\n\n"
-
-      output += "<span class='pivnet'>Available in VMware Tanzu Network</span>\n\n" if pivnet_releases.include?(version)
-
-      if !release['published_at'].nil?
-        release_date = release['published_at'].strftime("%B %d, %Y")
-      else
-        release_date = release['created_at'].strftime("%B %d, %Y")
-      end
-      output += "**Release Date**: #{release_date}\n\n"
-
-      output += release['body']+ "\n\n"
-
-      additional_info_path = 'additional_info'
-      additional_context_file = File.join(additional_info_path, "_#{version.sub('.', '-')}.html.md.erb")
-      if File.exist?(additional_context_file)
-        file = File.open(additional_context_file, "rb")
-        output += file.read + "\n\n"
-        file.close
-      end
-    end
+def version_line_anchor_for(ubuntu_release_name, major_version)
+  case ubuntu_release_name
+  when :xenial
+    "#{major_version}-line"
+  else
+    "#{ubuntu_release_name}-#{major_version}-line"
   end
+end
 
-output = output.gsub("title:", "**Title:**")
-output = output.gsub("url:", "<br>**URL:**")
-output = output.gsub("priorities:", "<br>**Priorities:**")
-output = output.gsub("description:", "<br>**Description:**")
-output = output.gsub("cves:", "<br>**CVEs:**")
-output = output.gsub("- https", "<br>- https")
-puts output
+def release_anchor_for(ubuntu_release_name, version)
+  anchor_version = version.sub('.', '-')
 
+  case ubuntu_release_name
+  when :xenial
+    anchor_version
+  else
+    "#{ubuntu_release_name}-#{anchor_version}"
+  end
+end
+
+def humanize_old_stemcell_release_notes(text)
+  text
+    .gsub("title:", "**Title:**")
+    .gsub("url:", "**URL:**")
+    .gsub("priorities:", "**Priorities:**")
+    .gsub("description:", "**Description:**")
+    .gsub("cves:", "**CVEs:**")
 end
 
 def main
   github = Resources::Github.new
   github_releases = github.get_stemcell_releases
 
-  output = <<-HEADER
----
-title: Stemcell (Linux) Release Notes
-owner: BOSH
-modified_date: false
----
+  puts header
 
-This topic includes release notes for Linux stemcells used with <%= vars.platform_name %>.\n\n
-HEADER
+  STEMCELL_RELEASES.each do |ubuntu_release_name, stemcell_info|
+    filtered_releases = github_releases.select{|release| release['name'].downcase.include?(ubuntu_release_name.to_s)}
 
-  major_version_releases = sorted_releases_by_major_version(github_releases)
-  releases_xenial = major_version_releases.select{|major_version| SUPPORTED_XENIAL_STEMCELL_LINES.include?(major_version.to_s) }
-
-  puts output
-
-  puts_release_notes(releases_xenial, 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
-                     "Xenial")
+    puts_release_notes(filtered_releases, ubuntu_release_name, stemcell_info)
+  end
 end
 
 main
