@@ -7,25 +7,6 @@ modified_date: false
 This topic includes release notes for Linux stemcells used with <%= vars.platform_name %>.
 
 
-## <a id="jammy"></a> Jammy Stemcells 
-
-The following sections describe each Jammy stemcell release. 
-
-### <a id="jammy-0-line"></a> 0.x 
-
-This section includes release notes for the 0.x line of Linux stemcells used with <%= vars.platform_name %>.
-
-#### <a id="jammy-0-1"></a> 0.1
-
-**Release Date**: April 25, 2022
-
-This is the first stemcell based on Canonical's official GA (General Availability) of Ubuntu 22.04 Jammy Jellyfish.<br>
-<br>
-#### Metadata:<br>
-**BOSH Agent Version**: 2.437.0<br>
-<br>
-#### USNs:
-
 ## <a id="xenial"></a> Xenial Stemcells 
 
 The following sections describe each Xenial stemcell release. 
@@ -33,6 +14,196 @@ The following sections describe each Xenial stemcell release.
 ### <a id="621-line"></a> 621.x 
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="621-244"></a> 621.244
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: May 25, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.77<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5428-1: libXrandr vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5428-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Tobias Stoeckmann discovered that libXrandr incorrectly handled certain<br>
+responses. An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+(CVE-2016-7947, CVE-2016-7948)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-7947<br>
+ - https://ubuntu.com/security/CVE-2016-7948<br>
+ - https://ubuntu.com/security/CVE-2016-7947<br>
+ - https://ubuntu.com/security/CVE-2016-7948<br>
+<br>
+**Title**: USN-5436-1: libXrender vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5436-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Tobias Stoeckmann discovered that libXrender incorrectly handled certain<br>
+responses. An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+(CVE-2016-7949, CVE-2016-7950)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-7949<br>
+ - https://ubuntu.com/security/CVE-2016-7950<br>
+ - https://ubuntu.com/security/CVE-2016-7950<br>
+ - https://ubuntu.com/security/CVE-2016-7949<br>
+<br>
+**Title**: USN-5432-1: libpng vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5432-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that libpng incorrectly handled memory when parsing<br>
+certain PNG files. If a user or automated system were tricked into opening<br>
+a specially crafted PNG file, an attacker could use this issue to cause<br>
+libpng to crash, resulting in a denial of service, or possible execute<br>
+arbitrary code. (CVE-2017-12652)<br>
+<br>
+Zhengxiong Luo discovered that libpng incorrectly handled memory when parsing<br>
+certain PNG files. If a user or automated system were tricked into opening<br>
+a specially crafted PNG file, an attacker could use this issue to cause<br>
+libpng to crash, resulting in a denial of service, or possible execute<br>
+arbitrary code. (CVE-2018-14048)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-12652<br>
+ - https://ubuntu.com/security/CVE-2018-14048<br>
+ - https://ubuntu.com/security/CVE-2017-12652<br>
+ - https://ubuntu.com/security/CVE-2018-14048<br>
+<br>
+**Title**: USN-5425-1: PCRE vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5425-1<br>
+**Priorities**: low,negligible<br>
+**Description**:<br>
+  Yunho Kim discovered that PCRE incorrectly handled memory when <br>
+handling certain regular expressions. An attacker could possibly use<br>
+this issue to cause applications using PCRE to expose sensitive<br>
+information. This issue only affects Ubuntu 18.04 LTS, <br>
+Ubuntu 20.04 LTS, Ubuntu 21.10 and Ubuntu 22.04 LTS. (CVE-2019-20838)<br>
+<br>
+It was discovered that PCRE incorrectly handled memory when <br>
+handling certain regular expressions. An attacker could possibly use<br>
+this issue to cause applications using PCRE to have unexpected <br>
+behavior. This issue only affects Ubuntu 14.04 ESM, Ubuntu 16.04 ESM,<br>
+Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2020-14155)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-20838<br>
+ - https://ubuntu.com/security/CVE-2020-14155<br>
+ - https://ubuntu.com/security/CVE-2020-14155<br>
+ - https://ubuntu.com/security/CVE-2019-20838<br>
+<br>
+**Title**: USN-5421-1: LibTIFF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5421-1<br>
+**Priorities**: negligible,low,medium<br>
+**Description**:<br>
+  It was discovered that LibTIFF incorrectly handled certain images.<br>
+An attacker could possibly use this issue to cause a crash,<br>
+resulting in a denial of service. This issue only affects <br>
+Ubuntu 14.04 ESM, Ubuntu 16.04 ESM, Ubuntu 18.04 LTS and<br>
+Ubuntu 20.04 LTS. (CVE-2020-35522)<br>
+<br>
+Chintan Shah discovered that LibTIFF incorrectly handled memory when<br>
+handling certain images. An attacker could possibly use this issue to <br>
+cause a crash, resulting in a denial of service, or possibly execute<br>
+arbitrary code. (CVE-2022-0561, CVE-2022-0562, CVE-2022-0891)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled certain images.<br>
+An attacker could possibly use this issue to cause a crash,<br>
+resulting in a denial of service. This issue only affects <br>
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS and Ubuntu 21.10. (CVE-2022-0865)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-35522<br>
+ - https://ubuntu.com/security/CVE-2022-0561<br>
+ - https://ubuntu.com/security/CVE-2022-0562<br>
+ - https://ubuntu.com/security/CVE-2022-0891<br>
+ - https://ubuntu.com/security/CVE-2022-0865<br>
+ - https://ubuntu.com/security/CVE-2022-0891<br>
+ - https://ubuntu.com/security/CVE-2022-0562<br>
+ - https://ubuntu.com/security/CVE-2022-0561<br>
+ - https://ubuntu.com/security/CVE-2020-35522<br>
+ - https://ubuntu.com/security/CVE-2022-0865<br>
+<br>
+**Title**: USN-5423-2: ClamAV vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5423-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-5423-1 fixed several vulnerabilities in ClamAV. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and 16.04 ESM.<br>
+<br>
+<br>
+Original advisory details:<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing CHM files.<br>
+ A remote attacker could possibly use this issue to cause ClamAV to stop<br>
+ responding, resulting in a denial of service.  (CVE-2022-20770)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing TIFF<br>
+ files. A remote attacker could possibly use this issue to cause ClamAV to<br>
+ stop responding, resulting in a denial of service. (CVE-2022-20771)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing HTML<br>
+ files. A remote attacker could possibly use this issue to cause ClamAV to<br>
+ consume resources, resulting in a denial of service. (CVE-2022-20785)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled loading the<br>
+ signature database. A remote attacker could possibly use this issue to<br>
+ cause ClamAV to crash, resulting in a denial of service, or possibly<br>
+ execute arbitrary code. (CVE-2022-20792)<br>
+<br>
+ Alexander Patrakov and Antoine Gatineau discovered that ClamAV incorrectly<br>
+ handled the scan verdict cache check. A remote attacker could possibly use<br>
+ this issue to cause ClamAV to crash, resulting in a denial of service, or<br>
+ possibly execute arbitrary code.(CVE-2022-20796)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-20770<br>
+ - https://ubuntu.com/security/CVE-2022-20771<br>
+ - https://ubuntu.com/security/CVE-2022-20785<br>
+ - https://ubuntu.com/security/CVE-2022-20792<br>
+ - https://ubuntu.com/security/CVE-2022-20796<br>
+ - https://ubuntu.com/security/CVE-2022-20771<br>
+ - https://ubuntu.com/security/CVE-2022-20796<br>
+ - https://ubuntu.com/security/CVE-2022-20785<br>
+ - https://ubuntu.com/security/CVE-2022-20792<br>
+ - https://ubuntu.com/security/CVE-2022-20770<br>
+<br>
+**Title**: USN-5424-2: OpenLDAP vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5424-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5424-1 fixed a vulnerability in OpenLDAP. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that OpenLDAP incorrectly handled certain SQL statements<br>
+ within LDAP queries in the experimental back-sql backend. A remote attacker<br>
+ could possibly use this issue to perform an SQL injection attack and alter<br>
+ the database.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29155<br>
+<br>
+**Title**: USN-5443-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5443-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the Network Queuing and Scheduling subsystem of<br>
+the Linux kernel did not properly perform reference counting in some<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or execute<br>
+arbitrary code. (CVE-2022-29581)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly enforce seccomp<br>
+restrictions in some situations. A local attacker could use this to bypass<br>
+intended seccomp sandbox restrictions. (CVE-2022-30594)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594
 
 #### <a id="621-241"></a> 621.241
 
@@ -8632,6 +8803,196 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456.x line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-267"></a> 456.267
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: May 25, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.63<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5428-1: libXrandr vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5428-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Tobias Stoeckmann discovered that libXrandr incorrectly handled certain<br>
+responses. An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+(CVE-2016-7947, CVE-2016-7948)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-7947<br>
+ - https://ubuntu.com/security/CVE-2016-7948<br>
+ - https://ubuntu.com/security/CVE-2016-7947<br>
+ - https://ubuntu.com/security/CVE-2016-7948<br>
+<br>
+**Title**: USN-5436-1: libXrender vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5436-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Tobias Stoeckmann discovered that libXrender incorrectly handled certain<br>
+responses. An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+(CVE-2016-7949, CVE-2016-7950)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-7949<br>
+ - https://ubuntu.com/security/CVE-2016-7950<br>
+ - https://ubuntu.com/security/CVE-2016-7950<br>
+ - https://ubuntu.com/security/CVE-2016-7949<br>
+<br>
+**Title**: USN-5432-1: libpng vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5432-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that libpng incorrectly handled memory when parsing<br>
+certain PNG files. If a user or automated system were tricked into opening<br>
+a specially crafted PNG file, an attacker could use this issue to cause<br>
+libpng to crash, resulting in a denial of service, or possible execute<br>
+arbitrary code. (CVE-2017-12652)<br>
+<br>
+Zhengxiong Luo discovered that libpng incorrectly handled memory when parsing<br>
+certain PNG files. If a user or automated system were tricked into opening<br>
+a specially crafted PNG file, an attacker could use this issue to cause<br>
+libpng to crash, resulting in a denial of service, or possible execute<br>
+arbitrary code. (CVE-2018-14048)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-12652<br>
+ - https://ubuntu.com/security/CVE-2018-14048<br>
+ - https://ubuntu.com/security/CVE-2017-12652<br>
+ - https://ubuntu.com/security/CVE-2018-14048<br>
+<br>
+**Title**: USN-5425-1: PCRE vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5425-1<br>
+**Priorities**: low,negligible<br>
+**Description**:<br>
+  Yunho Kim discovered that PCRE incorrectly handled memory when <br>
+handling certain regular expressions. An attacker could possibly use<br>
+this issue to cause applications using PCRE to expose sensitive<br>
+information. This issue only affects Ubuntu 18.04 LTS, <br>
+Ubuntu 20.04 LTS, Ubuntu 21.10 and Ubuntu 22.04 LTS. (CVE-2019-20838)<br>
+<br>
+It was discovered that PCRE incorrectly handled memory when <br>
+handling certain regular expressions. An attacker could possibly use<br>
+this issue to cause applications using PCRE to have unexpected <br>
+behavior. This issue only affects Ubuntu 14.04 ESM, Ubuntu 16.04 ESM,<br>
+Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2020-14155)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-20838<br>
+ - https://ubuntu.com/security/CVE-2020-14155<br>
+ - https://ubuntu.com/security/CVE-2020-14155<br>
+ - https://ubuntu.com/security/CVE-2019-20838<br>
+<br>
+**Title**: USN-5421-1: LibTIFF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5421-1<br>
+**Priorities**: negligible,low,medium<br>
+**Description**:<br>
+  It was discovered that LibTIFF incorrectly handled certain images.<br>
+An attacker could possibly use this issue to cause a crash,<br>
+resulting in a denial of service. This issue only affects <br>
+Ubuntu 14.04 ESM, Ubuntu 16.04 ESM, Ubuntu 18.04 LTS and<br>
+Ubuntu 20.04 LTS. (CVE-2020-35522)<br>
+<br>
+Chintan Shah discovered that LibTIFF incorrectly handled memory when<br>
+handling certain images. An attacker could possibly use this issue to <br>
+cause a crash, resulting in a denial of service, or possibly execute<br>
+arbitrary code. (CVE-2022-0561, CVE-2022-0562, CVE-2022-0891)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled certain images.<br>
+An attacker could possibly use this issue to cause a crash,<br>
+resulting in a denial of service. This issue only affects <br>
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS and Ubuntu 21.10. (CVE-2022-0865)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-35522<br>
+ - https://ubuntu.com/security/CVE-2022-0561<br>
+ - https://ubuntu.com/security/CVE-2022-0562<br>
+ - https://ubuntu.com/security/CVE-2022-0891<br>
+ - https://ubuntu.com/security/CVE-2022-0865<br>
+ - https://ubuntu.com/security/CVE-2022-0891<br>
+ - https://ubuntu.com/security/CVE-2022-0562<br>
+ - https://ubuntu.com/security/CVE-2022-0561<br>
+ - https://ubuntu.com/security/CVE-2020-35522<br>
+ - https://ubuntu.com/security/CVE-2022-0865<br>
+<br>
+**Title**: USN-5423-2: ClamAV vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5423-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-5423-1 fixed several vulnerabilities in ClamAV. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and 16.04 ESM.<br>
+<br>
+<br>
+Original advisory details:<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing CHM files.<br>
+ A remote attacker could possibly use this issue to cause ClamAV to stop<br>
+ responding, resulting in a denial of service.  (CVE-2022-20770)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing TIFF<br>
+ files. A remote attacker could possibly use this issue to cause ClamAV to<br>
+ stop responding, resulting in a denial of service. (CVE-2022-20771)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled parsing HTML<br>
+ files. A remote attacker could possibly use this issue to cause ClamAV to<br>
+ consume resources, resulting in a denial of service. (CVE-2022-20785)<br>
+<br>
+ Michał Dardas discovered that ClamAV incorrectly handled loading the<br>
+ signature database. A remote attacker could possibly use this issue to<br>
+ cause ClamAV to crash, resulting in a denial of service, or possibly<br>
+ execute arbitrary code. (CVE-2022-20792)<br>
+<br>
+ Alexander Patrakov and Antoine Gatineau discovered that ClamAV incorrectly<br>
+ handled the scan verdict cache check. A remote attacker could possibly use<br>
+ this issue to cause ClamAV to crash, resulting in a denial of service, or<br>
+ possibly execute arbitrary code.(CVE-2022-20796)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-20770<br>
+ - https://ubuntu.com/security/CVE-2022-20771<br>
+ - https://ubuntu.com/security/CVE-2022-20785<br>
+ - https://ubuntu.com/security/CVE-2022-20792<br>
+ - https://ubuntu.com/security/CVE-2022-20796<br>
+ - https://ubuntu.com/security/CVE-2022-20771<br>
+ - https://ubuntu.com/security/CVE-2022-20796<br>
+ - https://ubuntu.com/security/CVE-2022-20785<br>
+ - https://ubuntu.com/security/CVE-2022-20792<br>
+ - https://ubuntu.com/security/CVE-2022-20770<br>
+<br>
+**Title**: USN-5424-2: OpenLDAP vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5424-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5424-1 fixed a vulnerability in OpenLDAP. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that OpenLDAP incorrectly handled certain SQL statements<br>
+ within LDAP queries in the experimental back-sql backend. A remote attacker<br>
+ could possibly use this issue to perform an SQL injection attack and alter<br>
+ the database.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29155<br>
+<br>
+**Title**: USN-5443-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5443-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the Network Queuing and Scheduling subsystem of<br>
+the Linux kernel did not properly perform reference counting in some<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or execute<br>
+arbitrary code. (CVE-2022-29581)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly enforce seccomp<br>
+restrictions in some situations. A local attacker could use this to bypass<br>
+intended seccomp sandbox restrictions. (CVE-2022-30594)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594
 
 #### <a id="456-265"></a> 456.265
 
