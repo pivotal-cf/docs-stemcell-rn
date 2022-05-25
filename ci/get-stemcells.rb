@@ -5,10 +5,6 @@ require 'base64'
 
 
 STEMCELL_RELEASES = {
-  jammy: {
-    tanzunet_uri: 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-jammy/releases',
-    supported_lines: %w(0),
-  },
   xenial: {
     tanzunet_uri: 'https://network.pivotal.io/api/v2/products/stemcells-ubuntu-xenial/releases',
     supported_lines: %w(621 456),
