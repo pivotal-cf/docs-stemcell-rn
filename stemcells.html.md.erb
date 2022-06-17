@@ -15,6 +15,85 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-252"></a> 621.252
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 17, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.80<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5477-1: ncurses vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5477-1<br>
+**Priorities**: negligible,low<br>
+**Description**:<br>
+  Hosein Askari discovered that ncurses was incorrectly performing<br>
+memory management operations when dealing with long filenames while<br>
+writing structures into the file system. An attacker could possibly<br>
+use this issue to cause a denial of service or execute arbitrary<br>
+code. (CVE-2017-16879)<br>
+<br>
+Chung-Yi Lin discovered that ncurses was incorrectly handling access<br>
+to invalid memory areas when parsing terminfo or termcap entries where<br>
+the use-name had invalid syntax. An attacker could possibly use this<br>
+issue to cause a denial of service. (CVE-2018-19211)<br>
+<br>
+It was discovered that ncurses was incorrectly performing bounds<br>
+checks when processing invalid hashcodes. An attacker could possibly<br>
+use this issue to cause a denial of service or to expose sensitive<br>
+information. (CVE-2019-17594)<br>
+<br>
+It was discovered that ncurses was incorrectly handling<br>
+end-of-string characters when processing terminfo and termcap files.<br>
+An attacker could possibly use this issue to cause a denial of<br>
+service or to expose sensitive information. (CVE-2019-17595)<br>
+<br>
+It was discovered that ncurses was incorrectly handling<br>
+end-of-string characters when converting between termcap and<br>
+terminfo formats. An attacker could possibly use this issue to cause<br>
+a denial of service or execute arbitrary code. (CVE-2021-39537)<br>
+<br>
+It was discovered that ncurses was incorrectly performing bounds<br>
+checks when dealing with corrupt terminfo data while reading a<br>
+terminfo file. An attacker could possibly use this issue to cause a<br>
+denial of service or to expose sensitive information.<br>
+(CVE-2022-29458)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-16879<br>
+ - https://ubuntu.com/security/CVE-2018-19211<br>
+ - https://ubuntu.com/security/CVE-2019-17594<br>
+ - https://ubuntu.com/security/CVE-2019-17595<br>
+ - https://ubuntu.com/security/CVE-2021-39537<br>
+ - https://ubuntu.com/security/CVE-2022-29458<br>
+ - https://ubuntu.com/security/CVE-2017-16879<br>
+ - https://ubuntu.com/security/CVE-2018-19211<br>
+ - https://ubuntu.com/security/CVE-2019-17595<br>
+ - https://ubuntu.com/security/CVE-2019-17594<br>
+ - https://ubuntu.com/security/CVE-2022-29458<br>
+ - https://ubuntu.com/security/CVE-2021-39537<br>
+<br>
+**Title**: LSN-0087-1: Kernel Live Patch Security Notice<br>
+**URL**: https://ubuntu.com/security/notices/LSN-0087-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Aaron Adams discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle the removal of stateful expressions in some situations,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.(CVE-2022-1966)<br>
+<br>
+Ziming Zhang discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate sets with multiple ranged fields. A local<br>
+attacker could use this to cause a denial of service or execute arbitrary<br>
+code.(CVE-2022-1972)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1966<br>
+ - https://ubuntu.com/security/CVE-2022-1972<br>
+ - https://ubuntu.com/security/CVE-2022-1972<br>
+ - https://ubuntu.com/security/CVE-2022-1966
+
 #### <a id="621-251"></a> 621.251
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -9261,6 +9340,85 @@ BOSH Agent version: 2.268.3
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456.x line of Linux stemcells used with <%= vars.platform_name %>.
+
+#### <a id="456-274"></a> 456.274
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 17, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.66<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5477-1: ncurses vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5477-1<br>
+**Priorities**: negligible,low<br>
+**Description**:<br>
+  Hosein Askari discovered that ncurses was incorrectly performing<br>
+memory management operations when dealing with long filenames while<br>
+writing structures into the file system. An attacker could possibly<br>
+use this issue to cause a denial of service or execute arbitrary<br>
+code. (CVE-2017-16879)<br>
+<br>
+Chung-Yi Lin discovered that ncurses was incorrectly handling access<br>
+to invalid memory areas when parsing terminfo or termcap entries where<br>
+the use-name had invalid syntax. An attacker could possibly use this<br>
+issue to cause a denial of service. (CVE-2018-19211)<br>
+<br>
+It was discovered that ncurses was incorrectly performing bounds<br>
+checks when processing invalid hashcodes. An attacker could possibly<br>
+use this issue to cause a denial of service or to expose sensitive<br>
+information. (CVE-2019-17594)<br>
+<br>
+It was discovered that ncurses was incorrectly handling<br>
+end-of-string characters when processing terminfo and termcap files.<br>
+An attacker could possibly use this issue to cause a denial of<br>
+service or to expose sensitive information. (CVE-2019-17595)<br>
+<br>
+It was discovered that ncurses was incorrectly handling<br>
+end-of-string characters when converting between termcap and<br>
+terminfo formats. An attacker could possibly use this issue to cause<br>
+a denial of service or execute arbitrary code. (CVE-2021-39537)<br>
+<br>
+It was discovered that ncurses was incorrectly performing bounds<br>
+checks when dealing with corrupt terminfo data while reading a<br>
+terminfo file. An attacker could possibly use this issue to cause a<br>
+denial of service or to expose sensitive information.<br>
+(CVE-2022-29458)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-16879<br>
+ - https://ubuntu.com/security/CVE-2018-19211<br>
+ - https://ubuntu.com/security/CVE-2019-17594<br>
+ - https://ubuntu.com/security/CVE-2019-17595<br>
+ - https://ubuntu.com/security/CVE-2021-39537<br>
+ - https://ubuntu.com/security/CVE-2022-29458<br>
+ - https://ubuntu.com/security/CVE-2017-16879<br>
+ - https://ubuntu.com/security/CVE-2018-19211<br>
+ - https://ubuntu.com/security/CVE-2019-17595<br>
+ - https://ubuntu.com/security/CVE-2019-17594<br>
+ - https://ubuntu.com/security/CVE-2022-29458<br>
+ - https://ubuntu.com/security/CVE-2021-39537<br>
+<br>
+**Title**: LSN-0087-1: Kernel Live Patch Security Notice<br>
+**URL**: https://ubuntu.com/security/notices/LSN-0087-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Aaron Adams discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle the removal of stateful expressions in some situations,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.(CVE-2022-1966)<br>
+<br>
+Ziming Zhang discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate sets with multiple ranged fields. A local<br>
+attacker could use this to cause a denial of service or execute arbitrary<br>
+code.(CVE-2022-1972)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1966<br>
+ - https://ubuntu.com/security/CVE-2022-1972<br>
+ - https://ubuntu.com/security/CVE-2022-1972<br>
+ - https://ubuntu.com/security/CVE-2022-1966
 
 #### <a id="456-273"></a> 456.273
 
