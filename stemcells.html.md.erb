@@ -9758,6 +9758,19 @@ USNs:<br>
 **CVEs:**<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
+#### <a id="621-5"></a> 621.5
+
+**Release Date**: October 31, 2019
+
+New stemcell line!<br>
+<br>
+* rev the `stemcell_api_version` to 3 for upcoming signed url feature - https://www.pivotaltracker.com/epic/show/4392899<br>
+* blacklist nouveau kernel module (#96)<br>
+<br>
+---<br>
+<br>
+BOSH Agent version: 2.268.3
+
 ### <a id="456-line"></a> 456.x 
 
 This section includes release notes for the 456.x line of Linux stemcells used with <%= vars.platform_name %>.
@@ -19377,6 +19390,16 @@ Sander Bos discovered a race-condition in Apport during core dump creation. This
 **CVEs:**<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
+#### <a id="456-51"></a> 456.51
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: October 29, 2019
+
+BOSH Agent version: 2.234.5<br>
+<br>
+Addresses CVE-2019-17596
+
 #### <a id="456-40"></a> 456.40
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -19587,6 +19610,86 @@ It was discovered that the Python documentation XML-RPC server incorrectly handl
 
 BOSH Agent version: 2.234.2<br>
 USNs:
+
+#### <a id="456-27"></a> 456.27
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 24, 2019
+
+BOSH Agent version: 2.234.2<br>
+USNs:
+
+#### <a id="456-25"></a> 456.25
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 19, 2019
+
+BOSH Agent version: 2.117.13<br>
+USNs:<br>
+    <br>
+**Title:** USN-4128-1: Tomcat vulnerabilities<br>
+**URL:** https://usn.ubuntu.com/4128-1/<br>
+**Priorities:** low,medium<br>
+**Description:**<br>
+  It was discovered that the Tomcat 8 SSI printenv command echoed user provided data without escaping it. An attacker could possibly use this issue to perform an XSS attack. (CVE-2019-0221)<br>
+It was discovered that Tomcat 8 did not address HTTP/2 connection window exhaustion on write while addressing CVE-2019-0199. An attacker could possibly use...<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0221<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-10072<br>
+<br>
+**Title:** USN-4133-1: Wireshark vulnerabilities<br>
+**URL:** https://usn.ubuntu.com/4133-1/<br>
+**Priorities:** low,medium<br>
+**Description:**<br>
+  It was discovered that Wireshark improperly handled certain input. A remote or local attacker could cause Wireshark to crash by injecting malformed packets onto the wire or convincing someone to read a malformed packet trace file.<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12295<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13619<br>
+<br>
+**Title:** USN-4134-1: IBus vulnerability<br>
+**URL:** https://usn.ubuntu.com/4134-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  Simon McVittie discovered that IBus did not enforce appropriate access controls on its private D-Bus socket. A local unprivileged user who discovers the IBus socket address of another user could exploit this to capture the key strokes of the other user.<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14822<br>
+<br>
+**Title:** USN-4115-2: Linux kernel regression<br>
+**URL:** https://usn.ubuntu.com/4115-2<br>
+**Description:**<br>
+  USN 4115-1 introduced a regression in the Linux kernel<br>
+**CVEs:**<br>
+<br>
+**Title:** USN-4135-1: Linux kernel vulnerabilities<br>
+**URL:** https://usn.ubuntu.com/4135-1/<br>
+**Priorities:** high,medium<br>
+**Description:**<br>
+  Peter Pi discovered a buffer overflow in the virtio network backend (vhost_net) implementation in the Linux kernel. An attacker in a guest may be able to use this to cause a denial of service (host OS crash) or possibly execute arbitrary code in the host OS. (CVE-2019-14835)<br>
+It was discovered that the Linux kernel on PowerPC architectures did...<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14835<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15030<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15031<br>
+<br>
+**Title:** USN-4132-1: Expat vulnerability<br>
+**URL:** https://usn.ubuntu.com/4132-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that Expat incorrectly handled certain XML files. An attacker could possibly use this issue to expose sensitive information.<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15903<br>
+<br>
+**Title:** USN-4129-1: curl vulnerabilities<br>
+**URL:** https://usn.ubuntu.com/4129-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  Thomas Vegas discovered that curl incorrectly handled memory when using Kerberos over FTP.  A remote attacker could use this issue to crash curl, resulting in a denial of service. (CVE-2019-5481)<br>
+Thomas Vegas discovered that curl incorrectly handled memory during TFTP transfers. A remote attacker could use this issue to crash curl, resulting in a...<br>
+**CVEs:**<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5481<br>
+- https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5482
 
 #### <a id="456-22"></a> 456.22
 
