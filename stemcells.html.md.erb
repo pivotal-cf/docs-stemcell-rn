@@ -8675,6 +8675,267 @@ It was discovered that curl incorrectly handled certain parameters. An attacker 
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8177<br>
 
 
+#### <a id="621-78"></a> 621.78
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 30, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.16<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4427-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4427-1<br>
+**Priorities**: low,medium,negligible<br>
+**Description**:<br>
+  It was discovered that the Kvaser CAN/USB driver in the Linux kernel did not properly initialize memory in certain situations. A local attacker could possibly use this to expose sensitive information (kernel memory). (CVE-2019-19947)<br>
+Chuhong Yuan discovered that go7007 USB audio device driver in the Linux kernel did not properly deallocate memory...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12380<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974<br>
+<br>
+**Title**: USN-4426-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4426-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Jason A. Donenfeld discovered that the ACPI implementation in the Linux kernel did not properly restrict loading SSDT code from an EFI variable. A privileged attacker could use this to bypass Secure Boot lockdown restrictions and execute arbitrary code in the kernel. (CVE-2019-20908)<br>
+Fan Yang discovered that the mremap implementation in the Linux...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10757<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15780<br>
+<br>
+**Title**: USN-4436-1: librsvg vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4436-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that librsvg incorrectly handled parsing certain SVG files. A remote attacker could possibly use this issue to cause librsvg to crash, resulting in a denial of service. This issue only affected Ubuntu 16.04 LTS. (CVE-2017-11464)<br>
+It was discovered that librsvg incorrectly handled parsing certain SVG files with nested patterns. A...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11464<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20446<br>
+<br>
+**Title**: USN-4435-1: ClamAV vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4435-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that ClamAV incorrectly handled parsing ARJ archives. A remote attacker could possibly use this issue to cause ClamAV to crash, resulting in a denial of service. (CVE-2020-3327)<br>
+It was discovered that ClamAV incorrectly handled scanning malicious files. A local attacker could possibly use this issue to delete arbitrary...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3327<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3350<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-3481<br>
+<br>
+**Title**: USN-4434-1: LibVNCServer vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4434-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Ramin Farajpour Cami discovered that LibVNCServer incorrectly handled certain malformed unix socket names. A remote attacker could exploit this with a crafted socket name, leading to a denial of service, or possibly execute arbitrary code. (CVE-2019-20839)<br>
+It was discovered that LibVNCServer did not properly access byte-aligned data. A remote...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20839<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20840<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14396<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14397<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14398<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14399<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14400<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14401<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14402<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14403<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14404<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14405<br>
+<br>
+**Title**: USN-4431-1: FFmpeg vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4431-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that FFmpeg incorrectly verified empty audio packets or HEVC data. An attacker could possibly use this issue to cause a denial of service via a crafted file. This issue only affected Ubuntu 16.04 LTS, as it was already fixed in Ubuntu 18.04 LTS. For more information see: https://usn.ubuntu.com/usn/usn-3967-1 (CVE-2018-15822,...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15822<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11338<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12730<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13312<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13390<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17539<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17542<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12284<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13904<br>
+<br>
+**Title**: USN-4428-1: Python vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4428-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that Python documentation had a misleading information. A security issue could be possibly caused by wrong assumptions of this information. This issue only affected Ubuntu 12.04 ESM, Ubuntu 14.04 ESM, Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2019-17514)<br>
+It was discovered that Python incorrectly handled certain TAR...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17514<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20907<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9674<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14422<br>
+<br>
+**Title**: USN-4424-1: snapd vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4424-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that cloud-init as managed by snapd on Ubuntu Core 16 and Ubuntu Core 18 devices ran on every boot without restrictions. A physical attacker could exploit this to craft cloud-init user-data/meta-data via external media to perform arbitrary changes on the device to bypass intended security mechanisms such as full disk encryption....<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11933<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11934<br>
+<br>
+**Title**: USN-4421-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4421-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were tricked in to opening a specially crafted website in a browsing context, an attacker could potentially exploit these to cause a denial of service, obtain sensitive information, or execute arbtirary code. (CVE-2020-12405, CVE-2020-12406, CVE-2020-12410, CVE-2020-12417,...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12398<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12399<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12405<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12406<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12410<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12417<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12418<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12419<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12420<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12421<br>
+<br>
+**Title**: USN-4419-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4419-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the Precision Time Protocol (PTP) implementation in the Linux kernel, leading to a use-after- free vulnerability. A local attacker could possibly use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-10690)<br>
+Matthew Sheets discovered that the SELinux...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10690<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10711<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12770<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13143<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8992<br>
+<br>
+**Title**: USN-4414-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4414-1<br>
+**Priorities**: low,medium,negligible<br>
+**Description**:<br>
+  It was discovered that the network block device (nbd) implementation in the Linux kernel did not properly check for error conditions in some situations. An attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16089)<br>
+It was discovered that the btrfs file system implementation in the Linux kernel did not properly...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12380<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16089<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19036<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19039<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19318<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19377<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19462<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10711<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12770<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13143<br>
+<br>
+**Title**: USN-4416-1: GNU C Library vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4416-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Florian Weimer discovered that the GNU C Library incorrectly handled certain memory operations. A remote attacker could use this issue to cause the GNU C Library to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 16.04 LTS. (CVE-2017-12133)<br>
+It was discovered that the GNU C Library...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12133<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-18269<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-11236<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-11237<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19591<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-6485<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19126<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9169<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10029<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1751<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1752<br>
+<br>
+**Title**: USN-4415-1: coTURN vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4415-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Felix Dörre discovered that coTURN response buffer is not initialized properly. An attacker could possibly use this issue to obtain sensitive information. (CVE-2020-4067)<br>
+It was discovered that coTURN web server incorrectly handled HTTP POST requests. An attacker could possibly use this issue to cause a denial of service, obtain sensitive...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4067<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6061<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6062<br>
+<br>
+**Title**: USN-4408-1: Firefox vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4408-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, obtain sensitive information, bypass permission prompts, or execute arbitrary code. (CVE-2020-12415, CVE-2020-12416, CVE-2020-12417,...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12415<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12416<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12417<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12418<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12419<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12420<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12421<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12422<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12424<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12425<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12426<br>
+<br>
+**Title**: USN-4409-1: Samba vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4409-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Andrew Bartlett discovered that Samba incorrectly handled certain LDAP queries. A remote attacker could use this issue to cause Samba to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 18.04 LTS, Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-10730)<br>
+Douglas Bagnall discovered that Samba...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10730<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10745<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10760<br>
+<br>
+**Title**: USN-4407-1: LibVNCServer vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4407-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that LibVNCServer incorrectly handled decompressing data. An attacker could possibly use this issue to cause LibVNCServer to crash, resulting in a denial of service. (CVE-2019-15680)<br>
+It was discovered that an information disclosure vulnerability existed in LibVNCServer when sending a ServerCutText message. An attacker could...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-18922<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15680<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15690<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20788<br>
+<br>
+**Title**: USN-4403-1: Mutt vulnerability and regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-4403-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Mutt incorrectly handled certain requests. An attacker could possibly use this issue to enable MITM attacks. (CVE-2020-14954)<br>
+This update also address a regression caused in the last update USN-4401-1. It only affected Ubuntu 12.04 ESM, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS and Ubuntu 19.10.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14954<br>
+<br>
+**Title**: USN-4402-1: curl vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4402-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Marek Szlagor, Gregory Jefferis and Jeroen Ooms discovered that curl incorrectly handled certain credentials. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-8169)<br>
+It was discovered that curl incorrectly handled certain parameters. An attacker could...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8169<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8177<br>
+
+
 #### <a id="621-77"></a> 621.77
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
