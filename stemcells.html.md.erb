@@ -21,6 +21,9 @@ This section includes release notes for the 621.x line of Linux stemcells used w
 
 **Release Date**: September 06, 2022
 
+#### Fixes<br>
+* There is an existing kernel bug in Xenial that can prevent the Precision Hardware Clock used in Azure stemcells from correctly tracking the time. To work around this problem we've changed the Azure stemcells to once again use the NTP servers in the config provided by BOSH. If your Azure network does not allow output NTP traffic to your configured NTP servers you may need to update your firewall rules to allow this traffic now.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.91<br>
 <br>
