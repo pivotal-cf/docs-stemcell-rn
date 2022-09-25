@@ -9966,212 +9966,6 @@ Kyungtae Kim discovered that the USB testing driver in the Linux kernel did not 
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393
 
-#### <a id="621-81"></a> 621.81
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: August 19, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.268.16<br>
-<br>
-#### USNs:<br>
-**Title**: USN-4427-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4427-1<br>
-**Priorities**: negligible,low,medium<br>
-**Description**:<br>
-  It was discovered that the Kvaser CAN/USB driver in the Linux kernel did not properly initialize memory in certain situations. A local attacker could possibly use this to expose sensitive information (kernel memory). (CVE-2019-19947)<br>
-Chuhong Yuan discovered that go7007 USB audio device driver in the Linux kernel did not properly deallocate memory...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12380<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974<br>
-<br>
-**Title**: USN-4446-1: Squid vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4446-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Jeriko One discovered that Squid incorrectly handled caching certain requests. A remote attacker could possibly use this issue to perform cache-injection attacks or gain access to reverse proxy features such as ESI. (CVE-2019-12520)<br>
-Jeriko One and Kristoffer Danielsson discovered that Squid incorrectly handled certain URN requests. A remote...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12520<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12523<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12524<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18676<br>
-<br>
-**Title**: USN-4426-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4426-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Jason A. Donenfeld discovered that the ACPI implementation in the Linux kernel did not properly restrict loading SSDT code from an EFI variable. A privileged attacker could use this to bypass Secure Boot lockdown restrictions and execute arbitrary code in the kernel. (CVE-2019-20908)<br>
-Fan Yang discovered that the mremap implementation in the Linux...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10757<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15780<br>
-<br>
-**Title**: USN-4432-1: GRUB 2 vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4432-1<br>
-**Priorities**: high,medium<br>
-**Description**:<br>
-  Jesse Michael and Mickey Shkatov discovered that the configuration parser in GRUB2 did not properly exit when errors were discovered, resulting in heap-based buffer overflows. A local attacker could use this to execute arbitrary code and bypass UEFI Secure Boot restrictions. (CVE-2020-10713)<br>
-Chris Coulson discovered that the GRUB2 function...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10713<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14308<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14309<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14310<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14311<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15705<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15706<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15707<br>
-<br>
-**Title**: USN-4449-1: Apport vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4449-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Ryota Shiga discovered that Apport incorrectly dropped privileges when making certain D-Bus calls. A local attacker could use this issue to read arbitrary files. (CVE-2020-11936)<br>
-Seong-Joong Kim discovered that Apport incorrectly parsed configuration files. A local attacker could use this issue to cause Apport to crash, resulting in a denial of...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11936<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15701<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15702<br>
-<br>
-**Title**: USN-4456-1: Dovecot vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4456-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Dovecot incorrectly handled deeply nested MIME parts. A remote attacker could possibly use this issue to cause Dovecot to consume resources, resulting in a denial of service. (CVE-2020-12100)<br>
-It was discovered that Dovecot incorrectly handled memory when using NTLM. A remote attacker could possibly use this issue to cause...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12100<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12673<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12674<br>
-<br>
-**Title**: USN-4455-1: NSS vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4455-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that NSS incorrectly handled certain signatures. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-12400, CVE-2020-12401, CVE-2020-6829)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12400<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12401<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6829<br>
-<br>
-**Title**: USN-4448-1: Tomcat vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4448-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  It was discovered that Tomcat incorrectly validated the payload length in a WebSocket frame. A remote attacker could possibly use this issue to cause Tomcat to hang, resulting in a denial of service. (CVE-2020-13935)<br>
-It was discovered that Tomcat incorrectly handled HTTP header parsing. In certain environments where Tomcat is located behind a...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9484<br>
-<br>
-**Title**: USN-4454-1: Samba vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4454-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Martin von Wittich and Wilko Meyer discovered that Samba incorrectly handled certain empty UDP packets when being used as a AD DC NBT server. A remote attacker could possibly use this issue to cause Samba to crash, resulting in a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14303<br>
-<br>
-**Title**: USN-4441-1: MySQL vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4441-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues.<br>
-MySQL has been updated to 8.0.21 in Ubuntu 20.04 LTS. Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.31.<br>
-In addition to security fixes, the updated packages contain bug fixes, new features, and...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14539<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14540<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14547<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14550<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14553<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14559<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14568<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14575<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14576<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14586<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14591<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14597<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14619<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14620<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14623<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14624<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14631<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14632<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14633<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14634<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14641<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14651<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14654<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14656<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14663<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14678<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14680<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14697<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14702<br>
-<br>
-**Title**: USN-4453-1: OpenJDK 8 vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4453-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Johannes Kuhn discovered that OpenJDK 8 incorrectly handled access control contexts. An attacker could possibly use this issue to execute arbitrary code. (CVE-2020-14556)<br>
-Philippe Arteau discovered that OpenJDK 8 incorrectly verified names in TLS server's X.509 certificates. An attacker could possibly use this issue to obtain sensitive...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14556<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14577<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14578<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14579<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14581<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14583<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14593<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14621<br>
-<br>
-**Title**: USN-4443-1: Firefox vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4443-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, obtain sensitive information, bypass iframe sandbox restrictions, confuse the user, or execute arbitrary code. (CVE-2020-6463, CVE-2020-6514,...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15652<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15653<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15654<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15655<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15656<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15658<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15659<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6463<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6514<br>
-<br>
-**Title**: USN-4451-1: ppp vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4451-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Thomas Chauchefoin working with Trend Micro´s Zero Day Initiative, discovered that ppp incorrectly handled module loading. A local attacker could use this issue to load arbitrary kernel modules and possibly execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15704<br>
-<br>
-**Title**: USN-4447-1: libssh vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4447-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that libssh incorrectly handled certain requests. An attacker could possibly use this issue to cause a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16135
-
 #### <a id="621-78"></a> 621.78
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -11950,6 +11744,37 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
+
+#### <a id="621-12"></a> 621.12
+
+**Release Date**: November 12, 2019
+
+BOSH Agent version: 2.268.5<br>
+USNs:<br>
+    <br>
+**Title:** USN-4176-1: GNU cpio vulnerability<br>
+**URL:** https://usn.ubuntu.com/4176-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866<br>
+<br>
+**Title:** USN-4174-1: HAproxy vulnerability<br>
+**URL:** https://usn.ubuntu.com/4174-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277<br>
+<br>
+**Title:** USN-4175-1: Nokogiri vulnerability<br>
+**URL:** https://usn.ubuntu.com/4175-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="621-12"></a> 621.12
 
@@ -20545,202 +20370,6 @@ Joseph Gullo discovered that Bind incorrectly handled QNAME minimization when us
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8623<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8624
 
-#### <a id="456-118"></a> 456.118
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: August 18, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4427-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4427-1<br>
-**Priorities**: negligible,low,medium<br>
-**Description**:<br>
-  It was discovered that the Kvaser CAN/USB driver in the Linux kernel did not properly initialize memory in certain situations. A local attacker could possibly use this to expose sensitive information (kernel memory). (CVE-2019-19947)<br>
-Chuhong Yuan discovered that go7007 USB audio device driver in the Linux kernel did not properly deallocate memory...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12380<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19947<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20810<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10732<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10766<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10767<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10768<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13974<br>
-<br>
-**Title**: USN-4446-1: Squid vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4446-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Jeriko One discovered that Squid incorrectly handled caching certain requests. A remote attacker could possibly use this issue to perform cache-injection attacks or gain access to reverse proxy features such as ESI. (CVE-2019-12520)<br>
-Jeriko One and Kristoffer Danielsson discovered that Squid incorrectly handled certain URN requests. A remote...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12520<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12523<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12524<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18676<br>
-<br>
-**Title**: USN-4426-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4426-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Jason A. Donenfeld discovered that the ACPI implementation in the Linux kernel did not properly restrict loading SSDT code from an EFI variable. A privileged attacker could use this to bypass Secure Boot lockdown restrictions and execute arbitrary code in the kernel. (CVE-2019-20908)<br>
-Fan Yang discovered that the mremap implementation in the Linux...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20908<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10757<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15780<br>
-<br>
-**Title**: USN-4432-1: GRUB 2 vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4432-1<br>
-**Priorities**: high,medium<br>
-**Description**:<br>
-  Jesse Michael and Mickey Shkatov discovered that the configuration parser in GRUB2 did not properly exit when errors were discovered, resulting in heap-based buffer overflows. A local attacker could use this to execute arbitrary code and bypass UEFI Secure Boot restrictions. (CVE-2020-10713)<br>
-Chris Coulson discovered that the GRUB2 function...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10713<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14308<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14309<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14310<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14311<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15705<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15706<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15707<br>
-<br>
-**Title**: USN-4449-1: Apport vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4449-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Ryota Shiga discovered that Apport incorrectly dropped privileges when making certain D-Bus calls. A local attacker could use this issue to read arbitrary files. (CVE-2020-11936)<br>
-Seong-Joong Kim discovered that Apport incorrectly parsed configuration files. A local attacker could use this issue to cause Apport to crash, resulting in a denial of...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11936<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15701<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15702<br>
-<br>
-**Title**: USN-4455-1: NSS vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4455-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that NSS incorrectly handled certain signatures. An attacker could possibly use this issue to expose sensitive information. (CVE-2020-12400, CVE-2020-12401, CVE-2020-6829)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12400<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12401<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6829<br>
-<br>
-**Title**: USN-4448-1: Tomcat vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4448-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  It was discovered that Tomcat incorrectly validated the payload length in a WebSocket frame. A remote attacker could possibly use this issue to cause Tomcat to hang, resulting in a denial of service. (CVE-2020-13935)<br>
-It was discovered that Tomcat incorrectly handled HTTP header parsing. In certain environments where Tomcat is located behind a...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9484<br>
-<br>
-**Title**: USN-4454-1: Samba vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4454-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Martin von Wittich and Wilko Meyer discovered that Samba incorrectly handled certain empty UDP packets when being used as a AD DC NBT server. A remote attacker could possibly use this issue to cause Samba to crash, resulting in a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14303<br>
-<br>
-**Title**: USN-4441-1: MySQL vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4441-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues.<br>
-MySQL has been updated to 8.0.21 in Ubuntu 20.04 LTS. Ubuntu 16.04 LTS and Ubuntu 18.04 LTS have been updated to MySQL 5.7.31.<br>
-In addition to security fixes, the updated packages contain bug fixes, new features, and...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14539<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14540<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14547<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14550<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14553<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14559<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14568<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14575<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14576<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14586<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14591<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14597<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14619<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14620<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14623<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14624<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14631<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14632<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14633<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14634<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14641<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14651<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14654<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14656<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14663<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14678<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14680<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14697<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14702<br>
-<br>
-**Title**: USN-4453-1: OpenJDK 8 vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4453-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Johannes Kuhn discovered that OpenJDK 8 incorrectly handled access control contexts. An attacker could possibly use this issue to execute arbitrary code. (CVE-2020-14556)<br>
-Philippe Arteau discovered that OpenJDK 8 incorrectly verified names in TLS server's X.509 certificates. An attacker could possibly use this issue to obtain sensitive...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14556<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14577<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14578<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14579<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14581<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14583<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14593<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14621<br>
-<br>
-**Title**: USN-4443-1: Firefox vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4443-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, obtain sensitive information, bypass iframe sandbox restrictions, confuse the user, or execute arbitrary code. (CVE-2020-6463, CVE-2020-6514,...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15652<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15653<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15654<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15655<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15656<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15658<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15659<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6463<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6514<br>
-<br>
-**Title**: USN-4451-1: ppp vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4451-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Thomas Chauchefoin working with Trend Micro´s Zero Day Initiative, discovered that ppp incorrectly handled module loading. A local attacker could use this issue to load arbitrary kernel modules and possibly execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15704<br>
-<br>
-**Title**: USN-4447-1: libssh vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4447-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that libssh incorrectly handled certain requests. An attacker could possibly use this issue to cause a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16135
-
 #### <a id="456-116"></a> 456.116
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -22544,6 +22173,76 @@ Sergej Schumilo, Cornelius Aschermann and Simon Wörner discovered that the qxl 
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16710<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16711<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16713
+
+#### <a id="456-58"></a> 456.58
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 12, 2019
+
+BOSH Agent version: 2.234.6<br>
+USNs:<br>
+    <br>
+**Title:** USN-4171-1: Apport vulnerabilities<br>
+**URL:** https://usn.ubuntu.com/4171-1/<br>
+**Priorities:** low,medium<br>
+**Description:**<br>
+  Kevin Backhouse discovered Apport would read its user-controlled settings file as the root user. This could be used by a local attacker to possibly crash Apport or have other unspecified consequences. (CVE-2019-11481)<br>
+Sander Bos discovered a race-condition in Apport during core dump creation. This could be used by a local attacker to generate a...<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11481<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11482<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11483<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11485<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15790<br>
+<br>
+**Title:** USN-4170-1: Whoopsie vulnerability<br>
+**URL:** https://usn.ubuntu.com/4170-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  Kevin Backhouse discovered Whoopsie incorrectly handled very large crash reports. A local attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute code as the whoopsie user.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11484<br>
+<br>
+**Title:** USN-4176-1: GNU cpio vulnerability<br>
+**URL:** https://usn.ubuntu.com/4176-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  Thomas Habets discovered that GNU cpio incorrectly handled certain inputs. An attacker could possibly use this issue to access sensitive information.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14866<br>
+<br>
+**Title:** USN-4172-1: file vulnerability<br>
+**URL:** https://usn.ubuntu.com/4172-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that file incorrectly handled certain malformed files. An attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18218<br>
+<br>
+**Title:** USN-4174-1: HAproxy vulnerability<br>
+**URL:** https://usn.ubuntu.com/4174-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that HAproxy incorrectly handled certain HTTP requests. An attacker could possibly use this issue to a privilege escalation (Request Smuggling).<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18277<br>
+<br>
+**Title:** USN-4169-1: libarchive vulnerability<br>
+**URL:** https://usn.ubuntu.com/4169-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that libarchive incorrectly handled certain archive files. An attacker could possibly execute arbitrary code.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18408<br>
+<br>
+**Title:** USN-4175-1: Nokogiri vulnerability<br>
+**URL:** https://usn.ubuntu.com/4175-1/<br>
+**Priorities:** medium<br>
+**Description:**<br>
+  It was discovered that Nokogiri incorrectly handled inputs. A remote attacker could possibly use this issue to execute arbitrary OS commands.<br>
+**CVEs:**<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-5477
 
 #### <a id="456-58"></a> 456.58
 
