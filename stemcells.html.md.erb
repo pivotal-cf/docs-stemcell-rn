@@ -2018,6 +2018,622 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-305"></a> 621.305
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: October 25, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.98<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5695-1: Linux kernel (GCP) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5695-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the SUNRPC RDMA protocol implementation in the Linux<br>
+kernel did not properly calculate the header size of a RPC message payload.<br>
+A local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2022-0812)<br>
+<br>
+Moshe Kol, Amit Klein and Yossi Gilad discovered that the IP implementation<br>
+in the Linux kernel did not provide sufficient randomization when<br>
+calculating port offsets. An attacker could possibly use this to expose<br>
+sensitive information. (CVE-2022-1012, CVE-2022-32296)<br>
+<br>
+Duoming Zhou discovered that race conditions existed in the timer handling<br>
+implementation of the Linux kernel's Rose X.25 protocol layer, resulting in<br>
+use-after-free vulnerabilities. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2022-2318)<br>
+<br>
+Roger Pau Monné discovered that the Xen virtual block driver in the Linux<br>
+kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-26365)<br>
+<br>
+Roger Pau Monné discovered that the Xen paravirtualization frontend in the<br>
+Linux kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-33740)<br>
+<br>
+It was discovered that the Xen paravirtualization frontend in the Linux<br>
+kernel incorrectly shared unrelated data when communicating with certain<br>
+backends. A local attacker could use this to cause a denial of service<br>
+(guest crash) or expose sensitive information (guest kernel memory).<br>
+(CVE-2022-33741, CVE-2022-33742)<br>
+<br>
+Oleksandr Tyshchenko discovered that the Xen paravirtualization platform in<br>
+the Linux kernel on ARM platforms contained a race condition in certain<br>
+situations. An attacker in a guest VM could use this to cause a denial of<br>
+service in the host OS. (CVE-2022-33744)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365
+
+#### <a id="621-304"></a> 621.304
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: October 25, 2022
+
+##Known Issues:<br>
+* This stemcell was removed from AWS regions and cannot be recovered making it unavailable to AWS light stemcell users. AWS light stemcell users should instead use the AWS heavy stemcell or v621.305. <br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.98<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5690-1: libXdmcp vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5690-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that libXdmcp was generating weak session keys.<br>
+A local attacker could possibly use this issue to perform a brute<br>
+force attack and obtain another user's key.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-2625<br>
+<br>
+**Title**: USN-5665-1: PCRE vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5665-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that PCRE incorrectly handled certain regular expressions.<br>
+A remote attacker could use this issue to cause applications using PCRE to<br>
+crash, resulting in a denial of service. (CVE-2017-6004)<br>
+<br>
+It was discovered that PCRE incorrectly handled certain Unicode encoding. A<br>
+remote attacker could use this issue to cause applications using PCRE to<br>
+crash, resulting in a denial of service. (CVE-2017-7186)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-6004<br>
+ - https://ubuntu.com/security/CVE-2017-7186<br>
+ - https://ubuntu.com/security/CVE-2017-7186<br>
+ - https://ubuntu.com/security/CVE-2017-6004<br>
+<br>
+**Title**: USN-5675-1: Heimdal vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5675-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Isaac Boukris and Andrew Bartlett discovered that Heimdal's KDC was<br>
+not properly performing checksum algorithm verifications in the<br>
+S4U2Self extension module. An attacker could possibly use this issue<br>
+to perform a machine-in-the-middle attack and request S4U2Self<br>
+tickets for any user known by the application. This issue only<br>
+affected Ubuntu 14.04 ESM, Ubuntu 16.04 ESM and Ubuntu 18.04 LTS.<br>
+(CVE-2018-16860)<br>
+<br>
+It was discovered that Heimdal was not properly handling the<br>
+verification of key exchanges when an anonymous PKINIT was being<br>
+used. An attacker could possibly use this issue to perform a<br>
+machine-in-the-middle attack and expose sensitive information.<br>
+This issue only affected Ubuntu 14.04 ESM, Ubuntu 16.04 ESM and<br>
+Ubuntu 18.04 LTS. (CVE-2019-12098)<br>
+<br>
+Joseph Sutton discovered that Heimdal was not properly handling<br>
+memory management operations when dealing with TGS-REQ tickets that<br>
+were missing information. An attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2021-3671)<br>
+<br>
+Michał Kępień discovered that Heimdal was not properly handling<br>
+logical conditions that related to memory management operations. An<br>
+attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2022-3116)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-16860<br>
+ - https://ubuntu.com/security/CVE-2019-12098<br>
+ - https://ubuntu.com/security/CVE-2021-3671<br>
+ - https://ubuntu.com/security/CVE-2022-3116<br>
+ - https://ubuntu.com/security/CVE-2018-16860<br>
+ - https://ubuntu.com/security/CVE-2022-3116<br>
+ - https://ubuntu.com/security/CVE-2019-12098<br>
+ - https://ubuntu.com/security/CVE-2021-3671<br>
+<br>
+**Title**: USN-5657-1: Graphite2 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5657-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Graphite2 mishandled specially crafted files. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+other unspecified impact.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-7999<br>
+<br>
+**Title**: USN-5656-1: JACK vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5656-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Joseph Yasi discovered that JACK incorrectly handled the closing of a socket<br>
+in certain conditions. An attacker could potentially use this issue to<br>
+cause a crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-13351<br>
+<br>
+**Title**: USN-5671-1: AdvanceCOMP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5671-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that AdvanceCOMP did not properly manage memory of function<br>
+be_uint32_read() under certain circumstances. If a user were tricked into<br>
+opening a specially crafted binary file, a remote attacker could possibly use<br>
+this issue to cause AdvanceCOMP to crash, resulting in a denial of service.<br>
+(CVE-2019-8379)<br>
+<br>
+It was discovered that AdvanceCOMP did not properly manage memory of function<br>
+adv_png_unfilter_8() under certain circumstances. If a user were tricked into<br>
+opening a specially crafted PNG file, a remote attacker could possibly use this<br>
+issue to cause AdvanceCOMP to crash, resulting in a denial of service.<br>
+(CVE-2019-8383)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-8379<br>
+ - https://ubuntu.com/security/CVE-2019-8383<br>
+ - https://ubuntu.com/security/CVE-2019-8379<br>
+ - https://ubuntu.com/security/CVE-2019-8383<br>
+<br>
+**Title**: USN-5371-3: nginx vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5371-3<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  USN-5371-1 and USN-5371-2 fixed several vulnerabilities in nginx.<br>
+This update provides the corresponding update for CVE-2020-11724<br>
+for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that nginx Lua module mishandled certain inputs.<br>
+ An attacker could possibly use this issue to perform an HTTP Request<br>
+ Smuggling attack. This issue was fixed for Ubuntu 18.04 LTS and<br>
+ Ubuntu 20.04 LTS. (CVE-2020-11724)<br>
+ <br>
+ It was discovered that nginx Lua module mishandled certain inputs.<br>
+ An attacker could possibly use this issue to disclose sensitive<br>
+ information. This issue only affects Ubuntu 18.04 LTS and<br>
+ Ubuntu 20.04 LTS. (CVE-2020-36309)<br>
+ <br>
+ It was discovered that nginx mishandled the use of <br>
+ compatible certificates among multiple encryption protocols. <br>
+ If a remote attacker were able to intercept the communication, <br>
+ this issue could be used to redirect traffic between subdomains.<br>
+ (CVE-2021-3618)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-11724<br>
+ - https://ubuntu.com/security/CVE-2020-11724<br>
+ - https://ubuntu.com/security/CVE-2020-36309<br>
+ - https://ubuntu.com/security/CVE-2021-3618<br>
+ - https://ubuntu.com/security/CVE-2020-11724<br>
+<br>
+**Title**: USN-5689-1: Perl vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5689-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Perl incorrectly handled certain signature verification.<br>
+An remote attacker could possibly use this issue to bypass signature verification.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-16156<br>
+<br>
+**Title**: USN-5650-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5650-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that the framebuffer driver on the Linux kernel did not<br>
+verify size limits when changing font or screen size, leading to an out-of-<br>
+bounds write. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2021-33655)<br>
+<br>
+It was discovered that the virtual terminal driver in the Linux kernel did<br>
+not properly handle VGA console font changes, leading to an out-of-bounds<br>
+write. A local attacker could use this to cause a denial of service (system<br>
+crash) or possibly execute arbitrary code. (CVE-2021-33656)<br>
+<br>
+Christian Brauner discovered that the XFS file system implementation in the<br>
+Linux kernel did not properly handle setgid file creation. A local attacker<br>
+could use this to gain elevated privileges. (CVE-2021-4037)<br>
+<br>
+It was discovered that the ext4 file system implementation in the Linux<br>
+kernel did not properly initialize memory in some situations. A privileged<br>
+local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2022-0850)<br>
+<br>
+Duoming Zhou discovered that the AX.25 amateur radio protocol<br>
+implementation in the Linux kernel did not handle detach events properly in<br>
+some situations. A local attacker could possibly use this to cause a denial<br>
+of service (system crash) or execute arbitrary code. (CVE-2022-1199)<br>
+<br>
+Duoming Zhou discovered race conditions in the AX.25 amateur radio protocol<br>
+implementation in the Linux kernel during device detach operations. A local<br>
+attacker could possibly use this to cause a denial of service (system<br>
+crash). (CVE-2022-1204)<br>
+<br>
+Norbert Slusarek discovered that a race condition existed in the perf<br>
+subsystem in the Linux kernel, resulting in a use-after-free vulnerability.<br>
+A privileged local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-1729)<br>
+<br>
+It was discovered that the Packet network protocol implementation in the<br>
+Linux kernel contained an out-of-bounds access. A remote attacker could use<br>
+this to expose sensitive information (kernel memory). (CVE-2022-20368)<br>
+<br>
+It was discovered that the Open vSwitch implementation in the Linux kernel<br>
+contained an out of bounds write vulnerability in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-2639)<br>
+<br>
+Jann Horn discovered that the ASIX AX88179/178A USB Ethernet driver in the<br>
+Linux kernel contained multiple out-of-bounds vulnerabilities. A local<br>
+attacker with physical access could plug in a specially crafted USB device<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2022-2964)<br>
+<br>
+Hao Sun and Jiacheng Xu discovered that the NILFS file system<br>
+implementation in the Linux kernel contained a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-2978)<br>
+<br>
+Abhishek Shah discovered a race condition in the PF_KEYv2 implementation in<br>
+the Linux kernel. A local attacker could use this to cause a denial of<br>
+service (system crash) or possibly expose sensitive information (kernel<br>
+memory). (CVE-2022-3028)<br>
+<br>
+It was discovered that the Journaled File System (JFS) in the Linux kernel<br>
+contained a null pointer dereference in some situations. A local attacker<br>
+could use this to cause a denial of service (system crash). (CVE-2022-3202)<br>
+<br>
+Domingo Dirutigliano and Nicola Guerrera discovered that the netfilter<br>
+subsystem in the Linux kernel did not properly handle rules that truncated<br>
+packets below the packet header size. When such rules are in place, a<br>
+remote attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2022-36946)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33655<br>
+ - https://ubuntu.com/security/CVE-2021-33656<br>
+ - https://ubuntu.com/security/CVE-2021-4037<br>
+ - https://ubuntu.com/security/CVE-2022-0850<br>
+ - https://ubuntu.com/security/CVE-2022-1199<br>
+ - https://ubuntu.com/security/CVE-2022-1204<br>
+ - https://ubuntu.com/security/CVE-2022-1729<br>
+ - https://ubuntu.com/security/CVE-2022-20368<br>
+ - https://ubuntu.com/security/CVE-2022-2639<br>
+ - https://ubuntu.com/security/CVE-2022-2964<br>
+ - https://ubuntu.com/security/CVE-2022-2978<br>
+ - https://ubuntu.com/security/CVE-2022-3028<br>
+ - https://ubuntu.com/security/CVE-2022-3202<br>
+ - https://ubuntu.com/security/CVE-2022-36946<br>
+ - https://ubuntu.com/security/CVE-2021-4037<br>
+ - https://ubuntu.com/security/CVE-2022-36946<br>
+ - https://ubuntu.com/security/CVE-2021-33655<br>
+ - https://ubuntu.com/security/CVE-2022-0850<br>
+ - https://ubuntu.com/security/CVE-2022-1204<br>
+ - https://ubuntu.com/security/CVE-2022-1199<br>
+ - https://ubuntu.com/security/CVE-2021-33656<br>
+ - https://ubuntu.com/security/CVE-2022-20368<br>
+ - https://ubuntu.com/security/CVE-2022-2964<br>
+ - https://ubuntu.com/security/CVE-2022-3202<br>
+ - https://ubuntu.com/security/CVE-2022-2978<br>
+ - https://ubuntu.com/security/CVE-2022-3028<br>
+ - https://ubuntu.com/security/CVE-2022-1729<br>
+ - https://ubuntu.com/security/CVE-2022-2639<br>
+<br>
+**Title**: USN-5652-1: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5652-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the framebuffer driver on the Linux kernel did not<br>
+verify size limits when changing font or screen size, leading to an out-of-<br>
+bounds write. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2021-33655)<br>
+<br>
+Domingo Dirutigliano and Nicola Guerrera discovered that the netfilter<br>
+subsystem in the Linux kernel did not properly handle rules that truncated<br>
+packets below the packet header size. When such rules are in place, a<br>
+remote attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2022-36946)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33655<br>
+ - https://ubuntu.com/security/CVE-2022-36946<br>
+ - https://ubuntu.com/security/CVE-2022-36946<br>
+ - https://ubuntu.com/security/CVE-2021-33655<br>
+<br>
+**Title**: USN-5614-2: Wayland vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5614-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5614-1 fixed a vulnerability in Wayland. This update<br>
+provides the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Wayland incorrectly handled reference counting<br>
+ certain objects. An attacker could use this issue to cause Wayland to<br>
+ crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-3782<br>
+<br>
+**Title**: USN-5666-1: OpenSSH vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5666-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that OpenSSH incorrectly handled certain helper programs.<br>
+An attacker could possibly use this issue to arbitrary code execution.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-41617<br>
+<br>
+**Title**: USN-5673-1: unzip vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5673-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that unzip did not properly handle unicode strings under<br>
+certain circumstances. If a user were tricked into opening a specially crafted<br>
+zip file, an attacker could possibly use this issue to cause unzip to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. <br>
+(CVE-2021-4217)<br>
+<br>
+It was discovered that unzip did not properly perform bounds checking while<br>
+converting wide strings to local strings. If a user were tricked into opening a<br>
+specially crafted zip file, an attacker could possibly use this issue to cause<br>
+unzip to crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2022-0529, CVE-2022-0530)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4217<br>
+ - https://ubuntu.com/security/CVE-2022-0529<br>
+ - https://ubuntu.com/security/CVE-2022-0530<br>
+ - https://ubuntu.com/security/CVE-2022-0529<br>
+ - https://ubuntu.com/security/CVE-2021-4217<br>
+ - https://ubuntu.com/security/CVE-2022-0530<br>
+<br>
+**Title**: USN-5669-2: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5669-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the SUNRPC RDMA protocol implementation in the Linux<br>
+kernel did not properly calculate the header size of a RPC message payload.<br>
+A local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2022-0812)<br>
+<br>
+Moshe Kol, Amit Klein and Yossi Gilad discovered that the IP implementation<br>
+in the Linux kernel did not provide sufficient randomization when<br>
+calculating port offsets. An attacker could possibly use this to expose<br>
+sensitive information. (CVE-2022-1012, CVE-2022-32296)<br>
+<br>
+Duoming Zhou discovered that race conditions existed in the timer handling<br>
+implementation of the Linux kernel's Rose X.25 protocol layer, resulting in<br>
+use-after-free vulnerabilities. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2022-2318)<br>
+<br>
+Roger Pau Monné discovered that the Xen virtual block driver in the Linux<br>
+kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-26365)<br>
+<br>
+Roger Pau Monné discovered that the Xen paravirtualization frontend in the<br>
+Linux kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-33740)<br>
+<br>
+It was discovered that the Xen paravirtualization frontend in the Linux<br>
+kernel incorrectly shared unrelated data when communicating with certain<br>
+backends. A local attacker could use this to cause a denial of service<br>
+(guest crash) or expose sensitive information (guest kernel memory).<br>
+(CVE-2022-33741, CVE-2022-33742)<br>
+<br>
+Oleksandr Tyshchenko discovered that the Xen paravirtualization platform in<br>
+the Linux kernel on ARM platforms contained a race condition in certain<br>
+situations. An attacker in a guest VM could use this to cause a denial of<br>
+service in the host OS. (CVE-2022-33744)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+<br>
+**Title**: USN-5679-1: Linux kernel (HWE) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5679-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the SUNRPC RDMA protocol implementation in the Linux<br>
+kernel did not properly calculate the header size of a RPC message payload.<br>
+A local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2022-0812)<br>
+<br>
+Moshe Kol, Amit Klein and Yossi Gilad discovered that the IP implementation<br>
+in the Linux kernel did not provide sufficient randomization when<br>
+calculating port offsets. An attacker could possibly use this to expose<br>
+sensitive information. (CVE-2022-1012, CVE-2022-32296)<br>
+<br>
+Duoming Zhou discovered that race conditions existed in the timer handling<br>
+implementation of the Linux kernel's Rose X.25 protocol layer, resulting in<br>
+use-after-free vulnerabilities. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2022-2318)<br>
+<br>
+Roger Pau Monné discovered that the Xen virtual block driver in the Linux<br>
+kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-26365)<br>
+<br>
+Roger Pau Monné discovered that the Xen paravirtualization frontend in the<br>
+Linux kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-33740)<br>
+<br>
+It was discovered that the Xen paravirtualization frontend in the Linux<br>
+kernel incorrectly shared unrelated data when communicating with certain<br>
+backends. A local attacker could use this to cause a denial of service<br>
+(guest crash) or expose sensitive information (guest kernel memory).<br>
+(CVE-2022-33741, CVE-2022-33742)<br>
+<br>
+Oleksandr Tyshchenko discovered that the Xen paravirtualization platform in<br>
+the Linux kernel on ARM platforms contained a race condition in certain<br>
+situations. An attacker in a guest VM could use this to cause a denial of<br>
+service in the host OS. (CVE-2022-33744)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+<br>
+**Title**: USN-5684-1: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5684-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the SUNRPC RDMA protocol implementation in the Linux<br>
+kernel did not properly calculate the header size of a RPC message payload.<br>
+A local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2022-0812)<br>
+<br>
+Moshe Kol, Amit Klein and Yossi Gilad discovered that the IP implementation<br>
+in the Linux kernel did not provide sufficient randomization when<br>
+calculating port offsets. An attacker could possibly use this to expose<br>
+sensitive information. (CVE-2022-1012, CVE-2022-32296)<br>
+<br>
+Duoming Zhou discovered that race conditions existed in the timer handling<br>
+implementation of the Linux kernel's Rose X.25 protocol layer, resulting in<br>
+use-after-free vulnerabilities. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2022-2318)<br>
+<br>
+Roger Pau Monné discovered that the Xen virtual block driver in the Linux<br>
+kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-26365)<br>
+<br>
+Roger Pau Monné discovered that the Xen paravirtualization frontend in the<br>
+Linux kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-33740)<br>
+<br>
+It was discovered that the Xen paravirtualization frontend in the Linux<br>
+kernel incorrectly shared unrelated data when communicating with certain<br>
+backends. A local attacker could use this to cause a denial of service<br>
+(guest crash) or expose sensitive information (guest kernel memory).<br>
+(CVE-2022-33741, CVE-2022-33742)<br>
+<br>
+Oleksandr Tyshchenko discovered that the Xen paravirtualization platform in<br>
+the Linux kernel on ARM platforms contained a race condition in certain<br>
+situations. An attacker in a guest VM could use this to cause a denial of<br>
+service in the host OS. (CVE-2022-33744)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-33741<br>
+ - https://ubuntu.com/security/CVE-2022-32296<br>
+ - https://ubuntu.com/security/CVE-2022-1012<br>
+ - https://ubuntu.com/security/CVE-2022-33740<br>
+ - https://ubuntu.com/security/CVE-2022-33744<br>
+ - https://ubuntu.com/security/CVE-2022-33742<br>
+ - https://ubuntu.com/security/CVE-2022-0812<br>
+ - https://ubuntu.com/security/CVE-2022-2318<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+<br>
+**Title**: USN-5676-1: PostgreSQL vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5676-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Alexander Lakhin discovered that PostgreSQL incorrectly handled the<br>
+security restricted operation sandbox when a privileged user is maintaining<br>
+another user’s objects. An attacker having permission to create non-temp<br>
+objects can use this issue to execute arbitrary commands as the superuser.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1552<br>
+<br>
+**Title**: USN-5688-1: Libksba vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5688-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  It was discovered that an integer overflow could be triggered in Libksba<br>
+when decoding certain data. An attacker could use this issue to cause a<br>
+denial of service (application crash) or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-3515<br>
+<br>
+**Title**: USN-5651-2: strongSwan vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5651-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5651-1 fixed a vulnerability in strongSwan. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Lahav Schlesinger discovered that strongSwan incorrectly handled certain OCSP URIs and<br>
+ and CRL distribution points (CDP) in certificates. A remote attacker could<br>
+ possibly use this issue to initiate IKE_SAs and send crafted certificates<br>
+ that contain URIs pointing to servers under their control, which can lead<br>
+ to a denial-of-service attack.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40617
+
 #### <a id="621-296"></a> 621.296
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
