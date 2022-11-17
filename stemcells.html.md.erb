@@ -15,6 +15,264 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-49"></a> 1.49
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 17, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.475.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5719-1: OpenJDK vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5719-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that OpenJDK incorrectly handled long client hostnames.<br>
+An attacker could possibly use this issue to cause the corruption of<br>
+sensitive information. (CVE-2022-21619)<br>
+<br>
+It was discovered that OpenJDK incorrectly randomized DNS port numbers. A<br>
+remote attacker could possibly use this issue to perform spoofing attacks.<br>
+(CVE-2022-21624)<br>
+<br>
+It was discovered that OpenJDK did not limit the number of connections<br>
+accepted from HTTP clients. An attacker could possibly use this issue to<br>
+cause a denial of service. (CVE-2022-21628)<br>
+<br>
+It was discovered that OpenJDK incorrectly handled X.509 certificates. An<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected OpenJDK 8 and OpenJDK 11. (CVE-2022-21626)<br>
+<br>
+It was discovered that OpenJDK incorrectly handled cached server<br>
+connections. An attacker could possibly use this issue to perform spoofing<br>
+attacks. This issue only affected OpenJDK 11, OpenJDK 17 and OpenJDK 19.<br>
+(CVE-2022-39399)<br>
+<br>
+It was discovered that OpenJDK incorrectly handled byte conversions. An<br>
+attacker could possibly use this issue to obtain sensitive information.<br>
+This issue only affected OpenJDK 11, OpenJDK 17 and OpenJDK 19.<br>
+(CVE-2022-21618)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-21619<br>
+ - https://ubuntu.com/security/CVE-2022-21624<br>
+ - https://ubuntu.com/security/CVE-2022-21628<br>
+ - https://ubuntu.com/security/CVE-2022-21626<br>
+ - https://ubuntu.com/security/CVE-2022-39399<br>
+ - https://ubuntu.com/security/CVE-2022-21618<br>
+ - https://ubuntu.com/security/CVE-2022-21618<br>
+ - https://ubuntu.com/security/CVE-2022-21626<br>
+ - https://ubuntu.com/security/CVE-2022-39399<br>
+ - https://ubuntu.com/security/CVE-2022-21628<br>
+ - https://ubuntu.com/security/CVE-2022-21619<br>
+ - https://ubuntu.com/security/CVE-2022-21624<br>
+<br>
+**Title**: USN-5714-1: LibTIFF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5714-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that LibTIFF incorrectly handled certain memory operations<br>
+when using tiffcrop. An attacker could trick a user into processing a specially<br>
+crafted tiff image file and potentially use this issue to cause a denial of<br>
+service. This issue only affected Ubuntu 22.10. (CVE-2022-2519, CVE-2022-2520,<br>
+CVE-2022-2521, CVE-2022-2953)<br>
+<br>
+It was discovered that LibTIFF did not properly perform bounds checking in<br>
+certain operations when using tiffcrop. An attacker could trick a user into<br>
+processing a specially crafted tiff image file and potentially use this issue<br>
+to allow for information disclosure or to cause the application to crash. This<br>
+issue only affected to Ubuntu 18.04 LTS, Ubuntu 20.04 LTS and Ubuntu 22.04 LTS.<br>
+(CVE-2022-2867, CVE-2022-2868, CVE-2022-2869)<br>
+<br>
+It was discovered that LibTIFF did not properly perform bounds checking in<br>
+certain operations when using tiffsplit. An attacker could trick a user into<br>
+processing a specially crafted tiff image file and potentially use this issue<br>
+to allow for information disclosure or to cause the application to crash. This<br>
+issue only affected to Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-34526)<br>
+<br>
+Chintan Shah discovered that LibTIFF incorrectly handled memory in certain<br>
+conditions when using tiffcrop. An attacker could trick a user into processing<br>
+a specially crafted image file and potentially use this issue to allow for<br>
+information disclosure or to cause the application to crash. This issue only<br>
+affected to Ubuntu 14.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04<br>
+LTS and Ubuntu 22.10. (CVE-2022-3570)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled memory in certain conditions<br>
+when using tiffcrop. An attacker could trick a user into processing a specially<br>
+crafted tiff file and potentially use this issue to cause a denial of service.<br>
+This issue only affected to Ubuntu 14.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04<br>
+LTS, Ubuntu 22.04 LTS and Ubuntu 22.10. (CVE-2022-3598)<br>
+<br>
+It was discovered that LibTIFF did not properly perform bounds checking in      <br>
+certain operations when using tiffcrop. An attacker could trick a user into     <br>
+processing a specially crafted tiff image file and potentially use this issue   <br>
+to allow for information disclosure or to cause the application to crash.<br>
+(CVE-2022-3599)<br>
+<br>
+It was discovered that LibTIFF did not properly perform bounds checking in<br>
+certain operations when using tiffcrop. An attacker could trick a user into<br>
+processing a specially crafted tiff image file and potentially use this issue<br>
+to allow for information disclosure or to cause the application to crash. This<br>
+issue only affected to Ubuntu 22.10. (CVE-2022-3626, CVE-2022-3627)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2519<br>
+ - https://ubuntu.com/security/CVE-2022-2520<br>
+ - https://ubuntu.com/security/CVE-2022-2521<br>
+ - https://ubuntu.com/security/CVE-2022-2953<br>
+ - https://ubuntu.com/security/CVE-2022-2867<br>
+ - https://ubuntu.com/security/CVE-2022-2868<br>
+ - https://ubuntu.com/security/CVE-2022-2869<br>
+ - https://ubuntu.com/security/CVE-2022-34526<br>
+ - https://ubuntu.com/security/CVE-2022-3570<br>
+ - https://ubuntu.com/security/CVE-2022-3598<br>
+ - https://ubuntu.com/security/CVE-2022-3599<br>
+ - https://ubuntu.com/security/CVE-2022-3626<br>
+ - https://ubuntu.com/security/CVE-2022-3627<br>
+ - https://ubuntu.com/security/CVE-2022-2869<br>
+ - https://ubuntu.com/security/CVE-2022-3627<br>
+ - https://ubuntu.com/security/CVE-2022-3599<br>
+ - https://ubuntu.com/security/CVE-2022-2519<br>
+ - https://ubuntu.com/security/CVE-2022-3598<br>
+ - https://ubuntu.com/security/CVE-2022-34526<br>
+ - https://ubuntu.com/security/CVE-2022-2867<br>
+ - https://ubuntu.com/security/CVE-2022-2868<br>
+ - https://ubuntu.com/security/CVE-2022-2520<br>
+ - https://ubuntu.com/security/CVE-2022-2521<br>
+ - https://ubuntu.com/security/CVE-2022-3570<br>
+ - https://ubuntu.com/security/CVE-2022-2953<br>
+ - https://ubuntu.com/security/CVE-2022-3626<br>
+<br>
+**Title**: USN-5717-1: PHP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5717-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PHP incorrectly handled certain gzip files.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2022-31628)<br>
+<br>
+It was discovered that PHP incorrectly handled certain cookies.<br>
+An attacker could possibly use this issue to compromise the data<br>
+(CVE-2022-31629)<br>
+<br>
+It was discovered that PHP incorrectly handled certain image fonts.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+This issue only affected Ubuntu 20.04 LTS, Ubuntu 22.10, and Ubuntu 22.04 LTS.<br>
+(CVE-2022-31630)<br>
+<br>
+Nicky Mouha discovered that PHP incorrectly handled certain SHA-3 operations.<br>
+An attacker could possibly use this issue to cause a crash<br>
+or execute arbitrary code. This issue only affected Ubuntu 20.04 LTS,<br>
+Ubuntu 22.10, and Ubuntu 22.04 LTS. (CVE-2022-37454)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-31628<br>
+ - https://ubuntu.com/security/CVE-2022-31629<br>
+ - https://ubuntu.com/security/CVE-2022-31630<br>
+ - https://ubuntu.com/security/CVE-2022-37454<br>
+ - https://ubuntu.com/security/CVE-2022-31630<br>
+ - https://ubuntu.com/security/CVE-2022-37454<br>
+ - https://ubuntu.com/security/CVE-2022-31628<br>
+ - https://ubuntu.com/security/CVE-2022-31629<br>
+<br>
+**Title**: USN-5724-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5724-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+bypass Content Security Policy (CSP) or other security restrictions, or<br>
+execute arbitrary code. These issues only affect Ubuntu 18.04 LTS, Ubuntu<br>
+20.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-3266, CVE-2022-40956,<br>
+CVE-2022-40957, CVE-2022-40958, CVE-2022-40959, CVE-2022-40960,<br>
+CVE-2022-40962)<br>
+<br>
+Multiple security issues were discovered in the Matrix SDK bundled with<br>
+Thunderbird. An attacker could potentially exploit these in order to<br>
+impersonate another user. These issues only affect Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-39236, CVE-2022-39249,<br>
+CVE-2022-39250, CVE-2022-39251)<br>
+<br>
+Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+obtain sensitive information, or execute arbitrary code. (CVE-2022-42927,<br>
+CVE-2022-42928, CVE-2022-42929, CVE-2022-42932)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-3266<br>
+ - https://ubuntu.com/security/CVE-2022-40956<br>
+ - https://ubuntu.com/security/CVE-2022-40957<br>
+ - https://ubuntu.com/security/CVE-2022-40958<br>
+ - https://ubuntu.com/security/CVE-2022-40959<br>
+ - https://ubuntu.com/security/CVE-2022-40960<br>
+ - https://ubuntu.com/security/CVE-2022-40962<br>
+ - https://ubuntu.com/security/CVE-2022-39236<br>
+ - https://ubuntu.com/security/CVE-2022-39249<br>
+ - https://ubuntu.com/security/CVE-2022-39250<br>
+ - https://ubuntu.com/security/CVE-2022-39251<br>
+ - https://ubuntu.com/security/CVE-2022-42927<br>
+ - https://ubuntu.com/security/CVE-2022-42928<br>
+ - https://ubuntu.com/security/CVE-2022-42929<br>
+ - https://ubuntu.com/security/CVE-2022-42932<br>
+ - https://ubuntu.com/security/CVE-2022-40956<br>
+ - https://ubuntu.com/security/CVE-2022-39236<br>
+ - https://ubuntu.com/security/CVE-2022-42928<br>
+ - https://ubuntu.com/security/CVE-2022-39251<br>
+ - https://ubuntu.com/security/CVE-2022-40962<br>
+ - https://ubuntu.com/security/CVE-2022-42927<br>
+ - https://ubuntu.com/security/CVE-2022-39249<br>
+ - https://ubuntu.com/security/CVE-2022-3266<br>
+ - https://ubuntu.com/security/CVE-2022-42932<br>
+ - https://ubuntu.com/security/CVE-2022-40958<br>
+ - https://ubuntu.com/security/CVE-2022-40957<br>
+ - https://ubuntu.com/security/CVE-2022-40960<br>
+ - https://ubuntu.com/security/CVE-2022-39250<br>
+ - https://ubuntu.com/security/CVE-2022-42929<br>
+ - https://ubuntu.com/security/CVE-2022-40959<br>
+<br>
+**Title**: USN-5716-1: SQLite vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5716-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that SQLite incorrectly handled certain long string<br>
+arguments. An attacker could use this issue to cause SQLite to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-35737<br>
+<br>
+**Title**: USN-5711-1: NTFS-3G vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5711-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Yuchen Zeng and Eduardo Vela discovered that NTFS-3G incorrectly validated<br>
+certain NTFS metadata. A local attacker could possibly use this issue to<br>
+gain privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40284<br>
+<br>
+**Title**: USN-5713-1: Python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5713-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Devin Jeanpierre discovered that Python incorrectly handled sockets when<br>
+the multiprocessing module was being used. A local attacker could possibly<br>
+use this issue to execute arbitrary code and escalate privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-42919<br>
+<br>
+**Title**: USN-5718-1: pixman vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5718-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Maddie Stone discovered that pixman incorrectly handled certain memory<br>
+operations. A remote attacker could use this issue to cause pixman to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-44638
+
 #### <a id="jammy-1-44"></a> 1.44
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
