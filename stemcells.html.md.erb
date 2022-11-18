@@ -10734,6 +10734,146 @@ resulting in a denial of service, or possibly execute arbitrary code.<br>
 
 **Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
 
+#### <a id="621-107"></a> 621.107
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 24, 2021
+
+**Known Issues**: <br>
+<br>
+This version of the stemcell has the following issues when used on GCP:<br>
+* Attempts to use `cf ssh` timeout. <br>
+* The `iptables-logger` job fails to deploy<br>
+<br>
+This is because rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.<br>
+<br>
+This issue is fixed in stemcell version 621.109.<br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.19<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4728-1: snapd vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4728-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Gilad Reti discovered that snapd did not correctly specify cgroup<br>
+delegation when generating systemd service units for various container<br>
+management snaps. This could allow a local attacker to escalate privileges<br>
+via access to arbitrary devices of the container host from within a<br>
+compromised or malicious container.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27352<br>
+<br>
+**Title**: USN-4718-1: fastd vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4718-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that fastd incorrectly handled certain packets.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27638<br>
+<br>
+**Title**: USN-4729-1: Open vSwitch vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4729-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Joakim Hindersson discovered that Open vSwitch incorrectly parsed certain<br>
+network packets. A remote attacker could use this issue to cause a denial<br>
+of service, or possibly alter packet classification.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35498<br>
+<br>
+**Title**: USN-4724-1: OpenLDAP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4724-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that OpenLDAP incorrectly handled Certificate Exact<br>
+Assertion processing. A remote attacker could possibly use this issue to<br>
+cause OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36221)<br>
+<br>
+It was discovered that OpenLDAP incorrectly handled saslAuthzTo processing.<br>
+A remote attacker could use this issue to cause OpenLDAP to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code.<br>
+(CVE-2020-36222, CVE-2020-36224, CVE-2020-36225, CVE-2020-36226)<br>
+<br>
+It was discovered that OpenLDAP incorrectly handled Return Filter control<br>
+handling. A remote attacker could use this issue to cause OpenLDAP to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2020-36223)<br>
+<br>
+It was discovered that OpenLDAP incorrectly handled certain cancel<br>
+operations. A remote attacker could possibly use this issue to cause<br>
+OpenLDAP to crash, resulting in a denial of service. (CVE-2020-36227)<br>
+<br>
+It was discovered that OpenLDAP incorrectly handled Certificate List<br>
+Extract Assertion processing. A remote attacker could possibly use this<br>
+issue to cause OpenLDAP to crash, resulting in a denial of service.<br>
+(CVE-2020-36228)<br>
+<br>
+It was discovered that OpenLDAP incorrectly handled X.509 DN parsing. A<br>
+remote attacker could possibly use this issue to cause OpenLDAP to crash,<br>
+resulting in a denial of service. (CVE-2020-36229, CVE-2020-36230)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36223<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36226<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36227<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36230<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36221<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36229<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36224<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36225<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36228<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-36222<br>
+<br>
+**Title**: USN-4737-1: Bind vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4737-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Bind incorrectly handled GSSAPI security policy<br>
+negotiation. A remote attacker could use this issue to cause Bind to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. In<br>
+the default installation, attackers would be isolated by the Bind AppArmor<br>
+profile.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8625<br>
+<br>
+**Title**: USN-4734-1: wpa_supplicant and hostapd vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4734-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that wpa_supplicant did not properly handle P2P<br>
+(Wi-Fi Direct) group information in some situations, leading to a<br>
+heap overflow. A physically proximate attacker could use this to cause a<br>
+denial of service or possibly execute arbitrary code. (CVE-2021-0326)<br>
+<br>
+It was discovered that hostapd did not properly handle UPnP subscribe<br>
+messages in some circumstances. An attacker could use this to cause a<br>
+denial of service. (CVE-2020-12695)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-0326<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12695<br>
+<br>
+**Title**: USN-4720-1: Apport vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4720-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Itai Greenhut discovered that Apport incorrectly parsed certain files in<br>
+the /proc filesystem. A local attacker could use this issue to escalate<br>
+privileges and run arbitrary code. (CVE-2021-25682, CVE-2021-25683)<br>
+<br>
+Itai Greenhut discovered that Apport incorrectly handled opening certain<br>
+special files. A local attacker could possibly use this issue to cause<br>
+Apport to hang, resulting in a denial of service. (CVE-2021-25684)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25683<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25682<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25684
+
+**Known Issues**: When used on GCP, rsyslog is started before `/var/log` is mounted. This causes it to log to the root filesystem rather than the mounted persistent disk.
+
 #### <a id="621-101"></a> 621.101
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -12241,42 +12381,6 @@ It was discovered that Net-SNMP incorrectly handled certain inputs. An attacker 
   Fabian Vogt discovered that Ark incorrectly handled symbolic links in tar archive files. An attacker could use this to construct a malicious tar archive that, when opened, would create files outside the extraction directory.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24654
-
-#### <a id="621-82"></a> 621.82
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: August 21, 2020
-
-This release changes the way the Linux Google light stemcell works to reference a source image. It will lead to a decrease in the time it takes to upload the light stemcell. This change will also help mitigate the impact of the new [GCP image creation rate limit](https://cloud.google.com/compute/docs/disks/snapshot-best-practices#freq_limits) which any user uploading more than 6 GCP stemcells an hour would hit.<br>
-<br>
-#### Metadata:<br>
-**BOSH Agent Version**: 2.268.16<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4459-1: Salt vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4459-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Salt allows remote attackers to determine which files exist on the server. An attacker could use that to extract sensitive information. (CVE-2018-15750)<br>
-It was discovered that Salt has a vulnerability that allows an user to bypass authentication. An attacker could use that to extract sensitive information, execute abritrary...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15750<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15751<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17361<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11651<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11652<br>
-<br>
-**Title**: USN-4463-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4463-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  It was discovered that the bcache subsystem in the Linux kernel did not properly release a lock in some error conditions. A local attacker could possibly use this to cause a denial of service. (CVE-2020-12771)<br>
-Kyungtae Kim discovered that the USB testing driver in the Linux kernel did not properly deallocate memory on disconnect events. A...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393
 
 #### <a id="621-82"></a> 621.82
 
@@ -22784,114 +22888,6 @@ It was discovered that the Kvaser CAN/USB driver in the Linux kernel...<br>
   Fabian Vogt discovered that Ark incorrectly handled symbolic links in tar archive files. An attacker could use this to construct a malicious tar archive that, when opened, would create files outside the extraction directory.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24654
-
-#### <a id="456-119"></a> 456.119
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: August 27, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-This release changes the way the Linux Google light stemcell works to reference a source image. It will lead to a decrease in the time it takes to upload the light stemcell. This change will also help mitigate the impact of the new GCP image creation rate limit which any user uploading more than 6 GCP stemcells an hour would hit.<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4459-1: Salt vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4459-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Salt allows remote attackers to determine which files exist on the server. An attacker could use that to extract sensitive information. (CVE-2018-15750)<br>
-It was discovered that Salt has a vulnerability that allows an user to bypass authentication. An attacker could use that to extract sensitive information, execute abritrary...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15750<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15751<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17361<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11651<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11652<br>
-<br>
-**Title**: USN-4467-1: QEMU vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4467-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Ziming Zhang and VictorV discovered that the QEMU SLiRP networking implementation incorrectly handled replying to certain ICMP echo requests. An attacker inside a guest could possibly use this issue to leak host memory to obtain sensitive information. This issue only affected Ubuntu 18.04 LTS. (CVE-2020-10756)<br>
-Eric Blake and Xueqiang Wei...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10756<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10761<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12829<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13253<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13361<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13362<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13659<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13754<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13765<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13800<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14415<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15863<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16092<br>
-<br>
-**Title**: USN-4463-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4463-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  It was discovered that the bcache subsystem in the Linux kernel did not properly release a lock in some error conditions. A local attacker could possibly use this to cause a denial of service. (CVE-2020-12771)<br>
-Kyungtae Kim discovered that the USB testing driver in the Linux kernel did not properly deallocate memory on disconnect events. A...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12771<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15393<br>
-<br>
-**Title**: USN-4469-1: Ghostscript vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4469-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Ghostscript incorrectly handled certain document files. If a user or automated system were tricked into processing a specially crafted file, a remote attacker could use this issue to cause Ghostscript to crash, resulting in a denial of service, or possibly execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16287<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16288<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16289<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16290<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16291<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16292<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16293<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16294<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16295<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16296<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16297<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16298<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16299<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16300<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16301<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16302<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16303<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16304<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16305<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16306<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16307<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16308<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16309<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16310<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-17538<br>
-<br>
-**Title**: USN-4466-1: curl vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4466-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  Marc Aldorasi discovered that curl incorrectly handled the libcurl CURLOPT_CONNECT_ONLY option. This could result in data being sent to the wrong destination, possibly exposing sensitive information.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8231<br>
-<br>
-**Title**: USN-4468-1: Bind vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4468-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Emanuel Almeida discovered that Bind incorrectly handled certain TCP payloads. A remote attacker could possibly use this issue to cause Bind to crash, resulting in a denial of service. This issue only affected Ubuntu 20.04 LTS. (CVE-2020-8620)<br>
-Joseph Gullo discovered that Bind incorrectly handled QNAME minimization when used in certain...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8620<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8621<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8622<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8623<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8624
 
 #### <a id="456-119"></a> 456.119
 
