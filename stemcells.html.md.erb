@@ -26,15 +26,8 @@ This section includes release notes for the 1.x line of Linux stemcells used wit
 <br>
 #### What's Changed<br>
 <br>
-* rework rsyslog startup wait for /var/log mounting by @ramonskie in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/242<br>
-* Jammy stemcells include LLVM Clang Compiler by @cunnie in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/251<br>
-* fix rsyslog crash in case of connection abort by @h0nIg in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/254<br>
-* update xenserver guest tools for jammy stemcell by @psycofdj in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/257<br>
-* 🐞 Fix "Cannot connect to the monit daemon." by @cunnie in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/264<br>
-* Installing ethtool in Jammy by @danielfor in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/263<br>
-* Ubuntu Security Notices (USNs): see below<br>
-<br>
-**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.55...ubuntu-jammy/v1.64<br>
+* Fixed issue with BOSH service-broker tasks failing under heavy usage with error "Cannot connect to the monit daemon." https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/264<br>
+* Stemcells now include the networking utility, `ethtool`, useful for troubleshooting & resolving networking issues. https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/263<br>
 <br>
 #### USNs:<br>
 <br>
