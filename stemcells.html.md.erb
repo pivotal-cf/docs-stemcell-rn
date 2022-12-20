@@ -15,6 +15,156 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-75"></a> 1.75
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: December 20, 2022
+
+#### Metadata:<br>
+<br>
+**BOSH Agent Version**: 2.489.0<br>
+<br>
+#### What's Changed<br>
+<br>
+- The new BOSH Agent reliably identifies the root filesystem disk, reducing the chance of Agent timeouts on deploy.<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5780-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5780-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a memory leak existed in the IPv6 implementation of<br>
+the Linux kernel. A local attacker could use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2022-3524)<br>
+<br>
+It was discovered that the Bluetooth HCI implementation in the Linux kernel<br>
+did not properly deallocate memory in some situations. An attacker could<br>
+possibly use this cause a denial of service (memory exhaustion).<br>
+(CVE-2022-3619)<br>
+<br>
+It was discovered that the Broadcom FullMAC USB WiFi driver in the Linux<br>
+kernel did not properly perform bounds checking in some situations. A<br>
+physically proximate attacker could use this to craft a malicious USB<br>
+device that when inserted, could cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-3628)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP implementation in the<br>
+Linux kernel did not properly initialize memory in some situations. A<br>
+physically proximate attacker could possibly use this to expose sensitive<br>
+information (kernel memory). (CVE-2022-42895)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-42896)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3619<br>
+ - https://ubuntu.com/security/CVE-2022-3628<br>
+ - https://ubuntu.com/security/CVE-2022-42895<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3628<br>
+ - https://ubuntu.com/security/CVE-2022-42895<br>
+ - https://ubuntu.com/security/CVE-2022-3619<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+<br>
+**Title**: USN-5783-1: Linux kernel (OEM) vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5783-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+<br>
+**Title**: USN-5779-1: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5779-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly track memory<br>
+allocations for anonymous VMA mappings in some situations, leading to<br>
+potential data structure reuse. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-42703)<br>
+<br>
+It was discovered that a memory leak existed in the IPv6 implementation of<br>
+the Linux kernel. A local attacker could use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2022-3524)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel, leading to a use-after-free vulnerability. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-3564)<br>
+<br>
+It was discovered that the ISDN implementation of the Linux kernel<br>
+contained a use-after-free vulnerability. A privileged user could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2022-3565)<br>
+<br>
+It was discovered that the TCP implementation in the Linux kernel contained<br>
+a data race condition. An attacker could possibly use this to cause<br>
+undesired behaviors. (CVE-2022-3566)<br>
+<br>
+It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a data race condition. An attacker could possibly use this to<br>
+cause undesired behaviors. (CVE-2022-3567)<br>
+<br>
+It was discovered that the Realtek RTL8152 USB Ethernet adapter driver in<br>
+the Linux kernel did not properly handle certain error conditions. A local<br>
+attacker with physical access could plug in a specially crafted USB device<br>
+to cause a denial of service (memory exhaustion). (CVE-2022-3594)<br>
+<br>
+It was discovered that a null pointer dereference existed in the NILFS2<br>
+file system implementation in the Linux kernel. A local attacker could use<br>
+this to cause a denial of service (system crash). (CVE-2022-3621)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3565<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+ - https://ubuntu.com/security/CVE-2022-3594<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3594<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3565<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+<br>
+**Title**: USN-5778-1: X.Org X Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5778-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Jan-Niklas Sohn discovered that X.Org X Server extensions contained<br>
+multiple security issues. An attacker could possibly use these issues to<br>
+cause the X Server to crash, execute arbitrary code, or escalate<br>
+privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-46341<br>
+ - https://ubuntu.com/security/CVE-2022-46342<br>
+ - https://ubuntu.com/security/CVE-2022-46340<br>
+ - https://ubuntu.com/security/CVE-2022-4283<br>
+ - https://ubuntu.com/security/CVE-2022-46344<br>
+ - https://ubuntu.com/security/CVE-2022-46343<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.71...ubuntu-jammy/v1.75
+
 #### <a id="jammy-1-71"></a> 1.71
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
