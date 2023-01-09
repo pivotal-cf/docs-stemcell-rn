@@ -1,0 +1,44 @@
+---
+template_variables:
+  book_title: VMware Tanzu Documentation
+  book_title_short: VMware Tanzu Docs
+  title: <span class="title-deemph">VMware Tanzu</span> Documentation
+  title_image: images/icon-p-green.jpg
+  hero_text: "Detailed documentation to help you install, understand, and succeed with VMware Tanzu enterprise-grade software."
+  product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
+  product_url: https://network.pivotal.io/products/pivotal-cf
+  support_link: <a href="https://support.pivotal.io" target="_blank">Support</a>
+  support_call_to_action: <a href="https://support.pivotal.io" target="_blank">Need Support?</a>
+  support_url: https://support.pivotal.io
+
+  use_global_header: true
+  global_header_product_href: https://network.pivotal.io/
+  global_header_product_link_text: Downloads
+
+  current_major_version: "3-0"
+  v_major_version: "v3.0"
+  dot_major_version: "3.0"
+
+  api_version: "259"
+  gtm_account_id: GTM-MM86KCJ
+
+  # Tanzu product variables
+  product_network: VMware Tanzu Network
+  platform_name: Ops Manager
+  platform_old: Pivotal Cloud Foundry
+  platform_code: PCF
+  product_name_lc: pcf
+  app_runtime_full: VMware Tanzu Application Service for VMs
+  app_runtime_abbr: TAS for VMs
+  app_runtime_abbr_lc: tas
+  segment_runtime_full: Isolation Segment
+  k8s_runtime_full: Tanzu Kubernetes Grid Integrated Edition
+  k8s_runtime_abbr: TKGI
+  windows_runtime_full: VMware Tanzu Application Service for VMs &#91;Windows&#93;
+  windows_runtime_abbr: TAS for VMs &#91;Windows&#93;
+  ops_manager_full: Ops Manager
+  ops_manager: Ops Manager
+
+# Deprecated variables -- replace with current product variables when possible
+  product_name: Ops Manager
+  product_short: PAS
