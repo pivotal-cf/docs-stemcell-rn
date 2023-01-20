@@ -9002,6 +9002,308 @@ Original advisory details:<br>
  - https://ubuntu.com/security/CVE-2022-22818<br>
  - https://ubuntu.com/security/CVE-2022-23833
 
+#### <a id="621-208"></a> 621.208
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 10, 2022
+
+#### Enhancements<br>
+* `/opt` is now mounted to the ephemeral disk rather than the root disk. This is not a recommended storage point for bosh workloads, but some agents deployed on stemcells write their logs to this folder and that could cause the root disk to fill up.<br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.59<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5254-1: shadow vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5254-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that shadow incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to cause a crash or<br>
+expose sensitive information. This issue only affected<br>
+Ubuntu 14.04 ESM and Ubuntu 16.04 ESM. (CVE-2017-12424)<br>
+<br>
+It was discovered that shadow incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+(CVE-2018-7169)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-12424<br>
+ - https://ubuntu.com/security/CVE-2018-7169<br>
+ - https://ubuntu.com/security/CVE-2018-7169<br>
+ - https://ubuntu.com/security/CVE-2017-12424<br>
+<br>
+**Title**: USN-5259-1: Cron vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5259-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that the postinst maintainer script in Cron unsafely<br>
+handled file permissions during package install or update operations.<br>
+An attacker could possibly use this issue to perform a privilege<br>
+escalation attack. (CVE-2017-9525)<br>
+<br>
+Florian Weimer discovered that Cron incorrectly handled certain memory<br>
+operations during crontab file creation. An attacker could possibly use<br>
+this issue to cause a denial of service. (CVE-2019-9704)<br>
+<br>
+It was discovered that Cron incorrectly handled user input during crontab<br>
+file creation. An attacker could possibly use this issue to cause a denial<br>
+of service. (CVE-2019-9705)<br>
+<br>
+It was discovered that Cron contained a use-after-free vulnerability in<br>
+its force_rescan_user function. An attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2019-9706)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-9525<br>
+ - https://ubuntu.com/security/CVE-2019-9704<br>
+ - https://ubuntu.com/security/CVE-2019-9705<br>
+ - https://ubuntu.com/security/CVE-2019-9706<br>
+ - https://ubuntu.com/security/CVE-2019-9704<br>
+ - https://ubuntu.com/security/CVE-2019-9705<br>
+ - https://ubuntu.com/security/CVE-2019-9706<br>
+ - https://ubuntu.com/security/CVE-2017-9525<br>
+<br>
+**Title**: USN-5234-1: Byobu vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5234-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Sander Bos discovered that Byobu incorrectly handled certain Apport data.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-7306<br>
+<br>
+**Title**: USN-5244-1: DBus vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5244-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Daniel Onaca discovered that DBus contained a use-after-free vulnerability,<br>
+caused by the incorrect handling of usernames sharing the same UID. An<br>
+attacker could possibly use this issue to cause DBus to crash, resulting<br>
+in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-35512<br>
+<br>
+**Title**: USN-5268-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5268-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Keyu Man discovered that the ICMP implementation in the Linux kernel did<br>
+not properly handle received ICMP error packets. A remote attacker could<br>
+use this to facilitate attacks on UDP based services that depend on source<br>
+port randomization. (CVE-2021-20322)<br>
+<br>
+It was discovered that the Bluetooth subsystem in the Linux kernel<br>
+contained a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2021-3640)<br>
+<br>
+Likang Luo discovered that a race condition existed in the Bluetooth<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2021-3752)<br>
+<br>
+Luo Likang discovered that the FireDTV Firewire driver in the Linux kernel<br>
+did not properly perform bounds checking in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2021-42739)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-20322<br>
+ - https://ubuntu.com/security/CVE-2021-3640<br>
+ - https://ubuntu.com/security/CVE-2021-3752<br>
+ - https://ubuntu.com/security/CVE-2021-42739<br>
+ - https://ubuntu.com/security/CVE-2021-3752<br>
+ - https://ubuntu.com/security/CVE-2021-20322<br>
+ - https://ubuntu.com/security/CVE-2021-3640<br>
+ - https://ubuntu.com/security/CVE-2021-42739<br>
+<br>
+**Title**: USN-5021-2: curl vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5021-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-5021-1 fixed vulnerabilities in curl. This update provides<br>
+the corresponding updates for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Harry Sintonen and Tomas Hoger discovered that curl incorrectly handled<br>
+ TELNET connections when the -t option was used on the command line.<br>
+ Uninitialized data possibly containing sensitive information could be sent<br>
+ to the remote server, contrary to expectations. (CVE-2021-22898,<br>
+ CVE-2021-22925)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-22898<br>
+ - https://ubuntu.com/security/CVE-2021-22925<br>
+ - https://ubuntu.com/security/CVE-2021-22898<br>
+ - https://ubuntu.com/security/CVE-2021-22925<br>
+<br>
+**Title**: USN-5064-2: GNU cpio vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5064-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5064-1 fixed vulnerabilities in GNU cpio. This update provides<br>
+the corresponding updates for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Maverick Chung and Qiaoyi Fang discovered that cpio incorrectly handled<br>
+ certain pattern files. A remote attacker could use this issue to cause cpio<br>
+ to crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-38185<br>
+<br>
+**Title**: USN-5193-2: X.Org X Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5193-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5193-1 fixed several vulnerabilities in X.Org. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ certain inputs. An attacker could use this issue to cause the server to<br>
+ crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code and escalate privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4009<br>
+ - https://ubuntu.com/security/CVE-2021-4008<br>
+ - https://ubuntu.com/security/CVE-2021-4011<br>
+<br>
+**Title**: USN-5252-2: PolicyKit vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5252-2<br>
+**Priorities**: high<br>
+**Description**:<br>
+  USN-5252-1 fixed a vulnerability in policykit-1. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that the PolicyKit pkexec tool incorrectly handled<br>
+ command-line arguments. A local attacker could use this issue to escalate<br>
+ privileges to an administrator.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4034<br>
+<br>
+**Title**: USN-5235-1: Ruby vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5235-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ruby incorrectly handled certain HTML files.<br>
+An attacker could possibly use this issue to cause a crash. This<br>
+issue only affected Ubuntu 20.04 LTS, Ubuntu 21.04, and Ubuntu 21.10.<br>
+(CVE-2021-41816)<br>
+<br>
+It was discovered that Ruby incorrectly handled certain regular expressions.<br>
+An attacker could possibly use this issue to cause a regular expression<br>
+denial of service. (CVE-2021-41817)<br>
+<br>
+It was discovered that Ruby incorrectly handled certain cookie names.<br>
+An attacker could possibly use this issue to access or expose<br>
+sensitive information. (CVE-2021-41819)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-41816<br>
+ - https://ubuntu.com/security/CVE-2021-41817<br>
+ - https://ubuntu.com/security/CVE-2021-41819<br>
+ - https://ubuntu.com/security/CVE-2021-41816<br>
+ - https://ubuntu.com/security/CVE-2021-41819<br>
+ - https://ubuntu.com/security/CVE-2021-41817<br>
+<br>
+**Title**: USN-5260-3: Samba vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5260-3<br>
+**Priorities**: high<br>
+**Description**:<br>
+  USN-5260-1 fixed a vulnerability in Samba. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Orange Tsai discovered that the Samba vfs_fruit module incorrectly handled<br>
+ certain memory operations. A remote attacker could use this issue to cause<br>
+ Samba to crash, resulting in a denial of service, or possibly execute<br>
+ arbitrary code as root. (CVE-2021-44142)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-44142<br>
+ - https://ubuntu.com/security/CVE-2021-44142<br>
+<br>
+**Title**: USN-5250-2: strongSwan vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5250-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5250-1 fixed a vulnerability in strongSwan. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Zhuowei Zhang discovered that stringSwan incorrectly handled EAP<br>
+ authentication. A remote attacker could use this issue to cause strongSwan<br>
+ to crash, resulting in a denial of service, or possibly bypass client and<br>
+ server authentication.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45079<br>
+<br>
+**Title**: USN-5243-2: AIDE vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5243-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5243-1 fixed a vulnerability in aide. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+<br>
+Original advisory details:<br>
+<br>
+ David Bouman discovered that AIDE incorrectly handled base64 operations. A<br>
+ local attacker could use this issue to cause AIDE to crash, resulting in a<br>
+ denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45417<br>
+<br>
+**Title**: USN-5233-2: ClamAV vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5233-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5233-1 fixed a vulnerability in ClamAV. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that ClamAV incorrectly handled memory when the<br>
+ CL_SCAN_GENERAL_COLLECT_METADATA scan option was enabled. A remote attacker<br>
+ could possibly use this issue to cause ClamAV to crash, resulting in a<br>
+ denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-20698<br>
+<br>
+**Title**: USN-5270-2: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5270-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5270-1 fixed several vulnerabilities in MySQL. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Multiple security issues were discovered in MySQL and this update includes<br>
+ new upstream MySQL versions to fix these issues.<br>
+<br>
+ MySQL has been updated to 5.7.37 in Ubuntu 16.04 ESM.<br>
+<br>
+ In addition to security fixes, the updated packages contain bug fixes, new<br>
+ features, and possibly incompatible changes.<br>
+<br>
+ Please see the following for more information:<br>
+<br>
+ https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-37.html<br>
+ https://www.oracle.com/security-alerts/cpujan2022.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-21304<br>
+ - https://ubuntu.com/security/CVE-2022-21344<br>
+ - https://ubuntu.com/security/CVE-2022-21367<br>
+ - https://ubuntu.com/security/CVE-2022-21303<br>
+ - https://ubuntu.com/security/CVE-2022-21270<br>
+ - https://ubuntu.com/security/CVE-2022-21245
+
 #### <a id="621-198"></a> 621.198
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -19408,6 +19710,305 @@ Original advisory details:<br>
  - https://ubuntu.com/security/CVE-2022-23833<br>
  - https://ubuntu.com/security/CVE-2022-22818<br>
  - https://ubuntu.com/security/CVE-2022-23833
+
+#### <a id="456-236"></a> 456.236
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 10, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.47<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5254-1: shadow vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5254-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that shadow incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to cause a crash or<br>
+expose sensitive information. This issue only affected<br>
+Ubuntu 14.04 ESM and Ubuntu 16.04 ESM. (CVE-2017-12424)<br>
+<br>
+It was discovered that shadow incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+(CVE-2018-7169)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-12424<br>
+ - https://ubuntu.com/security/CVE-2018-7169<br>
+ - https://ubuntu.com/security/CVE-2018-7169<br>
+ - https://ubuntu.com/security/CVE-2017-12424<br>
+<br>
+**Title**: USN-5259-1: Cron vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5259-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that the postinst maintainer script in Cron unsafely<br>
+handled file permissions during package install or update operations.<br>
+An attacker could possibly use this issue to perform a privilege<br>
+escalation attack. (CVE-2017-9525)<br>
+<br>
+Florian Weimer discovered that Cron incorrectly handled certain memory<br>
+operations during crontab file creation. An attacker could possibly use<br>
+this issue to cause a denial of service. (CVE-2019-9704)<br>
+<br>
+It was discovered that Cron incorrectly handled user input during crontab<br>
+file creation. An attacker could possibly use this issue to cause a denial<br>
+of service. (CVE-2019-9705)<br>
+<br>
+It was discovered that Cron contained a use-after-free vulnerability in<br>
+its force_rescan_user function. An attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2019-9706)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-9525<br>
+ - https://ubuntu.com/security/CVE-2019-9704<br>
+ - https://ubuntu.com/security/CVE-2019-9705<br>
+ - https://ubuntu.com/security/CVE-2019-9706<br>
+ - https://ubuntu.com/security/CVE-2019-9704<br>
+ - https://ubuntu.com/security/CVE-2019-9705<br>
+ - https://ubuntu.com/security/CVE-2019-9706<br>
+ - https://ubuntu.com/security/CVE-2017-9525<br>
+<br>
+**Title**: USN-5234-1: Byobu vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5234-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Sander Bos discovered that Byobu incorrectly handled certain Apport data.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-7306<br>
+<br>
+**Title**: USN-5244-1: DBus vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5244-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Daniel Onaca discovered that DBus contained a use-after-free vulnerability,<br>
+caused by the incorrect handling of usernames sharing the same UID. An<br>
+attacker could possibly use this issue to cause DBus to crash, resulting<br>
+in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-35512<br>
+<br>
+**Title**: USN-5268-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5268-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Keyu Man discovered that the ICMP implementation in the Linux kernel did<br>
+not properly handle received ICMP error packets. A remote attacker could<br>
+use this to facilitate attacks on UDP based services that depend on source<br>
+port randomization. (CVE-2021-20322)<br>
+<br>
+It was discovered that the Bluetooth subsystem in the Linux kernel<br>
+contained a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2021-3640)<br>
+<br>
+Likang Luo discovered that a race condition existed in the Bluetooth<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2021-3752)<br>
+<br>
+Luo Likang discovered that the FireDTV Firewire driver in the Linux kernel<br>
+did not properly perform bounds checking in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2021-42739)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-20322<br>
+ - https://ubuntu.com/security/CVE-2021-3640<br>
+ - https://ubuntu.com/security/CVE-2021-3752<br>
+ - https://ubuntu.com/security/CVE-2021-42739<br>
+ - https://ubuntu.com/security/CVE-2021-3752<br>
+ - https://ubuntu.com/security/CVE-2021-20322<br>
+ - https://ubuntu.com/security/CVE-2021-3640<br>
+ - https://ubuntu.com/security/CVE-2021-42739<br>
+<br>
+**Title**: USN-5021-2: curl vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5021-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-5021-1 fixed vulnerabilities in curl. This update provides<br>
+the corresponding updates for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Harry Sintonen and Tomas Hoger discovered that curl incorrectly handled<br>
+ TELNET connections when the -t option was used on the command line.<br>
+ Uninitialized data possibly containing sensitive information could be sent<br>
+ to the remote server, contrary to expectations. (CVE-2021-22898,<br>
+ CVE-2021-22925)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-22898<br>
+ - https://ubuntu.com/security/CVE-2021-22925<br>
+ - https://ubuntu.com/security/CVE-2021-22898<br>
+ - https://ubuntu.com/security/CVE-2021-22925<br>
+<br>
+**Title**: USN-5064-2: GNU cpio vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5064-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5064-1 fixed vulnerabilities in GNU cpio. This update provides<br>
+the corresponding updates for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Maverick Chung and Qiaoyi Fang discovered that cpio incorrectly handled<br>
+ certain pattern files. A remote attacker could use this issue to cause cpio<br>
+ to crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-38185<br>
+<br>
+**Title**: USN-5193-2: X.Org X Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5193-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5193-1 fixed several vulnerabilities in X.Org. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ certain inputs. An attacker could use this issue to cause the server to<br>
+ crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code and escalate privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4009<br>
+ - https://ubuntu.com/security/CVE-2021-4008<br>
+ - https://ubuntu.com/security/CVE-2021-4011<br>
+<br>
+**Title**: USN-5252-2: PolicyKit vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5252-2<br>
+**Priorities**: high<br>
+**Description**:<br>
+  USN-5252-1 fixed a vulnerability in policykit-1. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that the PolicyKit pkexec tool incorrectly handled<br>
+ command-line arguments. A local attacker could use this issue to escalate<br>
+ privileges to an administrator.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4034<br>
+<br>
+**Title**: USN-5235-1: Ruby vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5235-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ruby incorrectly handled certain HTML files.<br>
+An attacker could possibly use this issue to cause a crash. This<br>
+issue only affected Ubuntu 20.04 LTS, Ubuntu 21.04, and Ubuntu 21.10.<br>
+(CVE-2021-41816)<br>
+<br>
+It was discovered that Ruby incorrectly handled certain regular expressions.<br>
+An attacker could possibly use this issue to cause a regular expression<br>
+denial of service. (CVE-2021-41817)<br>
+<br>
+It was discovered that Ruby incorrectly handled certain cookie names.<br>
+An attacker could possibly use this issue to access or expose<br>
+sensitive information. (CVE-2021-41819)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-41816<br>
+ - https://ubuntu.com/security/CVE-2021-41817<br>
+ - https://ubuntu.com/security/CVE-2021-41819<br>
+ - https://ubuntu.com/security/CVE-2021-41816<br>
+ - https://ubuntu.com/security/CVE-2021-41819<br>
+ - https://ubuntu.com/security/CVE-2021-41817<br>
+<br>
+**Title**: USN-5260-3: Samba vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5260-3<br>
+**Priorities**: high<br>
+**Description**:<br>
+  USN-5260-1 fixed a vulnerability in Samba. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Orange Tsai discovered that the Samba vfs_fruit module incorrectly handled<br>
+ certain memory operations. A remote attacker could use this issue to cause<br>
+ Samba to crash, resulting in a denial of service, or possibly execute<br>
+ arbitrary code as root. (CVE-2021-44142)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-44142<br>
+ - https://ubuntu.com/security/CVE-2021-44142<br>
+<br>
+**Title**: USN-5250-2: strongSwan vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5250-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5250-1 fixed a vulnerability in strongSwan. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Zhuowei Zhang discovered that stringSwan incorrectly handled EAP<br>
+ authentication. A remote attacker could use this issue to cause strongSwan<br>
+ to crash, resulting in a denial of service, or possibly bypass client and<br>
+ server authentication.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45079<br>
+<br>
+**Title**: USN-5243-2: AIDE vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5243-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5243-1 fixed a vulnerability in aide. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+<br>
+Original advisory details:<br>
+<br>
+ David Bouman discovered that AIDE incorrectly handled base64 operations. A<br>
+ local attacker could use this issue to cause AIDE to crash, resulting in a<br>
+ denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45417<br>
+<br>
+**Title**: USN-5233-2: ClamAV vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5233-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5233-1 fixed a vulnerability in ClamAV. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that ClamAV incorrectly handled memory when the<br>
+ CL_SCAN_GENERAL_COLLECT_METADATA scan option was enabled. A remote attacker<br>
+ could possibly use this issue to cause ClamAV to crash, resulting in a<br>
+ denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-20698<br>
+<br>
+**Title**: USN-5270-2: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5270-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5270-1 fixed several vulnerabilities in MySQL. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Multiple security issues were discovered in MySQL and this update includes<br>
+ new upstream MySQL versions to fix these issues.<br>
+<br>
+ MySQL has been updated to 5.7.37 in Ubuntu 16.04 ESM.<br>
+<br>
+ In addition to security fixes, the updated packages contain bug fixes, new<br>
+ features, and possibly incompatible changes.<br>
+<br>
+ Please see the following for more information:<br>
+<br>
+ https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-37.html<br>
+ https://www.oracle.com/security-alerts/cpujan2022.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-21304<br>
+ - https://ubuntu.com/security/CVE-2022-21344<br>
+ - https://ubuntu.com/security/CVE-2022-21367<br>
+ - https://ubuntu.com/security/CVE-2022-21303<br>
+ - https://ubuntu.com/security/CVE-2022-21270<br>
+ - https://ubuntu.com/security/CVE-2022-21245
 
 #### <a id="456-227"></a> 456.227
 
