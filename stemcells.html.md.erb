@@ -3688,6 +3688,295 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-401"></a> 621.401
+
+**Release Date**: January 26, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.116<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5806-1: Ruby vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5806-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Hiroshi Tokumaru discovered that Ruby did not properly handle certain<br>
+user input for applications the generate HTTP responses using cgi gem.<br>
+An attacker could possibly use this issue to maliciously modify the<br>
+response a user would receive from a vulnerable application.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33621<br>
+<br>
+**Title**: USN-5790-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5790-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the BPF verifier in the Linux kernel did not<br>
+properly handle internal data structures. A local attacker could use this<br>
+to expose sensitive information (kernel memory). (CVE-2021-4159)<br>
+<br>
+It was discovered that a race condition existed in the Android Binder IPC<br>
+subsystem in the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-20421)<br>
+<br>
+It was discovered that the Intel 740 frame buffer driver in the Linux<br>
+kernel contained a divide by zero vulnerability. A local attacker could use<br>
+this to cause a denial of service (system crash). (CVE-2022-3061)<br>
+<br>
+Gwnaun Jung discovered that the SFB packet scheduling implementation in the<br>
+Linux kernel contained a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2022-3586)<br>
+<br>
+Jann Horn discovered a race condition existed in the Linux kernel when<br>
+unmapping VMAs in certain situations, resulting in possible use-after-free<br>
+vulnerabilities. A local attacker could possibly use this to cause a denial<br>
+of service (system crash) or execute arbitrary code. (CVE-2022-39188)<br>
+<br>
+It was discovered that a race condition existed in the EFI capsule loader<br>
+driver in the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-40307)<br>
+<br>
+Zheng Wang and Zhuorao Yang discovered that the RealTek RTL8712U wireless<br>
+driver in the Linux kernel contained a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-4095)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-4159<br>
+ - https://ubuntu.com/security/CVE-2022-20421<br>
+ - https://ubuntu.com/security/CVE-2022-3061<br>
+ - https://ubuntu.com/security/CVE-2022-3586<br>
+ - https://ubuntu.com/security/CVE-2022-39188<br>
+ - https://ubuntu.com/security/CVE-2022-40307<br>
+ - https://ubuntu.com/security/CVE-2022-4095<br>
+ - https://ubuntu.com/security/CVE-2022-39188<br>
+ - https://ubuntu.com/security/CVE-2022-20421<br>
+ - https://ubuntu.com/security/CVE-2022-3586<br>
+ - https://ubuntu.com/security/CVE-2022-4095<br>
+ - https://ubuntu.com/security/CVE-2021-4159<br>
+ - https://ubuntu.com/security/CVE-2022-40307<br>
+ - https://ubuntu.com/security/CVE-2022-3061<br>
+<br>
+**Title**: USN-5800-1: Heimdal vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5800-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Heimdal incorrectly handled certain SPNEGO tokens. A<br>
+remote attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2021-44758)<br>
+<br>
+Evgeny Legerov discovered that Heimdal incorrectly handled memory when<br>
+performing certain DES decryption operations. A remote attacker could use<br>
+this issue to cause a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2022-3437)<br>
+<br>
+Greg Hudson discovered that Kerberos PAC implementation used in Heimdal<br>
+incorrectly handled certain parsing operations. A remote attacker could use<br>
+this issue to cause a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2022-42898)<br>
+<br>
+It was discovered that Heimdal's KDC did not properly handle certain error<br>
+conditions. A remote attacker could use this issue to cause a denial of<br>
+service, or possibly execute arbitrary code. (CVE-2022-44640)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-44758<br>
+ - https://ubuntu.com/security/CVE-2022-3437<br>
+ - https://ubuntu.com/security/CVE-2022-42898<br>
+ - https://ubuntu.com/security/CVE-2022-44640<br>
+ - https://ubuntu.com/security/CVE-2022-42898<br>
+ - https://ubuntu.com/security/CVE-2022-44640<br>
+ - https://ubuntu.com/security/CVE-2021-44758<br>
+ - https://ubuntu.com/security/CVE-2022-3437<br>
+<br>
+**Title**: USN-5795-2: Net-SNMP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5795-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5795-1 and 5543-1 fixed several vulnerabilities in Net-SNMP. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Net-SNMP incorrectly handled certain requests. A<br>
+ remote attacker could possibly use these issues to cause Net-SNMP to crash,<br>
+ resulting in a denial of service.<br>
+<br>
+ Yu Zhang and Nanyu Zhong discovered that Net-SNMP incorrectly handled<br>
+ memory operations when processing certain requests. A remote attacker could<br>
+ use this issue to cause Net-SNMP to crash, resulting in a denial of<br>
+ service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-24805<br>
+ - https://ubuntu.com/security/CVE-2022-24810<br>
+ - https://ubuntu.com/security/CVE-2022-44793<br>
+ - https://ubuntu.com/security/CVE-2022-24807<br>
+ - https://ubuntu.com/security/CVE-2022-24808<br>
+ - https://ubuntu.com/security/CVE-2022-44792<br>
+ - https://ubuntu.com/security/CVE-2022-24809<br>
+ - https://ubuntu.com/security/CVE-2022-24806<br>
+<br>
+**Title**: USN-5817-1: Setuptools vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5817-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Sebastian Chnelik discovered that setuptools incorrectly handled<br>
+certain regex inputs. An attacker could possibly use this issue<br>
+to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40897<br>
+<br>
+**Title**: USN-5804-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5804-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-42896)<br>
+<br>
+It was discovered that the Xen netback driver in the Linux kernel did not<br>
+properly handle packets structured in certain ways. An attacker in a guest<br>
+VM could possibly use this to cause a denial of service (host NIC<br>
+availability). (CVE-2022-3643)<br>
+<br>
+It was discovered that an integer overflow vulnerability existed in the<br>
+Bluetooth subsystem in the Linux kernel. A physically proximate attacker<br>
+could use this to cause a denial of service (system crash).<br>
+(CVE-2022-45934)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+<br>
+**Title**: USN-5794-1: Linux kernel (AWS) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5794-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-42896)<br>
+<br>
+It was discovered that the Xen netback driver in the Linux kernel did not<br>
+properly handle packets structured in certain ways. An attacker in a guest<br>
+VM could possibly use this to cause a denial of service (host NIC<br>
+availability). (CVE-2022-3643)<br>
+<br>
+It was discovered that an integer overflow vulnerability existed in the<br>
+Bluetooth subsystem in the Linux kernel. A physically proximate attacker<br>
+could use this to cause a denial of service (system crash).<br>
+(CVE-2022-45934)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+<br>
+**Title**: USN-5802-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5802-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-42896)<br>
+<br>
+It was discovered that the Xen netback driver in the Linux kernel did not<br>
+properly handle packets structured in certain ways. An attacker in a guest<br>
+VM could possibly use this to cause a denial of service (host NIC<br>
+availability). (CVE-2022-3643)<br>
+<br>
+It was discovered that an integer overflow vulnerability existed in the<br>
+Bluetooth subsystem in the Linux kernel. A physically proximate attacker<br>
+could use this to cause a denial of service (system crash).<br>
+(CVE-2022-45934)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+<br>
+**Title**: USN-5813-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5813-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Tamás Koczka discovered that the Bluetooth L2CAP handshake implementation<br>
+in the Linux kernel contained multiple use-after-free vulnerabilities. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-42896)<br>
+<br>
+It was discovered that the Xen netback driver in the Linux kernel did not<br>
+properly handle packets structured in certain ways. An attacker in a guest<br>
+VM could possibly use this to cause a denial of service (host NIC<br>
+availability). (CVE-2022-3643)<br>
+<br>
+It was discovered that an integer overflow vulnerability existed in the<br>
+Bluetooth subsystem in the Linux kernel. A physically proximate attacker<br>
+could use this to cause a denial of service (system crash).<br>
+(CVE-2022-45934)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-45934<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-3643<br>
+ - https://ubuntu.com/security/CVE-2022-42896<br>
+<br>
+**Title**: USN-5811-2: Sudo vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5811-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5811-1 fixed a vulnerability in Sudo. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Matthieu Barjole and Victor Cutillas discovered that Sudo incorrectly<br>
+ handled user-specified editors when using the sudoedit command. A local<br>
+ attacker that has permission to use the sudoedit command could possibly use<br>
+ this issue to edit arbitrary files. (CVE-2023-22809)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-22809<br>
+ - https://ubuntu.com/security/CVE-2023-22809
+
 #### <a id="621-376"></a> 621.376
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
