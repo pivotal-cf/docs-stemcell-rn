@@ -15400,6 +15400,51 @@ It was discovered that Mutt incorrectly handled certain requests. An attacker co
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14093<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14154
 
+#### <a id="621-76"></a> 621.76
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 17, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.16<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4385-1: Intel Microcode vulnerabilities<br>
+**URL**: https://usn.ubuntu.com/4385-1/<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that memory contents previously stored in microarchitectural special registers after RDRAND, RDSEED, and SGX EGETKEY read operations on Intel client and Xeon E3 processors may be briefly exposed to processes on the same or different processor cores. A local attacker could use this to expose sensitive information....<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0548<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0549<br>
+<br>
+**Title**: LSN-0068-1: Kernel Live Patch Security Notice<br>
+**URL**: https://usn.ubuntu.com/lsn/0068-1/<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Several security issues were fixed in the kernel.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8647<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8648<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8649<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11494<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12114<br>
+<br>
+**Title**: USN-4386-1: libjpeg-turbo vulnerability<br>
+**URL**: https://usn.ubuntu.com/4386-1/<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libjpeg-turbo incorrectly handled certain PPM files. An attacker could possibly use this issue to access sensitive information.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13790
+
+## Known Issue:
+If you use the NSX-T Container Plugin (NCP) tile v3.0.1 or earlier, do not upgrade to stemcell 621.76. 621.76 is not compatible with the NCP tile v3.0.1 and causes the openvswitch job to fail when you deploy. Please upgrade the NCP tile to 3.0.2 before updating to stemcell 621.76 or newer.
+
 #### <a id="621-75"></a> 621.75
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -24752,6 +24797,230 @@ Josef Gajdusek discovered that iTALC had...<br>
 Sergei Glazunov discovered that FreeType did not correctly handle certain malformed font files. If a user were tricked into using a specially crafted font file, a remote attacker could cause FreeType to crash or possibly execute arbitrary code with user privileges.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15999
+
+#### <a id="456-125"></a> 456.125
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: October 20, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.7<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4582-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4582-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Vim incorrectly handled permissions on the .swp file. A local attacker could possibly use this issue to obtain sensitive information. This issue only affected Ubuntu 16.04 LTS. (CVE-2017-17087)<br>
+It was discovered that Vim incorrectly handled restricted mode. A local attacker could possibly use this issue to bypass restricted...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-17087<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20807<br>
+<br>
+**Title**: USN-4579-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4579-1<br>
+**Priorities**: low,medium,high<br>
+**Description**:<br>
+  Hador Manor discovered that the DCCP protocol implementation in the Linux kernel improperly handled socket reuse, leading to a use-after-free vulnerability. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-16119)<br>
+Wen Xu discovered that the XFS file system in the Linux kernel...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285<br>
+<br>
+**Title**: USN-4591-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4591-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Andy Nguyen discovered that the Bluetooth L2CAP implementation in the Linux kernel contained a type-confusion error. A physically proximate remote attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-12351)<br>
+Andy Nguyen discovered that the Bluetooth A2MP implementation in the...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12351<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352<br>
+<br>
+**Title**: USN-4589-1: containerd vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4589-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that containerd could be made to expose sensitive information when processing URLs in container image manifests. A remote attacker could use this to trick the user and obtain the user's registry credentials.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15157<br>
+<br>
+**Title**: USN-4589-2: Docker vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4589-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-4589-1 fixed a vulnerability in containerd. This update provides the corresponding update for docker.io.<br>
+Original advisory details:<br>
+It was discovered that containerd could be made to expose sensitive information when processing URLs in container image manifests. A remote attacker could use this to trick the user and obtain the user's...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15157<br>
+<br>
+**Title**: USN-4581-1: Python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4581-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Python incorrectly handled certain character sequences. A remote attacker could possibly use this issue to perform CRLF injection.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26116<br>
+<br>
+**Title**: USN-4584-1: HtmlUnit vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4584-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that HtmlUnit incorrectly initialized Rhino engine. An Attacker could possibly use this issue to execute arbitrary Java code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-5529<br>
+<br>
+**Title**: USN-4583-1: PHP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4583-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PHP incorrectly handled certain encrypt ciphers. An attacker could possibly use this issue to decrease security or cause incorrect encryption data. This issue only affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.  (CVE-2020-7069)<br>
+It was discorevered that PHP incorrectly handled certain HTTP cookies. An attacker could...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7069<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7070
+
+#### <a id="456-123"></a> 456.123
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: October 14, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.7<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4573-1: Vino vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4573-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Nicolas Ruff discovered that Vino incorrectly handled large ClientCutText messages. A remote attacker could use this issue to cause the server to crash, resulting in a denial of service. (CVE-2014-6053)<br>
+It was discovered that Vino incorrectly handled certain packet lengths. A remote attacker could possibly use this issue to obtain...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14397<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14402<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14403<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14404<br>
+<br>
+**Title**: USN-4554-1: libPGF vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4554-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libPGF lacked proper validation when opening a specially crafted PGF file. An attacker could possibly use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2015-6673<br>
+<br>
+**Title**: USN-4557-1: Tomcat vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4557-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that the Tomcat realm implementations incorrectly handled passwords when a username didn't exist. A remote attacker could possibly use this issue to enumerate usernames. (CVE-2016-0762)<br>
+Alvaro Munoz and Alexander Mirosh discovered that Tomcat incorrectly limited use of a certain utility method. A malicious application...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-0762<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-5018<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6794<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6796<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6797<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6816<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-8735<br>
+<br>
+**Title**: USN-4578-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4578-1<br>
+**Priorities**: low,medium,high<br>
+**Description**:<br>
+  Hador Manor discovered that the DCCP protocol implementation in the Linux kernel improperly handled socket reuse, leading to a use-after-free vulnerability. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-16119)<br>
+Wen Xu discovered that the XFS file system in the Linux kernel...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19448<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16120<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26088<br>
+<br>
+**Title**: USN-4547-2: SSVNC vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4547-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the LibVNCClient vendored in SSVNC incorrectly handled certain packet lengths. A remote attacker could possibly use this issue to obtain sensitive information, cause a denial of service, or execute arbitrary code. (CVE-2018-20020, CVE-2018-20021, CVE-2018-20022, CVE-2018-2024)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024<br>
+<br>
+**Title**: USN-4571-1: rack-cors vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4571-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that rack-cors did not properly handle relative file paths. An attacker could use this vulnerability to access arbitrary files.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18978<br>
+<br>
+**Title**: USN-4572-1: Spice vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4572-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Frediano Ziglio discovered that Spice incorrectly handled QUIC image decoding. A remote attacker could use this to cause Spice to crash, resulting in a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14355<br>
+<br>
+**Title**: USN-4559-1: Samba update<br>
+**URL**: https://ubuntu.com/security/notices/USN-4559-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Tom Tervoort discovered that the Netlogon protocol implemented by Samba incorrectly handled the authentication scheme. A remote attacker could use this issue to forge an authentication token and steal the credentials of the domain admin.<br>
+While a previous security update fixed the issue by changing the &quot;server schannel&quot; setting to default to...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1472<br>
+<br>
+**Title**: USN-4551-1: Squid vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4551-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Alex Rousskov and Amit Klein discovered that Squid incorrectly handled certain Content-Length headers. A remote attacker could possibly use this issue to perform an HTTP request smuggling attack, resulting in cache poisoning. (CVE-2020-15049)<br>
+Amit Klein discovered that Squid incorrectly validated certain data. A remote attacker could possibly use...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15049<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15810<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15811<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24606<br>
+<br>
+**Title**: USN-4564-1: Apache Tika vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4564-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that Apache Tika can have an excessive memory usage by using a crafted or corrupt PSD file. An attacker could use it to cause a denial of service (crash). (CVE-2020-1950, CVE-2020-1951)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1950<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1951<br>
+<br>
+**Title**: USN-4570-1: urllib3 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4570-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that urllib3 incorrectly handled certain character sequences. A remote attacker could possibly use this issue to perform CRLF injection.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26137<br>
+<br>
+**Title**: USN-4568-1: Brotli vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4568-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Brotli incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8927
 
 #### <a id="456-121"></a> 456.121
 
