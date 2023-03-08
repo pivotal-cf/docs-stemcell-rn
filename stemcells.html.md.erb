@@ -7567,6 +7567,11 @@ Original advisory details:<br>
 
 **Release Date**: November 16, 2022
 
+#### Fixes:<br>
+The Linux kernel slab memory leak present in versions 621.241 through 621.305 is fixed in this version.<br>
+<br>
+Not all workloads or configurations were affected by this issue. If you are using one of the affected versions and would like information about how to determine if you are affected by this issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.102<br>
 <br>
@@ -7885,6 +7890,15 @@ cause DBus to crash, resulting in a denial of service. (CVE-2022-42012)<br>
 
 **Release Date**: October 25, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.98<br>
 <br>
@@ -7956,7 +7970,15 @@ service in the host OS. (CVE-2022-33744)<br>
 **Release Date**: October 25, 2022
 
 #### Known Issues:<br>
-This stemcell was removed from AWS regions and cannot be recovered making it unavailable to AWS light stemcell users. AWS light stemcell users should instead use the AWS heavy stemcell or v621.305. <br>
+* This stemcell was removed from AWS regions and cannot be recovered making it unavailable to AWS light stemcell users. AWS light stemcell users should instead use the AWS heavy stemcell or v621.305. <br>
+<br>
+* Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: The kernel slab memory leak issue has been resolved in Stemcell version 621.330.<br>
 <br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.98<br>
@@ -8503,6 +8525,15 @@ Original advisory details:<br>
 
 **Release Date**: October 04, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.95<br>
 <br>
@@ -8754,6 +8785,15 @@ use this issue to cause a crash or execute arbitrary code.<br>
 
 **Release Date**: September 06, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Fixes<br>
 * There is an existing kernel bug in Xenial that can prevent the Precision Hardware Clock used in Azure stemcells from correctly tracking the time. To work around this problem we've changed the Azure stemcells to once again use the NTP servers in the config provided by BOSH. If your Azure network does not allow output NTP traffic to your configured NTP servers you may need to update your firewall rules to allow this traffic now.<br>
 <br>
@@ -8968,6 +9008,15 @@ execute arbitrary code.<br>
 
 **Release Date**: August 11, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.88<br>
 <br>
@@ -9292,6 +9341,15 @@ Original advisory details:<br>
 
 **Release Date**: August 03, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.87<br>
 <br>
@@ -9758,6 +9816,15 @@ Original advisory details:<br>
 
 **Release Date**: July 11, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.83<br>
 <br>
@@ -10192,6 +10259,15 @@ denial of service (system crash).<br>
 
 **Release Date**: June 17, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.80<br>
 <br>
@@ -10271,6 +10347,15 @@ code.(CVE-2022-1972)<br>
 
 **Release Date**: June 14, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.80<br>
 <br>
@@ -10547,6 +10632,15 @@ An attacker could possibly use this issue to expose sensitive information.<br>
 
 **Release Date**: June 02, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.78<br>
 <br>
@@ -10729,6 +10823,15 @@ intended seccomp sandbox restrictions. (CVE-2022-30594)<br>
 
 **Release Date**: May 25, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.77<br>
 <br>
@@ -10919,6 +11022,15 @@ intended seccomp sandbox restrictions. (CVE-2022-30594)<br>
 
 **Release Date**: May 17, 2022
 
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.268.76<br>
 <br>
