@@ -7086,6 +7086,614 @@ denial of service or execute arbitrary code.<br>
 **CVEs**:<br>
  - https://ubuntu.com/security/CVE-2022-38784
 
+#### <a id="jammy-1-8"></a> 1.8
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: August 22, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.461.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5542-1: Samba vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5542-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that Samba did not handle MaxQueryDuration when being<br>
+used in AD DC configurations, contrary to expectations. This issue only<br>
+affected Ubuntu 20.04 LTS. (CVE-2021-3670)<br>
+<br>
+Luke Howard discovered that Samba incorrectly handled certain restrictions<br>
+associated with changing passwords. A remote attacker being requested to<br>
+change passwords could possibly use this issue to escalate privileges.<br>
+(CVE-2022-2031)<br>
+<br>
+Luca Moro discovered that Samba incorrectly handled certain SMB1<br>
+communications. A remote attacker could possibly use this issue to obtain<br>
+sensitive memory contents. (CVE-2022-32742)<br>
+<br>
+Joseph Sutton discovered that Samba incorrectly handled certain password<br>
+change requests. A remote attacker could use this issue to change passwords<br>
+of other users, resulting in privilege escalation. (CVE-2022-32744)<br>
+<br>
+Joseph Sutton discovered that Samba incorrectly handled certain LDAP add or<br>
+modify requests. A remote attacker could possibly use this issue to cause<br>
+Samba to crash, resulting in a denial of service. (CVE-2022-32745)<br>
+<br>
+Joseph Sutton and Andrew Bartlett discovered that Samba incorrectly handled<br>
+certain LDAP add or modify requests. A remote attacker could possibly use<br>
+this issue to cause Samba to crash, resulting in a denial of service.<br>
+(CVE-2022-32746)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-3670<br>
+ - https://ubuntu.com/security/CVE-2022-2031<br>
+ - https://ubuntu.com/security/CVE-2022-32742<br>
+ - https://ubuntu.com/security/CVE-2022-32744<br>
+ - https://ubuntu.com/security/CVE-2022-32745<br>
+ - https://ubuntu.com/security/CVE-2022-32746<br>
+ - https://ubuntu.com/security/CVE-2022-32744<br>
+ - https://ubuntu.com/security/CVE-2022-32745<br>
+ - https://ubuntu.com/security/CVE-2022-32742<br>
+ - https://ubuntu.com/security/CVE-2022-32746<br>
+ - https://ubuntu.com/security/CVE-2021-3670<br>
+ - https://ubuntu.com/security/CVE-2022-2031<br>
+<br>
+**Title**: USN-5561-1: GNOME Web vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5561-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that GNOME Web incorrectly filtered certain strings. A<br>
+remote attacker could use this issue to perform cross-site scripting (XSS)<br>
+attacks. This issue only affected Ubuntu 20.04 LTS. (CVE-2021-45085,<br>
+CVE-2021-45086, CVE-2021-45087)<br>
+<br>
+It was discovered that GNOME Web incorrectly handled certain long page<br>
+titles. A remote attacker could use this issue to cause GNOME Web to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code.<br>
+(CVE-2022-29536)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45085<br>
+ - https://ubuntu.com/security/CVE-2021-45086<br>
+ - https://ubuntu.com/security/CVE-2021-45087<br>
+ - https://ubuntu.com/security/CVE-2022-29536<br>
+ - https://ubuntu.com/security/CVE-2022-29536<br>
+ - https://ubuntu.com/security/CVE-2021-45086<br>
+ - https://ubuntu.com/security/CVE-2021-45087<br>
+ - https://ubuntu.com/security/CVE-2021-45085<br>
+<br>
+**Title**: USN-5538-1: libtirpc vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5538-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libtirpc incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-46828<br>
+<br>
+**Title**: USN-5544-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5544-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the Atheros ath9k wireless device driver in the<br>
+Linux kernel did not properly handle some error conditions, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-1679)<br>
+<br>
+Felix Fu discovered that the Sun RPC implementation in the Linux kernel did<br>
+not properly handle socket states, leading to a use-after-free<br>
+vulnerability. A remote attacker could possibly use this to cause a denial<br>
+of service (system crash) or execute arbitrary code. (CVE-2022-28893)<br>
+<br>
+Arthur Mongodin discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly perform data validation. A local attacker could use this<br>
+to escalate privileges in certain situations. (CVE-2022-34918)<br>
+<br>
+Minh Yuan discovered that the floppy disk driver in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could possibly use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2022-1652)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+<br>
+**Title**: USN-5546-1: OpenJDK vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5546-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Neil Madden discovered that OpenJDK did not properly verify ECDSA<br>
+signatures. A remote attacker could possibly use this issue to insert,<br>
+edit or obtain sensitive information. This issue only affected OpenJDK<br>
+17 and OpenJDK 18. (CVE-2022-21449)<br>
+<br>
+It was discovered that OpenJDK incorrectly limited memory when compiling a<br>
+specially crafted XPath expression. An attacker could possibly use this<br>
+issue to cause a denial of service. This issue was fixed in OpenJDK 8 and<br>
+OpenJDK 18. USN-5388-1 and USN-5388-2 addressed this issue in OpenJDK 11<br>
+and OpenJDK 17. (CVE-2022-21426)<br>
+<br>
+It was discovered that OpenJDK incorrectly handled converting certain<br>
+object arguments into their textual representations. An attacker could<br>
+possibly use this issue to cause a denial of service. This issue was<br>
+fixed in OpenJDK 8 and OpenJDK 18. USN-5388-1 and USN-5388-2 addressed<br>
+this issue in OpenJDK 11 and OpenJDK 17. (CVE-2022-21434)<br>
+<br>
+It was discovered that OpenJDK incorrectly validated the encoded length of<br>
+certain object identifiers. An attacker could possibly use this issue to<br>
+cause a denial of service. This issue was fixed in OpenJDK 8 and OpenJDK 18.<br>
+USN-5388-1 and USN-5388-2 addressed this issue in OpenJDK 11 and OpenJDK 17.<br>
+(CVE-2022-21443)<br>
+<br>
+It was discovered that OpenJDK incorrectly validated certain paths. An<br>
+attacker could possibly use this issue to bypass the secure validation<br>
+feature and expose sensitive information in XML files. This issue was<br>
+fixed in OpenJDK 8 and OpenJDK 18. USN-5388-1 and USN-5388-2 addressed this<br>
+issue in OpenJDK 11 and OpenJDK 17. (CVE-2022-21476)<br>
+<br>
+It was discovered that OpenJDK incorrectly parsed certain URI strings. An<br>
+attacker could possibly use this issue to make applications accept<br>
+invalid of malformed URI strings. This issue was fixed in OpenJDK 8 and<br>
+OpenJDK 18. USN-5388-1 and USN-5388-2 addressed this issue in OpenJDK 11<br>
+and OpenJDK 17. (CVE-2022-21496)<br>
+<br>
+It was discovered that OpenJDK incorrectly generated class code in the<br>
+Hotspot component. An attacker could possibly use this issue to obtain<br>
+sensitive information. (CVE-2022-21540)<br>
+<br>
+It was dicovered that OpenJDK incorrectly restricted access to the<br>
+invokeBasic() method in the Hotspot component. An attacker could possibly<br>
+use this issue to insert, edit or obtain sensitive information.<br>
+(CVE-2022-21541)<br>
+<br>
+It was discovered that OpenJDK incorrectly computed exponentials. An<br>
+attacker could possibly use this issue to insert, edit or obtain sensitive<br>
+information. This issue only affected OpenJDK 17.<br>
+(CVE-2022-21549)<br>
+<br>
+It was discovered that OpenJDK includes a copy of Xalan that incorrectly<br>
+handled integer truncation. An attacker could possibly use this issue to<br>
+execute arbitrary code. (CVE-2022-34169)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-21449<br>
+ - https://ubuntu.com/security/CVE-2022-21426<br>
+ - https://ubuntu.com/security/CVE-2022-21434<br>
+ - https://ubuntu.com/security/CVE-2022-21443<br>
+ - https://ubuntu.com/security/CVE-2022-21476<br>
+ - https://ubuntu.com/security/CVE-2022-21496<br>
+ - https://ubuntu.com/security/CVE-2022-21540<br>
+ - https://ubuntu.com/security/CVE-2022-21541<br>
+ - https://ubuntu.com/security/CVE-2022-21549<br>
+ - https://ubuntu.com/security/CVE-2022-34169<br>
+ - https://ubuntu.com/security/CVE-2022-21541<br>
+ - https://ubuntu.com/security/CVE-2022-21540<br>
+ - https://ubuntu.com/security/CVE-2022-21549<br>
+ - https://ubuntu.com/security/CVE-2022-21426<br>
+ - https://ubuntu.com/security/CVE-2022-21476<br>
+ - https://ubuntu.com/security/CVE-2022-34169<br>
+ - https://ubuntu.com/security/CVE-2022-21443<br>
+ - https://ubuntu.com/security/CVE-2022-21449<br>
+ - https://ubuntu.com/security/CVE-2022-21434<br>
+ - https://ubuntu.com/security/CVE-2022-21496<br>
+<br>
+**Title**: USN-5537-1: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5537-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in MySQL and this update includes<br>
+new upstream MySQL versions to fix these issues.<br>
+<br>
+MySQL has been updated to 8.0.30 in Ubuntu 20.04 LTS and Ubuntu 22.04 LTS.<br>
+Ubuntu 18.04 LTS has been updated to MySQL 5.7.39.<br>
+<br>
+In addition to security fixes, the updated packages contain bug fixes, new<br>
+features, and possibly incompatible changes.<br>
+<br>
+Please see the following for more information:<br>
+<br>
+https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-39.html<br>
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-30.html<br>
+https://www.oracle.com/security-alerts/cpujul2022.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-21517<br>
+ - https://ubuntu.com/security/CVE-2022-21569<br>
+ - https://ubuntu.com/security/CVE-2022-21515<br>
+ - https://ubuntu.com/security/CVE-2022-21509<br>
+ - https://ubuntu.com/security/CVE-2022-21530<br>
+ - https://ubuntu.com/security/CVE-2022-21528<br>
+ - https://ubuntu.com/security/CVE-2022-21529<br>
+ - https://ubuntu.com/security/CVE-2022-21553<br>
+ - https://ubuntu.com/security/CVE-2022-21525<br>
+ - https://ubuntu.com/security/CVE-2022-21537<br>
+ - https://ubuntu.com/security/CVE-2022-21531<br>
+ - https://ubuntu.com/security/CVE-2022-21534<br>
+ - https://ubuntu.com/security/CVE-2022-21526<br>
+ - https://ubuntu.com/security/CVE-2022-21538<br>
+ - https://ubuntu.com/security/CVE-2022-21527<br>
+ - https://ubuntu.com/security/CVE-2022-21539<br>
+ - https://ubuntu.com/security/CVE-2022-21547<br>
+ - https://ubuntu.com/security/CVE-2022-21522<br>
+<br>
+**Title**: USN-5568-1: WebKitGTK vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5568-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Several security issues were discovered in the WebKitGTK Web and JavaScript<br>
+engines. If a user were tricked into viewing a malicious website, a remote<br>
+attacker could exploit a variety of issues related to web browser security,<br>
+including cross-site scripting attacks, denial of service attacks, and<br>
+arbitrary code execution.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2294<br>
+ - https://ubuntu.com/security/CVE-2022-32792<br>
+ - https://ubuntu.com/security/CVE-2022-32816<br>
+<br>
+**Title**: USN-5543-1: Net-SNMP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5543-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Yu Zhang and Nanyu Zhong discovered that Net-SNMP incorrectly handled<br>
+memory operations when processing certain requests. A remote attacker could<br>
+use this issue to cause Net-SNMP to crash, resulting in a denial of<br>
+service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-24806<br>
+ - https://ubuntu.com/security/CVE-2022-24808<br>
+ - https://ubuntu.com/security/CVE-2022-24809<br>
+ - https://ubuntu.com/security/CVE-2022-24805<br>
+ - https://ubuntu.com/security/CVE-2022-24810<br>
+ - https://ubuntu.com/security/CVE-2022-24807<br>
+<br>
+**Title**: USN-5564-1: Linux kernel (Intel IoTG) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5564-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  Zhenpeng Lin discovered that the network packet scheduler implementation in<br>
+the Linux kernel did not properly remove all references to a route filter<br>
+before freeing it in some situations. A local attacker could use this to<br>
+cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2588)<br>
+<br>
+It was discovered that the netfilter subsystem of the Linux kernel did not<br>
+prevent one nft object from referencing an nft set in another nft table,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2586)<br>
+<br>
+It was discovered that the implementation of POSIX timers in the Linux<br>
+kernel did not properly clean up timers in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2022-2585)<br>
+<br>
+It was discovered that the eBPF implementation in the Linux kernel did not<br>
+properly prevent writes to kernel objects in BPF_BTF_LOAD commands. A<br>
+privileged local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-0500)<br>
+<br>
+Minh Yuan discovered that the floppy disk driver in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could possibly use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2022-1652)<br>
+<br>
+It was discovered that the Atheros ath9k wireless device driver in the<br>
+Linux kernel did not properly handle some error conditions, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-1679)<br>
+<br>
+It was discovered that the Marvell NFC device driver implementation in the<br>
+Linux kernel did not properly perform memory cleanup operations in some<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2022-1734)<br>
+<br>
+Yongkang Jia discovered that the KVM hypervisor implementation in the Linux<br>
+kernel did not properly handle guest TLB mapping invalidation requests in<br>
+some situations. An attacker in a guest VM could use this to cause a denial<br>
+of service (system crash) in the host OS. (CVE-2022-1789)<br>
+<br>
+Duoming Zhou discovered a race condition in the NFC subsystem in the Linux<br>
+kernel, leading to a use-after-free vulnerability. A privileged local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-1974)<br>
+<br>
+Duoming Zhou discovered that the NFC subsystem in the Linux kernel did not<br>
+properly prevent context switches from occurring during certain atomic<br>
+context operations. A privileged local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2022-1975)<br>
+<br>
+Felix Fu discovered that the Sun RPC implementation in the Linux kernel did<br>
+not properly handle socket states, leading to a use-after-free<br>
+vulnerability. A remote attacker could possibly use this to cause a denial<br>
+of service (system crash) or execute arbitrary code. (CVE-2022-28893)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some AMD x86-64<br>
+processors, the branch predictor could by mis-trained for return<br>
+instructions in certain circumstances. A local attacker could possibly use<br>
+this to expose sensitive information. (CVE-2022-29900)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some Intel x86-64<br>
+processors, the Linux kernel's protections against speculative branch<br>
+target injection attacks were insufficient in some circumstances. A local<br>
+attacker could possibly use this to expose sensitive information.<br>
+(CVE-2022-29901)<br>
+<br>
+Minh Yuan discovered that the floppy driver in the Linux kernel contained a<br>
+race condition in some situations, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2022-33981)<br>
+<br>
+Arthur Mongodin discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly perform data validation. A local attacker could use this<br>
+to escalate privileges in certain situations. (CVE-2022-34918)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-0500<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+ - https://ubuntu.com/security/CVE-2022-1734<br>
+ - https://ubuntu.com/security/CVE-2022-1789<br>
+ - https://ubuntu.com/security/CVE-2022-1974<br>
+ - https://ubuntu.com/security/CVE-2022-1975<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-33981<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+ - https://ubuntu.com/security/CVE-2022-1734<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-33981<br>
+ - https://ubuntu.com/security/CVE-2022-0500<br>
+ - https://ubuntu.com/security/CVE-2022-1974<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+ - https://ubuntu.com/security/CVE-2022-1789<br>
+ - https://ubuntu.com/security/CVE-2022-1975<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+<br>
+**Title**: USN-5566-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5566-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Zhenpeng Lin discovered that the network packet scheduler implementation in<br>
+the Linux kernel did not properly remove all references to a route filter<br>
+before freeing it in some situations. A local attacker could use this to<br>
+cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2588)<br>
+<br>
+It was discovered that the netfilter subsystem of the Linux kernel did not<br>
+prevent one nft object from referencing an nft set in another nft table,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2586)<br>
+<br>
+It was discovered that the implementation of POSIX timers in the Linux<br>
+kernel did not properly clean up timers in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2022-2585)<br>
+<br>
+Minh Yuan discovered that the floppy disk driver in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could possibly use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2022-1652)<br>
+<br>
+It was discovered that the Atheros ath9k wireless device driver in the<br>
+Linux kernel did not properly handle some error conditions, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-1679)<br>
+<br>
+Felix Fu discovered that the Sun RPC implementation in the Linux kernel did<br>
+not properly handle socket states, leading to a use-after-free<br>
+vulnerability. A remote attacker could possibly use this to cause a denial<br>
+of service (system crash) or execute arbitrary code. (CVE-2022-28893)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some AMD x86-64<br>
+processors, the branch predictor could by mis-trained for return<br>
+instructions in certain circumstances. A local attacker could possibly use<br>
+this to expose sensitive information. (CVE-2022-29900)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some Intel x86-64<br>
+processors, the Linux kernel's protections against speculative branch<br>
+target injection attacks were insufficient in some circumstances. A local<br>
+attacker could possibly use this to expose sensitive information.<br>
+(CVE-2022-29901)<br>
+<br>
+Arthur Mongodin discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly perform data validation. A local attacker could use this<br>
+to escalate privileges in certain situations. (CVE-2022-34918)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-34918<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-1652<br>
+ - https://ubuntu.com/security/CVE-2022-1679<br>
+ - https://ubuntu.com/security/CVE-2022-28893<br>
+<br>
+**Title**: USN-5567-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5567-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Zhenpeng Lin discovered that the network packet scheduler implementation in<br>
+the Linux kernel did not properly remove all references to a route filter<br>
+before freeing it in some situations. A local attacker could use this to<br>
+cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2588)<br>
+<br>
+It was discovered that the netfilter subsystem of the Linux kernel did not<br>
+prevent one nft object from referencing an nft set in another nft table,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2586)<br>
+<br>
+It was discovered that the implementation of POSIX timers in the Linux<br>
+kernel did not properly clean up timers in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2022-2585)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+<br>
+**Title**: USN-5565-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5565-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Zhenpeng Lin discovered that the network packet scheduler implementation in<br>
+the Linux kernel did not properly remove all references to a route filter<br>
+before freeing it in some situations. A local attacker could use this to<br>
+cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2588)<br>
+<br>
+It was discovered that the netfilter subsystem of the Linux kernel did not<br>
+prevent one nft object from referencing an nft set in another nft table,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or execute arbitrary code.<br>
+(CVE-2022-2586)<br>
+<br>
+It was discovered that the implementation of POSIX timers in the Linux<br>
+kernel did not properly clean up timers in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2022-2585)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some AMD x86-64<br>
+processors, the branch predictor could by mis-trained for return<br>
+instructions in certain circumstances. A local attacker could possibly use<br>
+this to expose sensitive information. (CVE-2022-29900)<br>
+<br>
+Johannes Wikner and Kaveh Razavi discovered that for some Intel x86-64<br>
+processors, the Linux kernel's protections against speculative branch<br>
+target injection attacks were insufficient in some circumstances. A local<br>
+attacker could possibly use this to expose sensitive information.<br>
+(CVE-2022-29901)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-2588<br>
+ - https://ubuntu.com/security/CVE-2022-2585<br>
+ - https://ubuntu.com/security/CVE-2022-29901<br>
+ - https://ubuntu.com/security/CVE-2022-29900<br>
+ - https://ubuntu.com/security/CVE-2022-2586<br>
+<br>
+**Title**: USN-5571-1: PostgreSQL vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5571-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Sven Klemm discovered that PostgreSQL incorrectly handled extensions. An<br>
+attacker could possibly use this issue to execute arbitrary code when<br>
+extensions are created or updated.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2625<br>
+<br>
+**Title**: USN-5569-1: Unbound vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5569-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Xiang Li discovered that Unbound incorrectly handled delegation caching.<br>
+A remote attacker could use this issue to keep rogue domain names<br>
+resolvable long after they have been revoked.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-30699<br>
+ - https://ubuntu.com/security/CVE-2022-30698<br>
+<br>
+**Title**: USN-5547-1: NVIDIA graphics drivers vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5547-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  Le Wu discovered that the NVIDIA graphics drivers did not properly perform<br>
+input validation in some situations. A local user could use this to cause a<br>
+denial of service or possibly execute arbitrary code. (CVE-2022-31607)<br>
+<br>
+Tal Lossos discovered that the NVIDIA graphics drivers incorrectly handled<br>
+certain memory operations, leading to a null-pointer dereference. A local<br>
+attacker could use this to cause a denial of service. (CVE-2022-31615)<br>
+<br>
+Artem S. Tashkinov discovered that the NVIDIA graphics drivers Dynamic<br>
+Boost D-Bus component did not properly restrict access to its endpoint.<br>
+When enabled in non-default configurations, a local attacker could use this<br>
+to cause a denial of service or possibly execute arbitrary code.<br>
+(CVE-2022-31608)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-31607<br>
+ - https://ubuntu.com/security/CVE-2022-31615<br>
+ - https://ubuntu.com/security/CVE-2022-31608<br>
+ - https://ubuntu.com/security/CVE-2022-31607<br>
+ - https://ubuntu.com/security/CVE-2022-31615<br>
+ - https://ubuntu.com/security/CVE-2022-31608<br>
+<br>
+**Title**: USN-5532-1: Bottle vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5532-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Bottle incorrectly handled errors during early request <br>
+binding. An attacker could possibly use this issue to disclose sensitive <br>
+information. (CVE-2022-31799)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-31799<br>
+ - https://ubuntu.com/security/CVE-2022-31799<br>
+<br>
+**Title**: USN-5531-1: protobuf-c vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5531-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Pietro Borrello discovered that protobuf-c contained an invalid<br>
+arithmetic shift. This vulnerability allowed attackers to cause a<br>
+denial of service (system crash) via unspecified vectors<br>
+(CVE-2022-33070).<br>
+<br>
+It was discovered that protobuf-c contained an unsigned integer<br>
+overflow. This vulnerability allowed attackers to cause a denial of<br>
+service (system crash) via unspecified vectors.<br>
+<br>
+Todd Miller discovered that protobuf-c contained a possible NULL<br>
+dereference. This could cause a vulnerability that allowed attackers to<br>
+cause a denial of service (system crash) via unspecified vectors.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-33070<br>
+ - https://ubuntu.com/security/CVE-2022-33070<br>
+<br>
+**Title**: USN-5545-1: Linux kernel (OEM) vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5545-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Arthur Mongodin discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly perform data validation. A local attacker could use this<br>
+to escalate privileges in certain situations.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-34918
+
 #### <a id="jammy-1-2"></a> 1.2
 
 **Release Date**: July 28, 2022
@@ -20555,25 +21163,6 @@ Sergei Glazunov discovered that FreeType did not correctly handle certain malfor
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15999
 
-#### <a id="621-90"></a> 621.90
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: October 23, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.268.16<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4593-1: FreeType vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4593-1<br>
-**Priorities**: high<br>
-**Description**:<br>
-Sergei Glazunov discovered that FreeType did not correctly handle certain malformed font files. If a user were tricked into using a specially crafted font file, a remote attacker could cause FreeType to crash or possibly execute arbitrary code with user privileges.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15999
-
 #### <a id="621-89"></a> 621.89
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -20797,390 +21386,6 @@ Amit Klein discovered that Squid incorrectly validated certain data. A remote at
   It was discovered that Brotli incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8927
-
-#### <a id="621-87"></a> 621.87
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: October 14, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.268.16<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4573-1: Vino vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4573-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Nicolas Ruff discovered that Vino incorrectly handled large ClientCutText messages. A remote attacker could use this issue to cause the server to crash, resulting in a denial of service. (CVE-2014-6053)<br>
-It was discovered that Vino incorrectly handled certain packet lengths. A remote attacker could possibly use this issue to obtain...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14397<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14402<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14403<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14404<br>
-<br>
-**Title**: USN-4554-1: libPGF vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4554-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that libPGF lacked proper validation when opening a specially crafted PGF file. An attacker could possibly use this issue to cause a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2015-6673<br>
-<br>
-**Title**: USN-4557-1: Tomcat vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4557-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  It was discovered that the Tomcat realm implementations incorrectly handled passwords when a username didn't exist. A remote attacker could possibly use this issue to enumerate usernames. (CVE-2016-0762)<br>
-Alvaro Munoz and Alexander Mirosh discovered that Tomcat incorrectly limited use of a certain utility method. A malicious application...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-0762<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-5018<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6794<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6796<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6797<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-6816<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-8735<br>
-<br>
-**Title**: USN-4578-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4578-1<br>
-**Priorities**: low,medium,high<br>
-**Description**:<br>
-  Hador Manor discovered that the DCCP protocol implementation in the Linux kernel improperly handled socket reuse, leading to a use-after-free vulnerability. A local attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-16119)<br>
-Wen Xu discovered that the XFS file system in the Linux kernel...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-10322<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19448<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14314<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16119<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16120<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26088<br>
-<br>
-**Title**: USN-4547-2: SSVNC vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4547-2<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that the LibVNCClient vendored in SSVNC incorrectly handled certain packet lengths. A remote attacker could possibly use this issue to obtain sensitive information, cause a denial of service, or execute arbitrary code. (CVE-2018-20020, CVE-2018-20021, CVE-2018-20022, CVE-2018-2024)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024<br>
-<br>
-**Title**: USN-4571-1: rack-cors vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4571-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that rack-cors did not properly handle relative file paths. An attacker could use this vulnerability to access arbitrary files.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18978<br>
-<br>
-**Title**: USN-4572-1: Spice vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4572-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Frediano Ziglio discovered that Spice incorrectly handled QUIC image decoding. A remote attacker could use this to cause Spice to crash, resulting in a denial of service, or possibly execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14355<br>
-<br>
-**Title**: USN-4559-1: Samba update<br>
-**URL**: https://ubuntu.com/security/notices/USN-4559-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Tom Tervoort discovered that the Netlogon protocol implemented by Samba incorrectly handled the authentication scheme. A remote attacker could use this issue to forge an authentication token and steal the credentials of the domain admin.<br>
-While a previous security update fixed the issue by changing the &quot;server schannel&quot; setting to default to...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1472<br>
-<br>
-**Title**: USN-4551-1: Squid vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4551-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  Alex Rousskov and Amit Klein discovered that Squid incorrectly handled certain Content-Length headers. A remote attacker could possibly use this issue to perform an HTTP request smuggling attack, resulting in cache poisoning. (CVE-2020-15049)<br>
-Amit Klein discovered that Squid incorrectly validated certain data. A remote attacker could possibly use...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15049<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15810<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15811<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24606<br>
-<br>
-**Title**: USN-4564-1: Apache Tika vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4564-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  It was discovered that Apache Tika can have an excessive memory usage by using a crafted or corrupt PSD file. An attacker could use it to cause a denial of service (crash). (CVE-2020-1950, CVE-2020-1951)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1950<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1951<br>
-<br>
-**Title**: USN-4570-1: urllib3 vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4570-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that urllib3 incorrectly handled certain character sequences. A remote attacker could possibly use this issue to perform CRLF injection.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26137<br>
-<br>
-**Title**: USN-4568-1: Brotli vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4568-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Brotli incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8927
-
-#### <a id="621-85"></a> 621.85
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: September 28, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.268.16<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4500-1: bsdiff vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4500-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that bsdiff mishandled certain input. If a user were tricked into opening a malicious file, an attacker could cause bsdiff to crash or potentially execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9862<br>
-<br>
-**Title**: USN-4506-1: MCabber vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4506-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that MCabber does not properly manage roster pushes. An attacker could possibly use this issue to remotely perform man-in-the-middle attacks. (CVE-2016-9928).<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9928<br>
-<br>
-**Title**: USN-4513-1: apng2gif vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4513-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled loading APNG files. An attacker could exploit this with a crafted APNG file to access sensitive information. (CVE-2017-6960)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-6960<br>
-<br>
-**Title**: USN-4517-1: Email-Address-List vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4517-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Email-Address-List does not properly parse email addresses during email-ingestion. A remote attacker could use this issue to cause an algorithmic complexity attack, resulting in a denial of service. (CVE-2018-18898)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18898<br>
-<br>
-**Title**: USN-4507-1: ncmpc vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4507-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that ncmpc incorrectly handled long chat messages. A remote attacker could possibly exploit this with a crafted chat message, causing ncmpc to crash, resulting in a denial of service. (CVE-2018-9240)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-9240<br>
-<br>
-**Title**: USN-4499-1: MilkyTracker vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4499-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that MilkyTracker did not properly handle certain input. If a user were tricked into opening a malicious file, an attacker could cause MilkyTracker to crash or potentially execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14464<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14496<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14497<br>
-<br>
-**Title**: USN-4504-1: OpenSSL vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4504-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  Robert Merget, Marcus Brinkmann, Nimrod Aviram, and Juraj Somorovsky discovered that certain Diffie-Hellman ciphersuites in the TLS specification and implemented by OpenSSL contained a flaw. A remote attacker could possibly use this issue to eavesdrop on encrypted communications. This was fixed in this update by removing the insecure ciphersuites...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1968<br>
-<br>
-**Title**: USN-4498-1: Loofah vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4498-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Loofah does not properly sanitize JavaScript in sanitized output. An attacker could possibly use this issue to perform XSS attacks. (CVE-2019-15587)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15587<br>
-<br>
-**Title**: USN-4496-1: Apache XML-RPC vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4496-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Apache XML-RPC (aka ws-xmlrpc) does not properly deserialize untrusted data. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-17570)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17570<br>
-<br>
-**Title**: USN-4526-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4526-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  It was discovered that the AMD Cryptographic Coprocessor device driver in the Linux kernel did not properly deallocate memory in some situations. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-18808)<br>
-It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18808<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19061<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19067<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12888<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14356<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16166<br>
-<br>
-**Title**: USN-4527-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4527-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  It was discovered that the Conexant 23885 TV card device driver for the Linux kernel did not properly deallocate memory in some error conditions. A local attacker could use this to cause a denial of service (memory exhaustion). (CVE-2019-19054)<br>
-It was discovered that the Atheros HTC based wireless driver in the Linux kernel did not properly...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19054<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19073<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19074<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20811<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9445<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-9453<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25212<br>
-<br>
-**Title**: USN-4520-1: Exim SpamAssassin vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4520-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Exim SpamAssassin does not properly handle configuration strings. An attacker could possibly use this issue to execute arbitrary code. (CVE-2019-19920)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19920<br>
-<br>
-**Title**: USN-4534-1: Perl DBI module vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4534-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Perl DBI module incorrectly handled certain inputs. An attacker could possibly use this issue to cause a crash or expose sensitive information.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20919<br>
-<br>
-**Title**: USN-4535-1:  RDFLib vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4535-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Gabriel Corona discovered that RDFLib did not properly load modules on the command-line. An attacker could possibly use this issue to cause RDFLib to execute arbitrary code. (CVE-2019-7653)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-7653<br>
-<br>
-**Title**: USN-4528-1: Ceph vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4528-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Adam Mohammed discovered that Ceph incorrectly handled certain CORS ExposeHeader tags. A remote attacker could possibly use this issue to preform an HTTP header injection attack. (CVE-2020-10753)<br>
-Lei Cao discovered that Ceph incorrectly handled certain POST requests with invalid tagging XML. A remote attacker could possibly use this issue...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10753<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12059<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1760<br>
-<br>
-**Title**: USN-4518-1: xawtv vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4518-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  Matthias Gerstner discovered that xawtv incorrectly handled opening files. A local attacker could possibly use this issue to open and write to arbitrary files and escalate privileges. (CVE-2020-13696)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13696<br>
-<br>
-**Title**: USN-4521-1: pam_tacplus vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4521-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  It was discovered that pam_tacplus did not properly manage shared secrets if DEBUG loglevel and journald are used. A remote attacker could use this issue to expose sensitive information.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13881<br>
-<br>
-**Title**: USN-4511-1: QEMU vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4511-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Ziming Zhang, Xiao Wei, Gonglei Arei, and Yanyu Zhang discovered that QEMU incorrectly handled certain USB packets. An attacker inside the guest could use this issue to cause QEMU to crash, resulting in a denial of service, or possibly execute arbitrary code on the host. In the default installation, when QEMU is used with libvirt, attackers would...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14364<br>
-<br>
-**Title**: USN-4503-1: Perl DBI module vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4503-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Perl DBI module incorrectly handled certain calls. An attacker could possibly use this issue to execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14392<br>
-<br>
-**Title**: USN-4537-1: Aptdaemon vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4537-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Vaisha Bernard discovered that Aptdaemon incorrectly handled the Locale property. A local attacker could use this issue to test for the presence of local files.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15703<br>
-<br>
-**Title**: USN-4519-1: PulseAudio vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4519-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Ratchanan Srirattanamet discovered that an Ubuntu-specific patch caused PulseAudio to incorrectly handle memory under certain error conditions in the Bluez 5 module. An attacker could use this issue to cause PulseAudio to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-15710)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15710<br>
-<br>
-**Title**: USN-4501-1: LuaJIT vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4501-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  It was discovered that an out-of-bounds read existed in LuaJIT. An attacker could use this to cause a denial of service (application crash) or possibly expose sensitive information. (CVE-2020-15890)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15890<br>
-<br>
-**Title**: USN-4538-1: PackageKit vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4538-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  Vaisha Bernard discovered that PackageKit incorrectly handled certain methods. A local attacker could use this issue to learn the MIME type of any file on the system. (CVE-2020-16121)<br>
-Sami Niemimäki discovered that PackageKit incorrectly handled local deb packages. A local user could possibly use this issue to install untrusted packages, contrary...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16121<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16122<br>
-<br>
-**Title**: USN-4514-1: libproxy vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4514-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that libproxy incorrectly handled certain PAC files. An attacker could possibly use this issue to cause a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25219<br>
-<br>
-**Title**: USN-4508-1: StoreBackup vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4508-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that StoreBackup did not properly manage lock files. A local attacker could use this issue to cause a denial of service or escalate privileges and run arbitrary code. (CVE-2020-7040)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-7040<br>
-<br>
-**Title**: USN-4515-1: Pure-FTPd vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4515-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  Antonio Norales discovered that Pure-FTPd incorrectly handled directory aliases. An attacker could possibly use this issue to access sensitive information. (CVE-2020-9274)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-9274
 
 #### <a id="621-85"></a> 621.85
 
@@ -31425,6 +31630,52 @@ service.<br>
 *   [[USN-4646-2] poppler regression](https://ubuntu.com/security/notices/USN-4646-2)<br>
 *   [[USN-4382-2] FreeRDP vulnerabilities](https://ubuntu.com/security/notices/USN-4382-2)<br>
 *   [[USN-4650-1] QEMU vulnerabilities](https://ubuntu.com/security/notices/USN-4650-1)
+
+#### <a id="456-128"></a> 456.128
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 16, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.7<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4587-1: iTALC vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4587-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Nicolas Ruff discovered that iTALC had buffer overflows, divide-by-zero errors and didn't check malloc return values. A remote attacker could use these issues to cause a denial of service or possibly execute arbitrary code. (CVE-2014-6051, CVE-2014-6052, CVE-2014-6053, CVE-2014-6054, CVE-2014-6055)<br>
+Josef Gajdusek discovered that iTALC had...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6051<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6052<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6054<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6055<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9941<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9942<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15127<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20019<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20023<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20748<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20749<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20750<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
+<br>
+**Title**: USN-4552-2: Pam-python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4552-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Malte Kraus discovered that Pam-python mishandled certain environment variables. A local attacker could potentially use this vulnerability to execute programs as root.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729
 
 #### <a id="456-126"></a> 456.126
 
