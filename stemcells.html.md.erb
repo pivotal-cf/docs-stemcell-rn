@@ -15,6 +15,241 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-108"></a> 1.108
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 28, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.528.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6032-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6032-1<br>
+**Priorities**: medium,low,negligible<br>
+**Description**:<br>
+  Ziming Zhang discovered that the VMware Virtual GPU DRM driver in the Linux<br>
+kernel contained an out-of-bounds write vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash).<br>
+(CVE-2022-36280)<br>
+<br>
+Gerald Lee discovered that the USB Gadget file system implementation in the<br>
+Linux kernel contained a race condition, leading to a use-after-free<br>
+vulnerability in some situations. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-4382)<br>
+<br>
+It was discovered that a memory leak existed in the SCTP protocol<br>
+implementation in the Linux kernel. A local attacker could use this to<br>
+cause a denial of service (memory exhaustion). (CVE-2023-1074)<br>
+<br>
+It was discovered that the RNDIS USB driver in the Linux kernel contained<br>
+an integer overflow vulnerability. A local attacker with physical access<br>
+could plug in a malicious USB device to cause a denial of service (system<br>
+crash) or possibly execute arbitrary code. (CVE-2023-23559)<br>
+<br>
+It was discovered that the file system writeback functionality in the Linux<br>
+kernel contained a user-after-free vulnerability. A local attacker could<br>
+possibly use this to cause a denial of service (system crash) or execute<br>
+arbitrary code. (CVE-2023-26605)<br>
+<br>
+It was discovered that the NTFS file system implementation in the Linux<br>
+kernel did not properly validate attributes in certain situations, leading<br>
+to an out-of-bounds read vulnerability. A local attacker could possibly use<br>
+this to expose sensitive information (kernel memory). (CVE-2023-26607)<br>
+<br>
+Duoming Zhou discovered that a race condition existed in the infrared<br>
+receiver/transceiver driver in the Linux kernel, leading to a use-after-<br>
+free vulnerability. A privileged attacker could use this to cause a denial<br>
+of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-1118)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-36280<br>
+ - https://ubuntu.com/security/CVE-2022-4382<br>
+ - https://ubuntu.com/security/CVE-2023-1074<br>
+ - https://ubuntu.com/security/CVE-2023-23559<br>
+ - https://ubuntu.com/security/CVE-2023-26605<br>
+ - https://ubuntu.com/security/CVE-2023-26607<br>
+ - https://ubuntu.com/security/CVE-2023-1118<br>
+ - https://ubuntu.com/security/CVE-2022-4382<br>
+ - https://ubuntu.com/security/CVE-2023-26605<br>
+ - https://ubuntu.com/security/CVE-2023-1118<br>
+ - https://ubuntu.com/security/CVE-2022-36280<br>
+ - https://ubuntu.com/security/CVE-2023-23559<br>
+ - https://ubuntu.com/security/CVE-2023-1074<br>
+ - https://ubuntu.com/security/CVE-2023-26607<br>
+<br>
+**Title**: USN-6036-1: PatchELF vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6036-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PatchELF was not properly performing bounds<br>
+checks, which could lead to an out-of-bounds read via a specially<br>
+crafted file. An attacker could possibly use this issue to cause a<br>
+denial of service or to expose sensitive information. (CVE-2022-44940)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-44940<br>
+ - https://ubuntu.com/security/CVE-2022-44940<br>
+<br>
+**Title**: USN-6033-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6033-1<br>
+**Priorities**: high,medium,low,negligible<br>
+**Description**:<br>
+  It was discovered that the Traffic-Control Index (TCINDEX) implementation<br>
+in the Linux kernel did not properly perform filter deactivation in some<br>
+situations. A local attacker could possibly use this to gain elevated<br>
+privileges. Please note that with the fix for this CVE, kernel support for<br>
+the TCINDEX classifier has been removed. (CVE-2023-1829)<br>
+<br>
+William Zhao discovered that the Traffic Control (TC) subsystem in the<br>
+Linux kernel did not properly handle network packet retransmission in<br>
+certain situations. A local attacker could use this to cause a denial of<br>
+service (kernel deadlock). (CVE-2022-4269)<br>
+<br>
+Thadeu Cascardo discovered that the io_uring subsystem contained a double-<br>
+free vulnerability in certain memory allocation error conditions. A local<br>
+attacker could possibly use this to cause a denial of service (system<br>
+crash). (CVE-2023-1032)<br>
+<br>
+It was discovered that the TUN/TAP driver in the Linux kernel did not<br>
+properly initialize socket data. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-1076)<br>
+<br>
+It was discovered that the Real-Time Scheduling Class implementation in the<br>
+Linux kernel contained a type confusion vulnerability in some situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-1077)<br>
+<br>
+It was discovered that the ASUS HID driver in the Linux kernel did not<br>
+properly handle device removal, leading to a use-after-free vulnerability.<br>
+A local attacker with physical access could plug in a specially crafted USB<br>
+device to cause a denial of service (system crash). (CVE-2023-1079)<br>
+<br>
+It was discovered that the io_uring subsystem in the Linux kernel did not<br>
+properly perform file table updates in some situations, leading to a null<br>
+pointer dereference vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash). (CVE-2023-1583)<br>
+<br>
+It was discovered that the Xircom PCMCIA network device driver in the Linux<br>
+kernel did not properly handle device removal events. A physically<br>
+proximate attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-1670)<br>
+<br>
+It was discovered that the APM X-Gene SoC hardware monitoring driver in the<br>
+Linux kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or expose sensitive information (kernel memory).<br>
+(CVE-2023-1855)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth HCI SDIO<br>
+driver, leading to a use-after-free vulnerability. A local attacker could<br>
+use this to cause a denial of service (system crash). (CVE-2023-1989)<br>
+<br>
+It was discovered that the ST NCI NFC driver did not properly handle device<br>
+removal events. A physically proximate attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-1990)<br>
+<br>
+José Oliveira and Rodrigo Branco discovered that the Spectre Variant 2<br>
+mitigations with prctl syscall were insufficient in some situations. A<br>
+local attacker could possibly use this to expose sensitive information.<br>
+(CVE-2023-1998)<br>
+<br>
+It was discovered that the BigBen Interactive Kids' gamepad driver in the<br>
+Linux kernel did not properly handle device removal, leading to a use-<br>
+after-free vulnerability. A local attacker with physical access could plug<br>
+in a specially crafted USB device to cause a denial of service (system<br>
+crash). (CVE-2023-25012)<br>
+<br>
+It was discovered that a race condition existed in the TLS subsystem in the<br>
+Linux kernel, leading to a use-after-free or a null pointer dereference<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-28466)<br>
+<br>
+It was discovered that the Bluetooth subsystem in the Linux kernel did not<br>
+properly initialize some data structures, leading to an out-of-bounds<br>
+access vulnerability in certain situations. An attacker could use this to<br>
+expose sensitive information (kernel memory). (CVE-2023-28866)<br>
+<br>
+Reima Ishii discovered that the nested KVM implementation for Intel x86<br>
+processors in the Linux kernel did not properly validate control registers<br>
+in certain situations. An attacker in a guest VM could use this to cause a<br>
+denial of service (guest crash). (CVE-2023-30456)<br>
+<br>
+Duoming Zhou discovered that a race condition existed in the infrared<br>
+receiver/transceiver driver in the Linux kernel, leading to a use-after-<br>
+free vulnerability. A privileged attacker could use this to cause a denial<br>
+of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-1118)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+ - https://ubuntu.com/security/CVE-2022-4269<br>
+ - https://ubuntu.com/security/CVE-2023-1032<br>
+ - https://ubuntu.com/security/CVE-2023-1076<br>
+ - https://ubuntu.com/security/CVE-2023-1077<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-1583<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2023-1855<br>
+ - https://ubuntu.com/security/CVE-2023-1989<br>
+ - https://ubuntu.com/security/CVE-2023-1990<br>
+ - https://ubuntu.com/security/CVE-2023-1998<br>
+ - https://ubuntu.com/security/CVE-2023-25012<br>
+ - https://ubuntu.com/security/CVE-2023-28466<br>
+ - https://ubuntu.com/security/CVE-2023-28866<br>
+ - https://ubuntu.com/security/CVE-2023-30456<br>
+ - https://ubuntu.com/security/CVE-2023-1118<br>
+ - https://ubuntu.com/security/CVE-2023-1076<br>
+ - https://ubuntu.com/security/CVE-2023-1118<br>
+ - https://ubuntu.com/security/CVE-2023-25012<br>
+ - https://ubuntu.com/security/CVE-2023-1855<br>
+ - https://ubuntu.com/security/CVE-2023-1990<br>
+ - https://ubuntu.com/security/CVE-2023-28866<br>
+ - https://ubuntu.com/security/CVE-2023-1998<br>
+ - https://ubuntu.com/security/CVE-2023-1077<br>
+ - https://ubuntu.com/security/CVE-2023-1583<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2023-1032<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-30456<br>
+ - https://ubuntu.com/security/CVE-2023-28466<br>
+ - https://ubuntu.com/security/CVE-2023-1989<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+ - https://ubuntu.com/security/CVE-2022-4269<br>
+<br>
+**Title**: USN-6043-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6043-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  It was discovered that the Traffic-Control Index (TCINDEX) implementation<br>
+in the Linux kernel did not properly perform filter deactivation in some<br>
+situations. A local attacker could possibly use this to gain elevated<br>
+privileges. Please note that with the fix for this CVE, kernel support for<br>
+the TCINDEX classifier has been removed. (CVE-2023-1829)<br>
+<br>
+It was discovered that the OverlayFS implementation in the Linux kernel did<br>
+not properly handle copy up operation in some conditions. A local attacker<br>
+could possibly use this to gain elevated privileges. (CVE-2023-0386)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+ - https://ubuntu.com/security/CVE-2023-0386<br>
+ - https://ubuntu.com/security/CVE-2023-0386<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+<br>
+**Title**: USN-6034-1: Dnsmasq vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6034-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Dnsmasq was sending large DNS messages<br>
+over UDP, possibly causing transmission failures due to IP<br>
+fragmentation. This update lowers the default maximum size of<br>
+DNS messages to improve transmission reliability over UDP.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-28450<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.105...ubuntu-jammy/v1.108
+
 #### <a id="jammy-1-105"></a> 1.105
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
