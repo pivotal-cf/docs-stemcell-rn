@@ -7944,6 +7944,141 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-508"></a> 621.508
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 28, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.135<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6035-1: KAuth vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6035-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that KAuth incorrectly handled some configuration parameters<br>
+with specially crafted arbitrary types. An attacker could possibly use this<br>
+issue to cause a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-7443<br>
+<br>
+**Title**: USN-6039-1: OpenSSL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6039-1<br>
+**Priorities**: low,negligible<br>
+**Description**:<br>
+  It was discovered that OpenSSL was not properly managing file locks when<br>
+processing policy constraints. If a user or automated system were tricked<br>
+into processing a certificate chain with specially crafted policy<br>
+constraints, a remote attacker could possibly use this issue to cause a<br>
+denial of service. This issue only affected Ubuntu 22.04 LTS and Ubuntu<br>
+22.10. (CVE-2022-3996)<br>
+<br>
+David Benjamin discovered that OpenSSL was not properly performing the<br>
+verification of X.509 certificate chains that include policy constraints,<br>
+which could lead to excessive resource consumption. If a user or automated<br>
+system were tricked into processing a specially crafted X.509 certificate<br>
+chain that includes policy constraints, a remote attacker could possibly<br>
+use this issue to cause a denial of service. (CVE-2023-0464)<br>
+<br>
+David Benjamin discovered that OpenSSL was not properly handling invalid<br>
+certificate policies in leaf certificates, which would result in certain<br>
+policy checks being skipped for the certificate. If a user or automated<br>
+system were tricked into processing a specially crafted certificate, a<br>
+remote attacker could possibly use this issue to assert invalid<br>
+certificate policies and circumvent policy checking. (CVE-2023-0465)<br>
+<br>
+David Benjamin discovered that OpenSSL incorrectly documented the<br>
+functionalities of function X509_VERIFY_PARAM_add0_policy, stating that<br>
+it would implicitly enable certificate policy checks when doing<br>
+certificate verifications, contrary to its implementation. This could<br>
+cause users and applications to not perform certificate policy checks<br>
+even when expected to do so. (CVE-2023-0466)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-3996<br>
+ - https://ubuntu.com/security/CVE-2023-0464<br>
+ - https://ubuntu.com/security/CVE-2023-0465<br>
+ - https://ubuntu.com/security/CVE-2023-0466<br>
+ - https://ubuntu.com/security/CVE-2022-3996<br>
+ - https://ubuntu.com/security/CVE-2023-0464<br>
+ - https://ubuntu.com/security/CVE-2023-0466<br>
+<br>
+**Title**: USN-6042-1: Cloud-init vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6042-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  James Glovich discovered that sensitive data could be exposed in logs. An<br>
+attacker could use this information to find hashed passwords and possibly<br>
+escalate their privilege.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1786<br>
+<br>
+**Title**: USN-6047-1: Linux kernel vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6047-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  It was discovered that the Traffic-Control Index (TCINDEX) implementation<br>
+in the Linux kernel did not properly perform filter deactivation in some<br>
+situations. A local attacker could possibly use this to gain elevated<br>
+privileges. Please note that with the fix for this CVE, kernel support for<br>
+the TCINDEX classifier has been removed.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+<br>
+**Title**: USN-6045-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6045-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  It was discovered that the Traffic-Control Index (TCINDEX) implementation<br>
+in the Linux kernel did not properly perform filter deactivation in some<br>
+situations. A local attacker could possibly use this to gain elevated<br>
+privileges. Please note that with the fix for this CVE, kernel support for<br>
+the TCINDEX classifier has been removed. (CVE-2023-1829)<br>
+<br>
+Gwnaun Jung discovered that the SFB packet scheduling implementation in the<br>
+Linux kernel contained a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2022-3586)<br>
+<br>
+Zheng Wang and Zhuorao Yang discovered that the RealTek RTL8712U wireless<br>
+driver in the Linux kernel contained a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2022-4095)<br>
+<br>
+It was discovered that the TIPC protocol implementation in the Linux kernel<br>
+did not properly validate the queue of socket buffers (skb) when handling<br>
+certain UDP packets. A remote attacker could use this to cause a denial of<br>
+service. (CVE-2023-1390)<br>
+<br>
+It was discovered that the Xircom PCMCIA network device driver in the Linux<br>
+kernel did not properly handle device removal events. A physically<br>
+proximate attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-1670)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+ - https://ubuntu.com/security/CVE-2022-3586<br>
+ - https://ubuntu.com/security/CVE-2022-4095<br>
+ - https://ubuntu.com/security/CVE-2023-1390<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2022-3586<br>
+ - https://ubuntu.com/security/CVE-2023-1829<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2023-1390<br>
+ - https://ubuntu.com/security/CVE-2022-4095<br>
+<br>
+**Title**: USN-6034-1: Dnsmasq vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6034-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Dnsmasq was sending large DNS messages<br>
+over UDP, possibly causing transmission failures due to IP<br>
+fragmentation. This update lowers the default maximum size of<br>
+DNS messages to improve transmission reliability over UDP.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-28450
+
 #### <a id="621-499"></a> 621.499
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
