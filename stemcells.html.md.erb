@@ -25003,139 +25003,6 @@ It was discovered that the Socket implementation in OpenJDK did not properly res
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2992<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2999
 
-#### <a id="621-41"></a> 621.41
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: February 04, 2020
-
-BOSH Agent version: 2.268.9<br>
-USNs:<br>
-    <br>
-**Title:** USN-4222-1: GraphicsMagick vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4222-1/<br>
-**Priorities:** medium,low<br>
-**Description:**<br>
-  It was discovered that GraphicsMagick incorrectly handled certain image files. An attacker could possibly use this issue to cause a denial of service or other unspecified impact.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11638<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11641<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11642<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12936<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12937<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13063<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13064<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13065<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13134<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13737<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13775<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13776<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13777<br>
-<br>
-**Title:** USN-4216-2: Firefox vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4216-2/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  USN-4216-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.<br>
-Original advisory details:<br>
-Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, obtain...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11745<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11756<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17005<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17008<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17010<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17011<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17012<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17013<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17014<br>
-<br>
-**Title:** USN-4220-1: Git vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4220-1/<br>
-**Priorities:** medium,low<br>
-**Description:**<br>
-  Joern Schneeweisz and Nicolas Joly discovered that Git contained various security flaws. An attacker could possibly use these issues to overwrite arbitrary paths, execute arbitrary code, and overwrite files in the .git directory.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1348<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1349<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1350<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1351<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1352<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1353<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1354<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1387<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19604<br>
-<br>
-**Title:** USN-4217-1: Samba vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4217-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  Andreas Oster discovered that the Samba DNS management server incorrectly handled certain records. An authenticated attacker could possibly use this issue to crash Samba, resulting in a denial of service. (CVE-2019-14861)<br>
-Isaac Boukris discovered that Samba did not enforce the Kerberos DelegationNotAllowed feature restriction, contrary to...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14861<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14870<br>
-<br>
-**Title:** USN-4219-1: libssh vulnerability<br>
-**URL:** https://usn.ubuntu.com/4219-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  It was discovered that libssh incorrectly handled certain scp commands. If a user or automated system were tricked into using a specially-crafted scp command, a remote attacker could execute arbitrary commands on the server.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14889<br>
-<br>
-**Title:** USN-4221-1: libpcap vulnerability<br>
-**URL:** https://usn.ubuntu.com/4221-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  It was discovered that libpcap did not properly validate PHB headers in some situations. An attacker could use this to cause a denial of service (memory exhaustion).<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15165<br>
-<br>
-**Title:** USN-4214-2: RabbitMQ vulnerability<br>
-**URL:** https://usn.ubuntu.com/4214-2/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  USN-4214-1 fixed a vulnerability in RabbitMQ. This update provides the corresponding updates for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
-Original advisory details:<br>
-It was discovered that RabbitMQ incorrectly handled certain inputs. An attacker could possibly use this issue to execute arbitrary code.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18609<br>
-<br>
-**Title:** USN-4224-1: Django vulnerability<br>
-**URL:** https://usn.ubuntu.com/4224-1/<br>
-**Priorities:** high<br>
-**Description:**<br>
-  Simon Charette discovered that the password reset functionality in Django used a Unicode case insensitive query to retrieve accounts associated with an email address. An attacker could possibly use this to obtain password reset tokens and hijack accounts.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19844<br>
-<br>
-**Title:** USN-4223-1: OpenJDK vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4223-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  Jan Jancar, Petr Svenda, and Vladimir Sedlacek discovered that a side- channel vulnerability existed in the ECDSA implementation in OpenJDK. An Attacker could use this to expose sensitive information. (CVE-2019-2894)<br>
-It was discovered that the Socket implementation in OpenJDK did not properly restrict the creation of subclasses with a custom...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2894<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2945<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2949<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2962<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2964<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2973<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2975<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2977<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2978<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2981<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2983<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2987<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2988<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2989<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2992<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2999
-
 #### <a id="621-29"></a> 621.29
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -33193,6 +33060,113 @@ service.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1971
 
+#### <a id="456-129"></a> 456.129
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: December 01, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.7<br>
+<br>
+#### USNs:<br>
+*   [[USN-4611-1] Samba vulnerabilities](https://ubuntu.com/security/notices/USN-4611-1)<br>
+*   [[USN-4605-2] Blueman update](https://ubuntu.com/security/notices/USN-4605-2)<br>
+*   [[USN-4614-1] GDM vulnerability](https://ubuntu.com/security/notices/USN-4614-1)<br>
+*   [[USN-4616-1] AccountsService vulnerabilities](https://ubuntu.com/security/notices/USN-4616-1)<br>
+*   [[USN-4613-1] python-cryptography vulnerability](https://ubuntu.com/security/notices/USN-4613-1)<br>
+*   [[USN-4615-1] Yerase's TNEF vulnerabilities](https://ubuntu.com/security/notices/USN-4615-1)<br>
+*   [[USN-4617-1] SPICE vdagent vulnerabilities](https://ubuntu.com/security/notices/USN-4617-1)<br>
+*   [[USN-4616-2] AccountsService vulnerabilities](https://ubuntu.com/security/notices/USN-4616-2)<br>
+*   [[USN-4618-1] tmux vulnerability](https://ubuntu.com/security/notices/USN-4618-1)<br>
+*   [[USN-4619-1] dom4j vulnerability](https://ubuntu.com/security/notices/USN-4619-1)<br>
+*   [[USN-4599-3] Firefox regressions](https://ubuntu.com/security/notices/USN-4599-3)<br>
+*   [[USN-4620-1] phpLDAPadmin vulnerability](https://ubuntu.com/security/notices/USN-4620-1)<br>
+*   [[USN-4621-1] netqmail vulnerabilities](https://ubuntu.com/security/notices/USN-4621-1)<br>
+*   [[USN-4622-1] OpenLDAP vulnerability](https://ubuntu.com/security/notices/USN-4622-1)<br>
+*   [[USN-4623-1] Pacemaker vulnerability](https://ubuntu.com/security/notices/USN-4623-1)<br>
+*   [[USN-4624-1] libexif vulnerability](https://ubuntu.com/security/notices/USN-4624-1)<br>
+*   [[USN-4625-1] Firefox vulnerability](https://ubuntu.com/security/notices/USN-4625-1)<br>
+*   [[USN-4626-1] Linux kernel vulnerabilities](https://ubuntu.com/security/notices/USN-4626-1)<br>
+*   [[USN-4627-1] Linux kernel vulnerability](https://ubuntu.com/security/notices/USN-4627-1)<br>
+*   [[USN-4628-1] Intel Microcode vulnerabilities](https://ubuntu.com/security/notices/USN-4628-1)<br>
+*   [[USN-4629-1] MoinMoin vulnerabilities](https://ubuntu.com/security/notices/USN-4629-1)<br>
+*   [[USN-4630-1] Raptor vulnerability](https://ubuntu.com/security/notices/USN-4630-1)<br>
+*   [[USN-4622-2] OpenLDAP vulnerability](https://ubuntu.com/security/notices/USN-4622-2)<br>
+*   [[USN-4628-2] Intel Microcode regression](https://ubuntu.com/security/notices/USN-4628-2)<br>
+*   [[USN-4171-6] Apport regression](https://ubuntu.com/security/notices/USN-4171-6)<br>
+*   [[USN-4631-1] libmaxminddb vulnerability](https://ubuntu.com/security/notices/USN-4631-1)<br>
+*   [[USN-4632-1] SLiRP vulnerabilities](https://ubuntu.com/security/notices/USN-4632-1)<br>
+*   [[USN-4607-2] OpenJDK regressions](https://ubuntu.com/security/notices/USN-4607-2)<br>
+*   [[USN-4633-1] PostgreSQL vulnerabilities](https://ubuntu.com/security/notices/USN-4633-1)<br>
+*   [[USN-4634-1] OpenLDAP vulnerabilities](https://ubuntu.com/security/notices/USN-4634-1)<br>
+*   [[USN-4635-1] Kerberos vulnerability](https://ubuntu.com/security/notices/USN-4635-1)<br>
+*   [[USN-4636-1] LibVNCServer, Vino vulnerability](https://ubuntu.com/security/notices/USN-4636-1)<br>
+*   [[USN-4637-1] Firefox vulnerabilities](https://ubuntu.com/security/notices/USN-4637-1)<br>
+*   [[USN-4638-1] c-ares vulnerability](https://ubuntu.com/security/notices/USN-4638-1)<br>
+*   [[USN-4639-1] phpMyAdmin vulnerabilities](https://ubuntu.com/security/notices/USN-4639-1)<br>
+*   [[USN-4637-2] Firefox vulnerabilities](https://ubuntu.com/security/notices/USN-4637-2)<br>
+*   [[USN-4634-2] OpenLDAP vulnerabilities](https://ubuntu.com/security/notices/USN-4634-2)<br>
+*   [[USN-4640-1] PulseAudio vulnerability](https://ubuntu.com/security/notices/USN-4640-1)<br>
+*   [[USN-4641-1] libextractor vulnerabilities](https://ubuntu.com/security/notices/USN-4641-1)<br>
+*   [[USN-4642-1] PDFResurrect vulnerability](https://ubuntu.com/security/notices/USN-4642-1)<br>
+*   [[USN-4643-1] atftp vulnerabilities](https://ubuntu.com/security/notices/USN-4643-1)<br>
+*   [[USN-4644-1] igraph vulnerability](https://ubuntu.com/security/notices/USN-4644-1)<br>
+*   [[USN-4645-1] Mutt vulnerability](https://ubuntu.com/security/notices/USN-4645-1)<br>
+*   [[USN-4646-1] poppler vulnerabilities](https://ubuntu.com/security/notices/USN-4646-1)<br>
+*   [[USN-4647-1] Thunderbird vulnerabilities](https://ubuntu.com/security/notices/USN-4647-1)<br>
+*   [[USN-4648-1] WebKitGTK vulnerabilities](https://ubuntu.com/security/notices/USN-4648-1)<br>
+*   [[USN-4649-1] xdg-utils vulnerability](https://ubuntu.com/security/notices/USN-4649-1)<br>
+*   [[USN-4646-2] poppler regression](https://ubuntu.com/security/notices/USN-4646-2)<br>
+*   [[USN-4382-2] FreeRDP vulnerabilities](https://ubuntu.com/security/notices/USN-4382-2)<br>
+*   [[USN-4650-1] QEMU vulnerabilities](https://ubuntu.com/security/notices/USN-4650-1)
+
+#### <a id="456-128"></a> 456.128
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 16, 2020
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.7<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4587-1: iTALC vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4587-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Nicolas Ruff discovered that iTALC had buffer overflows, divide-by-zero errors and didn't check malloc return values. A remote attacker could use these issues to cause a denial of service or possibly execute arbitrary code. (CVE-2014-6051, CVE-2014-6052, CVE-2014-6053, CVE-2014-6054, CVE-2014-6055)<br>
+Josef Gajdusek discovered that iTALC had...<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6051<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6052<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6054<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6055<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9941<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9942<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15127<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20019<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20023<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20748<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20749<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20750<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
+<br>
+**Title**: USN-4552-2: Pam-python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4552-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Malte Kraus discovered that Pam-python mishandled certain environment variables. A local attacker could potentially use this vulnerability to execute programs as root.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729
+
 #### <a id="456-126"></a> 456.126
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -35485,139 +35459,6 @@ It was discovered that a heap-based buffer overflow existed in the...<br>
   Bert JW Regeer and Francisco Oca Gonzalez discovered that nginx incorrectly handled certain error_page configurations. A remote attacker could possibly use this issue to perform HTTP request smuggling attacks and access resources contrary to expectations.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-20372
-
-#### <a id="456-84"></a> 456.84
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: February 04, 2020
-
-BOSH Agent version: 2.234.7<br>
-USNs:<br>
-    <br>
-**Title:** USN-4222-1: GraphicsMagick vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4222-1/<br>
-**Priorities:** medium,low<br>
-**Description:**<br>
-  It was discovered that GraphicsMagick incorrectly handled certain image files. An attacker could possibly use this issue to cause a denial of service or other unspecified impact.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11638<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11641<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11642<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-11643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12935<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12936<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-12937<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13063<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13064<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13065<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13134<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13737<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13775<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13776<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-13777<br>
-<br>
-**Title:** USN-4216-2: Firefox vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4216-2/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  USN-4216-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Ubuntu 16.04 LTS.<br>
-Original advisory details:<br>
-Multiple security issues were discovered in Firefox. If a user were tricked in to opening a specially crafted website, an attacker could potentially exploit these to cause a denial of service, obtain...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11745<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-11756<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17005<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17008<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17010<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17011<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17012<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17013<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-17014<br>
-<br>
-**Title:** USN-4220-1: Git vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4220-1/<br>
-**Priorities:** medium,low<br>
-**Description:**<br>
-  Joern Schneeweisz and Nicolas Joly discovered that Git contained various security flaws. An attacker could possibly use these issues to overwrite arbitrary paths, execute arbitrary code, and overwrite files in the .git directory.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1348<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1349<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1350<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1351<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1352<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1353<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1354<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1387<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19604<br>
-<br>
-**Title:** USN-4217-1: Samba vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4217-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  Andreas Oster discovered that the Samba DNS management server incorrectly handled certain records. An authenticated attacker could possibly use this issue to crash Samba, resulting in a denial of service. (CVE-2019-14861)<br>
-Isaac Boukris discovered that Samba did not enforce the Kerberos DelegationNotAllowed feature restriction, contrary to...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14861<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14870<br>
-<br>
-**Title:** USN-4219-1: libssh vulnerability<br>
-**URL:** https://usn.ubuntu.com/4219-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  It was discovered that libssh incorrectly handled certain scp commands. If a user or automated system were tricked into using a specially-crafted scp command, a remote attacker could execute arbitrary commands on the server.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14889<br>
-<br>
-**Title:** USN-4221-1: libpcap vulnerability<br>
-**URL:** https://usn.ubuntu.com/4221-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  It was discovered that libpcap did not properly validate PHB headers in some situations. An attacker could use this to cause a denial of service (memory exhaustion).<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15165<br>
-<br>
-**Title:** USN-4214-2: RabbitMQ vulnerability<br>
-**URL:** https://usn.ubuntu.com/4214-2/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  USN-4214-1 fixed a vulnerability in RabbitMQ. This update provides the corresponding updates for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
-Original advisory details:<br>
-It was discovered that RabbitMQ incorrectly handled certain inputs. An attacker could possibly use this issue to execute arbitrary code.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-18609<br>
-<br>
-**Title:** USN-4224-1: Django vulnerability<br>
-**URL:** https://usn.ubuntu.com/4224-1/<br>
-**Priorities:** high<br>
-**Description:**<br>
-  Simon Charette discovered that the password reset functionality in Django used a Unicode case insensitive query to retrieve accounts associated with an email address. An attacker could possibly use this to obtain password reset tokens and hijack accounts.<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19844<br>
-<br>
-**Title:** USN-4223-1: OpenJDK vulnerabilities<br>
-**URL:** https://usn.ubuntu.com/4223-1/<br>
-**Priorities:** medium<br>
-**Description:**<br>
-  Jan Jancar, Petr Svenda, and Vladimir Sedlacek discovered that a side- channel vulnerability existed in the ECDSA implementation in OpenJDK. An Attacker could use this to expose sensitive information. (CVE-2019-2894)<br>
-It was discovered that the Socket implementation in OpenJDK did not properly restrict the creation of subclasses with a custom...<br>
-**CVEs:**<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2894<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2945<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2949<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2962<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2964<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2973<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2975<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2977<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2978<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2981<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2983<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2987<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2988<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2989<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2992<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-2999
 
 #### <a id="456-84"></a> 456.84
 
