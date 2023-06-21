@@ -6129,6 +6129,390 @@ privileges.<br>
 <br>
 **Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.71...ubuntu-jammy/v1.75
 
+#### <a id="jammy-1-71"></a> 1.71
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: December 14, 2022
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.488.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5763-1: NumPy vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5763-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that NumPy did not properly manage memory when specifying<br>
+arrays of large dimensions. If a user were tricked into running malicious<br>
+Python file, an attacker could cause a denial of service. This issue only<br>
+affected Ubuntu 20.04 LTS. (CVE-2021-33430)<br>
+<br>
+It was discovered that NumPy did not properly perform string comparison<br>
+operations under certain circumstances. An attacker could possibly use<br>
+this issue to cause NumPy to crash, resulting in a denial of service.<br>
+(CVE-2021-34141)<br>
+<br>
+It was discovered that NumPy did not properly manage memory under certain<br>
+circumstances. An attacker could possibly use this issue to cause NumPy to<br>
+crash, resulting in a denial of service. (CVE-2021-41495, CVE-2021-41496)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33430<br>
+ - https://ubuntu.com/security/CVE-2021-34141<br>
+ - https://ubuntu.com/security/CVE-2021-41495<br>
+ - https://ubuntu.com/security/CVE-2021-41496<br>
+ - https://ubuntu.com/security/CVE-2021-41495<br>
+ - https://ubuntu.com/security/CVE-2021-34141<br>
+ - https://ubuntu.com/security/CVE-2021-41496<br>
+ - https://ubuntu.com/security/CVE-2021-33430<br>
+<br>
+**Title**: USN-5772-1: QEMU vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5772-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that QEMU incorrectly handled bulk transfers from SPICE<br>
+clients. A remote attacker could use this issue to cause QEMU to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 14.04 ESM and Ubuntu 16.04 ESM. (CVE-2021-3682)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+transfers the USB packets. A malicious guest attacker could use this issue<br>
+to cause QEMU to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 18.04 LTS, Ubuntu<br>
+20.04 LTS and Ubuntu 22.04 LTS. (CVE-2021-3750)<br>
+<br>
+It was discovered that the QEMU SCSI device emulation incorrectly handled<br>
+certain MODE SELECT commands. An attacker inside the guest could possibly<br>
+use this issue to cause QEMU to crash, resulting in a denial of service.<br>
+This issue only affected Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+(CVE-2021-3930)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+processing repeated messages to cancel the current SCSI request. A<br>
+malicious privileged guest attacker could use this issue to cause QEMU to<br>
+crash, resulting in a denial of service. (CVE-2022-0216)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+using Tulip device emulation. A malicious guest attacker could use this<br>
+issue to cause QEMU to crash, resulting in a denial of service. This issue<br>
+only affected Ubuntu 22.10. (CVE-2022-2962)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when processing<br>
+ClientCutText messages. A attacker could use this issue to cause QEMU to<br>
+crash, resulting in a denial of service. This issue only affected Ubuntu<br>
+22.04 LTS and Ubuntu 22.10. (CVE-2022-3165)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-3682<br>
+ - https://ubuntu.com/security/CVE-2021-3750<br>
+ - https://ubuntu.com/security/CVE-2021-3930<br>
+ - https://ubuntu.com/security/CVE-2022-0216<br>
+ - https://ubuntu.com/security/CVE-2022-2962<br>
+ - https://ubuntu.com/security/CVE-2022-3165<br>
+ - https://ubuntu.com/security/CVE-2021-3682<br>
+ - https://ubuntu.com/security/CVE-2022-3165<br>
+ - https://ubuntu.com/security/CVE-2022-0216<br>
+ - https://ubuntu.com/security/CVE-2021-3750<br>
+ - https://ubuntu.com/security/CVE-2021-3930<br>
+ - https://ubuntu.com/security/CVE-2022-2962<br>
+<br>
+**Title**: USN-5759-1: LibBPF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5759-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that LibBPF incorrectly handled certain memory operations<br>
+under certain circumstances. An attacker could possibly use this issue to<br>
+cause LibBPF to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 22.10.<br>
+(CVE-2021-45940, CVE-2021-45941, CVE-2022-3533)<br>
+<br>
+It was discovered that LibBPF incorrectly handled certain memory operations<br>
+under certain circumstances. An attacker could possibly use this issue to<br>
+cause LibBPF to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2022-3534, CVE-2022-3606)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-45940<br>
+ - https://ubuntu.com/security/CVE-2021-45941<br>
+ - https://ubuntu.com/security/CVE-2022-3533<br>
+ - https://ubuntu.com/security/CVE-2022-3534<br>
+ - https://ubuntu.com/security/CVE-2022-3606<br>
+ - https://ubuntu.com/security/CVE-2021-45941<br>
+ - https://ubuntu.com/security/CVE-2022-3534<br>
+ - https://ubuntu.com/security/CVE-2022-3606<br>
+ - https://ubuntu.com/security/CVE-2022-3533<br>
+ - https://ubuntu.com/security/CVE-2021-45940<br>
+<br>
+**Title**: USN-5760-1: libxml2 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5760-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that libxml2 incorrectly handled certain XML files.<br>
+An attacker could possibly use this issue to cause a crash.<br>
+(CVE-2022-2309)<br>
+<br>
+It was discovered that libxml2 incorrectly handled certain XML files.<br>
+An attacker could possibly use this issue to expose sensitive information<br>
+or cause a crash. (CVE-2022-40303)<br>
+<br>
+It was discovered that libxml2 incorrectly handled certain XML files.<br>
+An attacker could possibly use this issue to execute arbitrary code.<br>
+(CVE-2022-40304)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2309<br>
+ - https://ubuntu.com/security/CVE-2022-40303<br>
+ - https://ubuntu.com/security/CVE-2022-40304<br>
+ - https://ubuntu.com/security/CVE-2022-40304<br>
+ - https://ubuntu.com/security/CVE-2022-40303<br>
+ - https://ubuntu.com/security/CVE-2022-2309<br>
+<br>
+**Title**: USN-5764-1: U-Boot vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5764-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that U-Boot incorrectly handled certain USB DFU download<br>
+setup packets. A local attacker could use this issue to cause U-Boot to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2022-2347)<br>
+<br>
+Nicolas Bidron and Nicolas Guigo discovered that U-Boot incorrectly handled<br>
+certain fragmented IP packets. A local attacker could use this issue to<br>
+cause U-Boot to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 18.04 LTS, Ubuntu<br>
+20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-30552, CVE-2022-30790)<br>
+<br>
+It was discovered that U-Boot incorrectly handled certain NFS lookup<br>
+replies. A remote attacker could use this issue to cause U-Boot to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04<br>
+LTS. (CVE-2022-30767)<br>
+<br>
+Jincheng Wang discovered that U-Boot incorrectly handled certain SquashFS<br>
+structures. A local attacker could use this issue to cause U-Boot to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and<br>
+Ubuntu 22.04 LTS. (CVE-2022-33103)<br>
+<br>
+Tatsuhiko Yasumatsu discovered that U-Boot incorrectly handled certain<br>
+SquashFS structures. A local attacker could use this issue to cause U-Boot<br>
+to crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and<br>
+Ubuntu 22.04 LTS. (CVE-2022-33967)<br>
+<br>
+It was discovered that U-Boot incorrectly handled the i2c command. A local<br>
+attacker could use this issue to cause U-Boot to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. This issue only<br>
+affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.<br>
+(CVE-2022-34835)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2347<br>
+ - https://ubuntu.com/security/CVE-2022-30552<br>
+ - https://ubuntu.com/security/CVE-2022-30790<br>
+ - https://ubuntu.com/security/CVE-2022-30767<br>
+ - https://ubuntu.com/security/CVE-2022-33103<br>
+ - https://ubuntu.com/security/CVE-2022-33967<br>
+ - https://ubuntu.com/security/CVE-2022-34835<br>
+ - https://ubuntu.com/security/CVE-2022-30767<br>
+ - https://ubuntu.com/security/CVE-2022-30552<br>
+ - https://ubuntu.com/security/CVE-2022-33967<br>
+ - https://ubuntu.com/security/CVE-2022-34835<br>
+ - https://ubuntu.com/security/CVE-2022-30790<br>
+ - https://ubuntu.com/security/CVE-2022-33103<br>
+ - https://ubuntu.com/security/CVE-2022-2347<br>
+<br>
+**Title**: USN-5776-1: containerd vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5776-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that containerd incorrectly handled memory<br>
+when receiving certain faulty Exec or ExecSync commands. A remote<br>
+attacker could possibly use this issue to cause a denial of service<br>
+or crash containerd. (CVE-2022-23471, CVE-2022-31030)<br>
+<br>
+It was discovered that containerd incorrectly set up inheritable file<br>
+capabilities. An attacker could possibly use this issue to escalate <br>
+privileges inside a container. This issue only affected Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-24769)<br>
+<br>
+It was discovered that containerd incorrectly handled access to encrypted<br>
+container images when using imgcrypt library. A remote attacker could<br>
+possibly use this issue to access encrypted images from other users. <br>
+This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS and<br>
+Ubuntu 22.04 LTS. (CVE-2022-24778)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-23471<br>
+ - https://ubuntu.com/security/CVE-2022-31030<br>
+ - https://ubuntu.com/security/CVE-2022-24769<br>
+ - https://ubuntu.com/security/CVE-2022-24778<br>
+ - https://ubuntu.com/security/CVE-2022-24778<br>
+ - https://ubuntu.com/security/CVE-2022-24769<br>
+ - https://ubuntu.com/security/CVE-2022-23471<br>
+ - https://ubuntu.com/security/CVE-2022-31030<br>
+<br>
+**Title**: USN-5767-1: Python vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5767-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Nicky Mouha discovered that Python incorrectly handled certain SHA-3 internals.<br>
+An attacker could possibly use this issue to cause a crash or execute arbitrary code.<br>
+(CVE-2022-37454)<br>
+<br>
+It was discovered that Python incorrectly handled certain IDNA inputs.<br>
+An attacker could possibly use this issue to expose sensitive information<br>
+denial of service, or cause a crash.<br>
+(CVE-2022-45061)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-37454<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+ - https://ubuntu.com/security/CVE-2022-37454<br>
+<br>
+**Title**: USN-5762-1: GNU binutils vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5762-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that GNU binutils incorrectly handled certain  COFF files.<br>
+An attacker could possibly use this issue to cause a crash or execute<br>
+arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-38533<br>
+<br>
+**Title**: USN-5773-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5773-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly track memory<br>
+allocations for anonymous VMA mappings in some situations, leading to<br>
+potential data structure reuse. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-42703)<br>
+<br>
+Roger Pau Monné discovered that the Xen virtual block driver in the Linux<br>
+kernel did not properly initialize memory pages to be used for shared<br>
+communication with the backend. A local attacker could use this to expose<br>
+sensitive information (guest kernel memory). (CVE-2022-26365)<br>
+<br>
+Jan Beulich discovered that the Xen network device frontend driver in the<br>
+Linux kernel incorrectly handled socket buffers (skb) references when<br>
+communicating with certain backends. A local attacker could use this to<br>
+cause a denial of service (guest crash). (CVE-2022-33743)<br>
+<br>
+It was discovered that a memory leak existed in the IPv6 implementation of<br>
+the Linux kernel. A local attacker could use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2022-3524)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel, leading to a use-after-free vulnerability. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-3564)<br>
+<br>
+It was discovered that the TCP implementation in the Linux kernel contained<br>
+a data race condition. An attacker could possibly use this to cause<br>
+undesired behaviors. (CVE-2022-3566)<br>
+<br>
+It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a data race condition. An attacker could possibly use this to<br>
+cause undesired behaviors. (CVE-2022-3567)<br>
+<br>
+It was discovered that the Realtek RTL8152 USB Ethernet adapter driver in<br>
+the Linux kernel did not properly handle certain error conditions. A local<br>
+attacker with physical access could plug in a specially crafted USB device<br>
+to cause a denial of service (memory exhaustion). (CVE-2022-3594)<br>
+<br>
+It was discovered that a null pointer dereference existed in the NILFS2<br>
+file system implementation in the Linux kernel. A local attacker could use<br>
+this to cause a denial of service (system crash). (CVE-2022-3621)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-33743<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+ - https://ubuntu.com/security/CVE-2022-3594<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3594<br>
+ - https://ubuntu.com/security/CVE-2022-33743<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-26365<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+<br>
+**Title**: USN-5755-2: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5755-2<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  It was discovered that the NFSD implementation in the Linux kernel did not<br>
+properly handle some RPC messages, leading to a buffer overflow. A remote<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-43945)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly track memory<br>
+allocations for anonymous VMA mappings in some situations, leading to<br>
+potential data structure reuse. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-42703)<br>
+<br>
+It was discovered that a memory leak existed in the IPv6 implementation of<br>
+the Linux kernel. A local attacker could use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2022-3524)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel, leading to a use-after-free vulnerability. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2022-3564)<br>
+<br>
+It was discovered that the ISDN implementation of the Linux kernel<br>
+contained a use-after-free vulnerability. A privileged user could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2022-3565)<br>
+<br>
+It was discovered that the TCP implementation in the Linux kernel contained<br>
+a data race condition. An attacker could possibly use this to cause<br>
+undesired behaviors. (CVE-2022-3566)<br>
+<br>
+It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a data race condition. An attacker could possibly use this to<br>
+cause undesired behaviors. (CVE-2022-3567)<br>
+<br>
+It was discovered that the Realtek RTL8152 USB Ethernet adapter driver in<br>
+the Linux kernel did not properly handle certain error conditions. A local<br>
+attacker with physical access could plug in a specially crafted USB device<br>
+to cause a denial of service (memory exhaustion). (CVE-2022-3594)<br>
+<br>
+It was discovered that a null pointer dereference existed in the NILFS2<br>
+file system implementation in the Linux kernel. A local attacker could use<br>
+this to cause a denial of service (system crash). (CVE-2022-3621)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3565<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+ - https://ubuntu.com/security/CVE-2022-3594<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-3524<br>
+ - https://ubuntu.com/security/CVE-2022-3564<br>
+ - https://ubuntu.com/security/CVE-2022-3621<br>
+ - https://ubuntu.com/security/CVE-2022-3567<br>
+ - https://ubuntu.com/security/CVE-2022-43945<br>
+ - https://ubuntu.com/security/CVE-2022-3566<br>
+ - https://ubuntu.com/security/CVE-2022-42703<br>
+ - https://ubuntu.com/security/CVE-2022-3565<br>
+ - https://ubuntu.com/security/CVE-2022-3594
+
 #### <a id="jammy-1-64"></a> 1.64
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -21891,6 +22275,184 @@ attacker could use this to expose sensitive information (kernel memory).<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27171<br>
 
 
+#### <a id="621-115"></a> 621.115
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 22, 2021
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.21<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4758-1: Go vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4758-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Go applications incorrectly handled uploaded content. If<br>
+a user were tricked into visiting a malicious page, a remote attacker could<br>
+exploit this with a crafted file to conduct cross-site scripting (XSS) attacks.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24553<br>
+<br>
+**Title**: USN-4761-1: Git vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4761-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Matheus Tavares discovered that Git incorrectly handled delay-capable<br>
+clean/smudge filters when being used on case-insensitive filesystems. A<br>
+remote attacker could possibly use this issue to execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21300<br>
+<br>
+**Title**: USN-4759-1: GLib vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4759-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Krzesimir Nowak discovered that GLib incorrectly handled certain large<br>
+buffers. A remote attacker could use this issue to cause applications<br>
+linked to GLib to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2021-27218)<br>
+<br>
+Kevin Backhouse discovered that GLib incorrectly handled certain memory<br>
+allocations. A remote attacker could use this issue to cause applications<br>
+linked to GLib to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2021-27219)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27218<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27219<br>
+<br>
+**Title**: USN-4763-1: Pillow vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4763-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Pillow incorrectly handled certain Tiff image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. This issue only<br>
+affected Ubuntu 20.04 LTS and Ubuntu 20.10. (CVE-2021-25289,<br>
+CVE-2021-25291)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain Tiff image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. (CVE-2021-25290)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain PDF files. If a<br>
+user or automated system were tricked into opening a specially-crafted<br>
+PDF file, a remote attacker could cause Pillow to hang, resulting in a<br>
+denial of service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04<br>
+LTS, and Ubuntu 20.10. (CVE-2021-25292)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain SGI image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+SGI file, a remote attacker could possibly cause Pillow to crash,<br>
+resulting in a denial of service. This issue only affected Ubuntu 18.04<br>
+LTS, Ubuntu 20.04 LTS, and Ubuntu 20.10. (CVE-2021-25293)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain BLP files. If a user or automated system<br>
+were tricked into opening a specially-crafted BLP file, a remote attacker<br>
+could possibly cause Pillow to consume resources, resulting in a denial of<br>
+service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and<br>
+Ubuntu 20.10. (CVE-2021-27921)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain ICNS files. If a user or automated<br>
+system were tricked into opening a specially-crafted ICNS file, a remote<br>
+attacker could possibly cause Pillow to consume resources, resulting in a<br>
+denial of service. (CVE-2021-27922)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain ICO files. If a user or automated<br>
+system were tricked into opening a specially-crafted ICO file, a remote<br>
+attacker could possibly cause Pillow to consume resources, resulting in a<br>
+denial of service. (CVE-2021-27922)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27922<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25291<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27921<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25293<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27923<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25290<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25292<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25289
+
+#### <a id="621-113"></a> 621.113
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 15, 2021
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.20<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4755-1: LibTIFF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4755-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that LibTIFF incorrectly handled certain malformed<br>
+images. If a user or automated system were tricked into opening a specially<br>
+crafted image, a remote attacker could crash the application, leading to a<br>
+denial of service, or possibly execute arbitrary code with user privileges.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35524<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35523<br>
+<br>
+**Title**: USN-4756-1: Firefox vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4756-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Multiple security issues were discovered in Firefox. If a user were<br>
+tricked into opening a specially crafted website, an attacker could<br>
+potentially exploit these to cause a denial of service, obtain sensitive<br>
+information, conduct cross-site scripting (XSS) attacks, bypass HTTP auth<br>
+phishing warnings, or execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23971<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23973<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23970<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23972<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23969<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23968<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23974<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23975<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23978<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-23979<br>
+<br>
+**Title**: USN-4757-1: wpa_supplicant and hostapd vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4757-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that wpa_supplicant did not properly handle P2P<br>
+(Wi-Fi Direct) provision discovery requests in some situations. A<br>
+physically proximate attacker could use this to cause a denial of service<br>
+or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27803<br>
+<br>
+**Title**: USN-4754-4: Python 2.7 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4754-4<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-4754-1 fixed vulnerabilities in Python. Because of a regression, a<br>
+subsequent update removed the fix for CVE-2021-3177. This update reinstates<br>
+the security fix for CVE-2021-3177.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Python incorrectly handled certain inputs.<br>
+ An attacker could possibly use this issue to execute arbitrary code<br>
+ or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177<br>
+
+
 #### <a id="621-109"></a> 621.109
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -32259,6 +32821,110 @@ attacker could use this to expose sensitive information (kernel memory).<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27170<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27171
 
+#### <a id="456-152"></a> 456.152
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 22, 2021
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.234.11<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-4758-1: Go vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4758-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that Go applications incorrectly handled uploaded content. If<br>
+a user were tricked into visiting a malicious page, a remote attacker could<br>
+exploit this with a crafted file to conduct cross-site scripting (XSS) attacks.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24553<br>
+<br>
+**Title**: USN-4761-1: Git vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-4761-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Matheus Tavares discovered that Git incorrectly handled delay-capable<br>
+clean/smudge filters when being used on case-insensitive filesystems. A<br>
+remote attacker could possibly use this issue to execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-21300<br>
+<br>
+**Title**: USN-4759-1: GLib vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4759-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Krzesimir Nowak discovered that GLib incorrectly handled certain large<br>
+buffers. A remote attacker could use this issue to cause applications<br>
+linked to GLib to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2021-27218)<br>
+<br>
+Kevin Backhouse discovered that GLib incorrectly handled certain memory<br>
+allocations. A remote attacker could use this issue to cause applications<br>
+linked to GLib to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2021-27219)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27218<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27219<br>
+<br>
+**Title**: USN-4763-1: Pillow vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-4763-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Pillow incorrectly handled certain Tiff image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. This issue only<br>
+affected Ubuntu 20.04 LTS and Ubuntu 20.10. (CVE-2021-25289,<br>
+CVE-2021-25291)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain Tiff image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+Tiff file, a remote attacker could cause Pillow to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. (CVE-2021-25290)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain PDF files. If a<br>
+user or automated system were tricked into opening a specially-crafted<br>
+PDF file, a remote attacker could cause Pillow to hang, resulting in a<br>
+denial of service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04<br>
+LTS, and Ubuntu 20.10. (CVE-2021-25292)<br>
+<br>
+It was discovered that Pillow incorrectly handled certain SGI image files.<br>
+If a user or automated system were tricked into opening a specially-crafted<br>
+SGI file, a remote attacker could possibly cause Pillow to crash,<br>
+resulting in a denial of service. This issue only affected Ubuntu 18.04<br>
+LTS, Ubuntu 20.04 LTS, and Ubuntu 20.10. (CVE-2021-25293)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain BLP files. If a user or automated system<br>
+were tricked into opening a specially-crafted BLP file, a remote attacker<br>
+could possibly cause Pillow to consume resources, resulting in a denial of<br>
+service. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and<br>
+Ubuntu 20.10. (CVE-2021-27921)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain ICNS files. If a user or automated<br>
+system were tricked into opening a specially-crafted ICNS file, a remote<br>
+attacker could possibly cause Pillow to consume resources, resulting in a<br>
+denial of service. (CVE-2021-27922)<br>
+<br>
+Jiayi Lin, Luke Shaffer, Xinran Xie, and Akshay Ajayan discovered that<br>
+Pillow incorrectly handled certain ICO files. If a user or automated<br>
+system were tricked into opening a specially-crafted ICO file, a remote<br>
+attacker could possibly cause Pillow to consume resources, resulting in a<br>
+denial of service. (CVE-2021-27922)<br>
+**CVEs**:<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27922<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25291<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27921<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25293<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-27923<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25290<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25292<br>
+ - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-25289
+
 #### <a id="456-150"></a> 456.150
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -33197,560 +33863,6 @@ modify data.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374
 
-#### <a id="456-133"></a> 456.133
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: January 15, 2021
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4688-1: JasPer vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4688-1<br>
-**Priorities**: negligible,low,medium<br>
-**Description**:<br>
-  It was discovered that Jasper incorrectly certain files.<br>
-An attacker could possibly use this issue to cause a crash.<br>
-(CVE-2018-18873)<br>
-<br>
-It was discovered that Jasper incorrectly handled certain files.<br>
-An attacker could possibly use this issue to cause a denial of service.<br>
-(CVE-2018-19542)<br>
-<br>
-It was discovered that Jasper incorrectly handled certain JPC encoders.<br>
-An attacker could possibly use this issue to execute arbitrary code.<br>
-(CVE-2020-27828)<br>
-<br>
-It was discovered that Jasper incorrectly handled certain images.<br>
-An attacker could possibly use this issue to expose sensitive information<br>
-or cause a crash.<br>
-(CVE-2017-9782)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2017-9782<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18873<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-19542<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27828<br>
-<br>
-**Title**: USN-4672-1: unzip vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4672-1<br>
-**Priorities**: low,negligible<br>
-**Description**:<br>
-  Rene Freingruber discovered that unzip incorrectly handled certain<br>
-specially crafted password protected ZIP archives. If a user or automated<br>
-system using unzip were tricked into opening a specially crafted zip file,<br>
-an attacker could exploit this to cause a crash, resulting in a denial of<br>
-service. (CVE-2018-1000035)<br>
-<br>
-Antonio Carista discovered that unzip incorrectly handled certain<br>
-specially crafted ZIP archives. If a user or automated system using unzip<br>
-were tricked into opening a specially crafted zip file, an attacker could<br>
-exploit this to cause a crash, resulting in a denial of service. This<br>
-issue only affected Ubuntu 12.04 ESM and Ubuntu 14.04 ESM.<br>
-(CVE-2018-18384)<br>
-<br>
-It was discovered that unzip incorrectly handled certain specially crafted<br>
-ZIP archives. If a user or automated system using unzip were tricked into<br>
-opening a specially crafted zip file, an attacker could exploit this to<br>
-cause resource consumption, resulting in a denial of service.<br>
-(CVE-2019-13232)<br>
-<br>
-Martin Carpenter discovered that unzip incorrectly handled certain<br>
-specially crafted ZIP archives. If a user or automated system using unzip<br>
-were tricked into opening a specially crafted zip file, an attacker could<br>
-exploit this to cause a crash, resulting in a denial of service. This<br>
-issue only affected Ubuntu 12.04 ESM, Ubuntu 14.04 ESM and Ubuntu 16.04<br>
-LTS. (CVE-2014-9913)<br>
-<br>
-Alexis Vanden Eijnde discovered that unzip incorrectly handled certain<br>
-specially crafted ZIP archives. If a user or automated system using unzip<br>
-were tricked into opening a specially crafted zip file, an attacker could<br>
-exploit this to cause a crash, resulting in a denial of service. This<br>
-issue only affected Ubuntu 12.04 ESM, Ubuntu 14.04 ESM and Ubuntu 16.04<br>
-LTS. (CVE-2016-9844)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-1000035<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-18384<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-9913<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9844<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-13232<br>
-<br>
-**Title**: USN-4684-1: EDK II vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4684-1<br>
-**Priorities**: low<br>
-**Description**:<br>
-  Laszlo Ersek discovered that EDK II incorrectly validated certain signed<br>
-images. An attacker could possibly use this issue with a specially crafted<br>
-image to cause EDK II to hang, resulting in a denial of service. This issue<br>
-only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS.<br>
-(CVE-2019-14562)<br>
-<br>
-It was discovered that EDK II incorrectly parsed signed PKCS #7 data. An<br>
-attacker could use this issue to cause EDK II to crash, resulting in a<br>
-denial of service, or possibly execute arbitrary code. (CVE-2019-14584)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14584<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-14562<br>
-<br>
-**Title**: USN-4670-1: ImageMagick vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4670-1<br>
-**Priorities**: low,negligible<br>
-**Description**:<br>
-  It was discovered that ImageMagick incorrectly handled certain specially<br>
-crafted image files. If a user or automated system using ImageMagick were<br>
-tricked into opening a specially crafted image, an attacker could exploit<br>
-this to cause a denial of service or other unspecified impact. This issue<br>
-only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.10.<br>
-(CVE-2019-19948, CVE-2019-19949)<br>
-<br>
-It was discovered that ImageMagick incorrectly handled certain specially<br>
-crafted image files. If a user or automated system using ImageMagick were<br>
-tricked into opening a specially crafted image, an attacker could exploit<br>
-this to cause a denial of service. (CVE-2020-27560)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19949<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27560<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19948<br>
-<br>
-**Title**: USN-4680-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4680-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  It was discovered that debugfs in the Linux kernel as used by blktrace<br>
-contained a use-after-free in some situations. A privileged local attacker<br>
-could possibly use this to cause a denial of service (system crash).<br>
-(CVE-2019-19770)<br>
-<br>
-It was discovered that a race condition existed in the binder IPC<br>
-implementation in the Linux kernel, leading to a use-after-free<br>
-vulnerability. A local attacker could use this to cause a denial of service<br>
-(system crash) or possibly execute arbitrary code. (CVE-2020-0423)<br>
-<br>
-Daniele Antonioli, Nils Ole Tippenhauer, and Kasper Rasmussen discovered<br>
-that legacy pairing and secure-connections pairing authentication in the<br>
-Bluetooth protocol could allow an unauthenticated user to complete<br>
-authentication without pairing credentials via adjacent access. A<br>
-physically proximate attacker could use this to impersonate a previously<br>
-paired Bluetooth device. (CVE-2020-10135)<br>
-<br>
-It was discovered that the console keyboard driver in the Linux kernel<br>
-contained a race condition. A local attacker could use this to expose<br>
-sensitive information (kernel memory). (CVE-2020-25656)<br>
-<br>
-Minh Yuan discovered that the tty driver in the Linux kernel contained race<br>
-conditions when handling fonts. A local attacker could possibly use this to<br>
-expose sensitive information (kernel memory). (CVE-2020-25668)<br>
-<br>
-Keyu Man discovered that the ICMP global rate limiter in the Linux kernel<br>
-could be used to assist in scanning open UDP ports. A remote attacker could<br>
-use to facilitate attacks on UDP based services that depend on source port<br>
-randomization. (CVE-2020-25705)<br>
-<br>
-Jinoh Kang discovered that the Xen event channel infrastructure in the<br>
-Linux kernel contained a race condition. An attacker in guest could<br>
-possibly use this to cause a denial of service (dom0 crash).<br>
-(CVE-2020-27675)<br>
-<br>
-Daniel Axtens discovered that PowerPC RTAS implementation in the Linux<br>
-kernel did not properly restrict memory accesses in some situations. A<br>
-privileged local attacker could use this to arbitrarily modify kernel<br>
-memory, potentially bypassing kernel lockdown restrictions.<br>
-(CVE-2020-27777)<br>
-<br>
-Minh Yuan discovered that the framebuffer console driver in the Linux<br>
-kernel did not properly handle fonts in some conditions. A local attacker<br>
-could use this to cause a denial of service (system crash) or possibly<br>
-expose sensitive information (kernel memory). (CVE-2020-28974)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0423<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27777<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19770<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668<br>
-<br>
-**Title**: USN-4687-1: Firefox vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4687-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  A use-after-free was discovered in Firefox when handling SCTP packets.<br>
-An attacker could potentially exploit this to cause a denial of service,<br>
-or execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16044<br>
-<br>
-**Title**: USN-4674-1: Dovecot vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4674-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Dovecot incorrectly handled certain imap hibernation<br>
-commands. A remote authenticated attacker could possibly use this issue to<br>
-access other users' email. This issue only affected Ubuntu 18.04 LTS,<br>
-Ubuntu 20.04 LTS, and Ubuntu 20.10. (CVE-2020-24386)<br>
-<br>
-Innokentii Sennovskiy discovered that Dovecot incorrectly handled MIME<br>
-parsing. A remote attacker could possibly use this issue to cause Dovecot<br>
-to crash, resulting in a denial of service. (CVE-2020-25275)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-24386<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25275<br>
-<br>
-**Title**: USN-4681-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4681-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Ryan Hall discovered that the Intel 700 Series Ethernet Controllers driver<br>
-in the Linux kernel did not properly deallocate memory in some conditions.<br>
-A local attacker could use this to cause a denial of service (kernel memory<br>
-exhaustion). (CVE-2019-0148)<br>
-<br>
-It was discovered that the console keyboard driver in the Linux kernel<br>
-contained a race condition. A local attacker could use this to expose<br>
-sensitive information (kernel memory). (CVE-2020-25656)<br>
-<br>
-Minh Yuan discovered that the tty driver in the Linux kernel contained race<br>
-conditions when handling fonts. A local attacker could possibly use this to<br>
-expose sensitive information (kernel memory). (CVE-2020-25668)<br>
-<br>
-Jinoh Kang discovered that the Xen event channel infrastructure in the<br>
-Linux kernel contained a race condition. An attacker in guest could<br>
-possibly use this to cause a denial of service (dom0 crash).<br>
-(CVE-2020-27675)<br>
-<br>
-Minh Yuan discovered that the framebuffer console driver in the Linux<br>
-kernel did not properly handle fonts in some conditions. A local attacker<br>
-could use this to cause a denial of service (system crash) or possibly<br>
-expose sensitive information (kernel memory). (CVE-2020-28974)<br>
-<br>
-It was discovered that Power 9 processors could be coerced to expose<br>
-information from the L1 cache in certain situations. A local attacker could<br>
-use this to expose sensitive information. (CVE-2020-4788)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25668<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-0148<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28974<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27675<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25656<br>
-<br>
-**Title**: USN-4671-1: Firefox vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4671-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Multiple security issues were discovered in Firefox. If a user were<br>
-tricked into opening a specially crafted website, an attacker could<br>
-potentially exploit these to cause a denial of service, obtain sensitive<br>
-information, bypass the CSS sanitizer, bypass security restrictions,<br>
-spoof the URL bar, or execute arbitrary code. (CVE-2020-16042,<br>
-CVE-2020-26971, CVE-2020-26972, CVE-2020-26793, CVE-2020-26974,<br>
-CVE-2020-26976, CVE-2020-26978, CVE-2020-26979,<br>
-CVE-2020-35113, CVE-2020-35114)<br>
-<br>
-It was discovered that the proxy.onRequest API did not catch<br>
-view-source URLs. If a user were tricked in to installing an<br>
-extension with the proxy permission and opening View Source, an<br>
-attacker could potentially exploit this to obtain sensitive<br>
-information. (CVE-2020-35111)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26971<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26973<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26978<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26979<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35111<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26972<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26976<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35113<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-35114<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-26974<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16042<br>
-<br>
-**Title**: USN-4666-2: lxml vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4666-2<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  USN-4666-1 partially fixed a vulnerability in lxml, but an additional patch was needed. This update provides<br>
-the corresponding additional patch in order to properly fix the vulnerability.<br>
-<br>
-Original advisory details:<br>
-<br>
- It was discovered that lxml incorrectly handled certain HTML.<br>
- An attacker could possibly use this issue to cross-site scripting (XSS) attacks.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27783<br>
-<br>
-**Title**: USN-4686-1: Ghostscript vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4686-1<br>
-**Priorities**: medium,low,negligible<br>
-**Description**:<br>
-  It was discovered that Ghostscript incorrectly handled certain image<br>
-files. If a user or automated system were tricked into processing a<br>
-specially crafted file, a remote attacker could use this issue to cause<br>
-Ghostscript to crash, resulting in a denial of service, or possibly<br>
-execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27842<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27845<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27814<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27841<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-6851<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27824<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27843<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8112<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-5727<br>
-<br>
-**Title**: USN-4694-1: Linux kernel vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4694-1<br>
-**Priorities**: high<br>
-**Description**:<br>
-  It was discovered that the LIO SCSI target implementation in the Linux<br>
-kernel performed insufficient identifier checking in certain XCOPY<br>
-requests. An attacker with access to at least one LUN in a multiple<br>
-backstore environment could use this to expose sensitive information or<br>
-modify data.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28374
-
-#### <a id="456-131"></a> 456.131
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: December 21, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4669-1: SquirrelMail vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4669-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that a cross-site scripting (XSS) vulnerability in<br>
-SquirrelMail allows remote attackers to use malicious script content from<br>
-HTML e-mail to execute code and/or provoke a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12970<br>
-<br>
-**Title**: USN-4657-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4657-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  Elena Petrova discovered that the pin controller device tree implementation<br>
-in the Linux kernel did not properly handle string references. A local<br>
-attacker could use this to expose sensitive information (kernel memory).<br>
-(CVE-2020-0427)<br>
-<br>
-Daniele Antonioli, Nils Ole Tippenhauer, and Kasper Rasmussen discovered<br>
-that legacy pairing and secure-connections pairing authentication in the<br>
-Bluetooth protocol could allow an unauthenticated user to complete<br>
-authentication without pairing credentials via adjacent access. A<br>
-physically proximate attacker could use this to impersonate a previously<br>
-paired Bluetooth device. (CVE-2020-10135)<br>
-<br>
-Andy Nguyen discovered that the Bluetooth A2MP implementation in the Linux<br>
-kernel did not properly initialize memory in some situations. A physically<br>
-proximate remote attacker could use this to expose sensitive information<br>
-(kernel memory). (CVE-2020-12352)<br>
-<br>
-It was discovered that a race condition existed in the perf subsystem of<br>
-the Linux kernel, leading to a use-after-free vulnerability. An attacker<br>
-with access to the perf subsystem could use this to cause a denial of<br>
-service (system crash) or possibly execute arbitrary code. (CVE-2020-14351)<br>
-<br>
-It was discovered that the frame buffer implementation in the Linux kernel<br>
-did not properly handle some edge cases in software scrollback. A local<br>
-attacker could use this to cause a denial of service (system crash) or<br>
-possibly execute arbitrary code. (CVE-2020-14390)<br>
-<br>
-It was discovered that the netfilter connection tracker for netlink in the<br>
-Linux kernel did not properly perform bounds checking in some situations. A<br>
-local attacker could use this to cause a denial of service (system crash).<br>
-(CVE-2020-25211)<br>
-<br>
-It was discovered that the Rados block device (rbd) driver in the Linux<br>
-kernel did not properly perform privilege checks for access to rbd devices<br>
-in some situations. A local attacker could use this to map or unmap rbd<br>
-block devices. (CVE-2020-25284)<br>
-<br>
-It was discovered that the HDLC PPP implementation in the Linux kernel did<br>
-not properly validate input in some situations. A local attacker could use<br>
-this to cause a denial of service (system crash) or possibly execute<br>
-arbitrary code. (CVE-2020-25643)<br>
-<br>
-It was discovered that the GENEVE tunnel implementation in the Linux kernel<br>
-when combined with IPSec did not properly select IP routes in some<br>
-situations. An attacker could use this to expose sensitive information<br>
-(unencrypted network traffic). (CVE-2020-25645)<br>
-<br>
-Keyu Man discovered that the ICMP global rate limiter in the Linux kernel<br>
-could be used to assist in scanning open UDP ports. A remote attacker could<br>
-use to facilitate attacks on UDP based services that depend on source port<br>
-randomization. (CVE-2020-25705)<br>
-<br>
-It was discovered that the framebuffer implementation in the Linux kernel<br>
-did not properly perform range checks in certain situations. A local<br>
-attacker could use this to expose sensitive information (kernel memory).<br>
-(CVE-2020-28915)<br>
-<br>
-It was discovered that Power 9 processors could be coerced to expose<br>
-information from the L1 cache in certain situations. A local attacker could<br>
-use this to expose sensitive information. (CVE-2020-4788)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25705<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10135<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0427<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12352<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390<br>
-<br>
-**Title**: USN-4660-1: Linux kernel vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4660-1<br>
-**Priorities**: low,medium<br>
-**Description**:<br>
-  It was discovered that a race condition existed in the perf subsystem of<br>
-the Linux kernel, leading to a use-after-free vulnerability. An attacker<br>
-with access to the perf subsystem could use this to cause a denial of<br>
-service (system crash) or possibly execute arbitrary code. (CVE-2020-14351)<br>
-<br>
-It was discovered that the frame buffer implementation in the Linux kernel<br>
-did not properly handle some edge cases in software scrollback. A local<br>
-attacker could use this to cause a denial of service (system crash) or<br>
-possibly execute arbitrary code. (CVE-2020-14390)<br>
-<br>
-It was discovered that the netfilter connection tracker for netlink in the<br>
-Linux kernel did not properly perform bounds checking in some situations. A<br>
-local attacker could use this to cause a denial of service (system crash).<br>
-(CVE-2020-25211)<br>
-<br>
-It was discovered that the Rados block device (rbd) driver in the Linux<br>
-kernel did not properly perform privilege checks for access to rbd devices<br>
-in some situations. A local attacker could use this to map or unmap rbd<br>
-block devices. (CVE-2020-25284)<br>
-<br>
-It was discovered that a race condition existed in the hugetlb sysctl<br>
-implementation in the Linux kernel. A privileged attacker could use this to<br>
-cause a denial of service (system crash). (CVE-2020-25285)<br>
-<br>
-It was discovered that the block layer subsystem in the Linux kernel did<br>
-not properly handle zero-length requests. A local attacker could use this<br>
-to cause a denial of service. (CVE-2020-25641)<br>
-<br>
-It was discovered that the HDLC PPP implementation in the Linux kernel did<br>
-not properly validate input in some situations. A local attacker could use<br>
-this to cause a denial of service (system crash) or possibly execute<br>
-arbitrary code. (CVE-2020-25643)<br>
-<br>
-It was discovered that the GENEVE tunnel implementation in the Linux kernel<br>
-when combined with IPSec did not properly select IP routes in some<br>
-situations. An attacker could use this to expose sensitive information<br>
-(unencrypted network traffic). (CVE-2020-25645)<br>
-<br>
-It was discovered that the framebuffer implementation in the Linux kernel<br>
-did not properly perform range checks in certain situations. A local<br>
-attacker could use this to expose sensitive information (kernel memory).<br>
-(CVE-2020-28915)<br>
-<br>
-It was discovered that Power 9 processors could be coerced to expose<br>
-information from the L1 cache in certain situations. A local attacker could<br>
-use this to expose sensitive information. (CVE-2020-4788)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14351<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25643<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25284<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25285<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25645<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-28915<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-4788<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25211<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-14390<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-25641<br>
-<br>
-**Title**: USN-4661-1: Snapcraft vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4661-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that Snapcraft includes the current directory when<br>
-configuring LD_LIBRARY_PATH for application commands. If a user were<br>
-tricked into installing a malicious snap or downloading a malicious<br>
-library, under certain circumstances an attacker could exploit this to<br>
-affect strict mode snaps that have access to the library and when<br>
-launched from the directory containing the library.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27348<br>
-<br>
-**Title**: USN-4664-1: Aptdaemon vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4664-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Kevin Backhouse discovered that Aptdaemon incorrectly handled certain<br>
-properties. A local attacker could use this issue to test for the presence<br>
-of local files. (CVE-2020-16128)<br>
-<br>
-Kevin Backhouse discovered that Aptdaemon incorrectly handled permission<br>
-checks. A local attacker could possibly use this issue to cause a denial of<br>
-service. (CVE-2020-27349)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27349<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-16128<br>
-<br>
-**Title**: USN-4667-1: APT vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4667-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Kevin Backhouse discovered that APT incorrectly handled certain packages.<br>
-A local attacker could possibly use this issue to cause APT to crash or<br>
-stop responding, resulting in a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27350<br>
-<br>
-**Title**: USN-4668-1: python-apt vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4668-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Kevin Backhouse discovered that python-apt incorrectly handled resources. A<br>
-local attacker could possibly use this issue to cause python-apt to consume<br>
-resources, leading to a denial of service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27351<br>
-<br>
-**Title**: USN-4665-1: curl vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4665-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Marc Aldorasi discovered that curl incorrectly handled the libcurl<br>
-CURLOPT_CONNECT_ONLY option. This could result in data being sent to the<br>
-wrong destination, possibly exposing sensitive information. This issue only<br>
-affected Ubuntu 20.10. (CVE-2020-8231)<br>
-<br>
-Varnavas Papaioannou discovered that curl incorrectly handled FTP PASV<br>
-responses. An attacker could possibly use this issue to trick curl into<br>
-connecting to an arbitrary IP address and be used to perform port scanner<br>
-and other information gathering. (CVE-2020-8284)<br>
-<br>
-It was discovered that curl incorrectly handled FTP wildcard matchins. A<br>
-remote attacker could possibly use this issue to cause curl to consume<br>
-resources and crash, resulting in a denial of service. (CVE-2020-8285)<br>
-<br>
-It was discovered that curl incorrectly handled OCSP response verification.<br>
-A remote attacker could possibly use this issue to provide a fraudulent<br>
-OCSP response. (CVE-2020-8286)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8286<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8285<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8231<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8284
-
 #### <a id="456-131"></a> 456.131
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -34018,37 +34130,6 @@ service.<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1971
 
-#### <a id="456-130"></a> 456.130
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: December 17, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4652-1: SniffIt vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4652-1<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  It was discovered that SniffIt incorrectly handled certain configuration<br>
-files. An attacker could possibly use this issue to execute arbitrary code.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-5439<br>
-<br>
-**Title**: USN-4662-1: OpenSSL vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4662-1<br>
-**Priorities**: high<br>
-**Description**:<br>
-  David Benjamin discovered that OpenSSL incorrectly handled comparing<br>
-certificates containing a EDIPartyName name type. A remote attacker could<br>
-possibly use this issue to cause OpenSSL to crash, resulting in a denial of<br>
-service.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1971
-
 #### <a id="456-129"></a> 456.129
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -34109,113 +34190,6 @@ service.<br>
 *   [[USN-4646-2] poppler regression](https://ubuntu.com/security/notices/USN-4646-2)<br>
 *   [[USN-4382-2] FreeRDP vulnerabilities](https://ubuntu.com/security/notices/USN-4382-2)<br>
 *   [[USN-4650-1] QEMU vulnerabilities](https://ubuntu.com/security/notices/USN-4650-1)
-
-#### <a id="456-129"></a> 456.129
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: December 01, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-*   [[USN-4611-1] Samba vulnerabilities](https://ubuntu.com/security/notices/USN-4611-1)<br>
-*   [[USN-4605-2] Blueman update](https://ubuntu.com/security/notices/USN-4605-2)<br>
-*   [[USN-4614-1] GDM vulnerability](https://ubuntu.com/security/notices/USN-4614-1)<br>
-*   [[USN-4616-1] AccountsService vulnerabilities](https://ubuntu.com/security/notices/USN-4616-1)<br>
-*   [[USN-4613-1] python-cryptography vulnerability](https://ubuntu.com/security/notices/USN-4613-1)<br>
-*   [[USN-4615-1] Yerase's TNEF vulnerabilities](https://ubuntu.com/security/notices/USN-4615-1)<br>
-*   [[USN-4617-1] SPICE vdagent vulnerabilities](https://ubuntu.com/security/notices/USN-4617-1)<br>
-*   [[USN-4616-2] AccountsService vulnerabilities](https://ubuntu.com/security/notices/USN-4616-2)<br>
-*   [[USN-4618-1] tmux vulnerability](https://ubuntu.com/security/notices/USN-4618-1)<br>
-*   [[USN-4619-1] dom4j vulnerability](https://ubuntu.com/security/notices/USN-4619-1)<br>
-*   [[USN-4599-3] Firefox regressions](https://ubuntu.com/security/notices/USN-4599-3)<br>
-*   [[USN-4620-1] phpLDAPadmin vulnerability](https://ubuntu.com/security/notices/USN-4620-1)<br>
-*   [[USN-4621-1] netqmail vulnerabilities](https://ubuntu.com/security/notices/USN-4621-1)<br>
-*   [[USN-4622-1] OpenLDAP vulnerability](https://ubuntu.com/security/notices/USN-4622-1)<br>
-*   [[USN-4623-1] Pacemaker vulnerability](https://ubuntu.com/security/notices/USN-4623-1)<br>
-*   [[USN-4624-1] libexif vulnerability](https://ubuntu.com/security/notices/USN-4624-1)<br>
-*   [[USN-4625-1] Firefox vulnerability](https://ubuntu.com/security/notices/USN-4625-1)<br>
-*   [[USN-4626-1] Linux kernel vulnerabilities](https://ubuntu.com/security/notices/USN-4626-1)<br>
-*   [[USN-4627-1] Linux kernel vulnerability](https://ubuntu.com/security/notices/USN-4627-1)<br>
-*   [[USN-4628-1] Intel Microcode vulnerabilities](https://ubuntu.com/security/notices/USN-4628-1)<br>
-*   [[USN-4629-1] MoinMoin vulnerabilities](https://ubuntu.com/security/notices/USN-4629-1)<br>
-*   [[USN-4630-1] Raptor vulnerability](https://ubuntu.com/security/notices/USN-4630-1)<br>
-*   [[USN-4622-2] OpenLDAP vulnerability](https://ubuntu.com/security/notices/USN-4622-2)<br>
-*   [[USN-4628-2] Intel Microcode regression](https://ubuntu.com/security/notices/USN-4628-2)<br>
-*   [[USN-4171-6] Apport regression](https://ubuntu.com/security/notices/USN-4171-6)<br>
-*   [[USN-4631-1] libmaxminddb vulnerability](https://ubuntu.com/security/notices/USN-4631-1)<br>
-*   [[USN-4632-1] SLiRP vulnerabilities](https://ubuntu.com/security/notices/USN-4632-1)<br>
-*   [[USN-4607-2] OpenJDK regressions](https://ubuntu.com/security/notices/USN-4607-2)<br>
-*   [[USN-4633-1] PostgreSQL vulnerabilities](https://ubuntu.com/security/notices/USN-4633-1)<br>
-*   [[USN-4634-1] OpenLDAP vulnerabilities](https://ubuntu.com/security/notices/USN-4634-1)<br>
-*   [[USN-4635-1] Kerberos vulnerability](https://ubuntu.com/security/notices/USN-4635-1)<br>
-*   [[USN-4636-1] LibVNCServer, Vino vulnerability](https://ubuntu.com/security/notices/USN-4636-1)<br>
-*   [[USN-4637-1] Firefox vulnerabilities](https://ubuntu.com/security/notices/USN-4637-1)<br>
-*   [[USN-4638-1] c-ares vulnerability](https://ubuntu.com/security/notices/USN-4638-1)<br>
-*   [[USN-4639-1] phpMyAdmin vulnerabilities](https://ubuntu.com/security/notices/USN-4639-1)<br>
-*   [[USN-4637-2] Firefox vulnerabilities](https://ubuntu.com/security/notices/USN-4637-2)<br>
-*   [[USN-4634-2] OpenLDAP vulnerabilities](https://ubuntu.com/security/notices/USN-4634-2)<br>
-*   [[USN-4640-1] PulseAudio vulnerability](https://ubuntu.com/security/notices/USN-4640-1)<br>
-*   [[USN-4641-1] libextractor vulnerabilities](https://ubuntu.com/security/notices/USN-4641-1)<br>
-*   [[USN-4642-1] PDFResurrect vulnerability](https://ubuntu.com/security/notices/USN-4642-1)<br>
-*   [[USN-4643-1] atftp vulnerabilities](https://ubuntu.com/security/notices/USN-4643-1)<br>
-*   [[USN-4644-1] igraph vulnerability](https://ubuntu.com/security/notices/USN-4644-1)<br>
-*   [[USN-4645-1] Mutt vulnerability](https://ubuntu.com/security/notices/USN-4645-1)<br>
-*   [[USN-4646-1] poppler vulnerabilities](https://ubuntu.com/security/notices/USN-4646-1)<br>
-*   [[USN-4647-1] Thunderbird vulnerabilities](https://ubuntu.com/security/notices/USN-4647-1)<br>
-*   [[USN-4648-1] WebKitGTK vulnerabilities](https://ubuntu.com/security/notices/USN-4648-1)<br>
-*   [[USN-4649-1] xdg-utils vulnerability](https://ubuntu.com/security/notices/USN-4649-1)<br>
-*   [[USN-4646-2] poppler regression](https://ubuntu.com/security/notices/USN-4646-2)<br>
-*   [[USN-4382-2] FreeRDP vulnerabilities](https://ubuntu.com/security/notices/USN-4382-2)<br>
-*   [[USN-4650-1] QEMU vulnerabilities](https://ubuntu.com/security/notices/USN-4650-1)
-
-#### <a id="456-128"></a> 456.128
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: November 16, 2020
-
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.7<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4587-1: iTALC vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4587-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  Nicolas Ruff discovered that iTALC had buffer overflows, divide-by-zero errors and didn't check malloc return values. A remote attacker could use these issues to cause a denial of service or possibly execute arbitrary code. (CVE-2014-6051, CVE-2014-6052, CVE-2014-6053, CVE-2014-6054, CVE-2014-6055)<br>
-Josef Gajdusek discovered that iTALC had...<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6051<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6052<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6053<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6054<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2014-6055<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9941<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2016-9942<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-15127<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20019<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20020<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20021<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20022<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20023<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20024<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20748<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20749<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-20750<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2018-7225<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-15681<br>
-<br>
-**Title**: USN-4552-2: Pam-python vulnerability<br>
-**URL**: https://ubuntu.com/security/notices/USN-4552-2<br>
-**Priorities**: medium<br>
-**Description**:<br>
-  Malte Kraus discovered that Pam-python mishandled certain environment variables. A local attacker could potentially use this vulnerability to execute programs as root.<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16729
 
 #### <a id="456-128"></a> 456.128
 
