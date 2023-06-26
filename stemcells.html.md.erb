@@ -10166,6 +10166,275 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-584"></a> 621.584
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 26, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.145<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6180-1: VLC media player vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6180-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that VLC could be made to read out of bounds when<br>
+decoding image files. If a user were tricked into opening a crafted image<br>
+file, a remote attacker could possibly use this issue to cause VLC to<br>
+crash, leading to a denial of service. This issue only affected Ubuntu<br>
+16.04 LTS and Ubuntu 18.04 LTS. (CVE-2019-19721)<br>
+<br>
+It was discovered that VLC could be made to write out of bounds when<br>
+processing H.264 video files. If a user were tricked into opening a<br>
+crafted H.264 video file, a remote attacker could possibly use this issue<br>
+to cause VLC to crash, leading to a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 18.04 LTS and <br>
+Ubuntu 20.04 LTS. (CVE-2020-13428)<br>
+<br>
+It was discovered that VLC could be made to read out of bounds when<br>
+processing AVI video files. If a user were tricked into opening a crafted<br>
+AVI video file, a remote attacker could possibly use this issue to cause<br>
+VLC to crash, leading to a denial of service. This issue only affected<br>
+Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2021-25801,<br>
+CVE-2021-25802, CVE-2021-25803, CVE-2021-25804)<br>
+<br>
+It was discovered that the VNC module of VLC contained an arithmetic<br>
+overflow. If a user were tricked into opening a crafted playlist or<br>
+connecting to a rouge VNC server, a remote attacker could possibly use<br>
+this issue to cause VLC to crash, leading to a denial of service, or<br>
+possibly execute arbitrary code. (CVE-2022-41325)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-19721<br>
+ - https://ubuntu.com/security/CVE-2020-13428<br>
+ - https://ubuntu.com/security/CVE-2021-25801<br>
+ - https://ubuntu.com/security/CVE-2021-25802<br>
+ - https://ubuntu.com/security/CVE-2021-25803<br>
+ - https://ubuntu.com/security/CVE-2021-25804<br>
+ - https://ubuntu.com/security/CVE-2022-41325<br>
+ - https://ubuntu.com/security/CVE-2021-25801<br>
+ - https://ubuntu.com/security/CVE-2021-25802<br>
+ - https://ubuntu.com/security/CVE-2022-41325<br>
+ - https://ubuntu.com/security/CVE-2019-19721<br>
+ - https://ubuntu.com/security/CVE-2021-25804<br>
+ - https://ubuntu.com/security/CVE-2021-25803<br>
+ - https://ubuntu.com/security/CVE-2020-13428<br>
+<br>
+**Title**: USN-6182-1: pngcheck vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6182-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that pngcheck incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to cause a<br>
+denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-27818<br>
+ - https://ubuntu.com/security/CVE-2020-35511<br>
+<br>
+**Title**: USN-6163-1: pano13 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6163-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that pano13 did not properly validate the prefix provided<br>
+for PTcrop's output. An attacker could use this issue to cause pano13 to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS,<br>
+Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2021-20307)<br>
+<br>
+It was discovered that pano13 did not properly handle certain crafted TIFF<br>
+images. An attacker could use this issue to cause pano13 to crash,<br>
+resulting in a denial of service. (CVE-2021-33293)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-20307<br>
+ - https://ubuntu.com/security/CVE-2021-33293<br>
+ - https://ubuntu.com/security/CVE-2021-20307<br>
+ - https://ubuntu.com/security/CVE-2021-33293<br>
+<br>
+**Title**: USN-6167-1: QEMU vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6167-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that QEMU did not properly manage the guest drivers when<br>
+shared buffers are not allocated. A malicious guest driver could use this<br>
+issue to cause QEMU to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 20.04 LTS, Ubuntu<br>
+22.04 LTS and Ubuntu 22.10. (CVE-2022-1050)<br>
+<br>
+It was discovered that QEMU did not properly check the size of the<br>
+structure pointed to by the guest physical address pqxl. A malicious guest<br>
+attacker could use this issue to cause QEMU to crash, resulting in a denial<br>
+of service. This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS,<br>
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS and Ubuntu 22.10.<br>
+(CVE-2022-4144)<br>
+<br>
+It was discovered that QEMU did not properly manage memory in the ACPI<br>
+Error Record Serialization Table (ERST) device. A malicious guest attacker<br>
+could use this issue to cause QEMU to crash, resulting in a denial of<br>
+service. This issue only affected Ubuntu 22.10. (CVE-2022-4172)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when DMA memory<br>
+writes happen repeatedly in the lsi53c895a device. A malicious guest<br>
+attacker could use this issue to cause QEMU to crash, resulting in a denial<br>
+of service. (CVE-2023-0330)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1050<br>
+ - https://ubuntu.com/security/CVE-2022-4144<br>
+ - https://ubuntu.com/security/CVE-2022-4172<br>
+ - https://ubuntu.com/security/CVE-2023-0330<br>
+ - https://ubuntu.com/security/CVE-2022-4172<br>
+ - https://ubuntu.com/security/CVE-2022-4144<br>
+ - https://ubuntu.com/security/CVE-2022-1050<br>
+ - https://ubuntu.com/security/CVE-2023-0330<br>
+<br>
+**Title**: USN-6169-1: GNU SASL vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6169-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that GNU SASL's GSSAPI server could make an<br>
+out-of-bounds reads if given specially crafted GSS-API authentication<br>
+data. A remote attacker could possibly use this issue to cause a<br>
+denial of service or to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2469<br>
+<br>
+**Title**: USN-6176-1: PyPDF2 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6176-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PyPDF2 incorrectly handled certain PDF files. If a <br>
+user or automated system were tricked into processing a specially crafted<br>
+file, an attacker could possibly use this issue to consume system<br>
+resources, resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-24859<br>
+<br>
+**Title**: USN-6179-1: Jettison vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6179-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Jettison incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to cause a<br>
+denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1436<br>
+<br>
+**Title**: USN-6154-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6154-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Vim was using uninitialized memory when fuzzy<br>
+matching, which could lead to invalid memory access. An attacker could<br>
+possibly use this issue to cause a denial of service or execute arbitrary<br>
+code. This issue only affected Ubuntu 22.04 LTS, Ubuntu 22.10 and Ubuntu<br>
+23.04. (CVE-2023-2426)<br>
+<br>
+It was discovered that Vim was not properly performing bounds checks when<br>
+processing register contents, which could lead to a NULL pointer<br>
+dereference. An attacker could possibly use this issue to cause a denial<br>
+of service or execute arbitrary code. (CVE-2023-2609)<br>
+<br>
+It was discovered that Vim was not properly limiting the length of<br>
+substitution expression strings, which could lead to excessive memory<br>
+consumption. An attacker could possibly use this issue to cause a denial<br>
+of service. (CVE-2023-2610)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2426<br>
+ - https://ubuntu.com/security/CVE-2023-2609<br>
+ - https://ubuntu.com/security/CVE-2023-2610<br>
+ - https://ubuntu.com/security/CVE-2023-2609<br>
+ - https://ubuntu.com/security/CVE-2023-2610<br>
+ - https://ubuntu.com/security/CVE-2023-2426<br>
+<br>
+**Title**: USN-6083-2: cups-filters vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6083-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6083-1 fixed a vulnerability in cups-filters. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that cups-filters incorrectly handled the beh CUPS<br>
+ backend. A remote attacker could possibly use this issue to cause the<br>
+ backend to stop responding or to execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-24805<br>
+<br>
+**Title**: USN-6166-2: libcap2 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6166-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6166-1 fixed a vulnerability in libcap2. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM, Ubuntu 16.04 ESM<br>
+and Ubuntu 18.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Richard Weinberger discovered that libcap2 incorrectly handled certain long<br>
+ input strings. An attacker could use this issue to cause libcap2 to crash,<br>
+ resulting in a denial of service, or possibly execute arbitrary code.<br>
+ (CVE-2023-2603)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2603<br>
+ - https://ubuntu.com/security/CVE-2023-2603<br>
+<br>
+**Title**: USN-6188-1: OpenSSL vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6188-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Matt Caswell discovered that OpenSSL incorrectly handled certain ASN.1<br>
+object identifiers. A remote attacker could possibly use this issue to<br>
+cause OpenSSL to consume resources, resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2650<br>
+<br>
+**Title**: USN-6159-1: Tornado vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6159-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Tornado incorrectly handled certain redirect.<br>
+An remote attacker could possibly use this issue to redirect a user to an<br>
+arbitrary web site and conduct a phishing attack by having user access a<br>
+specially crafted URL.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-28370<br>
+<br>
+**Title**: USN-6168-2: libx11 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6168-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6168-1 fixed a vulnerability in libx11. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM, Ubuntu 16.04 ESM,<br>
+and Ubuntu 18.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Gregory James Duck discovered that libx11 incorrectly handled certain<br>
+ Request, Event, or Error IDs. If a user were tricked into connecting to a<br>
+ malicious X Server, a remote attacker could possibly use this issue to<br>
+ cause libx11 to crash, resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3138<br>
+<br>
+**Title**: USN-6155-2: Requests vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6155-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6155-1 fixed a vulnerability in Requests. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM and 18.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Dennis Brinkrolf and Tobias Funke discovered that Requests incorrectly<br>
+ leaked Proxy-Authorization headers. A remote attacker could possibly use<br>
+ this issue to obtain sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-32681
+
 #### <a id="621-561"></a> 621.561
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
