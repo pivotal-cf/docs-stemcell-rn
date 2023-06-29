@@ -15,6 +15,94 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-148"></a> 1.148
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 29, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.548.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6161-2: .NET regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-6161-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6161-1 fixed vulnerabilities in .NET. The update introduced<br>
+a regression with regards to how the runtime imported X.509<br>
+certificates. This update fixes the problem.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that .NET did not properly enforce certain<br>
+ restrictions when deserializing a DataSet or DataTable from<br>
+ XML. An attacker could possibly use this issue to elevate their<br>
+ privileges. (CVE-2023-24936)<br>
+<br>
+ Kevin Jones discovered that .NET did not properly handle the<br>
+ AIA fetching process for X.509 client certificates. An attacker<br>
+ could possibly use this issue to cause a denial of service.<br>
+ (CVE-2023-29331)<br>
+<br>
+ Kalle Niemitalo discovered that the .NET package manager,<br>
+ NuGet, was susceptible to a potential race condition. An<br>
+ attacker could possibly use this issue to perform remote<br>
+ code execution. (CVE-2023-29337)<br>
+<br>
+ Tom Deseyn discovered that .NET did not properly process certain<br>
+ arguments when extracting the contents of a tar file. An attacker<br>
+ could possibly use this issue to elevate their privileges. This<br>
+ issue only affected the dotnet7 package. (CVE-2023-32032)<br>
+<br>
+ It was discovered that .NET did not properly handle memory in<br>
+ certain circumstances. An attacker could possibly use this issue<br>
+ to cause a denial of service or perform remote code execution.<br>
+ (CVE-2023-33128)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-24936<br>
+ - https://ubuntu.com/security/CVE-2023-29331<br>
+ - https://ubuntu.com/security/CVE-2023-29337<br>
+ - https://ubuntu.com/security/CVE-2023-32032<br>
+ - https://ubuntu.com/security/CVE-2023-33128<br>
+<br>
+**Title**: USN-6184-1: CUPS vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6184-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that CUPS incorrectly handled certain memory operations.<br>
+An attacker could possibly use this issue to cause CUPS to crash, resulting<br>
+in a denial of service, or possibly obtain sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34241<br>
+<br>
+**Title**: USN-6192-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6192-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+Xingyuan Mo and Gengjia Chen discovered that the io_uring subsystem in the<br>
+Linux kernel did not properly handle locking when IOPOLL mode is being<br>
+used. A local attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-2430)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+ - https://ubuntu.com/security/CVE-2023-35788
+
 #### <a id="jammy-1-147"></a> 1.147
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
