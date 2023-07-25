@@ -15,6 +15,715 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-179"></a> 1.179
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 24, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.560.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6200-1: ImageMagick vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6200-1<br>
+**Priorities**: negligible,medium,low<br>
+**Description**:<br>
+  It was discovered that ImageMagick incorrectly handled the "-authenticate"<br>
+option for password-protected PDF files. An attacker could possibly use<br>
+this issue to inject additional shell commands and perform arbitrary code<br>
+execution. This issue only affected Ubuntu 20.04 LTS. (CVE-2020-29599)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled certain values<br>
+when processing PDF files. If a user or automated system using ImageMagick<br>
+were tricked into opening a specially crafted PDF file, an attacker could<br>
+exploit this to cause a denial of service. This issue only affected Ubuntu<br>
+20.04 LTS. (CVE-2021-20224)<br>
+<br>
+Zhang Xiaohui discovered that ImageMagick incorrectly handled certain<br>
+values when processing image data. If a user or automated system using<br>
+ImageMagick were tricked into opening a specially crafted image, an<br>
+attacker could exploit this to cause a denial of service. This issue only<br>
+affected Ubuntu 20.04 LTS. (CVE-2021-20241, CVE-2021-20243)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled certain values<br>
+when processing visual effects based image files. By tricking a user into<br>
+opening a specially crafted image file, an attacker could crash the<br>
+application causing a denial of service. This issue only affected Ubuntu<br>
+20.04 LTS. (CVE-2021-20244, CVE-2021-20309)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled certain values<br>
+when performing resampling operations. By tricking a user into opening<br>
+a specially crafted image file, an attacker could crash the application<br>
+causing a denial of service. This issue only affected Ubuntu 20.04 LTS.<br>
+(CVE-2021-20246)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled certain values<br>
+when processing thumbnail image data. By tricking a user into opening<br>
+a specially crafted image file, an attacker could crash the application<br>
+causing a denial of service. This issue only affected Ubuntu 20.04 LTS.<br>
+(CVE-2021-20312)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled memory cleanup<br>
+when performing certain cryptographic operations. Under certain conditions<br>
+sensitive cryptographic information could be disclosed. This issue only<br>
+affected Ubuntu 20.04 LTS. (CVE-2021-20313)<br>
+<br>
+It was discovered that ImageMagick did not use the correct rights when<br>
+specifically excluded by a module policy. An attacker could use this issue<br>
+to read and write certain restricted files. This issue only affected Ubuntu<br>
+20.04 LTS. (CVE-2021-39212)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled memory under certain<br>
+circumstances. If a user were tricked into opening a specially crafted<br>
+image file, an attacker could possibly exploit this issue to cause a denial<br>
+of service or other unspecified impact. This issue only affected Ubuntu<br>
+20.04 LTS. (CVE-2022-28463, CVE-2022-32545, CVE-2022-32546, CVE-2022-32547)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled memory under certain<br>
+circumstances. If a user were tricked into opening a specially crafted<br>
+image file, an attacker could possibly exploit this issue to cause a denial<br>
+of service or other unspecified impact. This issue only affected Ubuntu<br>
+22.04 LTS, Ubuntu 22.10, and Ubuntu 23.04. (CVE-2021-3610, CVE-2023-1906,<br>
+CVE-2023-3428)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled certain values<br>
+when processing specially crafted SVG files. By tricking a user into<br>
+opening a specially crafted SVG file, an attacker could crash the<br>
+application causing a denial of service. This issue only affected Ubuntu<br>
+20.04 LTS, Ubuntu 22.04 LTS, Ubuntu 22.10, and Ubuntu 23.04. (CVE-2023-1289)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled memory under certain<br>
+circumstances. If a user were tricked into opening a specially crafted<br>
+tiff file, an attacker could possibly exploit this issue to cause a denial<br>
+of service or other unspecified impact. This issue only affected Ubuntu<br>
+22.04 LTS, Ubuntu 22.10, and Ubuntu 23.04. (CVE-2023-3195)<br>
+<br>
+It was discovered that ImageMagick incorrectly handled memory under certain<br>
+circumstances. If a user were tricked into opening a specially crafted<br>
+image file, an attacker could possibly exploit this issue to cause a denial<br>
+of service or other unspecified impact. (CVE-2023-34151)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-29599<br>
+ - https://ubuntu.com/security/CVE-2021-20224<br>
+ - https://ubuntu.com/security/CVE-2021-20241<br>
+ - https://ubuntu.com/security/CVE-2021-20243<br>
+ - https://ubuntu.com/security/CVE-2021-20244<br>
+ - https://ubuntu.com/security/CVE-2021-20309<br>
+ - https://ubuntu.com/security/CVE-2021-20246<br>
+ - https://ubuntu.com/security/CVE-2021-20312<br>
+ - https://ubuntu.com/security/CVE-2021-20313<br>
+ - https://ubuntu.com/security/CVE-2021-39212<br>
+ - https://ubuntu.com/security/CVE-2022-28463<br>
+ - https://ubuntu.com/security/CVE-2022-32545<br>
+ - https://ubuntu.com/security/CVE-2022-32546<br>
+ - https://ubuntu.com/security/CVE-2022-32547<br>
+ - https://ubuntu.com/security/CVE-2021-3610<br>
+ - https://ubuntu.com/security/CVE-2023-1906<br>
+ - https://ubuntu.com/security/CVE-2023-3428<br>
+ - https://ubuntu.com/security/CVE-2023-1289<br>
+ - https://ubuntu.com/security/CVE-2023-3195<br>
+ - https://ubuntu.com/security/CVE-2023-34151<br>
+ - https://ubuntu.com/security/CVE-2023-1289<br>
+ - https://ubuntu.com/security/CVE-2021-20243<br>
+ - https://ubuntu.com/security/CVE-2021-20246<br>
+ - https://ubuntu.com/security/CVE-2021-3610<br>
+ - https://ubuntu.com/security/CVE-2021-20224<br>
+ - https://ubuntu.com/security/CVE-2021-20312<br>
+ - https://ubuntu.com/security/CVE-2023-3428<br>
+ - https://ubuntu.com/security/CVE-2021-20313<br>
+ - https://ubuntu.com/security/CVE-2021-20309<br>
+ - https://ubuntu.com/security/CVE-2021-39212<br>
+ - https://ubuntu.com/security/CVE-2021-20241<br>
+ - https://ubuntu.com/security/CVE-2023-3195<br>
+ - https://ubuntu.com/security/CVE-2022-32545<br>
+ - https://ubuntu.com/security/CVE-2022-28463<br>
+ - https://ubuntu.com/security/CVE-2021-20244<br>
+ - https://ubuntu.com/security/CVE-2023-1906<br>
+ - https://ubuntu.com/security/CVE-2023-34151<br>
+ - https://ubuntu.com/security/CVE-2020-29599<br>
+ - https://ubuntu.com/security/CVE-2022-32547<br>
+ - https://ubuntu.com/security/CVE-2022-32546<br>
+<br>
+**Title**: USN-6236-1: ConnMan vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6236-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that ConnMan could be made to write out of bounds. A<br>
+remote attacker could possibly use this issue to cause ConnMan to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.<br>
+(CVE-2021-26675, CVE-2021-33833)<br>
+<br>
+It was discovered that ConnMan could be made to leak sensitive information<br>
+via the gdhcp component. A remote attacker could possibly use this issue<br>
+to obtain information for further exploitation. This issue only affected<br>
+Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2021-26676)<br>
+<br>
+It was discovered that ConnMan could be made to read out of bounds. A<br>
+remote attacker could possibly use this issue to case ConnMan to crash,<br>
+resulting in a denial of service. This issue only affected Ubuntu 16.04<br>
+LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.<br>
+(CVE-2022-23096, CVE-2022-23097)<br>
+<br>
+It was discovered that ConnMan could be made to run into an infinite loop.<br>
+A remote attacker could possibly use this issue to cause ConnMan to<br>
+consume resources and to stop operating, resulting in a denial of service.<br>
+This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04<br>
+LTS, and Ubuntu 22.04 LTS. (CVE-2022-23098)<br>
+<br>
+It was discovered that ConnMan could be made to write out of bounds via<br>
+the gweb component. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 16.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-32292)<br>
+<br>
+It was discovered that ConnMan did not properly manage memory under<br>
+certain circumstances. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 16.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-32293)<br>
+<br>
+It was discovered that ConnMan could be made to write out of bounds via<br>
+the gdhcp component. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2023-28488)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-26675<br>
+ - https://ubuntu.com/security/CVE-2021-33833<br>
+ - https://ubuntu.com/security/CVE-2021-26676<br>
+ - https://ubuntu.com/security/CVE-2022-23096<br>
+ - https://ubuntu.com/security/CVE-2022-23097<br>
+ - https://ubuntu.com/security/CVE-2022-23098<br>
+ - https://ubuntu.com/security/CVE-2022-32292<br>
+ - https://ubuntu.com/security/CVE-2022-32293<br>
+ - https://ubuntu.com/security/CVE-2023-28488<br>
+ - https://ubuntu.com/security/CVE-2021-26676<br>
+ - https://ubuntu.com/security/CVE-2022-32293<br>
+ - https://ubuntu.com/security/CVE-2023-28488<br>
+ - https://ubuntu.com/security/CVE-2022-23098<br>
+ - https://ubuntu.com/security/CVE-2021-26675<br>
+ - https://ubuntu.com/security/CVE-2021-33833<br>
+ - https://ubuntu.com/security/CVE-2022-23097<br>
+ - https://ubuntu.com/security/CVE-2022-23096<br>
+ - https://ubuntu.com/security/CVE-2022-32292<br>
+<br>
+**Title**: USN-6189-1: etcd vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6189-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that etcd leaked credentials when debugging<br>
+was enabled. This allowed remote attackers to discover etcd <br>
+authentication credentials and possibly escalate privileges on<br>
+systems using etcd.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-28235<br>
+<br>
+**Title**: USN-6195-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6195-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that Vim contained an out-of-bounds read vulnerability.<br>
+An attacker could possibly use this issue to cause a denial of service or <br>
+execute arbitrary code. (CVE-2022-0128)<br>
+<br>
+It was discovered that Vim did not properly manage memory when freeing<br>
+allocated memory. An attacker could possibly use this issue to cause a<br>
+denial of service or execute arbitrary code. (CVE-2022-0156)<br>
+<br>
+It was discovered that Vim contained a heap-based buffer overflow<br>
+vulnerability. An attacker could possibly use this issue to cause a denial<br>
+of service or execute arbitrary code. (CVE-2022-0158)<br>
+<br>
+It was discovered that Vim did not properly manage memory when recording<br>
+and using select mode. An attacker could possibly use this issue to cause<br>
+a denial of service. (CVE-2022-0393)<br>
+<br>
+It was discovered that Vim incorrectly handled certain memory operations<br>
+during a visual block yank. An attacker could possibly use this issue to<br>
+cause a denial of service or execute arbitrary code. (CVE-2022-0407)<br>
+<br>
+It was discovered that Vim contained a NULL pointer dereference<br>
+vulnerability when switching tabpages. An attacker could possible use this<br>
+issue to cause a denial of service. (CVE-2022-0696)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0128<br>
+ - https://ubuntu.com/security/CVE-2022-0156<br>
+ - https://ubuntu.com/security/CVE-2022-0158<br>
+ - https://ubuntu.com/security/CVE-2022-0393<br>
+ - https://ubuntu.com/security/CVE-2022-0407<br>
+ - https://ubuntu.com/security/CVE-2022-0696<br>
+ - https://ubuntu.com/security/CVE-2022-0696<br>
+ - https://ubuntu.com/security/CVE-2022-0393<br>
+ - https://ubuntu.com/security/CVE-2022-0158<br>
+ - https://ubuntu.com/security/CVE-2022-0407<br>
+ - https://ubuntu.com/security/CVE-2022-0156<br>
+ - https://ubuntu.com/security/CVE-2022-0128<br>
+<br>
+**Title**: USN-6238-1: Samba vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6238-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Samba incorrectly handled Winbind NTLM<br>
+authentication responses. An attacker could possibly use this issue to<br>
+cause Samba to crash, resulting in a denial of service. (CVE-2022-2127)<br>
+<br>
+Andreas Schneider discovered that Samba incorrectly enforced SMB2 packet<br>
+signing. A remote attacker could possibly use this issue to obtain or<br>
+modify sensitive information. This issue only affected Ubuntu 23.04.<br>
+(CVE-2023-3347)<br>
+<br>
+Florent Saudel and Arnaud Gatignolof discovered that Samba incorrectly<br>
+handled certain Spotlight requests. A remote attacker could possibly use<br>
+this issue to cause Samba to consume resources, leading to a denial of<br>
+service. (CVE-2023-34966, CVE-2023-34967)<br>
+<br>
+Ralph Boehme and Stefan Metzmacher discovered that Samba incorrectly<br>
+handled paths returned by Spotlight requests. A remote attacker could<br>
+possibly use this issue to obtain sensitive information. (CVE-2023-34968)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2127<br>
+ - https://ubuntu.com/security/CVE-2023-3347<br>
+ - https://ubuntu.com/security/CVE-2023-34966<br>
+ - https://ubuntu.com/security/CVE-2023-34967<br>
+ - https://ubuntu.com/security/CVE-2023-34968<br>
+ - https://ubuntu.com/security/CVE-2023-3347<br>
+ - https://ubuntu.com/security/CVE-2023-34967<br>
+ - https://ubuntu.com/security/CVE-2023-34968<br>
+ - https://ubuntu.com/security/CVE-2023-34966<br>
+ - https://ubuntu.com/security/CVE-2022-2127<br>
+<br>
+**Title**: USN-6225-1: Knot Resolver vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6225-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Knot Resolver did not correctly handle certain<br>
+client options. A remote attacker could send requests to malicous domains<br>
+and cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40188<br>
+<br>
+**Title**: USN-6235-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6235-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  It was discovered that the NTFS file system implementation in the Linux<br>
+kernel contained a null pointer dereference in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2022-4842)<br>
+<br>
+Jordy Zomer and Alexandra Sandulescu discovered that the Linux kernel did<br>
+not properly implement speculative execution barriers in usercopy functions<br>
+in certain situations. A local attacker could use this to expose sensitive<br>
+information (kernel memory). (CVE-2023-0459)<br>
+<br>
+Seth Jenkins discovered that the CPU data to memory implementation for x86<br>
+processors in the Linux kernel did not properly perform address<br>
+randomization. A local attacker could use this to expose sensitive<br>
+information (kernel memory) or in conjunction with another kernel<br>
+vulnerability. (CVE-2023-0597)<br>
+<br>
+It was discovered that the Human Interface Device (HID) support driver in<br>
+the Linux kernel contained a type confusion vulnerability in some<br>
+situations. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2023-1073)<br>
+<br>
+It was discovered that the XFS file system implementation in the Linux<br>
+kernel did not properly perform metadata validation when mounting certain<br>
+images. An attacker could use this to specially craft a file system image<br>
+that, when mounted, could cause a denial of service (system crash).<br>
+(CVE-2023-2124)<br>
+<br>
+Wei Chen discovered that the InfiniBand RDMA communication manager<br>
+implementation in the Linux kernel contained an out-of-bounds read<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2023-2176)<br>
+<br>
+Xingyuan Mo and Gengjia Chen discovered that the io_uring subsystem in the<br>
+Linux kernel did not properly handle locking when IOPOLL mode is being<br>
+used. A local attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-2430)<br>
+<br>
+Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-4842<br>
+ - https://ubuntu.com/security/CVE-2023-0459<br>
+ - https://ubuntu.com/security/CVE-2023-0597<br>
+ - https://ubuntu.com/security/CVE-2023-1073<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-2176<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-0459<br>
+ - https://ubuntu.com/security/CVE-2023-2176<br>
+ - https://ubuntu.com/security/CVE-2023-0597<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+ - https://ubuntu.com/security/CVE-2023-1073<br>
+ - https://ubuntu.com/security/CVE-2022-4842<br>
+<br>
+**Title**: USN-6223-1: Linux kernel (Azure CVM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6223-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  It was discovered that the TUN/TAP driver in the Linux kernel did not<br>
+properly initialize socket data. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-1076)<br>
+<br>
+It was discovered that the Real-Time Scheduling Class implementation in the<br>
+Linux kernel contained a type confusion vulnerability in some situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-1077)<br>
+<br>
+It was discovered that the ASUS HID driver in the Linux kernel did not<br>
+properly handle device removal, leading to a use-after-free vulnerability.<br>
+A local attacker with physical access could plug in a specially crafted USB<br>
+device to cause a denial of service (system crash). (CVE-2023-1079)<br>
+<br>
+It was discovered that the Xircom PCMCIA network device driver in the Linux<br>
+kernel did not properly handle device removal events. A physically<br>
+proximate attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-1670)<br>
+<br>
+It was discovered that a race condition existed in the Xen transport layer<br>
+implementation for the 9P file system protocol in the Linux kernel, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (guest crash) or expose sensitive information (guest<br>
+kernel memory). (CVE-2023-1859)<br>
+<br>
+Jose Oliveira and Rodrigo Branco discovered that the Spectre Variant 2<br>
+mitigations with prctl syscall were insufficient in some situations. A<br>
+local attacker could possibly use this to expose sensitive information.<br>
+(CVE-2023-1998)<br>
+<br>
+It was discovered that the BigBen Interactive Kids' gamepad driver in the<br>
+Linux kernel did not properly handle device removal, leading to a use-<br>
+after-free vulnerability. A local attacker with physical access could plug<br>
+in a specially crafted USB device to cause a denial of service (system<br>
+crash). (CVE-2023-25012)<br>
+<br>
+It was discovered that a use-after-free vulnerability existed in the HFS+<br>
+file system implementation in the Linux kernel. A local attacker could<br>
+possibly use this to cause a denial of service (system crash).<br>
+(CVE-2023-2985)<br>
+<br>
+Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1076<br>
+ - https://ubuntu.com/security/CVE-2023-1077<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2023-1859<br>
+ - https://ubuntu.com/security/CVE-2023-1998<br>
+ - https://ubuntu.com/security/CVE-2023-25012<br>
+ - https://ubuntu.com/security/CVE-2023-2985<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-25012<br>
+ - https://ubuntu.com/security/CVE-2023-1076<br>
+ - https://ubuntu.com/security/CVE-2023-2985<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-1670<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-1998<br>
+ - https://ubuntu.com/security/CVE-2023-1077<br>
+ - https://ubuntu.com/security/CVE-2023-1859<br>
+<br>
+**Title**: USN-6231-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6231-1<br>
+**Priorities**: low,high<br>
+**Description**:<br>
+  It was discovered that the XFS file system implementation in the Linux<br>
+kernel did not properly perform metadata validation when mounting certain<br>
+images. An attacker could use this to specially craft a file system image<br>
+that, when mounted, could cause a denial of service (system crash).<br>
+(CVE-2023-2124)<br>
+<br>
+It was discovered that the IP-VLAN network driver for the Linux kernel did<br>
+not properly initialize memory in some situations, leading to an out-of-<br>
+bounds write vulnerability. An attacker could use this to cause a denial of<br>
+service (system crash) or possibly execute arbitrary code. (CVE-2023-3090)<br>
+<br>
+It was discovered that the DVB Core driver in the Linux kernel did not<br>
+properly handle locking events in certain situations. A local attacker<br>
+could use this to cause a denial of service (kernel deadlock).<br>
+(CVE-2023-31084)<br>
+<br>
+It was discovered that the Ricoh R5C592 MemoryStick card reader driver in<br>
+the Linux kernel contained a race condition during module unload, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-3141)<br>
+<br>
+Yang Lan discovered that the GFS2 file system implementation in the Linux<br>
+kernel could attempt to dereference a null pointer in some situations. An<br>
+attacker could use this to construct a malicious GFS2 image that, when<br>
+mounted and operated on, could cause a denial of service (system crash).<br>
+(CVE-2023-3212)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-3090<br>
+ - https://ubuntu.com/security/CVE-2023-31084<br>
+ - https://ubuntu.com/security/CVE-2023-3141<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-3141<br>
+ - https://ubuntu.com/security/CVE-2023-31084<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-3090<br>
+<br>
+**Title**: USN-6202-1: containerd vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6202-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  David Korczynski and Adam Korczynski discovered that containerd<br>
+incorrectly processed certain images with large files. An attacker<br>
+could possibly use this issue to cause containerd to crash,<br>
+resulting in a denial of service. (CVE-2023-25153)<br>
+<br>
+It was discovered that containerd incorrectly set up supplementary<br>
+groups inside a container. An attacker with direct access to the<br>
+container could possibly use this issue to obtain sensitive information<br>
+or execute code with higher privileges. (CVE-2023-25173)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-25153<br>
+ - https://ubuntu.com/security/CVE-2023-25173<br>
+ - https://ubuntu.com/security/CVE-2023-25153<br>
+ - https://ubuntu.com/security/CVE-2023-25173<br>
+<br>
+**Title**: USN-6237-1: curl vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6237-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Hiroki Kurosawa discovered that curl incorrectly handled validating certain<br>
+certificate wildcards. A remote attacker could possibly use this issue to<br>
+spoof certain website certificates using IDN hosts. (CVE-2023-28321)<br>
+<br>
+Hiroki Kurosawa discovered that curl incorrectly handled callbacks when<br>
+certain options are set by applications. This could cause applications<br>
+using curl to misbehave, resulting in information disclosure, or a denial<br>
+of service. (CVE-2023-28322)<br>
+<br>
+It was discovered that curl incorrectly handled saving cookies to files. A<br>
+local attacker could possibly use this issue to create or overwrite files.<br>
+This issue only affected Ubuntu 22.10, and Ubuntu 23.04. (CVE-2023-32001)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-28321<br>
+ - https://ubuntu.com/security/CVE-2023-28322<br>
+ - https://ubuntu.com/security/CVE-2023-32001<br>
+ - https://ubuntu.com/security/CVE-2023-28321<br>
+ - https://ubuntu.com/security/CVE-2023-28322<br>
+ - https://ubuntu.com/security/CVE-2023-32001<br>
+<br>
+**Title**: USN-6219-1: Ruby vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6219-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ruby incorrectly handled certain regular expressions.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 20.10 and Ubuntu 20.04 LTS.<br>
+(CVE-2023-28755)<br>
+<br>
+It was discovered that Ruby incorrectly handled certain regular expressions.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue exists because of an incomplete fix for CVE-2023-28755.<br>
+(CVE-2023-36617)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-28755<br>
+ - https://ubuntu.com/security/CVE-2023-28755<br>
+ - https://ubuntu.com/security/CVE-2023-36617<br>
+ - https://ubuntu.com/security/CVE-2023-36617<br>
+ - https://ubuntu.com/security/CVE-2023-28755<br>
+<br>
+**Title**: USN-6199-1: PHP vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6199-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PHP incorrectly handled certain Digest<br>
+authentication for SOAP. An attacker could possibly use this issue<br>
+to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3247<br>
+<br>
+**Title**: USN-6217-1: .NET vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6217-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  McKee-Harris, Matt Cotterell, and Jack Moran discovered that .NET did<br>
+not properly update account lockout maximum failed attempts. An<br>
+attacker could possibly use this issue to bypass the security feature<br>
+and attempt to guess more passwords for an account.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-33170<br>
+<br>
+**Title**: USN-6204-1: CPDB vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6204-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Seth Arnold discovered that CPDB incorrectly handled certain characters.<br>
+An attacker could possibly use this issue to cause a crash or execute<br>
+arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34095<br>
+<br>
+**Title**: USN-6214-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6214-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+obtain sensitive information, bypass security restrictions, cross-site<br>
+tracing, or execute arbitrary code. (CVE-2023-34414, CVE-2023-34416,<br>
+CVE-2023-37201, CVE-2023-37202, CVE-2023-37207, CVE-2023-37211)<br>
+<br>
+P Umar Farooq discovered that Thunderbird did not properly provide warning<br>
+when opening Diagcab files. If a user were tricked into opening a<br>
+malicicous Diagcab file, an attacker could execute arbitrary code.<br>
+(CVE-2023-37208)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34414<br>
+ - https://ubuntu.com/security/CVE-2023-34416<br>
+ - https://ubuntu.com/security/CVE-2023-37201<br>
+ - https://ubuntu.com/security/CVE-2023-37202<br>
+ - https://ubuntu.com/security/CVE-2023-37207<br>
+ - https://ubuntu.com/security/CVE-2023-37211<br>
+ - https://ubuntu.com/security/CVE-2023-37208<br>
+ - https://ubuntu.com/security/CVE-2023-37211<br>
+ - https://ubuntu.com/security/CVE-2023-37201<br>
+ - https://ubuntu.com/security/CVE-2023-37207<br>
+ - https://ubuntu.com/security/CVE-2023-34416<br>
+ - https://ubuntu.com/security/CVE-2023-37208<br>
+ - https://ubuntu.com/security/CVE-2023-34414<br>
+ - https://ubuntu.com/security/CVE-2023-37202<br>
+<br>
+**Title**: USN-6206-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6206-1<br>
+**Priorities**: high,medium,low<br>
+**Description**:<br>
+  Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+It was discovered that the NTFS file system implementation in the Linux<br>
+kernel contained a null pointer dereference in some situations. A local<br>
+attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2022-4842)<br>
+<br>
+Seth Jenkins discovered that the CPU data to memory implementation for x86<br>
+processors in the Linux kernel did not properly perform address<br>
+randomization. A local attacker could use this to expose sensitive<br>
+information (kernel memory) or in conjunction with another kernel<br>
+vulnerability. (CVE-2023-0597)<br>
+<br>
+It was discovered that the XFS file system implementation in the Linux<br>
+kernel did not properly perform metadata validation when mounting certain<br>
+images. An attacker could use this to specially craft a file system image<br>
+that, when mounted, could cause a denial of service (system crash).<br>
+(CVE-2023-2124)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2022-4842<br>
+ - https://ubuntu.com/security/CVE-2023-0597<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-2124<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2022-4842<br>
+ - https://ubuntu.com/security/CVE-2023-0597<br>
+<br>
+**Title**: USN-6194-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6194-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+Xingyuan Mo and Gengjia Chen discovered that the io_uring subsystem in the<br>
+Linux kernel did not properly handle locking when IOPOLL mode is being<br>
+used. A local attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-2430)<br>
+<br>
+Wei Chen discovered that the InfiniBand RDMA communication manager<br>
+implementation in the Linux kernel contained an out-of-bounds read<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2023-2176)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+ - https://ubuntu.com/security/CVE-2023-2176<br>
+ - https://ubuntu.com/security/CVE-2023-2176<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-2430<br>
+<br>
+**Title**: USN-6212-1: Linux kernel (Intel IoTG) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6212-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Hangyu Hua discovered that the Flower classifier implementation in the<br>
+Linux kernel contained an out-of-bounds write vulnerability. An attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-35788, LP: #2023577)<br>
+<br>
+It was discovered that for some Intel processors the INVLPG instruction<br>
+implementation did not properly flush global TLB entries when PCIDs are<br>
+enabled. An attacker could use this to expose sensitive information<br>
+(kernel memory) or possibly cause undesired behaviors. (LP: #2023220)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+ - https://ubuntu.com/security/CVE-2023-35788<br>
+<br>
+**Title**: USN-6203-1: Django vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6203-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Seokchan Yoon discovered that Django incorrectly handled certain regular<br>
+expressions. A remote attacker could possibly use this issue to cause<br>
+Django to consume resources, leading to a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-36053<br>
+<br>
+**Title**: USN-6213-1: Ghostscript vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6213-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ghostscript incorrectly handled pipe devices. If a<br>
+user or automated system were tricked into opening a specially crafted PDF<br>
+file, a remote attacker could use this issue to execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-36664<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.147...ubuntu-jammy/v1.179
+
 #### <a id="jammy-1-148"></a> 1.148
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
