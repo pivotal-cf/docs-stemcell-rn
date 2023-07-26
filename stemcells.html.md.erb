@@ -15,6 +15,119 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-181"></a> 1.181
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 26, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.560.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6243-1: Graphite-Web vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6243-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Graphite-Web incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to perform<br>
+server-side request forgery and obtain sensitive information. This issue<br>
+only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2017-18638)<br>
+<br>
+It was discovered that Graphite-Web incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to perform <br>
+cross site scripting and obtain sensitive information. (CVE-2022-4728,<br>
+CVE-2022-4729, CVE-2022-4730)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-18638<br>
+ - https://ubuntu.com/security/CVE-2022-4728<br>
+ - https://ubuntu.com/security/CVE-2022-4729<br>
+ - https://ubuntu.com/security/CVE-2022-4730<br>
+ - https://ubuntu.com/security/CVE-2022-4730<br>
+ - https://ubuntu.com/security/CVE-2017-18638<br>
+ - https://ubuntu.com/security/CVE-2022-4728<br>
+ - https://ubuntu.com/security/CVE-2022-4729<br>
+<br>
+**Title**: USN-6244-1: AMD Microcode vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6244-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Tavis Ormandy discovered that some AMD processors did not properly handle<br>
+speculative execution of certain vector register instructions. A local attacker<br>
+could use this to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-20593<br>
+<br>
+**Title**: USN-6241-1: OpenStack vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6241-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Jan Wasilewski and Gorka Eguileor discovered that OpenStack incorrectly<br>
+handled deleted volume attachments. An authenticated user or attacker could<br>
+possibly use this issue to gain access to sensitive information.<br>
+<br>
+This update may require configuration changes, please see the upstream<br>
+advisory and the other links below for more information:<br>
+<br>
+https://security.openstack.org/ossa/OSSA-2023-003.html<br>
+https://discourse.ubuntu.com/t/cve-2023-2088-for-charmed-openstack/37051<br>
+https://lists.openstack.org/pipermail/openstack-discuss/2023-July/034439.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2088<br>
+<br>
+**Title**: USN-6246-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6246-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the IP-VLAN network driver for the Linux kernel did<br>
+not properly initialize memory in some situations, leading to an out-of-<br>
+bounds write vulnerability. An attacker could use this to cause a denial of<br>
+service (system crash) or possibly execute arbitrary code. (CVE-2023-3090)<br>
+<br>
+Mingi Cho discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly validate the status of a nft chain while performing a lookup<br>
+by id, leading to a use-after-free vulnerability. An attacker could use<br>
+this to cause a denial of service (system crash) or possibly execute<br>
+arbitrary code. (CVE-2023-31248)<br>
+<br>
+Querijn Voet discovered that a race condition existed in the io_uring<br>
+subsystem in the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-3389)<br>
+<br>
+It was discovered that the netfilter subsystem in the Linux kernel did not<br>
+properly handle some error conditions, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-3390)<br>
+<br>
+Lin Ma discovered that a race condition existed in the MCTP implementation<br>
+in the Linux kernel, leading to a use-after-free vulnerability. A<br>
+privileged attacker could use this to cause a denial of service (system<br>
+crash) or possibly execute arbitrary code. (CVE-2023-3439)<br>
+<br>
+Tanguy Dubroca discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly handle certain pointer data type, leading to an out-of-<br>
+bounds write vulnerability. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-35001)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3090<br>
+ - https://ubuntu.com/security/CVE-2023-31248<br>
+ - https://ubuntu.com/security/CVE-2023-3389<br>
+ - https://ubuntu.com/security/CVE-2023-3390<br>
+ - https://ubuntu.com/security/CVE-2023-3439<br>
+ - https://ubuntu.com/security/CVE-2023-35001<br>
+ - https://ubuntu.com/security/CVE-2023-3390<br>
+ - https://ubuntu.com/security/CVE-2023-3090<br>
+ - https://ubuntu.com/security/CVE-2023-3389<br>
+ - https://ubuntu.com/security/CVE-2023-3439<br>
+ - https://ubuntu.com/security/CVE-2023-31248<br>
+ - https://ubuntu.com/security/CVE-2023-35001<br>
+
+
 #### <a id="jammy-1-179"></a> 1.179
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
