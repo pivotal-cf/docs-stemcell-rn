@@ -10963,6 +10963,164 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-615"></a> 621.615
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: July 26, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.150<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6233-1: YAJL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6233-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that YAJL was not properly performing bounds checks when<br>
+decoding a string with escape sequences. If a user or automated system<br>
+using YAJL were tricked into processing specially crafted input, an<br>
+attacker could possibly use this issue to cause a denial of service<br>
+(application abort). (CVE-2017-16516)<br>
+<br>
+It was discovered that YAJL was not properly handling memory allocation<br>
+when dealing with large inputs, which could lead to heap memory<br>
+corruption. If a user or automated system using YAJL were tricked into<br>
+running a specially crafted large input, an attacker could possibly use<br>
+this issue to cause a denial of service. (CVE-2022-24795)<br>
+<br>
+It was discovered that memory leaks existed in one of the YAJL parsing<br>
+functions. An attacker could possibly use this issue to cause a denial of<br>
+service (memory exhaustion). (CVE-2023-33460)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-16516<br>
+ - https://ubuntu.com/security/CVE-2022-24795<br>
+ - https://ubuntu.com/security/CVE-2023-33460<br>
+ - https://ubuntu.com/security/CVE-2023-33460<br>
+ - https://ubuntu.com/security/CVE-2022-24795<br>
+ - https://ubuntu.com/security/CVE-2017-16516<br>
+<br>
+**Title**: USN-6232-1: wkhtmltopdf vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6232-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that wkhtmltopdf was not properly enforcing the<br>
+same-origin policy when processing certain HTML files. If a user or<br>
+automated system using wkhtmltopdf were tricked into processing a<br>
+specially crafted HTML file, an attacker could possibly use this issue to<br>
+expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-21365<br>
+<br>
+**Title**: USN-6236-1: ConnMan vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6236-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that ConnMan could be made to write out of bounds. A<br>
+remote attacker could possibly use this issue to cause ConnMan to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.<br>
+(CVE-2021-26675, CVE-2021-33833)<br>
+<br>
+It was discovered that ConnMan could be made to leak sensitive information<br>
+via the gdhcp component. A remote attacker could possibly use this issue<br>
+to obtain information for further exploitation. This issue only affected<br>
+Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2021-26676)<br>
+<br>
+It was discovered that ConnMan could be made to read out of bounds. A<br>
+remote attacker could possibly use this issue to case ConnMan to crash,<br>
+resulting in a denial of service. This issue only affected Ubuntu 16.04<br>
+LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.<br>
+(CVE-2022-23096, CVE-2022-23097)<br>
+<br>
+It was discovered that ConnMan could be made to run into an infinite loop.<br>
+A remote attacker could possibly use this issue to cause ConnMan to<br>
+consume resources and to stop operating, resulting in a denial of service.<br>
+This issue only affected Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04<br>
+LTS, and Ubuntu 22.04 LTS. (CVE-2022-23098)<br>
+<br>
+It was discovered that ConnMan could be made to write out of bounds via<br>
+the gweb component. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 16.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-32292)<br>
+<br>
+It was discovered that ConnMan did not properly manage memory under<br>
+certain circumstances. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 16.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-32293)<br>
+<br>
+It was discovered that ConnMan could be made to write out of bounds via<br>
+the gdhcp component. A remote attacker could possibly use this issue to<br>
+cause ConnMan to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. (CVE-2023-28488)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-26675<br>
+ - https://ubuntu.com/security/CVE-2021-33833<br>
+ - https://ubuntu.com/security/CVE-2021-26676<br>
+ - https://ubuntu.com/security/CVE-2022-23096<br>
+ - https://ubuntu.com/security/CVE-2022-23097<br>
+ - https://ubuntu.com/security/CVE-2022-23098<br>
+ - https://ubuntu.com/security/CVE-2022-32292<br>
+ - https://ubuntu.com/security/CVE-2022-32293<br>
+ - https://ubuntu.com/security/CVE-2023-28488<br>
+ - https://ubuntu.com/security/CVE-2021-26676<br>
+ - https://ubuntu.com/security/CVE-2022-32293<br>
+ - https://ubuntu.com/security/CVE-2023-28488<br>
+ - https://ubuntu.com/security/CVE-2022-23098<br>
+ - https://ubuntu.com/security/CVE-2021-26675<br>
+ - https://ubuntu.com/security/CVE-2021-33833<br>
+ - https://ubuntu.com/security/CVE-2022-23097<br>
+ - https://ubuntu.com/security/CVE-2022-23096<br>
+ - https://ubuntu.com/security/CVE-2022-32292<br>
+<br>
+**Title**: USN-6239-1: ECDSA Util vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6239-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that ECDSA Util did not properly verify certain <br>
+signature values.<br>
+An attacker could possibly use this issue to bypass signature <br>
+verification.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-24884<br>
+<br>
+**Title**: USN-6244-1: AMD Microcode vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6244-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Tavis Ormandy discovered that some AMD processors did not properly handle<br>
+speculative execution of certain vector register instructions. A local attacker<br>
+could use this to expose sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-20593<br>
+<br>
+**Title**: USN-6183-2: Bind vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6183-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6183-1 fixed vulnerabilities in Bind. This update provides the<br>
+corresponding updates for Ubuntu 14.04 LTS, Ubuntu 16.04 LTS and Ubuntu 18.04<br>
+LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Shoham Danino, Anat Bremler-Barr, Yehuda Afek, and Yuval Shavitt discovered<br>
+ that Bind incorrectly handled the cache size limit. A remote attacker could<br>
+ possibly use this issue to consume memory, leading to a denial of service.<br>
+ (CVE-2023-2828)<br>
+ <br>
+ It was discovered that Bind incorrectly handled the recursive-clients<br>
+ quota. A remote attacker could possibly use this issue to cause Bind to<br>
+ crash, resulting in a denial of service. This issue only affected Ubuntu<br>
+ 22.04 LTS, Ubuntu 22.10, and Ubuntu 23.04. (CVE-2023-2911)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2828<br>
+ - https://ubuntu.com/security/CVE-2023-2911<br>
+ - https://ubuntu.com/security/CVE-2023-2828
+
 #### <a id="621-609"></a> 621.609
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
