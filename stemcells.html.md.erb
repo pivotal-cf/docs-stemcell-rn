@@ -15,6 +15,198 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-207"></a> 1.207
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: August 29, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.572.0<br>
+<br>
+#### Notice<br>
+- update the azure blobstore<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6295-1: Podman vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6295-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Podman incorrectly handled certain supplementary groups.<br>
+An attacker could possibly use this issue to expose sensitive information<br>
+or execute binary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2989<br>
+<br>
+**Title**: USN-6286-1: Intel Microcode vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6286-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Daniel Moghimi discovered that some Intel(R) Processors did not properly clear<br>
+microarchitectural state after speculative execution of various instructions. A<br>
+local unprivileged user could use this to obtain to sensitive<br>
+information. (CVE-2022-40982)<br>
+<br>
+It was discovered that some Intel(R) Xeon(R) Processors did not properly<br>
+restrict error injection for Intel(R) SGX or Intel(R) TDX. A local privileged<br>
+user could use this to further escalate their privileges. (CVE-2022-41804)<br>
+<br>
+It was discovered that some 3rd Generation Intel(R) Xeon(R) Scalable processors<br>
+did not properly restrict access in some situations. A local privileged attacker<br>
+could use this to obtain sensitive information. (CVE-2023-23908)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2022-41804<br>
+ - https://ubuntu.com/security/CVE-2023-23908<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2023-23908<br>
+ - https://ubuntu.com/security/CVE-2022-41804<br>
+<br>
+**Title**: USN-6290-1: LibTIFF vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6290-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that LibTIFF could be made to write out of bounds when<br>
+processing certain malformed image files with the tiffcrop utility. If a<br>
+user were tricked into opening a specially crafted image file, an attacker<br>
+could possibly use this issue to cause tiffcrop to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. This issue only<br>
+affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.<br>
+(CVE-2022-48281)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled certain image files. If<br>
+a user were tricked into opening a specially crafted image file, an<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected Ubuntu 23.04. (CVE-2023-2731)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled certain image files<br>
+with the tiffcp utility. If a user were tricked into opening a specially<br>
+crafted image file, an attacker could possibly use this issue to cause<br>
+tiffcp to crash, resulting in a denial of service. (CVE-2023-2908)<br>
+<br>
+It was discovered that LibTIFF incorrectly handled certain file paths. If<br>
+a user were tricked into specifying certain output paths, an attacker<br>
+could possibly use this issue to cause a denial of service. This issue<br>
+only affected Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2023-3316)<br>
+<br>
+It was discovered that LibTIFF could be made to write out of bounds when<br>
+processing certain malformed image files. If a user were tricked into<br>
+opening a specially crafted image file, an attacker could possibly use<br>
+this issue to cause a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2023-3618)<br>
+<br>
+It was discovered that LibTIFF could be made to write out of bounds when<br>
+processing certain malformed image files. If a user were tricked into<br>
+opening a specially crafted image file, an attacker could possibly use<br>
+this issue to cause a denial of service, or possibly execute arbitrary<br>
+code. This issue only affected Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and<br>
+Ubuntu 23.04. (CVE-2023-25433, CVE-2023-26966)<br>
+<br>
+It was discovered that LibTIFF did not properly managed memory when<br>
+processing certain malformed image files with the tiffcrop utility. If a<br>
+user were tricked into opening a specially crafted image file, an attacker<br>
+could possibly use this issue to cause tiffcrop to crash, resulting in a<br>
+denial of service, or possibly execute arbitrary code. This issue only<br>
+affected Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 23.04.<br>
+(CVE-2023-26965)<br>
+<br>
+It was discovered that LibTIFF contained an arithmetic overflow. If a user<br>
+were tricked into opening a specially crafted image file, an attacker<br>
+could possibly use this issue to cause a denial of service.<br>
+(CVE-2023-38288, CVE-2023-38289)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-48281<br>
+ - https://ubuntu.com/security/CVE-2023-2731<br>
+ - https://ubuntu.com/security/CVE-2023-2908<br>
+ - https://ubuntu.com/security/CVE-2023-3316<br>
+ - https://ubuntu.com/security/CVE-2023-3618<br>
+ - https://ubuntu.com/security/CVE-2023-25433<br>
+ - https://ubuntu.com/security/CVE-2023-26966<br>
+ - https://ubuntu.com/security/CVE-2023-26965<br>
+ - https://ubuntu.com/security/CVE-2023-38288<br>
+ - https://ubuntu.com/security/CVE-2023-38289<br>
+ - https://ubuntu.com/security/CVE-2022-48281<br>
+ - https://ubuntu.com/security/CVE-2023-2908<br>
+ - https://ubuntu.com/security/CVE-2023-3316<br>
+ - https://ubuntu.com/security/CVE-2023-3618<br>
+ - https://ubuntu.com/security/CVE-2023-38288<br>
+ - https://ubuntu.com/security/CVE-2023-25433<br>
+ - https://ubuntu.com/security/CVE-2023-38289<br>
+ - https://ubuntu.com/security/CVE-2023-2731<br>
+ - https://ubuntu.com/security/CVE-2023-26966<br>
+ - https://ubuntu.com/security/CVE-2023-26965<br>
+<br>
+**Title**: USN-6293-1: OpenStack Heat vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6293-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that OpenStack Heat incorrectly handled certain hidden<br>
+parameter values. A remote authenticated user could possibly use this issue<br>
+to obtain sensitive data.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1625<br>
+<br>
+**Title**: USN-6288-1: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6288-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in MySQL and this update includes<br>
+new upstream MySQL versions to fix these issues.<br>
+<br>
+MySQL has been updated to 8.0.34 in Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and<br>
+Ubuntu 23.04.<br>
+<br>
+In addition to security fixes, the updated packages contain bug fixes, new<br>
+features, and possibly incompatible changes.<br>
+<br>
+Please see the following for more information:<br>
+<br>
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-34.html<br>
+https://www.oracle.com/security-alerts/cpujul2023.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-22038<br>
+ - https://ubuntu.com/security/CVE-2023-22005<br>
+ - https://ubuntu.com/security/CVE-2023-22056<br>
+ - https://ubuntu.com/security/CVE-2023-22046<br>
+ - https://ubuntu.com/security/CVE-2023-22008<br>
+ - https://ubuntu.com/security/CVE-2023-22054<br>
+ - https://ubuntu.com/security/CVE-2023-22053<br>
+ - https://ubuntu.com/security/CVE-2023-22058<br>
+ - https://ubuntu.com/security/CVE-2023-22033<br>
+ - https://ubuntu.com/security/CVE-2023-22057<br>
+ - https://ubuntu.com/security/CVE-2023-22048<br>
+<br>
+**Title**: USN-6289-1: WebKitGTK vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6289-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Several security issues were discovered in the WebKitGTK Web and JavaScript<br>
+engines. If a user were tricked into viewing a malicious website, a remote<br>
+attacker could exploit a variety of issues related to web browser security,<br>
+including cross-site scripting attacks, denial of service attacks, and<br>
+arbitrary code execution.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-38572<br>
+ - https://ubuntu.com/security/CVE-2023-38600<br>
+ - https://ubuntu.com/security/CVE-2023-38592<br>
+ - https://ubuntu.com/security/CVE-2023-38611<br>
+ - https://ubuntu.com/security/CVE-2023-38599<br>
+ - https://ubuntu.com/security/CVE-2023-38133<br>
+ - https://ubuntu.com/security/CVE-2023-38594<br>
+ - https://ubuntu.com/security/CVE-2023-38595<br>
+ - https://ubuntu.com/security/CVE-2023-38597<br>
+<br>
+**Title**: USN-6294-1: HAProxy vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6294-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Ben Kallus discovered that HAProxy incorrectly handled empty Content-Length<br>
+headers. A remote attacker could possibly use this issue to manipulate the<br>
+payload and bypass certain restrictions.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-40225
+
 #### <a id="jammy-1-199"></a> 1.199
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
