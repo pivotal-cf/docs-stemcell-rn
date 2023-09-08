@@ -80,8 +80,9 @@ module Resources
         .map { |s| s['version'] }
         .sort
         .reverse
-    rescue
-      []
+    rescue => e
+      $stderr.puts "Error getting pivnet releases, exiting: #{e}"
+      exit 1
     end
   end
 end
