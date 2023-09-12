@@ -71,26 +71,18 @@ module Resources
   end
 
   class Pivnet
-    def get_pivnet_releases(api_endpoint)
-      #get and parse the list of stemcell releases from pivnet
-      stemcells = URI.parse(api_endpoint).read
-      stemcells = JSON.parse(stemcells)
-      stemcells_list = stemcells['releases']
+    # Get and parse the list of stemcell releases from pivnet
+    def self.get_pivnet_releases(api_endpoint)
+      stemcells_response = URI.parse(api_endpoint).read
+      stemcells = JSON.parse(stemcells_response)
 
-      #put the list of stemcells in order of their version numbers
-      sorted_stemcells_list = stemcells_list.sort_by { |h| h['version'] }.reverse
-
-      right_stemcells = sorted_stemcells_list.select do |d|
-        d['version'].start_with?("#{@starting_stemcell_version}")
-      end
-
-      stemcells_numbers_list = right_stemcells.map do |r|
-        r['version']
-      end
-
-      return stemcells_numbers_list
-    rescue
-      []
+      stemcells['releases']
+        .map { |s| s['version'] }
+        .sort
+        .reverse
+    rescue => e
+      $stderr.puts "Error getting pivnet releases, exiting: #{e}"
+      exit 1
     end
   end
 end
@@ -111,8 +103,7 @@ def puts_release_notes(releases, ubuntu_release_name, stemcell_info)
   major_version_releases = sorted_releases_by_major_version(releases)
   releases = major_version_releases.select{|major_version| stemcell_info[:supported_lines].include?(major_version.to_s) }
 
-  pivnet = Resources::Pivnet.new
-  pivnet_releases = pivnet.get_pivnet_releases(stemcell_info[:tanzunet_uri])
+  pivnet_releases = Resources::Pivnet.get_pivnet_releases(stemcell_info[:tanzunet_uri])
 
   output = "## <a id=\"#{ubuntu_release_name.downcase}\"></a> #{ubuntu_release_name.capitalize} Stemcells \n\n"
   output += "The following sections describe each #{ubuntu_release_name.capitalize} stemcell release. \n\n"

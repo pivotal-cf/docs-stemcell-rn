@@ -4,7 +4,9 @@ set -ex
 
 pushd docs-stemcell-rn/ci
 	bundle install
-	ruby get-stemcells.rb > ../stemcells.html.md.erb
+	stemcell_tempfile="$(mktemp)"
+	ruby get-stemcells.rb > "${stemcell_tempfile}"
+	mv "${stemcell_tempfile}" ../stemcells.html.md.erb
 
 	if [[ -n $(git status --porcelain) ]]; then
 		git config user.name "Stemcell Release Notes Bot"
