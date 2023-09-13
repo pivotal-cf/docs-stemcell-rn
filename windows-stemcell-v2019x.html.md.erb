@@ -20,6 +20,19 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
     see <a href="https://docs.pivotal.io/application-service/<%= vars.current_major_version %>/windows/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
   </p>
 
+## <a id="2019.65"></a>2019.65
+
+**Release Date**: September 13th, 2023
+
+### Changes
+
+- Stembuild has been updated to remove available Windows features before the VM is restarted. It was found that feature removal can trigger the need for a restart, which can then block Dism.exe from running successfully during the construct cleanup process.
+- Stembuild has reduced the number of retries when attempting to download certificates from Windows Update. Previously, this was causing air-gapped environments to wait for 10 minutes.
+
+### Security Patches
+
+Works with [Microsoft Security Updates Patch Tuesday September 12th, 2023](https://support.microsoft.com/help/5030214)
+
 ## <a id="2019.64"></a>2019.64
 
 **Release Date**: August 10th, 2023
