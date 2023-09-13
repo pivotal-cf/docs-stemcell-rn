@@ -26,8 +26,8 @@ To download a stemcell, see [Stemcells (Windows)](https://network.pivotal.io/pro
 
 ### Changes
 
-- Stembuild has been updated to remove available Windows features before the VM is restarted. It was found that feature removal can trigger the need for a restart which can then block Dism.exe from running successfully during the construct cleanup process.
-- Stembuild has reduced the number of retries when attempting to download certificates from Windows Update. This was causing air gapped environments to wait 10 minutes previously.
+- Stembuild has been updated to remove available Windows features before the VM is restarted. It was found that feature removal can trigger the need for a restart, which can then block Dism.exe from running successfully during the construct cleanup process.
+- Stembuild has reduced the number of retries when attempting to download certificates from Windows Update. Previously, this was causing air-gapped environments to wait for 10 minutes.
 
 ### Security Patches
 
