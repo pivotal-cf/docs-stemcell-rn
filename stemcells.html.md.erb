@@ -13694,6 +13694,223 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-699"></a> 621.699
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: September 28, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.177<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6360-2: FLAC vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6360-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6360-1 fixed a vulnerability in FLAC. This update provides the<br>
+corresponding update for Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, and<br>
+Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that FLAC incorrectly handled encoding certain files. A<br>
+ remote attacker could use this issue to cause FLAC to crash, resulting in a<br>
+ denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-22219<br>
+<br>
+**Title**: USN-6396-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6396-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  It was discovered that some AMD x86-64 processors with SMT enabled could<br>
+speculatively execute instructions using a return address from a sibling<br>
+thread. A local attacker could possibly use this to expose sensitive<br>
+information. (CVE-2022-27672)<br>
+<br>
+Daniel Moghimi discovered that some Intel(R) Processors did not properly<br>
+clear microarchitectural state after speculative execution of various<br>
+instructions. A local unprivileged user could use this to obtain to<br>
+sensitive information. (CVE-2022-40982)<br>
+<br>
+Yang Lan discovered that the GFS2 file system implementation in the Linux<br>
+kernel could attempt to dereference a null pointer in some situations. An<br>
+attacker could use this to construct a malicious GFS2 image that, when<br>
+mounted and operated on, could cause a denial of service (system crash).<br>
+(CVE-2023-3212)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+It was discovered that the bluetooth subsystem in the Linux kernel did not<br>
+properly handle L2CAP socket release, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-40283)<br>
+<br>
+It was discovered that some network classifier implementations in the Linux<br>
+kernel contained use-after-free vulnerabilities. A local attacker could use<br>
+this to cause a denial of service (system crash) or possibly execute<br>
+arbitrary code. (CVE-2023-4128)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-27672<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+ - https://ubuntu.com/security/CVE-2022-27672<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+<br>
+**Title**: USN-6388-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6388-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Daniel Moghimi discovered that some Intel(R) Processors did not properly<br>
+clear microarchitectural state after speculative execution of various<br>
+instructions. A local unprivileged user could use this to obtain to<br>
+sensitive information. (CVE-2022-40982)<br>
+<br>
+Yang Lan discovered that the GFS2 file system implementation in the Linux<br>
+kernel could attempt to dereference a null pointer in some situations. An<br>
+attacker could use this to construct a malicious GFS2 image that, when<br>
+mounted and operated on, could cause a denial of service (system crash).<br>
+(CVE-2023-3212)<br>
+<br>
+It was discovered that the NET/ROM protocol implementation in the Linux<br>
+kernel contained a race condition in some situations, leading to a use-<br>
+after-free vulnerability. A local attacker could use this to cause a denial<br>
+of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-32269)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+It was discovered that the bluetooth subsystem in the Linux kernel did not<br>
+properly handle L2CAP socket release, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-40283)<br>
+<br>
+It was discovered that some network classifier implementations in the Linux<br>
+kernel contained use-after-free vulnerabilities. A local attacker could use<br>
+this to cause a denial of service (system crash) or possibly execute<br>
+arbitrary code. (CVE-2023-4128)<br>
+<br>
+It was discovered that the JFS file system implementation in the Linux<br>
+kernel did not properly validate memory allocations in certain situations,<br>
+leading to a null pointer dereference vulnerability. An attacker could use<br>
+this to construct a malicious JFS image that, when mounted, could cause a<br>
+denial of service (system crash). (CVE-2023-4385)<br>
+<br>
+It was discovered that the VMware VMXNET3 ethernet driver in the Linux<br>
+kernel contained a use-after-free vulnerability in certain situations. A<br>
+local attacker in a guest VM could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-4387)<br>
+<br>
+It was discovered that the VMware VMXNET3 ethernet driver in the Linux<br>
+kernel did not properly handle errors in certain situations, leading to a<br>
+null pointer dereference vulnerability. A local attacker in a guest VM<br>
+could use this to cause a denial of service (system crash). (CVE-2023-4459)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-32269<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+ - https://ubuntu.com/security/CVE-2023-4385<br>
+ - https://ubuntu.com/security/CVE-2023-4387<br>
+ - https://ubuntu.com/security/CVE-2023-4459<br>
+ - https://ubuntu.com/security/CVE-2023-32269<br>
+ - https://ubuntu.com/security/CVE-2023-4385<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-4387<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-4459<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+ - https://ubuntu.com/security/CVE-2022-40982<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+<br>
+**Title**: USN-6393-1: ImageMagick vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6393-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that ImageMagick did not properly handle memory when<br>
+processing the -help option. An attacker could potentially use this<br>
+issue to cause a crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-48541<br>
+<br>
+**Title**: USN-6394-1: Python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6394-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Python incorrectly handled certain scripts.<br>
+An attacker could possibly use this issue to execute arbitrary code<br>
+or cause a crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-48560<br>
+<br>
+**Title**: USN-6365-2: Open VM Tools vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6365-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6365-1 fixed a vulnerability in Open VM Tools. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Open VM Tools incorrectly handled SAML tokens. A<br>
+ remote attacker could possibly use this issue to bypass SAML token<br>
+ signature verification and perform VMware Tools Guest Operations.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-20900<br>
+<br>
+**Title**: USN-6190-2: AccountsService vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6190-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6190-1 fixed a vulnerability in AccountsService. This update provides<br>
+the corresponding update for Ubuntu 14.04 LTS, Ubuntu 16.04 LTS and<br>
+Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Kevin Backhouse discovered that AccountsService incorrectly handled certain<br>
+ D-Bus messages. A local attacker could use this issue to cause<br>
+ AccountsService to crash, resulting in a denial of service, or possibly<br>
+ execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3297<br>
+<br>
+**Title**: USN-6391-2: CUPS vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6391-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6391-1 fixed a vulnerability in CUPS. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that CUPS incorrectly parsed certain Postscript objects.<br>
+ If a user or automated system were tricked into printing a specially<br>
+ crafted document, a remote attacker could use this issue to cause CUPS to<br>
+ crash, resulting in a denial of service, or possibly execute arbitrary<br>
+ code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-4504
+
 #### <a id="621-687"></a> 621.687
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
