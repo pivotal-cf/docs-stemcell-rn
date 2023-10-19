@@ -3,7 +3,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: projects.registry.vmware.com/pivotaldocs/bookbinder-8.1
+    repository: ruby
+    tag: 3.1
 
 inputs:
 - name: docs-stemcell-rn
