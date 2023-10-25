@@ -22,19 +22,10 @@ module Resources
     end
 
     def get_stemcell_releases
-      get_bosh_stemcell_releases + get_linux_stemcell_builder_releases + get_linux_stemcell_builder_lts_releases
+      get_linux_stemcell_builder_releases + get_linux_stemcell_builder_lts_releases
     end
 
     private
-    def get_bosh_stemcell_releases
-      bosh_releases = @client.releases 'cloudfoundry/bosh'
-
-      bosh_releases.select do |r|
-        r[:name].start_with?("Stemcell")
-      end.map do |release|
-        release_to_hash(release)
-      end
-    end
 
     def get_linux_stemcell_builder_releases
       bosh_releases = @client.releases 'cloudfoundry/bosh-linux-stemcell-builder'
