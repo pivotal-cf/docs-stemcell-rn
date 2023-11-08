@@ -15,6 +15,1304 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-289"></a> 1.289
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 08, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.600.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6452-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6452-1<br>
+**Priorities**: <br>
+**Description**:<br>
+  It was discovered that Vim could be made to divide by zero. An attacker<br>
+could possibly use this issue to cause a denial of service. This issue<br>
+only affected Ubuntu 23.04. (CVE-2023-3896)<br>
+<br>
+It was discovered that Vim did not properly manage memory. An attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. (CVE-2023-4733, CVE-2023-4750)<br>
+<br>
+It was discovered that Vim contained an arithmetic overflow. An attacker<br>
+could possibly use this issue to cause a denial of service. This issue<br>
+only affected Ubuntu 22.04 LTS, Ubuntu 23.04, and Ubuntu 23.10.<br>
+(CVE-2023-4734)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. (CVE-2023-4735, CVE-2023-5344)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 23.04 and Ubuntu<br>
+23.10. (CVE-2023-4738)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 14.04 LTS, Ubuntu<br>
+16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and<br>
+Ubuntu 23.04. (CVE-2023-4751)<br>
+<br>
+It was discovered that Vim did not properly manage memory. An attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. This issue only affected Ubuntu 20.04 LTS, Ubuntu 22.04<br>
+LTS, Ubuntu 23.04, and Ubuntu 23.10. (CVE-2023-4752, CVE-2023-5535)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 20.04 LTS, Ubuntu<br>
+22.04 LTS, Ubuntu 23.04, and Ubuntu 23.10. (CVE-2023-4781)<br>
+<br>
+It was discovered that Vim could be made to dereference invalid memory. An<br>
+attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2023-5441)<br>
+**CVEs**:<br>
+<br>
+<br>
+**Title**: USN-6362-2: .Net regressions<br>
+**URL**: https://ubuntu.com/security/notices/USN-6362-2<br>
+**Priorities**: unknown,medium<br>
+**Description**:<br>
+  USN-6362-1 fixed vulnerabilities in .Net. It was discovered that the fix<br>
+for [CVE-2023-36799](https://ubuntu.com/security/CVE-2023-36799) was incomplete. This update fixes the problem.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Kevin Jones discovered that .NET did not properly process certain<br>
+ X.509 certificates. An attacker could possibly use this issue to<br>
+ cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/&lt;a href=&quot;/security/CVE-2023-36799&quot;&gt;CVE-2023-36799&lt;/a&gt;"><a href="/security/CVE-2023-36799<br>
+ - https://ubuntu.com/security/CVE-2023-36799<br>
+<br>
+**Title**: USN-6449-1: FFmpeg vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6449-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that FFmpeg incorrectly managed memory resulting <br>
+in a memory leak. An attacker could possibly use this issue to cause<br>
+a denial of service via application crash. This issue only <br>
+affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2020-22038)<br>
+<br>
+It was discovered that FFmpeg incorrectly handled certain input files, <br>
+leading to an integer overflow. An attacker could possibly use this issue<br>
+to cause a denial of service via application crash. This issue only <br>
+affected Ubuntu 20.04 LTS. (CVE-2020-20898, CVE-2021-38090, <br>
+CVE-2021-38091, CVE-2021-38092, CVE-2021-38093, CVE-2021-38094)<br>
+<br>
+It was discovered that FFmpeg incorrectly managed memory, resulting in<br>
+a memory leak.  If a user or automated system were tricked into <br>
+processing a specially crafted input file, a remote attacker could<br>
+possibly use this issue to cause a denial of service, or execute <br>
+arbitrary code. (CVE-2022-48434)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-22038<br>
+ - https://ubuntu.com/security/CVE-2020-20898<br>
+ - https://ubuntu.com/security/CVE-2021-38090<br>
+ - https://ubuntu.com/security/CVE-2021-38091<br>
+ - https://ubuntu.com/security/CVE-2021-38092<br>
+ - https://ubuntu.com/security/CVE-2021-38093<br>
+ - https://ubuntu.com/security/CVE-2021-38094<br>
+ - https://ubuntu.com/security/CVE-2022-48434<br>
+ - https://ubuntu.com/security/CVE-2021-38090<br>
+ - https://ubuntu.com/security/CVE-2021-38093<br>
+ - https://ubuntu.com/security/CVE-2022-48434<br>
+ - https://ubuntu.com/security/CVE-2021-38092<br>
+ - https://ubuntu.com/security/CVE-2020-22038<br>
+ - https://ubuntu.com/security/CVE-2021-38094<br>
+ - https://ubuntu.com/security/CVE-2021-38091<br>
+ - https://ubuntu.com/security/CVE-2020-20898<br>
+<br>
+**Title**: USN-6457-1: Node.js vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6457-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Tavis Ormandy discovered that Node.js incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to cause a<br>
+denial of service. (CVE-2022-0778) <br>
+<br>
+Elison Niven discovered that Node.js incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+input file, a remote attacker could possibly use this issue to execute<br>
+arbitrary code. (CVE-2022-1292)<br>
+<br>
+Chancen and Daniel Fiala discovered that Node.js incorrectly handled certain<br>
+inputs. If a user or an automated system were tricked into opening a specially<br>
+crafted input file, a remote attacker could possibly use this issue to execute<br>
+arbitrary code. (CVE-2022-2068)<br>
+<br>
+Alex Chernyakhovsky discovered that Node.js incorrectly handled certain<br>
+inputs. If a user or an automated system were tricked into opening a specially<br>
+crafted input file, a remote attacker could possibly use this issue to execute<br>
+arbitrary code. (CVE-2022-2097)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-0778<br>
+ - https://ubuntu.com/security/CVE-2022-1292<br>
+ - https://ubuntu.com/security/CVE-2022-2068<br>
+ - https://ubuntu.com/security/CVE-2022-2097<br>
+ - https://ubuntu.com/security/CVE-2022-0778<br>
+ - https://ubuntu.com/security/CVE-2022-1292<br>
+ - https://ubuntu.com/security/CVE-2022-2097<br>
+ - https://ubuntu.com/security/CVE-2022-2068<br>
+<br>
+**Title**: USN-6458-1: Slurm vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6458-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that Slurm did not properly handle credential<br>
+management, which could allow an unprivileged user to impersonate the<br>
+SlurmUser account. An attacker could possibly use this issue to execute<br>
+arbitrary code as the root user. (CVE-2022-29500)<br>
+<br>
+It was discovered that Slurm did not properly handle access control when<br>
+dealing with RPC traffic through PMI2 and PMIx, which could allow an<br>
+unprivileged user to send data to an arbitrary unix socket in the host.<br>
+An attacker could possibly use this issue to execute arbitrary code as<br>
+the root user. (CVE-2022-29501)<br>
+<br>
+It was discovered that Slurm did not properly handle validation logic when<br>
+processing input and output data with the srun client, which could lead to<br>
+the interception of process I/O. An attacker could possibly use this issue<br>
+to expose sensitive information or execute arbitrary code. This issue only<br>
+affected Ubuntu 22.04 LTS. (CVE-2022-29502)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29500<br>
+ - https://ubuntu.com/security/CVE-2022-29501<br>
+ - https://ubuntu.com/security/CVE-2022-29502<br>
+ - https://ubuntu.com/security/CVE-2022-29501<br>
+ - https://ubuntu.com/security/CVE-2022-29500<br>
+ - https://ubuntu.com/security/CVE-2022-29502<br>
+<br>
+**Title**: USN-6466-1: Linux kernel (NVIDIA) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6466-1<br>
+**Priorities**: low,medium,high<br>
+**Description**:<br>
+  Hyunwoo Kim discovered that the DVB Core driver in the Linux kernel<br>
+contained a race condition during device removal, leading to a use-after-<br>
+free vulnerability. A physically proximate attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2022-45886, CVE-2022-45919)<br>
+<br>
+Hyunwoo Kim discovered that the Technotrend/Hauppauge USB DEC driver in the<br>
+Linux kernel did not properly handle device removal events. A physically<br>
+proximate attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2022-45887)<br>
+<br>
+It was discovered that the NTFS file system implementation in the Linux<br>
+kernel did not properly validate MFT flags in certain situations. An<br>
+attacker could use this to construct a malicious NTFS image that, when<br>
+mounted and operated on, could cause a denial of service (system crash).<br>
+(CVE-2022-48425)<br>
+<br>
+It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a high rate of hash collisions in connection lookup table. A<br>
+remote attacker could use this to cause a denial of service (excessive CPU<br>
+consumption). (CVE-2023-1206)<br>
+<br>
+Daniel Trujillo, Johannes Wikner, and Kaveh Razavi discovered that some AMD<br>
+processors utilising speculative execution and branch prediction may allow<br>
+unauthorised memory reads via a speculative side-channel attack. A local<br>
+attacker could use this to expose sensitive information, including kernel<br>
+memory. (CVE-2023-20569)<br>
+<br>
+Jana Hofmann, Emanuele Vannacci, Cedric Fournet, Boris Kopf, and Oleksii<br>
+Oleksenko discovered that some AMD processors could leak stale data from<br>
+division operations in certain situations. A local attacker could possibly<br>
+use this to expose sensitive information. (CVE-2023-20588)<br>
+<br>
+It was discovered that the ARM64 KVM implementation in the Linux kernel did<br>
+not properly restrict hypervisor memory access. An attacker in a guest VM<br>
+could use this to execute arbitrary code in the host OS. (CVE-2023-21264)<br>
+<br>
+It was discovered that the IPv6 RPL protocol implementation in the Linux<br>
+kernel did not properly handle user-supplied data. A remote attacker could<br>
+use this to cause a denial of service (system crash). (CVE-2023-2156)<br>
+<br>
+Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Yang Lan discovered that the GFS2 file system implementation in the Linux<br>
+kernel could attempt to dereference a null pointer in some situations. An<br>
+attacker could use this to construct a malicious GFS2 image that, when<br>
+mounted and operated on, could cause a denial of service (system crash).<br>
+(CVE-2023-3212)<br>
+<br>
+Ross Lagerwall discovered that the Xen netback backend driver in the Linux<br>
+kernel did not properly handle certain unusual packets from a<br>
+paravirtualized network frontend, leading to a buffer overflow. An attacker<br>
+in a guest VM could use this to cause a denial of service (host system<br>
+crash) or possibly execute arbitrary code. (CVE-2023-34319)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+<br>
+It was discovered that the KSMBD implementation in the Linux kernel did not<br>
+properly validate buffer sizes in certain operations, leading to an integer<br>
+underflow and out-of-bounds read vulnerability. A remote attacker could use<br>
+this to cause a denial of service (system crash) or possibly expose<br>
+sensitive information. (CVE-2023-38427)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate SMB request protocol IDs, leading to a out-of-<br>
+bounds read vulnerability. A remote attacker could possibly use this to<br>
+cause a denial of service (system crash). (CVE-2023-38430)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate packet header sizes in certain situations,<br>
+leading to an out-of-bounds read vulnerability. A remote attacker could use<br>
+this to cause a denial of service (system crash) or possibly expose<br>
+sensitive information. (CVE-2023-38431)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate command payload size, leading to a out-of-bounds<br>
+read vulnerability. A remote attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-38432)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate a buffer size in certain situations, leading to<br>
+an out-of-bounds read vulnerability. A remote attacker could use this to<br>
+cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-3865)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+contained a null pointer dereference vulnerability when handling handling<br>
+chained requests. A remote attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3866)<br>
+<br>
+It was discovered that the KSMBD implementation in the Linux kernel did not<br>
+properly handle session setup requests, leading to an out-of-bounds read<br>
+vulnerability. A remote attacker could use this to expose sensitive<br>
+information. (CVE-2023-3867)<br>
+<br>
+It was discovered that the bluetooth subsystem in the Linux kernel did not<br>
+properly handle L2CAP socket release, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-40283)<br>
+<br>
+It was discovered that some network classifier implementations in the Linux<br>
+kernel contained use-after-free vulnerabilities. A local attacker could use<br>
+this to cause a denial of service (system crash) or possibly execute<br>
+arbitrary code. (CVE-2023-4128)<br>
+<br>
+It was discovered that the Siano USB MDTV receiver device driver in the<br>
+Linux kernel did not properly handle device initialization failures in<br>
+certain situations, leading to a use-after-free vulnerability. A physically<br>
+proximate attacker could use this cause a denial of service (system crash).<br>
+(CVE-2023-4132)<br>
+<br>
+It was discovered that a race condition existed in the Cypress touchscreen<br>
+driver in the Linux kernel during device removal, leading to a use-after-<br>
+free vulnerability. A physically proximate attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-4134)<br>
+<br>
+Andy Nguyen discovered that the KVM implementation for AMD processors in<br>
+the Linux kernel with Secure Encrypted Virtualization (SEV) contained a<br>
+race condition when accessing the GHCB page. A local attacker in a SEV<br>
+guest VM could possibly use this to cause a denial of service (host system<br>
+crash). (CVE-2023-4155)<br>
+<br>
+It was discovered that the TUN/TAP driver in the Linux kernel did not<br>
+properly initialize socket data. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-4194)<br>
+<br>
+Bien Pham discovered that the netfiler subsystem in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local user could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-4244)<br>
+<br>
+Maxim Suhanov discovered that the exFAT file system implementation in the<br>
+Linux kernel did not properly check a file name length, leading to an out-<br>
+of-bounds write vulnerability. An attacker could use this to construct a<br>
+malicious exFAT image that, when mounted and operated on, could cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-4273)<br>
+<br>
+Kyle Zeng discovered that the networking stack implementation in the Linux<br>
+kernel did not properly validate skb object size in certain conditions. An<br>
+attacker could use this cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-42752)<br>
+<br>
+Kyle Zeng discovered that the netfiler subsystem in the Linux kernel did<br>
+not properly calculate array offsets, leading to a out-of-bounds write<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-42753)<br>
+<br>
+Kyle Zeng discovered that the IPv4 Resource Reservation Protocol (RSVP)<br>
+classifier implementation in the Linux kernel contained an out-of-bounds<br>
+read vulnerability. A local attacker could use this to cause a denial of<br>
+service (system crash). Please note that kernel packet classifier support<br>
+for RSVP has been removed to resolve this vulnerability. (CVE-2023-42755)<br>
+<br>
+Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Thelford Williams discovered that the Ceph file system messenger protocol<br>
+implementation in the Linux kernel did not properly validate frame segment<br>
+length in certain situation, leading to a buffer overflow vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-44466)<br>
+<br>
+Lonial Con discovered that the netfilter subsystem in the Linux kernel<br>
+contained a memory leak when handling certain element flush operations. A<br>
+local attacker could use this to expose sensitive information (kernel<br>
+memory). (CVE-2023-4569)<br>
+<br>
+Bing-Jhong Billy Jheng discovered that the Unix domain socket<br>
+implementation in the Linux kernel contained a race condition in certain<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4622)<br>
+<br>
+Budimir Markovic discovered that the qdisc implementation in the Linux<br>
+kernel did not properly validate inner classes, leading to a use-after-free<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-4623)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-45886<br>
+ - https://ubuntu.com/security/CVE-2022-45919<br>
+ - https://ubuntu.com/security/CVE-2022-45887<br>
+ - https://ubuntu.com/security/CVE-2022-48425<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-21264<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-38427<br>
+ - https://ubuntu.com/security/CVE-2023-38430<br>
+ - https://ubuntu.com/security/CVE-2023-38431<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-3867<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-4134<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-4569<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-38430<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-3867<br>
+ - https://ubuntu.com/security/CVE-2023-4134<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-38427<br>
+ - https://ubuntu.com/security/CVE-2023-40283<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2022-45886<br>
+ - https://ubuntu.com/security/CVE-2022-45919<br>
+ - https://ubuntu.com/security/CVE-2023-38431<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2022-45887<br>
+ - https://ubuntu.com/security/CVE-2023-21264<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4569<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-4128<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2022-48425<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-3212<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+<br>
+**Title**: USN-6445-1: Linux kernel (Intel IoTG) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6445-1<br>
+**Priorities**: medium,high,low<br>
+**Description**:<br>
+  It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a high rate of hash collisions in connection lookup table. A<br>
+remote attacker could use this to cause a denial of service (excessive CPU<br>
+consumption). (CVE-2023-1206)<br>
+<br>
+Daniel Trujillo, Johannes Wikner, and Kaveh Razavi discovered that some AMD<br>
+processors utilising speculative execution and branch prediction may allow<br>
+unauthorised memory reads via a speculative side-channel attack. A local<br>
+attacker could use this to expose sensitive information, including kernel<br>
+memory. (CVE-2023-20569)<br>
+<br>
+It was discovered that the IPv6 RPL protocol implementation in the Linux<br>
+kernel did not properly handle user-supplied data. A remote attacker could<br>
+use this to cause a denial of service (system crash). (CVE-2023-2156)<br>
+<br>
+Davide Ornaghi discovered that the DECnet network protocol implementation<br>
+in the Linux kernel contained a null pointer dereference vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. Please note that kernel support for the<br>
+DECnet has been removed to resolve this CVE. (CVE-2023-3338)<br>
+<br>
+Ross Lagerwall discovered that the Xen netback backend driver in the Linux<br>
+kernel did not properly handle certain unusual packets from a<br>
+paravirtualized network frontend, leading to a buffer overflow. An attacker<br>
+in a guest VM could use this to cause a denial of service (host system<br>
+crash) or possibly execute arbitrary code. (CVE-2023-34319)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate command payload size, leading to a out-of-bounds<br>
+read vulnerability. A remote attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-38432)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate a buffer size in certain situations, leading to<br>
+an out-of-bounds read vulnerability. A remote attacker could use this to<br>
+cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-3865)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+contained a null pointer dereference vulnerability when handling handling<br>
+chained requests. A remote attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3866)<br>
+<br>
+It was discovered that the Siano USB MDTV receiver device driver in the<br>
+Linux kernel did not properly handle device initialization failures in<br>
+certain situations, leading to a use-after-free vulnerability. A physically<br>
+proximate attacker could use this cause a denial of service (system crash).<br>
+(CVE-2023-4132)<br>
+<br>
+Andy Nguyen discovered that the KVM implementation for AMD processors in<br>
+the Linux kernel with Secure Encrypted Virtualization (SEV) contained a<br>
+race condition when accessing the GHCB page. A local attacker in a SEV<br>
+guest VM could possibly use this to cause a denial of service (host system<br>
+crash). (CVE-2023-4155)<br>
+<br>
+It was discovered that the TUN/TAP driver in the Linux kernel did not<br>
+properly initialize socket data. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-4194)<br>
+<br>
+Bien Pham discovered that the netfiler subsystem in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local user could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-4244)<br>
+<br>
+Maxim Suhanov discovered that the exFAT file system implementation in the<br>
+Linux kernel did not properly check a file name length, leading to an out-<br>
+of-bounds write vulnerability. An attacker could use this to construct a<br>
+malicious exFAT image that, when mounted and operated on, could cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-4273)<br>
+<br>
+Kyle Zeng discovered that the networking stack implementation in the Linux<br>
+kernel did not properly validate skb object size in certain conditions. An<br>
+attacker could use this cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-42752)<br>
+<br>
+Kyle Zeng discovered that the netfiler subsystem in the Linux kernel did<br>
+not properly calculate array offsets, leading to a out-of-bounds write<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-42753)<br>
+<br>
+Kyle Zeng discovered that the IPv4 Resource Reservation Protocol (RSVP)<br>
+classifier implementation in the Linux kernel contained an out-of-bounds<br>
+read vulnerability. A local attacker could use this to cause a denial of<br>
+service (system crash). Please note that kernel packet classifier support<br>
+for RSVP has been removed to resolve this vulnerability. (CVE-2023-42755)<br>
+<br>
+Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Thelford Williams discovered that the Ceph file system messenger protocol<br>
+implementation in the Linux kernel did not properly validate frame segment<br>
+length in certain situation, leading to a buffer overflow vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-44466)<br>
+<br>
+Bing-Jhong Billy Jheng discovered that the Unix domain socket<br>
+implementation in the Linux kernel contained a race condition in certain<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4622)<br>
+<br>
+Budimir Markovic discovered that the qdisc implementation in the Linux<br>
+kernel did not properly validate inner classes, leading to a use-after-free<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-4623)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-3338<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-3338<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+<br>
+**Title**: USN-6416-3: Linux kernel (Raspberry Pi) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6416-3<br>
+**Priorities**: medium,high,low<br>
+**Description**:<br>
+  It was discovered that the IPv6 implementation in the Linux kernel<br>
+contained a high rate of hash collisions in connection lookup table. A<br>
+remote attacker could use this to cause a denial of service (excessive CPU<br>
+consumption). (CVE-2023-1206)<br>
+<br>
+Daniel Trujillo, Johannes Wikner, and Kaveh Razavi discovered that some AMD<br>
+processors utilising speculative execution and branch prediction may allow<br>
+unauthorised memory reads via a speculative side-channel attack. A local<br>
+attacker could use this to expose sensitive information, including kernel<br>
+memory. (CVE-2023-20569)<br>
+<br>
+It was discovered that the IPv6 RPL protocol implementation in the Linux<br>
+kernel did not properly handle user-supplied data. A remote attacker could<br>
+use this to cause a denial of service (system crash). (CVE-2023-2156)<br>
+<br>
+Davide Ornaghi discovered that the DECnet network protocol implementation<br>
+in the Linux kernel contained a null pointer dereference vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. Please note that kernel support for the<br>
+DECnet has been removed to resolve this CVE. (CVE-2023-3338)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate command payload size, leading to a out-of-bounds<br>
+read vulnerability. A remote attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-38432)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate a buffer size in certain situations, leading to<br>
+an out-of-bounds read vulnerability. A remote attacker could use this to<br>
+cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-3865)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+contained a null pointer dereference vulnerability when handling handling<br>
+chained requests. A remote attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3866)<br>
+<br>
+It was discovered that the Siano USB MDTV receiver device driver in the<br>
+Linux kernel did not properly handle device initialization failures in<br>
+certain situations, leading to a use-after-free vulnerability. A physically<br>
+proximate attacker could use this cause a denial of service (system crash).<br>
+(CVE-2023-4132)<br>
+<br>
+Andy Nguyen discovered that the KVM implementation for AMD processors in<br>
+the Linux kernel with Secure Encrypted Virtualization (SEV) contained a<br>
+race condition when accessing the GHCB page. A local attacker in a SEV<br>
+guest VM could possibly use this to cause a denial of service (host system<br>
+crash). (CVE-2023-4155)<br>
+<br>
+It was discovered that the TUN/TAP driver in the Linux kernel did not<br>
+properly initialize socket data. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-4194)<br>
+<br>
+Maxim Suhanov discovered that the exFAT file system implementation in the<br>
+Linux kernel did not properly check a file name length, leading to an out-<br>
+of-bounds write vulnerability. An attacker could use this to construct a<br>
+malicious exFAT image that, when mounted and operated on, could cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-4273)<br>
+<br>
+Thelford Williams discovered that the Ceph file system messenger protocol<br>
+implementation in the Linux kernel did not properly validate frame segment<br>
+length in certain situation, leading to a buffer overflow vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-44466)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-3338<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-4273<br>
+ - https://ubuntu.com/security/CVE-2023-4194<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-4155<br>
+ - https://ubuntu.com/security/CVE-2023-2156<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-3338<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-1206<br>
+ - https://ubuntu.com/security/CVE-2023-20569<br>
+<br>
+**Title**: USN-6459-1: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6459-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in MySQL and this update includes<br>
+new upstream MySQL versions to fix these issues.<br>
+<br>
+MySQL has been updated to 8.0.35 in Ubuntu 20.04 LTS, Ubuntu 22.04 LTS,<br>
+Ubuntu 23.04, and Ubuntu 23.10.<br>
+<br>
+In addition to security fixes, the updated packages contain bug fixes, new<br>
+features, and possibly incompatible changes.<br>
+<br>
+Please see the following for more information:<br>
+<br>
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-35.html<br>
+https://www.oracle.com/security-alerts/cpuoct2023.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-22079<br>
+ - https://ubuntu.com/security/CVE-2023-22066<br>
+ - https://ubuntu.com/security/CVE-2023-22114<br>
+ - https://ubuntu.com/security/CVE-2023-22112<br>
+ - https://ubuntu.com/security/CVE-2023-22059<br>
+ - https://ubuntu.com/security/CVE-2023-22068<br>
+ - https://ubuntu.com/security/CVE-2023-22070<br>
+ - https://ubuntu.com/security/CVE-2023-22103<br>
+ - https://ubuntu.com/security/CVE-2023-22084<br>
+ - https://ubuntu.com/security/CVE-2023-22032<br>
+ - https://ubuntu.com/security/CVE-2023-22097<br>
+ - https://ubuntu.com/security/CVE-2023-22092<br>
+ - https://ubuntu.com/security/CVE-2023-22064<br>
+ - https://ubuntu.com/security/CVE-2023-22078<br>
+<br>
+**Title**: USN-6465-2: Linux kernel (Raspberry Pi) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6465-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+<br>
+**Title**: USN-6465-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6465-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+<br>
+**Title**: USN-6464-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6464-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate SMB request protocol IDs, leading to a out-of-<br>
+bounds read vulnerability. A remote attacker could possibly use this to<br>
+cause a denial of service (system crash). (CVE-2023-38430)<br>
+<br>
+Chih-Yen Chang discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate command payload size, leading to a out-of-bounds<br>
+read vulnerability. A remote attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-38432)<br>
+<br>
+It was discovered that the NFC implementation in the Linux kernel contained<br>
+a use-after-free vulnerability when performing peer-to-peer communication<br>
+in certain conditions. A privileged attacker could use this to cause a<br>
+denial of service (system crash) or possibly expose sensitive information<br>
+(kernel memory). (CVE-2023-3863)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate a buffer size in certain situations, leading to<br>
+an out-of-bounds read vulnerability. A remote attacker could use this to<br>
+cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-3865)<br>
+<br>
+Laurence Wit discovered that the KSMBD implementation in the Linux kernel<br>
+contained a null pointer dereference vulnerability when handling handling<br>
+chained requests. A remote attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3866)<br>
+<br>
+It was discovered that the KSMBD implementation in the Linux kernel did not<br>
+properly handle session setup requests, leading to an out-of-bounds read<br>
+vulnerability. A remote attacker could use this to expose sensitive<br>
+information. (CVE-2023-3867)<br>
+<br>
+It was discovered that the Siano USB MDTV receiver device driver in the<br>
+Linux kernel did not properly handle device initialization failures in<br>
+certain situations, leading to a use-after-free vulnerability. A physically<br>
+proximate attacker could use this cause a denial of service (system crash).<br>
+(CVE-2023-4132)<br>
+<br>
+It was discovered that a race condition existed in the Cypress touchscreen<br>
+driver in the Linux kernel during device removal, leading to a use-after-<br>
+free vulnerability. A physically proximate attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-4134)<br>
+<br>
+Thelford Williams discovered that the Ceph file system messenger protocol<br>
+implementation in the Linux kernel did not properly validate frame segment<br>
+length in certain situation, leading to a buffer overflow vulnerability. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-44466)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-38430<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+ - https://ubuntu.com/security/CVE-2023-3867<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-4134<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-38432<br>
+ - https://ubuntu.com/security/CVE-2023-38430<br>
+ - https://ubuntu.com/security/CVE-2023-3863<br>
+ - https://ubuntu.com/security/CVE-2023-44466<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3865<br>
+ - https://ubuntu.com/security/CVE-2023-4132<br>
+ - https://ubuntu.com/security/CVE-2023-3867<br>
+ - https://ubuntu.com/security/CVE-2023-4134<br>
+ - https://ubuntu.com/security/CVE-2023-3866<br>
+<br>
+**Title**: USN-6461-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6461-1<br>
+**Priorities**: low,medium,high<br>
+**Description**:<br>
+  Yu Hao discovered that the UBI driver in the Linux kernel did not properly<br>
+check for MTD with zero erasesize during device attachment. A local<br>
+privileged attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-31085)<br>
+<br>
+Marek Marczykowski-Górecki discovered that the Xen event channel<br>
+infrastructure implementation in the Linux kernel contained a race<br>
+condition. An attacker in a guest VM could possibly use this to cause a<br>
+denial of service (paravirtualized device unavailability). (CVE-2023-34324)<br>
+<br>
+Lucas Leong discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly validate some attributes passed from userspace. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly expose sensitive information (kernel memory). (CVE-2023-39189)<br>
+<br>
+Bien Pham discovered that the netfiler subsystem in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local user could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-4244)<br>
+<br>
+Kyle Zeng discovered that the IPv4 implementation in the Linux kernel did<br>
+not properly handle socket buffers (skb) when performing IP routing in<br>
+certain circumstances, leading to a null pointer dereference vulnerability.<br>
+A privileged attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-42754)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+It was discovered that the SMB network file sharing protocol implementation<br>
+in the Linux kernel did not properly handle certain error conditions,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2023-5345)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+ - https://ubuntu.com/security/CVE-2023-34324<br>
+ - https://ubuntu.com/security/CVE-2023-39189<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-42754<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2023-39189<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-42754<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+ - https://ubuntu.com/security/CVE-2023-34324<br>
+<br>
+**Title**: USN-6448-1: Sofia-SIP vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6448-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Xu Biang discovered that Sofia-SIP did not properly manage memory when<br>
+handling STUN packets. An attacker could use this issue to cause<br>
+Sofia-SIP to crash, resulting in a denial of service, or possibly execute<br>
+arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-32307<br>
+<br>
+**Title**: USN-6463-1: Open VM Tools vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6463-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Open VM Tools incorrectly handled SAML tokens. A<br>
+remote attacker Guest Operations privileges could possibly use this issue<br>
+to escalate privileges. (CVE-2023-34058)<br>
+<br>
+Matthias Gerstner discovered that Open VM Tools incorrectly handled file<br>
+descriptors when dropping privileges. A local attacker could possibly use<br>
+this issue to hijack /dev/uinput and simulate user inputs. (CVE-2023-34059)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34058<br>
+ - https://ubuntu.com/security/CVE-2023-34059<br>
+ - https://ubuntu.com/security/CVE-2023-34059<br>
+ - https://ubuntu.com/security/CVE-2023-34058<br>
+<br>
+**Title**: USN-6444-2: Linux kernel (StarFive) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6444-2<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Ross Lagerwall discovered that the Xen netback backend driver in the Linux<br>
+kernel did not properly handle certain unusual packets from a<br>
+paravirtualized network frontend, leading to a buffer overflow. An attacker<br>
+in a guest VM could use this to cause a denial of service (host system<br>
+crash) or possibly execute arbitrary code. (CVE-2023-34319)<br>
+<br>
+Bien Pham discovered that the netfiler subsystem in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local user could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-4244)<br>
+<br>
+Kyle Zeng discovered that the networking stack implementation in the Linux<br>
+kernel did not properly validate skb object size in certain conditions. An<br>
+attacker could use this cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-42752)<br>
+<br>
+Kyle Zeng discovered that the netfiler subsystem in the Linux kernel did<br>
+not properly calculate array offsets, leading to a out-of-bounds write<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-42753)<br>
+<br>
+Kyle Zeng discovered that the IPv4 Resource Reservation Protocol (RSVP)<br>
+classifier implementation in the Linux kernel contained an out-of-bounds<br>
+read vulnerability. A local attacker could use this to cause a denial of<br>
+service (system crash). Please note that kernel packet classifier support<br>
+for RSVP has been removed to resolve this vulnerability. (CVE-2023-42755)<br>
+<br>
+Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Bing-Jhong Billy Jheng discovered that the Unix domain socket<br>
+implementation in the Linux kernel contained a race condition in certain<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4622)<br>
+<br>
+Budimir Markovic discovered that the qdisc implementation in the Linux<br>
+kernel did not properly validate inner classes, leading to a use-after-free<br>
+vulnerability. A local user could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-4623)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-4622<br>
+ - https://ubuntu.com/security/CVE-2023-4623<br>
+ - https://ubuntu.com/security/CVE-2023-34319<br>
+ - https://ubuntu.com/security/CVE-2023-42753<br>
+<br>
+**Title**: USN-6431-2: iperf3 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6431-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6431-1 fixed a vulnerability in iperf3. This update provides<br>
+the corresponding update for Ubuntu 22.04 LTS and Ubuntu 23.04.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that iperf3 did not properly manage certain inputs, <br>
+ which could lead to a crash. A remote attacker could possibly use this<br>
+ issue to cause a denial of service. (CVE-2023-38403)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-38403<br>
+ - https://ubuntu.com/security/CVE-2023-38403<br>
+<br>
+**Title**: USN-6436-1: FRR vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6436-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that the FRR did not properly check the attribute length<br>
+in NRLI. A remote attacker could possibly use this issue to cause a denial<br>
+of service. (CVE-2023-41358)<br>
+<br>
+It was discovered that the FRR did not properly manage memory when reading<br>
+initial bytes of ORF header. A remote attacker could possibly use this<br>
+issue to cause a denial of service. (CVE-2023-41360)<br>
+<br>
+It was discovered that FRR did not properly validate the attributes in the<br>
+BGP FlowSpec functionality. A remote attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2023-41909)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-41358<br>
+ - https://ubuntu.com/security/CVE-2023-41360<br>
+ - https://ubuntu.com/security/CVE-2023-41909<br>
+ - https://ubuntu.com/security/CVE-2023-41360<br>
+ - https://ubuntu.com/security/CVE-2023-41909<br>
+ - https://ubuntu.com/security/CVE-2023-41358<br>
+<br>
+**Title**: USN-6434-1: PMIx vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6434-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Francois Diakhate discovered that PMIx did not properly handle race <br>
+conditions in the pmix library, which could lead to unwanted privilege<br>
+escalation. An attacker could possibly use this issue to obtain ownership<br>
+of an arbitrary file on the filesystem, under the default configuration<br>
+of the application.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-41915<br>
+<br>
+**Title**: USN-6455-1: Exim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6455-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Exim incorrectly handled validation of user-supplied<br>
+data, which could lead to memory corruption. A remote attacker could<br>
+possibly use this issue to execute arbitrary code. (CVE-2023-42117)<br>
+<br>
+It was discovered that Exim incorrectly handled validation of user-supplied<br>
+data, which could lead to an out-of-bounds read. An attacker could possibly<br>
+use this issue to expose sensitive information. (CVE-2023-42119)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-42117<br>
+ - https://ubuntu.com/security/CVE-2023-42119<br>
+ - https://ubuntu.com/security/CVE-2023-42117<br>
+ - https://ubuntu.com/security/CVE-2023-42119<br>
+<br>
+**Title**: USN-6443-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6443-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Bien Pham discovered that the netfiler subsystem in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local user could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-4244)<br>
+<br>
+Kyle Zeng discovered that the networking stack implementation in the Linux<br>
+kernel did not properly validate skb object size in certain conditions. An<br>
+attacker could use this cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-42752)<br>
+<br>
+Kyle Zeng discovered that the IPv4 Resource Reservation Protocol (RSVP)<br>
+classifier implementation in the Linux kernel contained an out-of-bounds<br>
+read vulnerability. A local attacker could use this to cause a denial of<br>
+service (system crash). Please note that kernel packet classifier support<br>
+for RSVP has been removed to resolve this vulnerability. (CVE-2023-42755)<br>
+<br>
+Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-42752<br>
+ - https://ubuntu.com/security/CVE-2023-42755<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4244<br>
+<br>
+**Title**: USN-6433-1: Ghostscript vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6433-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ghostscript incorrectly handled certain PDF<br>
+documents. If a user or automated system were tricked into opening a<br>
+specially crafted PDF file, a remote attacker could use this issue to<br>
+execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-43115<br>
+<br>
+**Title**: USN-6450-1: OpenSSL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6450-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Tony Battersby discovered that OpenSSL incorrectly handled key and<br>
+initialization vector (IV) lengths. This could lead to truncation issues<br>
+and result in loss of confidentiality for some symmetric cipher modes.<br>
+(CVE-2023-5363)<br>
+<br>
+Juerg Wullschleger discovered that OpenSSL incorrectly handled the AES-SIV<br>
+cipher. This could lead to empty data entries being ignored, resulting in<br>
+certain applications being misled. This issue only affected Ubuntu 22.04<br>
+LTS and Ubuntu 23.04. (CVE-2023-2975)<br>
+<br>
+It was discovered that OpenSSL incorrectly handled checking excessively<br>
+long DH keys or parameters. A remote attacker could possibly use this issue<br>
+to cause OpenSSL to consume resources, leading to a denial of service. This<br>
+issue only affected Ubuntu 22.04 LTS and Ubuntu 23.04. (CVE-2023-3446,<br>
+CVE-2023-3817)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5363<br>
+ - https://ubuntu.com/security/CVE-2023-2975<br>
+ - https://ubuntu.com/security/CVE-2023-3446<br>
+ - https://ubuntu.com/security/CVE-2023-3817<br>
+ - https://ubuntu.com/security/CVE-2023-5363<br>
+ - https://ubuntu.com/security/CVE-2023-3817<br>
+ - https://ubuntu.com/security/CVE-2023-3446<br>
+ - https://ubuntu.com/security/CVE-2023-2975<br>
+<br>
+**Title**: USN-6453-1: X.Org X Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6453-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+prepending values to certain properties. An attacker could possibly use<br>
+this issue to cause the X Server to crash, execute arbitrary code, or<br>
+escalate privileges. (CVE-2023-5367)<br>
+<br>
+Sri discovered that the X.Org X Server incorrectly handled detroying<br>
+windows in certain legacy multi-screen setups. An attacker could possibly<br>
+use this issue to cause the X Server to crash, execute arbitrary code, or<br>
+escalate privileges. (CVE-2023-5380)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5367<br>
+ - https://ubuntu.com/security/CVE-2023-5380<br>
+ - https://ubuntu.com/security/CVE-2023-5367<br>
+ - https://ubuntu.com/security/CVE-2023-5380<br>
+<br>
+**Title**: USN-6468-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6468-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+obtain sensitive information, bypass security restrictions, cross-site<br>
+tracing, or execute arbitrary code. (CVE-2023-5724, CVE-2023-5728,<br>
+CVE-2023-5730, CVE-2023-5732)<br>
+<br>
+Kelsey Gilbert discovered that Thunderbird did not properly manage certain<br>
+browser prompts and dialogs due to an insufficient activation-delay. An<br>
+attacker could potentially exploit this issue to perform clickjacking.<br>
+(CVE-2023-5721)<br>
+<br>
+Shaheen Fazim discovered that Thunderbird did not properly validate the URLs<br>
+open by installed WebExtension. An attacker could potentially exploit this<br>
+issue to obtain sensitive information. (CVE-2023-5725)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5724<br>
+ - https://ubuntu.com/security/CVE-2023-5728<br>
+ - https://ubuntu.com/security/CVE-2023-5730<br>
+ - https://ubuntu.com/security/CVE-2023-5732<br>
+ - https://ubuntu.com/security/CVE-2023-5721<br>
+ - https://ubuntu.com/security/CVE-2023-5725<br>
+ - https://ubuntu.com/security/CVE-2023-5724<br>
+ - https://ubuntu.com/security/CVE-2023-5730<br>
+ - https://ubuntu.com/security/CVE-2023-5732<br>
+ - https://ubuntu.com/security/CVE-2023-5721<br>
+ - https://ubuntu.com/security/CVE-2023-5728<br>
+ - https://ubuntu.com/security/CVE-2023-5725<br>
+
+
 #### <a id="jammy-1-260"></a> 1.260
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
