@@ -15,6 +15,92 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-298"></a> 1.298
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 15, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.600.0<br>
+<br>
+#### Notice:<br>
+azure blobstore cli did not calculate the correct blobsize fixed in [pr 13](https://github.com/cloudfoundry/bosh-azure-storage-cli/pull/13)<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6465-2: Linux kernel (Raspberry Pi) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6465-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+<br>
+**Title**: USN-6467-2: Kerberos vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6467-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6467-1 fixed a vulnerability in Kerberos. This update provides the<br>
+corresponding update for Ubuntu 20.04 LTS, Ubuntu 22.04 LTS and Ubuntu<br>
+23.04.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Robert Morris discovered that Kerberos did not properly handle memory<br>
+ access when processing RPC data through kadmind, which could lead to the<br>
+ freeing of uninitialized memory. An authenticated remote attacker could<br>
+ possibly use this issue to cause kadmind to crash, resulting in a denial<br>
+ of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-36054<br>
+<br>
+**Title**: USN-6479-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6479-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-5197
+
 #### <a id="jammy-1-289"></a> 1.289
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
