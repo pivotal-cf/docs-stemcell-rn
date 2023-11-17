@@ -15,6 +15,65 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-301"></a> 1.301
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 17, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.602.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6465-3: Linux kernel (GKE) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6465-3<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+<br>
+**Title**: USN-6477-1: procps-ng vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6477-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that the procps-ng ps tool incorrectly handled memory.<br>
+An attacker could possibly use this issue to cause procps-ng to crash,<br>
+resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-4016<br>
+<br>
+**Title**: USN-6476-1: Memcached vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6476-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Memcached incorrectly handled certain multiget<br>
+requests in proxy mode. A remote attacker could use this issue to cause<br>
+Memcached to crash, resulting in a denial of service, or possibly execute<br>
+arbitrary code. (CVE-2023-46852)<br>
+<br>
+It was discovered that Memcached incorrectly handled certain proxy requests<br>
+in proxy mode. A remote attacker could use this issue to cause Memcached to<br>
+crash, resulting in a denial of service, or possibly execute arbitrary<br>
+code. (CVE-2023-46853)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-46852<br>
+ - https://ubuntu.com/security/CVE-2023-46853<br>
+ - https://ubuntu.com/security/CVE-2023-46852<br>
+ - https://ubuntu.com/security/CVE-2023-46853
+
 #### <a id="jammy-1-298"></a> 1.298
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
