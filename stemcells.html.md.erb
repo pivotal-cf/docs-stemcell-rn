@@ -16336,6 +16336,166 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-759"></a> 621.759
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 19, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.196<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6475-1: Cobbler vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6475-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  It was discovered that Cobbler did not properly handle user input, which<br>
+could result in an absolute path traversal. An attacker could possibly <br>
+use this issue to read arbitrary files. (CVE-2014-3225)<br>
+<br>
+It was discovered that Cobbler did not properly handle user input, which<br>
+could result in command injection. An attacker could possibly use this <br>
+issue to execute arbitrary code with high privileges. <br>
+(CVE-2017-1000469, CVE-2021-45082)<br>
+<br>
+It was discovered that Cobbler did not properly hide private functions in<br>
+a class. A remote attacker could possibly use this issue to gain high <br>
+privileges and upload files to an arbitrary location. <br>
+(CVE-2018-10931, CVE-2018-1000225, CVE-2018-1000226)<br>
+<br>
+Nicolas Chatelain discovered that Cobbler did not properly handle user <br>
+input, which could result in log poisoning. A remote attacker could <br>
+possibly use this issue to bypass authorization, write in an arbitrary <br>
+file, or execute arbitrary code. <br>
+(CVE-2021-40323, CVE-2021-40324, CVE-2021-40325)<br>
+<br>
+It was discovered that Cobbler did not properly handle file permissions <br>
+during package install or update operations. An attacker could possibly <br>
+use this issue to perform a privilege escalation attack. (CVE-2021-45083)<br>
+<br>
+It was discovered that Cobbler did not properly process credentials for <br>
+expired accounts. An attacker could possibly use this issue to login to <br>
+the platform with an expired account or password. (CVE-2022-0860)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2014-3225<br>
+ - https://ubuntu.com/security/CVE-2017-1000469<br>
+ - https://ubuntu.com/security/CVE-2021-45082<br>
+ - https://ubuntu.com/security/CVE-2018-10931<br>
+ - https://ubuntu.com/security/CVE-2018-1000225<br>
+ - https://ubuntu.com/security/CVE-2018-1000226<br>
+ - https://ubuntu.com/security/CVE-2021-40323<br>
+ - https://ubuntu.com/security/CVE-2021-40324<br>
+ - https://ubuntu.com/security/CVE-2021-40325<br>
+ - https://ubuntu.com/security/CVE-2021-45083<br>
+ - https://ubuntu.com/security/CVE-2022-0860<br>
+ - https://ubuntu.com/security/CVE-2021-40323<br>
+ - https://ubuntu.com/security/CVE-2018-1000225<br>
+ - https://ubuntu.com/security/CVE-2021-45082<br>
+ - https://ubuntu.com/security/CVE-2021-40324<br>
+ - https://ubuntu.com/security/CVE-2021-45083<br>
+ - https://ubuntu.com/security/CVE-2017-1000469<br>
+ - https://ubuntu.com/security/CVE-2021-40325<br>
+ - https://ubuntu.com/security/CVE-2022-0860<br>
+ - https://ubuntu.com/security/CVE-2018-10931<br>
+ - https://ubuntu.com/security/CVE-2018-1000226<br>
+ - https://ubuntu.com/security/CVE-2014-3225<br>
+<br>
+**Title**: USN-6474-1: xrdp vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6474-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds reads. An attacker<br>
+could possibly use this issue to crash the program or extract sensitive<br>
+information. (CVE-2022-23479, CVE-2022-23481, CVE-2022-23483,<br>
+CVE-2023-42822)<br>
+<br>
+It was discovered that xrdp improperly handled session establishment<br>
+errors. An attacker could potentially use this issue to bypass the<br>
+OS-level session restrictions by PAM. (CVE-2023-40184)<br>
+<br>
+It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds writes. An attacker<br>
+could possibly use this issue to cause memory corruption or execute<br>
+arbitrary code. This issue only affected Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-23468)<br>
+<br>
+It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds reads. An attacker<br>
+could possibly use this issue to crash the program or extract sensitive<br>
+information. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS<br>
+and Ubuntu 22.04 LTS. (CVE-2022-23480, CVE-2022-23482, CVE-2022-23484)<br>
+<br>
+It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds reads. An attacker<br>
+could possibly use this issue to crash the program or extract sensitive<br>
+information. This issue only affected Ubuntu 20.04 LTS and<br>
+Ubuntu 22.04 LTS. (CVE-2022-23477, CVE-2022-23493)<br>
+<br>
+It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds writes. An attacker<br>
+could possibly use this issue to cause memory corruption or execute<br>
+arbitrary code. This issue only affected Ubuntu 20.04 LTS and<br>
+Ubuntu 22.04 LTS. (CVE-2022-23478)<br>
+<br>
+It was discovered that xrdp incorrectly handled validation of<br>
+client-supplied data, which could lead to out-of-bounds reads. An attacker<br>
+could possibly use this issue to crash the program or extract sensitive<br>
+information. This issue only affected Ubuntu 22.04 LTS. (CVE-2022-23613)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-23479<br>
+ - https://ubuntu.com/security/CVE-2022-23481<br>
+ - https://ubuntu.com/security/CVE-2022-23483<br>
+ - https://ubuntu.com/security/CVE-2023-42822<br>
+ - https://ubuntu.com/security/CVE-2023-40184<br>
+ - https://ubuntu.com/security/CVE-2022-23468<br>
+ - https://ubuntu.com/security/CVE-2022-23480<br>
+ - https://ubuntu.com/security/CVE-2022-23482<br>
+ - https://ubuntu.com/security/CVE-2022-23484<br>
+ - https://ubuntu.com/security/CVE-2022-23477<br>
+ - https://ubuntu.com/security/CVE-2022-23493<br>
+ - https://ubuntu.com/security/CVE-2022-23478<br>
+ - https://ubuntu.com/security/CVE-2022-23613<br>
+ - https://ubuntu.com/security/CVE-2022-23468<br>
+ - https://ubuntu.com/security/CVE-2022-23477<br>
+ - https://ubuntu.com/security/CVE-2022-23479<br>
+ - https://ubuntu.com/security/CVE-2022-23484<br>
+ - https://ubuntu.com/security/CVE-2022-23481<br>
+ - https://ubuntu.com/security/CVE-2022-23613<br>
+ - https://ubuntu.com/security/CVE-2022-23493<br>
+ - https://ubuntu.com/security/CVE-2022-23480<br>
+ - https://ubuntu.com/security/CVE-2022-23483<br>
+ - https://ubuntu.com/security/CVE-2022-23478<br>
+ - https://ubuntu.com/security/CVE-2023-42822<br>
+ - https://ubuntu.com/security/CVE-2022-23482<br>
+ - https://ubuntu.com/security/CVE-2023-40184<br>
+<br>
+**Title**: USN-6485-1: Intel Microcode vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6485-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Benoit Morgan, Paul Grosen, Thais Moreira Hamasaki, Ke Sun, Alyssa Milburn,<br>
+Hisham Shafi, Nir Shlomovich, Tavis Ormandy, Daniel Moghimi, Josh Eads, Salman<br>
+Qazi, Alexandra Sandulescu, Andy Nguyen, Eduardo Vela, Doug Kwan, and Kostik<br>
+Shtoyk discovered that some Intel(R) Processors did not properly handle certain<br>
+sequences of processor instructions. A local attacker could possibly use this to<br>
+cause a core hang (resulting in a denial of service), gain access to sensitive<br>
+information or possibly escalate their privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-23583<br>
+<br>
+**Title**: USN-6477-1: procps-ng vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6477-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that the procps-ng ps tool incorrectly handled memory.<br>
+An attacker could possibly use this issue to cause procps-ng to crash,<br>
+resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-4016
+
 #### <a id="621-753"></a> 621.753
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
