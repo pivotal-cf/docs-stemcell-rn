@@ -2,11 +2,6 @@
 
 This repository contains content for the Stemcell release notes. We publish the this documentation at https://docs.vmware.com/en/Stemcells-for-VMware-Tanzu/services/release-notes/index.html.
 
-In this README:
-
-- [Find Tanzu Network Stemcells](#find-tanzu-network-stemcells)
-- [Contributing to Stemcell Release Notes](#contributing-to-stemcell-release-notes)
-- [Publishing the Docs](#publishing-the-docs)
 
 ## Find Tanzu Network Stemcells
 
