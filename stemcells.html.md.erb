@@ -15,6 +15,430 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-309"></a> 1.309
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 27, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.604.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6473-2: pip vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6473-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6473-1 fixed vulnerabilities in urllib3. This update provides the<br>
+corresponding updates for the urllib3 module bundled into pip.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that urllib3 didn't strip HTTP Authorization header<br>
+ on cross-origin redirects. A remote attacker could possibly use this <br>
+ issue to obtain sensitive information. This issue only affected<br>
+ Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2018-25091)<br>
+ <br>
+ It was discovered that urllib3 didn't strip HTTP Cookie header on <br>
+ cross-origin redirects. A remote attacker could possibly use this <br>
+ issue to obtain sensitive information. (CVE-2023-43804)<br>
+ <br>
+ It was discovered that urllib3 didn't strip HTTP body on status code<br>
+ 303 redirects under certain circumstances. A remote attacker could <br>
+ possibly use this issue to obtain sensitive information. (CVE-2023-45803)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-25091<br>
+ - https://ubuntu.com/security/CVE-2023-43804<br>
+ - https://ubuntu.com/security/CVE-2023-45803<br>
+ - https://ubuntu.com/security/CVE-2023-45803<br>
+ - https://ubuntu.com/security/CVE-2018-25091<br>
+ - https://ubuntu.com/security/CVE-2023-43804<br>
+<br>
+**Title**: USN-6449-2: FFmpeg regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-6449-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6449-1 fixed vulnerabilities in FFmpeg. Unfortunately that update<br>
+could introduce a regression in tools using an FFmpeg library, like VLC. <br>
+<br>
+This updated fixes the problem. We apologize for the inconvenience.<br>
+<br>
+Original advisory details: <br>
+<br>
+It was discovered that FFmpeg incorrectly managed memory resulting <br>
+in a memory leak. An attacker could possibly use this issue to cause<br>
+a denial of service via application crash. This issue only <br>
+affected Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2020-22038)<br>
+<br>
+It was discovered that FFmpeg incorrectly handled certain input files, <br>
+leading to an integer overflow. An attacker could possibly use this issue<br>
+to cause a denial of service via application crash. This issue only <br>
+affected Ubuntu 20.04 LTS. (CVE-2020-20898, CVE-2021-38090, <br>
+CVE-2021-38091, CVE-2021-38092, CVE-2021-38093, CVE-2021-38094)<br>
+<br>
+It was discovered that FFmpeg incorrectly managed memory, resulting in<br>
+a memory leak.  If a user or automated system were tricked into <br>
+processing a specially crafted input file, a remote attacker could<br>
+possibly use this issue to cause a denial of service, or execute <br>
+arbitrary code. (CVE-2022-48434)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-22038<br>
+ - https://ubuntu.com/security/CVE-2020-20898<br>
+ - https://ubuntu.com/security/CVE-2021-38090<br>
+ - https://ubuntu.com/security/CVE-2021-38091<br>
+ - https://ubuntu.com/security/CVE-2021-38092<br>
+ - https://ubuntu.com/security/CVE-2021-38093<br>
+ - https://ubuntu.com/security/CVE-2021-38094<br>
+ - https://ubuntu.com/security/CVE-2022-48434<br>
+<br>
+**Title**: USN-6483-1: HTML Tidy vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6483-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Neeraj Pal discovered that HTML Tidy incorrectly handled parsing certain<br>
+HTML data. If a user or automated system were tricked into parsing<br>
+specially crafted HTML data, a remote attacker could cause HTML Tidy to<br>
+consume resources, leading to a denial of service, or possibly execute<br>
+arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33391<br>
+<br>
+**Title**: USN-6492-1: Mosquitto vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6492-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Kathrin Kleinhammer discovered that Mosquitto incorrectly handled certain<br>
+inputs. If a user or an automated system were provided with a specially crafted<br>
+input, a remote attacker could possibly use this issue to cause a denial of<br>
+service. This issue only affected Ubuntu 20.04 LTS. (CVE-2021-34431)<br>
+<br>
+Zhanxiang Song discovered that Mosquitto incorrectly handled certain inputs. If<br>
+a user or an automated system were provided with a specially crafted input, a<br>
+remote attacker could possibly use this issue to cause an authorisation bypass.<br>
+This issue only affected Ubuntu 22.04 LTS and Ubuntu 23.04. (CVE-2021-34434)<br>
+<br>
+Zhanxiang Song, Bin Yuan, DeQing Zou, and Hai Jin discovered that Mosquitto<br>
+incorrectly handled certain inputs. If a user or an automated system were<br>
+provided with a specially crafted input, a remote attacker could possibly use<br>
+this issue to cause a denial of service. This issue only affected Ubuntu 20.04<br>
+LTS and Ubuntu 22.04 LTS. (CVE-2021-41039)<br>
+<br>
+Zhengjie Du discovered that Mosquitto incorrectly handled certain inputs. If a<br>
+user or an automated system were provided with a specially crafted input file,<br>
+a remote attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2023-0809)<br>
+<br>
+It was discovered that Mosquitto incorrectly handled certain inputs. If a user<br>
+or an automated system were provided with a specially crafted input, a remote<br>
+attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2023-3592)<br>
+<br>
+Mischa Bachmann discovered that Mosquitto incorrectly handled certain inputs.<br>
+If a user or an automated system were provided with a specially crafted input,<br>
+a remote attacker could possibly use this issue to cause a denial of service.<br>
+This issue was only fixed in Ubuntu 22.04 LTS and Ubuntu 23.04.<br>
+(CVE-2023-28366)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-34431<br>
+ - https://ubuntu.com/security/CVE-2021-34434<br>
+ - https://ubuntu.com/security/CVE-2021-41039<br>
+ - https://ubuntu.com/security/CVE-2023-0809<br>
+ - https://ubuntu.com/security/CVE-2023-3592<br>
+ - https://ubuntu.com/security/CVE-2023-28366<br>
+ - https://ubuntu.com/security/CVE-2023-0809<br>
+ - https://ubuntu.com/security/CVE-2021-34434<br>
+ - https://ubuntu.com/security/CVE-2023-28366<br>
+ - https://ubuntu.com/security/CVE-2021-41039<br>
+ - https://ubuntu.com/security/CVE-2023-3592<br>
+ - https://ubuntu.com/security/CVE-2021-34431<br>
+<br>
+**Title**: USN-6485-1: Intel Microcode vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6485-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Benoit Morgan, Paul Grosen, Thais Moreira Hamasaki, Ke Sun, Alyssa Milburn,<br>
+Hisham Shafi, Nir Shlomovich, Tavis Ormandy, Daniel Moghimi, Josh Eads, Salman<br>
+Qazi, Alexandra Sandulescu, Andy Nguyen, Eduardo Vela, Doug Kwan, and Kostik<br>
+Shtoyk discovered that some Intel(R) Processors did not properly handle certain<br>
+sequences of processor instructions. A local attacker could possibly use this to<br>
+cause a core hang (resulting in a denial of service), gain access to sensitive<br>
+information or possibly escalate their privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-23583<br>
+<br>
+**Title**: USN-6496-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6496-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Ivan D Barrera, Christopher Bednarz, Mustafa Ismail, and Shiraz Saleem<br>
+discovered that the InfiniBand RDMA driver in the Linux kernel did not<br>
+properly check for zero-length STAG or MR registration. A remote attacker<br>
+could possibly use this to execute arbitrary code. (CVE-2023-25775)<br>
+<br>
+Yu Hao discovered that the UBI driver in the Linux kernel did not properly<br>
+check for MTD with zero erasesize during device attachment. A local<br>
+privileged attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-31085)<br>
+<br>
+Manfred Rudigier discovered that the Intel(R) PCI-Express Gigabit (igb)<br>
+Ethernet driver in the Linux kernel did not properly validate received<br>
+frames that are larger than the set MTU size, leading to a buffer overflow<br>
+vulnerability. An attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-45871)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-25775<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+ - https://ubuntu.com/security/CVE-2023-45871<br>
+ - https://ubuntu.com/security/CVE-2023-25775<br>
+ - https://ubuntu.com/security/CVE-2023-45871<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+<br>
+**Title**: USN-6502-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6502-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Ivan D Barrera, Christopher Bednarz, Mustafa Ismail, and Shiraz Saleem<br>
+discovered that the InfiniBand RDMA driver in the Linux kernel did not<br>
+properly check for zero-length STAG or MR registration. A remote attacker<br>
+could possibly use this to execute arbitrary code. (CVE-2023-25775)<br>
+<br>
+Yu Hao discovered that the UBI driver in the Linux kernel did not properly<br>
+check for MTD with zero erasesize during device attachment. A local<br>
+privileged attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-31085)<br>
+<br>
+Manfred Rudigier discovered that the Intel(R) PCI-Express Gigabit (igb)<br>
+Ethernet driver in the Linux kernel did not properly validate received<br>
+frames that are larger than the set MTU size, leading to a buffer overflow<br>
+vulnerability. An attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-45871)<br>
+<br>
+Maxim Levitsky discovered that the KVM nested virtualization (SVM)<br>
+implementation for AMD processors in the Linux kernel did not properly<br>
+handle x2AVIC MSRs. An attacker in a guest VM could use this to cause a<br>
+denial of service (host kernel crash). (CVE-2023-5090)<br>
+<br>
+It was discovered that the SMB network file sharing protocol implementation<br>
+in the Linux kernel did not properly handle certain error conditions,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2023-5345)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-25775<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+ - https://ubuntu.com/security/CVE-2023-45871<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2023-31085<br>
+ - https://ubuntu.com/security/CVE-2023-25775<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-45871<br>
+<br>
+**Title**: USN-6480-1: .NET vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6480-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Barry Dorrans discovered that .NET did not properly implement certain<br>
+security features for Blazor server forms. An attacker could possibly<br>
+use this issue to bypass validation, which could trigger unintended<br>
+actions. (CVE-2023-36558)<br>
+<br>
+Piotr Bazydlo discovered that .NET did not properly handle untrusted<br>
+URIs provided to System.Net.WebRequest.Create. An attacker could possibly<br>
+use this issue to inject arbitrary commands to backend FTP servers.<br>
+(CVE-2023-36049)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-36558<br>
+ - https://ubuntu.com/security/CVE-2023-36049<br>
+ - https://ubuntu.com/security/CVE-2023-36049<br>
+ - https://ubuntu.com/security/CVE-2023-36558<br>
+<br>
+**Title**: USN-6498-1: FRR vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6498-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that FRR incorrectly handled certain BGP messages. A<br>
+remote attacker could possibly use this issue to cause FRR to crash,<br>
+resulting in a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-38407<br>
+ - https://ubuntu.com/security/CVE-2023-38406<br>
+ - https://ubuntu.com/security/CVE-2023-47235<br>
+ - https://ubuntu.com/security/CVE-2023-47234<br>
+<br>
+**Title**: USN-6490-1: WebKitGTK vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6490-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Several security issues were discovered in the WebKitGTK Web and JavaScript<br>
+engines. If a user were tricked into viewing a malicious website, a remote<br>
+attacker could exploit a variety of issues related to web browser security,<br>
+including cross-site scripting attacks, denial of service attacks, and<br>
+arbitrary code execution.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-41983<br>
+ - https://ubuntu.com/security/CVE-2023-42852<br>
+<br>
+**Title**: USN-6479-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6479-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+<br>
+**Title**: USN-6501-1: RabbitMQ vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6501-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that RabbitMQ incorrectly handled certain HTTP requests.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-46118<br>
+<br>
+**Title**: USN-6500-1: Squid vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6500-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Joshua Rogers discovered that Squid incorrectly handled validating certain<br>
+SSL certificates. A remote attacker could possibly use this issue to cause<br>
+Squid to crash, resulting in a denial of service. This issue only affected<br>
+Ubuntu 22.04 LTS, Ubuntu 23.04, and Ubuntu 23.10. (CVE-2023-46724)<br>
+<br>
+Joshua Rogers discovered that Squid incorrectly handled the Gopher<br>
+protocol. A remote attacker could possibly use this issue to cause Squid to<br>
+crash, resulting in a denial of service. Gopher support has been disabled<br>
+in this update. This issue only affected Ubuntu 20.04 LTS, Ubuntu 22.04<br>
+LTS, and Ubuntu 23.04. (CVE-2023-46728)<br>
+<br>
+Keran Mu and Jianjun Chen discovered that Squid incorrectly handled the<br>
+chunked decoder. A remote attacker could possibly use this issue to perform<br>
+HTTP request smuggling attacks. (CVE-2023-46846)<br>
+<br>
+Joshua Rogers discovered that Squid incorrectly handled HTTP Digest<br>
+Authentication. A remote attacker could possibly use this issue to cause<br>
+Squid to crash, resulting in a denial of service. (CVE-2023-46847)<br>
+<br>
+Joshua Rogers discovered that Squid incorrectly handled certain FTP urls.<br>
+A remote attacker could possibly use this issue to cause Squid to crash,<br>
+resulting in a denial of service. (CVE-2023-46848)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-46724<br>
+ - https://ubuntu.com/security/CVE-2023-46728<br>
+ - https://ubuntu.com/security/CVE-2023-46846<br>
+ - https://ubuntu.com/security/CVE-2023-46847<br>
+ - https://ubuntu.com/security/CVE-2023-46848<br>
+ - https://ubuntu.com/security/CVE-2023-46724<br>
+ - https://ubuntu.com/security/CVE-2023-46848<br>
+ - https://ubuntu.com/security/CVE-2023-46846<br>
+ - https://ubuntu.com/security/CVE-2023-46847<br>
+ - https://ubuntu.com/security/CVE-2023-46728<br>
+<br>
+**Title**: USN-6497-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6497-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Maxim Levitsky discovered that the KVM nested virtualization (SVM)<br>
+implementation for AMD processors in the Linux kernel did not properly<br>
+handle x2AVIC MSRs. An attacker in a guest VM could use this to cause a<br>
+denial of service (host kernel crash). (CVE-2023-5090)<br>
+<br>
+Alon Zahavi discovered that the NVMe-oF/TCP subsystem in the Linux kernel<br>
+did not properly handle queue initialization failures in certain<br>
+situations, leading to a use-after-free vulnerability. A remote attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-5178)<br>
+<br>
+Budimir Markovic discovered that the perf subsystem in the Linux kernel<br>
+did not properly handle event groups, leading to an out-of-bounds write<br>
+vulnerability. A local attacker could use this to cause a denial of<br>
+service (system crash) or possibly execute arbitrary code. (CVE-2023-5717)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-5178<br>
+ - https://ubuntu.com/security/CVE-2023-5717<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-5178<br>
+ - https://ubuntu.com/security/CVE-2023-5717<br>
+<br>
+**Title**: USN-6497-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6497-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Maxim Levitsky discovered that the KVM nested virtualization (SVM)<br>
+implementation for AMD processors in the Linux kernel did not properly<br>
+handle x2AVIC MSRs. An attacker in a guest VM could use this to cause a<br>
+denial of service (host kernel crash). (CVE-2023-5090)<br>
+<br>
+Alon Zahavi discovered that the NVMe-oF/TCP subsystem in the Linux kernel<br>
+did not properly handle queue initialization failures in certain<br>
+situations, leading to a use-after-free vulnerability. A remote attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-5178)<br>
+<br>
+Budimir Markovic discovered that the perf subsystem in the Linux kernel did<br>
+not properly handle events grouping, leading to an out-of-bounds write. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-5717)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-5178<br>
+ - https://ubuntu.com/security/CVE-2023-5717<br>
+ - https://ubuntu.com/security/CVE-2023-5090<br>
+ - https://ubuntu.com/security/CVE-2023-5178<br>
+ - https://ubuntu.com/security/CVE-2023-5717<br>
+<br>
+**Title**: USN-6504-1: tracker-miners vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6504-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that tracker-miners incorrectly handled sandboxing. If a<br>
+second security issue was discovered in tracker-miners, an attacker<br>
+could possibly use this issue in combination with it to escape the sandbox.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5557<br>
+<br>
+**Title**: USN-6499-1: GnuTLS vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6499-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that GnuTLS had a timing side-channel when handling<br>
+certain RSA-PSK key exchanges. A remote attacker could possibly use this<br>
+issue to recover sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5981<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.301...ubuntu-jammy/v1.309
+
 #### <a id="jammy-1-301"></a> 1.301
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
