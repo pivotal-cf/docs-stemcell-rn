@@ -976,6 +976,92 @@ code. (CVE-2023-46853)<br>
  - https://ubuntu.com/security/CVE-2023-46852<br>
  - https://ubuntu.com/security/CVE-2023-46853
 
+#### <a id="jammy-1-298"></a> 1.298
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: November 15, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.600.0<br>
+<br>
+#### Notice:<br>
+azure blobstore cli did not calculate the correct blobsize fixed in [pr 13](https://github.com/cloudfoundry/bosh-azure-storage-cli/pull/13)<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6465-2: Linux kernel (Raspberry Pi) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6465-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yu Hao and Weiteng Chen discovered that the Bluetooth HCI UART driver in<br>
+the Linux kernel contained a race condition, leading to a null pointer<br>
+dereference vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash). (CVE-2023-31083)<br>
+<br>
+Lin Ma discovered that the Netlink Transformation (XFRM) subsystem in the<br>
+Linux kernel contained a null pointer dereference vulnerability in some<br>
+situations. A local privileged attacker could use this to cause a denial of<br>
+service (system crash). (CVE-2023-3772)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+ - https://ubuntu.com/security/CVE-2023-31083<br>
+ - https://ubuntu.com/security/CVE-2023-3772<br>
+<br>
+**Title**: USN-6467-2: Kerberos vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6467-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6467-1 fixed a vulnerability in Kerberos. This update provides the<br>
+corresponding update for Ubuntu 20.04 LTS, Ubuntu 22.04 LTS and Ubuntu<br>
+23.04.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Robert Morris discovered that Kerberos did not properly handle memory<br>
+ access when processing RPC data through kadmind, which could lead to the<br>
+ freeing of uninitialized memory. An authenticated remote attacker could<br>
+ possibly use this issue to cause kadmind to crash, resulting in a denial<br>
+ of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-36054<br>
+<br>
+**Title**: USN-6479-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6479-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the netfilter subsystem in the Linux kernel<br>
+contained a race condition in IP set operations in certain situations. A<br>
+local attacker could use this to cause a denial of service (system crash).<br>
+(CVE-2023-42756)<br>
+<br>
+Alex Birnberg discovered that the netfilter subsystem in the Linux kernel<br>
+did not properly validate register length, leading to an out-of- bounds<br>
+write vulnerability. A local attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2023-4881)<br>
+<br>
+It was discovered that the Quick Fair Queueing scheduler implementation in<br>
+the Linux kernel did not properly handle network packets in certain<br>
+conditions, leading to a use after free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2023-4921)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle removal of rules from chain bindings in certain<br>
+circumstances, leading to a use-after-free vulnerability. A local attacker<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+execute arbitrary code. (CVE-2023-5197)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-5197<br>
+ - https://ubuntu.com/security/CVE-2023-4921<br>
+ - https://ubuntu.com/security/CVE-2023-42756<br>
+ - https://ubuntu.com/security/CVE-2023-4881<br>
+ - https://ubuntu.com/security/CVE-2023-5197
+
 #### <a id="jammy-1-289"></a> 1.289
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -44405,43 +44491,6 @@ Original advisory details:<br>
 **CVEs**:<br>
  - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177<br>
 
-
-#### <a id="456-146"></a> 456.146
-
-<span class='pivnet'>Available in VMware Tanzu Network</span>
-
-**Release Date**: March 05, 2021
-
-#### Fixes Issues:<br>
-<br>
-GCP rsyslog behavior is fixed - cf ssh and rsyslog should be working as expected<br>
-<br>
-#### Important Notice:<br>
-<br>
-As of this release, on all IAASs, rsyslog will not start until `/var/log` is mounted. When used with a Bosh Agent, `/var/log` will automatically be mounted, and no further action is required.<br>
-<br>
-If you use this stemcell without a Bosh Agent and do not mount `/var/log`, then you need to do one of these two actions:<br>
-<br>
-* Remove the `ExecStartPre=` line from `/etc/systemd/system/rsyslog.service`<br>
-* Blank out the contents of `/usr/local/bin/wait_for_var_log_to_be_mounted`<br>
-<br>
-Either action will cause rsyslog to no longer wait for `/var/log` to be mounted before starting.<br>
-<br>
-#### Metadata:<br>
-**BOSH Agent Version**: 2.234.9<br>
-<br>
-#### USNs:<br>
-<br>
-**Title**: USN-4754-1: Python vulnerabilities<br>
-**URL**: https://ubuntu.com/security/notices/USN-4754-1<br>
-**Priorities**: medium,low<br>
-**Description**:<br>
-  It was discovered that Python incorrectly handled certain inputs.<br>
-An attacker could possibly use this issue to execute arbitrary code<br>
-or cause a denial of service. (CVE-2020-27619, CVE-2021-3177)<br>
-**CVEs**:<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2021-3177<br>
- - https://people.canonical.com/~ubuntu-security/cve/CVE-2020-27619
 
 #### <a id="456-146"></a> 456.146
 
