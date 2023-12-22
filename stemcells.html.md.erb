@@ -26155,6 +26155,243 @@ Original advisory details:<br>
  - https://ubuntu.com/security/CVE-2023-22809<br>
  - https://ubuntu.com/security/CVE-2023-22809
 
+#### <a id="621-376"></a> 621.376
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 05, 2023
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.112<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5769-1: protobuf vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5769-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that protobuf did not properly manage memory when serializing<br>
+large messages. An attacker could possibly use this issue to cause applications<br>
+using protobuf to crash, resulting in a denial of service, or possibly execute<br>
+arbitrary code. (CVE-2015-5237)<br>
+<br>
+It was discovered that protobuf did not properly manage memory when parsing<br>
+specifically crafted messages. An attacker could possibly use this issue to<br>
+cause applications using protobuf to crash, resulting in a denial of service.<br>
+(CVE-2022-1941)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2015-5237<br>
+ - https://ubuntu.com/security/CVE-2022-1941<br>
+ - https://ubuntu.com/security/CVE-2022-1941<br>
+ - https://ubuntu.com/security/CVE-2015-5237<br>
+<br>
+**Title**: USN-5768-1: GNU C Library vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5768-1<br>
+**Priorities**: negligible,low<br>
+**Description**:<br>
+  Jan Engelhardt, Tavis Ormandy, and others discovered that the GNU C Library<br>
+iconv feature incorrectly handled certain input sequences. An attacker<br>
+could possibly use this issue to cause the GNU C Library to hang or crash,<br>
+resulting in a denial of service.  (CVE-2016-10228, CVE-2019-25013,<br>
+CVE-2020-27618)<br>
+<br>
+It was discovered that the GNU C Library did not properly handled DNS<br>
+responses when ENDS0 is enabled. An attacker could possibly use this issue<br>
+to cause fragmentation-based attacks. (CVE-2017-12132)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-10228<br>
+ - https://ubuntu.com/security/CVE-2019-25013<br>
+ - https://ubuntu.com/security/CVE-2020-27618<br>
+ - https://ubuntu.com/security/CVE-2017-12132<br>
+ - https://ubuntu.com/security/CVE-2019-25013<br>
+ - https://ubuntu.com/security/CVE-2016-10228<br>
+ - https://ubuntu.com/security/CVE-2020-27618<br>
+ - https://ubuntu.com/security/CVE-2017-12132<br>
+<br>
+**Title**: USN-5771-1: Squid regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-5771-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  USN-3557-1 fixed vulnerabilities in Squid. This update introduced a regression<br>
+which could cause the cache log to be filled with many Vary loop messages. This<br>
+update fixes the problem.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+Mathias Fischer discovered that Squid incorrectly handled certain long<br>
+strings in headers. A malicious remote server could possibly cause Squid to<br>
+crash, resulting in a denial of service. This issue was only addressed in<br>
+Ubuntu 16.04 LTS. (CVE-2016-2569)<br>
+<br>
+William Lima discovered that Squid incorrectly handled XML parsing when<br>
+processing Edge Side Includes (ESI). A malicious remote server could<br>
+possibly cause Squid to crash, resulting in a denial of service. This issue<br>
+was only addressed in Ubuntu 16.04 LTS. (CVE-2016-2570)<br>
+<br>
+Alex Rousskov discovered that Squid incorrectly handled response-parsing<br>
+failures. A malicious remote server could possibly cause Squid to crash,<br>
+resulting in a denial of service. This issue only applied to Ubuntu 16.04<br>
+LTS. (CVE-2016-2571)<br>
+<br>
+Santiago Ruano Rincón discovered that Squid incorrectly handled certain<br>
+Vary headers. A remote attacker could possibly use this issue to cause<br>
+Squid to crash, resulting in a denial of service. This issue was only<br>
+addressed in Ubuntu 16.04 LTS. (CVE-2016-3948)<br>
+<br>
+Louis Dion-Marcil discovered that Squid incorrectly handled certain Edge<br>
+Side Includes (ESI) responses. A malicious remote server could possibly<br>
+cause Squid to crash, resulting in a denial of service. (CVE-2018-1000024)<br>
+<br>
+Louis Dion-Marcil discovered that Squid incorrectly handled certain Edge<br>
+Side Includes (ESI) responses. A malicious remote server could possibly<br>
+cause Squid to crash, resulting in a denial of service. (CVE-2018-1000027)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-2569<br>
+ - https://ubuntu.com/security/CVE-2016-2570<br>
+ - https://ubuntu.com/security/CVE-2016-2571<br>
+ - https://ubuntu.com/security/CVE-2016-3948<br>
+ - https://ubuntu.com/security/CVE-2018-1000024<br>
+ - https://ubuntu.com/security/CVE-2018-1000027<br>
+<br>
+**Title**: USN-5770-1: GCC vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5770-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Todd Eisenberger discovered that certain versions of GNU Compiler<br>
+Collection (GCC) could be made to clobber the status flag of RDRAND<br>
+and RDSEED with specially crafted input. This could potentially lead<br>
+to less randomness in random number generation.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-11671<br>
+<br>
+**Title**: USN-5772-1: QEMU vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5772-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that QEMU incorrectly handled bulk transfers from SPICE<br>
+clients. A remote attacker could use this issue to cause QEMU to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 14.04 ESM and Ubuntu 16.04 ESM. (CVE-2021-3682)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+transfers the USB packets. A malicious guest attacker could use this issue<br>
+to cause QEMU to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 18.04 LTS, Ubuntu<br>
+20.04 LTS and Ubuntu 22.04 LTS. (CVE-2021-3750)<br>
+<br>
+It was discovered that the QEMU SCSI device emulation incorrectly handled<br>
+certain MODE SELECT commands. An attacker inside the guest could possibly<br>
+use this issue to cause QEMU to crash, resulting in a denial of service.<br>
+This issue only affected Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+(CVE-2021-3930)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+processing repeated messages to cancel the current SCSI request. A<br>
+malicious privileged guest attacker could use this issue to cause QEMU to<br>
+crash, resulting in a denial of service. (CVE-2022-0216)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when it<br>
+using Tulip device emulation. A malicious guest attacker could use this<br>
+issue to cause QEMU to crash, resulting in a denial of service. This issue<br>
+only affected Ubuntu 22.10. (CVE-2022-2962)<br>
+<br>
+It was discovered that QEMU did not properly manage memory when processing<br>
+ClientCutText messages. A attacker could use this issue to cause QEMU to<br>
+crash, resulting in a denial of service. This issue only affected Ubuntu<br>
+22.04 LTS and Ubuntu 22.10. (CVE-2022-3165)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-3682<br>
+ - https://ubuntu.com/security/CVE-2021-3750<br>
+ - https://ubuntu.com/security/CVE-2021-3930<br>
+ - https://ubuntu.com/security/CVE-2022-0216<br>
+ - https://ubuntu.com/security/CVE-2022-2962<br>
+ - https://ubuntu.com/security/CVE-2022-3165<br>
+ - https://ubuntu.com/security/CVE-2021-3682<br>
+ - https://ubuntu.com/security/CVE-2022-3165<br>
+ - https://ubuntu.com/security/CVE-2022-0216<br>
+ - https://ubuntu.com/security/CVE-2021-3750<br>
+ - https://ubuntu.com/security/CVE-2021-3930<br>
+ - https://ubuntu.com/security/CVE-2022-2962<br>
+<br>
+**Title**: USN-5775-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5775-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that Vim uses freed memory in recurisve substitution of<br>
+specially crafted patterns. An attacker could possbly use this to crash Vim<br>
+and cause denial of service. (CVE-2022-2345)<br>
+<br>
+It was discovered that Vim makes illegal memory calls when patterns start<br>
+with an illegal byte. An attacker could possibly use this to crash Vim,<br>
+access or modify memory, or execute arbitrary commands. (CVE-2022-2581)<br>
+<br>
+It was discovered that Vim could be made to crash when parsing invalid line<br>
+numbers. An attacker could possbly use this to crash Vim and cause denial<br>
+of service. (CVE-2022-3099)<br>
+<br>
+It was discovered that Vim uses freed memory when autocmd changes a mark.<br>
+An attacker could possbly use this to crash Vim and cause denial of<br>
+service. (CVE-2022-3256)<br>
+<br>
+It was discovered the Vim uses an incorrect array index when window width<br>
+is negative. A local attacker could possbly use this to crash Vim and cause<br>
+denial of service. (CVE-2022-3324)<br>
+<br>
+It was discoverd that certain buffers could be sent to the wrong window. An<br>
+attacker with local access could use this to send messages to the wrong<br>
+window. (CVE-2022-3591)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-2345<br>
+ - https://ubuntu.com/security/CVE-2022-2581<br>
+ - https://ubuntu.com/security/CVE-2022-3099<br>
+ - https://ubuntu.com/security/CVE-2022-3256<br>
+ - https://ubuntu.com/security/CVE-2022-3324<br>
+ - https://ubuntu.com/security/CVE-2022-3591<br>
+ - https://ubuntu.com/security/CVE-2022-3591<br>
+ - https://ubuntu.com/security/CVE-2022-2581<br>
+ - https://ubuntu.com/security/CVE-2022-2345<br>
+ - https://ubuntu.com/security/CVE-2022-3256<br>
+ - https://ubuntu.com/security/CVE-2022-3324<br>
+ - https://ubuntu.com/security/CVE-2022-3099<br>
+<br>
+**Title**: USN-5766-1: Heimdal vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5766-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Heimdal did not properly manage memory when<br>
+normalizing Unicode. An attacker could possibly use this issue to<br>
+cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-41916<br>
+<br>
+**Title**: USN-5767-2: Python vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5767-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5767-1 fixed a vulnerability in Python. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Python incorrectly handled certain IDNA inputs.<br>
+ An attacker could possibly use this issue to expose sensitive information<br>
+ denial of service, or cause a crash.<br>
+ (CVE-2022-45061)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+<br>
+**Title**: USN-5781-1: Emacs vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5781-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Emacs did not properly manage certain inputs.<br>
+An attacker could possibly use this issue to execute arbitrary commands.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-45939
+
 #### <a id="621-364"></a> 621.364
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
