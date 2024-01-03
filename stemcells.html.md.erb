@@ -18024,6 +18024,158 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-793"></a> 621.793
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 03, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.208<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6558-1: audiofile vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6558-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that audiofile could be made to dereference invalid<br>
+memory. If a user or an automated system were tricked into opening a<br>
+specially crafted file, an attacker could possibly use this issue to cause<br>
+a denial of service. This issue only affected Ubuntu 16.04 LTS and Ubuntu<br>
+18.04 LTS. (CVE-2018-13440)<br>
+<br>
+It was discovered that audiofile could be made to write out of bounds. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 16.04<br>
+LTS and Ubuntu 18.04 LTS. (CVE-2018-17095)<br>
+<br>
+It was discovered that audiofile could be made to dereference invalid<br>
+memory. If a user or an automated system were tricked into opening a<br>
+specially crafted file, an attacker could possibly use this issue to cause<br>
+a denial of service. (CVE-2019-13147)<br>
+<br>
+It was discovered that audiofile could be made to leak memory. If a user or<br>
+an automated system were tricked into opening a specially crafted file, an<br>
+attacker could possibly use this issue to obtain sensitive information.<br>
+(CVE-2022-24599)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-13440<br>
+ - https://ubuntu.com/security/CVE-2018-17095<br>
+ - https://ubuntu.com/security/CVE-2019-13147<br>
+ - https://ubuntu.com/security/CVE-2022-24599<br>
+ - https://ubuntu.com/security/CVE-2018-17095<br>
+ - https://ubuntu.com/security/CVE-2019-13147<br>
+ - https://ubuntu.com/security/CVE-2018-13440<br>
+ - https://ubuntu.com/security/CVE-2022-24599<br>
+<br>
+**Title**: USN-6557-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6557-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that Vim could be made to dereference invalid memory. An<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04<br>
+LTS. (CVE-2022-1725)<br>
+<br>
+It was discovered that Vim could be made to recurse infinitely. An<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-1771)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds with a put<br>
+command. An attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 22.04<br>
+LTS. (CVE-2022-1886)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 14.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-1897,<br>
+CVE-2022-2000)<br>
+<br>
+It was discovered that Vim did not properly manage memory in the spell<br>
+command. An attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 22.04<br>
+LTS. (CVE-2022-2042)<br>
+<br>
+It was discovered that Vim did not properly manage memory. An attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. (CVE-2023-46246, CVE-2023-48231)<br>
+<br>
+It was discovered that Vim could be made to divide by zero. An attacker<br>
+could possibly use this issue to cause a denial of service. This issue<br>
+only affected Ubuntu 23.04 and Ubuntu 23.10. (CVE-2023-48232)<br>
+<br>
+It was discovered that Vim contained multiple arithmetic overflows. An<br>
+attacker could possibly use these issues to cause a denial of service.<br>
+(CVE-2023-48233, CVE-2023-48234, CVE-2023-48235, CVE-2023-48236,<br>
+CVE-2023-48237)<br>
+<br>
+It was discovered that Vim did not properly manage memory in the<br>
+substitute command. An attacker could possibly use this issue to cause a<br>
+denial of service or execute arbitrary code. This issue only affected<br>
+Ubuntu 22.04 LTS, Ubuntu 23.04, and Ubuntu 23.10. (CVE-2023-48706)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1725<br>
+ - https://ubuntu.com/security/CVE-2022-1771<br>
+ - https://ubuntu.com/security/CVE-2022-1886<br>
+ - https://ubuntu.com/security/CVE-2022-1897<br>
+ - https://ubuntu.com/security/CVE-2022-2000<br>
+ - https://ubuntu.com/security/CVE-2022-2042<br>
+ - https://ubuntu.com/security/CVE-2023-46246<br>
+ - https://ubuntu.com/security/CVE-2023-48231<br>
+ - https://ubuntu.com/security/CVE-2023-48232<br>
+ - https://ubuntu.com/security/CVE-2023-48233<br>
+ - https://ubuntu.com/security/CVE-2023-48234<br>
+ - https://ubuntu.com/security/CVE-2023-48235<br>
+ - https://ubuntu.com/security/CVE-2023-48236<br>
+ - https://ubuntu.com/security/CVE-2023-48237<br>
+ - https://ubuntu.com/security/CVE-2023-48706<br>
+ - https://ubuntu.com/security/CVE-2023-48706<br>
+ - https://ubuntu.com/security/CVE-2023-48234<br>
+ - https://ubuntu.com/security/CVE-2023-48231<br>
+ - https://ubuntu.com/security/CVE-2023-46246<br>
+ - https://ubuntu.com/security/CVE-2023-48235<br>
+ - https://ubuntu.com/security/CVE-2022-1725<br>
+ - https://ubuntu.com/security/CVE-2023-48232<br>
+ - https://ubuntu.com/security/CVE-2022-2042<br>
+ - https://ubuntu.com/security/CVE-2022-2000<br>
+ - https://ubuntu.com/security/CVE-2022-1886<br>
+ - https://ubuntu.com/security/CVE-2023-48233<br>
+ - https://ubuntu.com/security/CVE-2023-48236<br>
+ - https://ubuntu.com/security/CVE-2022-1771<br>
+ - https://ubuntu.com/security/CVE-2022-1897<br>
+ - https://ubuntu.com/security/CVE-2023-48237<br>
+<br>
+**Title**: USN-6555-2: X.Org X Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6555-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6555-1 fixed several vulnerabilities in X.Org. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled XKB<br>
+ button actions. An attacker could possibly use this issue to cause the X<br>
+ Server to crash, execute arbitrary code, or escalate privileges.<br>
+ (CVE-2023-6377)<br>
+<br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ memory when processing the RRChangeOutputProperty and<br>
+ RRChangeProviderProperty APIs. An attacker could possibly use this issue to<br>
+ cause the X Server to crash, or obtain sensitive information.<br>
+ (CVE-2023-6478)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6377<br>
+ - https://ubuntu.com/security/CVE-2023-6478<br>
+ - https://ubuntu.com/security/CVE-2023-6478<br>
+ - https://ubuntu.com/security/CVE-2023-6377<br>
+<br>
+**Full Changelog**: https://github.com/pivotal-cf/bosh-linux-stemcell-builder-lts/compare/ubuntu-trusty/v3586.153...ubuntu-xenial/v621.793
+
 #### <a id="621-782"></a> 621.782
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
