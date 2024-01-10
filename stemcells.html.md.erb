@@ -15,6 +15,418 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-340"></a> 1.340
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 10, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.616.0<br>
+<br>
+#### What's Changed<br>
+<br>
+* Fixed issue where logrotate was not being scheduled properly due to using "OnUnitActiveSec" instead of "OnCalendar." https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/308<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6233-2: YAJL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6233-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-6233-1 fixed vulnerabilities in YAJL. This update provides the<br>
+corresponding updates for Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu<br>
+23.04.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that YAJL was not properly performing bounds checks when<br>
+ decoding a string with escape sequences. If a user or automated system<br>
+ using YAJL were tricked into processing specially crafted input, an<br>
+ attacker could possibly use this issue to cause a denial of service<br>
+ (application abort). (CVE-2017-16516)<br>
+ <br>
+ It was discovered that YAJL was not properly handling memory allocation<br>
+ when dealing with large inputs, which could lead to heap memory<br>
+ corruption. If a user or automated system using YAJL were tricked into<br>
+ running a specially crafted large input, an attacker could possibly use<br>
+ this issue to cause a denial of service. (CVE-2022-24795)<br>
+ <br>
+ It was discovered that memory leaks existed in one of the YAJL parsing<br>
+ functions. An attacker could possibly use this issue to cause a denial of<br>
+ service (memory exhaustion). (CVE-2023-33460)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2017-16516<br>
+ - https://ubuntu.com/security/CVE-2022-24795<br>
+ - https://ubuntu.com/security/CVE-2023-33460<br>
+ - https://ubuntu.com/security/CVE-2023-33460<br>
+ - https://ubuntu.com/security/CVE-2017-16516<br>
+ - https://ubuntu.com/security/CVE-2022-24795<br>
+<br>
+**Title**: USN-6558-1: audiofile vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6558-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that audiofile could be made to dereference invalid<br>
+memory. If a user or an automated system were tricked into opening a<br>
+specially crafted file, an attacker could possibly use this issue to cause<br>
+a denial of service. This issue only affected Ubuntu 16.04 LTS and Ubuntu<br>
+18.04 LTS. (CVE-2018-13440)<br>
+<br>
+It was discovered that audiofile could be made to write out of bounds. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 16.04<br>
+LTS and Ubuntu 18.04 LTS. (CVE-2018-17095)<br>
+<br>
+It was discovered that audiofile could be made to dereference invalid<br>
+memory. If a user or an automated system were tricked into opening a<br>
+specially crafted file, an attacker could possibly use this issue to cause<br>
+a denial of service. (CVE-2019-13147)<br>
+<br>
+It was discovered that audiofile could be made to leak memory. If a user or<br>
+an automated system were tricked into opening a specially crafted file, an<br>
+attacker could possibly use this issue to obtain sensitive information.<br>
+(CVE-2022-24599)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-13440<br>
+ - https://ubuntu.com/security/CVE-2018-17095<br>
+ - https://ubuntu.com/security/CVE-2019-13147<br>
+ - https://ubuntu.com/security/CVE-2022-24599<br>
+ - https://ubuntu.com/security/CVE-2018-17095<br>
+ - https://ubuntu.com/security/CVE-2019-13147<br>
+ - https://ubuntu.com/security/CVE-2018-13440<br>
+ - https://ubuntu.com/security/CVE-2022-24599<br>
+<br>
+**Title**: USN-6567-1: QEMU vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6567-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Gaoning Pan and Xingwei Li discovered that QEMU incorrectly handled the<br>
+USB xHCI controller device. A privileged guest attacker could possibly use<br>
+this issue to cause QEMU to crash, leading to a denial of service. This<br>
+issue only affected Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2020-14394)<br>
+<br>
+It was discovered that QEMU incorrectly handled the TCG Accelerator. A<br>
+local attacker could use this issue to cause QEMU to crash, leading to a<br>
+denial of service, or possibly execute arbitrary code and esclate<br>
+privileges. This issue only affected Ubuntu 20.04 LTS. (CVE-2020-24165)<br>
+<br>
+It was discovered that QEMU incorrectly handled the Intel HD audio device.<br>
+A malicious guest attacker could use this issue to cause QEMU to crash,<br>
+leading to a denial of service. This issue only affected Ubuntu 22.04 LTS.<br>
+(CVE-2021-3611)<br>
+<br>
+It was discovered that QEMU incorrectly handled the ATI VGA device. A<br>
+malicious guest attacker could use this issue to cause QEMU to crash,<br>
+leading to a denial of service. This issue only affected Ubuntu 20.04 LTS.<br>
+(CVE-2021-3638)<br>
+<br>
+It was discovered that QEMU incorrectly handled the VMWare paravirtual RDMA<br>
+device. A malicious guest attacker could use this issue to cause QEMU to<br>
+crash, leading to a denial of service. (CVE-2023-1544)<br>
+<br>
+It was discovered that QEMU incorrectly handled the 9p passthrough<br>
+filesystem. A malicious guest attacker could possibly use this issue to<br>
+open special files and escape the exported 9p tree. This issue only<br>
+affected Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 23.04.<br>
+(CVE-2023-2861)<br>
+<br>
+It was discovered that QEMU incorrectly handled the virtual crypto device.<br>
+A malicious guest attacker could use this issue to cause QEMU to crash,<br>
+leading to a denial of service, or possibly execute arbitrary code. This<br>
+issue only affected Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 23.04.<br>
+(CVE-2023-3180)<br>
+<br>
+It was discovered that QEMU incorrectly handled the built-in VNC server.<br>
+A remote authenticated attacker could possibly use this issue to cause QEMU<br>
+to stop responding, resulting in a denial of service. This issue only<br>
+affected Ubuntu 22.04 LTS and Ubuntu 23.04. (CVE-2023-3255)<br>
+<br>
+It was discovered that QEMU incorrectly handled net device hot-unplugging.<br>
+A malicious guest attacker could use this issue to cause QEMU to crash,<br>
+leading to a denial of service. This issue only affected Ubuntu 22.04 LTS<br>
+and Ubuntu 23.04. (CVE-2023-3301)<br>
+<br>
+It was discovered that QEMU incorrectly handled the built-in VNC server.<br>
+A remote attacker could possibly use this issue to cause QEMU to crash,<br>
+resulting in a denial of service. This issue only affected Ubuntu 20.04<br>
+LTS, Ubuntu 22.04 LTS, and Ubuntu 23.04. (CVE-2023-3354)<br>
+<br>
+It was discovered that QEMU incorrectly handled NVME devices. A malicious<br>
+guest attacker could use this issue to cause QEMU to crash, leading to a<br>
+denial of service. This issue only affected Ubuntu 23.10. (CVE-2023-40360)<br>
+<br>
+It was discovered that QEMU incorrectly handled NVME devices. A malicious<br>
+guest attacker could use this issue to cause QEMU to crash, leading to a<br>
+denial of service, or possibly obtain sensitive information. This issue<br>
+only affected Ubuntu 23.10. (CVE-2023-4135)<br>
+<br>
+It was discovered that QEMU incorrectly handled SCSI devices. A malicious<br>
+guest attacker could use this issue to cause QEMU to crash, leading to a<br>
+denial of service. This issue only affected Ubuntu 23.04 and Ubuntu 23.10.<br>
+(CVE-2023-42467)<br>
+<br>
+It was discovered that QEMU incorrectly handled certain disk offsets. A<br>
+malicious guest attacker could possibly use this issue to gain control of<br>
+the host in certain nested virtualization scenarios. (CVE-2023-5088)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-14394<br>
+ - https://ubuntu.com/security/CVE-2020-24165<br>
+ - https://ubuntu.com/security/CVE-2021-3611<br>
+ - https://ubuntu.com/security/CVE-2021-3638<br>
+ - https://ubuntu.com/security/CVE-2023-1544<br>
+ - https://ubuntu.com/security/CVE-2023-2861<br>
+ - https://ubuntu.com/security/CVE-2023-3180<br>
+ - https://ubuntu.com/security/CVE-2023-3255<br>
+ - https://ubuntu.com/security/CVE-2023-3301<br>
+ - https://ubuntu.com/security/CVE-2023-3354<br>
+ - https://ubuntu.com/security/CVE-2023-40360<br>
+ - https://ubuntu.com/security/CVE-2023-4135<br>
+ - https://ubuntu.com/security/CVE-2023-42467<br>
+ - https://ubuntu.com/security/CVE-2023-5088<br>
+ - https://ubuntu.com/security/CVE-2023-1544<br>
+ - https://ubuntu.com/security/CVE-2023-3354<br>
+ - https://ubuntu.com/security/CVE-2023-3301<br>
+ - https://ubuntu.com/security/CVE-2023-5088<br>
+ - https://ubuntu.com/security/CVE-2020-24165<br>
+ - https://ubuntu.com/security/CVE-2021-3638<br>
+ - https://ubuntu.com/security/CVE-2023-4135<br>
+ - https://ubuntu.com/security/CVE-2023-3180<br>
+ - https://ubuntu.com/security/CVE-2023-2861<br>
+ - https://ubuntu.com/security/CVE-2021-3611<br>
+ - https://ubuntu.com/security/CVE-2023-3255<br>
+ - https://ubuntu.com/security/CVE-2023-42467<br>
+ - https://ubuntu.com/security/CVE-2020-14394<br>
+ - https://ubuntu.com/security/CVE-2023-40360<br>
+<br>
+**Title**: USN-6565-1: OpenSSH vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6565-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that OpenSSH incorrectly handled supplemental groups when<br>
+running helper programs for AuthorizedKeysCommand and<br>
+AuthorizedPrincipalsCommand as a different user. An attacker could possibly<br>
+use this issue to escalate privileges. This issue only affected Ubuntu<br>
+20.04 LTS. (CVE-2021-41617)<br>
+<br>
+It was discovered that OpenSSH incorrectly added destination constraints<br>
+when PKCS#11 token keys were added to ssh-agent, contrary to expectations.<br>
+This issue only affected Ubuntu 22.04 LTS, and Ubuntu 23.04.<br>
+(CVE-2023-51384)<br>
+<br>
+It was discovered that OpenSSH incorrectly handled user names or host names<br>
+with shell metacharacters. An attacker could possibly use this issue to<br>
+perform OS command injection. (CVE-2023-51385)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-41617<br>
+ - https://ubuntu.com/security/CVE-2023-51384<br>
+ - https://ubuntu.com/security/CVE-2023-51385<br>
+ - https://ubuntu.com/security/CVE-2021-41617<br>
+ - https://ubuntu.com/security/CVE-2023-51384<br>
+ - https://ubuntu.com/security/CVE-2023-51385<br>
+<br>
+**Title**: USN-6557-1: Vim vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6557-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that Vim could be made to dereference invalid memory. An<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04<br>
+LTS. (CVE-2022-1725)<br>
+<br>
+It was discovered that Vim could be made to recurse infinitely. An<br>
+attacker could possibly use this issue to cause a denial of service. This<br>
+issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-1771)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds with a put<br>
+command. An attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 22.04<br>
+LTS. (CVE-2022-1886)<br>
+<br>
+It was discovered that Vim could be made to write out of bounds. An<br>
+attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 14.04 LTS, Ubuntu<br>
+18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2022-1897,<br>
+CVE-2022-2000)<br>
+<br>
+It was discovered that Vim did not properly manage memory in the spell<br>
+command. An attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 22.04<br>
+LTS. (CVE-2022-2042)<br>
+<br>
+It was discovered that Vim did not properly manage memory. An attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. (CVE-2023-46246, CVE-2023-48231)<br>
+<br>
+It was discovered that Vim could be made to divide by zero. An attacker<br>
+could possibly use this issue to cause a denial of service. This issue<br>
+only affected Ubuntu 23.04 and Ubuntu 23.10. (CVE-2023-48232)<br>
+<br>
+It was discovered that Vim contained multiple arithmetic overflows. An<br>
+attacker could possibly use these issues to cause a denial of service.<br>
+(CVE-2023-48233, CVE-2023-48234, CVE-2023-48235, CVE-2023-48236,<br>
+CVE-2023-48237)<br>
+<br>
+It was discovered that Vim did not properly manage memory in the<br>
+substitute command. An attacker could possibly use this issue to cause a<br>
+denial of service or execute arbitrary code. This issue only affected<br>
+Ubuntu 22.04 LTS, Ubuntu 23.04, and Ubuntu 23.10. (CVE-2023-48706)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1725<br>
+ - https://ubuntu.com/security/CVE-2022-1771<br>
+ - https://ubuntu.com/security/CVE-2022-1886<br>
+ - https://ubuntu.com/security/CVE-2022-1897<br>
+ - https://ubuntu.com/security/CVE-2022-2000<br>
+ - https://ubuntu.com/security/CVE-2022-2042<br>
+ - https://ubuntu.com/security/CVE-2023-46246<br>
+ - https://ubuntu.com/security/CVE-2023-48231<br>
+ - https://ubuntu.com/security/CVE-2023-48232<br>
+ - https://ubuntu.com/security/CVE-2023-48233<br>
+ - https://ubuntu.com/security/CVE-2023-48234<br>
+ - https://ubuntu.com/security/CVE-2023-48235<br>
+ - https://ubuntu.com/security/CVE-2023-48236<br>
+ - https://ubuntu.com/security/CVE-2023-48237<br>
+ - https://ubuntu.com/security/CVE-2023-48706<br>
+ - https://ubuntu.com/security/CVE-2023-48706<br>
+ - https://ubuntu.com/security/CVE-2023-48234<br>
+ - https://ubuntu.com/security/CVE-2023-48231<br>
+ - https://ubuntu.com/security/CVE-2023-46246<br>
+ - https://ubuntu.com/security/CVE-2023-48235<br>
+ - https://ubuntu.com/security/CVE-2022-1725<br>
+ - https://ubuntu.com/security/CVE-2023-48232<br>
+ - https://ubuntu.com/security/CVE-2022-2042<br>
+ - https://ubuntu.com/security/CVE-2022-2000<br>
+ - https://ubuntu.com/security/CVE-2022-1886<br>
+ - https://ubuntu.com/security/CVE-2023-48233<br>
+ - https://ubuntu.com/security/CVE-2023-48236<br>
+ - https://ubuntu.com/security/CVE-2022-1771<br>
+ - https://ubuntu.com/security/CVE-2022-1897<br>
+ - https://ubuntu.com/security/CVE-2023-48237<br>
+<br>
+**Title**: USN-6564-1: Node.js vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6564-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Hubert Kario discovered that Node.js incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted input<br>
+file, a remote attacker could possibly use this issue to obtain sensitive<br>
+information. (CVE-2022-4304)<br>
+<br>
+CarpetFuzz, Dawei Wang discovered that Node.js incorrectly handled certain<br>
+inputs. If a user or an automated system were tricked into opening a specially<br>
+crafted input file, a remote attacker could possibly use this issue to cause a<br>
+denial of service. (CVE-2022-4450)<br>
+<br>
+Octavio Galland and Marcel Böhme discovered that Node.js incorrectly handled<br>
+certain inputs. If a user or an automated system were tricked into opening a<br>
+specially crafted input file, a remote attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2023-0215)<br>
+<br>
+David Benjamin discovered that Node.js incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted input<br>
+file, a remote attacker could possibly use this issue to obtain sensitive<br>
+information. (CVE-2023-0286)<br>
+<br>
+Hubert Kario and Dmitry Belyavsky discovered that Node.js incorrectly handled<br>
+certain inputs. If a user or an automated system were tricked into opening a<br>
+specially crafted input file, a remote attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2023-0401)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-4304<br>
+ - https://ubuntu.com/security/CVE-2022-4450<br>
+ - https://ubuntu.com/security/CVE-2023-0215<br>
+ - https://ubuntu.com/security/CVE-2023-0286<br>
+ - https://ubuntu.com/security/CVE-2023-0401<br>
+ - https://ubuntu.com/security/CVE-2022-4450<br>
+ - https://ubuntu.com/security/CVE-2022-4304<br>
+ - https://ubuntu.com/security/CVE-2023-0286<br>
+ - https://ubuntu.com/security/CVE-2023-0401<br>
+ - https://ubuntu.com/security/CVE-2023-0215<br>
+<br>
+**Title**: USN-6556-1: Budgie Extras vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6556-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Budgie Extras incorrectly handled certain temporary file paths.<br>
+An attacker could possibly use this issue to inject false information or deny<br>
+access to the application. (CVE-2023-49342, CVE-2023-49343, CVE-2023-49347)<br>
+<br>
+Matthias Gerstner discovered that Budgie Extras incorrectly handled certain<br>
+temporary file paths. A local attacker could use this to inject arbitrary PNG<br>
+data in this path and have it displayed on the victim's desktop or deny access<br>
+to the application. (CVE-2023-49344)<br>
+<br>
+Matthias Gerstner discovered that Budgie Extras incorrectly handled certain<br>
+temporary file paths. A local attacker could use this to inject false information<br>
+or deny access to the application. (CVE-2023-49345, CVE-2023-49346)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-49342<br>
+ - https://ubuntu.com/security/CVE-2023-49343<br>
+ - https://ubuntu.com/security/CVE-2023-49347<br>
+ - https://ubuntu.com/security/CVE-2023-49344<br>
+ - https://ubuntu.com/security/CVE-2023-49345<br>
+ - https://ubuntu.com/security/CVE-2023-49346<br>
+ - https://ubuntu.com/security/CVE-2023-49346<br>
+ - https://ubuntu.com/security/CVE-2023-49343<br>
+ - https://ubuntu.com/security/CVE-2023-49344<br>
+ - https://ubuntu.com/security/CVE-2023-49347<br>
+ - https://ubuntu.com/security/CVE-2023-49345<br>
+ - https://ubuntu.com/security/CVE-2023-49342<br>
+<br>
+**Title**: USN-6563-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6563-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+obtain sensitive information, bypass security restrictions, cross-site<br>
+tracing, or execute arbitrary code.(CVE-2023-6857, CVE-2023-6858,<br>
+CVE-2023-6859, CVE-2023-6861, CVE-2023-6862, CVE-2023-6863, CVE-2023-6864)<br>
+<br>
+Marcus Brinkmann discovered that Thunderbird did not properly parse a PGP/MIME<br>
+payload that contains digitally signed text. An attacker could potentially<br>
+exploit this issue to spoof an email message. (CVE-2023-50762)<br>
+<br>
+Marcus Brinkmann discovered that Thunderbird did not properly compare the<br>
+signature creation date with the message date and time when using digitally<br>
+signed S/MIME email message. An attacker could potentially exploit this<br>
+issue to spoof date and time of an email message. (CVE-2023-50761)<br>
+<br>
+DoHyun Lee discovered that Thunderbird did not properly manage memory when<br>
+used on systems with the Mesa VM driver. An attacker could potentially<br>
+exploit this issue to execute arbitrary code. (CVE-2023-6856)<br>
+<br>
+Andrew Osmond discovered that Thunderbird did not properly validate the<br>
+textures produced by remote decoders. An attacker could potentially exploit<br>
+this issue to escape the sandbox. (CVE-2023-6860)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6857<br>
+ - https://ubuntu.com/security/CVE-2023-6858<br>
+ - https://ubuntu.com/security/CVE-2023-6859<br>
+ - https://ubuntu.com/security/CVE-2023-6861<br>
+ - https://ubuntu.com/security/CVE-2023-6862<br>
+ - https://ubuntu.com/security/CVE-2023-6863<br>
+ - https://ubuntu.com/security/CVE-2023-6864<br>
+ - https://ubuntu.com/security/CVE-2023-50762<br>
+ - https://ubuntu.com/security/CVE-2023-50761<br>
+ - https://ubuntu.com/security/CVE-2023-6856<br>
+ - https://ubuntu.com/security/CVE-2023-6860<br>
+ - https://ubuntu.com/security/CVE-2023-6859<br>
+ - https://ubuntu.com/security/CVE-2023-6860<br>
+ - https://ubuntu.com/security/CVE-2023-6863<br>
+ - https://ubuntu.com/security/CVE-2023-6858<br>
+ - https://ubuntu.com/security/CVE-2023-6864<br>
+ - https://ubuntu.com/security/CVE-2023-6856<br>
+ - https://ubuntu.com/security/CVE-2023-6857<br>
+ - https://ubuntu.com/security/CVE-2023-50762<br>
+ - https://ubuntu.com/security/CVE-2023-6861<br>
+ - https://ubuntu.com/security/CVE-2023-6862<br>
+ - https://ubuntu.com/security/CVE-2023-50761<br>
+
+
 #### <a id="jammy-1-329"></a> 1.329
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
