@@ -18976,6 +18976,393 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-809"></a> 621.809
+
+**Release Date**: January 29, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.213<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6579-1: Xerces-C++ vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6579-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Xerces-C++ was not properly handling memory<br>
+management operations when parsing XML data containing external DTDs,<br>
+which could trigger a use-after-free error. If a user or automated system<br>
+were tricked into processing a specially crafted XML document, an attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-1311<br>
+<br>
+**Title**: USN-6590-1: Xerces-C++ vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6590-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Xerces-C++ was not properly handling memory<br>
+management operations when parsing XML data containing external DTDs,<br>
+which could trigger a use-after-free error. If a user or automated system<br>
+were tricked into processing a specially crafted XML document, an attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. This issue only affected Ubuntu 22.04 LTS. (CVE-2018-1311)<br>
+<br>
+It was discovered that Xerces-C++ was not properly performing bounds<br>
+checks when processing XML Schema Definition files, which could lead to an<br>
+out-of-bounds access via an HTTP request. If a user or automated system<br>
+were tricked into processing a specially crafted XSD file, a remote<br>
+attacker could possibly use this issue to cause a denial of service.<br>
+(CVE-2023-37536)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2018-1311<br>
+ - https://ubuntu.com/security/CVE-2023-37536<br>
+ - https://ubuntu.com/security/CVE-2018-1311<br>
+ - https://ubuntu.com/security/CVE-2023-37536<br>
+<br>
+**Title**: USN-6559-1: ZooKeeper vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6559-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  It was discovered that ZooKeeper incorrectly handled authorization for<br>
+the getACL() command. A remote attacker could possibly use this issue to<br>
+obtain sensitive information. This issue only affected Ubuntu 14.04<br>
+LTS and Ubuntu 16.04 LTS. (CVE-2019-0201)<br>
+<br>
+Damien Diederen discovered that ZooKeeper incorrectly handled<br>
+authorization if SASL Quorum Peer authentication is enabled. An<br>
+attacker could possibly use this issue to bypass ZooKeeper's<br>
+authorization system. This issue only affected Ubuntu 18.04 LTS,<br>
+Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, Ubuntu 23.04<br>
+and Ubuntu 23.10. (CVE-2023-44981)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-0201<br>
+ - https://ubuntu.com/security/CVE-2023-44981<br>
+ - https://ubuntu.com/security/CVE-2023-44981<br>
+ - https://ubuntu.com/security/CVE-2019-0201<br>
+<br>
+**Title**: USN-6586-1: FreeImage vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6586-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that FreeImage incorrectly handled certain memory<br>
+operations. If a user were tricked into opening a crafted TIFF file, a<br>
+remote attacker could use this issue to cause a heap buffer overflow,<br>
+resulting in a denial of service attack. This issue only affected Ubuntu<br>
+16.04 LTS and Ubuntu 20.04 LTS. (CVE-2019-12211)<br>
+<br>
+It was discovered that FreeImage incorrectly processed images under<br>
+certain circumstances. If a user were tricked into opening a crafted TIFF<br>
+file, a remote attacker could possibly use this issue to cause a stack<br>
+exhaustion condition, resulting in a denial of service attack. This issue<br>
+only affected Ubuntu 16.04 LTS and Ubuntu 20.04 LTS. (CVE-2019-12213)<br>
+<br>
+It was discovered that FreeImage incorrectly processed certain images.<br>
+If a user or automated system were tricked into opening a specially<br>
+crafted image file, a remote attacker could possibly use this issue to<br>
+cause a denial of service or execute arbitrary code. (CVE-2020-21427,<br>
+CVE-2020-21428)<br>
+<br>
+It was discovered that FreeImage incorrectly processed certain images.<br>
+If a user or automated system were tricked into opening a specially<br>
+crafted PFM file, an attacker could possibly use this issue to cause a<br>
+denial of service. (CVE-2020-22524)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-12211<br>
+ - https://ubuntu.com/security/CVE-2019-12213<br>
+ - https://ubuntu.com/security/CVE-2020-21427<br>
+ - https://ubuntu.com/security/CVE-2020-21428<br>
+ - https://ubuntu.com/security/CVE-2020-22524<br>
+ - https://ubuntu.com/security/CVE-2020-21427<br>
+ - https://ubuntu.com/security/CVE-2020-21428<br>
+ - https://ubuntu.com/security/CVE-2019-12213<br>
+ - https://ubuntu.com/security/CVE-2020-22524<br>
+ - https://ubuntu.com/security/CVE-2019-12211<br>
+<br>
+**Title**: USN-6599-1: Jinja2 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6599-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Yeting Li discovered that Jinja incorrectly handled certain regex.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 14.04 LTS, Ubuntu 18.04 LTS, and<br>
+Ubuntu 20.04 LTS. (CVE-2020-28493)<br>
+<br>
+It was discovered that Jinja incorrectly handled certain HTML passed with<br>
+xmlatter filter. An attacker could inject arbitrary HTML attributes<br>
+keys and values potentially leading to XSS. (CVE-2024-22195)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-28493<br>
+ - https://ubuntu.com/security/CVE-2024-22195<br>
+ - https://ubuntu.com/security/CVE-2020-28493<br>
+ - https://ubuntu.com/security/CVE-2024-22195<br>
+<br>
+**Title**: USN-6584-1: Libspf2 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6584-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Philipp Jeitner and Haya Shulman discovered that Libspf2 incorrectly handled<br>
+certain inputs. If a user or an automated system were tricked into opening a<br>
+specially crafted input file, a remote attacker could possibly use this issue<br>
+to cause a denial of service or execute arbitrary code. (CVE-2021-20314)<br>
+<br>
+It was discovered that Libspf2 incorrectly handled certain inputs. If a user or<br>
+an automated system were tricked into opening a specially crafted input file, a<br>
+remote attacker could possibly use this issue to cause a denial of service or<br>
+execute arbitrary code. This issue only affected Ubuntu 18.04 LTS and <br>
+Ubuntu 20.04 LTS. (CVE-2021-33912, CVE-2021-33913)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-20314<br>
+ - https://ubuntu.com/security/CVE-2021-33912<br>
+ - https://ubuntu.com/security/CVE-2021-33913<br>
+ - https://ubuntu.com/security/CVE-2021-33912<br>
+ - https://ubuntu.com/security/CVE-2021-33913<br>
+ - https://ubuntu.com/security/CVE-2021-20314<br>
+<br>
+**Title**: USN-6571-1: Monit vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6571-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Youssef Rebahi-Gilbert discovered that Monit did not properly process<br>
+credentials for disabled accounts. An attacker could possibly use this <br>
+issue to login to the platform with an expired account and a valid <br>
+password.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-26563<br>
+<br>
+**Title**: USN-6038-2: Go vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6038-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6038-1 fixed several vulnerabilities in Go 1.18. This update provides<br>
+the corresponding updates for Go 1.13 and Go 1.16.<br>
+<br>
+CVE-2022-29526 and CVE-2022-30630 only affected Go 1.16.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that the Go net/http module incorrectly handled<br>
+ Transfer-Encoding headers in the HTTP/1 client. A remote attacker could<br>
+ possibly use this issue to perform an HTTP Request Smuggling attack.<br>
+ (CVE-2022-1705)<br>
+ <br>
+ It was discovered that Go did not properly manage memory under certain<br>
+ circumstances. An attacker could possibly use this issue to cause a panic<br>
+ resulting into a denial of service. (CVE-2022-1962, CVE-2022-27664,<br>
+ CVE-2022-28131, CVE-2022-30630, CVE-2022-30631, CVE-2022-30632,<br>
+ CVE-2022-30633, CVE-2022-30635, CVE-2022-32189, CVE-2022-41715,<br>
+ CVE-2022-41717, CVE-2023-24534, CVE-2023-24537)<br>
+ <br>
+ It was discovered that Go did not properly implemented the maximum size of<br>
+ file headers in Reader.Read. An attacker could possibly use this issue to<br>
+ cause a panic resulting into a denial of service. (CVE-2022-2879)<br>
+ <br>
+ It was discovered that the Go net/http module incorrectly handled query<br>
+ parameters in requests forwarded by ReverseProxy. A remote attacker could<br>
+ possibly use this issue to perform an HTTP Query Parameter Smuggling attack.<br>
+ (CVE-2022-2880)<br>
+ <br>
+ It was discovered that Go did not properly manage the permissions for<br>
+ Faccessat function. A attacker could possibly use this issue to expose<br>
+ sensitive information. (CVE-2022-29526)<br>
+ <br>
+ It was discovered that Go did not properly generate the values for<br>
+ ticket_age_add in session tickets. An attacker could possibly use this<br>
+ issue to observe TLS handshakes to correlate successive connections by<br>
+ comparing ticket ages during session resumption. (CVE-2022-30629)<br>
+ <br>
+ It was discovered that Go did not properly manage client IP addresses in<br>
+ net/http. An attacker could possibly use this issue to cause ReverseProxy<br>
+ to set the client IP as the value of the X-Forwarded-For header.<br>
+ (CVE-2022-32148)<br>
+ <br>
+ It was discovered that Go did not properly validate backticks (`) as<br>
+ Javascript string delimiters, and do not escape them as expected. An<br>
+ attacker could possibly use this issue to inject arbitrary Javascript code<br>
+ into the Go template. (CVE-2023-24538)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29526<br>
+ - https://ubuntu.com/security/CVE-2022-30630<br>
+ - https://ubuntu.com/security/CVE-2022-1705<br>
+ - https://ubuntu.com/security/CVE-2022-1962<br>
+ - https://ubuntu.com/security/CVE-2022-27664<br>
+ - https://ubuntu.com/security/CVE-2022-28131<br>
+ - https://ubuntu.com/security/CVE-2022-30630<br>
+ - https://ubuntu.com/security/CVE-2022-30631<br>
+ - https://ubuntu.com/security/CVE-2022-30632<br>
+ - https://ubuntu.com/security/CVE-2022-30633<br>
+ - https://ubuntu.com/security/CVE-2022-30635<br>
+ - https://ubuntu.com/security/CVE-2022-32189<br>
+ - https://ubuntu.com/security/CVE-2022-41715<br>
+ - https://ubuntu.com/security/CVE-2022-41717<br>
+ - https://ubuntu.com/security/CVE-2023-24534<br>
+ - https://ubuntu.com/security/CVE-2023-24537<br>
+ - https://ubuntu.com/security/CVE-2022-2879<br>
+ - https://ubuntu.com/security/CVE-2022-2880<br>
+ - https://ubuntu.com/security/CVE-2022-29526<br>
+ - https://ubuntu.com/security/CVE-2022-30629<br>
+ - https://ubuntu.com/security/CVE-2022-32148<br>
+ - https://ubuntu.com/security/CVE-2023-24538<br>
+ - https://ubuntu.com/security/CVE-2022-2879<br>
+ - https://ubuntu.com/security/CVE-2022-1705<br>
+ - https://ubuntu.com/security/CVE-2022-30630<br>
+ - https://ubuntu.com/security/CVE-2022-30633<br>
+ - https://ubuntu.com/security/CVE-2022-28131<br>
+ - https://ubuntu.com/security/CVE-2022-30635<br>
+ - https://ubuntu.com/security/CVE-2022-32148<br>
+ - https://ubuntu.com/security/CVE-2023-24534<br>
+ - https://ubuntu.com/security/CVE-2023-24538<br>
+ - https://ubuntu.com/security/CVE-2022-32189<br>
+ - https://ubuntu.com/security/CVE-2022-41717<br>
+ - https://ubuntu.com/security/CVE-2023-24537<br>
+ - https://ubuntu.com/security/CVE-2022-27664<br>
+ - https://ubuntu.com/security/CVE-2022-2880<br>
+ - https://ubuntu.com/security/CVE-2022-29526<br>
+ - https://ubuntu.com/security/CVE-2022-30631<br>
+ - https://ubuntu.com/security/CVE-2022-30632<br>
+ - https://ubuntu.com/security/CVE-2022-30629<br>
+<br>
+**Title**: USN-6577-1: Linux kernel (AWS) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6577-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Jana Hofmann, Emanuele Vannacci, Cedric Fournet, Boris Kopf, and Oleksii<br>
+Oleksenko discovered that some AMD processors could leak stale data from<br>
+division operations in certain situations. A local attacker could possibly<br>
+use this to expose sensitive information. (CVE-2023-20588)<br>
+<br>
+It was discovered that a race condition existed in the Linux kernel when<br>
+performing operations with kernel objects, leading to an out-of-bounds<br>
+write. A local attacker could use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2023-45863)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+<br>
+**Title**: USN-6602-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6602-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Jana Hofmann, Emanuele Vannacci, Cedric Fournet, Boris Kopf, and Oleksii<br>
+Oleksenko discovered that some AMD processors could leak stale data from<br>
+division operations in certain situations. A local attacker could possibly<br>
+use this to expose sensitive information. (CVE-2023-20588)<br>
+<br>
+It was discovered that a race condition existed in the Linux kernel when<br>
+performing operations with kernel objects, leading to an out-of-bounds<br>
+write. A local attacker could use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2023-45863)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+<br>
+**Title**: USN-6583-1: MySQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6583-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in MySQL and this update includes<br>
+new upstream MySQL versions to fix these issues.<br>
+<br>
+MySQL has been updated to 5.7.44 in Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
+<br>
+In addition to security fixes, the updated packages contain bug fixes, new<br>
+features, and possibly incompatible changes.<br>
+<br>
+Please see the following for more information:<br>
+<br>
+https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-44.html<br>
+https://www.oracle.com/security-alerts/cpuoct2023.html<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-22084<br>
+ - https://ubuntu.com/security/CVE-2023-22028<br>
+<br>
+**Title**: USN-6560-2: OpenSSH vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6560-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6560-1 fixed several vulnerabilities in OpenSSH. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Fabian Bäumer, Marcus Brinkmann, Jörg Schwenk discovered that the SSH<br>
+ protocol was vulnerable to a prefix truncation attack. If a remote attacker<br>
+ was able to intercept SSH communications, extension negotiation messages<br>
+ could be truncated, possibly leading to certain algorithms and features<br>
+ being downgraded. This issue is known as the Terrapin attack. This update<br>
+ adds protocol extensions to mitigate this issue. (CVE-2023-48795)<br>
+<br>
+ It was discovered that OpenSSH incorrectly handled user names or host names<br>
+ with shell metacharacters. An attacker could possibly use this issue to<br>
+ perform OS command injection. This only affected Ubuntu 18.04 LTS. (CVE-2023-51385)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-48795<br>
+ - https://ubuntu.com/security/CVE-2023-51385<br>
+ - https://ubuntu.com/security/CVE-2023-48795<br>
+ - https://ubuntu.com/security/CVE-2023-51385<br>
+<br>
+**Title**: USN-6591-1: Postfix vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6591-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Timo Longin discovered that Postfix incorrectly handled certain email line<br>
+endings. A remote attacker could possibly use this issue to bypass an email<br>
+authentication mechanism, allowing domain spoofing and potential spamming.<br>
+<br>
+Please note that certain configuration changes are required to address<br>
+this issue. They are not enabled by default for backward compatibility.<br>
+Information can be found at https://www.postfix.org/smtp-smuggling.html.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51764<br>
+<br>
+**Title**: USN-6570-1: PostgreSQL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6570-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Pedro Gallegos discovered that PostgreSQL incorrectly handled modifying<br>
+certain SQL array values. A remote attacker could use this issue to obtain<br>
+sensitive information, or possibly execute arbitrary code. (CVE-2023-5869)<br>
+<br>
+Hemanth Sandrana and Mahendrakar Srinivasarao discovered that PostgreSQL<br>
+allowed the pg_signal_backend role to signal certain superuser processes,<br>
+contrary to expectations. (CVE-2023-5870)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5869<br>
+ - https://ubuntu.com/security/CVE-2023-5870<br>
+ - https://ubuntu.com/security/CVE-2023-5869<br>
+ - https://ubuntu.com/security/CVE-2023-5870<br>
+<br>
+**Full Changelog**: https://github.com/pivotal-cf/bosh-linux-stemcell-builder-lts/compare/ubuntu-trusty/v3586.153...ubuntu-xenial/v621.809
+
 #### <a id="621-793"></a> 621.793
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
