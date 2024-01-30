@@ -18976,6 +18976,131 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-813"></a> 621.813
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: January 30, 2024
+
+#### Fixes<br>
+* The bosh-agent no longer blocks when running an asynchronous action and receiving a second asynchronous action. It will not run multiple actions in parallel, but it will not block so `get_task` actions are able to be processed.<br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.214<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6604-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6604-1<br>
+**Priorities**: low,high,medium<br>
+**Description**:<br>
+  It was discovered that the ASUS HID driver in the Linux kernel did not<br>
+properly handle device removal, leading to a use-after-free vulnerability.<br>
+A local attacker with physical access could plug in a specially crafted USB<br>
+device to cause a denial of service (system crash). (CVE-2023-1079)<br>
+<br>
+Jana Hofmann, Emanuele Vannacci, Cedric Fournet, Boris Kopf, and Oleksii<br>
+Oleksenko discovered that some AMD processors could leak stale data from<br>
+division operations in certain situations. A local attacker could possibly<br>
+use this to expose sensitive information. (CVE-2023-20588)<br>
+<br>
+It was discovered that a race condition existed in the Linux kernel when<br>
+performing operations with kernel objects, leading to an out-of-bounds<br>
+write. A local attacker could use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2023-45863)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+<br>
+**Title**: USN-6604-2: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6604-2<br>
+**Priorities**: low,high,medium<br>
+**Description**:<br>
+  It was discovered that the ASUS HID driver in the Linux kernel did not<br>
+properly handle device removal, leading to a use-after-free vulnerability.<br>
+A local attacker with physical access could plug in a specially crafted USB<br>
+device to cause a denial of service (system crash). (CVE-2023-1079)<br>
+<br>
+Jana Hofmann, Emanuele Vannacci, Cedric Fournet, Boris Kopf, and Oleksii<br>
+Oleksenko discovered that some AMD processors could leak stale data from<br>
+division operations in certain situations. A local attacker could possibly<br>
+use this to expose sensitive information. (CVE-2023-20588)<br>
+<br>
+It was discovered that a race condition existed in the Linux kernel when<br>
+performing operations with kernel objects, leading to an out-of-bounds<br>
+write. A local attacker could use this to cause a denial of service (system<br>
+crash) or execute arbitrary code. (CVE-2023-45863)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-20588<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-1079<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-45863<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+<br>
+**Title**: USN-6611-1: Exim vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6611-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Exim incorrectly handled certain requests.<br>
+A remote attacker could possibly use a published exploitation technique<br>
+to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass<br>
+of an SPF protection mechanism.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51766
+
 #### <a id="621-809"></a> 621.809
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
