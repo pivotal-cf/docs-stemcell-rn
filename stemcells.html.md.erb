@@ -15,6 +15,500 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-360"></a> 1.360
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 08, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.624.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6616-1: OpenLDAP vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6616-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that OpenLDAP was not properly performing bounds checks<br>
+when executing functions related to LDAP URLs. An attacker could possibly<br>
+use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-2953<br>
+<br>
+**Title**: USN-6614-1: amanda vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6614-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that amanda did not properly check certain arguments. A<br>
+local unprivileged attacker could possibly use this issue to perform a <br>
+privilege escalation attack.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-30577<br>
+<br>
+**Title**: USN-6612-1: TinyXML vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6612-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that TinyXML incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into opening a specially crafted<br>
+XML file, a remote attacker could possibly use this issue to cause a<br>
+denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-34194<br>
+<br>
+**Title**: USN-6613-1: Ceph vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6613-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Lucas Henry discovered that Ceph incorrectly handled specially<br>
+crafted POST requests. An uprivileged user could use this to <br>
+bypass Ceph's authorization checks and upload a file to any bucket.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-43040<br>
+<br>
+**Title**: USN-6591-2: Postfix update<br>
+**URL**: https://ubuntu.com/security/notices/USN-6591-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6591-1 fixed vulnerabilities in Postfix. A fix with less risk of<br>
+regression has been made available since the last update. This update<br>
+updates the fix and aligns with the latest configuration guidelines<br>
+regarding this vulnerability.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Timo Longin discovered that Postfix incorrectly handled certain email line<br>
+ endings. A remote attacker could possibly use this issue to bypass an email<br>
+ authentication mechanism, allowing domain spoofing and potential spamming.<br>
+ <br>
+ Please note that certain configuration changes are required to address<br>
+ this issue. They are not enabled by default for backward compatibility.<br>
+ Information can be found at https://www.postfix.org/smtp-smuggling.html.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51764<br>
+<br>
+**Title**: USN-6611-1: Exim vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6611-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Exim incorrectly handled certain requests.<br>
+A remote attacker could possibly use a published exploitation technique<br>
+to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass<br>
+of an SPF protection mechanism.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51766<br>
+<br>
+**Title**: USN-6606-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6606-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the Bluetooth subsystem<br>
+of the Linux kernel, leading to a use-after-free vulnerability. A local<br>
+attacker could use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-51779)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51779<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-51779<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+<br>
+**Title**: USN-6621-1: ImageMagick vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6621-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that ImageMagick incorrectly handled certain values when<br>
+processing BMP files. An attacker could exploit this to cause a denial of<br>
+service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5341<br>
+<br>
+**Title**: USN-6607-1: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6607-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that the SMB network file sharing protocol implementation<br>
+in the Linux kernel did not properly handle certain error conditions,<br>
+leading to a use-after-free vulnerability. A local attacker could use this<br>
+to cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2023-5345)<br>
+<br>
+Lin Ma discovered that the netfilter subsystem in the Linux kernel did not<br>
+properly validate network family support while creating a new netfilter<br>
+table. A local attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6040)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-5345<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+<br>
+**Title**: USN-6622-1: OpenSSL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6622-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  David Benjamin discovered that OpenSSL incorrectly handled excessively long<br>
+X9.42 DH keys. A remote attacker could possibly use this issue to cause<br>
+OpenSSL to consume resources, leading to a denial of service.<br>
+(CVE-2023-5678)<br>
+<br>
+Sverker Eriksson discovered that OpenSSL incorrectly handled POLY1304 MAC<br>
+on the PowerPC architecture. A remote attacker could use this issue to<br>
+cause OpenSSL to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 22.04 LTS and<br>
+Ubuntu 23.04. (CVE-2023-6129)<br>
+<br>
+It was discovered that OpenSSL incorrectly handled excessively long RSA<br>
+public keys. A remote attacker could possibly use this issue to cause<br>
+OpenSSL to consume resources, leading to a denial of service. This issue<br>
+only affected Ubuntu 22.04 LTS and Ubuntu 23.04. (CVE-2023-6237)<br>
+<br>
+Bahaa Naamneh discovered that OpenSSL incorrectly handled certain malformed<br>
+PKCS12 files. A remote attacker could possibly use this issue to cause<br>
+OpenSSL to crash, resulting in a denial of service. (CVE-2024-0727)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-5678<br>
+ - https://ubuntu.com/security/CVE-2023-6129<br>
+ - https://ubuntu.com/security/CVE-2023-6237<br>
+ - https://ubuntu.com/security/CVE-2024-0727<br>
+ - https://ubuntu.com/security/CVE-2023-6237<br>
+ - https://ubuntu.com/security/CVE-2023-5678<br>
+ - https://ubuntu.com/security/CVE-2024-0727<br>
+ - https://ubuntu.com/security/CVE-2023-6129<br>
+<br>
+**Title**: USN-6609-3: Linux kernel (Oracle) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6609-3<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Lin Ma discovered that the netfilter subsystem in the Linux kernel did not<br>
+properly validate network family support while creating a new netfilter<br>
+table. A local attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6040)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+<br>
+**Title**: USN-6609-2: Linux kernel (NVIDIA) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6609-2<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Lin Ma discovered that the netfilter subsystem in the Linux kernel did not<br>
+properly validate network family support while creating a new netfilter<br>
+table. A local attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6040)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+<br>
+**Title**: USN-6609-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6609-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Lin Ma discovered that the netfilter subsystem in the Linux kernel did not<br>
+properly validate network family support while creating a new netfilter<br>
+table. A local attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6040)<br>
+<br>
+It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6040<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+<br>
+**Title**: USN-6608-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6608-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that the CIFS network file system implementation in the<br>
+Linux kernel did not properly validate the server frame size in certain<br>
+situation, leading to an out-of-bounds read vulnerability. An attacker<br>
+could use this to construct a malicious CIFS image that, when operated on,<br>
+could cause a denial of service (system crash) or possibly expose sensitive<br>
+information. (CVE-2023-6606)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2023-6817)<br>
+<br>
+Budimir Markovic, Lucas De Marchi, and Pengfei Xu discovered that the perf<br>
+subsystem in the Linux kernel did not properly validate all event sizes<br>
+when attaching new events, leading to an out-of-bounds write vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6931)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.<br>
+(CVE-2024-0193)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6931<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-6606<br>
+<br>
+**Title**: USN-6587-3: X.Org X Server regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-6587-3<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6587-1 fixed vulnerabilities in X.Org X Server. The fix was incomplete<br>
+resulting in a possible regression. This update fixes the problem.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ memory when processing the DeviceFocusEvent and ProcXIQueryPointer APIs. An<br>
+ attacker could possibly use this issue to cause the X Server to crash,<br>
+ obtain sensitive information, or execute arbitrary code. (CVE-2023-6816)<br>
+ <br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ reattaching to a different master device. An attacker could use this issue<br>
+ to cause the X Server to crash, leading to a denial of service, or possibly<br>
+ execute arbitrary code. (CVE-2024-0229)<br>
+ <br>
+ Olivier Fourdan and Donn Seeley discovered that the X.Org X Server<br>
+ incorrectly labeled GLX PBuffers when used with SELinux. An attacker could<br>
+ use this issue to cause the X Server to crash, leading to a denial of<br>
+ service. (CVE-2024-0408)<br>
+ <br>
+ Olivier Fourdan discovered that the X.Org X Server incorrectly handled<br>
+ the curser code when used with SELinux. An attacker could use this issue to<br>
+ cause the X Server to crash, leading to a denial of service.<br>
+ (CVE-2024-0409)<br>
+ <br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ memory when processing the XISendDeviceHierarchyEvent API. An attacker<br>
+ could possibly use this issue to cause the X Server to crash, or execute<br>
+ arbitrary code. (CVE-2024-21885)<br>
+ <br>
+ Jan-Niklas Sohn discovered that the X.Org X Server incorrectly handled<br>
+ devices being disabled. An attacker could possibly use this issue to cause<br>
+ the X Server to crash, or execute arbitrary code. (CVE-2024-21886)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6816<br>
+ - https://ubuntu.com/security/CVE-2024-0229<br>
+ - https://ubuntu.com/security/CVE-2024-0408<br>
+ - https://ubuntu.com/security/CVE-2024-0409<br>
+ - https://ubuntu.com/security/CVE-2024-21885<br>
+ - https://ubuntu.com/security/CVE-2024-21886<br>
+<br>
+**Title**: USN-6619-1: runC vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6619-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Rory McNamara discovered that runC did not properly manage internal file<br>
+descriptor while managing containers. An attacker could possibly use this<br>
+issue to obtain sensitive information or bypass container restrictions.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-21626<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.351...ubuntu-jammy/v1.360
+
 #### <a id="jammy-1-351"></a> 1.351
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
