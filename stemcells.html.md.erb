@@ -33404,6 +33404,197 @@ An attacker could possibly use this issue to expose sensitive information.<br>
  - https://ubuntu.com/security/CVE-2022-28739<br>
  - https://ubuntu.com/security/CVE-2022-28739
 
+#### <a id="621-245"></a> 621.245
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: June 02, 2022
+
+#### Known issues<br>
+Xenial Stemcell Versions 621.241 through 621.305 contain a Linux kernel slab memory leak.<br>
+<br>
+Not all workloads and configurations are affected, but anyone planning to upgrade to one of these stemcell versions are urged to not use the affected versions and to use stemcell version 621.330 or later.<br>
+<br>
+For more information about how to detect the issue, please see this Knowledge Base article: <https://community.pivotal.io/s/article/Slab-memory-leak-Ubuntu-Xenial><br>
+<br>
+**NOTE**: This issue has been resolved in Stemcell version 621.330.<br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.78<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5449-1: libXv vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5449-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that libXv incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-5407<br>
+<br>
+**Title**: USN-5437-1: libXfixes vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5437-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  Tobias Stoeckmann discovered that libXfixes incorrectly handled certain<br>
+inputs. An attacker could possibly use this issue to cause a denial<br>
+of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2016-7944<br>
+<br>
+**Title**: LSN-0086-1: Kernel Live Patch Security Notice<br>
+**URL**: https://ubuntu.com/security/notices/LSN-0086-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the network scheduling<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code.(CVE-2021-39713)<br>
+<br>
+Yiqi Sun and Kevin Wang discovered that the cgroups implementation in the<br>
+Linux kernel did not properly restrict access to the cgroups v1<br>
+release_agent feature. A local attacker could use this to gain<br>
+administrative privileges.(CVE-2022-0492)<br>
+<br>
+It was discovered that the network traffic control implementation in the<br>
+Linux kernel contained a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code.(CVE-2022-1055)<br>
+<br>
+Bing-Jhong Billy Jheng discovered that the io_uring subsystem in the Linux<br>
+kernel contained in integer overflow. A local attacker could use this to<br>
+cause a denial of service (system crash) or execute arbitrary code.(CVE-2022-1116)<br>
+<br>
+It was discovered that the Linux kernel did not properly restrict access to<br>
+the kernel debugger when booted in secure boot environments. A privileged<br>
+attacker could use this to bypass UEFI Secure Boot restrictions.(CVE-2022-21499)<br>
+<br>
+Nick Gregory discovered that the Linux kernel incorrectly handled network<br>
+offload functionality. A local attacker could use this to cause a denial of<br>
+service or possibly execute arbitrary code.(CVE-2022-25636)<br>
+<br>
+Kyle Zeng discovered that the Network Queuing and Scheduling subsystem of<br>
+the Linux kernel did not properly perform reference counting in some<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or execute<br>
+arbitrary code.(CVE-2022-29581)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly enforce seccomp<br>
+restrictions in some situations. A local attacker could use this to bypass<br>
+intended seccomp sandbox restrictions.(CVE-2022-30594)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-39713<br>
+ - https://ubuntu.com/security/CVE-2022-0492<br>
+ - https://ubuntu.com/security/CVE-2022-1055<br>
+ - https://ubuntu.com/security/CVE-2022-1116<br>
+ - https://ubuntu.com/security/CVE-2022-21499<br>
+ - https://ubuntu.com/security/CVE-2022-25636<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594<br>
+ - https://ubuntu.com/security/CVE-2022-1055<br>
+ - https://ubuntu.com/security/CVE-2022-0492<br>
+ - https://ubuntu.com/security/CVE-2022-25636<br>
+ - https://ubuntu.com/security/CVE-2022-30594<br>
+ - https://ubuntu.com/security/CVE-2022-1116<br>
+ - https://ubuntu.com/security/CVE-2022-21499<br>
+ - https://ubuntu.com/security/CVE-2021-39713<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+<br>
+**Title**: USN-5452-1: NTFS-3G vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5452-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that NTFS-3G was incorrectly validating NTFS<br>
+metadata in its ntfsck tool by not performing boundary checks. A<br>
+local attacker could possibly use this issue to cause a denial of<br>
+service or to execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-46790<br>
+<br>
+**Title**: USN-5402-2: OpenSSL vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5402-2<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  USN-5402-1 fixed several vulnerabilities in OpenSSL. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Elison Niven discovered that OpenSSL incorrectly handled the c_rehash<br>
+ script. A local attacker could possibly use this issue to execute arbitrary<br>
+ commands when c_rehash is run. (CVE-2022-1292)<br>
+ <br>
+ Aliaksei Levin discovered that OpenSSL incorrectly handled resources when<br>
+ decoding certificates and keys. A remote attacker could possibly use this<br>
+ issue to cause OpenSSL to consume resources, leading to a denial of<br>
+ service. This issue only affected Ubuntu 22.04 LTS. (CVE-2022-1473)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1292<br>
+ - https://ubuntu.com/security/CVE-2022-1473<br>
+ - https://ubuntu.com/security/CVE-2022-1473<br>
+ - https://ubuntu.com/security/CVE-2022-1292<br>
+<br>
+**Title**: USN-5446-2: dpkg vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5446-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5446-1 fixed a vulnerability in dpkg. This update provides<br>
+the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Max Justicz discovered that dpkg incorrectly handled unpacking certain<br>
+ source packages. If a user or an automated system were tricked into<br>
+ unpacking a specially crafted source package, a remote attacker could<br>
+ modify files outside the target unpack directory, leading to a denial of<br>
+ service or potentially gaining access to the system.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-1664<br>
+<br>
+**Title**: USN-5404-2: Rsyslog vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5404-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-5404-1 addressed a vulnerability in Rsyslog. This update<br>
+provides the corresponding update for Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+Pieter Agten discovered that Rsyslog incorrectly handled certain requests.<br>
+An attacker could possibly use this issue to cause a crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-24903<br>
+<br>
+**Title**: USN-5453-1: FreeType vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-5453-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that FreeType incorrectly handled certain font files.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-27406<br>
+<br>
+**Title**: USN-5443-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5443-1<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  Kyle Zeng discovered that the Network Queuing and Scheduling subsystem of<br>
+the Linux kernel did not properly perform reference counting in some<br>
+situations, leading to a use-after-free vulnerability. A local attacker<br>
+could use this to cause a denial of service (system crash) or execute<br>
+arbitrary code. (CVE-2022-29581)<br>
+<br>
+Jann Horn discovered that the Linux kernel did not properly enforce seccomp<br>
+restrictions in some situations. A local attacker could use this to bypass<br>
+intended seccomp sandbox restrictions. (CVE-2022-30594)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594<br>
+ - https://ubuntu.com/security/CVE-2022-29581<br>
+ - https://ubuntu.com/security/CVE-2022-30594
+
 #### <a id="621-244"></a> 621.244
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
@@ -34017,6 +34208,70 @@ Original advisory details:<br>
 **CVEs**:<br>
  - https://ubuntu.com/security/CVE-2022-21716<br>
  - https://ubuntu.com/security/CVE-2022-21716
+
+#### <a id="621-236"></a> 621.236
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: April 21, 2022
+
+#### Notice:<br>
+The kernel patches included in 621.224 are now in the main kernel repository and have been included in this release.<br>
+<br>
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.72<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-5371-1: nginx vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5371-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  It was discovered that nginx Lua module mishandled certain inputs.<br>
+An attacker could possibly use this issue to perform an HTTP Request<br>
+Smuggling attack. This issue only affects Ubuntu 18.04 LTS and<br>
+Ubuntu 20.04 LTS. (CVE-2020-11724)<br>
+<br>
+It was discovered that nginx Lua module mishandled certain inputs.<br>
+An attacker could possibly use this issue to disclose sensitive<br>
+information. This issue only affects Ubuntu 18.04 LTS and<br>
+Ubuntu 20.04 LTS. (CVE-2020-36309)<br>
+<br>
+It was discovered that nginx mishandled the use of <br>
+compatible certificates among multiple encryption protocols. <br>
+If a remote attacker were able to intercept the communication, <br>
+this issue could be used to redirect traffic between subdomains.<br>
+(CVE-2021-3618)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-11724<br>
+ - https://ubuntu.com/security/CVE-2020-36309<br>
+ - https://ubuntu.com/security/CVE-2021-3618<br>
+ - https://ubuntu.com/security/CVE-2020-36309<br>
+ - https://ubuntu.com/security/CVE-2021-3618<br>
+ - https://ubuntu.com/security/CVE-2020-11724<br>
+<br>
+**Title**: USN-5373-2: Django vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-5373-2<br>
+**Priorities**: high,medium<br>
+**Description**:<br>
+  USN-5373-1 fixed several vulnerabilities in Django. This update provides<br>
+the corresponding update for Ubuntu 14.04 ESM and Ubuntu 16.04 ESM.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that Django incorrectly handled certain certain column<br>
+ aliases in the QuerySet.annotate(), aggregate(), and extra() methods. A<br>
+ remote attacker could possibly use this issue to perform an SQL injection<br>
+ attack. (CVE-2022-28346)<br>
+<br>
+ It was discovered that the Django URLValidator function incorrectly handled<br>
+ newlines and tabs. A remote attacker could possibly use this issue to<br>
+ perform a header injection attack. (CVE-2021-32052)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-28346<br>
+ - https://ubuntu.com/security/CVE-2021-32052<br>
+ - https://ubuntu.com/security/CVE-2021-32052<br>
+ - https://ubuntu.com/security/CVE-2022-28346
 
 #### <a id="621-224"></a> 621.224
 
