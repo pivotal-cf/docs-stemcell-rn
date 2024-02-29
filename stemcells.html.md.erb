@@ -15,6 +15,353 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-390"></a> 1.390
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: February 29, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.636.0<br>
+<br>
+#### Updates:<br>
+Stemcells are now built using `snapshot.ubuntu.com` APT repositories rather than `archive.ubuntu.com`. This is to help keep packages the same when rebuilding a stemcell. If a processes tries to install APT packages on a stemcell, they will only get package versions that existed when the stemcell was published.<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6655-1: GNU binutils vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6655-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that GNU binutils was not properly handling the logic<br>
+behind certain memory management related operations, which could lead to<br>
+an invalid memory access. An attacker could possibly use this issue to<br>
+cause a denial of service. (CVE-2022-47695)<br>
+<br>
+It was discovered that GNU binutils was not properly performing bounds<br>
+checks when dealing with memory allocation operations, which could lead<br>
+to excessive memory consumption. An attacker could possibly use this issue<br>
+to cause a denial of service. (CVE-2022-48063)<br>
+<br>
+It was discovered that GNU binutils incorrectly handled memory management<br>
+operations in several of its functions, which could lead to excessive<br>
+memory consumption due to memory leaks. An attacker could possibly use<br>
+these issues to cause a denial of service. (CVE-2022-48065)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-47695<br>
+ - https://ubuntu.com/security/CVE-2022-48063<br>
+ - https://ubuntu.com/security/CVE-2022-48065<br>
+ - https://ubuntu.com/security/CVE-2022-48063<br>
+ - https://ubuntu.com/security/CVE-2022-47695<br>
+ - https://ubuntu.com/security/CVE-2022-48065<br>
+<br>
+**Title**: USN-6626-3: Linux kernel (Azure) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6626-3<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Quentin Minster discovered that a race condition existed in the KSMBD<br>
+implementation in the Linux kernel when handling sessions operations. A<br>
+remote attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-32250, CVE-2023-32252,<br>
+CVE-2023-32257)<br>
+<br>
+Marek Marczykowski-Górecki discovered that the Xen event channel<br>
+infrastructure implementation in the Linux kernel contained a race<br>
+condition. An attacker in a guest VM could possibly use this to cause a<br>
+denial of service (paravirtualized device unavailability). (CVE-2023-34324)<br>
+<br>
+Zheng Wang discovered a use-after-free in the Renesas Ethernet AVB driver<br>
+in the Linux kernel during device removal. A privileged attacker could use<br>
+this to cause a denial of service (system crash). (CVE-2023-35827)<br>
+<br>
+Tom Dohrmann discovered that the Secure Encrypted Virtualization (SEV)<br>
+implementation for AMD processors in the Linux kernel contained a race<br>
+condition when accessing MMIO registers. A local attacker in a SEV guest VM<br>
+could possibly use this to cause a denial of service (system crash) or<br>
+possibly execute arbitrary code. (CVE-2023-46813)<br>
+<br>
+It was discovered that the Microchip USB Ethernet driver in the Linux<br>
+kernel contained a race condition during device removal, leading to a use-<br>
+after-free vulnerability. A physically proximate attacker could use this to<br>
+cause a denial of service (system crash). (CVE-2023-6039)<br>
+<br>
+It was discovered that the TLS subsystem in the Linux kernel did not<br>
+properly perform cryptographic operations in some situations, leading to a<br>
+null pointer dereference vulnerability. A local attacker could use this to<br>
+cause a denial of service (system crash) or possibly execute arbitrary<br>
+code. (CVE-2023-6176)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle dynset expressions passed from userspace, leading to a<br>
+null pointer dereference vulnerability. A local attacker could use this to<br>
+cause a denial of service (system crash). (CVE-2023-6622)<br>
+<br>
+It was discovered that the TIPC protocol implementation in the Linux kernel<br>
+did not properly handle locking during tipc_crypto_key_revoke() operations.<br>
+A local attacker could use this to cause a denial of service (kernel<br>
+deadlock). (CVE-2024-0641)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-32250<br>
+ - https://ubuntu.com/security/CVE-2023-32252<br>
+ - https://ubuntu.com/security/CVE-2023-32257<br>
+ - https://ubuntu.com/security/CVE-2023-34324<br>
+ - https://ubuntu.com/security/CVE-2023-35827<br>
+ - https://ubuntu.com/security/CVE-2023-46813<br>
+ - https://ubuntu.com/security/CVE-2023-6039<br>
+ - https://ubuntu.com/security/CVE-2023-6176<br>
+ - https://ubuntu.com/security/CVE-2023-6622<br>
+ - https://ubuntu.com/security/CVE-2024-0641<br>
+ - https://ubuntu.com/security/CVE-2023-6039<br>
+ - https://ubuntu.com/security/CVE-2023-32252<br>
+ - https://ubuntu.com/security/CVE-2023-32257<br>
+ - https://ubuntu.com/security/CVE-2023-32250<br>
+ - https://ubuntu.com/security/CVE-2023-35827<br>
+ - https://ubuntu.com/security/CVE-2023-6176<br>
+ - https://ubuntu.com/security/CVE-2023-46813<br>
+ - https://ubuntu.com/security/CVE-2023-6622<br>
+ - https://ubuntu.com/security/CVE-2023-34324<br>
+ - https://ubuntu.com/security/CVE-2024-0641<br>
+<br>
+**Title**: USN-6654-1: Roundcube Webmail vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6654-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Roundcube Webmail incorrectly sanitized characters<br>
+in the linkrefs text messages. An attacker could possibly use this issue to<br>
+execute a cross-site scripting (XSS) attack. (CVE-2023-43770)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-43770<br>
+ - https://ubuntu.com/security/CVE-2023-43770<br>
+<br>
+**Title**: USN-6657-1: Dnsmasq vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6657-1<br>
+**Priorities**: medium,low<br>
+**Description**:<br>
+  Elias Heftrig, Haya Schulmann, Niklas Vogel, and Michael Waidner discovered<br>
+that Dnsmasq icorrectly handled validating DNSSEC messages. A remote<br>
+attacker could possibly use this issue to cause Dnsmasq to consume<br>
+resources, leading to a denial of service. (CVE-2023-50387)<br>
+<br>
+It was discovered that Dnsmasq incorrectly handled preparing an NSEC3<br>
+closest encloser proof. A remote attacker could possibly use this issue to<br>
+cause Dnsmasq to consume resources, leading to a denial of service.<br>
+(CVE-2023-50868)<br>
+<br>
+It was discovered that Dnsmasq incorrectly set the maximum EDNS.0 UDP<br>
+packet size as required by DNS Flag Day 2020. This issue only affected<br>
+Ubuntu 23.10. (CVE-2023-28450)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-50387<br>
+ - https://ubuntu.com/security/CVE-2023-50868<br>
+ - https://ubuntu.com/security/CVE-2023-28450<br>
+ - https://ubuntu.com/security/CVE-2023-50387<br>
+ - https://ubuntu.com/security/CVE-2023-50868<br>
+ - https://ubuntu.com/security/CVE-2023-28450<br>
+<br>
+**Title**: USN-6639-1: Linux kernel (OEM) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6639-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the ATM (Asynchronous<br>
+Transfer Mode) subsystem of the Linux kernel, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51780)<br>
+<br>
+It was discovered that a race condition existed in the AppleTalk networking<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-51781)<br>
+<br>
+It was discovered that a race condition existed in the Rose X.25 protocol<br>
+implementation in the Linux kernel, leading to a use-after- free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51782)<br>
+<br>
+Alon Zahavi discovered that the NVMe-oF/TCP subsystem of the Linux kernel<br>
+did not properly handle connect command payloads in certain situations,<br>
+leading to an out-of-bounds read vulnerability. A remote attacker could use<br>
+this to expose sensitive information (kernel memory). (CVE-2023-6121)<br>
+<br>
+Jann Horn discovered that a race condition existed in the Linux kernel when<br>
+handling io_uring over sockets, leading to a use-after-free vulnerability.<br>
+A local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6531)<br>
+<br>
+Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle dynset expressions passed from userspace, leading to a<br>
+null pointer dereference vulnerability. A local attacker could use this to<br>
+cause a denial of service (system crash). (CVE-2023-6622)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-6932)<br>
+<br>
+Robert Morris discovered that the CIFS network file system implementation<br>
+in the Linux kernel did not properly validate certain server commands<br>
+fields, leading to an out-of-bounds read vulnerability. An attacker could<br>
+use this to cause a denial of service (system crash) or possibly expose<br>
+sensitive information. (CVE-2024-0565)<br>
+<br>
+Dan Carpenter discovered that the netfilter subsystem in the Linux kernel<br>
+did not store data in properly sized memory locations. A local user could<br>
+use this to cause a denial of service (system crash). (CVE-2024-0607)<br>
+<br>
+Jann Horn discovered that the TLS subsystem in the Linux kernel did not<br>
+properly handle spliced messages, leading to an out-of-bounds write<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2024-0646)<br>
+<br>
+Yang Chaoming discovered that the KSMBD implementation in the Linux kernel<br>
+did not properly validate request buffer sizes, leading to an out-of-bounds<br>
+read vulnerability. An attacker could use this to cause a denial of service<br>
+(system crash) or possibly expose sensitive information. (CVE-2024-22705)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+ - https://ubuntu.com/security/CVE-2023-6121<br>
+ - https://ubuntu.com/security/CVE-2023-6531<br>
+ - https://ubuntu.com/security/CVE-2023-6622<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2024-0607<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2024-22705<br>
+ - https://ubuntu.com/security/CVE-2023-6531<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2024-22705<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2023-6121<br>
+ - https://ubuntu.com/security/CVE-2024-0607<br>
+ - https://ubuntu.com/security/CVE-2023-6622<br>
+<br>
+**Title**: USN-6651-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6651-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the ATM (Asynchronous<br>
+Transfer Mode) subsystem of the Linux kernel, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51780)<br>
+<br>
+It was discovered that a race condition existed in the AppleTalk networking<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-51781)<br>
+<br>
+Zhenghan Wang discovered that the generic ID allocator implementation in<br>
+the Linux kernel did not properly check for null bitmap when releasing IDs.<br>
+A local attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-6915)<br>
+<br>
+Robert Morris discovered that the CIFS network file system implementation<br>
+in the Linux kernel did not properly validate certain server commands<br>
+fields, leading to an out-of-bounds read vulnerability. An attacker could<br>
+use this to cause a denial of service (system crash) or possibly expose<br>
+sensitive information. (CVE-2024-0565)<br>
+<br>
+Jann Horn discovered that the io_uring subsystem in the Linux kernel did<br>
+not properly handle the release of certain buffer rings. A local attacker<br>
+could use this to cause a denial of service (system crash) or possibly<br>
+execute arbitrary code. (CVE-2024-0582)<br>
+<br>
+Jann Horn discovered that the TLS subsystem in the Linux kernel did not<br>
+properly handle spliced messages, leading to an out-of-bounds write<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2024-0646)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2023-6915<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2024-0582<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2023-6915<br>
+ - https://ubuntu.com/security/CVE-2024-0582<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+<br>
+**Title**: USN-6653-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6653-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the ATM (Asynchronous<br>
+Transfer Mode) subsystem of the Linux kernel, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51780)<br>
+<br>
+It was discovered that a race condition existed in the AppleTalk networking<br>
+subsystem of the Linux kernel, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code. (CVE-2023-51781)<br>
+<br>
+Zhenghan Wang discovered that the generic ID allocator implementation in<br>
+the Linux kernel did not properly check for null bitmap when releasing IDs.<br>
+A local attacker could use this to cause a denial of service (system<br>
+crash). (CVE-2023-6915)<br>
+<br>
+Robert Morris discovered that the CIFS network file system implementation<br>
+in the Linux kernel did not properly validate certain server commands<br>
+fields, leading to an out-of-bounds read vulnerability. An attacker could<br>
+use this to cause a denial of service (system crash) or possibly expose<br>
+sensitive information. (CVE-2024-0565)<br>
+<br>
+Jann Horn discovered that the TLS subsystem in the Linux kernel did not<br>
+properly handle spliced messages, leading to an out-of-bounds write<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2024-0646)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2023-6915<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2024-0565<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-6915<br>
+ - https://ubuntu.com/security/CVE-2023-51781<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+<br>
+**Title**: USN-6650-1: Linux kernel (OEM) vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6650-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Zhenghan Wang discovered that the generic ID allocator implementation in<br>
+the Linux kernel did not properly check for null bitmap when releasing IDs.<br>
+A local attacker could use this to cause a denial of service (system<br>
+crash).<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6915<br>
+<br>
+**Title**: USN-6656-1: PostgreSQL vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6656-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PostgreSQL incorrectly handled dropping privileges<br>
+when handling REFRESH MATERIALIZED VIEW CONCURRENTLY commands. If a user or<br>
+automatic system were tricked into running a specially crafted command, a<br>
+remote attacker could possibly use this issue to execute arbitrary SQL<br>
+functions.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-0985<br>
+<br>
+**Title**: USN-6658-1: libxml2 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6658-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libxml2 incorrectly handled certain XML documents. A<br>
+remote attacker could possibly use this issue to cause libxml2 to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-25062
+
 #### <a id="jammy-1-379"></a> 1.379
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
