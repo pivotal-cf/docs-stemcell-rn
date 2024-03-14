@@ -21355,6 +21355,340 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-897"></a> 621.897
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 14, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.238<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6685-1: mqtt-client vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6685-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that mqtt-client incorrectly handled memory while parsing<br>
+malformed MQTT frames. An attacker could possibly use this issue to cause a<br>
+crash, resulting in a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-0222<br>
+<br>
+**Title**: USN-6678-1: libgit2 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6678-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libgit2 mishandled equivalent filenames on NTFS<br>
+partitions. If a user or automated system were tricked into cloning a<br>
+specially crafted repository, an attacker could possibly use this issue to<br>
+execute arbitrary code. This issue only affected Ubuntu 16.04 LTS and<br>
+Ubuntu 18.04 LTS. (CVE-2020-12278, CVE-2020-12279)<br>
+<br>
+It was discovered that libgit2 did not perform certificate checking by<br>
+default. An attacker could possibly use this issue to perform a<br>
+machine-in-the-middle attack. This issue only affected Ubuntu 16.04 LTS,<br>
+Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS. (CVE-2023-22742)<br>
+<br>
+It was discovered that libgit2 could be made to run into an infinite loop.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 23.10. (CVE-2024-24575)<br>
+<br>
+It was discovered that libgit2 did not properly manage memory. An attacker<br>
+could possibly use this issue to cause a denial of service or execute<br>
+arbitrary code. (CVE-2024-24577)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2020-12278<br>
+ - https://ubuntu.com/security/CVE-2020-12279<br>
+ - https://ubuntu.com/security/CVE-2023-22742<br>
+ - https://ubuntu.com/security/CVE-2024-24575<br>
+ - https://ubuntu.com/security/CVE-2024-24577<br>
+ - https://ubuntu.com/security/CVE-2024-24575<br>
+ - https://ubuntu.com/security/CVE-2024-24577<br>
+ - https://ubuntu.com/security/CVE-2020-12278<br>
+ - https://ubuntu.com/security/CVE-2023-22742<br>
+ - https://ubuntu.com/security/CVE-2020-12279<br>
+<br>
+**Title**: USN-6584-2: Libspf2 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6584-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6584-1 fixed several vulnerabilities in Ubuntu 18.04 LTS and<br>
+Ubuntu 20.04 LTS. This update provides the corresponding updates for<br>
+CVE-2021-33912 and CVE-2021-33913 in Ubuntu 16.04 LTS.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Philipp Jeitner and Haya Shulman discovered that Libspf2 incorrectly handled<br>
+ certain inputs. If a user or an automated system were tricked into opening a<br>
+ specially crafted input file, a remote attacker could possibly use this issue<br>
+ to cause a denial of service or execute arbitrary code. (CVE-2021-20314)<br>
+ <br>
+ It was discovered that Libspf2 incorrectly handled certain inputs. If a user or<br>
+ an automated system were tricked into opening a specially crafted input file, a<br>
+ remote attacker could possibly use this issue to cause a denial of service or<br>
+ execute arbitrary code. This issue only affected Ubuntu 18.04 LTS and <br>
+ Ubuntu 20.04 LTS. (CVE-2021-33912, CVE-2021-33913)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2021-33912<br>
+ - https://ubuntu.com/security/CVE-2021-33913<br>
+ - https://ubuntu.com/security/CVE-2021-20314<br>
+ - https://ubuntu.com/security/CVE-2021-33912<br>
+ - https://ubuntu.com/security/CVE-2021-33913<br>
+ - https://ubuntu.com/security/CVE-2021-33913<br>
+ - https://ubuntu.com/security/CVE-2021-33912<br>
+<br>
+**Title**: USN-6659-1: libde265 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6659-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libde265 could be made to write out of bounds. If a<br>
+user or automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. (CVE-2022-43244, CVE-2022-43249,<br>
+CVE-2022-43250, CVE-2022-47665, CVE-2023-25221)<br>
+<br>
+It was discovered that libde265 could be made to read out of bounds. If a<br>
+user or automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service. (CVE-2022-43245)<br>
+<br>
+It was discovered that libde265 could be made to dereference invalid<br>
+memory. If a user or automated system were tricked into opening a specially<br>
+crafted file, an attacker could possibly use this issue to cause a denial<br>
+of service. (CVE-2023-24751, CVE-2023-24752, CVE-2023-24754,<br>
+CVE-2023-24755, CVE-2023-24756, CVE-2023-24757, CVE-2023-24758)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-43244<br>
+ - https://ubuntu.com/security/CVE-2022-43249<br>
+ - https://ubuntu.com/security/CVE-2022-43250<br>
+ - https://ubuntu.com/security/CVE-2022-47665<br>
+ - https://ubuntu.com/security/CVE-2023-25221<br>
+ - https://ubuntu.com/security/CVE-2022-43245<br>
+ - https://ubuntu.com/security/CVE-2023-24751<br>
+ - https://ubuntu.com/security/CVE-2023-24752<br>
+ - https://ubuntu.com/security/CVE-2023-24754<br>
+ - https://ubuntu.com/security/CVE-2023-24755<br>
+ - https://ubuntu.com/security/CVE-2023-24756<br>
+ - https://ubuntu.com/security/CVE-2023-24757<br>
+ - https://ubuntu.com/security/CVE-2023-24758<br>
+ - https://ubuntu.com/security/CVE-2022-47665<br>
+ - https://ubuntu.com/security/CVE-2023-24752<br>
+ - https://ubuntu.com/security/CVE-2022-43244<br>
+ - https://ubuntu.com/security/CVE-2023-24754<br>
+ - https://ubuntu.com/security/CVE-2023-24756<br>
+ - https://ubuntu.com/security/CVE-2022-43245<br>
+ - https://ubuntu.com/security/CVE-2023-24758<br>
+ - https://ubuntu.com/security/CVE-2023-24751<br>
+ - https://ubuntu.com/security/CVE-2023-25221<br>
+ - https://ubuntu.com/security/CVE-2022-43250<br>
+ - https://ubuntu.com/security/CVE-2022-43249<br>
+ - https://ubuntu.com/security/CVE-2023-24757<br>
+ - https://ubuntu.com/security/CVE-2023-24755<br>
+<br>
+**Title**: USN-6677-1: libde265 vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6677-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libde265 could be made to dereference invalid<br>
+memory. If a user or automated system were tricked into opening a specially<br>
+crafted file, an attacker could possibly use this issue to cause a denial<br>
+of service. This issue only affected Ubuntu 20.04 LTS and Ubuntu 22.04 LTS.<br>
+(CVE-2023-27102)<br>
+<br>
+It was discovered that libde265 could be made to write out of bounds. If a<br>
+user or automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. This issue only affected Ubuntu 16.04<br>
+LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.<br>
+(CVE-2023-27103)<br>
+<br>
+It was discovered that libde265 could be made to write out of bounds. If a<br>
+user or automated system were tricked into opening a specially crafted<br>
+file, an attacker could possibly use this issue to cause a denial of<br>
+service or execute arbitrary code. (CVE-2023-43887, CVE-2023-47471,<br>
+CVE-2023-49465, CVE-2023-49467, CVE-2023-49468)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-27102<br>
+ - https://ubuntu.com/security/CVE-2023-27103<br>
+ - https://ubuntu.com/security/CVE-2023-43887<br>
+ - https://ubuntu.com/security/CVE-2023-47471<br>
+ - https://ubuntu.com/security/CVE-2023-49465<br>
+ - https://ubuntu.com/security/CVE-2023-49467<br>
+ - https://ubuntu.com/security/CVE-2023-49468<br>
+ - https://ubuntu.com/security/CVE-2023-49468<br>
+ - https://ubuntu.com/security/CVE-2023-49465<br>
+ - https://ubuntu.com/security/CVE-2023-27102<br>
+ - https://ubuntu.com/security/CVE-2023-49467<br>
+ - https://ubuntu.com/security/CVE-2023-27103<br>
+ - https://ubuntu.com/security/CVE-2023-47471<br>
+ - https://ubuntu.com/security/CVE-2023-43887<br>
+<br>
+**Title**: USN-6305-2: PHP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6305-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6305-1 fixed several vulnerabilities in PHP. This update provides<br>
+the corresponding update for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that PHP incorrectly handled certain XML files.<br>
+ An attacker could possibly use this issue to expose sensitive information.<br>
+ (CVE-2023-3823)<br>
+<br>
+ It was discovered that PHP incorrectly handled certain PHAR files.<br>
+ An attacker could possibly use this issue to cause a crash,<br>
+ expose sensitive information or execute arbitrary code.<br>
+ (CVE-2023-3824)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3823<br>
+ - https://ubuntu.com/security/CVE-2023-3824<br>
+ - https://ubuntu.com/security/CVE-2023-3823<br>
+ - https://ubuntu.com/security/CVE-2023-3824<br>
+<br>
+**Title**: USN-6654-1: Roundcube Webmail vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6654-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Roundcube Webmail incorrectly sanitized characters<br>
+in the linkrefs text messages. An attacker could possibly use this issue to<br>
+execute a cross-site scripting (XSS) attack. (CVE-2023-43770)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-43770<br>
+ - https://ubuntu.com/security/CVE-2023-43770<br>
+<br>
+**Title**: USN-6684-1: ncurses vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6684-1<br>
+**Priorities**: low<br>
+**Description**:<br>
+  It was discovered that ncurses incorrectly handled certain function return<br>
+values, possibly leading to segmentation fault. A local attacker could possibly<br>
+use this to cause a denial of service (system crash).<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-50495<br>
+<br>
+**Title**: USN-6646-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6646-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the ATM (Asynchronous<br>
+Transfer Mode) subsystem of the Linux kernel, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51780)<br>
+<br>
+It was discovered that a race condition existed in the Rose X.25 protocol<br>
+implementation in the Linux kernel, leading to a use-after- free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51782)<br>
+<br>
+It was discovered that the netfilter connection tracker for netlink in the<br>
+Linux kernel did not properly perform reference counting in some error<br>
+conditions. A local attacker could possibly use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2023-7192)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+<br>
+**Title**: USN-6647-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6647-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that a race condition existed in the ATM (Asynchronous<br>
+Transfer Mode) subsystem of the Linux kernel, leading to a use-after-free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51780)<br>
+<br>
+It was discovered that a race condition existed in the Rose X.25 protocol<br>
+implementation in the Linux kernel, leading to a use-after- free<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code. (CVE-2023-51782)<br>
+<br>
+It was discovered that the netfilter connection tracker for netlink in the<br>
+Linux kernel did not properly perform reference counting in some error<br>
+conditions. A local attacker could possibly use this to cause a denial of<br>
+service (memory exhaustion). (CVE-2023-7192)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+ - https://ubuntu.com/security/CVE-2023-51780<br>
+ - https://ubuntu.com/security/CVE-2023-51782<br>
+<br>
+**Title**: LSN-0101-1: Kernel Live Patch Security Notice<br>
+**URL**: https://ubuntu.com/security/notices/LSN-0101-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Xingyuan Mo discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly handle inactive elements in its PIPAPO data structure, leading<br>
+to a use-after-free vulnerability. A local attacker could use this to cause<br>
+a denial of service (system crash) or possibly execute arbitrary code.(CVE-2023-6817)<br>
+<br>
+It was discovered that the IGMP protocol implementation in the Linux kernel<br>
+contained a race condition, leading to a use-after-free vulnerability. A<br>
+local attacker could use this to cause a denial of service (system crash)<br>
+or possibly execute arbitrary code.(CVE-2023-6932)<br>
+<br>
+It was discovered that the netfilter connection tracker for netlink in the<br>
+Linux kernel did not properly perform reference counting in some error<br>
+conditions. A local attacker could possibly use this to cause a denial of<br>
+service (memory exhaustion).(CVE-2023-7192)<br>
+<br>
+Kevin Rich discovered that the netfilter subsystem in the Linux kernel did<br>
+not properly check deactivated elements in certain situations, leading to a<br>
+use-after-free vulnerability. A local attacker could use this to cause a<br>
+denial of service (system crash) or possibly execute arbitrary code.(CVE-2024-0193)<br>
+<br>
+Jann Horn discovered that the TLS subsystem in the Linux kernel did not<br>
+properly handle spliced messages, leading to an out-of-bounds write<br>
+vulnerability. A local attacker could use this to cause a denial of service<br>
+(system crash) or possibly execute arbitrary code.(CVE-2024-0646)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+ - https://ubuntu.com/security/CVE-2023-6817<br>
+ - https://ubuntu.com/security/CVE-2023-6932<br>
+ - https://ubuntu.com/security/CVE-2023-7192<br>
+ - https://ubuntu.com/security/CVE-2024-0193<br>
+ - https://ubuntu.com/security/CVE-2024-0646<br>
+<br>
+**Title**: USN-6658-2: libxml2 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6658-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6658-1 fixed a vulnerability in libxml2. This update<br>
+provides the corresponding updates for Ubuntu 14.04 LTS,<br>
+Ubuntu 16.04 LTS, and Ubuntu 18.04 LTS.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that libxml2 incorrectly handled certain XML documents. A<br>
+ remote attacker could possibly use this issue to cause libxml2 to crash,<br>
+ resulting in a denial of service, or possibly execute arbitrary code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-25062<br>
+<br>
+**Title**: USN-6676-1: c-ares vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6676-1<br>
+**Priorities**: unknown<br>
+**Description**:<br>
+  Vojtěch Vobr discovered that c-ares incorrectly handled user input from <br>
+local configuration files. An attacker could possibly use this issue to <br>
+cause a denial of service via application crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-25629
+
 #### <a id="621-872"></a> 621.872
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
