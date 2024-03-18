@@ -15,6 +15,72 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-406"></a> 1.406
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: March 18, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.640.0<br>
+<br>
+#### Updates:<br>
+<br>
+- [Bug fix]: [`bosh-agent compile` generates broken compiled releases](https://github.com/cloudfoundry/bosh-agent/issues/319)<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6692-1: Gson vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6692-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Gson incorrectly handled deserialization of untrusted<br>
+input data. If a user or an automated system were tricked into opening a<br>
+specially crafted input file, a remote attacker could possibly use this issue<br>
+to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-25647<br>
+<br>
+**Title**: USN-6690-1: Open vSwitch vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6690-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Timothy Redaelli and Haresh Khandelwal discovered that Open vSwitch<br>
+incorrectly handled certain crafted Geneve packets when hardware offloading<br>
+via the netlink path is enabled. A remote attacker could possibly use this<br>
+issue to cause Open vSwitch to crash, leading to a denial of service.<br>
+(CVE-2023-3966)<br>
+<br>
+It was discovered that Open vSwitch incorrectly handled certain ICMPv6<br>
+Neighbor Advertisement packets. A remote attacker could possibly use this<br>
+issue to redirect traffic to arbitrary IP addresses. (CVE-2023-5366)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-3966<br>
+ - https://ubuntu.com/security/CVE-2023-5366<br>
+ - https://ubuntu.com/security/CVE-2023-5366<br>
+ - https://ubuntu.com/security/CVE-2023-3966<br>
+<br>
+**Title**: USN-6693-1: .NET vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6693-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that .NET did not properly handle certain specially<br>
+crafted requests. An attacker could potentially use this issue to cause<br>
+a resource leak, leading to a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-21392<br>
+<br>
+**Title**: USN-6691-1: OVN vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6691-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that OVN incorrectly enabled OVS Bidirectional Forwarding<br>
+Detection on logical ports. A remote attacker could possibly use this issue<br>
+to disrupt traffic.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-2182<br>
+
+
 #### <a id="jammy-1-404"></a> 1.404
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
