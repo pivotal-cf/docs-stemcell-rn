@@ -3,7 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: harbor-repo.vmware.com/dockerhub-proxy-cache/library/ruby
+    repository: ruby
     tag: 3.2
 
 inputs:
