@@ -25,7 +25,7 @@ template_variables:
 
   # Tanzu product variables
   product_network: VMware Tanzu Network
-  platform_name: Ops Manager
+  platform_name: Tanzu Operations Manager
   platform_old: Pivotal Cloud Foundry
   platform_code: PCF
   product_name_lc: pcf
@@ -37,8 +37,8 @@ template_variables:
   k8s_runtime_abbr: TKGI
   windows_runtime_full: VMware Tanzu Application Service for VMs &#91;Windows&#93;
   windows_runtime_abbr: TAS for VMs &#91;Windows&#93;
-  ops_manager_full: Ops Manager
-  ops_manager: Ops Manager
+  ops_manager_full: Tanzu Operations Manager
+  ops_manager: Operations Manager
 
 # Deprecated variables -- replace with current product variables when possible
   product_name: Ops Manager
