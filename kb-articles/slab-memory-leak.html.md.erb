@@ -1,0 +1,29 @@
+---
+title: Slab Memory Leak on Ubuntu Xenial Stemcells
+owner: Windows
+---
+
+This topic describes how to deal with a slab memory leak that can affect Tanzu Application Service (TAS for VMs) and TKGi environments that use Ubuntu Xenial stemcell versions 621.241 and higher.
+
+This issue may result in intermittent unresponsive VMs. This problem has not been seen on all TAS and TKGi foundations, but only those with certain characteristics (BOSH add-ons, specific application workloads, for example).
+
+`/proc/meminfo` shows low free memory and high Slab memory.
+
+![/proc/meminfo output](./proc-meminfo.png)
+
+The `slabtop` command shows high memory usage by TCP.
+
+![slabtop command output](./slabtop-command.png)
+
+Canonical has released a fix in the Ubuntu kernel v4.15.0-197.208, from changelog [https://www.ubuntuupdates.org/package/core/bionic/main/updates/linux-source-4.15.0](https://www.ubuntuupdates.org/package/core/bionic/main/updates/linux-source-4.15.0):
+
+```
+Memory leak while using NFQUEUE to delegate the decision on TCP packets to
+    userspace processes (LP: #1991774)
+    - SAUCE: netfilter: nf_queue: Fix memory leak in nf_queue_entry_get_refs
+```
+
+Ubuntu Xenial stemcell 621.330 includes the Ubuntu kernel v4.15.0-197
+[Ubuntu Ubuntu kernel v4.15.0-197](../stemcells.html#621-line)
+
+<!---old link https://docs.pivotal.io/stemcells/stemcells.html#621-line --->
