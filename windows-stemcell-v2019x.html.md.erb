@@ -9,7 +9,7 @@ This topic includes release notes for Windows stemcells used with the following 
 - <%= vars.windows_runtime_full %> (<%= vars.windows_runtime_abbr %>) v2.5 and later:
   - For Windows stemcell compatibilities with <%= vars.windows_runtime_abbr %>, see specific stemcell version notes below.
 - VMware <%= vars.k8s_runtime_full %> (<%= vars.k8s_runtime_abbr %>, formerly PKS) v1.5 and later:
-  - For Windows stemcell compatibilites with <%= vars.k8s_runtime_abbr %>, refer to the [Release Notes](https://docs.pivotal.io/tkgi/release-notes.html) for your <%= vars.k8s_runtime_abbr %> version.
+  - For Windows stemcell compatibilites with <%= vars.k8s_runtime_abbr %>, refer to the [Release Notes](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.19/tkgi/GUID-release-notes.html) for your <%= vars.k8s_runtime_abbr %> version.
 
 The stemcell is based on Windows Server, version 2019.
 
@@ -17,7 +17,7 @@ To download a stemcell, see [Stemcells (Windows)](https://network.tanzu.vmware.c
   <p class="note"><strong>Note</strong>: Manual stemcell creation is deprecated.
     Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
     For more information,
-    see <a href="https://docs.pivotal.io/application-service/<%= vars.current_major_version %>/windows/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
+    see <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
   </p>
 
 ## <a id="2019.72"></a>2019.72
@@ -456,7 +456,7 @@ After this release, you must use the stembuild-based approach to build stemcells
 
 ### General Availability Release of stembuild
 This release announces the general availability of stembuild.
-For more information about stembuild, see [Creating a Windows Stemcell for vSphere Using stembuild](https://docs.pivotal.io/application-service/<%= vars.current_major_version %>/windows/create-vsphere-stemcell-automatically.html).
+For more information about stembuild, see [Creating a Windows Stemcell for vSphere Using stembuild](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html).
 
 ### Security Fix
  - Includes the Tuesday June 9th, 2020 Microsoft security update patch.
@@ -476,7 +476,7 @@ Support for manual stemcell creation ends September 2020.
 Ensure that you start using the new stembuild-based stemcell
 creation procedure on or before September 2020.
 See
-[Creating a Windows Stemcell for vSphere Using stembuild](https://docs.pivotal.io/application-service/<%= vars.current_major_version %>/windows/create-vsphere-stemcell-automatically.html).
+[Creating a Windows Stemcell for vSphere Using stembuild](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html).
 
 ## <a id="2019.22"></a>2019.22
 
@@ -518,8 +518,8 @@ This stemcell and later v2019.x versions work with:
 
 - Includes [Microsoft Security Updates Patch Tuesday March 10th, 2020](https://support.microsoft.com/help/4538461)
 - For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
-  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://community.pivotal.io/s/article/windows-app-container-crashing-after-Windows-stemcell-upgrade)
+  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://knowledge.broadcom.com/external/article?articleNumber=297971)
+  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://knowledge.broadcom.com/external/article?articleNumber=298477)
 
 ## <a id="2019.18"></a>2019.18
 
@@ -540,8 +540,8 @@ This stemcell and later v2019.x versions work with:
 
 - Includes [Microsoft Security Updates Patch Tuesday February 11, 2020](https://support.microsoft.com/help/4532691).
 - For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://community.pivotal.io/s/article/windows2019fs-cert-injector-failed-when-upgrading-PASW-tile)
-  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://community.pivotal.io/s/article/windows-app-container-crashing-after-Windows-stemcell-upgrade)
+  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://knowledge.broadcom.com/external/article?articleNumber=297971)
+  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://knowledge.broadcom.com/external/article?articleNumber=298477)
 
 ### Features
 
@@ -559,7 +559,7 @@ updated root certificates from the public Windows Update Server.
 <p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have
   access to the public Windows Update Server.</p>
 - Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM.
-For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15)
+For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869)
 in the Knowledge Base.
 
 
@@ -578,7 +578,7 @@ in the Knowledge Base.
 
 ### Known Issues
 
-- `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) in the Knowledge Base.
+- `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869) in the Knowledge Base.
 
 <p class="note"><strong>Note</strong>: The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
 
