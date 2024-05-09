@@ -14,11 +14,14 @@ This topic includes release notes for Windows stemcells used with the following 
 The stemcell is based on Windows Server, version 2019.
 
 To download a stemcell, see [Stemcells (Windows)](https://network.tanzu.vmware.com/products/stemcells-windows-server) on VMware Tanzu Network.
-  <p class="note"><strong>Note</strong>: Manual stemcell creation is deprecated.
-    Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
-    For more information,
-    see <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
-  </p>
+
+<p class="note">
+<span class="note__title">Note</span>
+Manual stemcell creation is deprecated.
+Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
+For more information,
+see <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
+</p>
 
 ## <a id="2019.72"></a>2019.72
 
@@ -417,8 +420,10 @@ Works with [Microsoft Security Updates Patch Tuesday July 12, 2022](https://supp
  [September 8, 2020—KB4570333 (OS Build 17763.1457)](https://support.microsoft.com/help/4570333)
  in the Microsoft Windows support documentation.
 
-<p class="note"><strong>Note</strong>: This release does not include an Azure stemcell due
-  to a change in the Azure Marketplace image publishing requirements.
+<p class="note">
+<span class="note__title">Note</span>
+This release does not include an Azure stemcell due
+ to a change in the Azure Marketplace image publishing requirements.
 </p>
 
 ## <a id="2019.25"></a>2019.25
@@ -492,7 +497,9 @@ See
 
 ## <a id="2019.21"></a>2019.21
 
-<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.21.</p>
+<p class="note">
+<span class="note__title">Note</span>
+There is no Windows stemcell v2019.21.</p>
 
 
 ## <a id="2019.20"></a>2019.20
@@ -523,7 +530,9 @@ This stemcell and later v2019.x versions work with:
 
 ## <a id="2019.18"></a>2019.18
 
-<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.18.</p>
+<p class="note">
+<span class="note__title">Note</span>
+There is no Windows stemcell v2019.18.</p>
 
 
 ## <a id="2019.17"></a>2019.17
@@ -556,8 +565,12 @@ the only OS version that stembuild v2019.x is compatible with.
 
 - Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch
 updated root certificates from the public Windows Update Server.
-<p class="note"><strong>Note</strong>: You must manually update your certificates if your VM does not have
-  access to the public Windows Update Server.</p>
+
+    <p class="note">
+    <span class="note__title">Note</span>
+    You must manually update your certificates if your VM does not have
+    access to the public Windows Update Server.</p>
+
 - Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM.
 For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869)
 in the Knowledge Base.
@@ -565,7 +578,9 @@ in the Knowledge Base.
 
 ## <a id="2019.16"></a>2019.16
 
-<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.16.</p>
+<p class="note">
+<span class="note__title">Note</span>
+There is no Windows stemcell v2019.16.</p>
 
 
 ## <a id="2019.15"></a>2019.15
@@ -580,7 +595,9 @@ in the Knowledge Base.
 
 - `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869) in the Knowledge Base.
 
-<p class="note"><strong>Note</strong>: The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
+<p class="note">
+<span class="note__title">Note</span>
+The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
 
 
 ## <a id="2019.14"></a>2019.14
@@ -628,7 +645,9 @@ in the Knowledge Base.
 
 - Fixed a bug where `stembuild construct` was failing to execute with a DISM error
 
-<p class="note"><strong>Note</strong>: Do not use <code>stembuild-2019.11</code> because it will fail on <code>stembuild construct</code>. Use <code>stembuild-2019.12</code> instead.</p>
+<p class="note">
+<span class="note__title">Note</span>
+Do not use <code>stembuild-2019.11</code> because it will fail on <code>stembuild construct</code>. Use <code>stembuild-2019.12</code> instead.</p>
 
 
 ## <a id="2019.11"></a>2019.11
@@ -651,7 +670,9 @@ in the Knowledge Base.
     - Not deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
 
 <br>
-<p class="note"><strong>Note</strong>: There is no Windows stemcell v2019.10.</p>
+<p class="note">
+<span class="note__title">Note</span>
+There is no Windows stemcell v2019.10.</p>
 
 
 ## <a id="2019.9"></a>2019.9
