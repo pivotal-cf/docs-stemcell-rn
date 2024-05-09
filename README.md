@@ -6,7 +6,7 @@ This repository contains content for the Stemcell release notes. We publish the 
 ## Find Tanzu Network Stemcells
 
 The stemcell release notes now publish all stemcells regardless of whether or not they are on
-[Tanzu Network](https://network.pivotal.io/). Each stemcell release in the release
+[Tanzu Network](https://network.tanzu.vmware.com/). Each stemcell release in the release
 notes indicates whether or not they are can be found on Tanzu Network.
 
 ## Contributing to Stemcell Release Notes

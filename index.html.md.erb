@@ -5,7 +5,7 @@ modified_date: false
 ---
 
 This topic provides an overview of the Stemcell versions available on
-[<%= vars.product_network %>](https://network.pivotal.io/).
+[<%= vars.product_network %>](https://network.tanzu.vmware.com/).
 
 A stemcell is a versioned OS image that BOSH uses to create VMs for the BOSH Director,
 <%= vars.app_runtime_full %> (<%= vars.app_runtime_abbr %>), and other Service tiles such as VMware Tanzu SQL [MySQL].
@@ -19,17 +19,19 @@ your deployment using the **Stemcell** configuration pane of a given tile or by 
 Before you upgrade <%= vars.platform_name %>, always verify that all installed tiles are compatible
 with the version of <%= vars.platform_name %> that you are deploying and its supported stemcells.
 For more information about <%= vars.platform_name %> and stemcell compatibility, see
-[Review Service Tile Compatibility](https://docs.pivotal.io/ops-manager/upgrade/checklist.html#compatibility)
+[Review Service Tile Compatibility](https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/upgrade-checklist.html#compatibility)
 in _Upgrade Preparation Checklist_.
 
 To discover which stemcell version is used by which tile version, review the release notes or the
-[<%= vars.product_network %>](https://network.pivotal.io/) download page for the tile.
+[<%= vars.product_network %>](https://network.tanzu.vmware.com/) download page for the tile.
 
-  <p class="note"><strong>Note:</strong> Manual stemcell creation has been deprecated.
-    Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
-    For more information,
-    see <a href="https://docs.pivotal.io/application-service/<%= vars.current_major_version %>/windows/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
-  </p>
+<p class="note important">
+<span class="note__title">Important</span>
+Manual stemcell creation has been deprecated.
+Use <code>stembuild</code> v2019.23 or later to create stemcells automatically.
+For more information,see
+<a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere using stembuild</a>.
+</p>
 
 
 ##<a id="linux"></a> Ubuntu Linux Stemcell Lines

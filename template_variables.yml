@@ -5,14 +5,14 @@ template_variables:
   title: <span class="title-deemph">VMware Tanzu</span> Documentation
   title_image: images/icon-p-green.jpg
   hero_text: "Detailed documentation to help you install, understand, and succeed with VMware Tanzu enterprise-grade software."
-  product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
-  product_url: https://network.pivotal.io/products/pivotal-cf
+  product_link: <div class="header-item"><a href="https://network.tanzu.vmware.com/products/pivotal-cf">Back to Product Page</a></div>
+  product_url: https://network.tanzu.vmware.com/products/pivotal-cf
   support_link: <a href="https://support.pivotal.io" target="_blank">Support</a>
   support_call_to_action: <a href="https://support.pivotal.io" target="_blank">Need Support?</a>
   support_url: https://support.pivotal.io
 
   use_global_header: true
-  global_header_product_href: https://network.pivotal.io/
+  global_header_product_href: https://network.tanzu.vmware.com/
   global_header_product_link_text: Downloads
 
   # Latest Ops Manager version
