@@ -15,6 +15,58 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-445"></a> 1.445
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: May 14, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.648.0<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6757-2: PHP vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6757-2<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  USN-6757-1 fixed vulnerabilities in PHP. Unfortunately these fixes were incomplete for<br>
+Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 23.10. This update fixes the problem.<br>
+<br>
+Original advisory details:<br>
+<br>
+ It was discovered that PHP incorrectly handled PHP_CLI_SERVER_WORKERS variable.<br>
+ An attacker could possibly use this issue to cause a crash or execute<br>
+ arbitrary code. This issue only affected Ubuntu 20.04 LTS, and<br>
+ Ubuntu 22.04 LTS. (CVE-2022-4900)<br>
+<br>
+ It was discovered that PHP incorrectly handled certain cookies.<br>
+ An attacker could possibly use this issue to cookie by pass.<br>
+ (CVE-2024-2756)<br>
+<br>
+ It was discovered that PHP incorrectly handled some passwords.<br>
+ An attacker could possibly use this issue to cause an account takeover<br>
+ attack. (CVE-2024-3096)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-4900<br>
+ - https://ubuntu.com/security/CVE-2024-2756<br>
+ - https://ubuntu.com/security/CVE-2024-3096<br>
+ - https://ubuntu.com/security/CVE-2022-4900<br>
+ - https://ubuntu.com/security/CVE-2024-2756<br>
+ - https://ubuntu.com/security/CVE-2024-3096<br>
+<br>
+**Title**: USN-6764-1: libde265 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6764-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libde265 could be made to allocate memory that<br>
+exceeds the maximum supported size. If a user or automated system were<br>
+tricked into opening a specially crafted file, an attacker could possibly<br>
+use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51792<br>
+
+
 #### <a id="jammy-1-439"></a> 1.439
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
