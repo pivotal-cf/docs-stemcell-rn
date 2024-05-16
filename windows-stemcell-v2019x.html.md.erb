@@ -23,6 +23,18 @@ For more information,
 see <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html">Creating a Windows Stemcell for vSphere Using stembuild</a>.
 </p>
 
+## <a id="2019.73"></a>2019.73
+
+**Release Date**: May 16th, 2024
+
+### Security Patches
+
+Works with [Microsoft Security Updates Patch Tuesday May 14th, 2024](https://support.microsoft.com/en-us/help/5037765)
+
+### Bug Fixes
+
+- Fixed an issue in Stembuild where the "construct" command would hang forever if targeting a VM running in a different network subnet.
+
 ## <a id="2019.72"></a>2019.72
 
 **Release Date**: April 11th, 2024
@@ -35,7 +47,6 @@ Works with [Microsoft Security Updates Patch Tuesday April 9th, 2024](https://su
 
 - Fixes an issue encountered when updating a TKGI cluster from docker to containerd, or performing a cluster upgrade, which caused the operation to fail.
 - Windows stemcells on AWS now support IMDSv2-only-mode.
--
 
 ## <a id="2019.71"></a>2019.71
 
