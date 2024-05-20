@@ -23667,6 +23667,153 @@ The following sections describe each Xenial stemcell release.
 
 This section includes release notes for the 621.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="621-958"></a> 621.958
+
+<span class='pivnet'>Available in VMware Tanzu Network</span>
+
+**Release Date**: May 20, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.268.254<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6777-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6777-1<br>
+**Priorities**: low,medium,negligible<br>
+**Description**:<br>
+  Zheng Wang discovered that the Broadcom FullMAC WLAN driver in the Linux<br>
+kernel contained a race condition during device removal, leading to a use-<br>
+after-free vulnerability. A physically proximate attacker could possibly<br>
+use this to cause a denial of service (system crash). (CVE-2023-47233)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - Block layer subsystem;<br>
+  - Userspace I/O drivers;<br>
+  - Ceph distributed file system;<br>
+  - Ext4 file system;<br>
+  - JFS file system;<br>
+  - NILFS2 file system;<br>
+  - Bluetooth subsystem;<br>
+  - Networking core;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - Logical Link layer;<br>
+  - MAC80211 subsystem;<br>
+  - Netlink;<br>
+  - NFC subsystem;<br>
+  - Tomoyo security module;<br>
+(CVE-2023-52524, CVE-2023-52530, CVE-2023-52601, CVE-2023-52439,<br>
+CVE-2024-26635, CVE-2023-52602, CVE-2024-26614, CVE-2024-26704,<br>
+CVE-2023-52604, CVE-2023-52566, CVE-2021-46981, CVE-2024-26622,<br>
+CVE-2024-26735, CVE-2024-26805, CVE-2024-26801, CVE-2023-52583)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-47233<br>
+ - https://ubuntu.com/security/CVE-2023-52524<br>
+ - https://ubuntu.com/security/CVE-2023-52530<br>
+ - https://ubuntu.com/security/CVE-2023-52601<br>
+ - https://ubuntu.com/security/CVE-2023-52439<br>
+ - https://ubuntu.com/security/CVE-2024-26635<br>
+ - https://ubuntu.com/security/CVE-2023-52602<br>
+ - https://ubuntu.com/security/CVE-2024-26614<br>
+ - https://ubuntu.com/security/CVE-2024-26704<br>
+ - https://ubuntu.com/security/CVE-2023-52604<br>
+ - https://ubuntu.com/security/CVE-2023-52566<br>
+ - https://ubuntu.com/security/CVE-2021-46981<br>
+ - https://ubuntu.com/security/CVE-2024-26622<br>
+ - https://ubuntu.com/security/CVE-2024-26735<br>
+ - https://ubuntu.com/security/CVE-2024-26805<br>
+ - https://ubuntu.com/security/CVE-2024-26801<br>
+ - https://ubuntu.com/security/CVE-2023-52583<br>
+ - https://ubuntu.com/security/CVE-2023-52524<br>
+ - https://ubuntu.com/security/CVE-2021-46981<br>
+ - https://ubuntu.com/security/CVE-2023-52601<br>
+ - https://ubuntu.com/security/CVE-2023-52602<br>
+ - https://ubuntu.com/security/CVE-2024-26635<br>
+ - https://ubuntu.com/security/CVE-2024-26704<br>
+ - https://ubuntu.com/security/CVE-2024-26805<br>
+ - https://ubuntu.com/security/CVE-2024-26735<br>
+ - https://ubuntu.com/security/CVE-2024-26614<br>
+ - https://ubuntu.com/security/CVE-2023-52439<br>
+ - https://ubuntu.com/security/CVE-2023-52604<br>
+ - https://ubuntu.com/security/CVE-2024-26801<br>
+ - https://ubuntu.com/security/CVE-2023-52530<br>
+ - https://ubuntu.com/security/CVE-2023-47233<br>
+ - https://ubuntu.com/security/CVE-2024-26622<br>
+ - https://ubuntu.com/security/CVE-2023-52566<br>
+ - https://ubuntu.com/security/CVE-2023-52583<br>
+<br>
+**Title**: USN-6778-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6778-1<br>
+**Priorities**: low,medium<br>
+**Description**:<br>
+  Zheng Wang discovered that the Broadcom FullMAC WLAN driver in the Linux<br>
+kernel contained a race condition during device removal, leading to a use-<br>
+after-free vulnerability. A physically proximate attacker could possibly<br>
+use this to cause a denial of service (system crash). (CVE-2023-47233)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - Ext4 file system;<br>
+  - JFS file system;<br>
+  - NILFS2 file system;<br>
+  - Core kernel;<br>
+  - Bluetooth subsystem;<br>
+  - Networking core;<br>
+  - IPv4 networking;<br>
+  - Logical Link layer;<br>
+  - MAC80211 subsystem;<br>
+  - Netlink;<br>
+  - NFC subsystem;<br>
+  - Tomoyo security module;<br>
+(CVE-2023-52601, CVE-2024-26622, CVE-2024-26805, CVE-2024-26635,<br>
+CVE-2023-52602, CVE-2024-26801, CVE-2023-52566, CVE-2024-26704,<br>
+CVE-2021-46939, CVE-2024-26614, CVE-2023-52604, CVE-2023-52530,<br>
+CVE-2023-52524)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-47233<br>
+ - https://ubuntu.com/security/CVE-2023-52601<br>
+ - https://ubuntu.com/security/CVE-2024-26622<br>
+ - https://ubuntu.com/security/CVE-2024-26805<br>
+ - https://ubuntu.com/security/CVE-2024-26635<br>
+ - https://ubuntu.com/security/CVE-2023-52602<br>
+ - https://ubuntu.com/security/CVE-2024-26801<br>
+ - https://ubuntu.com/security/CVE-2023-52566<br>
+ - https://ubuntu.com/security/CVE-2024-26704<br>
+ - https://ubuntu.com/security/CVE-2021-46939<br>
+ - https://ubuntu.com/security/CVE-2024-26614<br>
+ - https://ubuntu.com/security/CVE-2023-52604<br>
+ - https://ubuntu.com/security/CVE-2023-52530<br>
+ - https://ubuntu.com/security/CVE-2023-52524<br>
+ - https://ubuntu.com/security/CVE-2021-46939<br>
+ - https://ubuntu.com/security/CVE-2023-52524<br>
+ - https://ubuntu.com/security/CVE-2023-52601<br>
+ - https://ubuntu.com/security/CVE-2023-52602<br>
+ - https://ubuntu.com/security/CVE-2024-26635<br>
+ - https://ubuntu.com/security/CVE-2024-26704<br>
+ - https://ubuntu.com/security/CVE-2024-26805<br>
+ - https://ubuntu.com/security/CVE-2024-26614<br>
+ - https://ubuntu.com/security/CVE-2023-52604<br>
+ - https://ubuntu.com/security/CVE-2024-26801<br>
+ - https://ubuntu.com/security/CVE-2023-52530<br>
+ - https://ubuntu.com/security/CVE-2023-47233<br>
+ - https://ubuntu.com/security/CVE-2024-26622<br>
+ - https://ubuntu.com/security/CVE-2023-52566<br>
+<br>
+**Title**: USN-6764-1: libde265 vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6764-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that libde265 could be made to allocate memory that<br>
+exceeds the maximum supported size. If a user or automated system were<br>
+tricked into opening a specially crafted file, an attacker could possibly<br>
+use this issue to cause a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-51792
+
 #### <a id="621-944"></a> 621.944
 
 <span class='pivnet'>Available in VMware Tanzu Network</span>
