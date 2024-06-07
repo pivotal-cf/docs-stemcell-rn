@@ -21,6 +21,8 @@ This section includes release notes for the 1.x line of Linux stemcells used wit
 
 **Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.351...ubuntu-jammy/v1.465<br>
 <br>
+[Bug] vSphere stemcell with IPv6 will be unresponsive; as a workaround, use stemcell 1.445. This is caused by the introduction of EFI partition which moved the location of the `grub.cfg` file whose modification is a requirement for IPv6.<br>
+<br>
 #### Metadata:<br>
 **BOSH Agent Version**: 2.653.0<br>
 <br>
