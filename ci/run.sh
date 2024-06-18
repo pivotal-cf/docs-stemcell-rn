@@ -5,7 +5,7 @@ set -ex
 pushd docs-stemcell-rn/ci
 	bundle install
 	stemcell_tempfile="$(mktemp)"
-	ruby get-stemcells.rb > "${stemcell_tempfile}"
+	ruby get_stemcells.rb > "${stemcell_tempfile}"
 	mv "${stemcell_tempfile}" ../stemcells.html.md.erb
 
 	if [[ -n $(git status --porcelain) ]]; then
