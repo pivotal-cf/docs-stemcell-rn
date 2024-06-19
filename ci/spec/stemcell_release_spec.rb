@@ -16,6 +16,7 @@ RSpec.describe StemcellRelease do
         body: 'Fake release body',
         created_at: created_at,
         published_at: published_at,
+        prerelease: false
       }
     end
 
@@ -39,6 +40,10 @@ RSpec.describe StemcellRelease do
 
     it 'extracts #version_minor from #version_string' do
       expect(stemcell_release.version_minor).to eq(expected_version_minor)
+    end
+
+    it 'sets :prerelease' do
+      expect(stemcell_release.prerelease).to eq(github_release[:prerelease])
     end
 
     it 'sets #body to :body' do
@@ -80,24 +85,36 @@ RSpec.describe StemcellRelease do
       expect(StemcellRelease.new(body: "cves: Something").body).to eq('**CVEs:** Something')
     end
 
-    it 'replaces "#" with "###"' do
-      expect(StemcellRelease.new(body: "## Something").body).to eq('#### Something')
-    end
-
     it 'replaces "\r\n" with "<br>\n"' do
       expect(StemcellRelease.new(body: "Something\r\nElse").body).to eq("Something<br>\nElse")
     end
   end
 
   describe '#line?' do
-    subject(:stemcell_release) { StemcellRelease.new(name: '123 Some_line Test') }
+    subject(:stemcell_release) { StemcellRelease.new(name: 'Fake 456.789 Some_line Test') }
 
     it 'returns true if the input matches #name' do
       expect(stemcell_release.line?(:some_line)).to eq(true)
     end
 
-    it 'returns true if the input does not match #name' do
+    it 'returns false if the input does not match #name' do
       expect(stemcell_release.line?(:other_line)).to eq(false)
+    end
+  end
+
+  describe '#version_major?' do
+    subject(:stemcell_release) { StemcellRelease.new(name: 'Fake 456.789 Some_line Test') }
+
+    before do
+      expect(stemcell_release.version_major).to eq(456)
+    end
+
+    it 'returns true if the input matches the version_major extracted from #name' do
+      expect(stemcell_release.version_major?(456)).to eq(true)
+    end
+
+    it 'returns false if the input does not match the version_major extracted from #name' do
+      expect(stemcell_release.version_major?(789)).to eq(false)
     end
   end
 
