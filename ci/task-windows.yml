@@ -4,7 +4,7 @@ image_resource:
   type: docker-image
   source:
     repository: ruby
-    tag: 3.2
+    tag: 3
 
 inputs:
 - name: docs-stemcell-rn
