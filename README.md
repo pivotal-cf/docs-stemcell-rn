@@ -3,11 +3,11 @@
 This repository contains content for the Stemcell release notes. We publish the this documentation at https://docs.vmware.com/en/Stemcells-for-VMware-Tanzu/services/release-notes/index.html.
 
 
-## Find Tanzu Network Stemcells
+## Find Stemcells on the Broadcom Support portal
 
 The stemcell release notes now publish all stemcells regardless of whether or not they are on
-[Tanzu Network](https://network.tanzu.vmware.com/). Each stemcell release in the release
-notes indicates whether or not they are can be found on Tanzu Network.
+the [Broadcom Support portal](https://support.broadcom.com/group/ecx/downloads). Each stemcell release in the release
+notes indicates whether or not they are can be found on the Broadcom Support portal.
 
 ## Contributing to Stemcell Release Notes
 

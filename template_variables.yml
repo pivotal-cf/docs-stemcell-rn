@@ -5,14 +5,14 @@ template_variables:
   title: <span class="title-deemph">VMware Tanzu</span> Documentation
   title_image: images/icon-p-green.jpg
   hero_text: "Detailed documentation to help you install, understand, and succeed with VMware Tanzu enterprise-grade software."
-  product_link: <div class="header-item"><a href="https://network.tanzu.vmware.com/products/pivotal-cf">Back to Product Page</a></div>
-  product_url: https://network.tanzu.vmware.com/products/pivotal-cf
-  support_link: <a href="https://support" target="_blank">Support</a>
-  support_call_to_action: <a href="https://support.broadcom.com/" target="_blank">Need Support?</a>
-  support_url: https://support.broadcom.com/
+  product_link: <div class="header-item"><a href="https://support.broadcom.com/group/ecx/downloads">Back to Product Page</a></div>
+  product_url: https://support.broadcom.com/group/ecx/downloads
+  support_link: <a href="https://support.broadcom.com/group/ecx/software-contact-support" target="_blank">Support</a>
+  support_call_to_action: <a href="https://support.broadcom.com/group/ecx/software-contact-support" target="_blank">Need Support?</a>
+  support_url: https://support.broadcom.com/group/ecx/software-contact-support
 
   use_global_header: true
-  global_header_product_href: https://network.tanzu.vmware.com/
+  global_header_product_href: https://support.broadcom.com/group/ecx/downloads
   global_header_product_link_text: Downloads
 
   # Latest Ops Manager version
@@ -24,7 +24,7 @@ template_variables:
   gtm_account_id: GTM-MM86KCJ
 
   # Tanzu product variables
-  product_network: VMware Tanzu Network
+  product_network: Broadcom Support portal
   platform_name: Tanzu Operations Manager
   platform_old: Pivotal Cloud Foundry
   platform_code: PCF
