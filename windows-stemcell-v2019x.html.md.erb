@@ -9,7 +9,7 @@ This topic includes release notes for Windows stemcells used with the following 
 - <%= vars.windows_runtime_full %> (<%= vars.windows_runtime_abbr %>) v2.5 and later:
   - For Windows stemcell compatibilities with <%= vars.windows_runtime_abbr %>, see specific stemcell version notes below.
 - VMware <%= vars.k8s_runtime_full %> (<%= vars.k8s_runtime_abbr %>, formerly PKS) v1.5 and later:
-  - For Windows stemcell compatibilites with <%= vars.k8s_runtime_abbr %>, refer to the [Release Notes](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.19/tkgi/GUID-release-notes.html) for your <%= vars.k8s_runtime_abbr %> version.
+  - For Windows stemcell compatibilities with <%= vars.k8s_runtime_abbr %>, refer to the [Release Notes](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.19/tkgi/GUID-release-notes.html) for your <%= vars.k8s_runtime_abbr %> version.
 
 The stemcell is based on Windows Server, version 2019.
 
@@ -25,740 +25,567 @@ see <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= var
 
 ## <a id="2019.74"></a>2019.74
 
-**Release Date**: June 13th, 2024
+**Release Date**: June 12, 2024
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday June 11th, 2024](https://support.microsoft.com/en-us/help/5039217)
+* Works with [Microsoft Security Updates Patch Tuesday June 11th, 2024](https://support.microsoft.com/en-us/help/5039217)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.73...2019.74
 
 ## <a id="2019.73"></a>2019.73
 
-**Release Date**: May 16th, 2024
+**Release Date**: May 15, 2024
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday May 14th, 2024](https://support.microsoft.com/en-us/help/5037765)
-
-### Bug Fixes
-
-- Fixed an issue in Stembuild where the "construct" command would hang forever if targeting a VM running in a different network subnet.
+* Works with [Microsoft Security Updates Patch Tuesday May, 14, 2024](https://support.microsoft.com/en-us/help/5037765)<br>
+* Switch to fork of winrm to fix #27 where stembuild would hang forever if the target VM was being run in a different subnet by @jpalermo in https://github.com/cloudfoundry/stembuild/pull/30<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.72...2019.73
 
 ## <a id="2019.72"></a>2019.72
 
-**Release Date**: April 11th, 2024
+**Release Date**: April 10, 2024
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday April 9th, 2024](https://support.microsoft.com/en-us/help/5036896)
-
-### Bug Fixes
-
-- Fixes an issue encountered when updating a TKGI cluster from docker to containerd, or performing a cluster upgrade, which caused the operation to fail.
-- Windows stemcells on AWS now support IMDSv2-only-mode.
+- Works with [Microsoft Security Updates Patch Tuesday April, 9, 2024](https://support.microsoft.com/en-us/help/5036896)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.72...2019.72
 
 ## <a id="2019.71"></a>2019.71
 
-**Release Date**: March 13th, 2024
+**Release Date**: March 13, 2024
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday March 12th, 2024](https://support.microsoft.com/en-us/help/5035849)
-
+- Works with [Microsoft Security Updates Patch Tuesday March, 12, 2024](https://support.microsoft.com/en-us/help/5035849)
 
 ## <a id="2019.70"></a>2019.70
 
-**Release Date**: February 13th, 2024
+**Release Date**: February 15, 2024
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday February 13th, 2024](https://support.microsoft.com/help/5034768)
+- Works with [Microsoft Security Updates Patch Tuesday February, 13, 2024](https://support.microsoft.com/help/5034768)
 
 ## <a id="2019.69"></a>2019.69
 
-**Release Date**: January 10th, 2024
+**Release Date**: January 10, 2024
 
-### Security Patches
+- Works with [Microsoft Security Updates Patch Tuesday January, 9, 2024](https://support.microsoft.com/en-us/help/5034127)<br>
 
-Works with [Microsoft Security Updates Patch Tuesday January 9th, 2024](https://support.microsoft.com/help/5034127)
 
 ## <a id="2019.68"></a>2019.68
 
-**Release Date**: December 14th, 2023
+**Release Date**: December 13, 2023
 
-### Security Patches
+- Works with [Microsoft Security Updates Patch Tuesday December, 12, 2023](https://support.microsoft.com/en-us/help/5033371)<br>
 
-Works with [Microsoft Security Updates Patch Tuesday December 12th, 2023](https://support.microsoft.com/help/5033371)
 
 ## <a id="2019.67"></a>2019.67
 
-**Release Date**: November 16th, 2023
+**Release Date**: November 15, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday November 14th, 2023](https://support.microsoft.com/help/5032196)
+- Works with [Microsoft Security Updates Patch Tuesday November, 14, 2023](https://support.microsoft.com/en-us/help/5032196)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.66...2019.67
 
 ## <a id="2019.66"></a>2019.66
 
-**Release Date**: October 12th, 2023
+**Release Date**: October 11, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday October 10th, 2023](https://support.microsoft.com/help/5031361)
+- Works with [Microsoft Security Updates Patch Tuesday October 10, 2023](https://support.microsoft.com/en-us/help/5031361)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.65...2019.66
 
 ## <a id="2019.65"></a>2019.65
 
-**Release Date**: September 13th, 2023
+**Release Date**: September 13, 2023
 
-### Changes
-
-- Stembuild has been updated to remove available Windows features before the VM is restarted. It was found that feature removal can trigger the need for a restart, which can then block Dism.exe from running successfully during the construct cleanup process.
-- Stembuild has reduced the number of retries when attempting to download certificates from Windows Update. Previously, this was causing air-gapped environments to wait for 10 minutes.
-
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday September 12th, 2023](https://support.microsoft.com/help/5030214)
+- Works with [Microsoft Security Updates Patch Tuesday September 12, 2023](https://support.microsoft.com/en-us/help/5030214)<br>
+<br>
+- Removal of available Windows features now happens before the VM is restarted. We found that some feature removal can trigger the need for a restart which can then block the `Dism.exe` runs from succeeding.<br>
+<br>
+- Reduce the number of retries when attempting to download certificates from Windows Update. Air-gapped environments were having to wait 10 minutes for all the retries previously.<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.64...2019.65
 
 ## <a id="2019.64"></a>2019.64
 
-**Release Date**: August 10th, 2023
+**Release Date**: August 09, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday August 8th, 2023](https://support.microsoft.com/help/5029247)
+Works with [Microsoft Security Updates Patch Tuesday August 8, 2023](https://support.microsoft.com/en-us/help/5029247)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.63...2019.64
 
 ## <a id="2019.63"></a>2019.63
 
-**Release Date**: July 12th, 2023
+**Release Date**: July 12, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday July 11th, 2023](https://support.microsoft.com/help/5028168)
+Works with [Microsoft Security Updates Patch Tuesday July 11, 2023](https://support.microsoft.com/en-us/help/5028168)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.59...2019.63
 
 ## <a id="2019.62"></a>2019.62
 
-**Release Date**: June 16th, 2023
+**Release Date**: June 14, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday June 13th, 2023](https://support.microsoft.com/help/5027222)
+Works with [Microsoft Security Updates Patch Tuesday June 13, 2023](https://support.microsoft.com/en-us/help/5027222)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.61...2019.62
 
 ## <a id="2019.61"></a>2019.61
 
-**Release Date**: May 11th, 2023
+**Release Date**: May 10, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday May 9th, 2023](https://support.microsoft.com/help/5026362)
+Works with [Microsoft Security Updates Patch Tuesday May 9, 2023](https://support.microsoft.com/en-gb/help/5026362)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.58...2019.61
 
 ## <a id="2019.60"></a>2019.60
 
-**Release Date**: April 13th, 2023
+**Release Date**: April 12, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday April 11th, 2023](https://support.microsoft.com/help/5025229)
+Works with [Microsoft Security Updates Patch Tuesday April 11, 2023](https://support.microsoft.com/en-gb/help/5025229)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.58...2019.60
 
 ## <a id="2019.59"></a>2019.59
 
-**Release Date**: March 15th, 2023
+**Release Date**: March 15, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday March 14th, 2023](https://support.microsoft.com/help/5023702)
+Works with [Microsoft Security Updates Patch Tuesday March 14, 2023](https://support.microsoft.com/en-gb/help/5023702)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.58...2019.59
 
 ## <a id="2019.58"></a>2019.58
 
-**Release Date**: February 20th, 2023
+**Release Date**: February 15, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday February 14th, 2023](https://support.microsoft.com/help/5022840)
+Works with [Microsoft Security Updates Patch Tuesday February 14, 2023](https://support.microsoft.com/en-gb/help/5022840)<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.57...2019.58
 
 ## <a id="2019.57"></a>2019.57
 
-**Release Date**: January 13th, 2023
+**Release Date**: January 12, 2023
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday January 10th, 2023](https://support.microsoft.com/help/5022286)
+Works with [Microsoft Security Updates Patch Tuesday January 10, 2023](https://support.microsoft.com/en-gb/help/5022286)
 
 ## <a id="2019.56"></a>2019.56
 
-**Release Date**: December 14th, 2022
+**Release Date**: December 14, 2022
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday December 13th, 2022](https://support.microsoft.com/help/5021237)
+Works with [Microsoft Security Updates Patch Tuesday December 13, 2022](https://support.microsoft.com/en-gb/help/5021237)
 
 ## <a id="2019.55"></a>2019.55
 
-**Release Date**: November 8th, 2022
+**Release Date**: November 09, 2022
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday November 8th, 2022](https://support.microsoft.com/help/5019966)
+Works with [Microsoft Security Updates Patch Tuesday November 8, 2022](https://support.microsoft.com/en-us/topic/november-8-2022-kb5019966-os-build-17763-3650-b09dad62-5cd7-47cd-992f-b7d01f2956c1)
 
 ## <a id="2019.54"></a>2019.54
 
-**Release Date**: October 19th, 2022
+**Release Date**: October 19, 2022
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday October 19, 2022](https://support.microsoft.com/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623)
-
+## What's Changed<br>
+* Fix compilation instructions for macOS in README by @ctlong in https://github.com/cloudfoundry/stembuild/pull/20<br>
+<br>
+## New Contributors<br>
+* @ctlong made their first contribution in https://github.com/cloudfoundry/stembuild/pull/20<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.51...2019.54
 
 ## <a id="2019.53"></a>2019.53
 
-**Release Date**: September 16th, 2022
+**Release Date**: September 15, 2022
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday September 13, 2022](https://support.microsoft.com/topic/september-13-2022-kb5017315-os-build-17763-3406-926525b2-750e-42e2-9845-49924d97281c)
+## What's Changed<br>
+* Fix compilation instructions for macOS in README by @ctlong in https://github.com/cloudfoundry/stembuild/pull/20<br>
+<br>
+## New Contributors<br>
+* @ctlong made their first contribution in https://github.com/cloudfoundry/stembuild/pull/20<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/stembuild/compare/2019.51...2019.53
 
 ## <a id="2019.52"></a>2019.52
 
-**Release Date**: August 11th, 2022
+**Release Date**: August 10, 2022
 
-### Security Patches
-
-Works with [Microsoft Security Updates Patch Tuesday August 9, 2022](https://support.microsoft.com/topic/august-9-2022-kb5016623-os-build-17763-3287-c7a0bb3a-4083-4cd0-b9ad-119d9267628b)
+Works with [Microsoft Security Updates Patch Tuesday August 9, 2022](https://support.microsoft.com/en-us/topic/august-9-2022-kb5016623-os-build-17763-3287-c7a0bb3a-4083-4cd0-b9ad-119d9267628b)
 
 ## <a id="2019.51"></a>2019.51
 
-**Release Date**: July 15th, 2022
+**Release Date**: July 15, 2022
 
-### Security Patches
+Works with [Microsoft Security Updates Patch Tuesday July 12, 2022](https://support.microsoft.com/en-us/topic/july-12-2022-kb5015811-os-build-17763-3165-f3bdb13c-d767-47dc-a077-0ea0e9421a96)<br>
+<br>
 
-Works with [Microsoft Security Updates Patch Tuesday July 12, 2022](https://support.microsoft.com/topic/july-12-2022-kb5015811-os-build-17763-3165-f3bdb13c-d767-47dc-a077-0ea0e9421a96)
 
 ## <a id="2019.50"></a>2019.50
 
-**Release Date**: June 28th, 2022
+**Release Date**: June 28, 2022
 
-### Bug Fix
-
+## Fixes<br>
 - Windows VMs get restarted once after the initial boot up. Depending on the timing of this restart it was possible for it to interfere with the bosh agent bootstrap process. The bosh agent is now disabled on the initial boot and changed to start automatically so it will only come up after the automatic restart.
 
 ## <a id="2019.49"></a>2019.49
 
-**Release Date**: June 14th, 2022
+**Release Date**: June 15, 2022
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday June 14, 2022](https://support.microsoft.com/help/5014692)
+Works with [Microsoft Security Updates Patch Tuesday June 23, 2022](https://support.microsoft.com/en-us/topic/june-23-2022-kb5014669-os-build-17763-3113-preview-e9aae102-e21c-4f6d-89e0-ed0a82a793dc)
 
 ## <a id="2019.48"></a>2019.48
 
-**Release Date**: May 13th, 2022
+**Release Date**: May 13, 2022
 
-### Changes
-
-- The Stembuild binaries for this release have been built using Golang 1.18 which has stricter requirements for TLS certificates. If you experience issues, ensure your vCenter certificates are valid, include a Subject Alternative Name and do not use the older SHA-1 hash function.
-
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday May 10, 2022](https://support.microsoft.com/help/5013941)
+Works with [Microsoft Security Updates Patch Tuesday May 10, 2022](https://support.microsoft.com/en-us/topic/may-10-2022-kb5013941-os-build-17763-2928-e84332a3-42bb-4d3c-9f6e-89db963230db)<br>
+<br>
+This is the first release built using go 1.18. Golang has updated certificate requirements and if the certificates on your vCenter are not fully valid you may need to update them to work with Stembuild.
 
 ## <a id="2019.47"></a>2019.47
 
-**Release Date**: April 14th, 2022
+**Release Date**: April 13, 2022
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday April 12, 2022](https://support.microsoft.com/help/5012647)
-
+Works with [Microsoft Security Updates Patch Tuesday April 12, 2022](https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc)
 
 ## <a id="2019.46"></a>2019.46
 
-**Release Date**: March 15th, 2022
+**Release Date**: March 11, 2022
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday March 8, 2022](https://support.microsoft.com/help/5011503)
+Works with [Microsoft Security Updates Patch Tuesday March 8, 2022](https://support.microsoft.com/en-us/topic/march-8-2022-kb5011503-os-build-17763-2686-ccb25c67-8994-41c9-bff2-4903f9a4721d)
 
 ## <a id="2019.45"></a>2019.45
 
-**Release Date**: February 9th, 2022
+**Release Date**: February 09, 2022
 
-### Security Patches
+## Security Patches<br>
+Works with [Microsoft Security Updates Patch Tuesday February 8, 2022](https://support.microsoft.com/en-us/help/5010351)<br>
 
-- Works with [Microsoft Security Updates Patch Tuesday February 8, 2022](https://support.microsoft.com/help/5010351)
 
 ## <a id="2019.44"></a>2019.44
 
-**Release Date**: January 14th, 2022
+**Release Date**: January 13, 2022
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday January 11, 2022](https://support.microsoft.com/help/5009557)
+## Security Patches<br>
+Works with [Microsoft Security Updates Patch Tuesday January 11, 2022](https://support.microsoft.com/en-us/help/5009557)<br>
+<br>
+Note, we have seen this security update not being installed. It's possible that it has been at least partially pulled by Microsoft.<br>
+<br>
+## Fixes<br>
+- Includes bosh-agent 2.414.0 which fixes `Cannot extract through symlink` errors caused by an updated version of `tar` in the Windows OS<br>
+- Run `Dism.exe` more frequently. This resolves `The operation could not be completed due to pending operations.` and `Error: Running Dism.exe` errors we were seeing when it was run only at the end.
 
 ## <a id="2019.43"></a>2019.43
 
-**Release Date**: January 3rd, 2021
+**Release Date**: January 03, 2022
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday December 14, 2021](https://support.microsoft.com/help/5008218)
+Works with [Microsoft Security Updates Patch Tuesday December 14, 2021](https://support.microsoft.com/en-us/help/5008218)
 
 ## <a id="2019.42"></a>2019.42
 
-**Release Date**: November 10th, 2021
+**Release Date**: November 10, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday November 9, 2021](https://support.microsoft.com/help/5007206)
+Works with [Microsoft Security Updates Patch Tuesday November 9, 2021](https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48)
 
 ## <a id="2019.41"></a>2019.41
 
-**Release Date**: October 14th, 2021
+**Release Date**: October 13, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday October 12, 2021](https://support.microsoft.com/help/5006672)
+Works with [Microsoft Security Updates Patch Tuesday October 12, 2021](https://support.microsoft.com/en-us/topic/october-12-2021-kb5006672-os-build-17763-2237-f5f567fd-950d-4db0-9d17-09435322578a)
 
 ## <a id="2019.40"></a>2019.40
 
-**Release Date**: September 14th, 2021
+**Release Date**: September 15, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday September 14, 2021](https://support.microsoft.com/help/5005568)
+Works with [Microsoft Security Updates Patch Tuesday September 14, 2021](https://support.microsoft.com/en-us/topic/september-14-2021-kb5005568-os-build-17763-2183-d19b2778-204a-4c09-a0c3-23dc28d5deac)
 
 ## <a id="2019.39"></a>2019.39
 
-**Release Date**: August 11th, 2021
+**Release Date**: August 11, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday August 10, 2021](https://support.microsoft.com/help/5005030)
+Works with [Microsoft Security Updates Patch Tuesday August 10, 2021](https://support.microsoft.com/en-us/topic/august-10-2021-kb5005030-os-build-17763-2114-cec503ed-cc09-4641-bdc1-988153e0bd9a)
 
 ## <a id="2019.38"></a>2019.38
 
-**Release Date**: July 15th, 2021
+**Release Date**: July 15, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday July 12, 2021](https://support.microsoft.com/help/5004244)
+Works with [Microsoft Security Updates Patch Tuesday July 12, 2021](https://support.microsoft.com/en-us/topic/july-13-2021-kb5004244-os-build-17763-2061-d2b763cb-fad4-4b0a-a67f-4e184e277b99)
 
 ## <a id="2019.37"></a>2019.37
 
-**Release Date**: June 10th, 2021
+**Release Date**: June 09, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday June 8, 2021](https://support.microsoft.com/help/5003646)
+Works with [Microsoft Security Updates Patch Tuesday June 8, 2021](https://support.microsoft.com/en-us/topic/june-8-2021-kb5003646-os-build-17763-1999-81e2ff5a-0769-4e56-8762-059dd6e0d6bb)
 
 ## <a id="2019.36"></a>2019.36
 
-**Release Date**: May 12th, 2021
+**Release Date**: May 12, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday May 11, 2021](https://support.microsoft.com/help/5003171)
+## Security Patches<br>
+- Works with [Microsoft Security Updates Patch Tuesday May 11, 2021](https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27)
 
 ## <a id="2019.35"></a>2019.35
 
-**Release Date**: April 15th, 2021
+**Release Date**: April 14, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday April 13, 2021](https://support.microsoft.com/help/5001342)
+## Security Patches<br>
+- Works with [Microsoft Security Updates Patch Tuesday April 13, 2021](https://support.microsoft.com/en-us/topic/april-13-2021-kb5001342-os-build-17763-1879-52e9180d-0cd3-4ab9-8a35-514c07ea9e08)
 
 ## <a id="2019.34"></a>2019.34
 
-**Release Date**: March 30th, 2021
+**Release Date**: March 30, 2021
 
-### Changes
+Includes bosh-agent 2.373.0 which enables the use of disk UUID to identify and mount ephemeral disks. This fixes an issue where the agent only accepted disk indices and ignored disks specified by UUID.
 
-- Includes bosh-agent 2.373.0:
-  - Enables the use of disk UUID to identify and mount ephemeral disks. This fixes an issue where the agent only accepted disk indices and ignored disks specified by UUID.
-  - Fixes an issue with the agent becoming unresponsive after a restart if the BOSH-configured NICs are migrated to a vSwitch which has other hidden virtual adapters with the same MAC address.
+## <a id="2019.33"></a>2019.33
+
+**Release Date**: March 22, 2021
+
+Includes bosh-agent 2.371.0 which fixes an issue with the agent becoming unresponsive after a restart if the bosh configured NIC(s) are migrated to a vSwitch which has other hidden virtual adapters with the same MAC address.
 
 ## <a id="2019.32"></a>2019.32
 
-**Release Date**: March 15th, 2021
+**Release Date**: March 10, 2021
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday March 9, 2021](https://support.microsoft.com/help/5000822)
+## Security Patches<br>
+- Works with [Microsoft Security Updates Patch Tuesday March 9, 2021](https://support.microsoft.com/en-us/topic/march-9-2021-kb5000822-os-build-17763-1817-2eb6197f-e3b1-4f42-ab51-84345e063564)
 
 ## <a id="2019.31"></a>2019.31
 
-**Release Date**: February 25th, 2021
+**Release Date**: February 11, 2021
 
-### Security Patches
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday February 9, 2021](https://support.microsoft.com/en-us/help/4601345)<br>
 
-- Works with [Microsoft Security Updates Patch Tuesday February 9, 2021](https://support.microsoft.com/help/4601345)
 
 ## <a id="2019.30"></a>2019.30
 
-**Release Date**: January 16th, 2021
+**Release Date**: January 13, 2021
 
-### Security Patches
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday January 12, 2021](https://support.microsoft.com/en-us/help/4598230)<br>
 
-- Works with [Microsoft Security Updates Patch Tuesday January 12, 2021](https://support.microsoft.com/help/4598230)
 
 ## <a id="2019.29"></a>2019.29
 
-**Release Date**: December 11th, 2020
+**Release Date**: December 10, 2020
 
-### Security Patches
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday December 8, 2020](https://support.microsoft.com/en-us/help/4592440)<br>
 
-- Works with [Microsoft Security Updates Patch Tuesday December 8, 2020](https://support.microsoft.com/help/4592440)
 
 ## <a id="2019.28"></a>2019.28
 
-**Release Date**: November 12th, 2020
+**Release Date**: November 11, 2020
 
-### Security Patches
-
-- Works with [Microsoft Security Updates Patch Tuesday November 10, 2020](https://support.microsoft.com/help/4586793)
-
-### Changes
-
-- Double WinRM connection timeouts to 2 minutes (up from 1 minute)
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday November 10, 2020](https://support.microsoft.com/en-us/help/4586793)<br>
+<br>
+### Changes<br>
+<br>
+- Double WinRM connection timeouts to 2 minutes (up from 1 minute)<br>
 - Set Connection Timeout on WinRM file upload to 2 minutes (down from unlimited)
 
 ## <a id="2019.27"></a>2019.27
 
-**Release Date**: October 15th, 2020
+**Release Date**: October 14, 2020
 
-### Security Fix
-- Includes the Tuesday October 13th, 2020 Microsoft security updates patch.
- For more information, see
- [October 13, 2020—KB4577668 (OS Build 17763.1518)](https://support.microsoft.com/help/4577668)
- in the Microsoft Windows support documentation.
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday October 13, 2020](https://support.microsoft.com/en-us/help/4577668/windows-10-update-kb4577668)
 
 ## <a id="2019.26"></a>2019.26
 
-**Release Date**: September 21st, 2020
+**Release Date**: September 11, 2020
 
-### Security Fix
-- Includes the Tuesday September 8th, 2020 Microsoft security updates patch.
- For more information, see
- [September 8, 2020—KB4570333 (OS Build 17763.1457)](https://support.microsoft.com/help/4570333)
- in the Microsoft Windows support documentation.
-
-<p class="note">
-<span class="note__title">Note</span>
-This release does not include an Azure stemcell due
- to a change in the Azure Marketplace image publishing requirements.
-</p>
+### Security Patches<br>
+<br>
+ - Works with [Microsoft Security Updates Patch Tuesday September 8, 2020](https://support.microsoft.com/en-us/help/4570333)<br>
+<br>
+### Breaking Changes / Features<br>
+<br>
+- Works with LGPO V3 **Only** - This version of `stembuild` **only** works with LGPO V3. If you want to use LGPO V2.2, use an earlier version of `stembuild`.
 
 ## <a id="2019.25"></a>2019.25
 
-**Release Date**: August 25th, 2020
+**Release Date**: August 24, 2020
 
-### Security Fix
-- Includes the Tuesday August 25th, 2020 Microsoft security updates patch.
- For more information, see
- [August 11, 2020—KB4565349 (OS Build 17763.1397)](https://support.microsoft.com/help/4565349/windows-10-update-kb4565349)
- in the Microsoft Windows support documentation.
-
-### Bug Fix
-- Fixed a bug to ensure UTC timezone is set in the Windows VMs.
-
-### End of General Service Notice
-
-This stemcell release is the last release supporting stemcell-builder and manually creating stemcells.
-After this release, you must use the stembuild-based approach to build stemcells.
+**Security Patches**<br>
+- Works with [Microsoft Security Updates Patch Tuesday August 11th, 2020](https://support.microsoft.com/en-us/help/4565349)<br>
+<br>
+**Bugs**<br>
+- Fixed a bug to ensure UTC timezone is set in the Windows VMs.  <br>
+<br>
+**EOL Notice** <br>
+This release will be the last release for manually creating stemcells. You can use the stembuild-based approach to build stemcells going forward. <br>
+<br>
+**LGPO Version Requirement**<br>
+This release will be the last release that supports LGPO V2.2.
 
 ## <a id="2019.24"></a>2019.24
 
-**Release Date**: July 24th, 2020
+**Release Date**: July 21, 2020
 
-### Security Fix
- - Includes the Tuesday July 14th, 2020 Microsoft security update patch.
- For more information, see
- [July 14th, 2020—KB4558998 (OS Build 17763.1339)](https://support.microsoft.com/help/4558998/windows-10-update-kb4558998)
- in the Microsoft Windows support documentation.
-
+**Security Patches**<br>
+<br>
+- Includes [Microsoft Security Updates Patch Tuesday July 14th, 2020](https://support.microsoft.com/en-us/help/4558998)
 
 ## <a id="2019.23"></a>2019.23
 
-**Release Date**: June 25th, 2020
+**Release Date**: June 22, 2020
 
-### General Availability Release of stembuild
-This release announces the general availability of stembuild.
-For more information about stembuild, see [Creating a Windows Stemcell for vSphere Using stembuild](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html).
+**This release announces the general availability of stembuild! Here's the [docs](https://bosh.io/docs/windows-stemcell-create/) to using it.**<br>
+<br>
+**Security Patches**<br>
+<br>
+Includes [Microsoft Security Updates Patch Tuesday June 9th, 2020](https://support.microsoft.com/en-us/help/4561608)<br>
+<br>
+**Features**<br>
+- Stembuild construct command can now identify the location of the base VM even in multiple data centers. <br>
+- Stembuild construct now logs out any users that might be logged in while the construct command is in progress to ensure minimum disruption during stemcell creation. <br>
+<br>
+**Deprecation Notice for Manual Stemcell Creation Process**<br>
+<br>
+This release also marks the start of the depreciation period for manually creating stemcells using this procedure. Going forward only the stembuild-based approach will be supported. The manual creation of stemcells-based process will be removed by September, 2020. Please ensure to migrate to [this procedure](https://bosh.io/docs/windows-stemcell-create/) before then. <br>
 
-### Security Fix
- - Includes the Tuesday June 9th, 2020 Microsoft security update patch.
- For more information, see
- [June 9, 2020—KB4561608 (OS Build 17763.1282)](https://support.microsoft.com/help/4561608)
- in the Microsoft Windows support documentation.
-
-### Features
-- `stembuild construct` identifies the location of the base VM, including across multiple data centers.
-- `stembuild construct` logs out any users who are logged in while the `construct` command is in progress,
-ensuring minimum disruption during stemcell creation.
-
-### Deprecation Notice for Manual Stemcell Creation Process
-
-The manual procedure for creating stemcells is deprecated.
-Support for manual stemcell creation ends September 2020.
-Ensure that you start using the new stembuild-based stemcell
-creation procedure on or before September 2020.
-See
-[Creating a Windows Stemcell for vSphere Using stembuild](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/<%= vars.current_major_version %>/tas-for-vms/create-vsphere-stemcell-automatically.html).
 
 ## <a id="2019.22"></a>2019.22
 
-**Release Date**: May 21st, 2020
+**Release Date**: May 21, 2020
 
-### Security Fix
-- Includes [Microsoft Security Updates Patch Tuesday May 12th, 2020](https://support.microsoft.com/help/4551853)
-
-### Features
-- `stembuild construct` streams logs after the target VM reboots. Stembuild reconnects to the target VM using WinRM to stream logs after the VM reboot, showing you what is occurring on your target VM.
-- The BOSH Agent version is upgraded to v2.317. This version of the BOSH Agent can create a `vcap` user on a Windows VM.
-
-
-## <a id="2019.21"></a>2019.21
-
-<p class="note">
-<span class="note__title">Note</span>
-There is no Windows stemcell v2019.21.</p>
-
+Security Fix<br>
+- Includes [Microsoft Security Updates Patch Tuesday May 12th, 2020](https://support.microsoft.com/en-us/help/4551853)<br>
+<br>
+Features<br>
+- Modified `stembuild construct` to stream logs after the target VM reboots. Stembuild now reconnects to the target VM using WinRM to stream logs after the mid-command reboot, showing you what's occurring on your target VM.<br>
+- Upgraded BOSH agent version to 2.317, adding the ability to create a `vcap` user on a Windows VM.
 
 ## <a id="2019.20"></a>2019.20
 
-**Release Date**: April 24th, 2020
+**Release Date**: May 30, 2020
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday April 14th, 2020](https://support.microsoft.com/help/4549949)
+**Release Date**<br>
+<br>
+### Security Fix<br>
+- Includes [Microsoft Security Updates Patch Tuesday April 14th, 2020](https://support.microsoft.com/en-us/help/4549949)<br>
+<br>
+Note: We are back-dating this release from April'20. <br>
 
 
 ## <a id="2019.19"></a>2019.19
 
-**Release Date**: March 25th, 2020
+**Release Date**: March 25, 2020
 
-### <%= vars.windows_runtime_abbr %> Compatibilities
-
-This stemcell and later v2019.x versions work with:
-
--  <%= vars.windows_runtime_abbr %> v2.6.15, v2.7.11, or v2.8.6 and later.
-
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday March 10th, 2020](https://support.microsoft.com/help/4538461)
-- For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://knowledge.broadcom.com/external/article?articleNumber=297971)
-  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://knowledge.broadcom.com/external/article?articleNumber=298477)
-
-## <a id="2019.18"></a>2019.18
-
-<p class="note">
-<span class="note__title">Note</span>
-There is no Windows stemcell v2019.18.</p>
-
+Release Notes:<br>
+* Includes [Microsoft Security Updates Patch Tuesday March 10th, 2020](https://support.microsoft.com/en-us/help/4538461)
 
 ## <a id="2019.17"></a>2019.17
 
-**Release Date**: February 14th, 2020
+**Release Date**: February 13, 2020
 
-### <%= vars.windows_runtime_abbr %> Compatibilities
-
-This stemcell and later v2019.x versions work with:
-
--  <%= vars.windows_runtime_abbr %> versions v2.6.15, v2.7.11, or v2.8.6 and later.
-
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday February 11, 2020](https://support.microsoft.com/help/4532691).
-- For issues encountered with upgrading to the correct <%= vars.windows_runtime_abbr %> versions, see the following articles in the Knowledge Base:
-  - [windows2019fs cert-injector failed when upgrading <%= vars.windows_runtime_abbr %> tile](https://knowledge.broadcom.com/external/article?articleNumber=297971)
-  - [Windows container crashes on Windows Stemcells created on vSphere with VMware tools 11.0.1-11.0.5](https://knowledge.broadcom.com/external/article?articleNumber=298477)
-
-### Features
-
-- Supports signed URL capability.
-If Windows users opt in, the BOSH agent manages artifacts on the blobstore using signed URLs rather than blobstore credentials.
-For more information on how to opt in to signed URLs, see
-[Signed URLs](https://bosh.io/docs/director-blobstore-signed-urls/) in the _Cloud Foundry BOSH_ documentation.
-- `stembuild` validates the VM OS is Windows Server 2019, OS build 17763. This is
-the only OS version that stembuild v2019.x is compatible with.
-
-### Bug Fixes
-
-- Fixed a bug where `stembuild construct` did not execute successfully if it could not fetch
-updated root certificates from the public Windows Update Server.
-
-    <p class="note">
-    <span class="note__title">Note</span>
-    You must manually update your certificates if your VM does not have
-    access to the public Windows Update Server.</p>
-
-- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM.
-For more information on the original validation bug, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869)
-in the Knowledge Base.
-
-
-## <a id="2019.16"></a>2019.16
-
-<p class="note">
-<span class="note__title">Note</span>
-There is no Windows stemcell v2019.16.</p>
+Release Notes:<br>
+- Supports signed URL capability. If Windows users opt in, the bosh agent will manage artifacts on the blobstore using signed URLs rather than blobstore credentials. See [bosh documentation](https://bosh.io/docs/director-blobstore-signed-urls/) for more information on how to opt into signed URLs.<br>
+- Stembuild checks whether the OS version of the VM is Windows Server 2019, OS build 17763. This is the only OS version that any stembuild v2019.x is compatible with.<br>
+- Fixed a bug that required access to the public Windows Update Server to get updated root certificates for stembuild construct to execute successfully. <br>
+    - Note: if your VM does not have access to the public Windows Update Server, you will need to keep your certificates updated manually.<br>
+- Fixed a bug that tried to validate your VM credentials before connecting to the VM via WinRM. The workaround detailed in [this KB](https://community.pivotal.io/s/article/Validating-connection-to-vm-step-fails-during-stembuild-construct-for-Stembuild-v2019-15) should no longer be necessary for 2019.17.<br>
 
 
 ## <a id="2019.15"></a>2019.15
 
-**Release Date**: January 18, 2020
+**Release Date**: January 17, 2020
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday January 2020](https://portal.msrc.microsoft.com/security-guidance/releasenotedetail/2020-Jan). This release includes fixes for [CVE-2020-0601](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-0601).
-
-### Known Issues
-
-- `stembuild construct` may fail when it validates the connection to the VM. This is caused by the WinRM configuration. For more information about the specific symptoms and recommended temporary workaround for this issue, see ["Validating connection to vm..." step fails during stembuild construct for Stembuild v2019.15](https://knowledge.broadcom.com/external/article?articleNumber=297869) in the Knowledge Base.
-
-<p class="note">
-<span class="note__title">Note</span>
-The feature to update root certificates in stembuild-built stemcells released in 2019.14 requires internet connection to the Windows Updates Server to complete successfully.</p>
+Release Notes:<br>
+- Includes [Microsoft Security Updates Patch Tuesday January 14th, 2020](https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/2020-Jan)<br>
+     - This includes fixes for [CVE-2020-0601](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0601).<br>
+- Root certificates on machines deployed using stembuild-built stemcells get updated <br>
+     - Note: this requires internet connection to the Windows Updates Server to update successfully.<br>
 
 
 ## <a id="2019.14"></a>2019.14
 
-**Release Date**: December 16, 2019
+**Release Date**: December 13, 2019
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday December 2019](https://support.microsoft.com/help/4530715)
-
-### Features
-
-- Updated stembuild to always use the latest version of OpenSSH (8.0.0-p1-beta as of this release)
-- Root certificates on machines deployed using stembuild-built stemcells get updated certificates from the Windows Updates Server
+Release Notes:<br>
+- Includes [Microsoft Security Updates Patch Tuesday December 10th, 2019](https://support.microsoft.com/en-us/help/4530715)<br>
+- Updated stembuild to always use the latest version of OpenSSH (v8.0.0-p1-beta as of this release)<br>
+- Root certificates on machines deployed using stembuild-built stemcells get updated certificates from the Windows Updates Server<br>
 
 
 ## <a id="2019.13"></a>2019.13
 
-**Release Date**: November 22, 2019
+**Release Date**: November 21, 2019
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday November 2019](https://support.microsoft.com/help/4523205)
-
-### Features
-
-- Added logging and exit code to `stembuild construct` to allow users to see the progress of the command and know whether it has completed preparing the VM for packaging
-- Added retry behavior for the file rename operation in the compilation VM to reduce risk of compilation failure due to custom antivirus installations in the base image
+Release Notes:<br>
+- Includes [Microsoft Security Updates Patch Tuesday November 12th, 2019](https://support.microsoft.com/en-us/help/4523205)<br>
+- Added logging and exit code to `stembuild construct` to allow users to see the progress of the command and know whether it has completed preparing the VM for packaging<br>
+- Added retry behavior for the file rename operation in the compilation VM to reduce risk of compilation failure due to custom antivirus installations in the base image<br>
 
 
 ## <a id="2019.12"></a>2019.12
 
-**Release Date**: October 10, 2019
+**Release Date**: October 11, 2019
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday October 2019](https://support.microsoft.com/help/4519338)
-
-### Features
-
-- Added a flag to `stembuild package` to allow user to specify patch version for the stemcell .tgz output
+- Includes [Microsoft Security Updates Patch Tuesday October 8th, 2019](https://support.microsoft.com/en-us/help/4519338)<br>
+- Added a flag to `stembuild package` to allow user to specify patch version for the stemcell .tgz output<br>
+- Fixed a bug where `stembuild construct` was failing to execute with a DISM error<br>
 - Aligned Internet Explorer-based policies in stemcells built using stembuild with Microsoft Baseline Security Standard
-
-### Bug Fixes
-
-- Fixed a bug where `stembuild construct` was failing to execute with a DISM error
-
-<p class="note">
-<span class="note__title">Note</span>
-Do not use <code>stembuild-2019.11</code> because it will fail on <code>stembuild construct</code>. Use <code>stembuild-2019.12</code> instead.</p>
-
 
 ## <a id="2019.11"></a>2019.11
 
-**Release Date**: September 26, 2019
+**Release Date**: September 23, 2019
 
-### Security Fixes
-
-- Includes [Microsoft Security Updates Patch Tuesday September 2019](https://support.microsoft.com/help/4512578)
-
-### Features
-
-- Enabled the Hyper-V Windows feature for enabling Windows 2019 stemcells built using stembuild
-- Improved security hardening of Windows stemcells by aligning Internet Explorer-based policies with the [Microsoft Baseline Security Standard](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)
-
-### Bug Fixes
-
-- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH SSH connection into that machine:
-    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the SSH session.
-    - Not deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.
-
-<br>
-<p class="note">
-<span class="note__title">Note</span>
-There is no Windows stemcell v2019.10.</p>
+- Includes [Microsoft Security Updates Patch Tuesday September 10th, 2019](https://support.microsoft.com/en-us/help/4512578)<br>
+- Enabled the Hyper-V Windows feature for Windows 2019 stemcells built using Stembuild<br>
+- Fixed a bug that left user directories on the target machines after a user had terminated a BOSH ssh connection into that machine<br>
+    - Deleted: `.ssh` directory and all normal files in the home directory that may have been created during the ssh session<br>
+    - Not Deleted: `.dat` files loaded as part of the registry hive when a user logs in. Files will exist with file locks until the next VM reboot.<br>
 
 
 ## <a id="2019.9"></a>2019.9
 
-**Release Date**: August 27, 2019
+**Release Date**: August 26, 2019
 
-### Features
-
-- Includes [Microsoft Security Updates Patch Tuesday August 2019](https://support.microsoft.com/help/4511553)
-- Aligned a set of audit policies on the stemcells based on [Microsoft Baseline Security Standard](https://www.microsoft.com/download/details.aspx?id=55319)
-- Introduced a new feature in `stembuild construct` command to validate/invalidate the OS based on stembuild version.
 
 
 ## <a id="2019.8"></a>2019.8
 
-**Release Date**: July 23, 2019
+**Release Date**: August 26, 2019
 
-### Features
-
-- Includes [Microsoft Security Updates Patch Tuesday July 2019](https://support.microsoft.com/help/4507469)
-- Windows Defender is installed but disabled on all stemcells.
 
 
 ## <a id="2019.7"></a>2019.7
 
-**Release Date**: July 1, 2019
+**Release Date**: July 10, 2019
 
-### Features
-
-- Key improvements in stembuild with features such as SSH enable-by-default for deployed Windows VMs on vSphere and security fixes.
-- Enabled the Hyper-V Windows feature for enabling Windows in PKS and NSX-T compatibility with Windows teams.
-
+### Features<br>
+- Key improvements in stembuild with features such as SSH enable-by-default for deployed Windows VMs on vSphere and security fixes.<br>
+- Enabled the Hyper-V Windows feature
 
 ## <a id="2019.6"></a>2019.6
 
-**Release Date**: June 19, 2019
+**Release Date**: June 25, 2019
 
-### Security Fixes
-
-- Includes Microsoft Security Updates [June 11, 2019—KB4503327](https://support.microsoft.com/help/4503327/windows-10-update-kb4503327)
-- Introduces 2.3.1.2 (L1) and 1.1.1 (L1) CIS L1 policy hardenings based on the CIS Security Benchmark.
 
 
 ## <a id="2019.5"></a>2019.5
 
-**Release Date**: May 30, 2019
+**Release Date**: June 25, 2019
 
-### Security Fixes
-
-- Based on [Microsoft's guidance](https://support.microsoft.com/help/4072698/windows-server-speculative-execution-side-channel-vulnerabilities-prot#section-10), additional fixes to protect against speculative execution side-channel vulnerabilities
 
 
 ## <a id="2019.4"></a>2019.4
 
-**Release Date**: May 22, 2019
+**Release Date**: June 25, 2019
 
-### Features
 
-- Platform Engineers can deploy Windows Stemcells on a BOSH Director with Google Cloud Storage as their external Blobstore.
-- Improved Troubleshooting of Windows VMs, with ssh enabled by default for all Windows VMs. You can still disable SSH in the <%= vars.windows_runtime_abbr %> tile.
-- Includes Microsoft Security Updates to protect against Microarchitectural Data Sampling side-channel vulnerabilities. For more information, see [May 14, 2019—KB4494441 (OS Build 17763.503)](https://support.microsoft.com/help/4494441/windows-10-update-kb4494441) in the Windows support documentation.
 
 ## <a id="2019.3"></a>2019.3
 
-**Release Date**: April 25, 2019
+**Release Date**: May 07, 2019
 
-### Features
+## Features<br>
+- Introduced a new command `stembuild construct` <br>
+- Introduced new functionality in the `stembuild package` to directly import an OVA from vCenter and convert it into stemcell<br>
+- These new functionalities are not available for Windows 2012R2<br>
+<br>
+**NOTE**: Ensure you download the stembuild that corresponds to the operating system of your local host and the stemcell version that you want to build (e.g. download `2019.3` stembuild for building a `2019.3` stemcell)<br>
+<br>
 
-- This is the first 2019 stemcell.
-- Includes [Microsoft Security Updates Patch Tuesday April 2019](https://support.microsoft.com/help/4493509)

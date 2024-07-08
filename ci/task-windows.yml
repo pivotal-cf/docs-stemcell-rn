@@ -13,4 +13,4 @@ outputs:
 - name: updated-docs-stemcell-rn
 
 run:
-  path: docs-stemcell-rn/ci/run.sh
+  path: docs-stemcell-rn/ci/run_windows.sh
