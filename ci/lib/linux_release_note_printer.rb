@@ -100,7 +100,7 @@ class LinuxReleaseNotePrinter
     return unless @tanzu_net_versions_by_line[release_line_name].include?(version_string)
 
     <<~PIVNET_AVAILABLE
-        <span class="pivnet">Available in VMware Tanzu Network</span>
+        <span class="pivnet">Available in the Broadcom Support portal</span>
       PIVNET_AVAILABLE
   end
 
