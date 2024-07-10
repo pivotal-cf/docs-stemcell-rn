@@ -43,7 +43,7 @@ class WindowsReleaseNotePrinter
 
       The stemcell is based on Windows Server, version 2019.
 
-      To download a stemcell, see [Stemcells (Windows)](https://network.tanzu.vmware.com/products/stemcells-windows-server) on VMware Tanzu Network.
+      To download a stemcell, see [Stemcells (Windows)](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Stemcells%20(Windows)) on tehe Broadcom Support portal.
 
       <p class="note">
       <span class="note__title">Note</span>
