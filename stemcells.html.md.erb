@@ -14,6 +14,1465 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-492"></a> 1.492
+
+
+**Release Date**: July 16, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.663.0<br>
+**Kernel Version**: 5.15.0.116.116<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6891-1: Python vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6891-1<br>
+**Priorities**: low,medium,negligible,high<br>
+**Description**:<br>
+  It was discovered that Python incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to execute arbitrary code.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2015-20107)<br>
+<br>
+It was discovered that Python incorrectly used regular expressions<br>
+vulnerable to catastrophic backtracking. A remote attacker could possibly<br>
+use this issue to cause a denial of service. This issue only affected<br>
+Ubuntu 14.04 LTS. (CVE-2018-1060, CVE-2018-1061)<br>
+<br>
+It was discovered that Python failed to initialize Expat’s hash salt. A<br>
+remote attacker could possibly use this issue to cause hash collisions,<br>
+leading to a denial of service. This issue only affected Ubuntu 14.04 LTS.<br>
+(CVE-2018-14647)<br>
+<br>
+It was discovered that Python incorrectly handled certain pickle files. An<br>
+attacker could possibly use this issue to consume memory, leading to a<br>
+denial of service. This issue only affected Ubuntu 14.04 LTS.<br>
+(CVE-2018-20406)<br>
+<br>
+It was discovered that Python incorrectly validated the domain when<br>
+handling cookies. An attacker could possibly trick Python into sending<br>
+cookies to the wrong domain. This issue only affected Ubuntu 14.04 LTS.<br>
+(CVE-2018-20852)<br>
+<br>
+Jonathan Birch and Panayiotis Panayiotou discovered that Python incorrectly<br>
+handled Unicode encoding during NFKC normalization. An attacker could<br>
+possibly use this issue to obtain sensitive information. This issue only<br>
+affected Ubuntu 14.04 LTS. (CVE-2019-9636, CVE-2019-10160)<br>
+<br>
+It was discovered that Python incorrectly parsed certain email addresses. A<br>
+remote attacker could possibly use this issue to trick Python applications<br>
+into accepting email addresses that should be denied. This issue only<br>
+affected Ubuntu 14.04 LTS. (CVE-2019-16056)<br>
+<br>
+It was discovered that the Python documentation XML-RPC server incorrectly<br>
+handled certain fields. A remote attacker could use this issue to execute a<br>
+cross-site scripting (XSS) attack. This issue only affected Ubuntu 14.04<br>
+LTS. (CVE-2019-16935)<br>
+<br>
+It was discovered that Python documentation had a misleading information.<br>
+A security issue could be possibly caused by wrong assumptions of this<br>
+information. This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04<br>
+LTS. (CVE-2019-17514)<br>
+<br>
+It was discovered that Python incorrectly stripped certain characters from<br>
+requests. A remote attacker could use this issue to perform CRLF injection.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2019-18348)<br>
+<br>
+It was discovered that Python incorrectly handled certain TAR archives.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2019-20907)<br>
+<br>
+Colin Read and Nicolas Edet discovered that Python incorrectly handled<br>
+parsing certain X509 certificates. An attacker could possibly use this<br>
+issue to cause Python to crash, resulting in a denial of service. This<br>
+issue only affected Ubuntu 14.04 LTS. (CVE-2019-5010)<br>
+<br>
+It was discovered that incorrectly handled certain ZIP files. An attacker<br>
+could possibly use this issue to cause a denial of service. This issue only<br>
+affected Ubuntu 14.04 LTS. (CVE-2019-9674)<br>
+<br>
+It was discovered that Python incorrectly handled certain urls. A remote<br>
+attacker could possibly use this issue to perform CRLF injection attacks.<br>
+This issue only affected Ubuntu 14.04 LTS. (CVE-2019-9740, CVE-2019-9947)<br>
+<br>
+Sihoon Lee discovered that Python incorrectly handled the local_file:<br>
+scheme. A remote attacker could possibly use this issue to bypass blocklist<br>
+meschanisms. This issue only affected Ubuntu 14.04 LTS. (CVE-2019-9948)<br>
+<br>
+It was discovered that Python incorrectly handled certain IP values.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2020-14422)<br>
+<br>
+It was discovered that Python incorrectly handled certain character<br>
+sequences. A remote attacker could possibly use this issue to perform<br>
+CRLF injection. This issue only affected Ubuntu 14.04 LTS and Ubuntu<br>
+18.04 LTS. (CVE-2020-26116)<br>
+<br>
+It was discovered that Python incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to execute arbitrary code<br>
+or cause a denial of service. This issue only affected Ubuntu 14.04 LTS.<br>
+(CVE-2020-27619, CVE-2021-3177)<br>
+<br>
+It was discovered that Python incorrectly handled certain HTTP requests.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 14.04 LTS. (CVE-2020-8492)<br>
+<br>
+It was discovered that the Python stdlib ipaddress API incorrectly handled<br>
+octal strings. A remote attacker could possibly use this issue to perform a<br>
+wide variety of attacks, including bypassing certain access restrictions.<br>
+This issue only affected Ubuntu 18.04 LTS. (CVE-2021-29921)<br>
+<br>
+David Schwörer discovered that Python incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+This issue only affected Ubuntu 18.04 LTS. (CVE-2021-3426)<br>
+<br>
+It was discovered that Python incorrectly handled certain RFCs.<br>
+An attacker could possibly use this issue to cause a denial of service.<br>
+This issue only affected Ubuntu 14.04 LTS. (CVE-2021-3733)<br>
+<br>
+It was discovered that Python incorrectly handled certain server<br>
+responses. An attacker could possibly use this issue to cause a denial of<br>
+service. This issue only affected Ubuntu 14.04 LTS. (CVE-2021-3737)<br>
+<br>
+It was discovered that Python incorrectly handled certain FTP requests.<br>
+An attacker could possibly use this issue to expose sensitive information.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2021-4189)<br>
+<br>
+It was discovered that Python incorrectly handled certain inputs.<br>
+An attacker could possibly use this issue to execute arbitrary code.<br>
+This issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2022-0391)<br>
+<br>
+Devin Jeanpierre discovered that Python incorrectly handled sockets when<br>
+the multiprocessing module was being used. A local attacker could possibly<br>
+use this issue to execute arbitrary code and escalate privileges.<br>
+This issue only affected Ubuntu 22.04 LTS. (CVE-2022-42919)<br>
+<br>
+It was discovered that Python incorrectly handled certain inputs. If a<br>
+user or an automated system were tricked into running a specially<br>
+crafted input, a remote attacker could possibly use this issue to cause a<br>
+denial of service. This issue only affected Ubuntu 14.04 LTS,<br>
+Ubuntu 18.04 LTS and Ubuntu 22.04 LTS. (CVE-2022-45061, CVE-2023-24329)<br>
+<br>
+It was discovered that Python incorrectly handled certain scripts.<br>
+An attacker could possibly use this issue to execute arbitrary code<br>
+or cause a crash. This issue only affected Ubuntu 14.04 LTS and<br>
+Ubuntu 18.04 LTS. (CVE-2022-48560)<br>
+<br>
+It was discovered that Python incorrectly handled certain plist files.<br>
+If a user or an automated system were tricked into processing a specially<br>
+crafted plist file, an attacker could possibly use this issue to consume<br>
+resources, resulting in a denial of service. This issue only affected<br>
+Ubuntu 14.04 LTS and Ubuntu 18.04 LTS. (CVE-2022-48564)<br>
+<br>
+It was discovered that Python did not properly handle XML entity<br>
+declarations in plist files. An attacker could possibly use this<br>
+vulnerability to perform an XML External Entity (XXE) injection,<br>
+resulting in a denial of service or information disclosure. This issue<br>
+only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS. (CVE-2022-48565)<br>
+<br>
+It was discovered that Python did not properly provide constant-time<br>
+processing for a crypto operation. An attacker could possibly use this<br>
+issue to perform a timing attack and recover sensitive information. This<br>
+issue only affected Ubuntu 14.04 LTS and Ubuntu 18.04 LTS.<br>
+(CVE-2022-48566)<br>
+<br>
+It was discovered that Python instances of ssl.SSLSocket were vulnerable<br>
+to a bypass of the TLS handshake. An attacker could possibly use this<br>
+issue to cause applications to treat unauthenticated received data before<br>
+TLS handshake as authenticated data after TLS handshake. This issue only<br>
+affected Ubuntu 14.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS and Ubuntu<br>
+22.04 LTS. (CVE-2023-40217)<br>
+<br>
+It was discovered that Python incorrectly handled null bytes when<br>
+normalizing pathnames. An attacker could possibly use this issue to bypass<br>
+certain filename checks. This issue only affected Ubuntu 22.04 LTS.<br>
+(CVE-2023-41105)<br>
+<br>
+It was discovered that Python incorrectly handled privilege with certain<br>
+parameters. An attacker could possibly use this issue to maintain the<br>
+original processes' groups before starting the new process. This issue<br>
+only affected Ubuntu 23.10. (CVE-2023-6507)<br>
+<br>
+It was discovered that Python incorrectly handled symlinks in temp files.<br>
+An attacker could possibly use this issue to modify the permissions of<br>
+files. This issue only affected Ubuntu 18.04 LTS, Ubuntu 20.04 LTS,<br>
+Ubuntu 22.04 LTS and Ubuntu 23.10. (CVE-2023-6597)<br>
+<br>
+It was discovered that Python incorrectly handled certain crafted zip<br>
+files. An attacker could possibly use this issue to crash the program,<br>
+resulting in a denial of service. (CVE-2024-0450)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2015-20107<br>
+ - https://ubuntu.com/security/CVE-2018-1060<br>
+ - https://ubuntu.com/security/CVE-2018-1061<br>
+ - https://ubuntu.com/security/CVE-2018-14647<br>
+ - https://ubuntu.com/security/CVE-2018-20406<br>
+ - https://ubuntu.com/security/CVE-2018-20852<br>
+ - https://ubuntu.com/security/CVE-2019-9636<br>
+ - https://ubuntu.com/security/CVE-2019-10160<br>
+ - https://ubuntu.com/security/CVE-2019-16056<br>
+ - https://ubuntu.com/security/CVE-2019-16935<br>
+ - https://ubuntu.com/security/CVE-2019-17514<br>
+ - https://ubuntu.com/security/CVE-2019-18348<br>
+ - https://ubuntu.com/security/CVE-2019-20907<br>
+ - https://ubuntu.com/security/CVE-2019-5010<br>
+ - https://ubuntu.com/security/CVE-2019-9674<br>
+ - https://ubuntu.com/security/CVE-2019-9740<br>
+ - https://ubuntu.com/security/CVE-2019-9947<br>
+ - https://ubuntu.com/security/CVE-2019-9948<br>
+ - https://ubuntu.com/security/CVE-2020-14422<br>
+ - https://ubuntu.com/security/CVE-2020-26116<br>
+ - https://ubuntu.com/security/CVE-2020-27619<br>
+ - https://ubuntu.com/security/CVE-2021-3177<br>
+ - https://ubuntu.com/security/CVE-2020-8492<br>
+ - https://ubuntu.com/security/CVE-2021-29921<br>
+ - https://ubuntu.com/security/CVE-2021-3426<br>
+ - https://ubuntu.com/security/CVE-2021-3733<br>
+ - https://ubuntu.com/security/CVE-2021-3737<br>
+ - https://ubuntu.com/security/CVE-2021-4189<br>
+ - https://ubuntu.com/security/CVE-2022-0391<br>
+ - https://ubuntu.com/security/CVE-2022-42919<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+ - https://ubuntu.com/security/CVE-2023-24329<br>
+ - https://ubuntu.com/security/CVE-2022-48560<br>
+ - https://ubuntu.com/security/CVE-2022-48564<br>
+ - https://ubuntu.com/security/CVE-2022-48565<br>
+ - https://ubuntu.com/security/CVE-2022-48566<br>
+ - https://ubuntu.com/security/CVE-2023-40217<br>
+ - https://ubuntu.com/security/CVE-2023-41105<br>
+ - https://ubuntu.com/security/CVE-2023-6507<br>
+ - https://ubuntu.com/security/CVE-2023-6597<br>
+ - https://ubuntu.com/security/CVE-2024-0450<br>
+ - https://ubuntu.com/security/CVE-2021-29921<br>
+ - https://ubuntu.com/security/CVE-2021-3733<br>
+ - https://ubuntu.com/security/CVE-2022-48560<br>
+ - https://ubuntu.com/security/CVE-2019-5010<br>
+ - https://ubuntu.com/security/CVE-2020-26116<br>
+ - https://ubuntu.com/security/CVE-2019-16056<br>
+ - https://ubuntu.com/security/CVE-2019-16935<br>
+ - https://ubuntu.com/security/CVE-2018-14647<br>
+ - https://ubuntu.com/security/CVE-2018-20406<br>
+ - https://ubuntu.com/security/CVE-2019-10160<br>
+ - https://ubuntu.com/security/CVE-2015-20107<br>
+ - https://ubuntu.com/security/CVE-2020-27619<br>
+ - https://ubuntu.com/security/CVE-2022-48564<br>
+ - https://ubuntu.com/security/CVE-2021-4189<br>
+ - https://ubuntu.com/security/CVE-2022-0391<br>
+ - https://ubuntu.com/security/CVE-2019-17514<br>
+ - https://ubuntu.com/security/CVE-2019-9740<br>
+ - https://ubuntu.com/security/CVE-2023-6507<br>
+ - https://ubuntu.com/security/CVE-2019-18348<br>
+ - https://ubuntu.com/security/CVE-2018-20852<br>
+ - https://ubuntu.com/security/CVE-2018-1061<br>
+ - https://ubuntu.com/security/CVE-2019-9674<br>
+ - https://ubuntu.com/security/CVE-2019-9636<br>
+ - https://ubuntu.com/security/CVE-2020-8492<br>
+ - https://ubuntu.com/security/CVE-2019-20907<br>
+ - https://ubuntu.com/security/CVE-2019-9947<br>
+ - https://ubuntu.com/security/CVE-2023-41105<br>
+ - https://ubuntu.com/security/CVE-2023-6597<br>
+ - https://ubuntu.com/security/CVE-2021-3737<br>
+ - https://ubuntu.com/security/CVE-2022-48566<br>
+ - https://ubuntu.com/security/CVE-2018-1060<br>
+ - https://ubuntu.com/security/CVE-2022-45061<br>
+ - https://ubuntu.com/security/CVE-2023-40217<br>
+ - https://ubuntu.com/security/CVE-2022-42919<br>
+ - https://ubuntu.com/security/CVE-2022-48565<br>
+ - https://ubuntu.com/security/CVE-2024-0450<br>
+ - https://ubuntu.com/security/CVE-2019-9948<br>
+ - https://ubuntu.com/security/CVE-2020-14422<br>
+ - https://ubuntu.com/security/CVE-2021-3426<br>
+ - https://ubuntu.com/security/CVE-2021-3177<br>
+ - https://ubuntu.com/security/CVE-2023-24329<br>
+<br>
+**Title**: USN-6876-1: Kopano Core vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6876-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Kopano Core allowed out-of-bounds access. An<br>
+attacker could use this issue to expose private information. This issue<br>
+only affected Ubuntu 18.04 LTS. (CVE-2019-19907)<br>
+<br>
+It was discovered that Kopano Core allowed possible authentication<br>
+with expired passwords. An attacker could use this issue to bypass<br>
+authentication. (CVE-2022-26562)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2019-19907<br>
+ - https://ubuntu.com/security/CVE-2022-26562<br>
+ - https://ubuntu.com/security/CVE-2019-19907<br>
+ - https://ubuntu.com/security/CVE-2022-26562<br>
+<br>
+**Title**: USN-6898-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6898-1<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Ziming Zhang discovered that the DRM driver for VMware Virtual GPU did not<br>
+properly handle certain error conditions, leading to a NULL pointer<br>
+dereference. A local attacker could possibly trigger this vulnerability to<br>
+cause a denial of service. (CVE-2022-38096)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel when modifying certain settings values through debugfs.<br>
+A privileged local attacker could use this to cause a denial of service.<br>
+(CVE-2024-24857, CVE-2024-24858, CVE-2024-24859)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Chenyuan Yang discovered that the Unsorted Block Images (UBI) flash device<br>
+volume management subsystem did not properly validate logical eraseblock<br>
+sizes in certain situations. An attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2024-25739)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - RISC-V architecture;<br>
+  - x86 architecture;<br>
+  - Block layer subsystem;<br>
+  - Accessibility subsystem;<br>
+  - Android drivers;<br>
+  - Bluetooth drivers;<br>
+  - Clock framework and drivers;<br>
+  - Data acquisition framework and drivers;<br>
+  - Cryptographic API;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - I2C subsystem;<br>
+  - IRQ chip drivers;<br>
+  - Multiple devices driver;<br>
+  - VMware VMCI Driver;<br>
+  - MMC subsystem;<br>
+  - Network drivers;<br>
+  - Microsoft Azure Network Adapter (MANA) driver;<br>
+  - Device tree and open firmware driver;<br>
+  - PCI subsystem;<br>
+  - S/390 drivers;<br>
+  - SCSI drivers;<br>
+  - Freescale SoC drivers;<br>
+  - Trusted Execution Environment drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - VFIO drivers;<br>
+  - Framebuffer layer;<br>
+  - Xen hypervisor drivers;<br>
+  - File systems infrastructure;<br>
+  - BTRFS file system;<br>
+  - Ext4 file system;<br>
+  - FAT file system;<br>
+  - Network file system client;<br>
+  - Network file system server daemon;<br>
+  - NILFS2 file system;<br>
+  - Pstore file system;<br>
+  - SMB network file system;<br>
+  - UBI file system;<br>
+  - Netfilter;<br>
+  - BPF subsystem;<br>
+  - Core kernel;<br>
+  - PCI iomap interfaces;<br>
+  - Memory management;<br>
+  - B.A.T.M.A.N. meshing protocol;<br>
+  - Bluetooth subsystem;<br>
+  - Ethernet bridge;<br>
+  - Networking core;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - IEEE 802.15.4 subsystem;<br>
+  - NFC subsystem;<br>
+  - Open vSwitch;<br>
+  - RDS protocol;<br>
+  - Network traffic control;<br>
+  - SMC sockets;<br>
+  - Unix domain sockets;<br>
+  - eXpress Data Path;<br>
+  - Key management;<br>
+  - ALSA SH drivers;<br>
+  - KVM core;<br>
+(CVE-2024-35944, CVE-2024-35789, CVE-2024-35819, CVE-2024-35796,<br>
+CVE-2024-35817, CVE-2024-35950, CVE-2024-35851, CVE-2024-35918,<br>
+CVE-2024-26961, CVE-2024-35990, CVE-2024-26629, CVE-2024-35823,<br>
+CVE-2024-35922, CVE-2024-26969, CVE-2024-36007, CVE-2024-35989,<br>
+CVE-2024-35822, CVE-2024-26654, CVE-2024-35879, CVE-2024-27395,<br>
+CVE-2024-35855, CVE-2024-27008, CVE-2024-26988, CVE-2024-35912,<br>
+CVE-2024-35900, CVE-2024-26956, CVE-2024-27018, CVE-2024-26922,<br>
+CVE-2024-26950, CVE-2024-35849, CVE-2024-26999, CVE-2024-36006,<br>
+CVE-2024-26970, CVE-2024-26937, CVE-2024-35821, CVE-2024-35982,<br>
+CVE-2024-35907, CVE-2024-35884, CVE-2024-26929, CVE-2024-35905,<br>
+CVE-2024-35915, CVE-2024-35910, CVE-2024-35886, CVE-2024-35930,<br>
+CVE-2024-36008, CVE-2024-27004, CVE-2024-26984, CVE-2024-35877,<br>
+CVE-2024-35958, CVE-2024-35895, CVE-2024-26981, CVE-2024-27393,<br>
+CVE-2024-35973, CVE-2024-36029, CVE-2024-26931, CVE-2024-35934,<br>
+CVE-2024-35902, CVE-2024-27013, CVE-2024-26951, CVE-2024-35901,<br>
+CVE-2024-35938, CVE-2024-35936, CVE-2024-26958, CVE-2024-27059,<br>
+CVE-2024-27001, CVE-2024-35825, CVE-2024-35925, CVE-2024-36004,<br>
+CVE-2024-26960, CVE-2024-26923, CVE-2024-35927, CVE-2024-27009,<br>
+CVE-2024-35847, CVE-2024-35871, CVE-2024-27020, CVE-2024-26811,<br>
+CVE-2024-35897, CVE-2024-26994, CVE-2024-35935, CVE-2024-35978,<br>
+CVE-2024-26934, CVE-2024-26828, CVE-2023-52699, CVE-2024-26810,<br>
+CVE-2024-35890, CVE-2024-35955, CVE-2024-35899, CVE-2024-35885,<br>
+CVE-2024-36020, CVE-2024-26813, CVE-2024-26814, CVE-2024-27016,<br>
+CVE-2024-35852, CVE-2024-27437, CVE-2024-35933, CVE-2024-35857,<br>
+CVE-2024-26973, CVE-2024-35813, CVE-2024-27015, CVE-2024-35791,<br>
+CVE-2024-26687, CVE-2024-35976, CVE-2024-35853, CVE-2024-35969,<br>
+CVE-2024-35940, CVE-2024-35809, CVE-2024-35888, CVE-2023-52488,<br>
+CVE-2024-26926, CVE-2024-36005, CVE-2024-26996, CVE-2024-27000,<br>
+CVE-2024-26957, CVE-2024-26974, CVE-2024-26977, CVE-2024-36031,<br>
+CVE-2024-26966, CVE-2024-35815, CVE-2024-35960, CVE-2024-35806,<br>
+CVE-2024-26642, CVE-2023-52880, CVE-2024-26925, CVE-2024-26989,<br>
+CVE-2024-26965, CVE-2024-35997, CVE-2024-26993, CVE-2024-26955,<br>
+CVE-2024-35872, CVE-2024-35893, CVE-2024-35896, CVE-2024-35805,<br>
+CVE-2024-27019, CVE-2024-35898, CVE-2024-35970, CVE-2024-35988,<br>
+CVE-2024-35854, CVE-2024-26976, CVE-2024-35984, CVE-2024-35804,<br>
+CVE-2024-35807, CVE-2024-26964, CVE-2024-36025, CVE-2024-27396,<br>
+CVE-2024-26935, CVE-2024-35785, CVE-2024-26812, CVE-2024-26817)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-38096<br>
+ - https://ubuntu.com/security/CVE-2024-23307<br>
+ - https://ubuntu.com/security/CVE-2024-24857<br>
+ - https://ubuntu.com/security/CVE-2024-24858<br>
+ - https://ubuntu.com/security/CVE-2024-24859<br>
+ - https://ubuntu.com/security/CVE-2024-24861<br>
+ - https://ubuntu.com/security/CVE-2024-25739<br>
+ - https://ubuntu.com/security/CVE-2024-35944<br>
+ - https://ubuntu.com/security/CVE-2024-35789<br>
+ - https://ubuntu.com/security/CVE-2024-35819<br>
+ - https://ubuntu.com/security/CVE-2024-35796<br>
+ - https://ubuntu.com/security/CVE-2024-35817<br>
+ - https://ubuntu.com/security/CVE-2024-35950<br>
+ - https://ubuntu.com/security/CVE-2024-35851<br>
+ - https://ubuntu.com/security/CVE-2024-35918<br>
+ - https://ubuntu.com/security/CVE-2024-26961<br>
+ - https://ubuntu.com/security/CVE-2024-35990<br>
+ - https://ubuntu.com/security/CVE-2024-26629<br>
+ - https://ubuntu.com/security/CVE-2024-35823<br>
+ - https://ubuntu.com/security/CVE-2024-35922<br>
+ - https://ubuntu.com/security/CVE-2024-26969<br>
+ - https://ubuntu.com/security/CVE-2024-36007<br>
+ - https://ubuntu.com/security/CVE-2024-35989<br>
+ - https://ubuntu.com/security/CVE-2024-35822<br>
+ - https://ubuntu.com/security/CVE-2024-26654<br>
+ - https://ubuntu.com/security/CVE-2024-35879<br>
+ - https://ubuntu.com/security/CVE-2024-27395<br>
+ - https://ubuntu.com/security/CVE-2024-35855<br>
+ - https://ubuntu.com/security/CVE-2024-27008<br>
+ - https://ubuntu.com/security/CVE-2024-26988<br>
+ - https://ubuntu.com/security/CVE-2024-35912<br>
+ - https://ubuntu.com/security/CVE-2024-35900<br>
+ - https://ubuntu.com/security/CVE-2024-26956<br>
+ - https://ubuntu.com/security/CVE-2024-27018<br>
+ - https://ubuntu.com/security/CVE-2024-26922<br>
+ - https://ubuntu.com/security/CVE-2024-26950<br>
+ - https://ubuntu.com/security/CVE-2024-35849<br>
+ - https://ubuntu.com/security/CVE-2024-26999<br>
+ - https://ubuntu.com/security/CVE-2024-36006<br>
+ - https://ubuntu.com/security/CVE-2024-26970<br>
+ - https://ubuntu.com/security/CVE-2024-26937<br>
+ - https://ubuntu.com/security/CVE-2024-35821<br>
+ - https://ubuntu.com/security/CVE-2024-35982<br>
+ - https://ubuntu.com/security/CVE-2024-35907<br>
+ - https://ubuntu.com/security/CVE-2024-35884<br>
+ - https://ubuntu.com/security/CVE-2024-26929<br>
+ - https://ubuntu.com/security/CVE-2024-35905<br>
+ - https://ubuntu.com/security/CVE-2024-35915<br>
+ - https://ubuntu.com/security/CVE-2024-35910<br>
+ - https://ubuntu.com/security/CVE-2024-35886<br>
+ - https://ubuntu.com/security/CVE-2024-35930<br>
+ - https://ubuntu.com/security/CVE-2024-36008<br>
+ - https://ubuntu.com/security/CVE-2024-27004<br>
+ - https://ubuntu.com/security/CVE-2024-26984<br>
+ - https://ubuntu.com/security/CVE-2024-35877<br>
+ - https://ubuntu.com/security/CVE-2024-35958<br>
+ - https://ubuntu.com/security/CVE-2024-35895<br>
+ - https://ubuntu.com/security/CVE-2024-26981<br>
+ - https://ubuntu.com/security/CVE-2024-27393<br>
+ - https://ubuntu.com/security/CVE-2024-35973<br>
+ - https://ubuntu.com/security/CVE-2024-36029<br>
+ - https://ubuntu.com/security/CVE-2024-26931<br>
+ - https://ubuntu.com/security/CVE-2024-35934<br>
+ - https://ubuntu.com/security/CVE-2024-35902<br>
+ - https://ubuntu.com/security/CVE-2024-27013<br>
+ - https://ubuntu.com/security/CVE-2024-26951<br>
+ - https://ubuntu.com/security/CVE-2024-35901<br>
+ - https://ubuntu.com/security/CVE-2024-35938<br>
+ - https://ubuntu.com/security/CVE-2024-35936<br>
+ - https://ubuntu.com/security/CVE-2024-26958<br>
+ - https://ubuntu.com/security/CVE-2024-27059<br>
+ - https://ubuntu.com/security/CVE-2024-27001<br>
+ - https://ubuntu.com/security/CVE-2024-35825<br>
+ - https://ubuntu.com/security/CVE-2024-35925<br>
+ - https://ubuntu.com/security/CVE-2024-36004<br>
+ - https://ubuntu.com/security/CVE-2024-26960<br>
+ - https://ubuntu.com/security/CVE-2024-26923<br>
+ - https://ubuntu.com/security/CVE-2024-35927<br>
+ - https://ubuntu.com/security/CVE-2024-27009<br>
+ - https://ubuntu.com/security/CVE-2024-35847<br>
+ - https://ubuntu.com/security/CVE-2024-35871<br>
+ - https://ubuntu.com/security/CVE-2024-27020<br>
+ - https://ubuntu.com/security/CVE-2024-26811<br>
+ - https://ubuntu.com/security/CVE-2024-35897<br>
+ - https://ubuntu.com/security/CVE-2024-26994<br>
+ - https://ubuntu.com/security/CVE-2024-35935<br>
+ - https://ubuntu.com/security/CVE-2024-35978<br>
+ - https://ubuntu.com/security/CVE-2024-26934<br>
+ - https://ubuntu.com/security/CVE-2024-26828<br>
+ - https://ubuntu.com/security/CVE-2023-52699<br>
+ - https://ubuntu.com/security/CVE-2024-26810<br>
+ - https://ubuntu.com/security/CVE-2024-35890<br>
+ - https://ubuntu.com/security/CVE-2024-35955<br>
+ - https://ubuntu.com/security/CVE-2024-35899<br>
+ - https://ubuntu.com/security/CVE-2024-35885<br>
+ - https://ubuntu.com/security/CVE-2024-36020<br>
+ - https://ubuntu.com/security/CVE-2024-26813<br>
+ - https://ubuntu.com/security/CVE-2024-26814<br>
+ - https://ubuntu.com/security/CVE-2024-27016<br>
+ - https://ubuntu.com/security/CVE-2024-35852<br>
+ - https://ubuntu.com/security/CVE-2024-27437<br>
+ - https://ubuntu.com/security/CVE-2024-35933<br>
+ - https://ubuntu.com/security/CVE-2024-35857<br>
+ - https://ubuntu.com/security/CVE-2024-26973<br>
+ - https://ubuntu.com/security/CVE-2024-35813<br>
+ - https://ubuntu.com/security/CVE-2024-27015<br>
+ - https://ubuntu.com/security/CVE-2024-35791<br>
+ - https://ubuntu.com/security/CVE-2024-26687<br>
+ - https://ubuntu.com/security/CVE-2024-35976<br>
+ - https://ubuntu.com/security/CVE-2024-35853<br>
+ - https://ubuntu.com/security/CVE-2024-35969<br>
+ - https://ubuntu.com/security/CVE-2024-35940<br>
+ - https://ubuntu.com/security/CVE-2024-35809<br>
+ - https://ubuntu.com/security/CVE-2024-35888<br>
+ - https://ubuntu.com/security/CVE-2023-52488<br>
+ - https://ubuntu.com/security/CVE-2024-26926<br>
+ - https://ubuntu.com/security/CVE-2024-36005<br>
+ - https://ubuntu.com/security/CVE-2024-26996<br>
+ - https://ubuntu.com/security/CVE-2024-27000<br>
+ - https://ubuntu.com/security/CVE-2024-26957<br>
+ - https://ubuntu.com/security/CVE-2024-26974<br>
+ - https://ubuntu.com/security/CVE-2024-26977<br>
+ - https://ubuntu.com/security/CVE-2024-36031<br>
+ - https://ubuntu.com/security/CVE-2024-26966<br>
+ - https://ubuntu.com/security/CVE-2024-35815<br>
+ - https://ubuntu.com/security/CVE-2024-35960<br>
+ - https://ubuntu.com/security/CVE-2024-35806<br>
+ - https://ubuntu.com/security/CVE-2024-26642<br>
+ - https://ubuntu.com/security/CVE-2023-52880<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26989<br>
+ - https://ubuntu.com/security/CVE-2024-26965<br>
+ - https://ubuntu.com/security/CVE-2024-35997<br>
+ - https://ubuntu.com/security/CVE-2024-26993<br>
+ - https://ubuntu.com/security/CVE-2024-26955<br>
+ - https://ubuntu.com/security/CVE-2024-35872<br>
+ - https://ubuntu.com/security/CVE-2024-35893<br>
+ - https://ubuntu.com/security/CVE-2024-35896<br>
+ - https://ubuntu.com/security/CVE-2024-35805<br>
+ - https://ubuntu.com/security/CVE-2024-27019<br>
+ - https://ubuntu.com/security/CVE-2024-35898<br>
+ - https://ubuntu.com/security/CVE-2024-35970<br>
+ - https://ubuntu.com/security/CVE-2024-35988<br>
+ - https://ubuntu.com/security/CVE-2024-35854<br>
+ - https://ubuntu.com/security/CVE-2024-26976<br>
+ - https://ubuntu.com/security/CVE-2024-35984<br>
+ - https://ubuntu.com/security/CVE-2024-35804<br>
+ - https://ubuntu.com/security/CVE-2024-35807<br>
+ - https://ubuntu.com/security/CVE-2024-26964<br>
+ - https://ubuntu.com/security/CVE-2024-36025<br>
+ - https://ubuntu.com/security/CVE-2024-27396<br>
+ - https://ubuntu.com/security/CVE-2024-26935<br>
+ - https://ubuntu.com/security/CVE-2024-35785<br>
+ - https://ubuntu.com/security/CVE-2024-26812<br>
+ - https://ubuntu.com/security/CVE-2024-26817<br>
+ - https://ubuntu.com/security/CVE-2024-24861<br>
+ - https://ubuntu.com/security/CVE-2024-25739<br>
+ - https://ubuntu.com/security/CVE-2024-26810<br>
+ - https://ubuntu.com/security/CVE-2024-35910<br>
+ - https://ubuntu.com/security/CVE-2024-35935<br>
+ - https://ubuntu.com/security/CVE-2024-35970<br>
+ - https://ubuntu.com/security/CVE-2024-35976<br>
+ - https://ubuntu.com/security/CVE-2024-35990<br>
+ - https://ubuntu.com/security/CVE-2023-52488<br>
+ - https://ubuntu.com/security/CVE-2024-26950<br>
+ - https://ubuntu.com/security/CVE-2024-26922<br>
+ - https://ubuntu.com/security/CVE-2024-26994<br>
+ - https://ubuntu.com/security/CVE-2024-27018<br>
+ - https://ubuntu.com/security/CVE-2024-35813<br>
+ - https://ubuntu.com/security/CVE-2024-35853<br>
+ - https://ubuntu.com/security/CVE-2024-35893<br>
+ - https://ubuntu.com/security/CVE-2024-27016<br>
+ - https://ubuntu.com/security/CVE-2024-36006<br>
+ - https://ubuntu.com/security/CVE-2024-35922<br>
+ - https://ubuntu.com/security/CVE-2024-35804<br>
+ - https://ubuntu.com/security/CVE-2024-26958<br>
+ - https://ubuntu.com/security/CVE-2024-26642<br>
+ - https://ubuntu.com/security/CVE-2024-26828<br>
+ - https://ubuntu.com/security/CVE-2024-26977<br>
+ - https://ubuntu.com/security/CVE-2024-35796<br>
+ - https://ubuntu.com/security/CVE-2024-35933<br>
+ - https://ubuntu.com/security/CVE-2024-35789<br>
+ - https://ubuntu.com/security/CVE-2024-27020<br>
+ - https://ubuntu.com/security/CVE-2024-35852<br>
+ - https://ubuntu.com/security/CVE-2024-35885<br>
+ - https://ubuntu.com/security/CVE-2024-27000<br>
+ - https://ubuntu.com/security/CVE-2024-35815<br>
+ - https://ubuntu.com/security/CVE-2024-27009<br>
+ - https://ubuntu.com/security/CVE-2024-36004<br>
+ - https://ubuntu.com/security/CVE-2024-35918<br>
+ - https://ubuntu.com/security/CVE-2024-26812<br>
+ - https://ubuntu.com/security/CVE-2024-35944<br>
+ - https://ubuntu.com/security/CVE-2024-26935<br>
+ - https://ubuntu.com/security/CVE-2024-26629<br>
+ - https://ubuntu.com/security/CVE-2024-36020<br>
+ - https://ubuntu.com/security/CVE-2024-27013<br>
+ - https://ubuntu.com/security/CVE-2024-35955<br>
+ - https://ubuntu.com/security/CVE-2024-35930<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26964<br>
+ - https://ubuntu.com/security/CVE-2024-24857<br>
+ - https://ubuntu.com/security/CVE-2024-35823<br>
+ - https://ubuntu.com/security/CVE-2024-35900<br>
+ - https://ubuntu.com/security/CVE-2024-36008<br>
+ - https://ubuntu.com/security/CVE-2024-35989<br>
+ - https://ubuntu.com/security/CVE-2024-26996<br>
+ - https://ubuntu.com/security/CVE-2023-52699<br>
+ - https://ubuntu.com/security/CVE-2024-26974<br>
+ - https://ubuntu.com/security/CVE-2024-26955<br>
+ - https://ubuntu.com/security/CVE-2024-35822<br>
+ - https://ubuntu.com/security/CVE-2024-26926<br>
+ - https://ubuntu.com/security/CVE-2024-35857<br>
+ - https://ubuntu.com/security/CVE-2024-35940<br>
+ - https://ubuntu.com/security/CVE-2024-26976<br>
+ - https://ubuntu.com/security/CVE-2024-35890<br>
+ - https://ubuntu.com/security/CVE-2024-27015<br>
+ - https://ubuntu.com/security/CVE-2024-35879<br>
+ - https://ubuntu.com/security/CVE-2024-26937<br>
+ - https://ubuntu.com/security/CVE-2024-35791<br>
+ - https://ubuntu.com/security/CVE-2024-35899<br>
+ - https://ubuntu.com/security/CVE-2024-35907<br>
+ - https://ubuntu.com/security/CVE-2024-35938<br>
+ - https://ubuntu.com/security/CVE-2024-36031<br>
+ - https://ubuntu.com/security/CVE-2024-35785<br>
+ - https://ubuntu.com/security/CVE-2024-27393<br>
+ - https://ubuntu.com/security/CVE-2024-27395<br>
+ - https://ubuntu.com/security/CVE-2024-24858<br>
+ - https://ubuntu.com/security/CVE-2024-35912<br>
+ - https://ubuntu.com/security/CVE-2024-35847<br>
+ - https://ubuntu.com/security/CVE-2024-26960<br>
+ - https://ubuntu.com/security/CVE-2024-26961<br>
+ - https://ubuntu.com/security/CVE-2024-26931<br>
+ - https://ubuntu.com/security/CVE-2024-35888<br>
+ - https://ubuntu.com/security/CVE-2024-35978<br>
+ - https://ubuntu.com/security/CVE-2024-27437<br>
+ - https://ubuntu.com/security/CVE-2024-35973<br>
+ - https://ubuntu.com/security/CVE-2024-35950<br>
+ - https://ubuntu.com/security/CVE-2024-35872<br>
+ - https://ubuntu.com/security/CVE-2024-26966<br>
+ - https://ubuntu.com/security/CVE-2024-26969<br>
+ - https://ubuntu.com/security/CVE-2024-35819<br>
+ - https://ubuntu.com/security/CVE-2024-26811<br>
+ - https://ubuntu.com/security/CVE-2024-26973<br>
+ - https://ubuntu.com/security/CVE-2024-27059<br>
+ - https://ubuntu.com/security/CVE-2024-35849<br>
+ - https://ubuntu.com/security/CVE-2024-27019<br>
+ - https://ubuntu.com/security/CVE-2024-35855<br>
+ - https://ubuntu.com/security/CVE-2024-35969<br>
+ - https://ubuntu.com/security/CVE-2024-27004<br>
+ - https://ubuntu.com/security/CVE-2024-26999<br>
+ - https://ubuntu.com/security/CVE-2024-35901<br>
+ - https://ubuntu.com/security/CVE-2024-26923<br>
+ - https://ubuntu.com/security/CVE-2024-26957<br>
+ - https://ubuntu.com/security/CVE-2024-35877<br>
+ - https://ubuntu.com/security/CVE-2024-35988<br>
+ - https://ubuntu.com/security/CVE-2024-27396<br>
+ - https://ubuntu.com/security/CVE-2024-35806<br>
+ - https://ubuntu.com/security/CVE-2024-26951<br>
+ - https://ubuntu.com/security/CVE-2024-35927<br>
+ - https://ubuntu.com/security/CVE-2024-35898<br>
+ - https://ubuntu.com/security/CVE-2024-35895<br>
+ - https://ubuntu.com/security/CVE-2024-35809<br>
+ - https://ubuntu.com/security/CVE-2024-35854<br>
+ - https://ubuntu.com/security/CVE-2024-24859<br>
+ - https://ubuntu.com/security/CVE-2024-26687<br>
+ - https://ubuntu.com/security/CVE-2024-35934<br>
+ - https://ubuntu.com/security/CVE-2024-36005<br>
+ - https://ubuntu.com/security/CVE-2024-26965<br>
+ - https://ubuntu.com/security/CVE-2024-35821<br>
+ - https://ubuntu.com/security/CVE-2024-35896<br>
+ - https://ubuntu.com/security/CVE-2024-26993<br>
+ - https://ubuntu.com/security/CVE-2024-26817<br>
+ - https://ubuntu.com/security/CVE-2024-26984<br>
+ - https://ubuntu.com/security/CVE-2024-36029<br>
+ - https://ubuntu.com/security/CVE-2024-35825<br>
+ - https://ubuntu.com/security/CVE-2024-35960<br>
+ - https://ubuntu.com/security/CVE-2024-35851<br>
+ - https://ubuntu.com/security/CVE-2024-35925<br>
+ - https://ubuntu.com/security/CVE-2022-38096<br>
+ - https://ubuntu.com/security/CVE-2024-36007<br>
+ - https://ubuntu.com/security/CVE-2024-26956<br>
+ - https://ubuntu.com/security/CVE-2024-26981<br>
+ - https://ubuntu.com/security/CVE-2024-35897<br>
+ - https://ubuntu.com/security/CVE-2024-35997<br>
+ - https://ubuntu.com/security/CVE-2024-26934<br>
+ - https://ubuntu.com/security/CVE-2024-35984<br>
+ - https://ubuntu.com/security/CVE-2024-35871<br>
+ - https://ubuntu.com/security/CVE-2024-27001<br>
+ - https://ubuntu.com/security/CVE-2024-23307<br>
+ - https://ubuntu.com/security/CVE-2024-35805<br>
+ - https://ubuntu.com/security/CVE-2024-26813<br>
+ - https://ubuntu.com/security/CVE-2023-52880<br>
+ - https://ubuntu.com/security/CVE-2024-26814<br>
+ - https://ubuntu.com/security/CVE-2024-35936<br>
+ - https://ubuntu.com/security/CVE-2024-35886<br>
+ - https://ubuntu.com/security/CVE-2024-35915<br>
+ - https://ubuntu.com/security/CVE-2024-26988<br>
+ - https://ubuntu.com/security/CVE-2024-35807<br>
+ - https://ubuntu.com/security/CVE-2024-35902<br>
+ - https://ubuntu.com/security/CVE-2024-26654<br>
+ - https://ubuntu.com/security/CVE-2024-35884<br>
+ - https://ubuntu.com/security/CVE-2024-26970<br>
+ - https://ubuntu.com/security/CVE-2024-35982<br>
+ - https://ubuntu.com/security/CVE-2024-35958<br>
+ - https://ubuntu.com/security/CVE-2024-36025<br>
+ - https://ubuntu.com/security/CVE-2024-26989<br>
+ - https://ubuntu.com/security/CVE-2024-35817<br>
+ - https://ubuntu.com/security/CVE-2024-26929<br>
+ - https://ubuntu.com/security/CVE-2024-35905<br>
+ - https://ubuntu.com/security/CVE-2024-27008<br>
+<br>
+**Title**: USN-6880-1: Tomcat vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6880-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Sam Shahsavar discovered that Apache Tomcat did not properly reject <br>
+HTTP requests with an invalid Content-Length header. A remote attacker<br>
+could possibly use this issue to perform HTTP request smuggling attacks.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-42252<br>
+<br>
+**Title**: USN-6879-1: Virtuoso Open-Source Edition vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6879-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Jingzhou Fu discovered that Virtuoso Open-Source Edition incorrectly<br>
+handled certain crafted SQL statements. An attacker could possibly use<br>
+this issue to crash the program, resulting in a denial of service.<br>
+(CVE-2023-31620, CVE-2023-31622, CVE-2023-31624, CVE-2023-31626,<br>
+CVE-2023-31627, CVE-2023-31629, CVE-2023-31630, CVE-2023-31631,<br>
+CVE-2023-48951)<br>
+<br>
+Jingzhou Fu discovered that Virtuoso Open-Source Edition incorrectly<br>
+handled certain crafted SQL statements. An attacker could possibly use<br>
+this issue to crash the program, resulting in a denial of service.<br>
+This issue only affects Ubuntu 22.04 LTS and Ubuntu 24.04 LTS.<br>
+(CVE-2023-48945, CVE-2023-48946, CVE-2023-48947, CVE-2023-48950)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-31620<br>
+ - https://ubuntu.com/security/CVE-2023-31622<br>
+ - https://ubuntu.com/security/CVE-2023-31624<br>
+ - https://ubuntu.com/security/CVE-2023-31626<br>
+ - https://ubuntu.com/security/CVE-2023-31627<br>
+ - https://ubuntu.com/security/CVE-2023-31629<br>
+ - https://ubuntu.com/security/CVE-2023-31630<br>
+ - https://ubuntu.com/security/CVE-2023-31631<br>
+ - https://ubuntu.com/security/CVE-2023-48951<br>
+ - https://ubuntu.com/security/CVE-2023-48945<br>
+ - https://ubuntu.com/security/CVE-2023-48946<br>
+ - https://ubuntu.com/security/CVE-2023-48947<br>
+ - https://ubuntu.com/security/CVE-2023-48950<br>
+ - https://ubuntu.com/security/CVE-2023-48945<br>
+ - https://ubuntu.com/security/CVE-2023-31631<br>
+ - https://ubuntu.com/security/CVE-2023-48951<br>
+ - https://ubuntu.com/security/CVE-2023-31630<br>
+ - https://ubuntu.com/security/CVE-2023-31627<br>
+ - https://ubuntu.com/security/CVE-2023-31626<br>
+ - https://ubuntu.com/security/CVE-2023-48947<br>
+ - https://ubuntu.com/security/CVE-2023-31622<br>
+ - https://ubuntu.com/security/CVE-2023-48946<br>
+ - https://ubuntu.com/security/CVE-2023-31629<br>
+ - https://ubuntu.com/security/CVE-2023-48950<br>
+ - https://ubuntu.com/security/CVE-2023-31624<br>
+ - https://ubuntu.com/security/CVE-2023-31620<br>
+<br>
+**Title**: USN-6895-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6895-1<br>
+**Priorities**: high,low,medium<br>
+**Description**:<br>
+  It was discovered that the ATA over Ethernet (AoE) driver in the Linux<br>
+kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. An attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6270)<br>
+<br>
+It was discovered that the HugeTLB file system component of the Linux<br>
+Kernel contained a NULL pointer dereference vulnerability. A privileged<br>
+attacker could possibly use this to to cause a denial of service.<br>
+(CVE-2024-0841)<br>
+<br>
+It was discovered that the Open vSwitch implementation in the Linux kernel<br>
+could overflow its stack during recursive action operations under certain<br>
+conditions. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2024-1151)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - PowerPC architecture;<br>
+  - x86 architecture;<br>
+  - Cryptographic API;<br>
+  - Android drivers;<br>
+  - Block layer subsystem;<br>
+  - Bluetooth drivers;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - Hardware monitoring drivers;<br>
+  - I2C subsystem;<br>
+  - IIO ADC drivers;<br>
+  - IIO subsystem;<br>
+  - IIO Magnetometer sensors drivers;<br>
+  - InfiniBand drivers;<br>
+  - On-Chip Interconnect management framework;<br>
+  - Multiple devices driver;<br>
+  - Media drivers;<br>
+  - Network drivers;<br>
+  - PHY drivers;<br>
+  - MediaTek PM domains;<br>
+  - SCSI drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - DesignWare USB3 driver;<br>
+  - Framebuffer layer;<br>
+  - AFS file system;<br>
+  - BTRFS file system;<br>
+  - Ceph distributed file system;<br>
+  - Ext4 file system;<br>
+  - File systems infrastructure;<br>
+  - NILFS2 file system;<br>
+  - NTFS3 file system;<br>
+  - SMB network file system;<br>
+  - Core kernel;<br>
+  - Memory management;<br>
+  - Bluetooth subsystem;<br>
+  - CAN network layer;<br>
+  - Devlink API;<br>
+  - Handshake API;<br>
+  - HSR network protocol;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - Multipath TCP;<br>
+  - Netfilter;<br>
+  - NFC subsystem;<br>
+  - RxRPC session sockets;<br>
+  - TIPC protocol;<br>
+  - Unix domain sockets;<br>
+  - Realtek audio codecs;<br>
+(CVE-2024-26822, CVE-2024-26917, CVE-2024-26723, CVE-2024-26715,<br>
+CVE-2024-26718, CVE-2024-26664, CVE-2024-26707, CVE-2024-26697,<br>
+CVE-2024-26720, CVE-2024-26660, CVE-2024-26677, CVE-2024-26736,<br>
+CVE-2024-26719, CVE-2024-26642, CVE-2024-26700, CVE-2024-26666,<br>
+CVE-2024-26684, CVE-2024-26803, CVE-2024-26698, CVE-2024-26711,<br>
+CVE-2024-26922, CVE-2024-26828, CVE-2024-26910, CVE-2024-26829,<br>
+CVE-2024-26685, CVE-2024-26920, CVE-2024-26696, CVE-2024-26826,<br>
+CVE-2023-52642, CVE-2024-26703, CVE-2024-26708, CVE-2024-26838,<br>
+CVE-2024-26716, CVE-2023-52631, CVE-2024-26782, CVE-2024-26593,<br>
+CVE-2024-26659, CVE-2024-26825, CVE-2024-26824, CVE-2024-26712,<br>
+CVE-2024-26674, CVE-2024-26722, CVE-2023-52643, CVE-2024-26714,<br>
+CVE-2024-26691, CVE-2024-27416, CVE-2024-26830, CVE-2023-52880,<br>
+CVE-2024-26702, CVE-2023-52645, CVE-2024-26820, CVE-2024-26662,<br>
+CVE-2024-26689, CVE-2024-26676, CVE-2024-26923, CVE-2024-26603,<br>
+CVE-2024-26818, CVE-2023-52638, CVE-2024-26733, CVE-2024-26601,<br>
+CVE-2024-26790, CVE-2024-26661, CVE-2024-26600, CVE-2024-26680,<br>
+CVE-2024-26748, CVE-2024-26792, CVE-2024-26889, CVE-2024-26681,<br>
+CVE-2024-26688, CVE-2024-26665, CVE-2024-26602, CVE-2024-26734,<br>
+CVE-2024-35833, CVE-2024-26919, CVE-2024-26916, CVE-2024-26667,<br>
+CVE-2024-26606, CVE-2024-26693, CVE-2024-26717, CVE-2023-52637,<br>
+CVE-2024-26831, CVE-2024-26663, CVE-2024-26694, CVE-2024-26802,<br>
+CVE-2024-26710, CVE-2024-26789, CVE-2024-26679, CVE-2024-26675,<br>
+CVE-2024-26798, CVE-2024-26695, CVE-2024-26726, CVE-2024-26926,<br>
+CVE-2024-26735, CVE-2024-26898, CVE-2024-26890)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-6270<br>
+ - https://ubuntu.com/security/CVE-2024-0841<br>
+ - https://ubuntu.com/security/CVE-2024-1151<br>
+ - https://ubuntu.com/security/CVE-2024-23307<br>
+ - https://ubuntu.com/security/CVE-2024-24861<br>
+ - https://ubuntu.com/security/CVE-2024-26822<br>
+ - https://ubuntu.com/security/CVE-2024-26917<br>
+ - https://ubuntu.com/security/CVE-2024-26723<br>
+ - https://ubuntu.com/security/CVE-2024-26715<br>
+ - https://ubuntu.com/security/CVE-2024-26718<br>
+ - https://ubuntu.com/security/CVE-2024-26664<br>
+ - https://ubuntu.com/security/CVE-2024-26707<br>
+ - https://ubuntu.com/security/CVE-2024-26697<br>
+ - https://ubuntu.com/security/CVE-2024-26720<br>
+ - https://ubuntu.com/security/CVE-2024-26660<br>
+ - https://ubuntu.com/security/CVE-2024-26677<br>
+ - https://ubuntu.com/security/CVE-2024-26736<br>
+ - https://ubuntu.com/security/CVE-2024-26719<br>
+ - https://ubuntu.com/security/CVE-2024-26642<br>
+ - https://ubuntu.com/security/CVE-2024-26700<br>
+ - https://ubuntu.com/security/CVE-2024-26666<br>
+ - https://ubuntu.com/security/CVE-2024-26684<br>
+ - https://ubuntu.com/security/CVE-2024-26803<br>
+ - https://ubuntu.com/security/CVE-2024-26698<br>
+ - https://ubuntu.com/security/CVE-2024-26711<br>
+ - https://ubuntu.com/security/CVE-2024-26922<br>
+ - https://ubuntu.com/security/CVE-2024-26828<br>
+ - https://ubuntu.com/security/CVE-2024-26910<br>
+ - https://ubuntu.com/security/CVE-2024-26829<br>
+ - https://ubuntu.com/security/CVE-2024-26685<br>
+ - https://ubuntu.com/security/CVE-2024-26920<br>
+ - https://ubuntu.com/security/CVE-2024-26696<br>
+ - https://ubuntu.com/security/CVE-2024-26826<br>
+ - https://ubuntu.com/security/CVE-2023-52642<br>
+ - https://ubuntu.com/security/CVE-2024-26703<br>
+ - https://ubuntu.com/security/CVE-2024-26708<br>
+ - https://ubuntu.com/security/CVE-2024-26838<br>
+ - https://ubuntu.com/security/CVE-2024-26716<br>
+ - https://ubuntu.com/security/CVE-2023-52631<br>
+ - https://ubuntu.com/security/CVE-2024-26782<br>
+ - https://ubuntu.com/security/CVE-2024-26593<br>
+ - https://ubuntu.com/security/CVE-2024-26659<br>
+ - https://ubuntu.com/security/CVE-2024-26825<br>
+ - https://ubuntu.com/security/CVE-2024-26824<br>
+ - https://ubuntu.com/security/CVE-2024-26712<br>
+ - https://ubuntu.com/security/CVE-2024-26674<br>
+ - https://ubuntu.com/security/CVE-2024-26722<br>
+ - https://ubuntu.com/security/CVE-2023-52643<br>
+ - https://ubuntu.com/security/CVE-2024-26714<br>
+ - https://ubuntu.com/security/CVE-2024-26691<br>
+ - https://ubuntu.com/security/CVE-2024-27416<br>
+ - https://ubuntu.com/security/CVE-2024-26830<br>
+ - https://ubuntu.com/security/CVE-2023-52880<br>
+ - https://ubuntu.com/security/CVE-2024-26702<br>
+ - https://ubuntu.com/security/CVE-2023-52645<br>
+ - https://ubuntu.com/security/CVE-2024-26820<br>
+ - https://ubuntu.com/security/CVE-2024-26662<br>
+ - https://ubuntu.com/security/CVE-2024-26689<br>
+ - https://ubuntu.com/security/CVE-2024-26676<br>
+ - https://ubuntu.com/security/CVE-2024-26923<br>
+ - https://ubuntu.com/security/CVE-2024-26603<br>
+ - https://ubuntu.com/security/CVE-2024-26818<br>
+ - https://ubuntu.com/security/CVE-2023-52638<br>
+ - https://ubuntu.com/security/CVE-2024-26733<br>
+ - https://ubuntu.com/security/CVE-2024-26601<br>
+ - https://ubuntu.com/security/CVE-2024-26790<br>
+ - https://ubuntu.com/security/CVE-2024-26661<br>
+ - https://ubuntu.com/security/CVE-2024-26600<br>
+ - https://ubuntu.com/security/CVE-2024-26680<br>
+ - https://ubuntu.com/security/CVE-2024-26748<br>
+ - https://ubuntu.com/security/CVE-2024-26792<br>
+ - https://ubuntu.com/security/CVE-2024-26889<br>
+ - https://ubuntu.com/security/CVE-2024-26681<br>
+ - https://ubuntu.com/security/CVE-2024-26688<br>
+ - https://ubuntu.com/security/CVE-2024-26665<br>
+ - https://ubuntu.com/security/CVE-2024-26602<br>
+ - https://ubuntu.com/security/CVE-2024-26734<br>
+ - https://ubuntu.com/security/CVE-2024-35833<br>
+ - https://ubuntu.com/security/CVE-2024-26919<br>
+ - https://ubuntu.com/security/CVE-2024-26916<br>
+ - https://ubuntu.com/security/CVE-2024-26667<br>
+ - https://ubuntu.com/security/CVE-2024-26606<br>
+ - https://ubuntu.com/security/CVE-2024-26693<br>
+ - https://ubuntu.com/security/CVE-2024-26717<br>
+ - https://ubuntu.com/security/CVE-2023-52637<br>
+ - https://ubuntu.com/security/CVE-2024-26831<br>
+ - https://ubuntu.com/security/CVE-2024-26663<br>
+ - https://ubuntu.com/security/CVE-2024-26694<br>
+ - https://ubuntu.com/security/CVE-2024-26802<br>
+ - https://ubuntu.com/security/CVE-2024-26710<br>
+ - https://ubuntu.com/security/CVE-2024-26789<br>
+ - https://ubuntu.com/security/CVE-2024-26679<br>
+ - https://ubuntu.com/security/CVE-2024-26675<br>
+ - https://ubuntu.com/security/CVE-2024-26798<br>
+ - https://ubuntu.com/security/CVE-2024-26695<br>
+ - https://ubuntu.com/security/CVE-2024-26726<br>
+ - https://ubuntu.com/security/CVE-2024-26926<br>
+ - https://ubuntu.com/security/CVE-2024-26735<br>
+ - https://ubuntu.com/security/CVE-2024-26898<br>
+ - https://ubuntu.com/security/CVE-2024-26890<br>
+ - https://ubuntu.com/security/CVE-2024-24861<br>
+ - https://ubuntu.com/security/CVE-2024-26661<br>
+ - https://ubuntu.com/security/CVE-2024-35833<br>
+ - https://ubuntu.com/security/CVE-2024-26666<br>
+ - https://ubuntu.com/security/CVE-2024-26920<br>
+ - https://ubuntu.com/security/CVE-2024-26922<br>
+ - https://ubuntu.com/security/CVE-2024-26910<br>
+ - https://ubuntu.com/security/CVE-2024-26919<br>
+ - https://ubuntu.com/security/CVE-2024-26642<br>
+ - https://ubuntu.com/security/CVE-2024-26828<br>
+ - https://ubuntu.com/security/CVE-2024-26702<br>
+ - https://ubuntu.com/security/CVE-2024-26789<br>
+ - https://ubuntu.com/security/CVE-2024-26600<br>
+ - https://ubuntu.com/security/CVE-2024-26667<br>
+ - https://ubuntu.com/security/CVE-2024-26820<br>
+ - https://ubuntu.com/security/CVE-2024-26718<br>
+ - https://ubuntu.com/security/CVE-2024-26688<br>
+ - https://ubuntu.com/security/CVE-2024-26890<br>
+ - https://ubuntu.com/security/CVE-2024-26676<br>
+ - https://ubuntu.com/security/CVE-2024-26691<br>
+ - https://ubuntu.com/security/CVE-2024-26826<br>
+ - https://ubuntu.com/security/CVE-2024-26603<br>
+ - https://ubuntu.com/security/CVE-2024-26689<br>
+ - https://ubuntu.com/security/CVE-2024-26926<br>
+ - https://ubuntu.com/security/CVE-2024-26838<br>
+ - https://ubuntu.com/security/CVE-2024-26710<br>
+ - https://ubuntu.com/security/CVE-2024-26735<br>
+ - https://ubuntu.com/security/CVE-2024-26695<br>
+ - https://ubuntu.com/security/CVE-2024-26802<br>
+ - https://ubuntu.com/security/CVE-2024-26782<br>
+ - https://ubuntu.com/security/CVE-2024-26679<br>
+ - https://ubuntu.com/security/CVE-2023-52645<br>
+ - https://ubuntu.com/security/CVE-2024-26664<br>
+ - https://ubuntu.com/security/CVE-2024-26726<br>
+ - https://ubuntu.com/security/CVE-2024-26798<br>
+ - https://ubuntu.com/security/CVE-2024-26822<br>
+ - https://ubuntu.com/security/CVE-2024-1151<br>
+ - https://ubuntu.com/security/CVE-2024-26829<br>
+ - https://ubuntu.com/security/CVE-2024-26736<br>
+ - https://ubuntu.com/security/CVE-2023-52637<br>
+ - https://ubuntu.com/security/CVE-2024-26722<br>
+ - https://ubuntu.com/security/CVE-2024-26719<br>
+ - https://ubuntu.com/security/CVE-2024-26748<br>
+ - https://ubuntu.com/security/CVE-2024-26698<br>
+ - https://ubuntu.com/security/CVE-2024-26923<br>
+ - https://ubuntu.com/security/CVE-2023-52631<br>
+ - https://ubuntu.com/security/CVE-2024-26606<br>
+ - https://ubuntu.com/security/CVE-2024-26734<br>
+ - https://ubuntu.com/security/CVE-2024-26917<br>
+ - https://ubuntu.com/security/CVE-2024-26659<br>
+ - https://ubuntu.com/security/CVE-2024-26790<br>
+ - https://ubuntu.com/security/CVE-2024-26696<br>
+ - https://ubuntu.com/security/CVE-2024-26792<br>
+ - https://ubuntu.com/security/CVE-2024-26601<br>
+ - https://ubuntu.com/security/CVE-2024-26693<br>
+ - https://ubuntu.com/security/CVE-2024-26674<br>
+ - https://ubuntu.com/security/CVE-2023-6270<br>
+ - https://ubuntu.com/security/CVE-2024-26898<br>
+ - https://ubuntu.com/security/CVE-2024-26707<br>
+ - https://ubuntu.com/security/CVE-2024-26720<br>
+ - https://ubuntu.com/security/CVE-2024-26830<br>
+ - https://ubuntu.com/security/CVE-2024-26700<br>
+ - https://ubuntu.com/security/CVE-2024-26714<br>
+ - https://ubuntu.com/security/CVE-2024-26677<br>
+ - https://ubuntu.com/security/CVE-2024-26818<br>
+ - https://ubuntu.com/security/CVE-2024-26717<br>
+ - https://ubuntu.com/security/CVE-2024-26685<br>
+ - https://ubuntu.com/security/CVE-2024-26733<br>
+ - https://ubuntu.com/security/CVE-2024-26602<br>
+ - https://ubuntu.com/security/CVE-2023-52638<br>
+ - https://ubuntu.com/security/CVE-2024-26697<br>
+ - https://ubuntu.com/security/CVE-2024-27416<br>
+ - https://ubuntu.com/security/CVE-2024-26824<br>
+ - https://ubuntu.com/security/CVE-2024-26660<br>
+ - https://ubuntu.com/security/CVE-2024-26675<br>
+ - https://ubuntu.com/security/CVE-2024-26831<br>
+ - https://ubuntu.com/security/CVE-2024-26825<br>
+ - https://ubuntu.com/security/CVE-2024-26665<br>
+ - https://ubuntu.com/security/CVE-2024-26681<br>
+ - https://ubuntu.com/security/CVE-2024-26684<br>
+ - https://ubuntu.com/security/CVE-2024-23307<br>
+ - https://ubuntu.com/security/CVE-2024-26916<br>
+ - https://ubuntu.com/security/CVE-2024-26662<br>
+ - https://ubuntu.com/security/CVE-2023-52880<br>
+ - https://ubuntu.com/security/CVE-2024-26711<br>
+ - https://ubuntu.com/security/CVE-2024-26889<br>
+ - https://ubuntu.com/security/CVE-2024-26593<br>
+ - https://ubuntu.com/security/CVE-2024-0841<br>
+ - https://ubuntu.com/security/CVE-2024-26703<br>
+ - https://ubuntu.com/security/CVE-2024-26803<br>
+ - https://ubuntu.com/security/CVE-2024-26715<br>
+ - https://ubuntu.com/security/CVE-2024-26716<br>
+ - https://ubuntu.com/security/CVE-2024-26712<br>
+ - https://ubuntu.com/security/CVE-2024-26723<br>
+ - https://ubuntu.com/security/CVE-2024-26694<br>
+ - https://ubuntu.com/security/CVE-2023-52643<br>
+ - https://ubuntu.com/security/CVE-2023-52642<br>
+ - https://ubuntu.com/security/CVE-2024-26663<br>
+ - https://ubuntu.com/security/CVE-2024-26680<br>
+ - https://ubuntu.com/security/CVE-2024-26708<br>
+<br>
+**Title**: USN-6870-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6870-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that the Intel Data Streaming and Intel Analytics<br>
+Accelerator drivers in the Linux kernel allowed direct access to the<br>
+devices for unprivileged users and virtual machines. A local attacker could<br>
+use this to cause a denial of service. (CVE-2024-21823)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystem:<br>
+  - Netfilter;<br>
+(CVE-2024-26643, CVE-2024-26924)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+<br>
+**Title**: USN-6873-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6873-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that the Intel Data Streaming and Intel Analytics<br>
+Accelerator drivers in the Linux kernel allowed direct access to the<br>
+devices for unprivileged users and virtual machines. A local attacker could<br>
+use this to cause a denial of service. (CVE-2024-21823)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystem:<br>
+  - Netfilter;<br>
+(CVE-2024-26643, CVE-2024-26925, CVE-2024-26924, CVE-2024-26809)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+<br>
+**Title**: USN-6873-2: Linux kernel (StarFive) vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6873-2<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  It was discovered that the Intel Data Streaming and Intel Analytics<br>
+Accelerator drivers in the Linux kernel allowed direct access to the<br>
+devices for unprivileged users and virtual machines. A local attacker could<br>
+use this to cause a denial of service. (CVE-2024-21823)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystem:<br>
+  - Netfilter;<br>
+(CVE-2024-26643, CVE-2024-26925, CVE-2024-26924, CVE-2024-26809)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+ - https://ubuntu.com/security/CVE-2024-21823<br>
+<br>
+**Title**: USN-6856-1: FontForge vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6856-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that FontForge incorrectly handled filenames. If a user or an<br>
+automated system were tricked into opening a specially crafted input file, a<br>
+remote attacker could possibly use this issue to perform a command injection.<br>
+(CVE-2024-25081)<br>
+<br>
+It was discovered that FontForge incorrectly handled archives and compressed<br>
+files. If a user or an automated system were tricked into opening a specially<br>
+crafted input file, a remote attacker could possibly use this issue to perform<br>
+command injection. (CVE-2024-25082)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-25081<br>
+ - https://ubuntu.com/security/CVE-2024-25082<br>
+ - https://ubuntu.com/security/CVE-2024-25082<br>
+ - https://ubuntu.com/security/CVE-2024-25081<br>
+<br>
+**Title**: USN-6872-2: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6872-2<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystem:<br>
+  - Netfilter;<br>
+(CVE-2024-26809, CVE-2024-26643, CVE-2024-26925, CVE-2024-26924)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26925<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26809<br>
+<br>
+**Title**: USN-6869-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6869-1<br>
+**Priorities**: high<br>
+**Description**:<br>
+  Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystem:<br>
+  - Netfilter;<br>
+(CVE-2024-26924, CVE-2024-26643)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26643<br>
+ - https://ubuntu.com/security/CVE-2024-26924<br>
+<br>
+**Title**: USN-6860-1: OpenVPN vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6860-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Reynir Björnsson discovered that OpenVPN incorrectly handled terminating<br>
+client connections. A remote authenticated client could possibly use this<br>
+issue to keep the connection active, bypassing certain security policies.<br>
+This issue only affected Ubuntu 23.10, and Ubuntu 24.04 LTS.<br>
+(CVE-2024-28882)<br>
+<br>
+Reynir Björnsson discovered that OpenVPN incorrectly handled certain<br>
+control channel messages with nonprintable characters. A remote attacker<br>
+could possibly use this issue to cause OpenVPN to consume resources, or<br>
+fill up log files with garbage, leading to a denial of service.<br>
+(CVE-2024-5594)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-28882<br>
+ - https://ubuntu.com/security/CVE-2024-5594<br>
+ - https://ubuntu.com/security/CVE-2024-5594<br>
+ - https://ubuntu.com/security/CVE-2024-28882<br>
+<br>
+**Title**: USN-6897-1: Ghostscript vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6897-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Ghostscript incorrectly handled certain long PDF<br>
+filter names. An attacker could possibly use this issue to cause<br>
+Ghostscript to crash, resulting in a denial of service. This issue only<br>
+affected Ubuntu 22.04 LTS and Ubuntu 24.04 LTS. (CVE-2024-29506)<br>
+<br>
+It was discovered that Ghostscript incorrectly handled certain API<br>
+parameters. An attacker could possibly use this issue to cause Ghostscript<br>
+to crash, resulting in a denial of service. This issue only affected Ubuntu<br>
+24.04 LTS. (CVE-2024-29507)<br>
+<br>
+It was discovered that Ghostscript incorrectly handled certain BaseFont<br>
+names. An attacker could use this issue to cause Ghostscript to crash,<br>
+resulting in a denial of service, or possibly execute arbitrary code.<br>
+(CVE-2024-29508)<br>
+<br>
+It was discovered that Ghostscript incorrectly handled certain PDF<br>
+passwords that contained NULL bytes. An attacker could use this issue to<br>
+cause Ghostscript to crash, resulting in a denial of service, or possibly<br>
+execute arbitrary code. This issue only affected Ubuntu 22.04 LTS and<br>
+Ubuntu 24.04 LTS. (CVE-2024-29509)<br>
+<br>
+It was discovered that Ghostscript incorrectly handled certain certain file<br>
+paths when doing OCR. An attacker could use this issue to read arbitrary<br>
+files and write error messages to arbitrary files. This issue only affected<br>
+Ubuntu 22.04 LTS and Ubuntu 24.04 LTS. (CVE-2024-29511)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-29506<br>
+ - https://ubuntu.com/security/CVE-2024-29507<br>
+ - https://ubuntu.com/security/CVE-2024-29508<br>
+ - https://ubuntu.com/security/CVE-2024-29509<br>
+ - https://ubuntu.com/security/CVE-2024-29511<br>
+ - https://ubuntu.com/security/CVE-2024-29508<br>
+ - https://ubuntu.com/security/CVE-2024-29507<br>
+ - https://ubuntu.com/security/CVE-2024-29511<br>
+ - https://ubuntu.com/security/CVE-2024-29509<br>
+ - https://ubuntu.com/security/CVE-2024-29506<br>
+<br>
+**Title**: USN-6889-1: .NET vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6889-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that .NET did not properly handle object<br>
+deserialization. An attacker could possibly use this issue to cause<br>
+a denial of service. (CVE-2024-30105)<br>
+<br>
+Radek Zikmund discovered that .NET did not properly manage memory. An<br>
+attacker could use this issue to cause a denial of service or possibly<br>
+execute arbitrary code. (CVE-2024-35264)<br>
+<br>
+It was discovered that .NET did not properly parse X.509 Content and<br>
+ObjectIdentifiers. An attacker could possibly use this issue to cause<br>
+a denial of service. (CVE-2024-38095)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-30105<br>
+ - https://ubuntu.com/security/CVE-2024-35264<br>
+ - https://ubuntu.com/security/CVE-2024-38095<br>
+ - https://ubuntu.com/security/CVE-2024-38095<br>
+ - https://ubuntu.com/security/CVE-2024-30105<br>
+ - https://ubuntu.com/security/CVE-2024-35264<br>
+<br>
+**Title**: USN-6882-1: Cinder vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6882-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Martin Kaesberger discovered that Cinder incorrectly handled QCOW2 image<br>
+processing. An authenticated user could use this issue to access arbitrary<br>
+files on the server, possibly exposing sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-32498<br>
+<br>
+**Title**: USN-6883-1: OpenStack Glance vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6883-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Martin Kaesberger discovered that Glance incorrectly handled QCOW2 image<br>
+processing. An authenticated user could use this issue to access arbitrary<br>
+files on the server, possibly exposing sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-32498<br>
+<br>
+**Title**: USN-6884-1: Nova vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6884-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Martin Kaesberger discovered that Nova incorrectly handled QCOW2 image<br>
+processing. An authenticated user could use this issue to access arbitrary<br>
+files on the server, possibly exposing sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-32498<br>
+<br>
+**Title**: USN-6885-2: Apache HTTP Server regression<br>
+**URL**: https://ubuntu.com/security/notices/USN-6885-2<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  USN-6885-1 fixed vulnerabilities in Apache HTTP Server. One of the security<br>
+fixes introduced a regression when proxying requests to a HTTP/2 server.<br>
+This update fixes the problem.<br>
+<br>
+We apologize for the inconvenience.<br>
+<br>
+Original advisory details:<br>
+<br>
+ Marc Stern discovered that the Apache HTTP Server incorrectly handled<br>
+ serving WebSocket protocol upgrades over HTTP/2 connections. A remote<br>
+ attacker could possibly use this issue to cause the server to crash,<br>
+ resulting in a denial of service. (CVE-2024-36387)<br>
+ <br>
+ Orange Tsai discovered that the Apache HTTP Server mod_proxy module<br>
+ incorrectly sent certain request URLs with incorrect encodings to backends.<br>
+ A remote attacker could possibly use this issue to bypass authentication.<br>
+ (CVE-2024-38473)<br>
+ <br>
+ Orange Tsai discovered that the Apache HTTP Server mod_rewrite module<br>
+ incorrectly handled certain substitutions. A remote attacker could possibly<br>
+ use this issue to execute scripts in directories not directly reachable<br>
+ by any URL, or cause a denial of service. Some environments may require<br>
+ using the new UnsafeAllow3F flag to handle unsafe substitutions.<br>
+ (CVE-2024-38474, CVE-2024-38475, CVE-2024-39573)<br>
+ <br>
+ Orange Tsai discovered that the Apache HTTP Server incorrectly handled<br>
+ certain response headers. A remote attacker could possibly use this issue<br>
+ to obtain sensitive information, execute local scripts, or perform SSRF<br>
+ attacks. (CVE-2024-38476)<br>
+ <br>
+ Orange Tsai discovered that the Apache HTTP Server mod_proxy module<br>
+ incorrectly handled certain requests. A remote attacker could possibly use<br>
+ this issue to cause the server to crash, resulting in a denial of service.<br>
+ (CVE-2024-38477)<br>
+ <br>
+ It was discovered that the Apache HTTP Server incorrectly handled certain<br>
+ handlers configured via AddType. A remote attacker could possibly use this<br>
+ issue to obtain source code. (CVE-2024-39884)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-36387<br>
+ - https://ubuntu.com/security/CVE-2024-38473<br>
+ - https://ubuntu.com/security/CVE-2024-38474<br>
+ - https://ubuntu.com/security/CVE-2024-38475<br>
+ - https://ubuntu.com/security/CVE-2024-39573<br>
+ - https://ubuntu.com/security/CVE-2024-38476<br>
+ - https://ubuntu.com/security/CVE-2024-38477<br>
+ - https://ubuntu.com/security/CVE-2024-39884<br>
+<br>
+**Title**: USN-6885-1: Apache HTTP Server vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6885-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Marc Stern discovered that the Apache HTTP Server incorrectly handled<br>
+serving WebSocket protocol upgrades over HTTP/2 connections. A remote<br>
+attacker could possibly use this issue to cause the server to crash,<br>
+resulting in a denial of service. (CVE-2024-36387)<br>
+<br>
+Orange Tsai discovered that the Apache HTTP Server mod_proxy module<br>
+incorrectly sent certain request URLs with incorrect encodings to backends.<br>
+A remote attacker could possibly use this issue to bypass authentication.<br>
+(CVE-2024-38473)<br>
+<br>
+Orange Tsai discovered that the Apache HTTP Server mod_rewrite module<br>
+incorrectly handled certain substitutions. A remote attacker could possibly<br>
+use this issue to execute scripts in directories not directly reachable<br>
+by any URL, or cause a denial of service. Some environments may require<br>
+using the new UnsafeAllow3F flag to handle unsafe substitutions.<br>
+(CVE-2024-38474, CVE-2024-38475, CVE-2024-39573)<br>
+<br>
+Orange Tsai discovered that the Apache HTTP Server incorrectly handled<br>
+certain response headers. A remote attacker could possibly use this issue<br>
+to obtain sensitive information, execute local scripts, or perform SSRF<br>
+attacks. (CVE-2024-38476)<br>
+<br>
+Orange Tsai discovered that the Apache HTTP Server mod_proxy module<br>
+incorrectly handled certain requests. A remote attacker could possibly use<br>
+this issue to cause the server to crash, resulting in a denial of service.<br>
+(CVE-2024-38477)<br>
+<br>
+It was discovered that the Apache HTTP Server incorrectly handled certain<br>
+handlers configured via AddType. A remote attacker could possibly use this<br>
+issue to obtain source code. (CVE-2024-39884)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-36387<br>
+ - https://ubuntu.com/security/CVE-2024-38473<br>
+ - https://ubuntu.com/security/CVE-2024-38474<br>
+ - https://ubuntu.com/security/CVE-2024-38475<br>
+ - https://ubuntu.com/security/CVE-2024-39573<br>
+ - https://ubuntu.com/security/CVE-2024-38476<br>
+ - https://ubuntu.com/security/CVE-2024-38477<br>
+ - https://ubuntu.com/security/CVE-2024-39884<br>
+ - https://ubuntu.com/security/CVE-2024-38475<br>
+ - https://ubuntu.com/security/CVE-2024-38474<br>
+ - https://ubuntu.com/security/CVE-2024-39573<br>
+ - https://ubuntu.com/security/CVE-2024-38476<br>
+ - https://ubuntu.com/security/CVE-2024-38477<br>
+ - https://ubuntu.com/security/CVE-2024-36387<br>
+ - https://ubuntu.com/security/CVE-2024-39884<br>
+ - https://ubuntu.com/security/CVE-2024-38473<br>
+<br>
+#### What's Changed<br>
+* Vary location of grub config if the stemcell is EFI or not by @selzoc in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/362<br>
+* Add spec helper for grub.cfg path by @selzoc in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/363<br>
+* Do not exclude grub tests on fips by @selzoc in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/364<br>
+<br>
+#### New Contributors<br>
+* @selzoc made their first contribution in https://github.com/cloudfoundry/bosh-linux-stemcell-builder/pull/362<br>
+<br>
+**Full Changelog**: https://github.com/cloudfoundry/bosh-linux-stemcell-builder/compare/ubuntu-jammy/v1.351...ubuntu-jammy/v1.492
+
+
 #### <a id="jammy-1-486"></a> 1.486
 
 <span class="pivnet">Available in the Broadcom Support portal</span>
