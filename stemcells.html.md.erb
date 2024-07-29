@@ -14,6 +14,1222 @@ The following sections describe each Jammy stemcell release.
 
 This section includes release notes for the 1.x line of Linux stemcells used with <%= vars.platform_name %>.
 
+#### <a id="jammy-1-506"></a> 1.506
+
+
+**Release Date**: July 29, 2024
+
+#### Metadata:<br>
+**BOSH Agent Version**: 2.672.0<br>
+**Kernel Version**: 5.15.0.117.117<br>
+<br>
+#### USNs:<br>
+<br>
+**Title**: USN-6910-1: Apache ActiveMQ vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6910-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Chess Hazlett discovered that Apache ActiveMQ incorrectly handled certain<br>
+commands. A remote attacker could possibly use this issue to terminate<br>
+the program, resulting in a denial of service. This issue only affected<br>
+Ubuntu 16.04 LTS. (CVE-2015-7559)<br>
+<br>
+Peter Stöckli discovered that Apache ActiveMQ incorrectly handled<br>
+hostname verification. A remote attacker could possibly use this issue<br>
+to perform a person-in-the-middle attack. This issue only affected Ubuntu<br>
+16.04 LTS. (CVE-2018-11775)<br>
+<br>
+Jonathan Gallimore and Colm Ó hÉigeartaigh discovered that Apache<br>
+ActiveMQ incorrectly handled authentication in certain functions.<br>
+A remote attacker could possibly use this issue to perform a<br>
+person-in-the-middle attack. This issue only affected Ubuntu 16.04 LTS,<br>
+Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2020-13920)<br>
+<br>
+Gregor Tudan discovered that Apache ActiveMQ incorrectly handled<br>
+LDAP authentication. A remote attacker could possibly use this issue<br>
+to acquire unauthenticated access. This issue only affected Ubuntu 16.04<br>
+LTS, Ubuntu 18.04 LTS and Ubuntu 20.04 LTS. (CVE-2021-26117)<br>
+<br>
+It was discovered that Apache ActiveMQ incorrectly handled<br>
+authentication. A remote attacker could possibly use this issue to run<br>
+arbitrary code. (CVE-2022-41678)<br>
+<br>
+It was discovered that Apache ActiveMQ incorrectly handled<br>
+deserialization. A remote attacker could possibly use this issue to run<br>
+arbitrary shell commands. (CVE-2023-46604)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2015-7559<br>
+ - https://ubuntu.com/security/CVE-2018-11775<br>
+ - https://ubuntu.com/security/CVE-2020-13920<br>
+ - https://ubuntu.com/security/CVE-2021-26117<br>
+ - https://ubuntu.com/security/CVE-2022-41678<br>
+ - https://ubuntu.com/security/CVE-2023-46604<br>
+ - https://ubuntu.com/security/CVE-2021-26117<br>
+ - https://ubuntu.com/security/CVE-2022-41678<br>
+ - https://ubuntu.com/security/CVE-2023-46604<br>
+ - https://ubuntu.com/security/CVE-2020-13920<br>
+ - https://ubuntu.com/security/CVE-2018-11775<br>
+ - https://ubuntu.com/security/CVE-2015-7559<br>
+<br>
+**Title**: USN-6919-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6919-1<br>
+**Priorities**: medium,high,low,unknown<br>
+**Description**:<br>
+  Ziming Zhang discovered that the DRM driver for VMware Virtual GPU did not<br>
+properly handle certain error conditions, leading to a NULL pointer<br>
+dereference. A local attacker could possibly trigger this vulnerability to<br>
+cause a denial of service. (CVE-2022-38096)<br>
+<br>
+It was discovered that the ATA over Ethernet (AoE) driver in the Linux<br>
+kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. An attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6270)<br>
+<br>
+It was discovered that the Atheros 802.11ac wireless driver did not<br>
+properly validate certain data structures, leading to a NULL pointer<br>
+dereference. An attacker could possibly use this to cause a denial of<br>
+service. (CVE-2023-7042)<br>
+<br>
+It was discovered that the HugeTLB file system component of the Linux<br>
+Kernel contained a NULL pointer dereference vulnerability. A privileged<br>
+attacker could possibly use this to to cause a denial of service.<br>
+(CVE-2024-0841)<br>
+<br>
+It was discovered that the Intel Data Streaming and Intel Analytics<br>
+Accelerator drivers in the Linux kernel allowed direct access to the<br>
+devices for unprivileged users and virtual machines. A local attacker could<br>
+use this to cause a denial of service. (CVE-2024-21823)<br>
+<br>
+Yuxuan Hu discovered that the Bluetooth RFCOMM protocol driver in the Linux<br>
+Kernel contained a race condition, leading to a NULL pointer dereference.<br>
+An attacker could possibly use this to cause a denial of service (system<br>
+crash). (CVE-2024-22099)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel when modifying certain settings values through debugfs.<br>
+A privileged local attacker could use this to cause a denial of service.<br>
+(CVE-2024-24857, CVE-2024-24858, CVE-2024-24859)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Chenyuan Yang discovered that the Unsorted Block Images (UBI) flash device<br>
+volume management subsystem did not properly validate logical eraseblock<br>
+sizes in certain situations. An attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2024-25739)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM32 architecture;<br>
+  - ARM64 architecture;<br>
+  - RISC-V architecture;<br>
+  - x86 architecture;<br>
+  - Block layer subsystem;<br>
+  - Accessibility subsystem;<br>
+  - ACPI drivers;<br>
+  - Android drivers;<br>
+  - Bluetooth drivers;<br>
+  - Clock framework and drivers;<br>
+  - Data acquisition framework and drivers;<br>
+  - CPU frequency scaling framework;<br>
+  - Cryptographic API;<br>
+  - DMA engine subsystem;<br>
+  - EFI core;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - I2C subsystem;<br>
+  - InfiniBand drivers;<br>
+  - IOMMU subsystem;<br>
+  - IRQ chip drivers;<br>
+  - Multiple devices driver;<br>
+  - Media drivers;<br>
+  - VMware VMCI Driver;<br>
+  - MMC subsystem;<br>
+  - Network drivers;<br>
+  - NTB driver;<br>
+  - NVME drivers;<br>
+  - Device tree and open firmware driver;<br>
+  - PCI subsystem;<br>
+  - MediaTek PM domains;<br>
+  - Power supply drivers;<br>
+  - S/390 drivers;<br>
+  - SCSI drivers;<br>
+  - Freescale SoC drivers;<br>
+  - SPI subsystem;<br>
+  - Media staging drivers;<br>
+  - TCM subsystem;<br>
+  - Trusted Execution Environment drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - VFIO drivers;<br>
+  - Framebuffer layer;<br>
+  - Xen hypervisor drivers;<br>
+  - AFS file system;<br>
+  - File systems infrastructure;<br>
+  - BTRFS file system;<br>
+  - EROFS file system;<br>
+  - Ext4 file system;<br>
+  - F2FS file system;<br>
+  - FAT file system;<br>
+  - Network file system client;<br>
+  - Network file system server daemon;<br>
+  - NILFS2 file system;<br>
+  - NTFS3 file system;<br>
+  - Pstore file system;<br>
+  - Diskquota system;<br>
+  - SMB network file system;<br>
+  - UBI file system;<br>
+  - BPF subsystem;<br>
+  - Netfilter;<br>
+  - TLS protocol;<br>
+  - io_uring subsystem;<br>
+  - Core kernel;<br>
+  - PCI iomap interfaces;<br>
+  - Memory management;<br>
+  - B.A.T.M.A.N. meshing protocol;<br>
+  - Bluetooth subsystem;<br>
+  - Ethernet bridge;<br>
+  - Networking core;<br>
+  - Distributed Switch Architecture;<br>
+  - HSR network protocol;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - L2TP protocol;<br>
+  - MAC80211 subsystem;<br>
+  - IEEE 802.15.4 subsystem;<br>
+  - Multipath TCP;<br>
+  - Netlink;<br>
+  - NET/ROM layer;<br>
+  - NFC subsystem;<br>
+  - Open vSwitch;<br>
+  - Packet sockets;<br>
+  - RDS protocol;<br>
+  - Network traffic control;<br>
+  - SMC sockets;<br>
+  - Sun RPC protocol;<br>
+  - Unix domain sockets;<br>
+  - Wireless networking;<br>
+  - eXpress Data Path;<br>
+  - ALSA SH drivers;<br>
+  - USB sound devices;<br>
+  - KVM core;<br>
+(CVE-2024-26984, CVE-2024-26838, CVE-2024-26925, CVE-2024-26790,<br>
+CVE-2024-26955, CVE-2024-27431, CVE-2024-26737, CVE-2024-27044,<br>
+CVE-2024-26964, CVE-2024-26880, CVE-2024-26926, CVE-2024-26843,<br>
+CVE-2024-26735, CVE-2024-26881, CVE-2023-52644, CVE-2024-26747,<br>
+CVE-2024-27405, CVE-2024-26875, CVE-2024-35896, CVE-2024-35829,<br>
+CVE-2024-26877, CVE-2024-26855, CVE-2024-27414, CVE-2024-35897,<br>
+CVE-2024-35845, CVE-2024-26601, CVE-2024-35817, CVE-2024-36006,<br>
+CVE-2024-26957, CVE-2024-27019, CVE-2024-35830, CVE-2024-26977,<br>
+CVE-2024-26803, CVE-2024-26629, CVE-2024-26994, CVE-2024-27078,<br>
+CVE-2024-35789, CVE-2023-52641, CVE-2024-27016, CVE-2024-26752,<br>
+CVE-2024-27028, CVE-2024-26817, CVE-2024-26840, CVE-2024-26969,<br>
+CVE-2024-26965, CVE-2023-52656, CVE-2024-35973, CVE-2024-35852,<br>
+CVE-2024-26651, CVE-2024-27432, CVE-2024-27416, CVE-2024-26792,<br>
+CVE-2024-35877, CVE-2024-26584, CVE-2024-26903, CVE-2024-26951,<br>
+CVE-2024-36004, CVE-2024-26861, CVE-2024-27412, CVE-2024-26788,<br>
+CVE-2024-35813, CVE-2024-26931, CVE-2023-52620, CVE-2024-27075,<br>
+CVE-2024-36008, CVE-2024-35855, CVE-2024-27059, CVE-2024-35806,<br>
+CVE-2024-26763, CVE-2024-35955, CVE-2024-35936, CVE-2024-26856,<br>
+CVE-2024-26966, CVE-2024-35969, CVE-2024-35960, CVE-2024-35796,<br>
+CVE-2024-26810, CVE-2024-26862, CVE-2023-52434, CVE-2024-27046,<br>
+CVE-2024-26999, CVE-2024-26778, CVE-2023-52497, CVE-2024-35872,<br>
+CVE-2024-26585, CVE-2024-35978, CVE-2024-35918, CVE-2024-35879,<br>
+CVE-2024-27388, CVE-2024-26898, CVE-2024-26879, CVE-2024-26882,<br>
+CVE-2023-52650, CVE-2024-35884, CVE-2024-27396, CVE-2024-35785,<br>
+CVE-2024-36005, CVE-2024-35989, CVE-2023-52662, CVE-2024-35857,<br>
+CVE-2024-26828, CVE-2024-27054, CVE-2024-26688, CVE-2024-35997,<br>
+CVE-2024-26603, CVE-2024-26820, CVE-2024-35915, CVE-2024-35982,<br>
+CVE-2024-26874, CVE-2024-26801, CVE-2024-26814, CVE-2024-27045,<br>
+CVE-2024-26897, CVE-2024-35895, CVE-2024-35944, CVE-2024-35804,<br>
+CVE-2024-26805, CVE-2024-27052, CVE-2024-35851, CVE-2024-35900,<br>
+CVE-2024-35807, CVE-2024-26816, CVE-2024-26769, CVE-2024-27004,<br>
+CVE-2024-27001, CVE-2024-27415, CVE-2024-35825, CVE-2024-26777,<br>
+CVE-2024-27000, CVE-2024-27030, CVE-2024-26878, CVE-2024-26804,<br>
+CVE-2024-27051, CVE-2024-26934, CVE-2024-27043, CVE-2024-26791,<br>
+CVE-2024-27009, CVE-2024-26795, CVE-2023-52640, CVE-2024-35893,<br>
+CVE-2024-35898, CVE-2024-26859, CVE-2024-27393, CVE-2024-26766,<br>
+CVE-2024-26659, CVE-2024-26642, CVE-2024-26989, CVE-2024-26811,<br>
+CVE-2024-26846, CVE-2024-26743, CVE-2024-35823, CVE-2024-27076,<br>
+CVE-2024-26935, CVE-2023-52645, CVE-2024-26813, CVE-2024-26782,<br>
+CVE-2024-26970, CVE-2024-26915, CVE-2024-27039, CVE-2024-26906,<br>
+CVE-2024-35791, CVE-2024-35990, CVE-2024-26845, CVE-2024-35805,<br>
+CVE-2024-35912, CVE-2024-27437, CVE-2024-27436, CVE-2024-26772,<br>
+CVE-2024-26812, CVE-2024-26754, CVE-2024-26958, CVE-2024-26956,<br>
+CVE-2024-26749, CVE-2024-27413, CVE-2024-27037, CVE-2023-52447,<br>
+CVE-2024-27403, CVE-2023-52652, CVE-2024-36025, CVE-2024-26996,<br>
+CVE-2024-35847, CVE-2022-48808, CVE-2024-26976, CVE-2024-26802,<br>
+CVE-2024-36020, CVE-2024-27034, CVE-2024-26993, CVE-2024-27065,<br>
+CVE-2024-35930, CVE-2024-26774, CVE-2024-26872, CVE-2024-26924,<br>
+CVE-2024-26852, CVE-2024-26923, CVE-2024-26771, CVE-2024-35933,<br>
+CVE-2024-35925, CVE-2024-26937, CVE-2024-26894, CVE-2024-26839,<br>
+CVE-2024-35899, CVE-2024-26889, CVE-2024-35958, CVE-2024-35885,<br>
+CVE-2024-35828, CVE-2024-26870, CVE-2024-26583, CVE-2024-26736,<br>
+CVE-2024-35938, CVE-2024-26793, CVE-2024-26891, CVE-2024-35910,<br>
+CVE-2024-26654, CVE-2024-35940, CVE-2024-26851, CVE-2024-35984,<br>
+CVE-2024-26809, CVE-2024-35819, CVE-2024-35821, CVE-2024-26643,<br>
+CVE-2024-36029, CVE-2024-35888, CVE-2024-27390, CVE-2024-26773,<br>
+CVE-2024-26733, CVE-2024-26961, CVE-2024-35822, CVE-2024-35854,<br>
+CVE-2024-35950, CVE-2024-35970, CVE-2024-27053, CVE-2024-26907,<br>
+CVE-2024-26776, CVE-2024-26748, CVE-2024-26988, CVE-2024-35935,<br>
+CVE-2024-26744, CVE-2024-27008, CVE-2024-35905, CVE-2024-26974,<br>
+CVE-2024-26950, CVE-2024-26787, CVE-2024-27077, CVE-2024-35886,<br>
+CVE-2024-35907, CVE-2024-27020, CVE-2024-26764, CVE-2024-26835,<br>
+CVE-2024-35988, CVE-2024-26687, CVE-2024-35809, CVE-2024-35844,<br>
+CVE-2024-26901, CVE-2024-26848, CVE-2024-26857, CVE-2024-26751,<br>
+CVE-2024-27074, CVE-2024-26885, CVE-2024-26884, CVE-2024-27410,<br>
+CVE-2024-35871, CVE-2024-26883, CVE-2023-52699, CVE-2024-35922,<br>
+CVE-2024-26895, CVE-2024-26798, CVE-2024-26981, CVE-2024-27013,<br>
+CVE-2024-27419, CVE-2024-26779, CVE-2024-27395, CVE-2024-27015,<br>
+CVE-2024-35890, CVE-2024-26863, CVE-2024-26922, CVE-2024-27417,<br>
+CVE-2023-52488, CVE-2024-26929, CVE-2024-26960, CVE-2024-26833,<br>
+CVE-2024-26750, CVE-2024-27024, CVE-2024-36007, CVE-2024-27047,<br>
+CVE-2024-35853, CVE-2024-26973, CVE-2024-27038, CVE-2024-35934,<br>
+CVE-2024-27073, CVE-2024-35849, CVE-2023-52880, CVE-2024-35976)<br>
+<br>
+**Title**: USN-6917-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6917-1<br>
+**Priorities**: medium,low,high,unknown<br>
+**Description**:<br>
+  Ziming Zhang discovered that the DRM driver for VMware Virtual GPU did not<br>
+properly handle certain error conditions, leading to a NULL pointer<br>
+dereference. A local attacker could possibly trigger this vulnerability to<br>
+cause a denial of service. (CVE-2022-38096)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel when modifying certain settings values through debugfs.<br>
+A privileged local attacker could use this to cause a denial of service.<br>
+(CVE-2024-24857, CVE-2024-24858, CVE-2024-24859)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Chenyuan Yang discovered that the Unsorted Block Images (UBI) flash device<br>
+volume management subsystem did not properly validate logical eraseblock<br>
+sizes in certain situations. An attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2024-25739)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - RISC-V architecture;<br>
+  - x86 architecture;<br>
+  - Block layer subsystem;<br>
+  - Accessibility subsystem;<br>
+  - Android drivers;<br>
+  - Bluetooth drivers;<br>
+  - Clock framework and drivers;<br>
+  - Data acquisition framework and drivers;<br>
+  - Cryptographic API;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - I2C subsystem;<br>
+  - IRQ chip drivers;<br>
+  - Multiple devices driver;<br>
+  - VMware VMCI Driver;<br>
+  - MMC subsystem;<br>
+  - Network drivers;<br>
+  - Microsoft Azure Network Adapter (MANA) driver;<br>
+  - Device tree and open firmware driver;<br>
+  - PCI subsystem;<br>
+  - S/390 drivers;<br>
+  - SCSI drivers;<br>
+  - Freescale SoC drivers;<br>
+  - Trusted Execution Environment drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - VFIO drivers;<br>
+  - Framebuffer layer;<br>
+  - Xen hypervisor drivers;<br>
+  - File systems infrastructure;<br>
+  - BTRFS file system;<br>
+  - Ext4 file system;<br>
+  - FAT file system;<br>
+  - Network file system client;<br>
+  - Network file system server daemon;<br>
+  - NILFS2 file system;<br>
+  - Pstore file system;<br>
+  - SMB network file system;<br>
+  - UBI file system;<br>
+  - Netfilter;<br>
+  - BPF subsystem;<br>
+  - Core kernel;<br>
+  - PCI iomap interfaces;<br>
+  - Memory management;<br>
+  - B.A.T.M.A.N. meshing protocol;<br>
+  - Bluetooth subsystem;<br>
+  - Ethernet bridge;<br>
+  - Networking core;<br>
+  - Distributed Switch Architecture;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - IEEE 802.15.4 subsystem;<br>
+  - NFC subsystem;<br>
+  - Open vSwitch;<br>
+  - RDS protocol;<br>
+  - Network traffic control;<br>
+  - SMC sockets;<br>
+  - Unix domain sockets;<br>
+  - eXpress Data Path;<br>
+  - Key management;<br>
+  - ALSA SH drivers;<br>
+  - KVM core;<br>
+(CVE-2024-26993, CVE-2024-26996, CVE-2024-35879, CVE-2024-26812,<br>
+CVE-2024-26984, CVE-2024-26817, CVE-2024-35950, CVE-2024-26960,<br>
+CVE-2024-27437, CVE-2024-26964, CVE-2024-27059, CVE-2024-35969,<br>
+CVE-2024-35936, CVE-2024-35912, CVE-2024-35915, CVE-2024-35938,<br>
+CVE-2024-27019, CVE-2024-35822, CVE-2024-35997, CVE-2024-35855,<br>
+CVE-2024-26925, CVE-2024-26654, CVE-2024-26923, CVE-2024-36031,<br>
+CVE-2024-36020, CVE-2024-35823, CVE-2024-35852, CVE-2024-35989,<br>
+CVE-2024-27000, CVE-2024-35853, CVE-2024-27013, CVE-2024-35854,<br>
+CVE-2024-35922, CVE-2024-26937, CVE-2023-52880, CVE-2024-26974,<br>
+CVE-2024-26629, CVE-2024-35804, CVE-2024-35958, CVE-2024-26814,<br>
+CVE-2024-35890, CVE-2024-35940, CVE-2024-26999, CVE-2024-35847,<br>
+CVE-2024-27015, CVE-2024-26687, CVE-2024-26970, CVE-2024-35930,<br>
+CVE-2024-26813, CVE-2024-26810, CVE-2024-26969, CVE-2024-26977,<br>
+CVE-2024-26956, CVE-2024-35901, CVE-2024-27020, CVE-2024-35905,<br>
+CVE-2024-35785, CVE-2024-27009, CVE-2024-35877, CVE-2024-35893,<br>
+CVE-2024-26989, CVE-2024-26642, CVE-2024-35857, CVE-2024-35935,<br>
+CVE-2024-26828, CVE-2024-26965, CVE-2024-35888, CVE-2024-35900,<br>
+CVE-2024-26951, CVE-2024-35809, CVE-2024-27008, CVE-2024-26958,<br>
+CVE-2024-35973, CVE-2024-26935, CVE-2024-26934, CVE-2024-35982,<br>
+CVE-2023-52488, CVE-2024-35884, CVE-2024-35907, CVE-2024-27018,<br>
+CVE-2024-26929, CVE-2024-35984, CVE-2024-35899, CVE-2024-26976,<br>
+CVE-2024-26922, CVE-2024-35817, CVE-2024-26961, CVE-2024-35925,<br>
+CVE-2024-35821, CVE-2024-36005, CVE-2024-35988, CVE-2024-35970,<br>
+CVE-2024-27001, CVE-2024-35960, CVE-2022-48808, CVE-2024-35927,<br>
+CVE-2024-35806, CVE-2024-27016, CVE-2024-35897, CVE-2024-26957,<br>
+CVE-2024-36025, CVE-2024-35872, CVE-2024-26988, CVE-2024-35819,<br>
+CVE-2024-35896, CVE-2024-36007, CVE-2024-35944, CVE-2024-35990,<br>
+CVE-2024-36006, CVE-2024-36004, CVE-2024-35955, CVE-2024-35898,<br>
+CVE-2024-26973, CVE-2024-26950, CVE-2024-36008, CVE-2024-35805,<br>
+CVE-2024-35807, CVE-2024-35934, CVE-2024-26926, CVE-2024-35902,<br>
+CVE-2024-35918, CVE-2024-35895, CVE-2024-35978, CVE-2024-35849,<br>
+CVE-2024-35791, CVE-2024-26931, CVE-2024-35886, CVE-2024-26981,<br>
+CVE-2024-27395, CVE-2024-35815, CVE-2024-26994, CVE-2024-35825,<br>
+CVE-2024-35789, CVE-2024-35813, CVE-2024-35885, CVE-2024-35851,<br>
+CVE-2024-35796, CVE-2023-52699, CVE-2024-35871, CVE-2024-26811,<br>
+CVE-2024-26966, CVE-2024-35976, CVE-2024-26955, CVE-2024-36029,<br>
+CVE-2024-27396, CVE-2024-27004, CVE-2024-27393, CVE-2024-35910,<br>
+CVE-2024-35933)<br>
+<br>
+**Title**: USN-6898-3: Linux kernel kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6898-3<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Ziming Zhang discovered that the DRM driver for VMware Virtual GPU did not<br>
+properly handle certain error conditions, leading to a NULL pointer<br>
+dereference. A local attacker could possibly trigger this vulnerability to<br>
+cause a denial of service. (CVE-2022-38096)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel when modifying certain settings values through debugfs.<br>
+A privileged local attacker could use this to cause a denial of service.<br>
+(CVE-2024-24857, CVE-2024-24858, CVE-2024-24859)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Chenyuan Yang discovered that the Unsorted Block Images (UBI) flash device<br>
+volume management subsystem did not properly validate logical eraseblock<br>
+sizes in certain situations. An attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2024-25739)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - RISC-V architecture;<br>
+  - x86 architecture;<br>
+  - Block layer subsystem;<br>
+  - Accessibility subsystem;<br>
+  - Android drivers;<br>
+  - Bluetooth drivers;<br>
+  - Clock framework and drivers;<br>
+  - Data acquisition framework and drivers;<br>
+  - Cryptographic API;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - I2C subsystem;<br>
+  - IRQ chip drivers;<br>
+  - Multiple devices driver;<br>
+  - VMware VMCI Driver;<br>
+  - MMC subsystem;<br>
+  - Network drivers;<br>
+  - Microsoft Azure Network Adapter (MANA) driver;<br>
+  - Device tree and open firmware driver;<br>
+  - PCI subsystem;<br>
+  - S/390 drivers;<br>
+  - SCSI drivers;<br>
+  - Freescale SoC drivers;<br>
+  - Trusted Execution Environment drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - VFIO drivers;<br>
+  - Framebuffer layer;<br>
+  - Xen hypervisor drivers;<br>
+  - File systems infrastructure;<br>
+  - BTRFS file system;<br>
+  - Ext4 file system;<br>
+  - FAT file system;<br>
+  - Network file system client;<br>
+  - Network file system server daemon;<br>
+  - NILFS2 file system;<br>
+  - Pstore file system;<br>
+  - SMB network file system;<br>
+  - UBI file system;<br>
+  - Netfilter;<br>
+  - BPF subsystem;<br>
+  - Core kernel;<br>
+  - PCI iomap interfaces;<br>
+  - Memory management;<br>
+  - B.A.T.M.A.N. meshing protocol;<br>
+  - Bluetooth subsystem;<br>
+  - Ethernet bridge;<br>
+  - Networking core;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - IEEE 802.15.4 subsystem;<br>
+  - NFC subsystem;<br>
+  - Open vSwitch;<br>
+  - RDS protocol;<br>
+  - Network traffic control;<br>
+  - SMC sockets;<br>
+  - Unix domain sockets;<br>
+  - eXpress Data Path;<br>
+  - Key management;<br>
+  - ALSA SH drivers;<br>
+  - KVM core;<br>
+(CVE-2024-35855, CVE-2024-35944, CVE-2024-35851, CVE-2024-35796,<br>
+CVE-2024-26812, CVE-2024-26814, CVE-2024-35819, CVE-2024-26976,<br>
+CVE-2024-35809, CVE-2024-35973, CVE-2024-26964, CVE-2024-35852,<br>
+CVE-2024-27018, CVE-2024-26958, CVE-2024-35893, CVE-2024-35885,<br>
+CVE-2024-26950, CVE-2024-26654, CVE-2024-26993, CVE-2024-26957,<br>
+CVE-2024-35907, CVE-2024-26984, CVE-2024-35806, CVE-2024-35988,<br>
+CVE-2024-35930, CVE-2024-27009, CVE-2024-27020, CVE-2024-35905,<br>
+CVE-2024-35857, CVE-2023-52699, CVE-2024-35902, CVE-2024-35895,<br>
+CVE-2024-35934, CVE-2024-35853, CVE-2024-26937, CVE-2024-27013,<br>
+CVE-2024-26813, CVE-2024-35925, CVE-2024-26956, CVE-2024-26935,<br>
+CVE-2024-26925, CVE-2024-26926, CVE-2024-35922, CVE-2024-35813,<br>
+CVE-2024-26973, CVE-2024-26961, CVE-2024-26934, CVE-2024-26687,<br>
+CVE-2024-35900, CVE-2024-35871, CVE-2024-35896, CVE-2024-36005,<br>
+CVE-2024-26989, CVE-2024-35807, CVE-2024-35789, CVE-2024-26970,<br>
+CVE-2024-35935, CVE-2024-27008, CVE-2024-26981, CVE-2024-35897,<br>
+CVE-2024-26988, CVE-2024-26642, CVE-2024-35997, CVE-2024-35915,<br>
+CVE-2024-35822, CVE-2024-26966, CVE-2024-27019, CVE-2024-26965,<br>
+CVE-2024-35884, CVE-2024-35969, CVE-2024-36025, CVE-2024-27000,<br>
+CVE-2024-26817, CVE-2024-35978, CVE-2024-26929, CVE-2024-27395,<br>
+CVE-2024-35825, CVE-2024-36007, CVE-2024-35886, CVE-2024-35854,<br>
+CVE-2023-52880, CVE-2024-26629, CVE-2024-35785, CVE-2024-35960,<br>
+CVE-2024-26994, CVE-2023-52488, CVE-2024-26977, CVE-2024-27059,<br>
+CVE-2024-27393, CVE-2024-26999, CVE-2024-35849, CVE-2024-36008,<br>
+CVE-2024-26969, CVE-2024-35899, CVE-2024-35933, CVE-2024-35958,<br>
+CVE-2024-27001, CVE-2024-35940, CVE-2024-26931, CVE-2024-36006,<br>
+CVE-2024-35955, CVE-2024-26811, CVE-2024-35872, CVE-2024-36031,<br>
+CVE-2024-26960, CVE-2024-26996, CVE-2024-35804, CVE-2024-35918,<br>
+CVE-2024-27016, CVE-2024-36004, CVE-2024-27396, CVE-2024-35823,<br>
+CVE-2024-35847, CVE-2024-35990, CVE-2024-26955, CVE-2024-35890,<br>
+CVE-2024-35898, CVE-2024-35888, CVE-2024-35877, CVE-2024-35910,<br>
+CVE-2024-35821, CVE-2024-26951, CVE-2024-27015, CVE-2024-35912,<br>
+CVE-2024-26974, CVE-2024-26923, CVE-2024-35901, CVE-2024-26828,<br>
+CVE-2024-35927, CVE-2024-35976, CVE-2024-35791, CVE-2024-35970,<br>
+CVE-2024-27004, CVE-2024-35982, CVE-2024-35989, CVE-2024-35984,<br>
+CVE-2024-35805, CVE-2024-36020, CVE-2024-35950, CVE-2024-35936,<br>
+CVE-2024-27437, CVE-2024-26922, CVE-2024-26810, CVE-2024-35815,<br>
+CVE-2024-36029, CVE-2024-35879, CVE-2024-35938, CVE-2024-35817)<br>
+<br>
+**Title**: USN-6898-2: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6898-2<br>
+**Priorities**: medium,low,high<br>
+**Description**:<br>
+  Ziming Zhang discovered that the DRM driver for VMware Virtual GPU did not<br>
+properly handle certain error conditions, leading to a NULL pointer<br>
+dereference. A local attacker could possibly trigger this vulnerability to<br>
+cause a denial of service. (CVE-2022-38096)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+It was discovered that a race condition existed in the Bluetooth subsystem<br>
+in the Linux kernel when modifying certain settings values through debugfs.<br>
+A privileged local attacker could use this to cause a denial of service.<br>
+(CVE-2024-24857, CVE-2024-24858, CVE-2024-24859)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Chenyuan Yang discovered that the Unsorted Block Images (UBI) flash device<br>
+volume management subsystem did not properly validate logical eraseblock<br>
+sizes in certain situations. An attacker could possibly use this to cause a<br>
+denial of service (system crash). (CVE-2024-25739)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - RISC-V architecture;<br>
+  - x86 architecture;<br>
+  - Block layer subsystem;<br>
+  - Accessibility subsystem;<br>
+  - Android drivers;<br>
+  - Bluetooth drivers;<br>
+  - Clock framework and drivers;<br>
+  - Data acquisition framework and drivers;<br>
+  - Cryptographic API;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - I2C subsystem;<br>
+  - IRQ chip drivers;<br>
+  - Multiple devices driver;<br>
+  - VMware VMCI Driver;<br>
+  - MMC subsystem;<br>
+  - Network drivers;<br>
+  - Device tree and open firmware driver;<br>
+  - PCI subsystem;<br>
+  - S/390 drivers;<br>
+  - SCSI drivers;<br>
+  - Freescale SoC drivers;<br>
+  - Trusted Execution Environment drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - VFIO drivers;<br>
+  - Framebuffer layer;<br>
+  - Xen hypervisor drivers;<br>
+  - File systems infrastructure;<br>
+  - BTRFS file system;<br>
+  - Ext4 file system;<br>
+  - FAT file system;<br>
+  - Network file system client;<br>
+  - Network file system server daemon;<br>
+  - NILFS2 file system;<br>
+  - Pstore file system;<br>
+  - SMB network file system;<br>
+  - UBI file system;<br>
+  - Netfilter;<br>
+  - BPF subsystem;<br>
+  - Core kernel;<br>
+  - PCI iomap interfaces;<br>
+  - Memory management;<br>
+  - B.A.T.M.A.N. meshing protocol;<br>
+  - Bluetooth subsystem;<br>
+  - Ethernet bridge;<br>
+  - Networking core;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - IEEE 802.15.4 subsystem;<br>
+  - NFC subsystem;<br>
+  - Open vSwitch;<br>
+  - RDS protocol;<br>
+  - Network traffic control;<br>
+  - SMC sockets;<br>
+  - Unix domain sockets;<br>
+  - eXpress Data Path;<br>
+  - ALSA SH drivers;<br>
+  - KVM core;<br>
+(CVE-2024-35955, CVE-2024-35805, CVE-2024-26814, CVE-2024-27008,<br>
+CVE-2024-26970, CVE-2024-35944, CVE-2024-27013, CVE-2024-35938,<br>
+CVE-2024-35853, CVE-2024-35969, CVE-2024-26981, CVE-2024-26929,<br>
+CVE-2024-27020, CVE-2024-35885, CVE-2024-35973, CVE-2024-35958,<br>
+CVE-2024-26961, CVE-2024-35912, CVE-2024-35890, CVE-2024-35804,<br>
+CVE-2024-35813, CVE-2024-27393, CVE-2024-26956, CVE-2024-35915,<br>
+CVE-2024-26642, CVE-2024-35847, CVE-2024-26960, CVE-2024-26923,<br>
+CVE-2024-35935, CVE-2024-36025, CVE-2024-35898, CVE-2024-26810,<br>
+CVE-2024-35809, CVE-2024-26813, CVE-2024-36007, CVE-2024-35817,<br>
+CVE-2024-35849, CVE-2024-35819, CVE-2024-35884, CVE-2024-35922,<br>
+CVE-2024-36008, CVE-2024-27004, CVE-2024-35902, CVE-2024-26828,<br>
+CVE-2024-35791, CVE-2024-35930, CVE-2024-26973, CVE-2024-26984,<br>
+CVE-2024-35806, CVE-2024-26629, CVE-2024-26955, CVE-2024-26937,<br>
+CVE-2024-27059, CVE-2024-35872, CVE-2024-35978, CVE-2024-26950,<br>
+CVE-2024-27018, CVE-2024-35857, CVE-2024-35990, CVE-2024-27437,<br>
+CVE-2024-35822, CVE-2024-36020, CVE-2024-26931, CVE-2024-26977,<br>
+CVE-2024-26654, CVE-2024-26988, CVE-2024-36005, CVE-2024-26969,<br>
+CVE-2024-35960, CVE-2024-27016, CVE-2024-36006, CVE-2024-35936,<br>
+CVE-2024-35982, CVE-2024-36029, CVE-2024-27395, CVE-2024-26999,<br>
+CVE-2024-35871, CVE-2024-35893, CVE-2024-26925, CVE-2024-26965,<br>
+CVE-2024-35933, CVE-2024-35976, CVE-2024-35899, CVE-2024-35852,<br>
+CVE-2024-35918, CVE-2024-26951, CVE-2024-27001, CVE-2024-35905,<br>
+CVE-2024-35907, CVE-2024-26976, CVE-2024-27000, CVE-2024-35910,<br>
+CVE-2024-35950, CVE-2024-26974, CVE-2024-35785, CVE-2023-52488,<br>
+CVE-2023-52880, CVE-2024-35877, CVE-2024-35888, CVE-2024-35807,<br>
+CVE-2024-35796, CVE-2024-35821, CVE-2024-35854, CVE-2024-27015,<br>
+CVE-2024-35823, CVE-2024-35900, CVE-2024-35815, CVE-2024-26966,<br>
+CVE-2024-26817, CVE-2024-35896, CVE-2024-27396, CVE-2024-27009,<br>
+CVE-2024-35940, CVE-2024-26996, CVE-2024-35825, CVE-2024-35984,<br>
+CVE-2024-35886, CVE-2024-27019, CVE-2024-26922, CVE-2024-35989,<br>
+CVE-2024-26926, CVE-2024-35988, CVE-2024-26957, CVE-2024-26812,<br>
+CVE-2024-35925, CVE-2024-35970, CVE-2024-26989, CVE-2024-26811,<br>
+CVE-2024-35895, CVE-2024-26935, CVE-2024-26958, CVE-2024-35855,<br>
+CVE-2024-35879, CVE-2024-26993, CVE-2024-35934, CVE-2024-36004,<br>
+CVE-2024-35997, CVE-2024-26994, CVE-2023-52699, CVE-2024-35789,<br>
+CVE-2024-26964, CVE-2024-26687, CVE-2024-35851, CVE-2024-35897,<br>
+CVE-2024-26934)<br>
+<br>
+**Title**: USN-6913-1: phpCAS vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6913-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Filip Hejsek discovered that phpCAS was using HTTP headers to determine<br>
+the service URL used to validate tickets. A remote attacker could<br>
+possibly use this issue to gain access to a victim's account on a<br>
+vulnerable CASified service.<br>
+<br>
+This security update introduces an incompatible API change. After applying<br>
+this update, third party applications need to be modified to pass in an<br>
+additional service base URL argument when constructing the client class.<br>
+<br>
+For more information please refer to the section<br>
+"Upgrading 1.5.0 -> 1.6.0" of the phpCAS upgrading document:<br>
+<br>
+https://github.com/apereo/phpCAS/blob/master/docs/Upgrading<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-39369<br>
+<br>
+**Title**: USN-6914-1: OCS Inventory vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6914-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Filip Hejsek discovered that the phpCAS library included in OCS Inventory<br>
+was using HTTP headers to determine the service URL used to validate<br>
+tickets. A remote attacker could possibly use this issue to gain access<br>
+to a victim's account.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2022-39369<br>
+<br>
+**Title**: USN-6905-1: Rack vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6905-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Rack incorrectly handled certain regular<br>
+expressions. A remote attacker could possibly use this issue to cause<br>
+Rack to consume resources, leading to a denial of service.<br>
+(CVE-2023-27539)<br>
+<br>
+It was discovered that Rack incorrectly handled Multipart MIME parsing.<br>
+A remote attacker could possibly use this issue to cause Rack to consume<br>
+resources, leading to a denial of service. This issue only affected<br>
+Ubuntu 20.04 LTS and Ubuntu 22.04 LTS. (CVE-2023-27530)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2023-27539<br>
+ - https://ubuntu.com/security/CVE-2023-27530<br>
+ - https://ubuntu.com/security/CVE-2023-27530<br>
+ - https://ubuntu.com/security/CVE-2023-27539<br>
+<br>
+**Title**: USN-6900-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6900-1<br>
+**Priorities**: high,low,medium<br>
+**Description**:<br>
+  It was discovered that the ATA over Ethernet (AoE) driver in the Linux<br>
+kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. An attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6270)<br>
+<br>
+It was discovered that the HugeTLB file system component of the Linux<br>
+Kernel contained a NULL pointer dereference vulnerability. A privileged<br>
+attacker could possibly use this to to cause a denial of service.<br>
+(CVE-2024-0841)<br>
+<br>
+It was discovered that the Open vSwitch implementation in the Linux kernel<br>
+could overflow its stack during recursive action operations under certain<br>
+conditions. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2024-1151)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - PowerPC architecture;<br>
+  - x86 architecture;<br>
+  - Cryptographic API;<br>
+  - Android drivers;<br>
+  - Block layer subsystem;<br>
+  - Bluetooth drivers;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - Hardware monitoring drivers;<br>
+  - I2C subsystem;<br>
+  - IIO ADC drivers;<br>
+  - IIO subsystem;<br>
+  - IIO Magnetometer sensors drivers;<br>
+  - InfiniBand drivers;<br>
+  - On-Chip Interconnect management framework;<br>
+  - Multiple devices driver;<br>
+  - Media drivers;<br>
+  - Network drivers;<br>
+  - PHY drivers;<br>
+  - MediaTek PM domains;<br>
+  - SCSI drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - DesignWare USB3 driver;<br>
+  - Framebuffer layer;<br>
+  - AFS file system;<br>
+  - BTRFS file system;<br>
+  - Ceph distributed file system;<br>
+  - Ext4 file system;<br>
+  - File systems infrastructure;<br>
+  - NILFS2 file system;<br>
+  - NTFS3 file system;<br>
+  - SMB network file system;<br>
+  - Core kernel;<br>
+  - Memory management;<br>
+  - Bluetooth subsystem;<br>
+  - CAN network layer;<br>
+  - Devlink API;<br>
+  - Handshake API;<br>
+  - HSR network protocol;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - Multipath TCP;<br>
+  - Netfilter;<br>
+  - NFC subsystem;<br>
+  - RxRPC session sockets;<br>
+  - TIPC protocol;<br>
+  - Unix domain sockets;<br>
+  - Realtek audio codecs;<br>
+(CVE-2024-26666, CVE-2024-26691, CVE-2024-26681, CVE-2024-26715,<br>
+CVE-2024-26674, CVE-2024-26790, CVE-2024-26677, CVE-2024-26675,<br>
+CVE-2024-26696, CVE-2024-26925, CVE-2024-26782, CVE-2024-26798,<br>
+CVE-2024-26702, CVE-2024-35833, CVE-2024-26825, CVE-2024-26680,<br>
+CVE-2024-26723, CVE-2024-26703, CVE-2024-26822, CVE-2024-26718,<br>
+CVE-2024-26695, CVE-2024-26693, CVE-2024-26733, CVE-2024-26659,<br>
+CVE-2023-52643, CVE-2024-26667, CVE-2024-26601, CVE-2024-26923,<br>
+CVE-2024-26726, CVE-2024-26676, CVE-2024-26924, CVE-2024-26889,<br>
+CVE-2024-26685, CVE-2024-26720, CVE-2024-26820, CVE-2024-26919,<br>
+CVE-2024-26642, CVE-2024-26890, CVE-2023-52637, CVE-2024-26602,<br>
+CVE-2024-26603, CVE-2023-52880, CVE-2024-26606, CVE-2024-26708,<br>
+CVE-2024-26697, CVE-2024-26643, CVE-2024-26916, CVE-2024-26661,<br>
+CVE-2024-26707, CVE-2024-26910, CVE-2024-27416, CVE-2024-26716,<br>
+CVE-2023-52645, CVE-2024-26600, CVE-2023-52642, CVE-2023-52631,<br>
+CVE-2024-26926, CVE-2024-26593, CVE-2024-26735, CVE-2024-26917,<br>
+CVE-2024-26698, CVE-2024-26838, CVE-2024-26694, CVE-2024-26664,<br>
+CVE-2024-26898, CVE-2024-26719, CVE-2024-26802, CVE-2024-26826,<br>
+CVE-2024-26679, CVE-2024-26824, CVE-2024-26831, CVE-2024-26792,<br>
+CVE-2024-26700, CVE-2024-26818, CVE-2024-26920, CVE-2024-26829,<br>
+CVE-2024-26710, CVE-2023-52638, CVE-2024-26714, CVE-2024-26809,<br>
+CVE-2024-26789, CVE-2024-26689, CVE-2024-26722, CVE-2024-26660,<br>
+CVE-2024-26734, CVE-2024-26736, CVE-2024-26828, CVE-2024-26717,<br>
+CVE-2024-26830, CVE-2024-26711, CVE-2024-26665, CVE-2024-26662,<br>
+CVE-2024-26748, CVE-2024-26688, CVE-2024-26712, CVE-2024-26922,<br>
+CVE-2024-26684, CVE-2024-26663, CVE-2024-26803)<br>
+<br>
+**Title**: USN-6895-2: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6895-2<br>
+**Priorities**: high,low,medium<br>
+**Description**:<br>
+  It was discovered that the ATA over Ethernet (AoE) driver in the Linux<br>
+kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. An attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6270)<br>
+<br>
+It was discovered that the HugeTLB file system component of the Linux<br>
+Kernel contained a NULL pointer dereference vulnerability. A privileged<br>
+attacker could possibly use this to to cause a denial of service.<br>
+(CVE-2024-0841)<br>
+<br>
+It was discovered that the Open vSwitch implementation in the Linux kernel<br>
+could overflow its stack during recursive action operations under certain<br>
+conditions. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2024-1151)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - PowerPC architecture;<br>
+  - x86 architecture;<br>
+  - Cryptographic API;<br>
+  - Android drivers;<br>
+  - Block layer subsystem;<br>
+  - Bluetooth drivers;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - Hardware monitoring drivers;<br>
+  - I2C subsystem;<br>
+  - IIO ADC drivers;<br>
+  - IIO subsystem;<br>
+  - IIO Magnetometer sensors drivers;<br>
+  - InfiniBand drivers;<br>
+  - On-Chip Interconnect management framework;<br>
+  - Multiple devices driver;<br>
+  - Media drivers;<br>
+  - Network drivers;<br>
+  - PHY drivers;<br>
+  - MediaTek PM domains;<br>
+  - SCSI drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - DesignWare USB3 driver;<br>
+  - Framebuffer layer;<br>
+  - AFS file system;<br>
+  - BTRFS file system;<br>
+  - Ceph distributed file system;<br>
+  - Ext4 file system;<br>
+  - File systems infrastructure;<br>
+  - NILFS2 file system;<br>
+  - NTFS3 file system;<br>
+  - SMB network file system;<br>
+  - Core kernel;<br>
+  - Memory management;<br>
+  - Bluetooth subsystem;<br>
+  - CAN network layer;<br>
+  - Devlink API;<br>
+  - Handshake API;<br>
+  - HSR network protocol;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - Multipath TCP;<br>
+  - Netfilter;<br>
+  - NFC subsystem;<br>
+  - RxRPC session sockets;<br>
+  - TIPC protocol;<br>
+  - Unix domain sockets;<br>
+  - Realtek audio codecs;<br>
+(CVE-2024-26684, CVE-2024-26889, CVE-2024-26662, CVE-2024-26660,<br>
+CVE-2024-26708, CVE-2024-26677, CVE-2024-26696, CVE-2024-26664,<br>
+CVE-2024-26642, CVE-2023-52637, CVE-2024-26680, CVE-2024-26822,<br>
+CVE-2023-52638, CVE-2024-26830, CVE-2024-26715, CVE-2024-26693,<br>
+CVE-2024-26697, CVE-2024-26694, CVE-2024-26685, CVE-2023-52642,<br>
+CVE-2024-26691, CVE-2024-26798, CVE-2024-26828, CVE-2024-26663,<br>
+CVE-2024-26710, CVE-2024-26601, CVE-2024-26707, CVE-2024-26802,<br>
+CVE-2024-26675, CVE-2024-26826, CVE-2024-26916, CVE-2024-26803,<br>
+CVE-2024-26700, CVE-2024-26917, CVE-2024-26600, CVE-2024-26825,<br>
+CVE-2024-26716, CVE-2024-26602, CVE-2024-26698, CVE-2024-26711,<br>
+CVE-2024-26920, CVE-2024-26722, CVE-2024-26681, CVE-2024-26674,<br>
+CVE-2024-26712, CVE-2024-26735, CVE-2024-26782, CVE-2024-26734,<br>
+CVE-2024-26926, CVE-2024-26923, CVE-2023-52880, CVE-2024-26719,<br>
+CVE-2024-26593, CVE-2024-26603, CVE-2024-26922, CVE-2024-26717,<br>
+CVE-2024-26695, CVE-2023-52643, CVE-2024-35833, CVE-2024-26733,<br>
+CVE-2024-26667, CVE-2024-26659, CVE-2024-26714, CVE-2024-26748,<br>
+CVE-2024-26702, CVE-2024-26676, CVE-2024-26718, CVE-2024-27416,<br>
+CVE-2024-26890, CVE-2024-26720, CVE-2024-26838, CVE-2024-26665,<br>
+CVE-2024-26792, CVE-2024-26818, CVE-2024-26679, CVE-2024-26606,<br>
+CVE-2024-26736, CVE-2024-26829, CVE-2023-52631, CVE-2024-26790,<br>
+CVE-2024-26824, CVE-2024-26820, CVE-2024-26831, CVE-2024-26689,<br>
+CVE-2024-26898, CVE-2024-26789, CVE-2024-26703, CVE-2023-52645,<br>
+CVE-2024-26688, CVE-2024-26723, CVE-2024-26919, CVE-2024-26661,<br>
+CVE-2024-26726, CVE-2024-26910, CVE-2024-26666)<br>
+<br>
+**Title**: USN-6895-3: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6895-3<br>
+**Priorities**: high,low,medium,unknown<br>
+**Description**:<br>
+  It was discovered that the ATA over Ethernet (AoE) driver in the Linux<br>
+kernel contained a race condition, leading to a use-after-free<br>
+vulnerability. An attacker could use this to cause a denial of service or<br>
+possibly execute arbitrary code. (CVE-2023-6270)<br>
+<br>
+It was discovered that the HugeTLB file system component of the Linux<br>
+Kernel contained a NULL pointer dereference vulnerability. A privileged<br>
+attacker could possibly use this to to cause a denial of service.<br>
+(CVE-2024-0841)<br>
+<br>
+It was discovered that the Open vSwitch implementation in the Linux kernel<br>
+could overflow its stack during recursive action operations under certain<br>
+conditions. A local attacker could use this to cause a denial of service<br>
+(system crash). (CVE-2024-1151)<br>
+<br>
+Gui-Dong Han discovered that the software RAID driver in the Linux kernel<br>
+contained a race condition, leading to an integer overflow vulnerability. A<br>
+privileged attacker could possibly use this to cause a denial of service<br>
+(system crash). (CVE-2024-23307)<br>
+<br>
+Bai Jiaju discovered that the Xceive XC4000 silicon tuner device driver in<br>
+the Linux kernel contained a race condition, leading to an integer overflow<br>
+vulnerability. An attacker could possibly use this to cause a denial of<br>
+service (system crash). (CVE-2024-24861)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - ARM64 architecture;<br>
+  - PowerPC architecture;<br>
+  - x86 architecture;<br>
+  - Cryptographic API;<br>
+  - Android drivers;<br>
+  - Block layer subsystem;<br>
+  - Bluetooth drivers;<br>
+  - DMA engine subsystem;<br>
+  - GPU drivers;<br>
+  - HID subsystem;<br>
+  - Hardware monitoring drivers;<br>
+  - I2C subsystem;<br>
+  - IIO ADC drivers;<br>
+  - IIO subsystem;<br>
+  - IIO Magnetometer sensors drivers;<br>
+  - InfiniBand drivers;<br>
+  - On-Chip Interconnect management framework;<br>
+  - Multiple devices driver;<br>
+  - Media drivers;<br>
+  - Network drivers;<br>
+  - PHY drivers;<br>
+  - MediaTek PM domains;<br>
+  - SCSI drivers;<br>
+  - TTY drivers;<br>
+  - USB subsystem;<br>
+  - DesignWare USB3 driver;<br>
+  - Framebuffer layer;<br>
+  - AFS file system;<br>
+  - BTRFS file system;<br>
+  - Ceph distributed file system;<br>
+  - Ext4 file system;<br>
+  - File systems infrastructure;<br>
+  - NILFS2 file system;<br>
+  - NTFS3 file system;<br>
+  - SMB network file system;<br>
+  - Core kernel;<br>
+  - Memory management;<br>
+  - Bluetooth subsystem;<br>
+  - CAN network layer;<br>
+  - Devlink API;<br>
+  - Handshake API;<br>
+  - HSR network protocol;<br>
+  - IPv4 networking;<br>
+  - IPv6 networking;<br>
+  - MAC80211 subsystem;<br>
+  - Multipath TCP;<br>
+  - Netfilter;<br>
+  - NFC subsystem;<br>
+  - RxRPC session sockets;<br>
+  - TIPC protocol;<br>
+  - Unix domain sockets;<br>
+  - Realtek audio codecs;<br>
+(CVE-2024-26922, CVE-2024-26691, CVE-2024-26698, CVE-2024-26696,<br>
+CVE-2024-26688, CVE-2024-26734, CVE-2024-26660, CVE-2024-26736,<br>
+CVE-2024-26600, CVE-2024-26826, CVE-2024-26890, CVE-2023-52643,<br>
+CVE-2024-26917, CVE-2024-26676, CVE-2024-26916, CVE-2024-26919,<br>
+CVE-2024-26662, CVE-2024-26714, CVE-2023-52880, CVE-2024-26679,<br>
+CVE-2024-26711, CVE-2024-26707, CVE-2024-26735, CVE-2023-52631,<br>
+CVE-2024-26694, CVE-2023-52637, CVE-2024-26830, CVE-2024-26675,<br>
+CVE-2024-26715, CVE-2024-26642, CVE-2024-26659, CVE-2024-26838,<br>
+CVE-2024-26926, CVE-2024-26684, CVE-2024-26716, CVE-2024-26825,<br>
+CVE-2024-26664, CVE-2024-26666, CVE-2024-26820, CVE-2024-26680,<br>
+CVE-2024-26681, CVE-2024-26829, CVE-2024-26748, CVE-2024-26920,<br>
+CVE-2024-26593, CVE-2024-26831, CVE-2024-26703, CVE-2024-35833,<br>
+CVE-2024-26697, CVE-2023-52638, CVE-2024-26665, CVE-2024-26603,<br>
+CVE-2024-26602, CVE-2024-26824, CVE-2024-26710, CVE-2024-26828,<br>
+CVE-2024-26790, CVE-2024-26722, CVE-2024-26803, CVE-2024-26798,<br>
+CVE-2024-27416, CVE-2024-26661, CVE-2024-26677, CVE-2024-26720,<br>
+CVE-2024-26695, CVE-2024-26726, CVE-2024-26723, CVE-2024-26889,<br>
+CVE-2024-26702, CVE-2024-26606, CVE-2024-26792, CVE-2024-26733,<br>
+CVE-2024-26782, CVE-2024-26923, CVE-2023-52645, CVE-2024-26700,<br>
+CVE-2024-26898, CVE-2024-26822, CVE-2024-26712, CVE-2023-52642,<br>
+CVE-2024-26601, CVE-2024-26667, CVE-2024-26910, CVE-2024-26818,<br>
+CVE-2024-26689, CVE-2024-26708, CVE-2024-26663, CVE-2024-26802,<br>
+CVE-2024-26717, CVE-2024-26719, CVE-2024-26718, CVE-2024-26685,<br>
+CVE-2024-26789, CVE-2024-26693, CVE-2024-26674)<br>
+<br>
+**Title**: USN-6909-1: Bind vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6909-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that Bind incorrectly handled a flood of DNS messages<br>
+over TCP. A remote attacker could possibly use this issue to cause Bind to<br>
+become unstable, resulting in a denial of service. (CVE-2024-0760)<br>
+<br>
+Toshifumi Sakaguchi discovered that Bind incorrectly handled having a very<br>
+large number of RRs existing at the same time. A remote attacker could<br>
+possibly use this issue to cause Bind to consume resources, leading to a<br>
+denial of service. (CVE-2024-1737)<br>
+<br>
+It was discovered that Bind incorrectly handled a large number of SIG(0)<br>
+signed requests. A remote attacker could possibly use this issue to cause<br>
+Bind to consume resources, leading to a denial of service. (CVE-2024-1975)<br>
+<br>
+Daniel Stränger discovered that Bind incorrectly handled serving both<br>
+stable cache data and authoritative zone content. A remote attacker could<br>
+possibly use this issue to cause Bind to crash, resulting in a denial of<br>
+service. (CVE-2024-4076)<br>
+<br>
+On Ubuntu 20.04 LTS, Bind has been updated from 9.16 to 9.18. In addition<br>
+to security fixes, the updated packages contain bug fixes, new features,<br>
+and possibly incompatible changes.<br>
+<br>
+Please see the following for more information:<br>
+<br>
+https://kb.isc.org/docs/changes-to-be-aware-of-when-moving-from-bind-916-to-918<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-0760<br>
+ - https://ubuntu.com/security/CVE-2024-1737<br>
+ - https://ubuntu.com/security/CVE-2024-1975<br>
+ - https://ubuntu.com/security/CVE-2024-4076<br>
+ - https://ubuntu.com/security/CVE-2024-1975<br>
+ - https://ubuntu.com/security/CVE-2024-1737<br>
+ - https://ubuntu.com/security/CVE-2024-0760<br>
+ - https://ubuntu.com/security/CVE-2024-4076<br>
+<br>
+**Title**: USN-6923-1: Linux kernel vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6923-1<br>
+**Priorities**: medium,high<br>
+**Description**:<br>
+  Benedict Schlüter, Supraja Sridhara, Andrin Bertschi, and Shweta Shinde<br>
+discovered that an untrusted hypervisor could inject malicious #VC<br>
+interrupts and compromise the security guarantees of AMD SEV-SNP. This flaw<br>
+is known as WeSee. A local attacker in control of the hypervisor could use<br>
+this to expose sensitive information or possibly execute arbitrary code in<br>
+the trusted execution environment. (CVE-2024-25742)<br>
+<br>
+Several security issues were discovered in the Linux kernel.<br>
+An attacker could possibly use these to compromise the system.<br>
+This update corrects flaws in the following subsystems:<br>
+  - TTY drivers;<br>
+  - SMB network file system;<br>
+  - Netfilter;<br>
+  - Bluetooth subsystem;<br>
+(CVE-2024-26886, CVE-2024-26952, CVE-2023-52752, CVE-2024-27017,<br>
+CVE-2024-36016)<br>
+<br>
+**Title**: USN-6907-1: Squid vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6907-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Joshua Rogers discovered that Squid did not properly handle multi-byte<br>
+characters during Edge Side Includes (ESI) processing. A remote attacker<br>
+could possibly use this issue to cause a memory corruption error, leading<br>
+to a denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-37894<br>
+<br>
+**Title**: USN-6902-1: Apache HTTP Server vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6902-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that the Apache HTTP Server incorrectly handled certain<br>
+handlers configured via AddType. A remote attacker could possibly use this<br>
+issue to obtain source code.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-40725<br>
+<br>
+**Title**: USN-6911-1: Nova vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6911-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Arnaud Morin discovered that Nova incorrectly handled certain raw format<br>
+images. An authenticated user could use this issue to access arbitrary<br>
+files on the server, possibly exposing sensitive information.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-40767<br>
+<br>
+**Title**: USN-6906-1: python-zipp vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6906-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that python-zipp did not properly handle the zip files<br>
+with malformed names. An attacker could possibly use this issue to cause a<br>
+denial of service.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-5569<br>
+<br>
+**Title**: USN-6904-1: PyMongo vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6904-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that PyMongo incorrectly handled certain BSON.<br>
+An attacker could possibly use this issue to read sensitive information<br>
+or cause a crash.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-5629<br>
+<br>
+**Title**: USN-6903-1: Thunderbird vulnerabilities<br>
+**URL**: https://ubuntu.com/security/notices/USN-6903-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  Multiple security issues were discovered in Thunderbird. If a user were<br>
+tricked into opening a specially crafted website in a browsing context, an<br>
+attacker could potentially exploit these to cause a denial of service,<br>
+obtain sensitive information, bypass security restrictions, cross-site<br>
+tracing, or execute arbitrary code. (CVE-2024-6600, CVE-2024-6601,<br>
+CVE-2024-6604)<br>
+<br>
+Ronald Crane discovered that Thunderbird did not properly manage certain<br>
+memory operations in the NSS. An attacker could potentially exploit this<br>
+issue to cause a denial of service. (CVE-2024-6602)<br>
+<br>
+Irvan Kurniawan discovered that Thunderbird did not properly manage memory<br>
+during thread creation. An attacker could potentially exploit this<br>
+issue to cause a denial of service, or execute arbitrary code.<br>
+(CVE-2024-6603)<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-6600<br>
+ - https://ubuntu.com/security/CVE-2024-6601<br>
+ - https://ubuntu.com/security/CVE-2024-6604<br>
+ - https://ubuntu.com/security/CVE-2024-6602<br>
+ - https://ubuntu.com/security/CVE-2024-6603<br>
+ - https://ubuntu.com/security/CVE-2024-6602<br>
+ - https://ubuntu.com/security/CVE-2024-6601<br>
+ - https://ubuntu.com/security/CVE-2024-6600<br>
+ - https://ubuntu.com/security/CVE-2024-6604<br>
+ - https://ubuntu.com/security/CVE-2024-6603<br>
+<br>
+**Title**: USN-6899-1: GTK vulnerability<br>
+**URL**: https://ubuntu.com/security/notices/USN-6899-1<br>
+**Priorities**: medium<br>
+**Description**:<br>
+  It was discovered that GTK would attempt to load modules from the current<br>
+directory, contrary to expectations. If users started GTK applications from<br>
+shared directories, a local attacker could use this issue to execute<br>
+arbitrary code, and possibly escalate privileges.<br>
+**CVEs**:<br>
+ - https://ubuntu.com/security/CVE-2024-6655<br>
+
+
+
 #### <a id="jammy-1-492"></a> 1.492
 
 <span class="pivnet">Available in the Broadcom Support portal</span>
